@@ -46,3 +46,5 @@ artifacts/component_tests/policy_observation_v1/
 /logs/
 *.pdf
 PUBLICATION_LOCAL_*.json
+
+artifacts/component_tests/dynamics_wording_v1/

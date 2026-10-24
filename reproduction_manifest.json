@@ -1,7 +1,7 @@
 {
   "paper_title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
   "arxiv_id": "2610.12403v1",
-  "paper_local_path": "/path/to/2610.12403v1.pdf",
+  "paper_local_path": "/workspace/local",
   "repository_url": "https://github.com/ZJU-REAL/ViSkill",
   "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
   "branch": "repro/local-no-api",
@@ -24,7 +24,7 @@
     "reproduction_torch_runtime": "12.8"
   },
   "gpu": {
-    "target_server": "pro5000",
+    "target_server": "gpu-host",
     "max_gpu_count": 3,
     "hardware_verified": true,
     "authorized_indices": [
@@ -159,7 +159,7 @@
     "tests/"
   ],
   "known_deviations": [
-    "FrozenLake GPU counts: main text 4, Table 6 2, script 4; user upper limit 3 on pro5000",
+    "FrozenLake GPU counts: main text 4, Table 6 2, script 4; user upper limit 3 on gpu-host",
     "script training steps 301 vs paper 300",
     "official reward uses action prefix vs paper state-progress matching",
     "library not snapshotted/restored with policy checkpoint",
@@ -1643,13 +1643,26 @@
     "includes_this_diagnostic": false
   },
   "latest_mechanism_audit": {
-    "status": "All bounded follow-ups completed; no candidate met qualification. F remains PARTIAL.",
+    "status": "Dynamics wording check COMPLETE; performance lead gate failed; prompt branch closed; F remains PARTIAL",
     "report": "reports/05_mechanism_p0.md",
     "fixture_policy_calls": 0,
     "real_actor_backward_with_nonempty_skill_verified": false,
-    "next": "Freeze fresh prospective check for explicit dynamics-description correction; no active GPU run",
-    "start_unix": null,
-    "deadline_unix": null
+    "next": "Return to mainline training/skill-feedback design under unchanged scientific, time and storage gates; no further prompt search",
+    "start_unix": 1792826621.3152595,
+    "deadline_unix": 1792828421.3152595,
+    "end_unix": 1792826934.699913,
+    "dynamics_wording": {
+      "episodes": 64,
+      "model_calls": 240,
+      "original_success": 2,
+      "accurate_success": 3,
+      "quality_eligible_each_arm": 2,
+      "paired_success_improved": 2,
+      "paired_success_worsened": 1,
+      "performance_lead_gate": false,
+      "training": false,
+      "admission": false
+    }
   },
   "skill_capacity_v1": {
     "episodes": 128,

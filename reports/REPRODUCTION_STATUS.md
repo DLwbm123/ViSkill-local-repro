@@ -68,7 +68,7 @@
 
 1. 官方reward为动作前缀；论文附录为最远匹配相对状态。此差异会改变优化目标。
 2. 官方库按batch更新；Alg.1逐episode描述，批内novelty不重算，可能接收重复几何。
-3. 论文正文FrozenLake4卡、附录2卡、官方脚本4卡；用户当前仅授权pro5000物理GPU3/4/5；GPU4单卡为首次验证候选。
+3. 论文正文FrozenLake4卡、附录2卡、官方脚本4卡；用户当前仅授权gpu-host物理GPU3/4/5；GPU4单卡为首次验证候选。
 4. 论文300步，脚本301步。
 5. 官方checkpoint不含同步skill-library快照，无法保证任一步恢复policy与库配对。
 6. C.2与代码prompt都保留slippery提示，但B.1和实际配置关闭随机转移；目前不擅自改prompt。
@@ -117,7 +117,7 @@ setup supervisor/worker仍存活；Python3.10创建与torch2.8.0/cu128安装命�
 
 独立Python3.10.22、torch2.8.0+cu128及所列核心模块导入通过；SGLang/flash_attn缺失，C仍PARTIAL。GPU4 BF16矩阵乘/SDPA有限值通过、NCCL world1通过；真实FrozenLake seed1 reset生成256×256 RGB图像。另一次有60秒硬超时的GPU3/4/5三rank all_reduce在5.75秒完成，各返回6，全部exit0。保留旧v0失败；这仅解除基础多卡通信阻塞，不证明FSDP/PPO或模型推理成功。
 
-下一动作：健康下载不重启；检查SETUP_REPAIR_EXIT及SETUP_COMPLETE和权重实际加载，随后本地三臂evaluation/E组件；补齐PPO所需SGLang/FA并验证。下载完成/停止后用本机`ssh -S /tmp/z0-proxy.sock -O exit pro5000`关闭本次自有隧道（不要操作已有17897转发）。当前尚无训练。
+下一动作：健康下载不重启；检查SETUP_REPAIR_EXIT及SETUP_COMPLETE和权重实际加载，随后本地三臂evaluation/E组件；补齐PPO所需SGLang/FA并验证。下载完成/停止后用本机`ssh -S /tmp/z0-proxy.sock -O exit gpu-host`关闭本次自有隧道（不要操作已有17897转发）。当前尚无训练。
 
 ### 2026-10-24 02:16 三臂验证推进
 
@@ -319,3 +319,31 @@ action_grounding_v1的16次新请求两臂均0/8；schema_decoding_v1另外16次
 ### 15:07后继全结束
 
 policy_observation_v1完整64请求EXIT0，四臂首动作进度5/16、6/16、6/16、4/16；全部配对未达预注册改善门槛。现无活动GPU实验，本用户请求后完成96次新调用、未增加PPO。已实现默认关闭的accurate_dynamics_prompt准确动力学描述，并通过CPU环境prompt builder检查；未做性能宣称。下一轮新前瞻协议只验证这类有明确证据的主线修正，不能重启旧128、旧8提示搜索或扩展已关闭协议。唯一监测保持。
+
+
+## 15:24 当前运行
+
+dynamics_wording_v1已启动：32固定新seed40001–40032×原/准确动力学描述，64完整episode，greedy0/空库/self，不训练、不入库。30min/500MB硬限制，start1792826621.3152595/deadline1792828421.3152595，GPU4。先读对应EXIT/result，未完成不要判定改善或重复启动。细节见05_mechanism_p0.md末尾。公开main e9ac965不含此新运行。
+
+
+## 2026-10-24 15:53 完整前瞻结果：提示支线关闭
+
+dynamics_wording_v1已于15:28:54正常EXIT0，end1792826934.699913；监督总历时313.38秒，推理阶段276.41秒，240次模型调用。64完整episode全部完成，32个确切棋盘均不同，与原128条无重叠。峰值68,470,054,912 bytes，低于局部68,965,270,784 bytes写停止线。原始总截止保持不变。
+
+| 指标 | 原描述 | 准确描述 |
+|---|---:|---:|
+| 完整episode成功 | 2/32 | 3/32 |
+| 质量合格 | 2/32 | 2/32 |
+| 落洞 | 10/32 | 9/32 |
+| 边界无效动作次数 | 65 | 56 |
+| 轮数耗尽失败 | 20/32 | 20/32 |
+| 蒸馏有效/调用 | 1/2 | 2/2 |
+
+成功配对2改善/1退步；质量合格配对1改善/1退步，净增0。未达到预注册的至少4例成功改善、至多1例退步且至少2例质量净增门槛（performance_lead_gate=false）。成功数增加1例和无效动作减少均仅为本轮观察，不能宣称稳定性能改善；各臂蒸馏样本极少，不能据2/2判定多步蒸馏问题解决。
+
+描述修正的正确性与性能结论分开：显式开关仍默认关闭，保留全部原结果。本提示支线到此结束，不扩样或重新搜索。没有入库、训练、新模型检查点或额外PPO；F仍PARTIAL，跨batch反馈、真实失败正技能奖励、非空技能库联合恢复仍未验证。下一阶段回到主线训练/技能反馈设计，先说明与主线瓶颈的联系并冻结新的独立协议，遵守剩余时间和存储约束，不删除旧模型来放行训练。
+
+完整64条配对摘要及EXIT证据已保存到docs/evidence/components/dynamics_wording_v1，原始请求、轨迹与审计保存在本地及服务器artifacts/component_tests/dynamics_wording_v1。本轮尚未发布到GitHub。
+
+
+发布状态：本公开快照已纳入上述完整前瞻结果；文中“尚未发布”是运行结束时的历史记录。最终汇总见[06_results_summary.md](06_results_summary.md)。

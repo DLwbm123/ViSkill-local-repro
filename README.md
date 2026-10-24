@@ -2,9 +2,11 @@
 
 A local, no-external-model-API reproduction workspace for **ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills**. This is an independent reproduction and audit, not the official repository.
 
-**Current status: PARTIAL.** The completed 128-episode frozen capacity run produced 15 successes, 8 quality-eligible trajectories, 5 valid distilled strategies and 3 admitted skills. All 3 admitted skills were single-step; all 3 eligible multi-step trajectories failed distillation. A further 96 bounded diagnostic calls produced no intervention meeting its predeclared qualification gate. No additional PPO was run. This is not a reproduction of the paper's performance numbers.
+**Current status: PARTIAL.** The completed 128-episode frozen capacity run produced 15 successes, 8 quality-eligible trajectories, 5 valid distilled strategies and 3 admitted skills. All 3 admitted skills were single-step; all 3 eligible multi-step trajectories failed distillation. A further 96 bounded diagnostic calls produced no intervention meeting its predeclared qualification gate. A prospective 64-episode paired check of corrected dynamics wording then yielded 2/32 versus 3/32 successes, with 2/32 quality-eligible in both arms; its predeclared improvement gate also failed. The prompt branch is closed. No additional PPO was run. This is not a reproduction of the paper's performance numbers.
 
 ## Review these first
+
+- [Complete results summary and evidence limits](reports/06_results_summary.md)
 
 - [Latest P0, 128-episode results and 96-call follow-up analysis](reports/05_mechanism_p0.md)
 - [Earlier PPO and independent reload evidence](reports/02_ppo_smoke_test.md)
@@ -28,7 +30,7 @@ Earlier chronological reports include historical states; the latest P0 report an
 | Action-grounded prompt | 16 calls; image/text arms both 0/8 valid | Rejected, including regressions on previously correct single-step cases |
 | Generic schema decoding | 16 calls; original prompt 5/8, grounded prompt 4/8 | Grounded arm: 2/3 multi-step but only 2/5 single-step; neither met 8/8 gate |
 | Observation/example comparison | 64 single-turn calls on 16 previously failed states | Four paired arms, none met predeclared improvement gate; not 64 full episodes or held-out evaluation |
-| Accurate dynamics description | Opt-in correction implemented and CPU checked | Performance not yet tested; old frozen prompts/results retained |
+| Accurate dynamics description | 32 new boards × 2 arms = 64 full episodes / 240 calls; successes 2/32 → 3/32, quality-eligible 2/32 → 2/32 | 2 success improvements / 1 regression; failed predeclared gate, branch closed; correction remains opt-in |
 
 
 The sole successful training trajectory contained three valid actions while its reconstructed shortest path required one. It failed the frozen quality ratio of 1. The acceptance threshold was not relaxed. A small two-episode validation result does not establish a learning benefit.

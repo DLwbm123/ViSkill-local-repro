@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "1f0d4732e24cc723e9991bdb9b5e63c462c316e5",
+  "local_source_commit": "f1b6d7bf15198adb738f9c0e6d1d97f17eff3716",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "PARTIAL: 128-episode capacity run and96 follow-up calls complete; no multi-step skill qualified; no additional PPO.",
+  "status": "PARTIAL: capacity and all bounded follow-ups complete; dynamics wording gate failed; prompt branch closed; no additional PPO.",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -41,11 +41,20 @@
     },
     "followup_model_calls": 96,
     "followup_qualified": false,
-    "additional_ppo_updates": 0
+    "additional_ppo_updates": 0,
+    "dynamics_wording": {
+      "episodes": 64,
+      "model_calls": 240,
+      "original_success": 2,
+      "accurate_success": 3,
+      "quality_eligible_each_arm": 2,
+      "paired_success_improved": 2,
+      "paired_success_worsened": 1,
+      "performance_lead_gate": false
+    }
   },
-  "latest_update_scope": "P0 audit, completed128 capacity funnel,96 bounded follow-up outputs, protocols and source; full raw128 runtime collection excluded.",
-  "latest_sanitized_text_files": 12,
-  "latest_copied_files": 141,
+  "latest_update_scope": "Consolidated result summary, prospective dynamics-wording protocol/scripts, complete64 paired outcome records and exit evidence; full raw runtime artifacts excluded.",
+  "latest_copied_files": 11,
   "source_packaging_repair": {
     "files_restored": 65,
     "reason": "Prior broad models/ ignore accidentally excluded bundled veRL model implementations and tests; output directory exclusions are now root-anchored."

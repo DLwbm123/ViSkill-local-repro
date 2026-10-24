@@ -1,0 +1,1009 @@
+{
+  "summary": {
+    "original_description": {
+      "episodes": 32,
+      "success": 2,
+      "quality_eligible": 2,
+      "hole": 10,
+      "boundary_noops": 65,
+      "distillation_calls": 2,
+      "valid_distillations": 1,
+      "turn_limit_failures": 20
+    },
+    "accurate_description": {
+      "episodes": 32,
+      "success": 3,
+      "quality_eligible": 2,
+      "hole": 9,
+      "boundary_noops": 56,
+      "distillation_calls": 2,
+      "valid_distillations": 2,
+      "turn_limit_failures": 20
+    }
+  },
+  "paired": {
+    "success": {
+      "improved": 2,
+      "worsened": 1
+    },
+    "quality_eligible": {
+      "improved": 1,
+      "worsened": 1
+    }
+  },
+  "performance_lead_gate": false,
+  "description_correctness_separate": true,
+  "unique_new_boards": 32,
+  "overlap_with_capacity128": 0,
+  "model_calls": 240,
+  "training": false,
+  "admission": false,
+  "records": [
+    {
+      "seed": 40001,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 1
+    },
+    {
+      "seed": 40001,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40002,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40002,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40003,
+      "arm": "original_description",
+      "success": true,
+      "quality_eligible": true,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40003,
+      "arm": "accurate_description",
+      "success": true,
+      "quality_eligible": true,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40004,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40004,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40005,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40005,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40006,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 6,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 1
+    },
+    {
+      "seed": 40006,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 6,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 2
+    },
+    {
+      "seed": 40007,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 2
+    },
+    {
+      "seed": 40007,
+      "arm": "accurate_description",
+      "success": true,
+      "quality_eligible": true,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40008,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 2
+    },
+    {
+      "seed": 40008,
+      "arm": "original_description",
+      "success": true,
+      "quality_eligible": true,
+      "bfs": 2,
+      "actions": 2,
+      "turns": 2,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": false,
+        "reason": "relative goal condition mismatch",
+        "model_calls": 1
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40009,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40009,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40010,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40010,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 3,
+      "turns": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40011,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40011,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40012,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40012,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40013,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40013,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 3,
+      "turns": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 1
+    },
+    {
+      "seed": 40014,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 1,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40014,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40015,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 1
+    },
+    {
+      "seed": 40015,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40016,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 6,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40016,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 2,
+      "turns": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40017,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40017,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40018,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 6,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40018,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 2
+    },
+    {
+      "seed": 40019,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40019,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40020,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40020,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40021,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40021,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40022,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40022,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40023,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40023,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40024,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 2,
+      "turns": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40024,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 3,
+      "actions": 2,
+      "turns": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40025,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40025,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 4,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40026,
+      "arm": "accurate_description",
+      "success": true,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 2,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      },
+      "hole": false,
+      "boundary_noops": 1
+    },
+    {
+      "seed": 40026,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 5
+    },
+    {
+      "seed": 40027,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40027,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 4,
+      "turns": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 1
+    },
+    {
+      "seed": 40028,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 2,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40028,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    },
+    {
+      "seed": 40029,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 2,
+      "turns": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40029,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 1,
+      "actions": 2,
+      "turns": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40030,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40030,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 1,
+      "turns": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": true,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40031,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 4
+    },
+    {
+      "seed": 40031,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 5,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 2
+    },
+    {
+      "seed": 40032,
+      "arm": "accurate_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 3,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 0
+    },
+    {
+      "seed": 40032,
+      "arm": "original_description",
+      "success": false,
+      "quality_eligible": false,
+      "bfs": 2,
+      "actions": 5,
+      "turns": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      },
+      "hole": false,
+      "boundary_noops": 3
+    }
+  ],
+  "wall_seconds": 276.41389632225037
+}
