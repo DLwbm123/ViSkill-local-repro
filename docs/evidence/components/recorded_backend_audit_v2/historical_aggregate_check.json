@@ -1,0 +1,23 @@
+{
+  "original": {
+    "critic/values/mean": 3.625,
+    "critic/values/max": 9.625,
+    "critic/values/min": -3.484375,
+    "critic/returns/mean": 0.08395267277956009,
+    "critic/advantages/mean": 8.162139408796065e-08,
+    "critic/advantages/max": 3.164584159851074,
+    "critic/advantages/min": -2.695183277130127
+  },
+  "reconstructed": {
+    "critic/values/mean": 3.625,
+    "critic/values/max": 9.625,
+    "critic/values/min": -3.484375,
+    "critic/returns/mean": 0.08395267277956009,
+    "critic/advantages/mean": 8.162139408796065e-08,
+    "critic/advantages/max": 3.164584159851074,
+    "critic/advantages/min": -2.695183277130127
+  },
+  "max_abs_error": 0.0,
+  "scope": "aggregate checks support reconstruction; not proof of full historical tensor identity",
+  "vpred_mean_metric": "2.3574319 is critic-update minibatch prediction aggregation, not initial compute_values mean"
+}

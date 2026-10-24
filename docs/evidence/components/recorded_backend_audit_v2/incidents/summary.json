@@ -1,0 +1,46 @@
+{
+  "attempts": [
+    {
+      "attempt": "initial",
+      "exit_code": null,
+      "reason": "RuntimeError('non-neutral process argv')",
+      "end_unix": 1792856218.2696161,
+      "argv_violation_count": 2
+    },
+    {
+      "attempt": "repair1",
+      "exit_code": 1,
+      "reason": null,
+      "end_unix": 1792856726.1539593,
+      "argv_violation_count": 0
+    },
+    {
+      "attempt": "repair2",
+      "exit_code": 1,
+      "reason": null,
+      "end_unix": 1792857346.9624643,
+      "argv_violation_count": 0
+    },
+    {
+      "attempt": "repair3",
+      "exit_code": 1,
+      "reason": null,
+      "end_unix": 1792857720.293925,
+      "argv_violation_count": 0
+    }
+  ],
+  "retained_incidental_generated_tokens": 1,
+  "dispatch_attempts": 9,
+  "native_forward_samples": 8,
+  "adapter_preforward_failure_count": 1,
+  "cpu_dtype_analysis_error": {
+    "scope": "New audit CPU reconstruction only; not an original PPO defect",
+    "wrong_reward_dtype": "torch.bfloat16",
+    "production_reward_dtype": "torch.float32",
+    "original_reconstruction_return_error": 0.158203125,
+    "original_reconstruction_shift_error": 0.015625,
+    "additional_model_forwards": 0,
+    "thresholds_unchanged": true
+  },
+  "original_failure_logs_retained_privately": true
+}

@@ -1,0 +1,11 @@
+{
+  "completed_unix": 1792858079.9615984,
+  "score_cases": 8,
+  "training_rows": 32,
+  "new_training": false,
+  "original_zero_generation_contract_pass": false,
+  "retained_incidental_generated_tokens": 1,
+  "original_eight_dispatch_contract_pass": false,
+  "native_dispatch_attempts": 9,
+  "native_forward_samples": 8
+}

@@ -1,0 +1,6 @@
+{
+  "returned": true,
+  "time_unix": 1792857678.9426324,
+  "replicas": 2,
+  "weights": "initial retained b0 via production hybrid sync; no full-weight identity claim"
+}

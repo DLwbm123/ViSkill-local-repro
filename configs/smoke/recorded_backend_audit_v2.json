@@ -1,0 +1,89 @@
+{
+  "name": "recorded_backend_audit_v2",
+  "status": "FROZEN_CPU_PREFLIGHT_PASS",
+  "preparation_started_unix": 1792855295.0,
+  "max_seconds_including_preparation": 7200,
+  "absolute_total_deadline": 1792899507.0,
+  "maximum_additional_bytes": 500000000,
+  "write_stop_additional_bytes": 450000000,
+  "allowed_physical_gpus": [
+    3,
+    5
+  ],
+  "max_native_score_requests": 8,
+  "max_score_actor_samples": 8,
+  "max_audit_actor_samples": 32,
+  "max_audit_critic_samples": 32,
+  "max_generated_tokens": 0,
+  "max_environment_steps": 0,
+  "max_optimizer_steps": 0,
+  "max_admissions": 0,
+  "selection": "B theta0, cards context: lowest two conditional Up3 episodes with >=2 requests and lowest two natural multi episodes without retrieved card with >=2 requests; take first two requests each. No outcome or Stop filtering.",
+  "input_identity": "Exact saved prompt/response token IDs and generated/observation spans; saved initial/card PNG. Intermediate observation PNG rebuilt from recorded states with original deterministic renderer, zero env.step; saved initial and terminal pixel comparisons required. Historical intermediate tensor identity remains unverified.",
+  "probability_gate": {
+    "hard_fail": [
+      "token/image/history/span mismatch",
+      "nonfinite",
+      "nonzero completion tokens"
+    ],
+    "max_abs_logprob_error_nats": 0.05,
+    "mean_abs_logprob_error_nats": 0.005,
+    "action_probability_ratio_warning": [
+      0.8,
+      1.2
+    ],
+    "scope": "operational BF16 diagnostic, not performance or universal backend equivalence"
+  },
+  "audit": "Original B first32 ordered rows; original b0 backbone and full saved initial value head. Recompute token-level values and actor logprobs, original terminal-aggregate GAE1/1 and whiten; constant-shift, V0 and per-turn future-reward counterfactuals without updates. Reconstructed-input diagnosis; not theta4 recovery.",
+  "original_negative_ppo_result_unchanged": true,
+  "no_external_inference_or_upload": true,
+  "storage_baseline_reference_bytes": 68488794112,
+  "frozen_selected_episode_seeds": {
+    "conditional_cards": [
+      110002,
+      110074
+    ],
+    "natural_without_retrieval": [
+      61001,
+      61002
+    ]
+  },
+  "score_actor_layout": "Four original full-trajectory production layouts scored once, plus four prefixes ending at second response, total8 actor samples; original eight native per-turn prefixes. Full-history causal comparisons and second-turn prefix control reported separately.",
+  "preflight": {
+    "endpoints_pixel_checks": 72,
+    "exact_saved_response_masks_and_ids": true,
+    "training_rows": 32,
+    "environment_steps": 0,
+    "model_calls": 0
+  },
+  "audit_scope": "32 actor+32 critic forwards after native scoring, no updates. Finite probability mismatch is retained and does not make reconstructed actor-side signal audit an on-policy equivalence proof; structural scoring failure stops model work.",
+  "resource_authorization_amendment": {
+    "user_authorized_start_unix": 1792856307.0,
+    "user_authorized_hours": 12,
+    "reason": "User explicitly authorized autonomous12-hour continuation without the former GPU-time restriction; before any saved-input scoring forward. Preserve original attempt and first preparation clock.",
+    "prior_absolute_campaign_deadline": 1792858781.9046373,
+    "prior_max_seconds_including_preparation": 1800,
+    "no_changes_to_inputs_requests_gates_or_optimizer_limit": true
+  },
+  "observed_score_api_incident": {
+    "case": 0,
+    "native_request_max_new_tokens": 0,
+    "returned_output_ids": [
+      198
+    ],
+    "returned_completion_tokens": 1,
+    "disposition": "Original hard failure preserved; no rescore of completed case0. Input-token logprobs already computed are retained. Full run retains strict zero-generation-contract failure, never relabeled PASS.",
+    "repair_scope": "Score-only native scheduler calls existing TP worker skip_sample=True and input-logprob processing, synchronous uncached prefill; installed package and PPO training code unchanged. Remaining7 requests must return0 tokens.",
+    "total_native_request_cap_still": 8
+  },
+  "bounded_preforward_repair": {
+    "failed_case": 1,
+    "reason": "Adapter read ModelWorkerBatch.is_prefill_only, which only exists on ScheduleBatch. Trace proves failure before calling native model forward.",
+    "max_actual_native_prefill_forwards_unchanged": 8,
+    "native_dispatch_attempt_limit_including_failed_rpc": 9,
+    "original_eight_dispatch_contract_pass": false,
+    "retry_only_case1_once": true,
+    "other_completed_cases_must_not_be_rescored": true,
+    "all_failure_evidence_and_original_start_retained": true
+  }
+}

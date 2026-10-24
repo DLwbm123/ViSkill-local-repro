@@ -1,0 +1,5211 @@
+{
+  "rows": 32,
+  "successes": 2,
+  "original_forward_values_dtype": "torch.bfloat16",
+  "analysis_reward_dtype": "torch.float32",
+  "return_max_error": 5.327165126800537e-07,
+  "constant_value_shift": 3.630133867263794,
+  "constant_shift_whitening_max_error": 2.384185791015625e-07,
+  "generated_token_count": 6917,
+  "value_mean_generated": 3.630133867263794,
+  "return_mean_generated": 0.08395267277956009,
+  "turns": [
+    {
+      "seed": 90020,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 43,
+      "answer_token_positions": [
+        38
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.0093994140625
+      ],
+      "answer_values": [
+        -0.08349609375
+      ],
+      "answer_raw_advantages": [
+        0.10349607467651367
+      ],
+      "answer_advantages": [
+        1.6288865804672241
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.6400208473205566
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.004735135408334954
+      ]
+    },
+    {
+      "seed": 90037,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 68,
+      "answer_token_positions": [
+        61,
+        62,
+        63
+      ],
+      "answer_token_ids": [
+        397,
+        4454,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.038330078125,
+        -0.271484375,
+        -0.1103515625
+      ],
+      "answer_values": [
+        -0.185546875,
+        0.2373046875,
+        2.78125
+      ],
+      "answer_raw_advantages": [
+        0.20554685592651367,
+        -0.21730470657348633,
+        -2.7612500190734863
+      ],
+      "answer_advantages": [
+        1.6744328737258911,
+        1.4857101440429688,
+        0.3503226339817047
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.6855388879776,
+        1.496933102607727,
+        0.362248957157135
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0030780016061137706,
+        -0.0027310848236083984,
+        -0.0006439754301134278
+      ]
+    },
+    {
+      "seed": 90011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 78,
+      "answer_token_positions": [
+        71,
+        72,
+        73
+      ],
+      "answer_token_ids": [
+        397,
+        4454,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.05615234375,
+        -1.7734375,
+        -0.6015625
+      ],
+      "answer_values": [
+        0.53515625,
+        0.90625,
+        2.328125
+      ],
+      "answer_raw_advantages": [
+        -0.49515628814697266,
+        -0.8662500381469727,
+        -2.2881250381469727
+      ],
+      "answer_advantages": [
+        1.3617023229599,
+        1.1960794925689697,
+        0.5614829063415527
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522,
+        -0.3485121428966522,
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.3730021715164185,
+        1.207482099533081,
+        0.5732786059379578
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.001127237022317798,
+        -0.000990132030272326,
+        -0.00046480373041519265
+      ]
+    },
+    {
+      "seed": 90011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 197,
+      "generated_end": 270,
+      "answer_token_positions": [
+        263,
+        264,
+        265
+      ],
+      "answer_token_ids": [
+        397,
+        4454,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.0005645751953125,
+        -0.0023956298828125,
+        -0.01220703125
+      ],
+      "answer_values": [
+        1.0859375,
+        0.287109375,
+        3.109375
+      ],
+      "answer_raw_advantages": [
+        -1.0459375381469727,
+        -0.24710941314697266,
+        -3.0693750381469727
+      ],
+      "answer_advantages": [
+        1.115883231163025,
+        1.4724080562591553,
+        0.2128034383058548
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522,
+        -0.3485121428966522,
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.1184146404266357,
+        1.474718451499939,
+        0.21589431166648865
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009237443966581332,
+        -0.001218880841274135,
+        -0.00017616178667703212
+      ]
+    },
+    {
+      "seed": 91282,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 98,
+      "answer_token_positions": [
+        93
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -1.75
+      ],
+      "answer_values": [
+        -0.1708984375
+      ],
+      "answer_raw_advantages": [
+        0.21089839935302734
+      ],
+      "answer_advantages": [
+        1.6768213510513306
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.6879258155822754
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0012476349338179542
+      ]
+    },
+    {
+      "seed": 91282,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 217,
+      "generated_end": 287,
+      "answer_token_positions": [
+        282
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -2.609375
+      ],
+      "answer_values": [
+        -0.2412109375
+      ],
+      "answer_raw_advantages": [
+        0.28121089935302734
+      ],
+      "answer_advantages": [
+        1.7082024812698364
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.71036696434021
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.001270983989040057
+      ]
+    },
+    {
+      "seed": 90009,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 61,
+      "answer_token_positions": [
+        56
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.8203125
+      ],
+      "answer_values": [
+        0.5390625
+      ],
+      "answer_raw_advantages": [
+        -0.43906211853027344
+      ],
+      "answer_advantages": [
+        1.3867377042770386
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.398021936416626
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006692749538016596
+      ]
+    },
+    {
+      "seed": 90009,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 180,
+      "generated_end": 227,
+      "answer_token_positions": [
+        222
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.0023651123046875
+      ],
+      "answer_values": [
+        0.65625
+      ],
+      "answer_raw_advantages": [
+        -0.5562496185302734
+      ],
+      "answer_advantages": [
+        1.3344357013702393
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.3368316888809204
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006440326744064862
+      ]
+    },
+    {
+      "seed": 90009,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 346,
+      "generated_end": 395,
+      "answer_token_positions": [
+        390
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.0263671875
+      ],
+      "answer_values": [
+        0.1494140625
+      ],
+      "answer_raw_advantages": [
+        -0.04941368103027344
+      ],
+      "answer_advantages": [
+        1.5606415271759033
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.5539766550064087
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007532053702586407
+      ]
+    },
+    {
+      "seed": 90009,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 4,
+      "answer": "Left, Left, Left, Left, Left",
+      "immediate_reward": 0.02,
+      "generated_start": 514,
+      "generated_end": 563,
+      "answer_token_positions": [
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        13727,
+        11,
+        13727,
+        11,
+        13727,
+        11,
+        13727
+      ],
+      "answer_old_log_probs": [
+        -0.00469970703125,
+        -3.65625,
+        -0.380859375,
+        -1.6015625,
+        -0.2138671875,
+        -1.3203125,
+        -0.267578125,
+        -0.318359375,
+        -0.453125
+      ],
+      "answer_values": [
+        -0.06005859375,
+        2.828125,
+        3.0625,
+        2.625,
+        1.8046875,
+        2.765625,
+        1.78125,
+        2.828125,
+        1.796875
+      ],
+      "answer_raw_advantages": [
+        0.16005897521972656,
+        -2.7281246185302734,
+        -2.9624996185302734,
+        -2.5249996185302734,
+        -1.7046871185302734,
+        -2.6656246185302734,
+        -1.6812496185302734,
+        -2.7281246185302734,
+        -1.6968746185302734
+      ],
+      "answer_advantages": [
+        1.6541311740875244,
+        0.36510682106018066,
+        0.26050296425819397,
+        0.45576348900794983,
+        0.8218768835067749,
+        0.39300116896629333,
+        0.8323373198509216,
+        0.36510682106018066,
+        0.8253636956214905
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6384878158569336,
+        0.35026201605796814,
+        0.24572297930717468,
+        0.4408625066280365,
+        0.8067491054534912,
+        0.37813907861709595,
+        0.8172030448913574,
+        0.35026201605796814,
+        0.8102337718009949
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007983258562198476,
+        -0.00017620985572402542,
+        -0.0001257253688504797,
+        -0.00021996307384553564,
+        -0.0003966587275611848,
+        -0.00018967237884473618,
+        -0.00040170720070025173,
+        -0.00017620985572402542,
+        -0.0003983415519408738
+      ]
+    },
+    {
+      "seed": 90009,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 5,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 694,
+      "generated_end": 747,
+      "answer_token_positions": [
+        742
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.1298828125
+      ],
+      "answer_values": [
+        -0.1953125
+      ],
+      "answer_raw_advantages": [
+        0.29531240463256836
+      ],
+      "answer_advantages": [
+        1.71449613571167
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.689894676208496
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008274595249573697
+      ]
+    },
+    {
+      "seed": 90004,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 61,
+      "answer_token_positions": [
+        56
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.00732421875
+      ],
+      "answer_values": [
+        -0.4765625
+      ],
+      "answer_raw_advantages": [
+        0.5765628814697266
+      ],
+      "answer_advantages": [
+        1.8400208950042725
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.851024866104126
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007641282786562593
+      ]
+    },
+    {
+      "seed": 90004,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 180,
+      "generated_end": 236,
+      "answer_token_positions": [
+        231
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.01123046875
+      ],
+      "answer_values": [
+        -0.287109375
+      ],
+      "answer_raw_advantages": [
+        0.38710975646972656
+      ],
+      "answer_advantages": [
+        1.7554662227630615
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7576017379760742
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007290142121109059
+      ]
+    },
+    {
+      "seed": 90004,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Right, Right",
+      "immediate_reward": 0.02,
+      "generated_start": 355,
+      "generated_end": 410,
+      "answer_token_positions": [
+        403,
+        404,
+        405
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        10083
+      ],
+      "answer_old_log_probs": [
+        -0.00469970703125,
+        -4.15625,
+        -0.033203125
+      ],
+      "answer_values": [
+        -0.56640625,
+        2.40625,
+        3.34375
+      ],
+      "answer_raw_advantages": [
+        0.6664066314697266,
+        -2.3062496185302734,
+        -3.2437496185302734
+      ],
+      "answer_advantages": [
+        1.8801190853118896,
+        0.5533937215805054,
+        0.13497836887836456
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.8732564449310303,
+        0.5473531484603882,
+        0.12919701635837555
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007807803510431436,
+        -0.00022981466843044243,
+        -5.6054139899653056e-05
+      ]
+    },
+    {
+      "seed": 90004,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 4,
+      "answer": "Right, Right",
+      "immediate_reward": 0.02,
+      "generated_start": 532,
+      "generated_end": 601,
+      "answer_token_positions": [
+        594,
+        595,
+        596
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        10083
+      ],
+      "answer_old_log_probs": [
+        -0.0015716552734375,
+        -1.40625,
+        -0.006134033203125
+      ],
+      "answer_values": [
+        -0.6484375,
+        2.28125,
+        2.296875
+      ],
+      "answer_raw_advantages": [
+        0.7484378814697266,
+        -2.1812496185302734,
+        -2.1968746185302734
+      ],
+      "answer_advantages": [
+        1.9167304039001465,
+        0.6091824173927307,
+        0.6022088527679443
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.9009242057800293,
+        0.5941864252090454,
+        0.5872171521186829
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007959843870017219,
+        -0.0002529827314753865,
+        -0.0002500867328770533
+      ]
+    },
+    {
+      "seed": 90004,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 5,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 723,
+      "generated_end": 783,
+      "answer_token_positions": [
+        778
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.000743865966796875
+      ],
+      "answer_values": [
+        -0.1796875
+      ],
+      "answer_raw_advantages": [
+        0.27968740463256836
+      ],
+      "answer_advantages": [
+        1.7075225114822388
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6829254627227783
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007091040330075742
+      ]
+    },
+    {
+      "seed": 90772,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Right, Down, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 58,
+      "answer_token_positions": [
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        6285,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.0155029296875,
+        -0.00616455078125,
+        -0.019287109375,
+        -4.25,
+        -0.01068115234375
+      ],
+      "answer_values": [
+        -0.515625,
+        3.140625,
+        1.671875,
+        2.375,
+        2.359375
+      ],
+      "answer_raw_advantages": [
+        0.5356254577636719,
+        -3.120624542236328,
+        -1.6518745422363281,
+        -2.354999542236328,
+        -2.339374542236328
+      ],
+      "answer_advantages": [
+        1.8217501640319824,
+        0.1899302899837494,
+        0.8454476594924927,
+        0.5316361784934998,
+        0.5386097431182861
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.8327646255493164,
+        0.20195576548576355,
+        0.8570670485496521,
+        0.5434499382972717,
+        0.5504192113876343
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009488282104333242,
+        -9.89220260332028e-05,
+        -0.0004403373226523399,
+        -0.00027689384296536446,
+        -0.0002805259078741074
+      ]
+    },
+    {
+      "seed": 90772,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Done",
+      "immediate_reward": 0.0,
+      "generated_start": 183,
+      "generated_end": 223,
+      "answer_token_positions": [
+        218
+      ],
+      "answer_token_ids": [
+        17453
+      ],
+      "answer_old_log_probs": [
+        -1.2890625
+      ],
+      "answer_values": [
+        -0.76953125
+      ],
+      "answer_raw_advantages": [
+        0.7895312309265137
+      ],
+      "answer_advantages": [
+        1.9350707530975342
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.937094807624817
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0010078493505716324
+      ]
+    },
+    {
+      "seed": 90772,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Done",
+      "immediate_reward": 0.0,
+      "generated_start": 340,
+      "generated_end": 374,
+      "answer_token_positions": [
+        369
+      ],
+      "answer_token_ids": [
+        17453
+      ],
+      "answer_old_log_probs": [
+        -0.00860595703125
+      ],
+      "answer_values": [
+        0.07421875
+      ],
+      "answer_raw_advantages": [
+        -0.05421876907348633
+      ],
+      "answer_advantages": [
+        1.5584969520568848
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.5607541799545288
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008117171625296274
+      ]
+    },
+    {
+      "seed": 90772,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Done",
+      "immediate_reward": 0.0,
+      "generated_start": 491,
+      "generated_end": 542,
+      "answer_token_positions": [
+        537
+      ],
+      "answer_token_ids": [
+        17453
+      ],
+      "answer_old_log_probs": [
+        -0.0034027099609375
+      ],
+      "answer_values": [
+        0.43359375
+      ],
+      "answer_raw_advantages": [
+        -0.41359376907348633
+      ],
+      "answer_advantages": [
+        1.3981044292449951
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.400460958480835
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007281793902317683
+      ]
+    },
+    {
+      "seed": 90772,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Done",
+      "immediate_reward": 0.0,
+      "generated_start": 659,
+      "generated_end": 716,
+      "answer_token_positions": [
+        711
+      ],
+      "answer_token_ids": [
+        17453
+      ],
+      "answer_old_log_probs": [
+        -0.008056640625
+      ],
+      "answer_values": [
+        0.421875
+      ],
+      "answer_raw_advantages": [
+        -0.40187501907348633
+      ],
+      "answer_advantages": [
+        1.403334617614746
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.405687928199768
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007309034466743469
+      ]
+    },
+    {
+      "seed": 90398,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 42,
+      "answer_token_positions": [
+        37
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.000507354736328125
+      ],
+      "answer_values": [
+        -0.61328125
+      ],
+      "answer_raw_advantages": [
+        0.6932811737060547
+      ],
+      "answer_advantages": [
+        1.892113447189331
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.9030851125717163
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006796384508582367
+      ]
+    },
+    {
+      "seed": 90398,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "",
+      "immediate_reward": 0.0,
+      "generated_start": 161,
+      "generated_end": 194,
+      "answer_token_positions": [],
+      "answer_token_ids": [],
+      "answer_old_log_probs": [],
+      "answer_values": [],
+      "answer_raw_advantages": [],
+      "answer_advantages": [],
+      "answer_zero_baseline_advantages": [],
+      "answer_per_turn_advantages": [],
+      "initial_pg_loss_coefficients_original_mini8": []
+    },
+    {
+      "seed": 90398,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Down, Swivel Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 311,
+      "generated_end": 392,
+      "answer_token_positions": [
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        4492,
+        20528,
+        13727,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.58203125,
+        -0.2255859375,
+        -1.734375,
+        -0.0025482177734375,
+        -1.828125,
+        -1.375,
+        -0.2177734375
+      ],
+      "answer_values": [
+        0.55859375,
+        2.3125,
+        1.84375,
+        -0.90625,
+        3.5,
+        2.734375,
+        2.609375
+      ],
+      "answer_raw_advantages": [
+        -0.4785938262939453,
+        -2.2325000762939453,
+        -1.7637500762939453,
+        0.9862499237060547,
+        -3.4200000762939453,
+        -2.6543750762939453,
+        -2.5293750762939453
+      ],
+      "answer_advantages": [
+        1.3690942525863647,
+        0.5863088369369507,
+        0.7955165505409241,
+        2.0228681564331055,
+        0.0563160739839077,
+        0.398021936416626,
+        0.4538106620311737
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.3714691400527954,
+        0.5891687870025635,
+        0.7982468008995056,
+        2.0248379707336426,
+        0.059504322707653046,
+        0.4009985029697418,
+        0.4567526578903198
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0004917723608428035,
+        -0.00021059943855493917,
+        -0.0002857458874069411,
+        -0.0007266049412475236,
+        -2.0228474850541558e-05,
+        -0.0001429676495749375,
+        -0.00016300670331579516
+      ]
+    },
+    {
+      "seed": 90398,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 511,
+      "generated_end": 591,
+      "answer_token_positions": [
+        586
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.263671875
+      ],
+      "answer_values": [
+        0.98828125
+      ],
+      "answer_raw_advantages": [
+        -0.9082813262939453
+      ],
+      "answer_advantages": [
+        1.1773205995559692
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.1708934307098389
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0004228881463922303
+      ]
+    },
+    {
+      "seed": 90398,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 710,
+      "generated_end": 822,
+      "answer_token_positions": [
+        817
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.091796875
+      ],
+      "answer_values": [
+        0.0830078125
+      ],
+      "answer_raw_advantages": [
+        -0.0030078887939453125
+      ],
+      "answer_advantages": [
+        1.5813528299331665
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.5657545328140259
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005680146659242695
+      ]
+    },
+    {
+      "seed": 91305,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 91,
+      "answer_token_positions": [
+        86
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.006805419921875
+      ],
+      "answer_values": [
+        0.208984375
+      ],
+      "answer_raw_advantages": [
+        -0.10898399353027344
+      ],
+      "answer_advantages": [
+        1.5340547561645508
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.5452476739883423
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005059547348827675
+      ]
+    },
+    {
+      "seed": 91305,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 210,
+      "generated_end": 266,
+      "answer_token_positions": [
+        261
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.002166748046875
+      ],
+      "answer_values": [
+        -0.11669921875
+      ],
+      "answer_raw_advantages": [
+        0.21669960021972656
+      ],
+      "answer_advantages": [
+        1.679410457611084
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6815927028656006
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005538952696606478
+      ]
+    },
+    {
+      "seed": 91305,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 385,
+      "generated_end": 469,
+      "answer_token_positions": [
+        464
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.359375
+      ],
+      "answer_values": [
+        0.16796875
+      ],
+      "answer_raw_advantages": [
+        -0.06796836853027344
+      ],
+      "answer_advantages": [
+        1.5523604154586792
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.5457006692886353
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.000511992221457348
+      ]
+    },
+    {
+      "seed": 91305,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 588,
+      "generated_end": 683,
+      "answer_token_positions": [
+        678
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00182342529296875
+      ],
+      "answer_values": [
+        0.1435546875
+      ],
+      "answer_raw_advantages": [
+        -0.04355430603027344
+      ],
+      "answer_advantages": [
+        1.5632566213607788
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.547669529914856
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005155859569131857
+      ]
+    },
+    {
+      "seed": 91305,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 802,
+      "generated_end": 855,
+      "answer_token_positions": [
+        850
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.000591278076171875
+      ],
+      "answer_values": [
+        -0.267578125
+      ],
+      "answer_raw_advantages": [
+        0.36757802963256836
+      ],
+      "answer_advantages": [
+        1.746748924255371
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7221275568008423
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005761045264694496
+      ]
+    },
+    {
+      "seed": 90931,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 45,
+      "answer_token_positions": [
+        40
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.0283203125
+      ],
+      "answer_values": [
+        -0.6015625
+      ],
+      "answer_raw_advantages": [
+        0.6215629577636719
+      ],
+      "answer_advantages": [
+        1.8601049184799194
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.8710955381393433
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009300524592399598
+      ]
+    },
+    {
+      "seed": 90931,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "G, or stop at the goal if placed there.",
+      "immediate_reward": 0.0,
+      "generated_start": 164,
+      "generated_end": 227,
+      "answer_token_positions": [
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223
+      ],
+      "answer_token_ids": [
+        70294,
+        11,
+        476,
+        2936,
+        518,
+        279,
+        5795,
+        421,
+        9099,
+        1052,
+        3918
+      ],
+      "answer_old_log_probs": [
+        -4.1875,
+        -5.875,
+        -4.46875,
+        -4.34375,
+        -2.03125,
+        -0.66796875,
+        -0.90625,
+        -0.53125,
+        -8.0625,
+        -0.90625,
+        -1.2109375
+      ],
+      "answer_values": [
+        -0.60546875,
+        1.421875,
+        4.0625,
+        3.984375,
+        5.125,
+        4.71875,
+        4.3125,
+        5.1875,
+        6.46875,
+        5.0,
+        5.25
+      ],
+      "answer_raw_advantages": [
+        0.6254692077636719,
+        -1.4018745422363281,
+        -4.042499542236328,
+        -3.964374542236328,
+        -5.104999542236328,
+        -4.698749542236328,
+        -4.292499542236328,
+        -5.167499542236328,
+        -6.448749542236328,
+        -4.979999542236328,
+        -5.229999542236328
+      ],
+      "answer_advantages": [
+        1.8618483543395996,
+        0.9570251107215881,
+        -0.22151148319244385,
+        -0.1866435408592224,
+        -0.6957155466079712,
+        -0.5144022107124329,
+        -0.3330889046192169,
+        -0.7236099243164062,
+        -1.2954442501068115,
+        -0.6399268507957458,
+        -0.7515042424201965
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.8639174699783325,
+        0.959654688835144,
+        -0.2181517481803894,
+        -0.18330541253089905,
+        -0.6920620203018188,
+        -0.5108610391616821,
+        -0.3296600580215454,
+        -0.719939112663269,
+        -1.2914191484451294,
+        -0.6363078951835632,
+        -0.7478162050247192
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009309241771697998,
+        -0.0004785125553607941,
+        0.00011075574159622192,
+        9.33217704296112e-05,
+        0.0003478577733039856,
+        0.0002572011053562164,
+        0.00016654445230960847,
+        0.0003618049621582031,
+        0.0006477221250534058,
+        0.00031996342539787295,
+        0.00037575212121009825
+      ]
+    },
+    {
+      "seed": 90931,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "G, stop at the goal if started there.",
+      "immediate_reward": 0.0,
+      "generated_start": 344,
+      "generated_end": 394,
+      "answer_token_positions": [
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390
+      ],
+      "answer_token_ids": [
+        70294,
+        11,
+        2936,
+        518,
+        279,
+        5795,
+        421,
+        3855,
+        1052,
+        3918
+      ],
+      "answer_old_log_probs": [
+        -0.7734375,
+        -3.296875,
+        -3.328125,
+        -0.12255859375,
+        -0.021240234375,
+        -0.00677490234375,
+        -0.384765625,
+        -12.25,
+        -0.96484375,
+        -0.1484375
+      ],
+      "answer_values": [
+        -0.89453125,
+        3.65625,
+        4.34375,
+        4.53125,
+        3.671875,
+        4.53125,
+        5.15625,
+        6.21875,
+        5.84375,
+        5.53125
+      ],
+      "answer_raw_advantages": [
+        0.9145317077636719,
+        -3.636249542236328,
+        -4.323749542236328,
+        -4.511249542236328,
+        -3.651874542236328,
+        -4.511249542236328,
+        -5.136249542236328,
+        -6.198749542236328,
+        -5.823749542236328,
+        -5.511249542236328
+      ],
+      "answer_advantages": [
+        1.9908597469329834,
+        -0.04019816219806671,
+        -0.34703609347343445,
+        -0.43071916699409485,
+        -0.04717175289988518,
+        -0.43071916699409485,
+        -0.7096627354621887,
+        -1.1838668584823608,
+        -1.01650071144104,
+        -0.8770288825035095
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.9928488731384277,
+        -0.03695075958967209,
+        -0.3435986042022705,
+        -0.4272298216819763,
+        -0.04392002895474434,
+        -0.4272298216819763,
+        -0.706000566482544,
+        -1.1799108982086182,
+        -1.0126484632492065,
+        -0.8732630014419556
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009954298734664918,
+        2.0099081099033354e-05,
+        0.00017351804673671723,
+        0.00021535958349704743,
+        2.358587644994259e-05,
+        0.00021535958349704743,
+        0.0003548313677310944,
+        0.0005919334292411805,
+        0.00050825035572052,
+        0.00043851444125175474
+      ]
+    },
+    {
+      "seed": 90931,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "",
+      "immediate_reward": 0.0,
+      "generated_start": 511,
+      "generated_end": 560,
+      "answer_token_positions": [],
+      "answer_token_ids": [],
+      "answer_old_log_probs": [],
+      "answer_values": [],
+      "answer_raw_advantages": [],
+      "answer_advantages": [],
+      "answer_zero_baseline_advantages": [],
+      "answer_per_turn_advantages": [],
+      "initial_pg_loss_coefficients_original_mini8": []
+    },
+    {
+      "seed": 90931,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "stop",
+      "immediate_reward": 0.0,
+      "generated_start": 677,
+      "generated_end": 720,
+      "answer_token_positions": [
+        715
+      ],
+      "answer_token_ids": [
+        9495
+      ],
+      "answer_old_log_probs": [
+        -0.69140625
+      ],
+      "answer_values": [
+        0.11474609375
+      ],
+      "answer_raw_advantages": [
+        -0.09474611282348633
+      ],
+      "answer_advantages": [
+        1.5404092073440552
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.542677640914917
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007702046036720275
+      ]
+    },
+    {
+      "seed": 90570,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 48,
+      "answer_token_positions": [
+        43
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00604248046875
+      ],
+      "answer_values": [
+        -0.7578125
+      ],
+      "answer_raw_advantages": [
+        0.8578128814697266
+      ],
+      "answer_advantages": [
+        1.9655455350875854
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.9764708280563354
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0010968446066336973
+      ]
+    },
+    {
+      "seed": 90570,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 167,
+      "generated_end": 215,
+      "answer_token_positions": [
+        210
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.001556396484375
+      ],
+      "answer_values": [
+        -0.78515625
+      ],
+      "answer_raw_advantages": [
+        0.8851566314697266
+      ],
+      "answer_advantages": [
+        1.9777493476867676
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.9797462224960327
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0011036547699144908
+      ]
+    },
+    {
+      "seed": 90570,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 334,
+      "generated_end": 383,
+      "answer_token_positions": [
+        378
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.0001678466796875
+      ],
+      "answer_values": [
+        -0.94921875
+      ],
+      "answer_raw_advantages": [
+        1.0492186546325684
+      ],
+      "answer_advantages": [
+        2.050971746444702
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        2.0440030097961426
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0011445154835070883
+      ]
+    },
+    {
+      "seed": 90570,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 502,
+      "generated_end": 544,
+      "answer_token_positions": [
+        539
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00019073486328125
+      ],
+      "answer_values": [
+        -0.8671875
+      ],
+      "answer_raw_advantages": [
+        0.9671874046325684
+      ],
+      "answer_advantages": [
+        2.0143604278564453
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.998494029045105
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0011240850601877486
+      ]
+    },
+    {
+      "seed": 90570,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 663,
+      "generated_end": 700,
+      "answer_token_positions": [
+        695
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00010061264038085938
+      ],
+      "answer_values": [
+        -0.95703125
+      ],
+      "answer_raw_advantages": [
+        1.0570311546325684
+      ],
+      "answer_advantages": [
+        2.0544586181640625
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        2.029646396636963
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0011464612824576242
+      ]
+    },
+    {
+      "seed": 90007,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 100,
+      "answer_token_positions": [
+        95
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.010498046875
+      ],
+      "answer_values": [
+        -0.080078125
+      ],
+      "answer_raw_advantages": [
+        0.10007858276367188
+      ],
+      "answer_advantages": [
+        1.6273614168167114
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.6384962797164917
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006540841707462666
+      ]
+    },
+    {
+      "seed": 90007,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Stop;",
+      "immediate_reward": 0.0,
+      "generated_start": 219,
+      "generated_end": 282,
+      "answer_token_positions": [
+        277,
+        278
+      ],
+      "answer_token_ids": [
+        10674,
+        11347
+      ],
+      "answer_old_log_probs": [
+        -2.703125,
+        -7.65625
+      ],
+      "answer_values": [
+        0.375,
+        4.34375
+      ],
+      "answer_raw_advantages": [
+        -0.35500001907348633,
+        -4.323750019073486
+      ],
+      "answer_advantages": [
+        1.42425537109375,
+        -0.34703630208969116
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.426595687866211,
+        -0.3435986042022705
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005724499079958802,
+        0.00013948404424826816
+      ]
+    },
+    {
+      "seed": 90007,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "end;",
+      "immediate_reward": 0.0,
+      "generated_start": 399,
+      "generated_end": 456,
+      "answer_token_positions": [
+        451,
+        452
+      ],
+      "answer_token_ids": [
+        408,
+        11347
+      ],
+      "answer_old_log_probs": [
+        -8.8125,
+        -0.00494384765625
+      ],
+      "answer_values": [
+        -1.1484375,
+        3.640625
+      ],
+      "answer_raw_advantages": [
+        1.1684374809265137,
+        -3.6206250190734863
+      ],
+      "answer_advantages": [
+        2.104180335998535,
+        -0.033224787563085556
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        2.1060996055603027,
+        -0.029981490224599838
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.000845731646301662,
+        1.3354014293844677e-05
+      ]
+    },
+    {
+      "seed": 90007,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "end;",
+      "immediate_reward": 0.0,
+      "generated_start": 573,
+      "generated_end": 622,
+      "answer_token_positions": [
+        617,
+        618
+      ],
+      "answer_token_ids": [
+        408,
+        11347
+      ],
+      "answer_old_log_probs": [
+        -0.029052734375,
+        -0.002593994140625
+      ],
+      "answer_values": [
+        -1.1484375,
+        4.40625
+      ],
+      "answer_raw_advantages": [
+        1.1684374809265137,
+        -4.386250019073486
+      ],
+      "answer_advantages": [
+        2.104180335998535,
+        -0.37493064999580383
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        2.1060996055603027,
+        -0.3714756667613983
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.000845731646301662,
+        0.0001506955988729115
+      ]
+    },
+    {
+      "seed": 90007,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "end;",
+      "immediate_reward": 0.0,
+      "generated_start": 739,
+      "generated_end": 781,
+      "answer_token_positions": [
+        776,
+        777
+      ],
+      "answer_token_ids": [
+        408,
+        11347
+      ],
+      "answer_old_log_probs": [
+        -0.1845703125,
+        -0.00106048583984375
+      ],
+      "answer_values": [
+        -1.515625,
+        4.375
+      ],
+      "answer_raw_advantages": [
+        1.5356249809265137,
+        -4.355000019073486
+      ],
+      "answer_advantages": [
+        2.268059730529785,
+        -0.3609834909439087
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        2.2698774337768555,
+        -0.3575371205806732
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009115995701486274,
+        0.00014508982754980252
+      ]
+    },
+    {
+      "seed": 90012,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 53,
+      "answer_token_positions": [
+        46,
+        47,
+        48
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.003997802734375,
+        -2.125,
+        -2.4375
+      ],
+      "answer_values": [
+        -0.384765625,
+        2.4375,
+        1.9375
+      ],
+      "answer_raw_advantages": [
+        0.4447650909423828,
+        -2.377500534057617,
+        -1.8775005340576172
+      ],
+      "answer_advantages": [
+        1.781198263168335,
+        0.5215937495231628,
+        0.744748592376709
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569,
+        -0.1899266391992569,
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.7922382354736328,
+        0.5334141850471497,
+        0.7564308047294617
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008731364035138897,
+        -0.00025568321055057,
+        -0.00036507283940034755
+      ]
+    },
+    {
+      "seed": 90012,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 175,
+      "generated_end": 225,
+      "answer_token_positions": [
+        220
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.06005859375
+      ],
+      "answer_values": [
+        -0.330078125
+      ],
+      "answer_raw_advantages": [
+        0.3900775909423828
+      ],
+      "answer_advantages": [
+        1.7567907571792603
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.7589253187179565
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008611719397937551
+      ]
+    },
+    {
+      "seed": 90012,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 344,
+      "generated_end": 409,
+      "answer_token_positions": [
+        404
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.0986328125
+      ],
+      "answer_values": [
+        -0.00141143798828125
+      ],
+      "answer_raw_advantages": [
+        0.06141090393066406
+      ],
+      "answer_advantages": [
+        1.6101036071777344
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.6034083366394043
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007892664741067326
+      ]
+    },
+    {
+      "seed": 90012,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 4,
+      "answer": "Goal reached",
+      "immediate_reward": 0.0,
+      "generated_start": 528,
+      "generated_end": 568,
+      "answer_token_positions": [
+        562,
+        563
+      ],
+      "answer_token_ids": [
+        39992,
+        8643
+      ],
+      "answer_old_log_probs": [
+        -1.7109375,
+        -2.953125
+      ],
+      "answer_values": [
+        0.240234375,
+        1.5859375
+      ],
+      "answer_raw_advantages": [
+        -0.1802349090576172,
+        -1.5259380340576172
+      ],
+      "answer_advantages": [
+        1.5022547245025635,
+        0.9016543626785278
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569,
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.4867056608200073,
+        0.8864773511886597
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007363993747561586,
+        -0.0004419874326855529
+      ]
+    },
+    {
+      "seed": 90012,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 5,
+      "answer": "Stop",
+      "immediate_reward": 0.0,
+      "generated_start": 685,
+      "generated_end": 732,
+      "answer_token_positions": [
+        727
+      ],
+      "answer_token_ids": [
+        10674
+      ],
+      "answer_old_log_probs": [
+        -0.466796875
+      ],
+      "answer_values": [
+        -0.1806640625
+      ],
+      "answer_raw_advantages": [
+        0.24066400527954102
+      ],
+      "answer_advantages": [
+        1.6901060342788696
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.6744403839111328
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008284833501367008
+      ]
+    },
+    {
+      "seed": 90003,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 73,
+      "answer_token_positions": [
+        66,
+        67,
+        68
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.365234375,
+        -0.90625,
+        -0.23828125
+      ],
+      "answer_values": [
+        0.07177734375,
+        2.34375,
+        2.25
+      ],
+      "answer_raw_advantages": [
+        -0.011777877807617188,
+        -2.283750534057617,
+        -2.190000534057617
+      ],
+      "answer_advantages": [
+        1.5774387121200562,
+        0.5634352564811707,
+        0.6052768230438232
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569,
+        -0.1899266391992569,
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.588605284690857,
+        0.5752300024032593,
+        0.6170456409454346
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0010216571969689483,
+        -0.00036491920756552505,
+        -0.00039201866777449694
+      ]
+    },
+    {
+      "seed": 90003,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 195,
+      "generated_end": 251,
+      "answer_token_positions": [
+        246
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.56640625
+      ],
+      "answer_values": [
+        0.56640625
+      ],
+      "answer_raw_advantages": [
+        -0.5064067840576172
+      ],
+      "answer_advantages": [
+        1.3566811084747314
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.359063744544983
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008786794744007328
+      ]
+    },
+    {
+      "seed": 90003,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 370,
+      "generated_end": 434,
+      "answer_token_positions": [
+        429
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.578125
+      ],
+      "answer_values": [
+        -0.1845703125
+      ],
+      "answer_raw_advantages": [
+        0.24457025527954102
+      ],
+      "answer_advantages": [
+        1.6918494701385498
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.6851032972335815
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.001095757428846211
+      ]
+    },
+    {
+      "seed": 90021,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 40,
+      "answer_token_positions": [
+        35
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.068359375
+      ],
+      "answer_values": [
+        -0.423828125
+      ],
+      "answer_raw_advantages": [
+        0.46382808685302734
+      ],
+      "answer_advantages": [
+        1.7897063493728638
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.8007409572601318
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.002663253496090571
+      ]
+    },
+    {
+      "seed": 90021,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 159,
+      "generated_end": 203,
+      "answer_token_positions": [
+        198
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.01287841796875
+      ],
+      "answer_values": [
+        -0.423828125
+      ],
+      "answer_raw_advantages": [
+        0.46382808685302734
+      ],
+      "answer_advantages": [
+        1.7897063493728638
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.7918201684951782
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.002663253496090571
+      ]
+    },
+    {
+      "seed": 90045,
+      "category": "single_BFS1",
+      "success": true,
+      "turn": 1,
+      "answer": "Right",
+      "immediate_reward": 1.02,
+      "generated_start": 0,
+      "generated_end": 63,
+      "answer_token_positions": [
+        58
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.040771484375
+      ],
+      "answer_values": [
+        -0.2578125
+      ],
+      "answer_raw_advantages": [
+        1.2778124809265137
+      ],
+      "answer_advantages": [
+        2.1529953479766846
+      ],
+      "answer_zero_baseline_advantages": [
+        7.422177314758301
+      ],
+      "answer_per_turn_advantages": [
+        2.163804769515991
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.004271816166620406
+      ]
+    },
+    {
+      "seed": 90013,
+      "category": "single_BFS1",
+      "success": true,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 1.02,
+      "generated_start": 0,
+      "generated_end": 52,
+      "answer_token_positions": [
+        47
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.0308837890625
+      ],
+      "answer_values": [
+        -1.1171875
+      ],
+      "answer_raw_advantages": [
+        2.1371874809265137
+      ],
+      "answer_advantages": [
+        2.5365428924560547
+      ],
+      "answer_zero_baseline_advantages": [
+        7.422177314758301
+      ],
+      "answer_per_turn_advantages": [
+        2.547114610671997
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.006097458876096285
+      ]
+    },
+    {
+      "seed": 90001,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 65,
+      "answer_token_positions": [
+        60
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.107421875
+      ],
+      "answer_values": [
+        -0.0269775390625
+      ],
+      "answer_raw_advantages": [
+        0.04697751998901367
+      ],
+      "answer_advantages": [
+        1.6036618947982788
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.614811658859253
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0030839651823043822
+      ]
+    },
+    {
+      "seed": 90017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 54,
+      "answer_token_positions": [
+        49
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.0036773681640625
+      ],
+      "answer_values": [
+        -0.384765625
+      ],
+      "answer_raw_advantages": [
+        0.42476558685302734
+      ],
+      "answer_advantages": [
+        1.7722723484039307
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.7833176851272583
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0021934063717870427
+      ]
+    },
+    {
+      "seed": 90017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 173,
+      "generated_end": 220,
+      "answer_token_positions": [
+        215
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00360107421875
+      ],
+      "answer_values": [
+        -0.4921875
+      ],
+      "answer_raw_advantages": [
+        0.5321874618530273
+      ],
+      "answer_advantages": [
+        1.8202158212661743
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.8223106861114502
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.002252742353052196
+      ]
+    },
+    {
+      "seed": 90015,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 79,
+      "answer_token_positions": [
+        74
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.00174713134765625
+      ],
+      "answer_values": [
+        0.07666015625
+      ],
+      "answer_raw_advantages": [
+        -0.016660690307617188
+      ],
+      "answer_advantages": [
+        1.5752595663070679
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.5864275693893433
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007134327745955924
+      ]
+    },
+    {
+      "seed": 90015,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 198,
+      "generated_end": 289,
+      "answer_token_positions": [
+        284
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.00167083740234375
+      ],
+      "answer_values": [
+        -0.61328125
+      ],
+      "answer_raw_advantages": [
+        0.6732807159423828
+      ],
+      "answer_advantages": [
+        1.8831870555877686
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.8852434158325195
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008528926882190981
+      ]
+    },
+    {
+      "seed": 90015,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 408,
+      "generated_end": 514,
+      "answer_token_positions": [
+        509
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.875
+      ],
+      "answer_values": [
+        -0.28515625
+      ],
+      "answer_raw_advantages": [
+        0.345156192779541
+      ],
+      "answer_advantages": [
+        1.7367419004440308
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.7299679517745972
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007865678896938546
+      ]
+    },
+    {
+      "seed": 90005,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 54,
+      "answer_token_positions": [
+        49
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.0019683837890625
+      ],
+      "answer_values": [
+        0.060546875
+      ],
+      "answer_raw_advantages": [
+        0.03945350646972656
+      ],
+      "answer_advantages": [
+        1.6003037691116333
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6114559173583984
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007606006507184569
+      ]
+    },
+    {
+      "seed": 90005,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 173,
+      "generated_end": 225,
+      "answer_token_positions": [
+        220
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.00165557861328125
+      ],
+      "answer_values": [
+        -0.30859375
+      ],
+      "answer_raw_advantages": [
+        0.40859413146972656
+      ],
+      "answer_advantages": [
+        1.7650548219680786
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7671842575073242
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008389043830646761
+      ]
+    },
+    {
+      "seed": 90005,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 344,
+      "generated_end": 398,
+      "answer_token_positions": [
+        393
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.0004138946533203125
+      ],
+      "answer_values": [
+        -0.3828125
+      ],
+      "answer_raw_advantages": [
+        0.48281288146972656
+      ],
+      "answer_advantages": [
+        1.7981793880462646
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.791367530822754
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008546479981208482
+      ]
+    },
+    {
+      "seed": 90005,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 4,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 517,
+      "generated_end": 570,
+      "answer_token_positions": [
+        565
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.00028228759765625
+      ],
+      "answer_values": [
+        -0.37109375
+      ],
+      "answer_raw_advantages": [
+        0.47109413146972656
+      ],
+      "answer_advantages": [
+        1.7929491996765137
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7772197723388672
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.000852162167146632
+      ]
+    },
+    {
+      "seed": 90005,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 5,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 689,
+      "generated_end": 739,
+      "answer_token_positions": [
+        734
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.00074005126953125
+      ],
+      "answer_values": [
+        -0.287109375
+      ],
+      "answer_raw_advantages": [
+        0.38710927963256836
+      ],
+      "answer_advantages": [
+        1.7554659843444824
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7308391332626343
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008343469507340696
+      ]
+    },
+    {
+      "seed": 90006,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 72,
+      "answer_token_positions": [
+        67
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.002044677734375
+      ],
+      "answer_values": [
+        -0.3125
+      ],
+      "answer_raw_advantages": [
+        0.41250038146972656
+      ],
+      "answer_advantages": [
+        1.7667982578277588
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7778468132019043
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006816351303347835
+      ]
+    },
+    {
+      "seed": 90006,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 191,
+      "generated_end": 261,
+      "answer_token_positions": [
+        256
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.0022430419921875
+      ],
+      "answer_values": [
+        -0.5546875
+      ],
+      "answer_raw_advantages": [
+        0.6546878814697266
+      ],
+      "answer_advantages": [
+        1.8748888969421387
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.8769495487213135
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007233367657955782
+      ]
+    },
+    {
+      "seed": 90006,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 3,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 380,
+      "generated_end": 436,
+      "answer_token_positions": [
+        431
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.0008392333984375
+      ],
+      "answer_values": [
+        -0.265625
+      ],
+      "answer_raw_advantages": [
+        0.36562538146972656
+      ],
+      "answer_advantages": [
+        1.7458775043487549
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7390977144241333
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006735638519864024
+      ]
+    },
+    {
+      "seed": 90006,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 555,
+      "generated_end": 621,
+      "answer_token_positions": [
+        616
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.0012054443359375
+      ],
+      "answer_values": [
+        -0.08203125
+      ],
+      "answer_raw_advantages": [
+        0.18203115463256836
+      ],
+      "answer_advantages": [
+        1.6639375686645508
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6482881307601929
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006419512224786076
+      ]
+    },
+    {
+      "seed": 90006,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 5,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 740,
+      "generated_end": 800,
+      "answer_token_positions": [
+        795
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.000583648681640625
+      ],
+      "answer_values": [
+        -0.029052734375
+      ],
+      "answer_raw_advantages": [
+        0.12905263900756836
+      ],
+      "answer_advantages": [
+        1.640292763710022
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6157373189926147
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006328289983449158
+      ]
+    },
+    {
+      "seed": 90010,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Don't move",
+      "immediate_reward": 0.0,
+      "generated_start": 0,
+      "generated_end": 41,
+      "answer_token_positions": [
+        34,
+        35,
+        36
+      ],
+      "answer_token_ids": [
+        8002,
+        944,
+        3271
+      ],
+      "answer_old_log_probs": [
+        -4.1875,
+        -0.00186920166015625,
+        -0.13671875
+      ],
+      "answer_values": [
+        -0.482421875,
+        3.703125,
+        1.7109375
+      ],
+      "answer_raw_advantages": [
+        0.482421875,
+        -3.703125,
+        -1.7109375
+      ],
+      "answer_advantages": [
+        1.7980048656463623,
+        -0.07004532963037491,
+        0.8190873265266418
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429
+      ],
+      "answer_per_turn_advantages": [
+        1.8090344667434692,
+        -0.05785856395959854,
+        0.830723226070404
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007466797614810475,
+        2.9088592039192238e-05,
+        -0.0003401525442386386
+      ]
+    },
+    {
+      "seed": 90010,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 2,
+      "answer": "Ignore and keep the current position",
+      "immediate_reward": 0.0,
+      "generated_start": 158,
+      "generated_end": 228,
+      "answer_token_positions": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223
+      ],
+      "answer_token_ids": [
+        12497,
+        323,
+        2506,
+        279,
+        1482,
+        2309
+      ],
+      "answer_old_log_probs": [
+        -6.75,
+        -3.265625,
+        -3.265625,
+        -1.328125,
+        -1.6875,
+        -0.287109375
+      ],
+      "answer_values": [
+        -0.90625,
+        4.5,
+        -0.2041015625,
+        3.21875,
+        2.421875,
+        2.59375
+      ],
+      "answer_raw_advantages": [
+        0.90625,
+        -4.5,
+        0.2041015625,
+        -3.21875,
+        -2.421875,
+        -2.59375
+      ],
+      "answer_advantages": [
+        1.9871635437011719,
+        -0.4256983697414398,
+        1.6737878322601318,
+        0.14613594114780426,
+        0.5017889738082886,
+        0.4250795245170593
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429
+      ],
+      "answer_per_turn_advantages": [
+        1.9980758428573608,
+        -0.4132912755012512,
+        1.6848942041397095,
+        0.15818877518177032,
+        0.5136215090751648,
+        0.43695953488349915
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008252340297762342,
+        0.0001767850372680398,
+        -0.0006950946147259684,
+        -6.0687683200915394e-05,
+        -0.00020838412533566802,
+        -0.00017652804174296484
+      ]
+    },
+    {
+      "seed": 90010,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 3,
+      "answer": "Ignore",
+      "immediate_reward": 0.0,
+      "generated_start": 345,
+      "generated_end": 421,
+      "answer_token_positions": [
+        416
+      ],
+      "answer_token_ids": [
+        12497
+      ],
+      "answer_old_log_probs": [
+        -0.294921875
+      ],
+      "answer_values": [
+        0.1552734375
+      ],
+      "answer_raw_advantages": [
+        -0.1552734375
+      ],
+      "answer_advantages": [
+        1.5133953094482422
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.6656831502914429
+      ],
+      "answer_per_turn_advantages": [
+        1.5246011018753052
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006284864241894694
+      ]
+    },
+    {
+      "seed": 90010,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 4,
+      "answer": "Ignore and keep at this position",
+      "immediate_reward": 0.0,
+      "generated_start": 538,
+      "generated_end": 606,
+      "answer_token_positions": [
+        596,
+        597,
+        598,
+        599,
+        600,
+        601
+      ],
+      "answer_token_ids": [
+        12497,
+        323,
+        2506,
+        518,
+        419,
+        2309
+      ],
+      "answer_old_log_probs": [
+        -0.205078125,
+        -1.953125,
+        -1.203125,
+        -4.4375,
+        -4.25,
+        -0.19140625
+      ],
+      "answer_values": [
+        -0.09326171875,
+        3.203125,
+        -0.040283203125,
+        4.125,
+        2.15625,
+        2.953125
+      ],
+      "answer_raw_advantages": [
+        0.09326171875,
+        -3.203125,
+        0.040283203125,
+        -4.125,
+        -2.15625,
+        -2.953125
+      ],
+      "answer_advantages": [
+        1.6243189573287964,
+        0.15310953557491302,
+        1.6006741523742676,
+        -0.2583322525024414,
+        0.6203399896621704,
+        0.2646869719028473
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429
+      ],
+      "answer_per_turn_advantages": [
+        1.6354559659957886,
+        0.16515803337097168,
+        1.6118258237838745,
+        -0.2460288256406784,
+        0.6320990324020386,
+        0.2766663432121277
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006745510620136197,
+        -6.358369417562833e-05,
+        -0.0006647317908531011,
+        0.00010728083575682783,
+        -0.0002576162747766488,
+        -0.00010991983883008608
+      ]
+    },
+    {
+      "seed": 90010,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 5,
+      "answer": "Don't move",
+      "immediate_reward": 0.0,
+      "generated_start": 723,
+      "generated_end": 769,
+      "answer_token_positions": [
+        762,
+        763,
+        764
+      ],
+      "answer_token_ids": [
+        8002,
+        944,
+        3271
+      ],
+      "answer_old_log_probs": [
+        -3.953125,
+        -0.01129150390625,
+        -0.240234375
+      ],
+      "answer_values": [
+        0.359375,
+        3.6875,
+        2.109375
+      ],
+      "answer_raw_advantages": [
+        -0.359375,
+        -3.6875,
+        -2.109375
+      ],
+      "answer_advantages": [
+        1.4223027229309082,
+        -0.06307174265384674,
+        0.6412608027458191
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.6656831502914429,
+        -0.6656831502914429,
+        -0.6656831502914429
+      ],
+      "answer_per_turn_advantages": [
+        1.4335650205612183,
+        -0.05088929459452629,
+        0.6530068516731262
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005906572769646629,
+        2.6192584158574227e-05,
+        -0.0002663043200771674
+      ]
+    },
+    {
+      "seed": 90941,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 49,
+      "answer_token_positions": [
+        44
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.08251953125
+      ],
+      "answer_values": [
+        -0.73828125
+      ],
+      "answer_raw_advantages": [
+        0.8382816314697266
+      ],
+      "answer_advantages": [
+        1.9568285942077637
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.9677600860595703
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009371784455018025
+      ]
+    },
+    {
+      "seed": 90941,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Down, Right",
+      "immediate_reward": 0.02,
+      "generated_start": 168,
+      "generated_end": 233,
+      "answer_token_positions": [
+        226,
+        227,
+        228
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        10083
+      ],
+      "answer_old_log_probs": [
+        -0.00543212890625,
+        -0.53125,
+        -0.76171875
+      ],
+      "answer_values": [
+        0.0155029296875,
+        2.109375,
+        2.015625
+      ],
+      "answer_raw_advantages": [
+        0.08449745178222656,
+        -2.0093746185302734,
+        -1.9156246185302734
+      ],
+      "answer_advantages": [
+        1.6204073429107666,
+        0.6858919262886047,
+        0.7277334332466125
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6226266622543335,
+        0.6886901259422302,
+        0.7305057644844055
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007760571565664592,
+        -0.00032849230186235857,
+        -0.00034853133776178763
+      ]
+    },
+    {
+      "seed": 90941,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 355,
+      "generated_end": 399,
+      "answer_token_positions": [
+        394
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.0012054443359375
+      ],
+      "answer_values": [
+        -0.75390625
+      ],
+      "answer_raw_advantages": [
+        0.8539066314697266
+      ],
+      "answer_advantages": [
+        1.9638022184371948
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.9568877220153809
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009405183038492313
+      ]
+    },
+    {
+      "seed": 90941,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 518,
+      "generated_end": 566,
+      "answer_token_positions": [
+        561
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00043487548828125
+      ],
+      "answer_values": [
+        -0.33984375
+      ],
+      "answer_raw_advantages": [
+        0.43984413146972656
+      ],
+      "answer_advantages": [
+        1.779002070426941
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7632813453674316
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008520124858366576
+      ]
+    },
+    {
+      "seed": 90941,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 685,
+      "generated_end": 740,
+      "answer_token_positions": [
+        735
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -0.00384521484375
+      ],
+      "answer_values": [
+        0.031005859375
+      ],
+      "answer_raw_advantages": [
+        0.06899404525756836
+      ],
+      "answer_advantages": [
+        1.6134880781173706
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.588949203491211
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007727433324316909
+      ]
+    },
+    {
+      "seed": 90029,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Right, Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 84,
+      "answer_token_positions": [
+        77,
+        78,
+        79
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        3138
+      ],
+      "answer_old_log_probs": [
+        -0.01080322265625,
+        -2.125,
+        -0.478515625
+      ],
+      "answer_values": [
+        -0.38671875,
+        1.953125,
+        2.46875
+      ],
+      "answer_raw_advantages": [
+        0.4667186737060547,
+        -1.8731250762939453,
+        -2.3887500762939453
+      ],
+      "answer_advantages": [
+        1.7909964323043823,
+        0.7467014193534851,
+        0.5165729522705078
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.8020306825637817,
+        0.7583827972412109,
+        0.5283969640731812
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.00046159701863515007,
+        -0.0001924488194210013,
+        -0.00013313735883260512
+      ]
+    },
+    {
+      "seed": 90029,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 2,
+      "answer": "Right",
+      "immediate_reward": 0.02,
+      "generated_start": 206,
+      "generated_end": 317,
+      "answer_token_positions": [
+        312
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "answer_old_log_probs": [
+        -0.00897216796875
+      ],
+      "answer_values": [
+        -0.86328125
+      ],
+      "answer_raw_advantages": [
+        0.9432811737060547
+      ],
+      "answer_advantages": [
+        2.0036909580230713
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        2.0056724548339844
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005164151953667709
+      ]
+    },
+    {
+      "seed": 90029,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 436,
+      "generated_end": 530,
+      "answer_token_positions": [
+        525
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00213623046875
+      ],
+      "answer_values": [
+        -0.498046875
+      ],
+      "answer_raw_advantages": [
+        0.5780467987060547
+      ],
+      "answer_advantages": [
+        1.8406832218170166
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.8338450193405151
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0004744028922208806
+      ]
+    },
+    {
+      "seed": 90029,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 4,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 649,
+      "generated_end": 776,
+      "answer_token_positions": [
+        769,
+        770,
+        771
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.59765625,
+        -0.83203125,
+        -0.1337890625
+      ],
+      "answer_values": [
+        -0.6484375,
+        2.578125,
+        1.828125
+      ],
+      "answer_raw_advantages": [
+        0.7284374237060547,
+        -2.4981250762939453,
+        -1.7481250762939453
+      ],
+      "answer_advantages": [
+        1.907804012298584,
+        0.46775785088539124,
+        0.8024901151657104
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.8920034170150757,
+        0.45284944772720337,
+        0.7873743772506714
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0004917020650254082,
+        -0.00012055614713541011,
+        -0.000206827349269513
+      ]
+    },
+    {
+      "seed": 90029,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 5,
+      "answer": "Down-left (Down, Left)",
+      "immediate_reward": 0.0,
+      "generated_start": 898,
+      "generated_end": 967,
+      "answer_token_positions": [
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963
+      ],
+      "answer_token_ids": [
+        4454,
+        7950,
+        320,
+        4454,
+        11,
+        13727,
+        12533
+      ],
+      "answer_old_log_probs": [
+        -0.453125,
+        -9.5,
+        -4.96875,
+        -2.46875,
+        -0.58203125,
+        -0.13671875,
+        -0.12451171875
+      ],
+      "answer_values": [
+        0.1005859375,
+        2.734375,
+        2.59375,
+        0.96484375,
+        3.328125,
+        2.96875,
+        4.09375
+      ],
+      "answer_raw_advantages": [
+        -0.020586013793945312,
+        -2.6543750762939453,
+        -2.5137500762939453,
+        -0.8848438262939453,
+        -3.2481250762939453,
+        -2.8887500762939453,
+        -4.013750076293945
+      ],
+      "answer_advantages": [
+        1.57350754737854,
+        0.398021936416626,
+        0.46078425645828247,
+        1.1877809762954712,
+        0.13302555680274963,
+        0.29341810941696167,
+        -0.20868031680583954
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.548993468284607,
+        0.3742361068725586,
+        0.43695953488349915,
+        1.1635057926177979,
+        0.10940388590097427,
+        0.26969707012176514,
+        -0.2320902943611145
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0004055431823140567,
+        -0.00010258297330325412,
+        -0.00011875882898409342,
+        -0.0003061291176019256,
+        -3.4284937320296296e-05,
+        -7.562322407653652e-05,
+        5.378358680562875e-05
+      ]
+    },
+    {
+      "seed": 91132,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Right, Up",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 51,
+      "answer_token_positions": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "answer_token_ids": [
+        397,
+        5979,
+        11,
+        3138,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.08935546875,
+        -0.01007080078125,
+        -0.0107421875,
+        -0.0040283203125,
+        -0.0281982421875
+      ],
+      "answer_values": [
+        -1.0703125,
+        -0.2421875,
+        2.984375,
+        1.828125,
+        1.6328125
+      ],
+      "answer_raw_advantages": [
+        1.1503124237060547,
+        0.3221874237060547,
+        -2.9043750762939453,
+        -1.7481250762939453,
+        -1.5528125762939453
+      ],
+      "answer_advantages": [
+        2.0960910320281982,
+        1.7264907360076904,
+        0.2864445149898529,
+        0.8024901151657104,
+        0.8896600008010864
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        2.106935739517212,
+        1.7375644445419312,
+        0.29841041564941406,
+        0.8141363263130188,
+        0.9012522101402283
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0010194995291965944,
+        -0.0008397328482527678,
+        -0.00013932126215459773,
+        -0.00039031620387437277,
+        -0.00043271400817173467
+      ]
+    },
+    {
+      "seed": 91132,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Right, Up",
+      "immediate_reward": 0.02,
+      "generated_start": 173,
+      "generated_end": 216,
+      "answer_token_positions": [
+        207,
+        208,
+        209,
+        210,
+        211
+      ],
+      "answer_token_ids": [
+        397,
+        5979,
+        11,
+        3138,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.0007171630859375,
+        -0.0289306640625,
+        -0.0006103515625,
+        -0.006195068359375,
+        -0.0238037109375
+      ],
+      "answer_values": [
+        1.03125,
+        -0.1171875,
+        3.65625,
+        1.96875,
+        2.515625
+      ],
+      "answer_raw_advantages": [
+        -0.9512500762939453,
+        0.1971874237060547,
+        -3.5762500762939453,
+        -1.8887500762939453,
+        -2.4356250762939453
+      ],
+      "answer_advantages": [
+        1.158143162727356,
+        1.6707019805908203,
+        -0.013419818133115768,
+        0.7397278547286987,
+        0.4956521987915039
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.1606483459472656,
+        1.6728895902633667,
+        -0.01018879096955061,
+        0.7424922585487366,
+        0.4985678493976593
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005632992036611654,
+        -0.0008125982395869748,
+        6.5271488974298484e-06,
+        -0.00035978981261123477,
+        -0.000241075972174856
+      ]
+    },
+    {
+      "seed": 91132,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Move left, then Up",
+      "immediate_reward": 0.0,
+      "generated_start": 338,
+      "generated_end": 389,
+      "answer_token_positions": [
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384
+      ],
+      "answer_token_ids": [
+        397,
+        9860,
+        2115,
+        11,
+        1221,
+        3138,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.00083160400390625,
+        -4.1875,
+        -2.078125,
+        -0.51171875,
+        -0.7265625,
+        -1.7421875,
+        -0.0859375
+      ],
+      "answer_values": [
+        0.85546875,
+        0.07421875,
+        3.625,
+        2.21875,
+        1.3515625,
+        0.63671875,
+        2.875
+      ],
+      "answer_raw_advantages": [
+        -0.7754688262939453,
+        0.0057811737060546875,
+        -3.5450000762939453,
+        -2.1387500762939453,
+        -1.2715625762939453,
+        -0.5567188262939453,
+        -2.7950000762939453
+      ],
+      "answer_advantages": [
+        1.2365961074829102,
+        1.5852755308151245,
+        0.0005273606511764228,
+        0.6281504034996033,
+        1.0151846408843994,
+        1.334226369857788,
+        0.33525964617729187
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.230131983757019,
+        1.5785953998565674,
+        -0.005170909222215414,
+        0.6220632791519165,
+        1.0088577270507812,
+        1.3277018070220947,
+        0.3293539881706238
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006014572507212598,
+        -0.0007710484099295353,
+        -2.564983711947582e-07,
+        -0.00030552062427023505,
+        -0.0004937668486791826,
+        -0.0006489427868958113,
+        -0.00016306403024187347
+      ]
+    },
+    {
+      "seed": 91132,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 506,
+      "generated_end": 567,
+      "answer_token_positions": [
+        560,
+        561,
+        562
+      ],
+      "answer_token_ids": [
+        397,
+        5415,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.00119781494140625,
+        -0.267578125,
+        -0.25390625
+      ],
+      "answer_values": [
+        1.4453125,
+        0.306640625,
+        3.203125
+      ],
+      "answer_raw_advantages": [
+        -1.3653125762939453,
+        -0.2266407012939453,
+        -3.1231250762939453
+      ],
+      "answer_advantages": [
+        0.9733430743217468,
+        1.4815434217453003,
+        0.18881426751613617
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        0.967042088508606,
+        1.474927544593811,
+        0.1829993575811386
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.00047341589217983796,
+        -0.0007205950494870138,
+        -9.183573322769269e-05
+      ]
+    },
+    {
+      "seed": 91132,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Right, Up",
+      "immediate_reward": 0.02,
+      "generated_start": 686,
+      "generated_end": 737,
+      "answer_token_positions": [
+        728,
+        729,
+        730,
+        731,
+        732
+      ],
+      "answer_token_ids": [
+        397,
+        5979,
+        11,
+        3138,
+        198
+      ],
+      "answer_old_log_probs": [
+        -0.00049591064453125,
+        -2.125,
+        -0.1220703125,
+        -0.10107421875,
+        -0.0283203125
+      ],
+      "answer_values": [
+        1.2109375,
+        0.4765625,
+        2.984375,
+        2.40625,
+        2.84375
+      ],
+      "answer_raw_advantages": [
+        -1.1309375762939453,
+        -0.3965625762939453,
+        -2.9043750762939453,
+        -2.3262500762939453,
+        -2.7637500762939453
+      ],
+      "answer_advantages": [
+        1.0779469013214111,
+        1.4057055711746216,
+        0.2864445149898529,
+        0.5444673299789429,
+        0.3492068350315094
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.0626604557037354,
+        1.3902161121368408,
+        0.27164846658706665,
+        0.5295113921165466,
+        0.3343718945980072
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005242932399423206,
+        -0.0006837089353962167,
+        -0.00013932126215459773,
+        -0.00026481874026213176,
+        -0.00016984768240832168
+      ]
+    },
+    {
+      "seed": 90002,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 82,
+      "answer_token_positions": [
+        77
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.0021209716796875
+      ],
+      "answer_values": [
+        -0.423828125
+      ],
+      "answer_raw_advantages": [
+        0.5238285064697266
+      ],
+      "answer_advantages": [
+        1.816485047340393
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.8275032043457031
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006153404631911901
+      ]
+    },
+    {
+      "seed": 90002,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 201,
+      "generated_end": 282,
+      "answer_token_positions": [
+        277
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.005157470703125
+      ],
+      "answer_values": [
+        -0.376953125
+      ],
+      "answer_raw_advantages": [
+        0.47695350646972656
+      ],
+      "answer_advantages": [
+        1.7955642938613892
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.797674536705017
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0006082534870804164
+      ]
+    },
+    {
+      "seed": 90002,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 401,
+      "generated_end": 457,
+      "answer_token_positions": [
+        452
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00086212158203125
+      ],
+      "answer_values": [
+        -0.0015869140625
+      ],
+      "answer_raw_advantages": [
+        0.10158729553222656
+      ],
+      "answer_advantages": [
+        1.6280347108840942
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6213281154632568
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005515022733347202
+      ]
+    },
+    {
+      "seed": 90002,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 576,
+      "generated_end": 660,
+      "answer_token_positions": [
+        655
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00067901611328125
+      ],
+      "answer_values": [
+        -0.07373046875
+      ],
+      "answer_raw_advantages": [
+        0.17373085021972656
+      ],
+      "answer_advantages": [
+        1.6602331399917603
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6445859670639038
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005624096002682115
+      ]
+    },
+    {
+      "seed": 90002,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 779,
+      "generated_end": 845,
+      "answer_token_positions": [
+        840
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.000759124755859375
+      ],
+      "answer_values": [
+        -0.1005859375
+      ],
+      "answer_raw_advantages": [
+        0.20058584213256836
+      ],
+      "answer_advantages": [
+        1.6722187995910645
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6476434469223022
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0005664697830593037
+      ]
+    },
+    {
+      "seed": 90032,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 54,
+      "answer_token_positions": [
+        47,
+        48,
+        49
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.020751953125,
+        -0.010986328125,
+        -0.0220947265625
+      ],
+      "answer_values": [
+        -0.474609375,
+        2.59375,
+        1.640625
+      ],
+      "answer_raw_advantages": [
+        0.5546092987060547,
+        -2.5137500762939453,
+        -1.5606250762939453
+      ],
+      "answer_advantages": [
+        1.8302228450775146,
+        0.46078425645828247,
+        0.8861731886863708
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.8412328958511353,
+        0.47264257073402405,
+        0.897767961025238
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008289052740387294,
+        -0.0002086885219466859,
+        -0.0004013465528470882
+      ]
+    },
+    {
+      "seed": 90032,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 2,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 176,
+      "generated_end": 254,
+      "answer_token_positions": [
+        247,
+        248,
+        249
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.33203125,
+        -0.0169677734375,
+        -0.0026092529296875
+      ],
+      "answer_values": [
+        -0.5234375,
+        2.984375,
+        1.7734375
+      ],
+      "answer_raw_advantages": [
+        0.6034374237060547,
+        -2.9043750762939453,
+        -1.6934375762939453
+      ],
+      "answer_advantages": [
+        1.8520153760910034,
+        0.2864445149898529,
+        0.8268976807594299
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157,
+        -0.03134113550186157,
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.854090929031372,
+        0.2894901931285858,
+        0.8296085596084595
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008387750797513603,
+        -0.00012973030570192614,
+        -0.0003745007612135099
+      ]
+    },
+    {
+      "seed": 90032,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 3,
+      "answer": "Left",
+      "immediate_reward": 0.02,
+      "generated_start": 376,
+      "generated_end": 432,
+      "answer_token_positions": [
+        427
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "answer_old_log_probs": [
+        -0.01007080078125
+      ],
+      "answer_values": [
+        -0.890625
+      ],
+      "answer_raw_advantages": [
+        0.9706249237060547
+      ],
+      "answer_advantages": [
+        2.015894651412964
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        2.0089478492736816
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.00091299576603848
+      ]
+    },
+    {
+      "seed": 90032,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 551,
+      "generated_end": 639,
+      "answer_token_positions": [
+        634
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.000545501708984375
+      ],
+      "answer_values": [
+        -0.322265625
+      ],
+      "answer_raw_advantages": [
+        0.4022655487060547
+      ],
+      "answer_advantages": [
+        1.762230396270752
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.03134113550186157
+      ],
+      "answer_per_turn_advantages": [
+        1.7465200424194336
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007981115925139275
+      ]
+    },
+    {
+      "seed": 90008,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 46,
+      "answer_token_positions": [
+        41
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.001739501953125
+      ],
+      "answer_values": [
+        -0.171875
+      ],
+      "answer_raw_advantages": [
+        0.27187538146972656
+      ],
+      "answer_advantages": [
+        1.704035997390747
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.7151236534118652
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008386003924167062
+      ]
+    },
+    {
+      "seed": 90008,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 165,
+      "generated_end": 202,
+      "answer_token_positions": [
+        197
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.000640869140625
+      ],
+      "answer_values": [
+        -0.66015625
+      ],
+      "answer_raw_advantages": [
+        0.7601566314697266
+      ],
+      "answer_advantages": [
+        1.9219605922698975
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.9239925146102905
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0009458467481643196
+      ]
+    },
+    {
+      "seed": 90008,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 321,
+      "generated_end": 367,
+      "answer_token_positions": [
+        362
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -3.484375
+      ],
+      "answer_values": [
+        -0.09228515625
+      ],
+      "answer_raw_advantages": [
+        0.19228553771972656
+      ],
+      "answer_advantages": [
+        1.6685142517089844
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.6617826223373413
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008211192183607207
+      ]
+    },
+    {
+      "seed": 90008,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Down, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 486,
+      "generated_end": 553,
+      "answer_token_positions": [
+        546,
+        547,
+        548
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.0027008056640625,
+        -0.04541015625,
+        -0.0047607421875
+      ],
+      "answer_values": [
+        0.162109375,
+        3.65625,
+        2.859375
+      ],
+      "answer_raw_advantages": [
+        -0.06210899353027344,
+        -3.5562496185302734,
+        -2.7593746185302734
+      ],
+      "answer_advantages": [
+        1.5549755096435547,
+        -0.004493419546633959,
+        0.35115963220596313
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.5393935441970825,
+        -0.01910923421382904,
+        0.33632346987724304
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007652438531710407,
+        2.211328517044271e-06,
+        -0.00017281477962891885
+      ]
+    },
+    {
+      "seed": 90008,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 675,
+      "generated_end": 733,
+      "answer_token_positions": [
+        726,
+        727,
+        728
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.0147705078125,
+        -1.140625,
+        -0.1337890625
+      ],
+      "answer_values": [
+        0.0458984375,
+        2.921875,
+        2.171875
+      ],
+      "answer_raw_advantages": [
+        0.05410146713256836,
+        -2.8218750953674316,
+        -2.0718750953674316
+      ],
+      "answer_advantages": [
+        1.6068413257598877,
+        0.32326507568359375,
+        0.6579973697662354
+      ],
+      "answer_zero_baseline_advantages": [
+        0.12724439799785614,
+        0.12724439799785614,
+        0.12724439799785614
+      ],
+      "answer_per_turn_advantages": [
+        1.5823066234588623,
+        0.29952552914619446,
+        0.6340504288673401
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007907683689763227,
+        -0.00015908714354507568,
+        -0.000323817603231415
+      ]
+    },
+    {
+      "seed": 90014,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "West",
+      "immediate_reward": 0.0,
+      "generated_start": 0,
+      "generated_end": 45,
+      "answer_token_positions": [
+        40
+      ],
+      "answer_token_ids": [
+        23306
+      ],
+      "answer_old_log_probs": [
+        -0.375
+      ],
+      "answer_values": [
+        0.546875
+      ],
+      "answer_raw_advantages": [
+        -0.5268745422363281
+      ],
+      "answer_advantages": [
+        1.347546100616455
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.3588546514511108
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0010797645036990826
+      ]
+    },
+    {
+      "seed": 90014,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "North",
+      "immediate_reward": 0.0,
+      "generated_start": 162,
+      "generated_end": 215,
+      "answer_token_positions": [
+        210
+      ],
+      "answer_token_ids": [
+        25221
+      ],
+      "answer_old_log_probs": [
+        -0.234375
+      ],
+      "answer_values": [
+        0.09814453125
+      ],
+      "answer_raw_advantages": [
+        -0.07814407348632812
+      ],
+      "answer_advantages": [
+        1.547818899154663
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.5590033531188965
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.001240239502527775
+      ]
+    },
+    {
+      "seed": 90014,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 332,
+      "generated_end": 390,
+      "answer_token_positions": [
+        385
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.61328125
+      ],
+      "answer_values": [
+        -0.07763671875
+      ],
+      "answer_raw_advantages": [
+        0.09763669967651367
+      ],
+      "answer_advantages": [
+        1.6262714862823486
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.6374074220657349
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0013031021524698306
+      ]
+    },
+    {
+      "seed": 90016,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 1,
+      "answer": "Left, Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 52,
+      "answer_token_positions": [
+        45,
+        46,
+        47
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        6285
+      ],
+      "answer_old_log_probs": [
+        -0.00640869140625,
+        -0.478515625,
+        -2.546875
+      ],
+      "answer_values": [
+        -0.41015625,
+        2.15625,
+        1.96875
+      ],
+      "answer_raw_advantages": [
+        0.45015621185302734,
+        -2.1162500381469727,
+        -1.9287500381469727
+      ],
+      "answer_advantages": [
+        1.783604383468628,
+        0.638192355632782,
+        0.7218754291534424
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522,
+        -0.3485121428966522,
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.7946429252624512,
+        0.6499403715133667,
+        0.7335715889930725
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0026861511799226323,
+        -0.0009611330657120211,
+        -0.0010871617908937384
+      ]
+    },
+    {
+      "seed": 90016,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 2,
+      "answer": "Up",
+      "immediate_reward": 0.02,
+      "generated_start": 174,
+      "generated_end": 205,
+      "answer_token_positions": [
+        200
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "answer_old_log_probs": [
+        -1.65625
+      ],
+      "answer_values": [
+        -0.388671875
+      ],
+      "answer_raw_advantages": [
+        0.42867183685302734
+      ],
+      "answer_advantages": [
+        1.7740157842636108
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.3485121428966522
+      ],
+      "answer_per_turn_advantages": [
+        1.7761393785476685
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0026717105184692934
+      ]
+    },
+    {
+      "seed": 90025,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "immediate_reward": 0.02,
+      "generated_start": 0,
+      "generated_end": 57,
+      "answer_token_positions": [
+        52
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "answer_old_log_probs": [
+        -0.00775146484375
+      ],
+      "answer_values": [
+        -0.875
+      ],
+      "answer_raw_advantages": [
+        0.8949999809265137
+      ],
+      "answer_advantages": [
+        1.9821425676345825
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.9930577278137207
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.004346803876391628
+      ]
+    }
+  ],
+  "limitations": [
+    "Reconstructed input, intermediate historical tensors absent",
+    "Initial b0 and saved full small critic head only; no theta4 recovery",
+    "No backward or parameter update: advantage sign and initial coefficients do not prove actual probability changes",
+    "Original mini8 has sequential updates; this audit does not replay those updates",
+    "Whitening weights generated tokens, while micro1 actor loss averages each episode before accumulation"
+  ]
+}

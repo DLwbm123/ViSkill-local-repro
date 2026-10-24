@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "4a3b582af73a205f80b9046cde7325ef135f3bee",
+  "local_source_commit": "cee374af1b0fa955d2723ed26af9aeca4c10974b",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "PARTIAL: fixed-library paired PPO completed; primary learning gate FAILED. Original free-text E and full F remain PARTIAL.",
+  "status": "PARTIAL: saved-request numerical gate failed8/8, action fields close, first-batch signal audit complete; no causal learning repair established.",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -101,10 +101,38 @@
       "learning_investment_gate": false,
       "final_weights_retained": false,
       "skill_reward_weight": 0
+    },
+    "recorded_backend_audit_v2": {
+      "status": "COMPLETED_WITH_RETAINED_OPERATIONAL_FAILURES",
+      "score_cases": 8,
+      "all_token_probability_gate_pass": false,
+      "native_dispatch_attempts": 9,
+      "native_actual_prefills": 8,
+      "score_actor_samples": 8,
+      "audit_actor_samples": 32,
+      "audit_critic_samples": 32,
+      "generated_tokens": 1,
+      "environment_steps": 0,
+      "optimizer_steps": 0,
+      "head_parameters_restored": 2049,
+      "historical_aggregates_matched": 7,
+      "historical_aggregate_max_error": 0,
+      "two_stop_tokens_original_advantages": [
+        1.5404092073440552,
+        1.6901060342788696
+      ],
+      "two_stop_tokens_zero_baseline_advantages": [
+        -0.507097601890564,
+        -0.1899266391992569
+      ],
+      "report": "reports/18_recorded_backend_audit.md",
+      "causal_learning_improvement_established": false,
+      "driver_exit_code": 1,
+      "cpu_recovery_without_new_model_forward": true
     }
   },
-  "latest_update_scope": "Reports12-17, complete fixed-library PPO results/failure audit, preceding input controls, frozen protocols, synthetic data manifests, numeric/update/sync/exit evidence and corresponding source. No model weights or full runtime archive.",
-  "latest_copied_files": 436,
+  "latest_update_scope": "Report18, eight native input scores,32-row token-level signal audit,166 small evidence files including used images, exact inputs, numeric NPZ, historical aggregate checks and retained incident summaries, corresponding source/protocols. No model weights.",
+  "latest_copied_files": 180,
   "source_packaging_repair": {
     "files_restored": 65,
     "reason": "Prior broad models/ ignore accidentally excluded bundled veRL model implementations and tests; output directory exclusions are now root-anchored."

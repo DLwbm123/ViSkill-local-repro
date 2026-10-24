@@ -1897,5 +1897,43 @@
     "new_generated_tokens": 0,
     "PPO_updates": 0,
     "original_campaign_deadline": 1792858781.9046373
+  },
+  "recorded_backend_audit_v2": {
+    "status": "COMPLETED_WITH_RETAINED_OPERATIONAL_FAILURES",
+    "score_cases": 8,
+    "all_token_probability_gate_pass": false,
+    "native_dispatch_attempts": 9,
+    "native_actual_prefills": 8,
+    "score_actor_samples": 8,
+    "audit_actor_samples": 32,
+    "audit_critic_samples": 32,
+    "generated_tokens": 1,
+    "environment_steps": 0,
+    "optimizer_steps": 0,
+    "head_parameters_restored": 2049,
+    "historical_aggregates_matched": 7,
+    "historical_aggregate_max_error": 0,
+    "two_stop_tokens_original_advantages": [
+      1.5404092073440552,
+      1.6901060342788696
+    ],
+    "two_stop_tokens_zero_baseline_advantages": [
+      -0.507097601890564,
+      -0.1899266391992569
+    ],
+    "report": "reports/18_recorded_backend_audit.md",
+    "causal_learning_improvement_established": false,
+    "driver_exit_code": 1,
+    "cpu_recovery_without_new_model_forward": true
+  },
+  "autonomous_12h_20261024": {
+    "start_unix": 1792856307,
+    "deadline_unix": 1792899507,
+    "additional_storage_hard_cap_bytes": 50000000000,
+    "additional_storage_baseline": 68491808768,
+    "project_conservative_stop_bytes": 85000000000,
+    "monitor_id": "viskill-12",
+    "current_guard_pid": 575742,
+    "old_campaign_deadline_kept_as_history": 1792858781.9046373
   }
 }

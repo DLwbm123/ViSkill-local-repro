@@ -1,0 +1,13 @@
+{
+  "native_requests_started": 9,
+  "native_prefill_forward_samples": 8,
+  "native_dispatch_failed_before_forward": 1,
+  "original_eight_dispatch_contract_pass": false,
+  "score_actor_samples": 8,
+  "audit_actor_samples": 32,
+  "audit_critic_samples": 32,
+  "generated_tokens": 1,
+  "environment_steps": 0,
+  "optimizer_steps": 0,
+  "admissions": 0
+}
