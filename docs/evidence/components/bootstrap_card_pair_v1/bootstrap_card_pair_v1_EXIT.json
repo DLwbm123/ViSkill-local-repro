@@ -1,0 +1,10 @@
+{
+  "exits": {
+    "A": 0
+  },
+  "reason": "AssertionError('insufficient free memory on allowed GPU 5: 43754')",
+  "end_unix": 1792835977.4530435,
+  "peak_allocated_bytes": 68476801024,
+  "deadline_unix": 1792844940.3041732,
+  "command_line_violations": []
+}

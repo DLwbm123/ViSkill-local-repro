@@ -719,6 +719,8 @@ class ActorRolloutRefWorker(Worker, DistProfilerExtension):
             del base_model_params, per_tensor_base_params
 
         await self.rollout.update_weights(per_tensor_param, peft_config=peft_config, base_sync_done=self.base_sync_done)
+        from verl.utils.local_update_audit import rollout_sync_completed
+        rollout_sync_completed(self)
         log_gpu_memory_usage("After update_weights", logger=logger)
         del params, per_tensor_param
         aggressive_empty_cache(force_sync=True)

@@ -1,0 +1,73 @@
+{
+  "groups": {
+    "train": {
+      "episodes": 128,
+      "success": 20,
+      "quality": 14,
+      "multi_tasks": 100,
+      "multi_success": 10,
+      "multi_quality": 5,
+      "multi_valid_distill": 1,
+      "valid_distill": 10,
+      "distill_calls": 14
+    },
+    "dev_before": {
+      "episodes": 64,
+      "success": 9,
+      "quality": 8,
+      "multi_tasks": 53,
+      "multi_success": 6,
+      "multi_quality": 6,
+      "multi_valid_distill": 0,
+      "valid_distill": 0,
+      "distill_calls": 0
+    },
+    "dev_after": {
+      "episodes": 64,
+      "success": 6,
+      "quality": 5,
+      "multi_tasks": 53,
+      "multi_success": 3,
+      "multi_quality": 2,
+      "multi_valid_distill": 0,
+      "valid_distill": 0,
+      "distill_calls": 0
+    },
+    "probe": {
+      "episodes": 32,
+      "success": 4,
+      "quality": 4,
+      "multi_tasks": 25,
+      "multi_success": 1,
+      "multi_quality": 1,
+      "multi_valid_distill": 0,
+      "valid_distill": 3,
+      "distill_calls": 4
+    }
+  },
+  "dev_paired": {
+    "success": {
+      "both": 5,
+      "improved": 1,
+      "worsened": 4,
+      "neither": 54
+    },
+    "quality": {
+      "both": 4,
+      "improved": 1,
+      "worsened": 4,
+      "neither": 55
+    }
+  },
+  "updates": 4,
+  "model_calls": 1047,
+  "saved_requests": 1047,
+  "complete": {
+    "arm": "A",
+    "seconds": 4484.9604568481445,
+    "actual_run_ppo_returned": true,
+    "checkpoint_saved": false,
+    "final_model_retained": false
+  },
+  "summary_time": 1792837668.3803754
+}

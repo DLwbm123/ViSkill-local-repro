@@ -1,0 +1,7 @@
+{
+  "arm": "A",
+  "seconds": 4484.9604568481445,
+  "actual_run_ppo_returned": true,
+  "checkpoint_saved": false,
+  "final_model_retained": false
+}

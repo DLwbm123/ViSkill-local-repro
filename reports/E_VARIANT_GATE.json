@@ -23,5 +23,6 @@
     "PPO NOT RUN"
   ],
   "next": "Prepare exactly1 full-parameter PPO step for the named variant only; all actual F acceptance must be measured, no automatic300-step training",
-  "original_total_deadline": 1792858781.9046373
+  "original_total_deadline": 1792858781.9046373,
+  "snapshot_context": "Historical E component gate before the first PPO run. Original snapshot limits below are retained as history; current training/card evidence and remaining F limits are in reports/11_bootstrap_pair_results.md."
 }

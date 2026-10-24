@@ -110,9 +110,13 @@ class FrozenLake(GymImageEnv):
     # GymImageEnv abstract methods
     # ------------------------------
     async def close(self) -> None:
-        """Non-blocking close via to_thread to avoid blocking the loop."""
+        """Release this RGB environment without shutting down process-wide SDL."""
         if self.gym_env is not None:
-            await asyncio.to_thread(self.gym_env.close)
+            # Gymnasium.close calls pygame.quit globally; concurrent episodes
+            # share that runtime and can deadlock while another env is active.
+            self.gym_env.window = None
+            self.gym_env.clock = None
+            self.gym_env = None
 
     async def reset(self, seed: int) -> Tuple[Dict[str, Any], Dict[str, Any]]:
         """

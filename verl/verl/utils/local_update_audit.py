@@ -1,6 +1,7 @@
 """Opt-in sample delta around real optimizer steps; not a model checksum."""
 import json
 import os
+import time
 from pathlib import Path
 import torch
 
@@ -29,10 +30,25 @@ def record(role, entries, grad_norm):
         total += float((after - before).double().square().sum())
     folder = Path(os.environ['LOCAL_UPDATE_AUDIT_DIR'])
     folder.mkdir(parents=True, exist_ok=True)
-    row = {'role': role, 'pid': os.getpid(), 'rank': torch.distributed.get_rank() if torch.distributed.is_initialized() else 0,
+    row = {'role': role, 'pid': os.getpid(), 'time': time.time(), 'rank': torch.distributed.get_rank() if torch.distributed.is_initialized() else 0,
            'sample_delta_l2': total ** .5, 'grad_norm': float(grad_norm), 'finite': finite,
            'sampled_values': sum(x.numel() for _, _, x in entries),
            'trainable_local_elements': sum(p.numel() for p, _, _ in entries)}
     with (folder / f'{role}_{os.getpid()}.jsonl').open('a') as stream:
         stream.write(json.dumps(row) + '\n')
     assert finite, 'non-finite optimizer audit'
+
+
+def rollout_sync_completed(worker):
+    root = os.getenv('LOCAL_SYNC_AUDIT_DIR')
+    if not root:
+        return
+    worker._local_sync_count = getattr(worker, '_local_sync_count', 0) + 1
+    path = Path(root)
+    path.mkdir(parents=True, exist_ok=True)
+    row = {'time': time.time(), 'pid': os.getpid(),
+           'rank': torch.distributed.get_rank(), 'sync_count': worker._local_sync_count,
+           'update_weights_await_returned': True,
+           'scope': 'actual rollout-mode tensor update returned; not a full-weight identity check'}
+    with (path / f'sync_{os.getpid()}.jsonl').open('a') as stream:
+        stream.write(json.dumps(row) + '\n')

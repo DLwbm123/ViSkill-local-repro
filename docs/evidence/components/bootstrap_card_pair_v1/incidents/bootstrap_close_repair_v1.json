@@ -1,0 +1,16 @@
+{
+  "time": 1792834575.3845356,
+  "actor_pid": 4168995,
+  "seed": 61010,
+  "phase": "dev",
+  "model_calls_before": 54,
+  "completed_episodes_before": 15,
+  "optimizer_updates_before": 0,
+  "repair": "Release RGB-env references and complete only its observed stuck pygame.quit cleanup waiter.",
+  "inference_repeated": false,
+  "environment_actions_repeated": false,
+  "request_outputs_edited": false,
+  "clock_or_budget_reset": false,
+  "remaining_thread": "Original pygame.quit C call may remain blocked until owned worker shutdown.",
+  "cleanup_waiter_completed": true
+}

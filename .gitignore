@@ -48,3 +48,5 @@ artifacts/component_tests/policy_observation_v1/
 PUBLICATION_LOCAL_*.json
 
 artifacts/component_tests/dynamics_wording_v1/
+
+artifacts/component_tests/bootstrap_card_pair_v1/

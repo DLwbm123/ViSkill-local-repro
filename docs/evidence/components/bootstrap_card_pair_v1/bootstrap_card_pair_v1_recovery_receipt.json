@@ -1,0 +1,30 @@
+{
+  "start_unix": 1792831455.7934191,
+  "recovery_started_unix": 1792837774.459672,
+  "preparation_start_unix": 1792830540.3041732,
+  "deadline_unix": 1792844940.3041732,
+  "original_total_deadline": 1792858781.9046373,
+  "supervisor_pid": 67233,
+  "run_token": "113693700e1746d1b49fb19bf5f0652e",
+  "baseline_bytes": 68431892480,
+  "write_limit_bytes": 70231892480,
+  "maximum_additional_bytes": 2000000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "checkpoint_save": false,
+  "arms": {
+    "A": {
+      "start_unix": 1792831456.4168003,
+      "deadline_unix": 1792838656.4168003,
+      "exit_code": 0
+    },
+    "B": {
+      "start_unix": 1792837774.980717,
+      "deadline_unix": 1792843177.4530435
+    }
+  },
+  "resume_only_unstarted_B": true,
+  "original_run_token": "b1955d05cd5f487584cdeaffc76833ed"
+}

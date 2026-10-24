@@ -1,0 +1,13 @@
+{
+  "config_validated": true,
+  "cpu_tests": 5,
+  "test_exit_code": 0,
+  "model_calls": 0,
+  "checkpoint_save_forbidden": true,
+  "scripted_fixture_model_calls": 0,
+  "scripted_fixture_generate_calls": 5,
+  "real_processor_environment_loop_phase_check": true,
+  "both_arm_configs_validated": true,
+  "hf_save_disabled": true,
+  "final_test_exit": 0
+}

@@ -1,0 +1,69 @@
+{
+  "method": "Supplementary paired-map percentile bootstrap,10000 resamples, RNG seed20261024; conditional on the two observed training runs, not training-seed uncertainty; no new qualification gate.",
+  "A_before_vs_after": {
+    "success": {
+      "paired_maps": 64,
+      "difference": -0.046875,
+      "percentile_bootstrap_95_ci": [
+        -0.125,
+        0.015625
+      ],
+      "improved": 1,
+      "worsened": 4
+    },
+    "quality": {
+      "paired_maps": 64,
+      "difference": -0.046875,
+      "percentile_bootstrap_95_ci": [
+        -0.125,
+        0.015625
+      ],
+      "improved": 1,
+      "worsened": 4
+    }
+  },
+  "B_before_vs_after": {
+    "success": {
+      "paired_maps": 64,
+      "difference": 0.015625,
+      "percentile_bootstrap_95_ci": [
+        -0.09375,
+        0.140625
+      ],
+      "improved": 8,
+      "worsened": 7
+    },
+    "quality": {
+      "paired_maps": 64,
+      "difference": 0.03125,
+      "percentile_bootstrap_95_ci": [
+        -0.078125,
+        0.140625
+      ],
+      "improved": 8,
+      "worsened": 6
+    }
+  },
+  "A_after_vs_B_after": {
+    "success": {
+      "paired_maps": 64,
+      "difference": 0.0625,
+      "percentile_bootstrap_95_ci": [
+        -0.046875,
+        0.171875
+      ],
+      "improved": 8,
+      "worsened": 4
+    },
+    "quality": {
+      "paired_maps": 64,
+      "difference": 0.078125,
+      "percentile_bootstrap_95_ci": [
+        -0.015625,
+        0.1875
+      ],
+      "improved": 8,
+      "worsened": 3
+    }
+  }
+}

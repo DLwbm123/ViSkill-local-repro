@@ -1,0 +1,292 @@
+{
+  "rollout_policy_version": 3,
+  "optimizer_update_completed_version": 4,
+  "seeds": [
+    60107,
+    60104,
+    60103,
+    60124,
+    60098,
+    60126,
+    60112,
+    60105,
+    60118,
+    60117,
+    60113,
+    60102,
+    60099,
+    60101,
+    60121,
+    60114,
+    60106,
+    60123,
+    60111,
+    60128,
+    60125,
+    60119,
+    60129,
+    60127,
+    60110,
+    60100,
+    60115,
+    60122,
+    60108,
+    60116,
+    60120,
+    60109
+  ],
+  "skill_ids": [
+    null,
+    "skill_0",
+    "skill_0",
+    null,
+    null,
+    null,
+    null,
+    "skill_2",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "skill_1",
+    null,
+    null,
+    "skill_0",
+    "skill_3",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "skill_1",
+    null,
+    "skill_3",
+    null
+  ],
+  "episode_paths": [
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60107_80622731c66d473db56c908ad7b58c35/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60104_2b5306fea94c467f8db55974cca0dcd6/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60103_457214a7975a405f88a43c31b87edf1d/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60124_44c795cf4ef54582a65de43babfeb73c/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60098_5d30e5c832ed468ca81ca790f350b702/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60126_1d88c76f60684aca9b0b7d8261de8f24/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60112_7b46e1a38db04ffaabf219c2cc257882/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60105_27ddd29e362d4760a0c917fe74f17199/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60118_6703be668e014ffbbf32e3fb4a6fc726/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60117_a399de1a62714dc39cd1eefce53ecc46/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60113_84f9af2608764bfea9e05d1fd72bed54/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60102_a2dc59723c4f4679aa998452873573e9/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60099_5b7cd9d7ca014ce3a4a419e7be666305/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60101_b2631f1e9a27478a829ee9de97326184/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60121_504d208df570413f9beaccf90fbcde04/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60114_cc90b789cd4f4a1a9efab5055aa52459/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60106_37ebe44dda5c451992d0ab42c993ba66/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60123_a32fad5375b24416b76d1b7d0ded097f/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60111_6bb6941615a9435296b153d8495ee330/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60128_46c3e5c0a2ed4819916b65e31f2aa55e/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60125_7d3e80945094464898b7662d89baaca6/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60119_609b00d6dc654190b7e90db2d8a7df35/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60129_2188923703ad4b35b28d179bd4bf0030/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60127_406db3190f09480ebe082b6023b3c931/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60110_fa0c435635b443fe9514fb96d4a40370/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60100_a258d41e4a5a40c18969725331e5dff2/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60115_9edfc0949ce1422ab4695047bf129d52/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60122_c202a887609f4b60933815d74c5121f4/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60108_13a648e5072e441b907167ac4dc443bc/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60116_cb7d19b788ad4496b85009cc311a7f43/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60120_e7e82a5b5a0e437b9ff1fc99848ddc29/episode.json",
+    "/data/local/ViSkill/results/ppo_smoke/bootstrap_card_pair_v1/B/episodes/train_3_60109_a25356a750b94598bc453aff4b631b00/episode.json"
+  ],
+  "response_mask_checked": true,
+  "library_after_callback": {
+    "next_id": 5,
+    "skills": [
+      {
+        "id": "skill_0",
+        "seed": 60021,
+        "env_id": null,
+        "features": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "strategy": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "image_path": "skill_0.png",
+        "utility": 0.67195,
+        "use_count": 4,
+        "trajectory": [
+          "right"
+        ],
+        "positions": [
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "skill_1",
+        "seed": 60055,
+        "env_id": null,
+        "features": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "strategy": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "image_path": "skill_1.png",
+        "utility": 0.5545,
+        "use_count": 3,
+        "trajectory": [
+          "down"
+        ],
+        "positions": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "skill_2",
+        "seed": 60077,
+        "env_id": null,
+        "features": [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "strategy": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "image_path": "skill_2.png",
+        "utility": 0.45,
+        "use_count": 1,
+        "trajectory": [
+          "up"
+        ],
+        "positions": [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "skill_3",
+        "seed": 60083,
+        "env_id": null,
+        "features": [
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "strategy": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"left\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"left\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "image_path": "skill_3.png",
+        "utility": 0.5950000000000001,
+        "use_count": 2,
+        "trajectory": [
+          "left"
+        ],
+        "positions": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "skill_4",
+        "seed": 60099,
+        "env_id": null,
+        "features": [
+          -1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "strategy": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "image_path": "skill_4.png",
+        "utility": 0.5,
+        "use_count": 0,
+        "trajectory": [
+          "up",
+          "up",
+          "up"
+        ],
+        "positions": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      }
+    ]
+  }
+}

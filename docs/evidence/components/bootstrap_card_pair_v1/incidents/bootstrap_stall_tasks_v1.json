@@ -1,0 +1,117 @@
+[
+  {
+    "task": "<Task finished name='Task-20' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task finished name='Task-19' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task finished name='Task-17' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task pending name='Task-14' coro=<run_async_func_or_coro_in_event_loop.<locals>.async_func()> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_chain_future.<locals",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'asyncio.tasks._GatheringFuture'>",
+    "done": false
+  },
+  {
+    "task": "<Task finished name='Task-22' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task finished name='Task-21' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task finished name='Task-15' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task finished name='Task-18' coro=<AgentLoopWorkerBase._run_agent_loop() done, defined at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:481> re",
+    "chain": [],
+    "sample": {},
+    "waiter_type": "<class 'NoneType'>",
+    "done": true
+  },
+  {
+    "task": "<Task pending name='Task-16' coro=<AgentLoopWorkerBase._run_agent_loop() running at /data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py:493> wait_for=",
+    "chain": [
+      {
+        "file": "/data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py",
+        "line": 493,
+        "function": "_resume_span"
+      },
+      {
+        "file": "/data/local/ViSkill/src/verl/verl/experimental/agent_loop/agent_loop.py",
+        "line": 395,
+        "function": "_run_agent_loop"
+      },
+      {
+        "file": "/data/local/ViSkill/src/vagen/agent_loop/bootstrap_agent.py",
+        "line": 78,
+        "function": "run"
+      },
+      {
+        "file": "/data/local/ViSkill/src/verl/verl/utils/rollout_trace.py",
+        "line": 146,
+        "function": "async_wrapper"
+      },
+      {
+        "file": "/data/local/ViSkill/src/vagen/agent_loop/gym_agent_loop_skill.py",
+        "line": 198,
+        "function": "run"
+      },
+      {
+        "file": "/data/local/ViSkill/src/vagen/envs/frozenlake/frozenlake_env.py",
+        "line": 115,
+        "function": "close"
+      },
+      {
+        "file": "/data/local/envs/z0/lib/python3.10/asyncio/threads.py",
+        "line": 25,
+        "function": "to_thread"
+      }
+    ],
+    "sample": {
+      "actions": [
+        "right"
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "turns": 1,
+      "success": false
+    },
+    "waiter_type": "<class '_asyncio.Future'>",
+    "done": false
+  }
+]

@@ -1,0 +1,778 @@
+{
+  "states": 96,
+  "multi_tasks": 78,
+  "any_valid_multi": 0,
+  "any_valid_multi_above_threshold": 0,
+  "rows": [
+    {
+      "seed": 61058,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61001,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61002,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61018,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_2",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62025,
+      "phase": "probe",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61053,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61040,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61008,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62014,
+      "phase": "probe",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61032,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61012,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61041,
+      "phase": "dev",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61019,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61006,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61048,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61042,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61044,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61035,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61059,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61023,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62019,
+      "phase": "probe",
+      "bfs": 6,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61030,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61028,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61063,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62007,
+      "phase": "probe",
+      "bfs": 8,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61056,
+      "phase": "dev",
+      "bfs": 6,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61015,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_3",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61049,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_2",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61061,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62028,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61046,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62024,
+      "phase": "probe",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62008,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62011,
+      "phase": "probe",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61009,
+      "phase": "dev",
+      "bfs": 6,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61047,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_1",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61055,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61029,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61033,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62001,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62032,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62029,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_0",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62020,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61022,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_3",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62003,
+      "phase": "probe",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62016,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62030,
+      "phase": "probe",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61024,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61021,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_3",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61050,
+      "phase": "dev",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61057,
+      "phase": "dev",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61039,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61005,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62015,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_2",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61013,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62018,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_3",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61020,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61051,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62027,
+      "phase": "probe",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62009,
+      "phase": "probe",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61010,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62010,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61003,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61016,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_0",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61014,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62022,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_1",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62006,
+      "phase": "probe",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61007,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61037,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_1",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61031,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_2",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62002,
+      "phase": "probe",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62012,
+      "phase": "probe",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61064,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_3",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61036,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61043,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62005,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_0",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61060,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62013,
+      "phase": "probe",
+      "bfs": 6,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62017,
+      "phase": "probe",
+      "bfs": 7,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61052,
+      "phase": "dev",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61027,
+      "phase": "dev",
+      "bfs": 1,
+      "actual_injected": "skill_2",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61062,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62004,
+      "phase": "probe",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61026,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61045,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62026,
+      "phase": "probe",
+      "bfs": 5,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62021,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_3",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61054,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61004,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61011,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61034,
+      "phase": "dev",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62031,
+      "phase": "probe",
+      "bfs": 2,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61017,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61038,
+      "phase": "dev",
+      "bfs": 4,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 61025,
+      "phase": "dev",
+      "bfs": 3,
+      "actual_injected": null,
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    },
+    {
+      "seed": 62023,
+      "phase": "probe",
+      "bfs": 1,
+      "actual_injected": "skill_1",
+      "valid_multi_candidates": 0,
+      "valid_multi_above_threshold": 0
+    }
+  ],
+  "model_calls": 0,
+  "scope": "Post-hoc read-only coverage of final B library on its already completed Dev-after/probe inputs, not new evaluation."
+}

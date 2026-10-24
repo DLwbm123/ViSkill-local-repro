@@ -1,0 +1,12 @@
+{
+  "name": "retrieval_coverage_v1",
+  "purpose": "Read-only mainline feasibility audit: test whether rank-then-guard hides an eligible alternative, and measure structural support of the already-observed diagnostic library.",
+  "source": "All128 saved capacity initial states plus all32 paired dynamics initial states, existing final3-skill diagnostic library. In-sample/offline evidence; no held-out performance claim.",
+  "comparison": "Current top1-then-guard versus hypothetical highest-scoring guarded-valid candidate, same .8 retrieval threshold and original similarity/utility. Do not mutate any library or production path.",
+  "decision": "If any eligible alternatives are missed, document exact cases before a separately named fix. If none are missed, do not implement a retrieval repair or widen this audit. Report reference action lengths and task BFS strata; no model benefit claim.",
+  "max_states":160,
+  "model_calls":0,
+  "training":false,
+  "admission":false,
+  "original_total_deadline":1792858781.9046373
+}

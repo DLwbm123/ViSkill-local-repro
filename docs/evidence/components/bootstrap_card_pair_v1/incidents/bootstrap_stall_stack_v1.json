@@ -1,0 +1,78 @@
+{
+  "pid": 4168995,
+  "stacks": {
+    "126149737838272": [
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/ray/_private/function_manager.py\", line 689, in actor_method_executor\n    return method(__ray_actor, *args, **kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py\", line 461, in _resume_span\n    return method(self, *_args, **_kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/ray/actor.py\", line 2320, in __ray_call__\n    return fn(self, *args, **kwargs)\n",
+      "  File \"<stdin>\", line 12, in read_stacks\n"
+    ],
+    "126146670749376": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126146679142080": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126147568309952": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126147576702656": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 83, in _worker\n    work_item.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/gymnasium/envs/toy_text/frozen_lake.py\", line 473, in close\n    pygame.quit()\n"
+    ],
+    "126147585095360": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126147593488064": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126147601880768": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126147610273472": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/concurrent/futures/thread.py\", line 81, in _worker\n    work_item = work_queue.get(block=True)\n"
+    ],
+    "126150265366208": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/torch/_inductor/compile_worker/subproc_pool.py\", line 195, in _read_thread\n    job_id, data = _recv_msg(self.read_pipe)\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/torch/_inductor/compile_worker/subproc_pool.py\", line 61, in _recv_msg\n    job_id, length = _unpack_msg(read_pipe.read(msg_bytes))\n"
+    ],
+    "126150303020736": [
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 973, in _bootstrap\n    self._bootstrap_inner()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 1016, in _bootstrap_inner\n    self.run()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/threading.py\", line 953, in run\n    self._target(*self._args, **self._kwargs)\n"
+    ],
+    "126164866794880": [
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/ray/_private/workers/default_worker.py\", line 323, in <module>\n    worker.main_loop()\n",
+      "  File \"/data/local/envs/z0/lib/python3.10/site-packages/ray/_private/worker.py\", line 984, in main_loop\n    self.core_worker.run_task_loop()\n"
+    ]
+  },
+  "async_tasks": []
+}
