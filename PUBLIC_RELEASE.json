@@ -144,5 +144,11 @@
     "private_learned_delta_and_schema_exported": false,
     "two_input_operational_gate_pass": true,
     "learning_gain_established": false
+  },
+  "report24_publication_correction": {
+    "initial_commit": "dba6c73",
+    "issue": "A failed privacy assertion did not halt subsequent shell commands; two unsanitized local paths from the source reproduction manifest entered public history. No model parameters or credentials were identified.",
+    "correction": "Restore the already sanitized public manifest and merge only the new recovery result. Preserve public history and disclose the incident.",
+    "failed_prepublication_guard_retained": true
   }
 }

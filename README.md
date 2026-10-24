@@ -54,7 +54,7 @@ The named directional variant changes strategy representation and uses privilege
 - [Paper](https://arxiv.org/abs/2610.12403), [paper/code audit](docs/01_paper_code_audit.md), [upstream README](README_UPSTREAM.md).
 - [Environment deviations](docs/03_environment_setup.md), [publication manifest](PUBLIC_RELEASE.json).
 
-This sanitized snapshot includes code, configs, synthetic map manifests/images, episode outcomes, audit scripts and compact numeric/update/sync/exit evidence. Model weights, checkpoints, complete runtime request/log archives, private machine paths, paper PDF/full text and private Git history are excluded. Earlier public history retains the previously disclosed username-literal correction; this update does not rewrite that history.
+This sanitized snapshot includes code, configs, synthetic map manifests/images, episode outcomes, audit scripts and compact numeric/update/sync/exit evidence. Model weights, checkpoints, complete runtime request/log archives, private machine paths, paper PDF/full text and private Git history are excluded. Public history retains the previously disclosed username-literal correction and the report24 local-path correction. The report24 publish shell continued after a failed privacy assertion; the current manifest is corrected, and history is retained. No model parameters or credentials were identified in that incident.
 
 `/workspace/ViSkill-local-repro`, `/data/local` and `gpu-host` are deployment placeholders. Historical process IDs and receipts are evidence, not active endpoints. Some source references point to excluded runtime files. Future major results, including negative results, will be committed and pushed with the same public-data boundaries.
 
