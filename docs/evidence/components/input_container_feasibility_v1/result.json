@@ -1,0 +1,633 @@
+{
+  "status": "COMPLETE_CPU_INPUT_USABILITY",
+  "error": null,
+  "completed_unix": 1792880769.9682133,
+  "preparation_started_unix": 1792879757.3,
+  "deadline_unix": 1792881557.3,
+  "small_mixed_dtype_byte_view_MM_fixture_passed": true,
+  "single_existing_C32_basic_usability_passed": true,
+  "source_container_bytes": 290590081,
+  "private_gzip_bytes": 27543997,
+  "metadata": {
+    "rows": 32,
+    "tensors": {
+      "prompts": {
+        "shape": [
+          32,
+          8192
+        ],
+        "dtype": "torch.int64"
+      },
+      "responses": {
+        "shape": [
+          32,
+          4096
+        ],
+        "dtype": "torch.int64"
+      },
+      "response_mask": {
+        "shape": [
+          32,
+          4096
+        ],
+        "dtype": "torch.int64"
+      },
+      "input_ids": {
+        "shape": [
+          32,
+          12288
+        ],
+        "dtype": "torch.int64"
+      },
+      "attention_mask": {
+        "shape": [
+          32,
+          12288
+        ],
+        "dtype": "torch.int64"
+      },
+      "position_ids": {
+        "shape": [
+          32,
+          4,
+          12288
+        ],
+        "dtype": "torch.int64"
+      },
+      "rm_scores": {
+        "shape": [
+          32,
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "token_level_scores": {
+        "shape": [
+          32,
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "token_level_rewards": {
+        "shape": [
+          32,
+          4096
+        ],
+        "dtype": "torch.float32"
+      }
+    },
+    "non_tensor_keys": [
+      "__num_turns__",
+      "data_source",
+      "distillation_audit",
+      "distilled_strategy",
+      "env_name",
+      "fixed_context",
+      "fixed_group",
+      "initial_env_state",
+      "mechanism_audit",
+      "multi_modal_inputs",
+      "pilot_episode_path",
+      "pilot_phase",
+      "pilot_policy_version",
+      "retrieved_skill_id",
+      "reward_extra_info",
+      "seed",
+      "skill_artifact",
+      "skill_score",
+      "traj_success",
+      "trajectory_actions",
+      "trajectory_frames",
+      "trajectory_positions",
+      "uid",
+      "validation_initial_state_image",
+      "validation_skill_image"
+    ],
+    "MM_rows": 32,
+    "MM_tensors": [
+      {
+        "pixel_values": {
+          "shape": [
+            2260,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            6,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            720,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1620,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            2260,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            6,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1044,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1620,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1288,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            720,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1620,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            964,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            2016,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            6,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            324,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1612,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            4,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            720,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1620,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            2260,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            6,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            720,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1620,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            2260,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            6,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            720,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            324,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1936,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            720,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1620,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            5,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1612,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            4,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1612,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            4,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            964,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1288,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1612,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            4,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            964,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            1612,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            4,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      },
+      {
+        "pixel_values": {
+          "shape": [
+            2260,
+            1176
+          ],
+          "dtype": "torch.float32"
+        },
+        "image_grid_thw": {
+          "shape": [
+            6,
+            3
+          ],
+          "dtype": "torch.int64"
+        }
+      }
+    ]
+  },
+  "actual_full_byte_identity_verified": false,
+  "source_unchanged_read_only": true,
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "model_optimizer_steps": 0,
+  "environment_steps": 0,
+  "main_argv": [
+    "/data/envs/z0/bin/python",
+    "-"
+  ],
+  "scope": "One fixed gzip1 encoding; existing C32 data only. Actual reload checks metadata, mask counts and eight fixed IDs, not a full value or byte comparison. Input container includes private runtime context and stays remote; only stats are public."
+}

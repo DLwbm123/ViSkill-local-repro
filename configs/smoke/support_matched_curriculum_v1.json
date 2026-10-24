@@ -1,0 +1,113 @@
+{
+  "name": "support_matched_curriculum_v1",
+  "status": "FROZEN_CPU_READY",
+  "preparation_started_unix": 1792876970.446,
+  "max_seconds_including_preparation": 14400,
+  "absolute_total_deadline": 1792899507,
+  "storage_baseline_reference_bytes": 84307259392,
+  "maximum_additional_bytes": 650000000,
+  "write_stop_additional_bytes": 620000000,
+  "project_write_stop_bytes": 85000000000,
+  "private_archive_write_stop_bytes": 225000000,
+  "bank_write_stop_bytes": 70000000,
+  "bank_maximum_bytes": 75000000,
+  "minimum_free_write_budget_before_first_update": 500000000,
+  "minimum_seconds_before_first_update": 3600,
+  "minimum_seconds_before_second_update": 2700,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "phase_order": [
+    "collect",
+    "Q",
+    "reload_Q",
+    "R",
+    "reload_R",
+    "eval_b0",
+    "eval_Q",
+    "eval_R"
+  ],
+  "evaluation_labels": [
+    "b0",
+    "Q",
+    "R"
+  ],
+  "source_library": "results/ppo_smoke/bootstrap_card_pair_v1/B/library",
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think",
+    "accurate_dynamics_prompt": true
+  },
+  "train_candidate_bounds": [
+    400001,
+    416384
+  ],
+  "dev_candidate_bounds": [
+    500001,
+    516384
+  ],
+  "training_quotas": {
+    "conditional": 16,
+    "medium": 8,
+    "single": 8,
+    "long": 8
+  },
+  "dev_quotas": {
+    "conditional": 16,
+    "medium": 8,
+    "long": 8,
+    "single": 8
+  },
+  "selection": "First ascending eligible unseen full boards in fixed pools; categories based only on observed task structure before any modelcall. Include all sampled outcomes. No seed replacement or pool widening.",
+  "changed_factor": "Fixed32-sample training operator, replace8 single-start episodes with8 long-start BFS4+ episodes. Exact same24 conditional/medium samples in the same branch positions. Data/reward/whitening differences follow the defined distribution intervention.",
+  "fixed_operator": "Existing answer-content-overlap PG numerator; full-generated GAE1/1, whitening and per-episode denominator. Zero value baseline, sameb0/emptyAdamW/LR1e-6/mini32/micro1/epoch1/clip/entropy0/KL0/cards. No loss-mask/LR grid, no resumption of oldA.",
+  "collection_gate": "All40 nonempty answer support; each of conditional/medium/single/long has >=1 actualb0 success. Tightened from draft before anycalls to make both arms have positive feedback. If false stop beforeboth updates, retain all outcomes, no resampling.",
+  "limits": {
+    "collection_episodes": 40,
+    "evaluation_episodes": 120,
+    "total_native_calls": 800,
+    "per_phase_native_calls": 200,
+    "new_global_actor_steps": 2,
+    "critic_steps": 0,
+    "actor_forward_samples_before_evaluation": 232,
+    "distill_calls": 0,
+    "admissions": 0
+  },
+  "probability_gate": {
+    "max_abs_nats": 0.05,
+    "mean_abs_nats": 0.005,
+    "common_pre_rows": 24,
+    "reload_rows_per_policy": 2
+  },
+  "investment_gate": {
+    "R_conditional_quality_minimum": 6,
+    "R_conditional_success_quality_gain_vs_b0_minimum": 2,
+    "R_conditional_success_quality_net_vs_Q_minimum": 0,
+    "conditional_paired_declines_vs_both_maximum": 1,
+    "R_natural_success_quality_minimum": 4,
+    "R_natural_success_quality_gain_vs_both_minimum": 2,
+    "R_long_quality_minimum": 2,
+    "R_long_success_quality_gain_vs_both_minimum": 1,
+    "natural_paired_declines_vs_both_maximum": 1,
+    "R_single_quality_minimum": 4,
+    "single_success_quality_net_vs_both_minimum": 0,
+    "single_success_quality_paired_declines_vs_both_maximum": 0,
+    "natural_and_single_Stop_turns_Stop_episodes_holes_vs_both_non_increasing": true,
+    "scope": "Pilot investment gate; one training seed and wide paired CI, no stable efficacy or universal safety claim"
+  },
+  "stopping": "No repeated completed samples, model scores, actor steps or dispatched evaluations. Resource/input/reload/scientific failure preserves complete evidence and stops dependent phases; no automatic extra step/grid/seed/teacher repair.",
+  "input_readiness": "Fixed gzip1 container validated on small mixed-dtype MM fixture and one existing C32; private source/raw input protected, actual full byte identity not claimed. Newactualbank uses same input format and a basic readability check.",
+  "storage_basis": "Before original candidate prep, conservative04:52 root snapshot; includes all subsequent preparation including private27.54MB codec fixture.650/620MB revised from design-only600/550 only before any modelcall based on actual measured input compression; total still strictly below85GB. Beforefirstupdate need at least500MB remaining to write-stop for two225MB artifacts and50MB logs/evidence.",
+  "privacy": "Private bank gzip and learned deltas/schema stay remote. Source/config/synthetic records and filtered numeric evidence only in public. Preserve b0/r0/O/Z/A and old full recovery checkpoint.",
+  "CPU_check_completed_unix": 1792882145.685793,
+  "historical_board_count_excluded": 15080,
+  "historical_actual_candidate_seed_prefix_count_excluded": 17058,
+  "input_container_feasibility_completed_unix": 1792880769.9682133,
+  "private_probe_input_gzip_bytes": 27543997
+}

@@ -1,0 +1,16 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792882145.685793,
+  "bank_rows": 40,
+  "dev_rows": 40,
+  "branch_rows": 32,
+  "common24_same_positions": true,
+  "actual_collect_and_eval_get_gen_batch_passed": true,
+  "unchanged_old_answer_mask_exact32_rows_233_tokens": true,
+  "GAE_zero_baseline_toy_and_subset_mapping_passed": true,
+  "all_actual_phase_configs_valid": true,
+  "MRO_base_correct": true,
+  "model_forwards": 0,
+  "model_optimizer_steps": 0,
+  "environment_steps": 0
+}

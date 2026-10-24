@@ -1,7 +1,7 @@
 {
   "paper_title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
   "arxiv_id": "2610.12403v1",
-  "paper_local_path": "/home/local-user/Desktop/我的论文们/2610.12403v1.pdf",
+  "paper_local_path": "/home/local-user/Desktop/\u6211\u7684\u8bba\u6587\u4eec/2610.12403v1.pdf",
   "repository_url": "https://github.com/ZJU-REAL/ViSkill",
   "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
   "branch": "repro/local-no-api",
@@ -2110,5 +2110,24 @@
     "new_GPU_experiment_launched": false,
     "raw_new_bank_storage_feasible": false,
     "report": "reports/26_retention_cpu_screen.md"
+  },
+  "input_container_feasibility_v1": {
+    "status": "COMPLETE_CPU_INPUT_USABILITY",
+    "source_bytes": 290590081,
+    "private_container_bytes": 27543997,
+    "model_operations": 0,
+    "raw_input_exported": false,
+    "report": "reports/27_input_container_feasibility.md"
+  },
+  "support_matched_curriculum_v1": {
+    "status": "FROZEN_CPU_READY_NO_MODEL_RESULT",
+    "bank_rows": 40,
+    "Dev_rows": 40,
+    "branch_training_rows": 32,
+    "exact_common_branch_positions": 24,
+    "maximum_global_actor_steps": 2,
+    "maximum_native_calls": 800,
+    "deadline_unix": 1792891370.446,
+    "report": "reports/28_support_matched_curriculum.md"
   }
 }

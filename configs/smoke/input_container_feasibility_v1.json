@@ -1,0 +1,20 @@
+{
+  "name": "input_container_feasibility_v1",
+  "status": "FROZEN_CPU_GZIP1_ONLY",
+  "preparation_started_unix": 1792879757.300,
+  "max_seconds_including_preparation": 1800,
+  "candidate_preparation_started_unix": 1792876970.446,
+  "maximum_additional_bytes": 50000000,
+  "write_stop_bytes": 45000000,
+  "storage_baseline_reference_bytes": 84331327488,
+  "project_hard_bytes": 85000000000,
+  "codec": "One fixed gzip level1 stream over cloned CPU tensor dictionaries and original DataProto metadata; no codec search or lossy transformations.",
+  "input": "Read-only existing value_head_single_step_v1/C/shared_batch.pt, once. No new policy input, environment action or score.",
+  "validation": "Small mixed-dtype shared-byte-storage/DataProto multimodal fixture exact values. One actual container basic reload:32 rows, keys/shapes/dtypes/MM coverage, generated-mask counts and eight fixed token IDs. No hash or full actual tensor/byte comparison.",
+  "private_output": "PRIVATE_INPUT.pt.gz is private runtime input, not public evidence; never copy it locally or publish it. Source container remains protected.",
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "model_optimizer_steps": 0,
+  "environment_steps": 0,
+  "stopping": "Any format/size/time failure stops candidate readiness. No alternate codec, GPU fallback, source deletion or resetting the original06:09 preparation clock."
+}

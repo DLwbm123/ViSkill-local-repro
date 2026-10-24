@@ -173,5 +173,19 @@
     "new_GPU_experiment_launched": false,
     "curriculum_draft_not_model_ready": true,
     "private_inputs_or_weights_exported": false
+  },
+  "input_container_feasibility_v1": {
+    "source_commit": "617e9c2720c111b7a492477eb8b8c4c21f14d168",
+    "report": "reports/27_input_container_feasibility.md",
+    "model_forwards": 0,
+    "private_input_exported": false,
+    "basic_usability_passed": true
+  },
+  "support_matched_curriculum_v1": {
+    "source_commit": "617e9c2720c111b7a492477eb8b8c4c21f14d168",
+    "report": "reports/28_support_matched_curriculum.md",
+    "status": "FROZEN_CPU_READY_BEFORE_MODELCALL",
+    "actual_model_calls_at_publication": 0,
+    "private_input_or_weights_exported": false
   }
 }
