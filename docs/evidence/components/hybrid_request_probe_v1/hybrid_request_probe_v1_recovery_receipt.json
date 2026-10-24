@@ -1,0 +1,14 @@
+{
+  "start_unix": 1792822840.3556345,
+  "original_start_unix": 1792772381.9046373,
+  "deadline_unix": 1792824437.744071,
+  "supervisor_pid": 3882282,
+  "run_token": "f8dbf5418d714723a71426dc2975c30e",
+  "baseline_bytes": 68349911040,
+  "write_limit_bytes": 69347899904,
+  "physical_gpus": [
+    3
+  ],
+  "shared_first_receipt": "hybrid_request_probe_v1_receipt.json",
+  "completed_hybrid_requests_reused": 16
+}

@@ -263,13 +263,17 @@ class ViSkillProvider(SkillProvider):
         bfs_steps: Optional[int],
         skill_score: Optional[float],
     ) -> bool:
+        return self.distill_rejection(total_actions, bfs_steps, skill_score) is None
+
+    def distill_rejection(self, total_actions, bfs_steps, skill_score):
+        """One source for the unchanged quality/coverage gates and their audit."""
         if bfs_steps is None or bfs_steps == 0:
-            return False
+            return "missing_or_zero_bfs"
         if total_actions / bfs_steps > self.distill_quality_ratio:
-            return False
+            return "quality_ratio"
         if skill_score is not None and skill_score >= self.distill_min_score:
-            return False
-        return True
+            return "already_covered"
+        return None
 
     def render_trajectory(
         self, frames, actions, positions=None, strategy="", artifact=None

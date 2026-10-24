@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "vision_examples": {
+      "format_correct": 16,
+      "first_action_progress": 5,
+      "hole": 5,
+      "success": 0,
+      "boundary_noops": 3,
+      "nonempty_actions": 16,
+      "cases": 16
+    },
+    "vision_no_examples": {
+      "format_correct": 16,
+      "first_action_progress": 6,
+      "hole": 4,
+      "success": 1,
+      "boundary_noops": 7,
+      "nonempty_actions": 16,
+      "cases": 16
+    },
+    "text_examples": {
+      "format_correct": 16,
+      "first_action_progress": 6,
+      "hole": 3,
+      "success": 0,
+      "boundary_noops": 2,
+      "nonempty_actions": 15,
+      "cases": 16
+    },
+    "text_no_examples": {
+      "format_correct": 16,
+      "first_action_progress": 4,
+      "hole": 2,
+      "success": 0,
+      "boundary_noops": 5,
+      "nonempty_actions": 16,
+      "cases": 16
+    }
+  },
+  "comparisons": {
+    "vision_no_examples_vs_vision_examples": {
+      "improved": 5,
+      "worsened": 4,
+      "lead_gate": false
+    },
+    "text_examples_vs_vision_examples": {
+      "improved": 5,
+      "worsened": 4,
+      "lead_gate": false
+    },
+    "text_no_examples_vs_vision_no_examples": {
+      "improved": 3,
+      "worsened": 5,
+      "lead_gate": false
+    },
+    "text_no_examples_vs_text_examples": {
+      "improved": 2,
+      "worsened": 4,
+      "lead_gate": false
+    }
+  },
+  "model_calls": 64,
+  "full_episode_evaluation": false,
+  "failure_conditioned_development_set": true,
+  "training": false,
+  "wall_seconds": 110.39394450187683
+}

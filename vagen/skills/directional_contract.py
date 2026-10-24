@@ -82,3 +82,24 @@ def check_directional_applicability(contract, actions, state):
     except ValueError as exc:
         return False, str(exc)
     return check_applicability(proxy, actions, state)
+
+
+def build_action_grounded_prompt(actions):
+    """Explicit diagnostic alternative: observed action evidence, no computed answer."""
+    return (
+        'Convert this complete observed successful FrozenLake trajectory into a reusable JSON contract. '
+        'The environment is deterministic. Every listed action moved exactly one grid cell. '
+        'Use the ENTIRE action list, not only its first action or first run. '
+        'Compute net vertical displacement as number of down actions minus number of up actions. '
+        'Compute net horizontal displacement as number of right actions minus number of left actions. '
+        'Infer goal_direction from BOTH signs: negative vertical is up, positive vertical is down; '
+        'negative horizontal is left, positive horizontal is right. Combine nonzero axes with an underscore, '
+        'vertical first. goal_manhattan_distance is the sum of the absolute values of BOTH net displacements. '
+        'The observed trajectory ended successfully at the goal, so its net displacement is the start-to-goal displacement. '
+        'For what, preserve EVERY action in order; combine only consecutive identical actions into action/count objects. '
+        'when must contain exactly goal_direction, goal_manhattan_distance, requires_clear_route. '
+        'goal_direction is one of up/down/left/right/up_left/up_right/down_left/down_right. '
+        'goal_manhattan_distance is a positive integer; requires_clear_route must be true, a required applicability condition. '
+        'Each what action must be lowercase up/down/left/right and count a positive integer. '
+        'Return only a JSON object with exactly when and what; no explanation, markdown, or other keys.\n'
+        'Observed terminal success: true\nComplete executed actions: '+json.dumps(actions))

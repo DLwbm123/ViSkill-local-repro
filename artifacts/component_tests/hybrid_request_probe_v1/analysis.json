@@ -1,0 +1,224 @@
+{
+  "primary_raw_greedy_match": 0,
+  "greedy_count": 8,
+  "secondary_posthoc_exact_prefix_tokens": [
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "secondary_body_greedy_match": 7,
+  "secondary_warning": "Post-hoc framing observation, not the preregistered raw token match and not proof of weight equivalence. Original raw records unchanged.",
+  "batching_deviation": "hybrid inherited val_batch_size2, eight wake/sync cycles; onlygreedy seeds1,2 firstwake",
+  "results": [
+    {
+      "seed": 1,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 2,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 3,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 4,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 5,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 6,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 7,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": true,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 8,
+      "temperature": 0.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "Right"
+      ]
+    },
+    {
+      "seed": 1,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Up"
+      ],
+      "standalone_answer": [
+        "Down"
+      ]
+    },
+    {
+      "seed": 2,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Left"
+      ],
+      "standalone_answer": [
+        "Up"
+      ]
+    },
+    {
+      "seed": 3,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Right"
+      ],
+      "standalone_answer": [
+        "\nRight\n"
+      ]
+    },
+    {
+      "seed": 4,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Up"
+      ],
+      "standalone_answer": [
+        "Down, Right"
+      ]
+    },
+    {
+      "seed": 5,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Left"
+      ],
+      "standalone_answer": [
+        "Right, Right"
+      ]
+    },
+    {
+      "seed": 6,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Left, Left"
+      ],
+      "standalone_answer": [
+        "Up, Up, Right"
+      ]
+    },
+    {
+      "seed": 7,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Right, Up, Down"
+      ],
+      "standalone_answer": [
+        "Down"
+      ]
+    },
+    {
+      "seed": 8,
+      "temperature": 1.0,
+      "exact_raw": false,
+      "standalone_has_exact_outer5": true,
+      "secondary_body_ids_exact": false,
+      "hybrid_answer": [
+        "Up, Right"
+      ],
+      "standalone_answer": [
+        "Up, Right"
+      ]
+    }
+  ]
+}

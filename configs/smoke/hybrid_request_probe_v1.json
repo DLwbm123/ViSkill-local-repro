@@ -1,0 +1,17 @@
+{
+  "name": "hybrid_request_probe_v1",
+  "purpose": "Diagnose initial hybrid rollout text anomaly with a no-update backend/sampling contrast. Not a second PPO batch or a new skill qualification.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "max_attempt_seconds": 1800,
+  "maximum_additional_bytes": 1000000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_physical_gpus": [3,5],
+  "source_model": "Existing pinned b0 weights, no PPO checkpoint or model download",
+  "requests": "Eight fixed initial FrozenLake boards1..8; same official prompt, max1 turn, max512 tokens; temperature0 and1. Transport seeds101..108 map to actual1..8 in the diagnostic-only loop.",
+  "hybrid": "Initialize original two-GPU actor/critic/FSDP+native SGLang hybrid configuration, then one validation dispatch of16 requests after the first weight wake/sync. Custom trainer fit has no update or save code. Skill system disabled solely to isolate initial action generation.",
+  "standalone": "After owned hybrid cluster cleanup, one native SGLang engine on GPU3 replays the16 captured prompt-ID and lossless PNG requests with identical sampling parameters. No prompt/processor regeneration.",
+  "measurements": ["all raw input IDs and output IDs", "input PNG and image count", "sampling and actual seed", "hybrid replica assignment", "greedy exact token agreement and common prefix length", "output token length and action-format presence", "raw text retained for qualitative anomaly review"],
+  "interpretation": "Greedy disagreement identifies a backend/weight/input-processing difference, not automatically a weight-sync bug. Agreement across8 inputs reduces but cannot eliminate that concern. Sampled text is descriptive, not RNG-identical across concurrent replicas and sequential standalone replay. No confidence/performance/generalization claims.",
+  "stop": "Exactly16 hybrid+16 standalone requests maximum. No seed replacement, no training/backward, no skill admission, no new checkpoint/export. Preserve failures. Any retry retains the first receipt deadline and cannot duplicate completed requests."
+}

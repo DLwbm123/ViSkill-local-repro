@@ -1,0 +1,49 @@
+{
+  "name": "schema_decoding_v1",
+  "purpose": "Resolve the new schema failure separately from content reasoning. Fixed 2x2 prompt/decoder comparison using archived unconstrained controls; 16 new schema-constrained calls only.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "max_attempt_seconds": 900,
+  "project_write_stop_bytes": 85000000000,
+  "maximum_additional_bytes": 500000000,
+  "allowed_physical_gpus": [
+    4
+  ],
+  "source": "skill_capacity_v1 (complete EXIT0, 128 episodes)",
+  "seeds": [
+    20020,
+    20028,
+    20032,
+    20038,
+    20041,
+    20082,
+    20100,
+    20105
+  ],
+  "selection": "ALL 8 quality-eligible successes, including every single-step case; not selected by prior distillation validity. Explicit development/replay set, not held out.",
+  "control": "Archived original image prompt 5/8 valid, archived action-grounded image prompt 0/8. No unconstrained request regenerated.",
+  "arms": [
+    "original_prompt_schema",
+    "action_grounded_prompt_schema"
+  ],
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_new_tokens": 256
+  },
+  "model_calls": 16,
+  "sampling_seed": 42,
+  "context_length": 9216,
+  "input_boundary": "Both arms use original saved initial/terminal images and actual policy actions/success. Only the second uses the already-frozen action-grounded prompt. Schema is generic identical across all cases, contains no correct direction/distance/action sequence. No board, positions, computed answer or verifier feedback supplied.",
+  "verification": "Unchanged semantic validator and admission gates. Generic schema constrains output structure/types and action/direction vocabulary only. Raw outputs retained, no repairs.",
+  "metrics": [
+    "8-case complete validity",
+    "3-case multi-step validity",
+    "5-case single-step regressions",
+    "direction/distance/action exactness",
+    "paired differences vs archived control"
+  ],
+  "decision": "Prefer original-prompt schema arm if all 8 cases including all 3 multi-step validate; otherwise action-grounded schema arm must meet the identical criterion. No qualified arm means no PPO and no further prompt search on these eight cases in this campaign; record semantic limitations and formulate a distinct bounded mainline diagnosis.",
+  "stop": "Exactly 16 new greedy requests, no optimizer/checkpoint/library admission. New hypothesis is decoder structure control; not an extension of the completed 16-call grounding run. Repairs share first receipt deadline; do not repeat completed requests."
+}

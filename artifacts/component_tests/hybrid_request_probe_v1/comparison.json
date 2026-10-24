@@ -1,0 +1,130 @@
+[
+  {
+    "seed": 1,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 44,
+    "standalone_length": 49
+  },
+  {
+    "seed": 2,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 48,
+    "standalone_length": 53
+  },
+  {
+    "seed": 3,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 48,
+    "standalone_length": 53
+  },
+  {
+    "seed": 4,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 44,
+    "standalone_length": 49
+  },
+  {
+    "seed": 5,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 44,
+    "standalone_length": 49
+  },
+  {
+    "seed": 6,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 44,
+    "standalone_length": 49
+  },
+  {
+    "seed": 7,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 44,
+    "standalone_length": 49
+  },
+  {
+    "seed": 8,
+    "temperature": 0.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 44,
+    "standalone_length": 53
+  },
+  {
+    "seed": 1,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 55,
+    "standalone_length": 68
+  },
+  {
+    "seed": 2,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 57,
+    "standalone_length": 61
+  },
+  {
+    "seed": 3,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 90,
+    "standalone_length": 85
+  },
+  {
+    "seed": 4,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 68,
+    "standalone_length": 76
+  },
+  {
+    "seed": 5,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 52,
+    "standalone_length": 52
+  },
+  {
+    "seed": 6,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 105,
+    "standalone_length": 79
+  },
+  {
+    "seed": 7,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 76,
+    "standalone_length": 75
+  },
+  {
+    "seed": 8,
+    "temperature": 1.0,
+    "hybrid_exact_ids": false,
+    "common_prefix_tokens": 0,
+    "hybrid_length": 67,
+    "standalone_length": 84
+  }
+]

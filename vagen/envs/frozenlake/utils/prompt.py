@@ -1,13 +1,18 @@
-def system_prompt():
+def system_prompt(slippery=True):
     """Return the system prompt for FrozenLake solver"""
-    return """You are a FrozenLake solver.
+    movement_rule = (
+        "Frozen tiles are slippery, you may move perpendicular to your intended direction."
+        if slippery else
+        "Movement is deterministic. Actions move in the intended direction; a grid boundary can keep you in place."
+    )
+    return f"""You are a FrozenLake solver.
 FrozenLake Quick Guide
 Goal: Reach the goal (G).
 Symbols (If image is provided there are no symbols):
 _ Frozen | O Hole | G Goal | P Player | X Player fell into hole | V Player on goal
 Rules:
 1. Avoid falling into holes.
-2. Frozen tiles are slippery, you may move perpendicular to your intended direction.
+2. {movement_rule}
 Actions you can take: Left, Down, Right, Up."""
 
 

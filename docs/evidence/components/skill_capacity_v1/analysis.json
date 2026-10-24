@@ -1,0 +1,2268 @@
+{
+  "posthoc_no_injection_counterfactual": {
+    "eligible": 17,
+    "failure_positive_bonus": 0,
+    "rows": [
+      {
+        "seed": 20019,
+        "success": false,
+        "skill_id": "skill_2",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20028,
+        "success": true,
+        "skill_id": "skill_0",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20032,
+        "success": true,
+        "skill_id": "skill_1",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20038,
+        "success": true,
+        "skill_id": "skill_1",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20039,
+        "success": false,
+        "skill_id": "skill_0",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20052,
+        "success": false,
+        "skill_id": "skill_2",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20053,
+        "success": false,
+        "skill_id": "skill_0",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20054,
+        "success": false,
+        "skill_id": "skill_1",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20064,
+        "success": false,
+        "skill_id": "skill_2",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20067,
+        "success": true,
+        "skill_id": "skill_1",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20082,
+        "success": true,
+        "skill_id": "skill_2",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20089,
+        "success": false,
+        "skill_id": "skill_0",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20099,
+        "success": false,
+        "skill_id": "skill_0",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20100,
+        "success": true,
+        "skill_id": "skill_1",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20101,
+        "success": false,
+        "skill_id": "skill_2",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20111,
+        "success": false,
+        "skill_id": "skill_1",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      },
+      {
+        "seed": 20114,
+        "success": false,
+        "skill_id": "skill_2",
+        "reference_actions": 1,
+        "score": 0.95,
+        "posthoc_bonus": 0.0
+      }
+    ],
+    "actual_skill_injection": false,
+    "actual_training": false
+  },
+  "funnel": {
+    "episodes": 128,
+    "successful": 15,
+    "quality_eligible": 8,
+    "distillation_called": 8,
+    "distillation_valid": 5,
+    "admitted": 3
+  },
+  "multi_step_bfs_ge2": {
+    "episodes": 105,
+    "successful": 9,
+    "quality_eligible": 3,
+    "distillation_valid": 0,
+    "admitted": 0
+  },
+  "distillation_failures": {
+    "relative goal condition mismatch": 3
+  },
+  "semantic_checks_among_called": {
+    "parse_valid": 8,
+    "direction_correct": 6,
+    "distance_correct": 5,
+    "actions_exact": 6
+  },
+  "admission_reasons": {
+    "not_success": 113,
+    "quality_ratio": 7,
+    "invalid_directional_strategy": 3,
+    "admitted": 3,
+    "batch_novelty": 2
+  },
+  "strata": {
+    "1": {
+      "episodes": 23,
+      "successes": 6,
+      "quality_eligible_successes": 5
+    },
+    "2": {
+      "episodes": 34,
+      "successes": 5,
+      "quality_eligible_successes": 2
+    },
+    "3+": {
+      "episodes": 71,
+      "successes": 4,
+      "quality_eligible_successes": 1
+    },
+    "unreachable": {
+      "episodes": 0,
+      "successes": 0,
+      "quality_eligible_successes": 0
+    }
+  },
+  "unique_exact_boards": 128,
+  "admitted_action_lengths": [
+    1,
+    1,
+    1
+  ],
+  "details": [
+    {
+      "seed": 20001,
+      "bfs": 6,
+      "actions": [
+        "down",
+        "left",
+        "left",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20002,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20003,
+      "bfs": 2,
+      "actions": [
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20004,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "down",
+        "left",
+        "left",
+        "down",
+        "left",
+        "down",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20005,
+      "bfs": 3,
+      "actions": [
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20006,
+      "bfs": 4,
+      "actions": [],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20007,
+      "bfs": 2,
+      "actions": [
+        "up",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20008,
+      "bfs": 1,
+      "actions": [
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20009,
+      "bfs": 5,
+      "actions": [
+        "left",
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20010,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "down",
+        "up",
+        "up"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20011,
+      "bfs": 4,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20012,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "down",
+        "down",
+        "down",
+        "left"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20013,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "down",
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20014,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20015,
+      "bfs": 6,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20016,
+      "bfs": 5,
+      "actions": [
+        "left",
+        "left",
+        "down",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20017,
+      "bfs": 2,
+      "actions": [
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20018,
+      "bfs": 4,
+      "actions": [
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20019,
+      "bfs": 1,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20020,
+      "bfs": 2,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": false,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": true,
+        "distance_correct": false,
+        "actions_exact": false
+      },
+      "admission": "invalid_directional_strategy"
+    },
+    {
+      "seed": 20021,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "down",
+        "right",
+        "right",
+        "up",
+        "up",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20022,
+      "bfs": 4,
+      "actions": [
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20023,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "up",
+        "left",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20024,
+      "bfs": 1,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "up",
+        "right",
+        "up",
+        "left",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20025,
+      "bfs": 4,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20026,
+      "bfs": 5,
+      "actions": [
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20027,
+      "bfs": 2,
+      "actions": [
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20028,
+      "bfs": 1,
+      "actions": [
+        "up"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": true,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": true,
+        "distance_correct": true,
+        "actions_exact": true
+      },
+      "admission": "admitted"
+    },
+    {
+      "seed": 20029,
+      "bfs": 2,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20030,
+      "bfs": 2,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "right",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20031,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20032,
+      "bfs": 1,
+      "actions": [
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": true,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": true,
+        "distance_correct": true,
+        "actions_exact": true
+      },
+      "admission": "admitted"
+    },
+    {
+      "seed": 20033,
+      "bfs": 5,
+      "actions": [
+        "left",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20034,
+      "bfs": 4,
+      "actions": [
+        "up",
+        "left",
+        "left",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20035,
+      "bfs": 4,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20036,
+      "bfs": 4,
+      "actions": [
+        "down",
+        "left",
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20037,
+      "bfs": 2,
+      "actions": [
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20038,
+      "bfs": 1,
+      "actions": [
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": true,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": true,
+        "distance_correct": true,
+        "actions_exact": true
+      },
+      "admission": "batch_novelty"
+    },
+    {
+      "seed": 20039,
+      "bfs": 1,
+      "actions": [
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20040,
+      "bfs": 2,
+      "actions": [
+        "down",
+        "down",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20041,
+      "bfs": 2,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": false,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": false,
+        "distance_correct": false,
+        "actions_exact": false
+      },
+      "admission": "invalid_directional_strategy"
+    },
+    {
+      "seed": 20042,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20043,
+      "bfs": 6,
+      "actions": [
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20044,
+      "bfs": 7,
+      "actions": [
+        "up",
+        "up",
+        "left",
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20045,
+      "bfs": 4,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20046,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "up",
+        "left",
+        "up",
+        "left",
+        "up",
+        "left",
+        "up",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20047,
+      "bfs": 2,
+      "actions": [
+        "down",
+        "right",
+        "down",
+        "right",
+        "down",
+        "right",
+        "down",
+        "down",
+        "down",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20048,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "up",
+        "down",
+        "down",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20049,
+      "bfs": 1,
+      "actions": [
+        "right",
+        "down",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20050,
+      "bfs": 3,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "right",
+        "down",
+        "right",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20051,
+      "bfs": 5,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20052,
+      "bfs": 1,
+      "actions": [
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20053,
+      "bfs": 1,
+      "actions": [
+        "right",
+        "left",
+        "down",
+        "left",
+        "down",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20054,
+      "bfs": 1,
+      "actions": [
+        "up",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20055,
+      "bfs": 5,
+      "actions": [
+        "right",
+        "right",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20056,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20057,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20058,
+      "bfs": 5,
+      "actions": [
+        "right",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20059,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "left",
+        "up",
+        "left"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20060,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "down",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20061,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20062,
+      "bfs": 3,
+      "actions": [
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20063,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "left",
+        "down",
+        "down",
+        "right",
+        "down",
+        "right",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20064,
+      "bfs": 1,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20065,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "up",
+        "left",
+        "down",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20066,
+      "bfs": 5,
+      "actions": [
+        "right",
+        "down",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20067,
+      "bfs": 1,
+      "actions": [
+        "down",
+        "down",
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20068,
+      "bfs": 3,
+      "actions": [
+        "down",
+        "left",
+        "down",
+        "left",
+        "down",
+        "left",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20069,
+      "bfs": 4,
+      "actions": [
+        "left",
+        "down",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20070,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20071,
+      "bfs": 4,
+      "actions": [
+        "left",
+        "down",
+        "down",
+        "down",
+        "left"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20072,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20073,
+      "bfs": 6,
+      "actions": [
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20074,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "down",
+        "right",
+        "down",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20075,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "right",
+        "up",
+        "right",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20076,
+      "bfs": 3,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20077,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20078,
+      "bfs": 4,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20079,
+      "bfs": 1,
+      "actions": [
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20080,
+      "bfs": 2,
+      "actions": [
+        "down",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20081,
+      "bfs": 2,
+      "actions": [
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20082,
+      "bfs": 1,
+      "actions": [
+        "down"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": true,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": true,
+        "distance_correct": true,
+        "actions_exact": true
+      },
+      "admission": "admitted"
+    },
+    {
+      "seed": 20083,
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20084,
+      "bfs": 3,
+      "actions": [
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20085,
+      "bfs": 4,
+      "actions": [
+        "right",
+        "up",
+        "up",
+        "right",
+        "down",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20086,
+      "bfs": 2,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20087,
+      "bfs": 6,
+      "actions": [
+        "up",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20088,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "right",
+        "up"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20089,
+      "bfs": 1,
+      "actions": [
+        "down",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20090,
+      "bfs": 2,
+      "actions": [
+        "up",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20091,
+      "bfs": 5,
+      "actions": [
+        "up",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20092,
+      "bfs": 3,
+      "actions": [
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20093,
+      "bfs": 1,
+      "actions": [
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20094,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20095,
+      "bfs": 6,
+      "actions": [
+        "down",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20096,
+      "bfs": 2,
+      "actions": [
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20097,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20098,
+      "bfs": 5,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20099,
+      "bfs": 1,
+      "actions": [
+        "left",
+        "down",
+        "left",
+        "down",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20100,
+      "bfs": 1,
+      "actions": [
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": true,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": true,
+        "distance_correct": true,
+        "actions_exact": true
+      },
+      "admission": "batch_novelty"
+    },
+    {
+      "seed": 20101,
+      "bfs": 1,
+      "actions": [
+        "right",
+        "right",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20102,
+      "bfs": 6,
+      "actions": [
+        "right",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20103,
+      "bfs": 5,
+      "actions": [
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20104,
+      "bfs": 3,
+      "actions": [],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20105,
+      "bfs": 4,
+      "actions": [
+        "up",
+        "up",
+        "right",
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": true,
+      "distillation_called": true,
+      "distillation_valid": false,
+      "stage_checks": {
+        "parse_valid": true,
+        "direction_correct": false,
+        "distance_correct": false,
+        "actions_exact": true
+      },
+      "admission": "invalid_directional_strategy"
+    },
+    {
+      "seed": 20106,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "down",
+        "down",
+        "right"
+      ],
+      "success": true,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "quality_ratio"
+    },
+    {
+      "seed": 20107,
+      "bfs": 2,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20108,
+      "bfs": 4,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20109,
+      "bfs": 6,
+      "actions": [
+        "left",
+        "down",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20110,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "left",
+        "left",
+        "up",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20111,
+      "bfs": 1,
+      "actions": [
+        "up",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20112,
+      "bfs": 5,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20113,
+      "bfs": 4,
+      "actions": [
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20114,
+      "bfs": 1,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20115,
+      "bfs": 4,
+      "actions": [
+        "right",
+        "up",
+        "down",
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20116,
+      "bfs": 4,
+      "actions": [
+        "right",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20117,
+      "bfs": 4,
+      "actions": [
+        "down",
+        "right",
+        "down",
+        "left",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20118,
+      "bfs": 5,
+      "actions": [
+        "left",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20119,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20120,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "down",
+        "down",
+        "down"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20121,
+      "bfs": 4,
+      "actions": [],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20122,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "up",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20123,
+      "bfs": 1,
+      "actions": [
+        "down",
+        "right",
+        "down",
+        "right",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20124,
+      "bfs": 4,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20125,
+      "bfs": 2,
+      "actions": [
+        "up",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20126,
+      "bfs": 4,
+      "actions": [
+        "up",
+        "left",
+        "up",
+        "up",
+        "up"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20127,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "up",
+        "up",
+        "down",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    },
+    {
+      "seed": 20128,
+      "bfs": 2,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "success": false,
+      "quality_eligible": false,
+      "distillation_called": false,
+      "distillation_valid": false,
+      "stage_checks": {},
+      "admission": "not_success"
+    }
+  ]
+}

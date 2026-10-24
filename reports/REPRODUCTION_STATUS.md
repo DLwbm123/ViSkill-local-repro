@@ -291,3 +291,31 @@ verified_self_distill_v1单次纠错EXIT0，但原样复述错误WHEN；明确�
 最新PPO结果：单batch训练实际结束，actor/critic两rank共8条delta记录全部finite且非零，模型已保存。训练1/8成功但唯一路径Left/Left/Down对seed6为3/1质量比，被quality_ratio=1拒绝，skill/admitted=0；不得改门槛或挑seed重跑。F保持PARTIAL。自动独立重载正在进行，空库配对不能当非空技能恢复证据。训练文本有乱码现象，尚不能归因为weight sync。详情见PPO报告。
 
 最终重载确认：train/reload均EXIT0，总489.37秒；actor/critic真实模型加载，重载后固定2例validation成功，空skill_index恢复可读。完整F仍PARTIAL，未证明训练中非空库更新/恢复。原始运行已退出，无该token残留进程。
+
+### Follow-up without updates: hybrid_request_probe_v1
+已预注册并启动32请求上限的初始hybrid/standalone×greedy/sample对照，实际token/PNG重放，固定seed1–8，不做PPO更新、不入库、不保存新checkpoint。start1792822637.744071、deadline1792824437.744071、独立写入线69,347,899,904bytes，原总时钟不变；GPU3、5，supervisor3864854。检查该receipt/EXIT后行动，不重复启动。协议configs/smoke/hybrid_request_probe_v1.json；结果和解释边界见PPO报告末尾。已公开仓库https://github.com/DLwbm123/ViSkill-local-repro为用户明确要求的一次脱敏发布快照94daba5；原工作目录历史含本机信息，禁止直接推送其历史。
+
+诊断修复：hybrid16请求和PNG均完成，汇总numpy.int32序列化失败EXIT1；无残留。仅恢复尚未运行的16次standalone重放，deadline1792824437.744071/write_stop69,347,899,904不变。另保留协议偏差：继承val_batch_size2导致8次wake/sync，不是计划的单16例首次同步dispatch，只有greedy seed1/2属于首次wake；其余不能归因纯首次同步。未重复hybrid生成。恢复日志logs/ppo_smoke/hybrid_request_probe_v1_recovery_standalone.log。
+
+诊断已结束：recovery EXIT0，16hybrid+16standalone均已保存，总264.93秒，峰值68,350,095,360bytes，无该token残留。primary raw greedy一致0/8；standalone固定多5个end/start-role token，事后仅去这段前缀的正文一致7/8，8/8两边都选Right。该辅助结果不替代原始指标，也不证明权重完全等价；继承val_batch_size2偏差保持。温度1对照RNG不一致，不能据随机差异判同步损坏。没有新PPO/入库/新checkpoint，F仍PARTIAL。下一步先从保存请求和源码审计framing及多轮history；禁止重跑本批或放宽quality gate。
+
+
+## 2026-10-24 14:40 P0完成与固定容量诊断
+
+P0实际处理器/worker前处理与11项测试通过，图卡一致和mask正常；自蒸馏fixture输出没有进入PPO token。单步技能无法验证失败奖励，原PPO零入库和无跨batch证据仍是机制缺口。详情及未执行项见[05_mechanism_p0.md](05_mechanism_p0.md)。
+
+用户已授权按结果自主制定有限后续协议。skill_capacity_v1已启动，GPU4、固定128新seed20001–20128、无模型更新，45分钟/1.5GB上限，局部截止1792826741.172527，总截止不变。所有采集先于诊断库入库，诊断库不得作为cold start。不要重复启动；读取state/components/skill_capacity_v1_EXIT.json与artifacts/component_tests/skill_capacity_v1/result.json判断完成。F仍PARTIAL。
+
+
+## 2026-10-24 15:05 完整128条归因与有限后继
+
+skill_capacity_v1完整EXIT0，15/128成功，8质量合格、8蒸馏、5策略有效、3入库；3条入库全是单步。105条多步任务只有3条合格，3条蒸馏全失败。113失败中64耗尽轮数、46落洞、3没有有效动作。不是入库写盘bug。
+
+action_grounding_v1的16次新请求两臂均0/8；schema_decoding_v1另外16次完成：原提示schema5/8（多步0/3），动作依据schema4/8（多步2/3但单步回退3）。均未达8/8门槛，不采用、不入库、不PPO；本campaign不继续搜索这8条提示。
+
+当前policy_observation_v1：固定前16失败初始局面，图像/官方文字棋盘×系统示例开/关，64次单轮贪心调用，GPU4、20分钟、500MB；start1792825483.8980117/deadline1792826683.8980117。先读EXIT/result，不重复启动。按失败筛选的开发诊断，不能声称heldout或完整episode成功率。报告见05_mechanism_p0.md。F仍PARTIAL。
+
+
+### 15:07后继全结束
+
+policy_observation_v1完整64请求EXIT0，四臂首动作进度5/16、6/16、6/16、4/16；全部配对未达预注册改善门槛。现无活动GPU实验，本用户请求后完成96次新调用、未增加PPO。已实现默认关闭的accurate_dynamics_prompt准确动力学描述，并通过CPU环境prompt builder检查；未做性能宣称。下一轮新前瞻协议只验证这类有明确证据的主线修正，不能重启旧128、旧8提示搜索或扩展已关闭协议。唯一监测保持。

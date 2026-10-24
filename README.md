@@ -2,11 +2,12 @@
 
 A local, no-external-model-API reproduction workspace for **ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills**. This is an independent reproduction and audit, not the official repository.
 
-**Current status: PARTIAL.** Real full-parameter PPO actor/critic updates, checkpoint saving, and independent model reload have been verified. The single PPO batch admitted **zero new skills**, so policy/skill joint evolution has **not** passed. This is not a reproduction of the paper's performance numbers.
+**Current status: PARTIAL.** The completed 128-episode frozen capacity run produced 15 successes, 8 quality-eligible trajectories, 5 valid distilled strategies and 3 admitted skills. All 3 admitted skills were single-step; all 3 eligible multi-step trajectories failed distillation. A further 96 bounded diagnostic calls produced no intervention meeting its predeclared qualification gate. No additional PPO was run. This is not a reproduction of the paper's performance numbers.
 
 ## Review these first
 
-- [Current result and limitations](reports/02_ppo_smoke_test.md)
+- [Latest P0, 128-episode results and 96-call follow-up analysis](reports/05_mechanism_p0.md)
+- [Earlier PPO and independent reload evidence](reports/02_ppo_smoke_test.md)
 - [Paper/code audit](docs/01_paper_code_audit.md)
 - [Distillation diagnosis and retained negative results](reports/04_distillation_diagnosis.md)
 - [Explicit directional-variant component gate](reports/E_VARIANT_GATE.json)
@@ -14,18 +15,21 @@ A local, no-external-model-API reproduction workspace for **ViSkill: Reinforcing
 - [Full chronological status](reports/REPRODUCTION_STATUS.md)
 - [Reproduction manifest](reproduction_manifest.json)
 
-Earlier chronological reports include historical states; the current PPO report and this page take precedence for the latest result.
+Earlier chronological reports include historical states; the latest P0 report and this page take precedence for the latest result.
 
 ## Verified results
 
 | Check | Observed result | Scope |
 |---|---|---|
-| Base / released / released + released library | 5/20, 3/20, 20/20 successes | Small fixed-seed engineering evaluation only |
-| Original free-text self-distillation | Semantic failures retained | Not passed |
-| Explicit directional-contract variant | Two skills admitted; three actual retrieval uses succeeded in a component run | Modified algorithm, limited component qualification |
-| Full-parameter PPO | One batch of 8; two optimizer mini-batches per rank; actor/critic parameter deltas finite and nonzero | Actual training, not import-only evidence |
-| Skill update within that PPO batch | 0 admissions; 1/8 successful trajectories | Full joint-update acceptance failed |
-| Independent model reload | Actor and critic loaded in a fresh process; validation 2/2 | Weights and empty skill sidecar only; no optimizer continuity claim |
+| Earlier full-parameter PPO | One 8-episode batch, actual actor/critic updates and independent weight reload | Training batch admitted 0 skills; empty library recovery only |
+| P0 input/mask audit | Same skill image and processed pixels; correct generated/observation masks; distillation excluded from PPO response tokens | Real processor/worker preprocessing with explicitly scripted fixture outputs, not a new training claim |
+| Frozen base-policy capacity | 128 episodes → 15 successes → 8 quality-eligible → 5 valid strategies → 3 admissions | 128 distinct initial boards; diagnostic library only |
+| Multi-step capacity | 105 tasks → 9 successes → 3 quality-eligible → 0 valid strategies | All admitted skills remained single-step |
+| Action-grounded prompt | 16 calls; image/text arms both 0/8 valid | Rejected, including regressions on previously correct single-step cases |
+| Generic schema decoding | 16 calls; original prompt 5/8, grounded prompt 4/8 | Grounded arm: 2/3 multi-step but only 2/5 single-step; neither met 8/8 gate |
+| Observation/example comparison | 64 single-turn calls on 16 previously failed states | Four paired arms, none met predeclared improvement gate; not 64 full episodes or held-out evaluation |
+| Accurate dynamics description | Opt-in correction implemented and CPU checked | Performance not yet tested; old frozen prompts/results retained |
+
 
 The sole successful training trajectory contained three valid actions while its reconstructed shortest path required one. It failed the frozen quality ratio of 1. The acceptance threshold was not relaxed. A small two-episode validation result does not establish a learning benefit.
 
@@ -42,6 +46,8 @@ No full 300-step run, medical experiment, external inference API, or telemetry u
 - [Original upstream README](README_UPSTREAM.md).
 - [Environment setup and version deviations](docs/03_environment_setup.md).
 - [Frozen smoke protocol](configs/smoke/directional_ppo_v1.json) and [configuration](configs/smoke/frozenlake_tiny.yaml).
+
+This update also restores bundled veRL model implementations and tests that the prior snapshot accidentally excluded with a broad `models/` ignore rule. Model-weight output exclusions are now root-anchored.
 
 This is a sanitized source snapshot. `/workspace/ViSkill-local-repro` and `/data/local` are deployment placeholders: adapt them to your machine before using the experiment-specific wrappers. Stored PID/timestamp receipts are historical evidence, not runnable launch instructions. Preserve the documented gates and budgets. The paper configuration is an archival mapping of shell overrides, not an executable training config.
 

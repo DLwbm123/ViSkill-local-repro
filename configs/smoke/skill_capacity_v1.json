@@ -1,0 +1,23 @@
+{
+  "name": "skill_capacity_v1",
+  "purpose": "After P0 input/mask checks, measure whether fixed base policy produces admissible multi-action skills under unchanged directional-variant gates. No optimizer, no performance claim.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "max_attempt_seconds": 2700,
+  "project_write_stop_bytes": 85000000000,
+  "maximum_additional_bytes": 1500000000,
+  "allowed_physical_gpus": [4],
+  "seed_range_inclusive": [20001,20128],
+  "episodes": 128,
+  "sampling_seed": 42,
+  "sampling": {"temperature": 1.0, "top_p": 1.0, "top_k": -1, "max_new_tokens": 512},
+  "max_turns": 5,
+  "max_model_calls": 768,
+  "context_length": 12288,
+  "base_model": "b0 (pinned Qwen2.5-VL-3B)",
+  "collection_library": "empty and unchanged for all 128 episodes; all admissions performed afterwards, in seed order",
+  "gates": {"quality_ratio": 1.0, "distill_min_score": 0.9, "retrieval_min_score": 0.8, "contract_guard": true},
+  "no_selection": "No seed replacement, early success stop, extra sampling, threshold changes, model update or checkpoint. Diagnostic library cannot be used as training cold start.",
+  "analysis": ["full success denominator", "BFS length 1 / 2 / 3+ strata", "exact layout and initial-position duplicate counts", "quality eligibility", "distillation called/valid", "admission rejection funnel", "admitted skill action lengths", "mask span integrity and reward decomposition"],
+  "decision": "If admissible multi-action skills exist, design a separately bounded cross-batch experiment with checkpoint space resolved. If not, identify the dominant quality/distillation bottleneck before any further PPO; do not expand this sampling run."
+}

@@ -1,0 +1,470 @@
+[
+  {
+    "seed": 20020,
+    "initial_env_state": {
+      "desc": [
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "G",
+          "H",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "S",
+          "F",
+          "H",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        3,
+        0
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "up",
+      "up"
+    ],
+    "trajectory_positions": [
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": false,
+      "reason": "relative goal condition mismatch",
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20028,
+    "initial_env_state": {
+      "desc": [
+        [
+          "F",
+          "G",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "S",
+          "F",
+          "F"
+        ],
+        [
+          "H",
+          "F",
+          "F",
+          "H"
+        ],
+        [
+          "F",
+          "F",
+          "H",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        1,
+        1
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "up"
+    ],
+    "trajectory_positions": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": true,
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20032,
+    "initial_env_state": {
+      "desc": [
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "H",
+          "S",
+          "G",
+          "H"
+        ],
+        [
+          "H",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "H",
+          "H"
+        ]
+      ],
+      "player_pos": [
+        1,
+        1
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "right"
+    ],
+    "trajectory_positions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": true,
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20038,
+    "initial_env_state": {
+      "desc": [
+        [
+          "H",
+          "F",
+          "F",
+          "H"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "S",
+          "G",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        2,
+        1
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "right"
+    ],
+    "trajectory_positions": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": true,
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20041,
+    "initial_env_state": {
+      "desc": [
+        [
+          "H",
+          "H",
+          "F",
+          "F"
+        ],
+        [
+          "S",
+          "H",
+          "H",
+          "F"
+        ],
+        [
+          "F",
+          "G",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        1,
+        0
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "down",
+      "right"
+    ],
+    "trajectory_positions": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": false,
+      "reason": "relative goal condition mismatch",
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20082,
+    "initial_env_state": {
+      "desc": [
+        [
+          "S",
+          "F",
+          "F",
+          "H"
+        ],
+        [
+          "G",
+          "H",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "H"
+        ],
+        [
+          "F",
+          "F",
+          "H",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        0,
+        0
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "down"
+    ],
+    "trajectory_positions": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": true,
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20100,
+    "initial_env_state": {
+      "desc": [
+        [
+          "F",
+          "F",
+          "S",
+          "G"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "H",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        0,
+        2
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "right"
+    ],
+    "trajectory_positions": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "valid": true,
+      "model_calls": 1
+    }
+  },
+  {
+    "seed": 20105,
+    "initial_env_state": {
+      "desc": [
+        [
+          "F",
+          "F",
+          "F",
+          "G"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "S",
+          "F",
+          "F"
+        ],
+        [
+          "F",
+          "F",
+          "F",
+          "F"
+        ]
+      ],
+      "player_pos": [
+        2,
+        1
+      ],
+      "is_slippery": false,
+      "slip_prob": 0.0
+    },
+    "trajectory_actions": [
+      "up",
+      "up",
+      "right",
+      "right"
+    ],
+    "trajectory_positions": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "distillation_audit": {
+      "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 2,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 2\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 2\n    }\n  ]\n}\n```",
+      "valid": false,
+      "reason": "relative goal condition mismatch",
+      "model_calls": 1
+    }
+  }
+]

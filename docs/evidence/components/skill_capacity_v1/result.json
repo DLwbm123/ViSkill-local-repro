@@ -1,0 +1,1341 @@
+{
+  "episodes": 128,
+  "successes": 15,
+  "unique_exact_boards": 128,
+  "exact_board_duplicate_episodes": 0,
+  "strata": {
+    "1": {
+      "episodes": 23,
+      "successes": 6,
+      "quality_eligible_successes": 5
+    },
+    "2": {
+      "episodes": 34,
+      "successes": 5,
+      "quality_eligible_successes": 2
+    },
+    "3+": {
+      "episodes": 71,
+      "successes": 4,
+      "quality_eligible_successes": 1
+    },
+    "unreachable": {
+      "episodes": 0,
+      "successes": 0,
+      "quality_eligible_successes": 0
+    }
+  },
+  "admission_funnel": {
+    "not_success": 113,
+    "batch_novelty": 2,
+    "invalid_directional_strategy": 3,
+    "quality_ratio": 7,
+    "admitted": 3
+  },
+  "admitted": 3,
+  "admitted_action_lengths": [
+    1,
+    1,
+    1
+  ],
+  "model_calls": 472,
+  "distillation_calls": 8,
+  "valid_distillations": 5,
+  "mask_spans_checked": true,
+  "training": false,
+  "diagnostic_library_only": true,
+  "wall_seconds": 696.1758644580841,
+  "summaries": [
+    {
+      "seed": 20001,
+      "success": false,
+      "bfs": 6,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20002,
+      "success": false,
+      "bfs": 2,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20003,
+      "success": false,
+      "bfs": 2,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20004,
+      "success": false,
+      "bfs": 3,
+      "actions": 9,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20005,
+      "success": false,
+      "bfs": 3,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20006,
+      "success": false,
+      "bfs": 4,
+      "actions": 0,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20007,
+      "success": false,
+      "bfs": 2,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20008,
+      "success": false,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20009,
+      "success": false,
+      "bfs": 5,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20010,
+      "success": true,
+      "bfs": 2,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20011,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20012,
+      "success": true,
+      "bfs": 3,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20013,
+      "success": false,
+      "bfs": 3,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20014,
+      "success": false,
+      "bfs": 2,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20015,
+      "success": false,
+      "bfs": 6,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20016,
+      "success": false,
+      "bfs": 5,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20017,
+      "success": false,
+      "bfs": 2,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20018,
+      "success": false,
+      "bfs": 4,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20019,
+      "success": false,
+      "bfs": 1,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20020,
+      "success": true,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": false,
+        "reason": "relative goal condition mismatch",
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20021,
+      "success": false,
+      "bfs": 3,
+      "actions": 9,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20022,
+      "success": false,
+      "bfs": 4,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20023,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20024,
+      "success": false,
+      "bfs": 1,
+      "actions": 9,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20025,
+      "success": false,
+      "bfs": 4,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20026,
+      "success": false,
+      "bfs": 5,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20027,
+      "success": false,
+      "bfs": 2,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20028,
+      "success": true,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20029,
+      "success": false,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20030,
+      "success": false,
+      "bfs": 2,
+      "actions": 12,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20031,
+      "success": false,
+      "bfs": 3,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20032,
+      "success": true,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20033,
+      "success": false,
+      "bfs": 5,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20034,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20035,
+      "success": false,
+      "bfs": 4,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20036,
+      "success": false,
+      "bfs": 4,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20037,
+      "success": false,
+      "bfs": 2,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20038,
+      "success": true,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20039,
+      "success": false,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20040,
+      "success": false,
+      "bfs": 2,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20041,
+      "success": true,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": false,
+        "reason": "relative goal condition mismatch",
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20042,
+      "success": false,
+      "bfs": 3,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20043,
+      "success": false,
+      "bfs": 6,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20044,
+      "success": false,
+      "bfs": 7,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20045,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20046,
+      "success": false,
+      "bfs": 2,
+      "actions": 10,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20047,
+      "success": false,
+      "bfs": 2,
+      "actions": 11,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20048,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20049,
+      "success": false,
+      "bfs": 1,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20050,
+      "success": false,
+      "bfs": 3,
+      "actions": 8,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20051,
+      "success": false,
+      "bfs": 5,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20052,
+      "success": false,
+      "bfs": 1,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20053,
+      "success": false,
+      "bfs": 1,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20054,
+      "success": false,
+      "bfs": 1,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20055,
+      "success": false,
+      "bfs": 5,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20056,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20057,
+      "success": false,
+      "bfs": 3,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20058,
+      "success": false,
+      "bfs": 5,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20059,
+      "success": true,
+      "bfs": 2,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20060,
+      "success": false,
+      "bfs": 2,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20061,
+      "success": false,
+      "bfs": 3,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20062,
+      "success": false,
+      "bfs": 3,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20063,
+      "success": false,
+      "bfs": 3,
+      "actions": 9,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20064,
+      "success": false,
+      "bfs": 1,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20065,
+      "success": false,
+      "bfs": 2,
+      "actions": 7,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20066,
+      "success": false,
+      "bfs": 5,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20067,
+      "success": true,
+      "bfs": 1,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20068,
+      "success": false,
+      "bfs": 3,
+      "actions": 13,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20069,
+      "success": false,
+      "bfs": 4,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20070,
+      "success": false,
+      "bfs": 3,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20071,
+      "success": true,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20072,
+      "success": false,
+      "bfs": 3,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20073,
+      "success": false,
+      "bfs": 6,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20074,
+      "success": false,
+      "bfs": 2,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20075,
+      "success": false,
+      "bfs": 3,
+      "actions": 10,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20076,
+      "success": false,
+      "bfs": 3,
+      "actions": 8,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20077,
+      "success": false,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20078,
+      "success": false,
+      "bfs": 4,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20079,
+      "success": false,
+      "bfs": 1,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20080,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20081,
+      "success": false,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20082,
+      "success": true,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20083,
+      "success": false,
+      "bfs": 3,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20084,
+      "success": false,
+      "bfs": 3,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20085,
+      "success": false,
+      "bfs": 4,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20086,
+      "success": false,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20087,
+      "success": false,
+      "bfs": 6,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20088,
+      "success": true,
+      "bfs": 2,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20089,
+      "success": false,
+      "bfs": 1,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20090,
+      "success": false,
+      "bfs": 2,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20091,
+      "success": false,
+      "bfs": 5,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20092,
+      "success": false,
+      "bfs": 3,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20093,
+      "success": false,
+      "bfs": 1,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20094,
+      "success": false,
+      "bfs": 2,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20095,
+      "success": false,
+      "bfs": 6,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20096,
+      "success": false,
+      "bfs": 2,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20097,
+      "success": false,
+      "bfs": 3,
+      "actions": 9,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20098,
+      "success": false,
+      "bfs": 5,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20099,
+      "success": false,
+      "bfs": 1,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20100,
+      "success": true,
+      "bfs": 1,
+      "actions": 1,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": true,
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20101,
+      "success": false,
+      "bfs": 1,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20102,
+      "success": false,
+      "bfs": 6,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20103,
+      "success": false,
+      "bfs": 5,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20104,
+      "success": false,
+      "bfs": 3,
+      "actions": 0,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20105,
+      "success": true,
+      "bfs": 4,
+      "actions": 4,
+      "distillation": {
+        "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 2,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 2\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 2\n    }\n  ]\n}\n```",
+        "valid": false,
+        "reason": "relative goal condition mismatch",
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 20106,
+      "success": true,
+      "bfs": 3,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 20107,
+      "success": false,
+      "bfs": 2,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20108,
+      "success": false,
+      "bfs": 4,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20109,
+      "success": false,
+      "bfs": 6,
+      "actions": 4,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20110,
+      "success": false,
+      "bfs": 3,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20111,
+      "success": false,
+      "bfs": 1,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20112,
+      "success": false,
+      "bfs": 5,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20113,
+      "success": false,
+      "bfs": 4,
+      "actions": 1,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20114,
+      "success": false,
+      "bfs": 1,
+      "actions": 2,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20115,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20116,
+      "success": false,
+      "bfs": 4,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20117,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20118,
+      "success": false,
+      "bfs": 5,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20119,
+      "success": false,
+      "bfs": 3,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20120,
+      "success": false,
+      "bfs": 3,
+      "actions": 6,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20121,
+      "success": false,
+      "bfs": 4,
+      "actions": 0,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20122,
+      "success": false,
+      "bfs": 3,
+      "actions": 3,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20123,
+      "success": false,
+      "bfs": 1,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20124,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20125,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20126,
+      "success": false,
+      "bfs": 4,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20127,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 20128,
+      "success": false,
+      "bfs": 2,
+      "actions": 5,
+      "distillation": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    }
+  ]
+}

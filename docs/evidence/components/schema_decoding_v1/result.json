@@ -1,0 +1,33 @@
+{
+  "summaries": {
+    "original_prompt_schema": {
+      "valid": 5,
+      "total": 8,
+      "multi_step_valid": 0,
+      "multi_step_total": 3,
+      "single_step_regressions": 0,
+      "improved": 0,
+      "worsened": 0
+    },
+    "action_grounded_prompt_schema": {
+      "valid": 4,
+      "total": 8,
+      "multi_step_valid": 2,
+      "multi_step_total": 3,
+      "single_step_regressions": 0,
+      "improved": 4,
+      "worsened": 0
+    }
+  },
+  "qualified_arm": null,
+  "model_calls": 16,
+  "new_episodes": 0,
+  "training": false,
+  "held_out": false,
+  "archived_control_valid": {
+    "original_prompt_schema": 5,
+    "action_grounded_prompt_schema": 0
+  },
+  "archived_control_multi_step_valid": 0,
+  "wall_seconds": 33.334752798080444
+}

@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "03b17a7b6b28e66f5bf7a708bebffa936481a3eb",
+  "local_source_commit": "1f0d4732e24cc723e9991bdb9b5e63c462c316e5",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -20,7 +20,8 @@
     "docs/evidence/local_eval",
     "docs/evidence/repository_identity.txt",
     "docs/evidence/components/final_resource_0414.txt",
-    "docs/evidence/components/policy_cycle_v2_startup.txt"
+    "docs/evidence/components/policy_cycle_v2_startup.txt",
+    "artifacts/component_tests/hybrid_request_probe_v1/validation_log"
   ],
   "sanitized_text_files": 54,
   "path_mapping": {
@@ -28,5 +29,25 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "PARTIAL: PPO updates/model reload verified; online skill admission zero in the PPO batch."
+  "status": "PARTIAL: 128-episode capacity run and96 follow-up calls complete; no multi-step skill qualified; no additional PPO.",
+  "latest_results": {
+    "capacity": {
+      "episodes": 128,
+      "successes": 15,
+      "quality_eligible": 8,
+      "valid_strategies": 5,
+      "admitted": 3,
+      "multi_step_admitted": 0
+    },
+    "followup_model_calls": 96,
+    "followup_qualified": false,
+    "additional_ppo_updates": 0
+  },
+  "latest_update_scope": "P0 audit, completed128 capacity funnel,96 bounded follow-up outputs, protocols and source; full raw128 runtime collection excluded.",
+  "latest_sanitized_text_files": 12,
+  "latest_copied_files": 141,
+  "source_packaging_repair": {
+    "files_restored": 65,
+    "reason": "Prior broad models/ ignore accidentally excluded bundled veRL model implementations and tests; output directory exclusions are now root-anchored."
+  }
 }

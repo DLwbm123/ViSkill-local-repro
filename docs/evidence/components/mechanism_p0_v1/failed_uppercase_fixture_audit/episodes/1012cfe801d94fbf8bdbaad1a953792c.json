@@ -1,0 +1,115 @@
+{
+  "spans": [
+    {
+      "kind": "generated",
+      "start": 0,
+      "end": 13,
+      "image_count": 1
+    }
+  ],
+  "library_before": {
+    "next_id": 0,
+    "skills": []
+  },
+  "nearest_id": null,
+  "nearest_score": null,
+  "guard_pass": false,
+  "retrieval_threshold": 0.8,
+  "distillation_separate_window": true,
+  "seed": 6,
+  "request_id": "1012cfe801d94fbf8bdbaad1a953792c",
+  "policy_label": "scripted_fixture_no_policy",
+  "success": true,
+  "initial_env_state": {
+    "desc": [
+      [
+        "S",
+        "F",
+        "F",
+        "F"
+      ],
+      [
+        "G",
+        "F",
+        "F",
+        "F"
+      ],
+      [
+        "F",
+        "F",
+        "F",
+        "H"
+      ],
+      [
+        "F",
+        "H",
+        "H",
+        "F"
+      ]
+    ],
+    "player_pos": [
+      0,
+      0
+    ],
+    "is_slippery": false,
+    "slip_prob": 0.0
+  },
+  "actions": [
+    "down"
+  ],
+  "positions": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "retrieved_skill": null,
+  "distillation": {
+    "raw": "{\"when\":{\"goal_direction\":\"down\",\"goal_manhattan_distance\":1,\"requires_clear_route\":true},\"what\":[{\"action\":\"Down\",\"count\":1}]}",
+    "valid": false,
+    "reason": "invalid action/count",
+    "model_calls": 1
+  },
+  "env_rewards": [
+    1.02
+  ],
+  "final_reward": 1.02,
+  "skill_bonus": 0.0,
+  "prompt_tokens_before_clip": 362,
+  "prompt_tokens_after_clip": 362,
+  "response_ids": [
+    13708,
+    766,
+    29,
+    18930,
+    3918,
+    26865,
+    1784,
+    9217,
+    29,
+    4454,
+    522,
+    9217,
+    29
+  ],
+  "response_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "image_count": 1
+}

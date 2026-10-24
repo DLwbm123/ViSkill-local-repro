@@ -34,9 +34,15 @@ skill_library_cold_start_*/
 *.pth
 *.ckpt
 
-# Public snapshot exclusions
-cache/
-models/
-logs/
+# Raw bounded diagnostic outputs stay local/remote; reviewed summaries live in docs/evidence.
+artifacts/component_tests/skill_capacity_v1/
+artifacts/component_tests/action_grounding_v1/
+artifacts/component_tests/schema_decoding_v1/
+artifacts/component_tests/policy_observation_v1/
+
+# Public snapshot exclusions (root-anchored to retain bundled model source code)
+/cache/
+/models/
+/logs/
 *.pdf
 PUBLICATION_LOCAL_*.json

@@ -35,6 +35,7 @@ class AgentData(_BaseAgentData):
         self.trajectory_positions: List[Any] = []
         self.skill_artifact: Optional[dict] = None
         self.distillation_audit: Optional[dict] = None
+        self.mechanism_audit = {"spans": []} if os.getenv("MECHANISM_AUDIT_DIR") else None
         self.validation_skill_image: Optional[Image.Image] = None
         self.validation_initial_state_image: Optional[Image.Image] = None
 
@@ -127,6 +128,13 @@ class GymAgentLoop(_BaseGymAgentLoop):
                     agent_data.trajectory_positions.append(pos)
 
             skill = self.skill_provider.retrieve(env_state)
+            if agent_data.mechanism_audit is not None:
+                from vagen.skills.mechanism_audit import library_snapshot
+                nearest = self.skill_provider.library.retrieve(env_state) if env_state else None
+                agent_data.mechanism_audit.update(library_before=library_snapshot(self.skill_provider),
+                    nearest_id=nearest.get("id") if nearest else None,
+                    nearest_score=nearest.get("score") if nearest else None,
+                    guard_pass=skill is not None, retrieval_threshold=self.skill_provider.min_score)
             if (
                 skill
                 and skill.get("score", 0) >= self.skill_provider.min_score
@@ -191,8 +199,18 @@ class GymAgentLoop(_BaseGymAgentLoop):
 
         # --- Self-distill (independent window, only for quality successes) ---
         distilled_strategy = ""
+        rollout_token_count = len(agent_data.prompt_ids)
         if self._should_self_distill(agent_data):
             distilled_strategy = await self._self_distill(agent_data, sampling_params, env_name)
+
+        if agent_data.mechanism_audit is not None:
+            agent_data.mechanism_audit["distillation_separate_window"] = len(agent_data.prompt_ids) == rollout_token_count
+            if agent_data.distillation_audit is None:
+                bfs = self.skill_provider.bfs_distance(agent_data.initial_env_state) if self.skill_provider else None
+                reason = "not_success" if not agent_data.traj_success else (
+                    self.skill_provider.distill_rejection(len(agent_data.trajectory_actions), bfs, agent_data.skill_score)
+                    if self.skill_provider else "disabled")
+                agent_data.distillation_audit = {"model_calls": 0, "reason": reason or "mode_or_missing_actions"}
 
         # --- Compute final reward ---
         reward_score = self._compute_reward(agent_data)
@@ -204,6 +222,21 @@ class GymAgentLoop(_BaseGymAgentLoop):
         multi_modal_data = {"image": agent_data.image_data} if agent_data.image_data else {}
 
         from verl.experimental.agent_loop.agent_loop import AgentLoopOutput
+        if agent_data.mechanism_audit is not None:
+            from vagen.skills.mechanism_audit import write_record
+            audit = agent_data.mechanism_audit
+            audit.update(seed=seed, request_id=request_id,
+                policy_label=os.getenv("MECHANISM_POLICY_LABEL", "unspecified"),
+                success=agent_data.traj_success, initial_env_state=agent_data.initial_env_state,
+                actions=agent_data.trajectory_actions, positions=agent_data.trajectory_positions,
+                retrieved_skill=agent_data.retrieved_skill,
+                distillation=agent_data.distillation_audit,
+                env_rewards=agent_data.env_rewards, final_reward=reward_score,
+                skill_bonus=reward_score-sum(agent_data.env_rewards),
+                prompt_tokens_before_clip=len(prompt_ids), prompt_tokens_after_clip=min(len(prompt_ids), self.prompt_length),
+                response_ids=response_ids[:self.response_length], response_mask=agent_data.response_mask[:self.response_length],
+                image_count=len(agent_data.image_data))
+            write_record("episodes", request_id, audit)
         return AgentLoopOutput(
             prompt_ids=prompt_ids[-self.prompt_length:],
             response_ids=response_ids[:self.response_length],
@@ -232,12 +265,21 @@ class GymAgentLoop(_BaseGymAgentLoop):
                 "skill_artifact": agent_data.skill_artifact,
                 "distilled_strategy": distilled_strategy,
                 "distillation_audit": agent_data.distillation_audit,
+                "mechanism_audit": agent_data.mechanism_audit,
                 "validation_skill_image": agent_data.validation_skill_image,
                 "validation_initial_state_image": (
                     agent_data.validation_initial_state_image
                 ),
             },
         )
+
+    async def _handle_generating_state(self, agent_data, sampling_params):
+        before = len(agent_data.response_mask)
+        state = await super()._handle_generating_state(agent_data, sampling_params)
+        if agent_data.mechanism_audit is not None:
+            agent_data.mechanism_audit["spans"].append({"kind": "generated", "start": before,
+                "end": len(agent_data.response_mask), "image_count": len(agent_data.image_data)})
+        return state
 
     # ---- Skill injection (VAGEN style: append to system prompt) ----
 
@@ -405,6 +447,9 @@ class GymAgentLoop(_BaseGymAgentLoop):
         suffix_ids = await self._tokenize_messages([_placeholder, msg], images)
         suffix_ids = suffix_ids[len(self.system_prompt_prefix):]
 
+        if agent_data.mechanism_audit is not None:
+            agent_data.mechanism_audit["spans"].append({"kind": "observation",
+                "start": len(agent_data.response_mask), "end": len(agent_data.response_mask)+len(suffix_ids)})
         agent_data.prompt_ids += suffix_ids
         agent_data.response_mask += [0] * len(suffix_ids)
         if agent_data.response_logprobs:

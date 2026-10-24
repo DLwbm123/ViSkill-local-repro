@@ -1,0 +1,9 @@
+{
+  "command_scope": "pytest tests/test_mechanism_audit.py tests/test_directional_contract_integration.py tests/test_directional_contract.py",
+  "host": "pro5000",
+  "environment": "/data/local/envs/z0",
+  "result": "11 passed in 0.11s",
+  "exit_code": 0,
+  "policy_calls": 0,
+  "note": "CPU formula/admission checks; actual processor/worker checks recorded separately. No new PPO evidence."
+}

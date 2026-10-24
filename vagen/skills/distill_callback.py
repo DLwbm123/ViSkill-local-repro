@@ -6,6 +6,8 @@ and manages the skill library.
 """
 
 import logging
+import os
+from uuid import uuid4
 from typing import Optional
 
 logger = logging.getLogger(__name__)
@@ -31,6 +33,9 @@ class DistillCallback:
         if self.provider.library is None:
             return {}
 
+        from .mechanism_audit import library_snapshot, write_record
+        before = library_snapshot(self.provider) if os.getenv("MECHANISM_AUDIT_DIR") else None
+
         # Update utility for all retrieved skills
         for r in rollout_data:
             skill_id = r.get("retrieved_skill_id")
@@ -48,12 +53,23 @@ class DistillCallback:
                 nearest = self.provider.library.retrieve(r["initial_env_state"])
                 nearest = self.provider.validate_retrieved_skill(nearest, r["initial_env_state"])
                 if nearest and nearest["score"] >= self.provider.distill_min_score:
+                    r["admission_audit"] = "batch_novelty"
                     continue
             skill_data = self._build_skill_data(r)
-            if skill_data and self.provider.library.admit(skill_data):
+            skill_id = self.provider.library.admit(skill_data) if skill_data else None
+            if skill_id:
+                r["admission_audit"] = "admitted"
+                r["admitted_skill_id"] = skill_id
                 admitted += 1
+            elif r.get("admission_audit") == "candidate":
+                r["admission_audit"] = "invalid_skill_data"
 
         self.provider.save()
+        if os.getenv("MECHANISM_AUDIT_DIR"):
+            write_record("admissions", uuid4().hex, {"before": before,
+                "after": library_snapshot(self.provider), "rows": [
+                    {k: v for k, v in row.items() if k not in ("trajectory_frames", "skill_artifact")}
+                    for row in rollout_data]})
 
         return self._collect_metrics(rollout_data, admitted)
 
@@ -63,6 +79,7 @@ class DistillCallback:
         seen_seeds = set()
 
         for r in rollout_data:
+            r["admission_audit"] = "not_success"
             if not r.get("traj_success", False):
                 continue
 
@@ -71,19 +88,26 @@ class DistillCallback:
                 artifact = r.get("skill_artifact") or {}
                 actions = artifact.get("actions", [])
                 if not actions:
+                    r["admission_audit"] = "no_actions"
                     continue
 
             # Quality check: trajectory must be near-optimal
             initial_state = r.get("initial_env_state")
             bfs_steps = self.provider.bfs_distance(initial_state) if initial_state else None
-            if not self.provider.should_distill(len(actions), bfs_steps, r.get("skill_score")):
+            r["bfs_steps"] = bfs_steps
+            r["quality_ratio_observed"] = len(actions)/bfs_steps if bfs_steps else None
+            rejection = self.provider.distill_rejection(len(actions), bfs_steps, r.get("skill_score"))
+            if rejection:
+                r["admission_audit"] = rejection
                 continue
 
             # One per seed
             seed = r.get("seed")
             if seed in seen_seeds:
+                r["admission_audit"] = "duplicate_seed"
                 continue
             seen_seeds.add(seed)
+            r["admission_audit"] = "candidate"
             candidates.append(r)
 
         return candidates
@@ -107,12 +131,19 @@ class DistillCallback:
         strategy = self._distill_strategy(
             r, init_frame, frames, actions, positions, artifact)
         if self.provider.distill_representation == "directional_contract_v1":
+            prior = r.get("distillation_audit") or {}
+            if not strategy and prior.get("valid") is False:
+                r["admission_audit"] = "invalid_directional_strategy"
+                r["admission_error"] = prior.get("reason", "self-distillation rejected")
+                return None
             from .directional_contract import require_deterministic_state, validate_directional_observation
             try:
                 require_deterministic_state(env_state)
                 validate_directional_observation(strategy, r,
                     allow_assistant_envelope=self.provider.allow_assistant_envelope)
             except (ValueError, TypeError, KeyError, IndexError) as exc:
+                r["admission_audit"] = "invalid_directional_strategy"
+                r["admission_error"] = str(exc)
                 logger.warning("Rejected invalid directional strategy: %s", exc)
                 return None
         from vagen.skills.provider import append_strategy_suffix
@@ -170,7 +201,7 @@ class DistillCallback:
         keys = [
             "traj_success", "retrieved_skill_id", "skill_score",
             "initial_env_state", "seed", "trajectory_actions", "trajectory_frames",
-            "trajectory_positions", "skill_artifact", "distilled_strategy",
+            "trajectory_positions", "skill_artifact", "distilled_strategy", "distillation_audit", "mechanism_audit",
         ]
         rollout_data = []
         for i in range(n):

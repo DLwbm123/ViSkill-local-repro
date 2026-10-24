@@ -1,0 +1,2 @@
+- name: gym_agent
+  _target_: vagen.agent_loop.hybrid_request_probe.RequestProbeLoop

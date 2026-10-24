@@ -1,0 +1,9 @@
+{
+  "exits": {
+    "hybrid": 1
+  },
+  "reason": "RuntimeError('hybrid exited 1')",
+  "end_unix": 1792822791.4646382,
+  "peak_allocated_bytes": 68349902848,
+  "deadline_unix": 1792824437.744071
+}

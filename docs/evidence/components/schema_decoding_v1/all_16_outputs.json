@@ -1,0 +1,332 @@
+[
+  {
+    "seed": 20020,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "up",
+      "up"
+    ],
+    "multi_step": true,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 2,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 2\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"up\",\n  \"what\": \"up\"\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20020,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "up",
+      "up"
+    ],
+    "multi_step": true,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": false,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20028,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "up"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"up\",\n  \"what\": {\n    \"up\": 1,\n    \"down\": 0,\n    \"left\": 0,\n    \"right\": 0,\n    \"up_left\": 0,\n    \"up_right\": 0,\n    \"down_left\": 0,\n    \"down_right\": 0\n  },\n  \"goal_direction\": \"up\",\n  \"goal_manhattan_distance\": 1,\n  \"requires_clear_route\": true\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": false,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20028,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "up"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": true,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20032,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "right"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down_right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"right\",\n  \"what\": {\n    \"action\": \"right\",\n    \"count\": 1\n  }\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": false,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20032,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "right"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": true,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20038,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "right"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down_right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"right\",\n  \"what\": {\n    \"action\": \"right\",\n    \"count\": 1\n  }\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": false,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20038,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "right"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": true,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20041,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "down",
+      "right"
+    ],
+    "multi_step": true,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down_right\",\n    \"goal_manhattan_distance\": 2,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"down_right\",\n  \"what\": {\n    \"down\": 1,\n    \"right\": 1\n  },\n  \"goal_direction\": \"down_right\",\n  \"goal_manhattan_distance\": 2,\n  \"requires_clear_route\": true\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20041,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "down",
+      "right"
+    ],
+    "multi_step": true,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": false,
+      "distance_correct": false,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20082,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "down"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"down\",\n  \"what\": {\n    \"down\": 1,\n    \"requires_clear_route\": true\n  }\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20082,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "down"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": true,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20100,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "right"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"right\",\n  \"what\": {\n    \"action\": \"right\",\n    \"count\": 1\n  },\n  \"goal_direction\": \"right\",\n  \"goal_manhattan_distance\": 1,\n  \"requires_clear_route\": true\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20100,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "right"
+    ],
+    "multi_step": false,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": true,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"right\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+    "valid": true,
+    "reason": null,
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": true,
+      "distance_correct": true,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20105,
+    "arm": "action_grounded_prompt_schema",
+    "actions": [
+      "up",
+      "up",
+      "right",
+      "right"
+    ],
+    "multi_step": true,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"down_right\",\n    \"goal_manhattan_distance\": 2,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 2\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 2\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": \"up_up_right_right\",\n  \"what\": {\n    \"up\": 2,\n    \"right\": 2\n  },\n  \"goal_direction\": \"up_right\",\n  \"goal_manhattan_distance\": 2,\n  \"requires_clear_route\": true\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": false,
+      "distance_correct": false,
+      "actions_exact": true
+    }
+  },
+  {
+    "seed": 20105,
+    "arm": "original_prompt_schema",
+    "actions": [
+      "up",
+      "up",
+      "right",
+      "right"
+    ],
+    "multi_step": true,
+    "image_count": 2,
+    "raw": "\nassistant\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}",
+    "archived_control_valid": false,
+    "original_raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 2,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 2\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 2\n    }\n  ]\n}\n```",
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "checks": {
+      "parse_valid": true,
+      "direction_correct": false,
+      "distance_correct": false,
+      "actions_exact": true
+    }
+  }
+]

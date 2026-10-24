@@ -111,6 +111,17 @@ class RayPPOTrainerSkill(RayPPOTrainer):
                 "retrieved_skill_id",
                 list(batch.non_tensor_batch["retrieved_skill_id"]),
             )
+        if os.getenv("MECHANISM_AUDIT_DIR"):
+            from vagen.skills.mechanism_audit import jsonable, write_record
+            keys = ("seed", "initial_env_state", "trajectory_actions", "trajectory_positions",
+                    "distilled_strategy", "distillation_audit", "mechanism_audit")
+            for key in keys:
+                if key in batch.non_tensor_batch:
+                    reward_extra_infos_dict[key] = jsonable(list(batch.non_tensor_batch[key]))
+            write_record("training_batches", str(self.global_steps), {
+                "policy_step": self.global_steps, "seed": reward_extra_infos_dict.get("seed"),
+                "response_mask": batch.batch["response_mask"].cpu().tolist(),
+                "skill_ids": list(batch.non_tensor_batch.get("retrieved_skill_id", []))})
         super()._log_rollout_data(batch, reward_extra_infos_dict, timing_raw, rollout_data_dir)
 
     def fit(self):

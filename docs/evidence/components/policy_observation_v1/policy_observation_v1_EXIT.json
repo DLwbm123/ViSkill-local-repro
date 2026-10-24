@@ -1,0 +1,9 @@
+{
+  "exits": {
+    "observation": 0
+  },
+  "reason": null,
+  "end_unix": 1792825631.5080779,
+  "peak_allocated_bytes": 68365946880,
+  "deadline_unix": 1792826683.8980117
+}

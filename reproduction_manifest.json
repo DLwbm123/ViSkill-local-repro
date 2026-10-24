@@ -1617,5 +1617,62 @@
     "restored_skill_count": 0,
     "end_unix": 1792820802.6111708,
     "peak_allocated_bytes": 68347863040
+  },
+  "hybrid_request_probe": {
+    "status": "COMPLETE_WITH_RECORDED_PROTOCOL_DEVIATION",
+    "protocol": "configs/smoke/hybrid_request_probe_v1.json",
+    "start_unix": 1792822637.744071,
+    "deadline_unix": 1792824437.744071,
+    "maximum_generation_calls": 32,
+    "training": false,
+    "hybrid_exit_code": 1,
+    "hybrid_request_count": 16,
+    "hybrid_failure": "numpy.int32 aggregate summary serialization after all requests; not repeated",
+    "recovery_exit_code": 0,
+    "standalone_request_count": 16,
+    "end_unix": 1792822902.6762958,
+    "raw_greedy_exact": 0,
+    "posthoc_body_greedy_exact": 7,
+    "greedy_total": 8,
+    "protocol_deviation": "val_batch_size2 caused8 wake/sync dispatches instead of one16-request first-sync dispatch"
+  },
+  "public_snapshot": {
+    "url": "https://github.com/DLwbm123/ViSkill-local-repro",
+    "commit": "94daba5c0983f929066d2393604936b5fc89a003",
+    "source_commit": "03b17a7",
+    "includes_this_diagnostic": false
+  },
+  "latest_mechanism_audit": {
+    "status": "All bounded follow-ups completed; no candidate met qualification. F remains PARTIAL.",
+    "report": "reports/05_mechanism_p0.md",
+    "fixture_policy_calls": 0,
+    "real_actor_backward_with_nonempty_skill_verified": false,
+    "next": "Freeze fresh prospective check for explicit dynamics-description correction; no active GPU run",
+    "start_unix": null,
+    "deadline_unix": null
+  },
+  "skill_capacity_v1": {
+    "episodes": 128,
+    "successful": 15,
+    "quality_eligible": 8,
+    "distillation_valid": 5,
+    "admitted": 3,
+    "multi_step_admitted": 0,
+    "exit_code": 0
+  },
+  "latest_followups": {
+    "action_grounding_v1": {
+      "calls": 16,
+      "qualified": false
+    },
+    "schema_decoding_v1": {
+      "calls": 16,
+      "qualified": false
+    },
+    "policy_observation_v1": {
+      "calls": 64,
+      "qualified": false
+    },
+    "additional_ppo_updates": 0
   }
 }

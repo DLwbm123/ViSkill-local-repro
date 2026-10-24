@@ -1,0 +1,9 @@
+{
+  "exits": {
+    "schema": 0
+  },
+  "reason": null,
+  "end_unix": 1792825172.0401356,
+  "peak_allocated_bytes": 68364615680,
+  "deadline_unix": 1792826009.5974708
+}

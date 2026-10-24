@@ -32,6 +32,7 @@ class FrozenLakeEnvConfig:
     image_placeholder: str = "<image>" # Placeholder for vision mode
     use_example_in_sys_prompt: bool = True  # Whether to add example system prompt
     prompt_format: str = "free_think"  # "free_think" or "wm"
+    accurate_dynamics_prompt: bool = False  # Opt-in correction; preserve frozen reproduction prompts.
     format_reward: float = 0.02         # Reward for following the format correctly
     success_reward: float = 1.0       # Reward for reaching the goal
 
@@ -230,7 +231,9 @@ class FrozenLake(GymImageEnv):
             add_example=self.config.use_example_in_sys_prompt,
             prompt_format=self.config.prompt_format,
         )
-        return system_prompt() + "\n" + format_prompt_str
+        slippery = (not self.config.accurate_dynamics_prompt
+                    or self.config.is_slippery or self.config.slip_prob > 0)
+        return system_prompt(slippery=slippery) + "\n" + format_prompt_str
 
     # ------------------------------
     # Internal helpers

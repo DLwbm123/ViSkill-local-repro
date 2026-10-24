@@ -1,0 +1,13 @@
+{
+  "source": "hybrid_request_probe_v1",
+  "scope": "Continue only the previously unstarted standalone phase using all16 saved request/result JSON and PNGs. Do not repeat any hybrid generation.",
+  "incident": "Hybrid ran all16 requests, then JSON metrics summary failed on numpy.int32. Original phase EXIT1 preserved; all16 per-request result JSON and PNGs were readable and complete; no residual own processes.",
+  "protocol_deviation": "Inherited val_batch_size=2 caused eight two-example validation dispatches and repeated hybrid wake/sync, contrary to planned one16-request first-sync dispatch. Only greedy seeds1,2 correspond to the first wake. Other comparisons test repeated-wake hybrid versus standalone, not a pure first-sync intervention. This deviation is retained and limits inference; no recollection to hide it.",
+  "repair": "Support NumPy scalar metrics serialization for future entry use; this repair does not rerun the completed hybrid phase. Recovery runs standalone replay only.",
+  "deadline_unix": 1792824437.744071,
+  "write_stop_bytes": 69347899904,
+  "source_first_receipt": "state/components/hybrid_request_probe_v1_receipt.json",
+  "remaining_calls": 16,
+  "physical_gpu": 3,
+  "training": false
+}

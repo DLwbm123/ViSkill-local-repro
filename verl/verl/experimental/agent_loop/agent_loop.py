@@ -394,6 +394,11 @@ class AgentLoopWorkerBase:
             )
             output: AgentLoopOutput = await agent_loop.run(sampling_params, **kwargs)
 
+            audit = output.extra_fields.get("mechanism_audit")
+            if audit is not None:
+                audit["rollout_policy_step"] = trajectory["step"]
+                audit["validation"] = trajectory["validate"]
+
             # Some AgentLoop may have already computed the reward score, e.g SWE-agent.
 
             # NOTE: consistent with batch version of generate_sequences in vllm_rollout_spmd.py

@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "original_prompt_schema": {
+      "valid": 5,
+      "single_step_valid": 5,
+      "multi_step_valid": 0,
+      "single_step_regressions_vs_original_capacity": 0
+    },
+    "action_grounded_prompt_schema": {
+      "valid": 4,
+      "single_step_valid": 2,
+      "multi_step_valid": 2,
+      "single_step_regressions_vs_original_capacity": 3
+    }
+  },
+  "note": "Original result single_step_regressions is relative to its matched archived prompt control (grounded control was0/8); it must not be interpreted as no regression vs original capacity5/8."
+}

@@ -1,0 +1,23 @@
+{
+  "name":"policy_observation_v1",
+  "purpose":"Diagnose dominant navigation failures after full128 and failed distillation interventions. 2x2 native observation-mode/system-example comparison; diagnostic only, not baseline optimization or a performance evaluation.",
+  "original_total_clock_start":1792772381.9046373,
+  "absolute_total_deadline":1792858781.9046373,
+  "max_attempt_seconds":1200,
+  "project_write_stop_bytes":85000000000,
+  "maximum_additional_bytes":500000000,
+  "allowed_physical_gpus":[4],
+  "seeds":[20001,20002,20003,20004,20005,20006,20007,20008,20009,20011,20013,20014,20015,20016,20017,20018],
+  "selection":"First16 failed episodes of completed fixed128, in seed order; a disclosed failure-conditioned development diagnostic, not held out. No selection by new outputs or shortest-route direction.",
+  "arms":["vision_examples","vision_no_examples","text_examples","text_no_examples"],
+  "sampling":{"temperature":0.0,"top_p":1.0,"top_k":-1,"max_new_tokens":512},
+  "model_calls":64,
+  "sampling_seed":42,
+  "context_length":9216,
+  "scope":"One generation and one actual env.step per case/arm, at most5 actions. Same base b0 weights, same seed/map/dynamics/action parser. No self-distillation, skills, optimizer or checkpoints. Compare newly generated greedy arms, not old stochastic outputs.",
+  "input_boundary":"Use official FrozenLake render_mode vision/text and use_example_in_sys_prompt true/false only. Text mode exposes the official symbolic grid as an explicit diagnostic observation alternative, not a faithful visual-policy replacement. No shortest path, correct action or verifier feedback is supplied.",
+  "known_issue_held_constant":"Official system guide says tiles are slippery although configured dynamics are deterministic. Preserve this same wording across all four arms to avoid an extra confound; record separately rather than changing the frozen diagnostic.",
+  "metrics":["valid format","nonempty executed actions","first actual action reduces BFS distance","hole after action batch","success within one action batch","boundary noops","paired first-action improvement/regression"],
+  "decision":"An arm is a useful lead only if it improves first-action BFS progress on at least4 of16 paired cases and worsens at most1 vs matched control. This small selected sample is not generalization evidence; any change requires a separate fresh prospective validation. If no arm meets the gate, retain negative evidence and do not expand this fixed64-call diagnostic.",
+  "stop":"Exactly64 calls maximum, no outcome-based replacement/retry, no full PPO or prompt search on the previous8 distillation cases. Repairs share first receipt deadline and cannot repeat completed calls."
+}
