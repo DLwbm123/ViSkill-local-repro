@@ -1,0 +1,29 @@
+{
+  "owned_residual_pids": [],
+  "runtime_exit": {
+    "exits": {
+      "b0": 0,
+      "O": 0,
+      "Z": 0
+    },
+    "reason": null,
+    "end_unix": 1792866595.0859632,
+    "peak_allocated_bytes": 83968811008,
+    "deadline_unix": 1792871567.965,
+    "command_line_violations": []
+  },
+  "runtime_peak_incremental_bytes": 17829888,
+  "native_calls": 364,
+  "actual_episodes": 96,
+  "new_optimizer_steps": 0,
+  "snapshots_independently_loaded_for_inference": [
+    "O",
+    "Z"
+  ],
+  "FP32_or_optimizer_resume_verified": false,
+  "observed_after_export_total_bytes": 83976855552,
+  "observed_after_export_component_incremental_bytes": 25874432,
+  "campaign_incremental_bytes": 15485046784,
+  "observed_unix": 1792868410.6206834,
+  "campaign_status": "ACTIVE"
+}

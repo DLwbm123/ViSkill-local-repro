@@ -1,0 +1,32 @@
+{
+  "start_unix": 1792865471.105222,
+  "preparation_start_unix": 1792864367.965,
+  "deadline_unix": 1792871567.965,
+  "original_total_deadline": 1792899507.0,
+  "supervisor_pid": 961139,
+  "baseline_bytes": 83952582656,
+  "write_limit_bytes": 84400981120,
+  "maximum_additional_bytes": 500000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "checkpoint_save": false,
+  "arms": {
+    "b0": {
+      "start_unix": 1792865471.413672,
+      "deadline_unix": 1792871567.965,
+      "exit_code": 0
+    },
+    "O": {
+      "start_unix": 1792865855.3583028,
+      "deadline_unix": 1792871567.965,
+      "exit_code": 0
+    },
+    "Z": {
+      "start_unix": 1792866228.1852288,
+      "deadline_unix": 1792871567.965,
+      "exit_code": 0
+    }
+  }
+}

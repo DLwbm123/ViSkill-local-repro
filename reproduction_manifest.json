@@ -1975,5 +1975,45 @@
     "inference_snapshots_retained": 2,
     "each_snapshot_bytes": 7509346928,
     "next_route": "Freeze prospective32 new-board evaluation only of b0/O/Z; no further training under this protocol."
+  },
+  "prospective_value_head_eval_v1": {
+    "status": "COMPLETE_WITH_RETAINED_ZERO_QUERY_INITIALIZATION_FAILURE",
+    "report": "reports/21_prospective_value_head_eval.md",
+    "episodes": 96,
+    "native_calls": 364,
+    "new_training_steps": 0,
+    "conditional_success_b0_O_Z": [
+      7,
+      3,
+      4
+    ],
+    "conditional_quality_b0_O_Z": [
+      6,
+      3,
+      4
+    ],
+    "conditional_denominator": 16,
+    "Z_vs_b0_conditional_success_improved_declined": [
+      3,
+      6
+    ],
+    "Z_vs_b0_conditional_quality_improved_declined": [
+      3,
+      5
+    ],
+    "natural_Stop_turns_b0_Z": [
+      4,
+      10
+    ],
+    "investment_gate_pass": false,
+    "inference_snapshots_actually_loaded": [
+      "O",
+      "Z"
+    ],
+    "full_FP32_optimizer_resume_verified": false,
+    "zero_head_performance_hint_closed": true,
+    "original_initialization_failure_retained": true,
+    "failed_attempt_business_queries": 0,
+    "next_route": "CPU saved-signal loss support audit only before any distinct new mechanism protocol; no more zero-head-only training."
   }
 }

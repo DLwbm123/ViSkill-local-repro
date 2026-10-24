@@ -1,0 +1,101 @@
+{
+  "name": "prospective_value_head_eval_v1",
+  "status": "FROZEN_MODEL_READY_REPAIR1",
+  "preparation_started_unix": 1792864367.965,
+  "max_seconds_including_preparation": 7200,
+  "absolute_total_deadline": 1792899507.0,
+  "storage_baseline_reference_bytes": 83950981120,
+  "maximum_additional_bytes": 500000000,
+  "write_stop_additional_bytes": 450000000,
+  "project_write_stop_bytes": 85000000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "source_library": "results/ppo_smoke/bootstrap_card_pair_v1/B/library",
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think",
+    "accurate_dynamics_prompt": true
+  },
+  "candidate_seed_bounds": [
+    200001,
+    216384
+  ],
+  "dev_quotas": {
+    "conditional": 16,
+    "natural_multi": 16
+  },
+  "selection": "First ascending new desc boards in each quota; conditional BFS3 top1 skill4score>=.8; other natural BFS>1 without that condition. Exclude every prior recorded board/Test and actual historical candidate-prefix seeds, all within-pool duplicates. No result selection or widening.",
+  "policies": {
+    "b0": "models/b0",
+    "O": "artifacts/component_tests/value_head_single_step_v1/O_repair1/inference_actor",
+    "Z": "artifacts/component_tests/value_head_single_step_v1/Z/inference_actor"
+  },
+  "policy_order": [
+    "b0",
+    "O",
+    "Z"
+  ],
+  "max_episodes": 96,
+  "max_native_calls": 480,
+  "max_native_calls_per_policy": 160,
+  "actor_optimizer_steps": 0,
+  "critic_forwards": 0,
+  "distillation_calls": 0,
+  "admissions": 0,
+  "new_model_snapshots": 0,
+  "evaluation_mode": "Actual production hybrid agent/prompt/processor/cards/SGLang, greedy T0 top_p1, val_batch1 agentworkers1, one active episode at a time. Serial scheduling is deliberate vs prior batched Dev, common to all policies; no precision/kernel grid.",
+  "snapshot_readiness_gate": "Actual HF loader output_loading_info: no mismatched/unexpected/error; missing only tied lm_head allowed (or empty); actual input/output parameter alias and empty actor optimizer required before generation. Original b0 EOS/BOS/PAD/sampling-stop metadata aligned before calls. No extra model load/hash/old episode replay. CPU canonical 2-image input_ids/attention/pixel_values/grids and chat-template/special tokens/generation metadata match across all3 exactly; snapshot generation_config216-byte original b0 metadata copied before calls without changing weights.",
+  "scientific_gate": {
+    "absolute_Z_conditional_quality_min": 4,
+    "conditional_denominator": 16,
+    "Z_quality_gain_vs_each_b0_and_O_min": 2,
+    "conditional_success_and_quality_declines_vs_each_max": 1,
+    "natural_success_and_quality_net_vs_b0_min": 0,
+    "natural_Stop_turns_and_Stop_episodes_and_holes_vs_b0_must_not_increase": true,
+    "all_required": true,
+    "natural_success_and_quality_paired_declines_vs_b0_max": 0
+  },
+  "analysis": "Full all32/per16 paired success/quality/Stop/hole and same conservative finite-sample paired intervals as report20. No scientific efficacy/generalization claim from gate alone. Failure closes present zero-head performance hint, no resampling/retraining.",
+  "limitations": [
+    "Historical Stop mechanism gate remains failed and is not rescued by performance",
+    "Original backend think probability gate remains failed",
+    "Saved snapshots are BF16 inference-only, not FP32 master/optimizer restoration",
+    "Original reserved Test never evaluated"
+  ],
+  "cpu_readiness": {
+    "historical_boards_excluded": 12407,
+    "historical_actual_prefix_seeds_excluded": 13766,
+    "historical_json_sources": 4506,
+    "new_unique_boards": 32,
+    "loader_serial_batches": 32,
+    "canonical_2image_processor_ids_pixels_grid_attention_exact_across_all3": true,
+    "generation_config_metadata_aligned_to_original_b0": true,
+    "HF_actual_auto_model_class": "AutoModelForVision2Seq",
+    "model_forwards_before_ready": 0,
+    "original_generation_config_export_omission_fixed_before_inference": true
+  },
+  "policy_output_folders": {
+    "b0": "b0_repair1",
+    "O": "O",
+    "Z": "Z"
+  },
+  "bounded_before_generation_repair": {
+    "reason": "Borrowed SingleTrainer._get_gen_batch method kept a zero-argument super() closure for its defining class, but EvalTrainer is a different RayPPOTrainer subclass. TypeError before first manager.generate.",
+    "completed_native_requests": 0,
+    "completed_episodes": 0,
+    "completed_optimizer_steps": 0,
+    "model_initialization_attempts_before_repair": 1,
+    "original_no_failed_attempts_contract_pass": false,
+    "repair": "Define the identical phase/context fields in EvalTrainer own method with its own parent super. CPU reproduces old bound-method failure and checks real DataProto first-item generation metadata before one retry.",
+    "retry_limit": 1,
+    "same_data_gates_clock_storage_counters": true,
+    "original_files_retained": true
+  }
+}

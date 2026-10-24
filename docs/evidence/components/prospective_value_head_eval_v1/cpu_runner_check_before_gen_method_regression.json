@@ -1,0 +1,28 @@
+{
+  "status": "CPU_PASS",
+  "dev_rows": 32,
+  "serial_loader_batches": 32,
+  "order_exact": true,
+  "loader_info_guard_valid_and_invalid_cases_checked": true,
+  "processor_checks": {
+    "b0": {
+      "canonical_two_image_processor_exact_match": true,
+      "common_generation_metadata": true,
+      "rollout_dtype": "bfloat16"
+    },
+    "O": {
+      "canonical_two_image_processor_exact_match": true,
+      "common_generation_metadata": true,
+      "rollout_dtype": "bfloat16"
+    },
+    "Z": {
+      "canonical_two_image_processor_exact_match": true,
+      "common_generation_metadata": true,
+      "rollout_dtype": "bfloat16"
+    }
+  },
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "generation": 0,
+  "runtime_HF_loader_and_actual_tie_checks": "Required during actual initialization before each policy generates"
+}

@@ -1,0 +1,14 @@
+{
+  "O": {
+    "copied_known_b0_generation_config": true,
+    "bytes": 216,
+    "weights_changed": false,
+    "reason": "Saved inference export omitted generation config; align original EOS/BOS/PAD/default generation metadata before any new inference."
+  },
+  "Z": {
+    "copied_known_b0_generation_config": true,
+    "bytes": 216,
+    "weights_changed": false,
+    "reason": "Saved inference export omitted generation config; align original EOS/BOS/PAD/default generation metadata before any new inference."
+  }
+}

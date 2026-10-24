@@ -1,0 +1,9 @@
+[
+  {
+    "stage": "CPU checker import",
+    "error": "validate_config imported from verl.trainer.config; actual existing API is verl.utils.config",
+    "model_forwards": 0,
+    "environment_steps": 0,
+    "generation": 0
+  }
+]
