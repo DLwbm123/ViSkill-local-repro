@@ -1,0 +1,15 @@
+{
+  "own_residual_processes": [],
+  "arms": {
+    "A": {
+      "skill4_training_exposures": 0,
+      "optimizer_audit_rows": 64,
+      "sync_await_records": 152
+    },
+    "B": {
+      "skill4_training_exposures": 32,
+      "optimizer_audit_rows": 64,
+      "sync_await_records": 152
+    }
+  }
+}

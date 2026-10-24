@@ -1,0 +1,2082 @@
+{
+  "summary": {
+    "N": {
+      "episodes": 16,
+      "success": 0,
+      "quality": 0,
+      "retrieved_reference_episodes": 0
+    },
+    "V": {
+      "episodes": 16,
+      "success": 9,
+      "quality": 9,
+      "retrieved_reference_episodes": 16
+    },
+    "Blank": {
+      "episodes": 16,
+      "success": 1,
+      "quality": 0,
+      "retrieved_reference_episodes": 16
+    },
+    "Text": {
+      "episodes": 16,
+      "success": 4,
+      "quality": 4,
+      "retrieved_reference_episodes": 16
+    }
+  },
+  "paired": {
+    "V-N": {
+      "success": {
+        "improved": 9,
+        "worsened": 0,
+        "net": 9
+      },
+      "quality": {
+        "improved": 9,
+        "worsened": 0,
+        "net": 9
+      }
+    },
+    "V-Blank": {
+      "success": {
+        "improved": 8,
+        "worsened": 0,
+        "net": 8
+      },
+      "quality": {
+        "improved": 9,
+        "worsened": 0,
+        "net": 9
+      }
+    },
+    "Text-N": {
+      "success": {
+        "improved": 4,
+        "worsened": 0,
+        "net": 4
+      },
+      "quality": {
+        "improved": 4,
+        "worsened": 0,
+        "net": 4
+      }
+    },
+    "Text-V": {
+      "success": {
+        "improved": 0,
+        "worsened": 5,
+        "net": -5
+      },
+      "quality": {
+        "improved": 0,
+        "worsened": 5,
+        "net": -5
+      }
+    }
+  },
+  "PPO_investment_gate": true,
+  "learning_benefit_established": false,
+  "conditional_only": true,
+  "training": false,
+  "library_unchanged": true,
+  "model_calls": 227,
+  "records": [
+    {
+      "seed": 80045,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_80045_7db8d2b4b9164c4f8f6ada5772060906/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80045,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_80045_24f1385cb26e4f6da4484705e682a1b1/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80045,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_80045_e0c02a3582f34a79ad8404df08b26f55/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80045,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "down"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_80045_3725be15092142c89ca666d6635065c6/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80112,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_80112_ef25f4f5be0d48f7be5992de629876ca/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80112,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_80112_5aa84d04ccec4cbfa4d024c616719439/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80112,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_80112_c4627bda403a41c08cd60b75b8ddd952/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80112,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_80112_02586ca2943249f682918bc8cbdd93f8/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80537,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_80537_b28b6189be964fad8b72f90954527ed2/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80537,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_80537_3d79c87a0e4844adb0cae051acb86cf7/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80537,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_80537_9264c225dd13429d9c1de73aa214b952/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80537,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up",
+        "up",
+        "right",
+        "up"
+      ],
+      "turns": 4,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_80537_05305c05786043e2834119524f2a5eaa/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80824,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_80824_8fa4ff6ba2634b2897b8a83711e15ec4/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80824,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_80824_dbd14a89e33e4902b06364919e05a4b3/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80824,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_80824_83bce0d2cf5242a9928017f5900ef0f8/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80824,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_80824_16c1d03365404046b864625dff209cd1/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80829,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "up",
+        "left",
+        "up",
+        "left"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_80829_57a45aa2bcff4fe2beb7b7f74f004007/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80829,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_80829_df1595b1fccd407584d343d996686801/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 80829,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_80829_1becf7836f8a4cfc9827642340f44cab/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 80829,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "left",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_80829_360039f41ab340e7829369f6df213f7a/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81049,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81049_813774fe7c8f48018f84693a3e5d5a0a/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81049,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "down"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81049_b9c14478e2f64f0681a4b9ebda8bc8c8/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81049,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81049_a6f05f67ca70467c978c0879c7004f25/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81049,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81049_e75f6249cc2e44109a8c56a748db338c/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81146,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81146_0227122e9a584db883571c58334689fa/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81146,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81146_e2ba8ddef0b84f8cb3d66930e15bb719/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81146,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81146_c2225b5a51954eb0bd96efb0500ae695/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81146,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81146_045fb622b162463b9eba4dd7962a611f/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81252,
+      "arm": "Text",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81252_0fe04132555b4b7e949846d97257f258/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81252,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81252_11e7155d469042b1864f9237f0074b96/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81252,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81252_3971d5997ac24d43a57847f3012667f1/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81252,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81252_3e39aa9bb72d44f68a4c9c2a466ed05a/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81266,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "left"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81266_607e6a8c9ef8412b80c4b19441038658/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81266,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81266_b9e9d766c9434a88bc0882849897ae85/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81266,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "action_cost_cancels_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81266_295516ec2d80467a9a1069321e7bc6e6/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81266,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "left"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81266_87b0d4ff23d24465a1e3c9210f162f1d/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81500,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81500_5785ad4a28e24da0b3859dc83cb147e8/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81500,
+      "arm": "Blank",
+      "success": true,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "down",
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 4,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 4,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81500_850967cfa5da4bfab718436135e0c786/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81500,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81500_f573e23c19744e078ca13f3084509c1b/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81500,
+      "arm": "Text",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81500_cbee9d8abd6a4c24836add8de05dd6f5/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81559,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81559_ea355d03cef04cb391f475c85424d10b/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81559,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81559_a920a356935741efba9041b5bef09be8/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81559,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81559_a0108e2c3e2145578f12cefd42c96b93/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81559,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81559_6a39a529933f4a8492afe4011cd9ebef/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81615,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81615_6943e6d59c6842f791a05d673bd21271/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81615,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81615_c24b797d38d141f2869a17271803506e/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81615,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "left",
+        "left",
+        "left"
+      ],
+      "turns": 3,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81615_d7ba4337168747b4b444ac58bc2e5c3c/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81615,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81615_70c3a1733dc849d7bbb716b889a079e0/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81696,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81696_ebdd2f96bded48d191d5d8082d8f775f/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81696,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81696_1142ed3eb13145c2b3e7938f64030474/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81696,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81696_0fbf6a1504bc45ba90e22bd318ae59a6/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81696,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81696_c5d0bd331826427ab98b41a9cf28bd6c/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81873,
+      "arm": "V",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81873_1c9d7836130f4b79823eff1243c3e64c/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81873,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down",
+        "right"
+      ],
+      "turns": 3,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81873_17c21038aa684e089cc9ac57cbc6380d/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81873,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81873_b9e577f421304624a80eef31f1b02f3c/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81873,
+      "arm": "Text",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81873_d7f9c6c8ed0a4257b4936bbaaf40cee8/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81921,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_81921_162ff881a44c4a0ba222ac8b20e4e54c/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81921,
+      "arm": "Text",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_81921_ec4f16a257db4adc931b90c8ca69fb92/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 81921,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_81921_b836ade4832e47a5b85c8a7efcff4703/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 81921,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_81921_6b419414f6144ffdaf2c66ba156bff70/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 82018,
+      "arm": "Text",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Text/episodes/dev_0_82018_43680aac2b0445eaa5764a58b392ba5a/episode.json",
+      "condition_input": {
+        "condition": "Text",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 82018,
+      "arm": "N",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/N/episodes/dev_0_82018_4f763742ee0d4c8087cf5326fe8089c5/episode.json",
+      "condition_input": {
+        "condition": "N",
+        "image_sizes": []
+      }
+    },
+    {
+      "seed": 82018,
+      "arm": "Blank",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "down"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/Blank/episodes/dev_0_82018_6193a5b65a774af1b074d0bafa80e43b/episode.json",
+      "condition_input": {
+        "condition": "Blank",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 82018,
+      "arm": "V",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/card_content_controls_v1/V/episodes/dev_0_82018_1f8e0ee6e51143c4914feb160fe8d8a6/episode.json",
+      "condition_input": {
+        "condition": "V",
+        "obs_str": "\n\n[Skill Reference]:\nThe following shows a successful solution for a similar task. Use it as guidance for your approach.\n<image>",
+        "image_sizes": [
+          [
+            552,
+            232
+          ]
+        ]
+      }
+    }
+  ],
+  "worker_seconds": 276.39585304260254,
+  "preparation_seconds": 560.2046549320221
+}

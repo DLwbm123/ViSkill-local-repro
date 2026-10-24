@@ -1,0 +1,165 @@
+{
+  "complete_episodes": 64,
+  "saved_requests": 227,
+  "conditions_same_actual_initial_states": true,
+  "V_Blank_first_prompt_lengths_and_image_dimensions_match_all16": true,
+  "condition_audit": {
+    "N": {
+      "requests": 62,
+      "format_correct": 62,
+      "unsupported_action_turns": 6,
+      "stop_answers": 3,
+      "holes": 6,
+      "turn_limit": 10,
+      "boundary_noops": 30,
+      "positive_shadow_failures": []
+    },
+    "V": {
+      "requests": 53,
+      "format_correct": 53,
+      "unsupported_action_turns": 16,
+      "stop_answers": 16,
+      "holes": 3,
+      "turn_limit": 4,
+      "boundary_noops": 0,
+      "positive_shadow_failures": [
+        {
+          "seed": 80537,
+          "shadow_bonus": 0.26666666666666666,
+          "executed_actions": [
+            "up"
+          ],
+          "stop_answers": 4,
+          "turns": 5
+        },
+        {
+          "seed": 81615,
+          "shadow_bonus": 0.26666666666666666,
+          "executed_actions": [
+            "up"
+          ],
+          "stop_answers": 4,
+          "turns": 5
+        },
+        {
+          "seed": 80045,
+          "shadow_bonus": 0.26666666666666666,
+          "executed_actions": [
+            "up"
+          ],
+          "stop_answers": 4,
+          "turns": 5
+        },
+        {
+          "seed": 80829,
+          "shadow_bonus": 0.26666666666666666,
+          "executed_actions": [
+            "up"
+          ],
+          "stop_answers": 4,
+          "turns": 5
+        }
+      ]
+    },
+    "Blank": {
+      "requests": 58,
+      "format_correct": 58,
+      "unsupported_action_turns": 15,
+      "stop_answers": 15,
+      "holes": 7,
+      "turn_limit": 8,
+      "boundary_noops": 23,
+      "positive_shadow_failures": []
+    },
+    "Text": {
+      "requests": 54,
+      "format_correct": 54,
+      "unsupported_action_turns": 5,
+      "stop_answers": 5,
+      "holes": 6,
+      "turn_limit": 6,
+      "boundary_noops": 20,
+      "positive_shadow_failures": []
+    }
+  },
+  "posthoc_uncertainty": {
+    "V-N": {
+      "success": {
+        "difference": 0.5625,
+        "descriptive_paired_map_bootstrap_95": [
+          0.3125,
+          0.8125
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.00390625
+      },
+      "quality": {
+        "difference": 0.5625,
+        "descriptive_paired_map_bootstrap_95": [
+          0.3125,
+          0.8125
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.00390625
+      }
+    },
+    "V-Blank": {
+      "success": {
+        "difference": 0.5,
+        "descriptive_paired_map_bootstrap_95": [
+          0.25,
+          0.75
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.0078125
+      },
+      "quality": {
+        "difference": 0.5625,
+        "descriptive_paired_map_bootstrap_95": [
+          0.3125,
+          0.8125
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.00390625
+      }
+    },
+    "Text-N": {
+      "success": {
+        "difference": 0.25,
+        "descriptive_paired_map_bootstrap_95": [
+          0.0625,
+          0.5
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.125
+      },
+      "quality": {
+        "difference": 0.25,
+        "descriptive_paired_map_bootstrap_95": [
+          0.0625,
+          0.5
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.125
+      }
+    },
+    "Text-V": {
+      "success": {
+        "difference": -0.3125,
+        "descriptive_paired_map_bootstrap_95": [
+          -0.5625,
+          -0.125
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.0625
+      },
+      "quality": {
+        "difference": -0.3125,
+        "descriptive_paired_map_bootstrap_95": [
+          -0.5625,
+          -0.125
+        ],
+        "posthoc_two_sided_exact_mcnemar_p": 0.0625
+      }
+    }
+  },
+  "uncertainty_scope": "Descriptive within this selected16-map Up3 set, one skill and frozen policy; not natural-population or training-seed uncertainty. Not part of preregistered investment gate.",
+  "owned_residual_processes": [],
+  "baseline_bytes": 68522647552,
+  "peak_allocated_bytes": 68528697344,
+  "peak_incremental_bytes": 6049792,
+  "PPO_investment_gate": true
+}

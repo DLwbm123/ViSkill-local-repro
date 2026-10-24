@@ -2,53 +2,48 @@
 
 Independent local reproduction of **ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills**, using local inference with no external model API. This is not the official repository.
 
-**Current result: online cards entered real PPO training; a learning benefit has NOT been established.** Both paired arms completed four32-episode training batches, pre/post64-map Dev evaluation and a final32-map probe:576 complete episodes and2056 model calls. One training seed per arm; no final weights retained.
+**Latest result: fixed-library PPO failed its preregistered learning gate.** Both arms completed four training batches and all before/midpoint/final evaluations: 1,408 complete episodes and 5,135 model requests. Card exposure and real parameter updates were verified; performance deteriorated on the primary conditional task.
 
-| Dev metric | Both arms before training | A: ordinary PPO after | B: online cards, reward weight0, after |
+| Same fixed cards, conditional Dev32 | B before training | A after ordinary PPO | B after card-conditioned PPO |
 |---|---:|---:|---:|
-| Success |9/64|6/64|10/64|
-| Shortest-path quality eligibility |8/64|5/64|10/64|
-| Multi-step success |6/53|3/53|2/53|
-| Multi-step quality eligibility |6/53|2/53|2/53|
+| Success |11/32|9/32|1/32|
+| Shortest-path quality eligibility |10/32|9/32|1/32|
 
-B's own success improved by only1/64, with8 paired improvements and7 regressions. Its multi-step success fell from6/53 to2/53. The numerical B-A difference includes A's decline; supplementary paired-map intervals cross zero and do not cover training-seed variability. These results do not establish stable improvement, multi-step learning or the paper's performance.
-
-B admitted5 skills:4 one-step and1 three-step. Ten later training samples actually used one-step cards and participated in actor/critic updates. The three-step card arrived in the last batch, was never subsequently injected, and had no applicable candidate among78 multi-step Dev-after/probe tasks. Actual skill-reward weight was0; all shadow bonuses were0. Complete F remains PARTIAL because reward training and independent nonempty-library/model restoration were not verified.
+B versus its own baseline had zero improved and ten regressed success cases. B versus A had one improvement and nine regressions. All four primary success/quality conditions failed. Natural multi-step success with cards stayed at6/53, but quality fell from6/53 to4/53; unchanged aggregate success does not mean that the original successful cases were preserved. This protocol is closed without additional PPO batches, seeds or skill-reward training.
 
 ## Review these first
 
-- [Complete paired training results and evidence limits](reports/11_bootstrap_pair_results.md)
-- [All experiment results summary](reports/06_results_summary.md)
-- [576 episode outcomes](docs/evidence/components/bootstrap_card_pair_v1/all_episode_outcomes.json)
-- [29 raw distillation outputs](docs/evidence/components/bootstrap_card_pair_v1/all_distillation_outputs.json)
-- [Final five-card library](docs/evidence/components/bootstrap_card_pair_v1/B/library/skill_index.json)
-- [Paired uncertainty estimates](docs/evidence/components/bootstrap_card_pair_v1/paired_uncertainty.json)
-- [Frozen protocol and exact seeds](configs/smoke/bootstrap_card_pair_v1.json)
-- [Lifecycle fault and resource-gate recovery](reports/09_bootstrap_incidents.md)
-- [Full chronological status](reports/REPRODUCTION_STATUS.md)
+- [Report16: full results, paired comparisons, uncertainty and gate decision](reports/16_fixed_library_results.md)
+- [Report17: failure behavior, numerical evidence and unresolved causes](reports/17_fixed_library_failure_audit.md)
+- [Frozen fixed-library PPO protocol](reports/15_fixed_library_ppo.md)
+- [All1,408 episode outcomes](docs/evidence/components/fixed_library_ppo_v1/result.json)
+- [Read-only failure audit](docs/evidence/components/fixed_library_ppo_v1/failure_audit.json)
+- [Four-condition visual-content controls](reports/14_card_content_controls.md)
+- [Complete experiment summary](reports/06_results_summary.md)
+- [Chronological status](reports/REPRODUCTION_STATUS.md)
 
-Chronological reports and old gate snapshots retain historical states. This page and report11 take precedence for current results. No completed batch or inference request was repeated to recover the interrupted lifecycle cleanup or the unstarted B resource gate.
+The fixed-library experiment deliberately used five cards produced by the earlier online bootstrap and a conditional curriculum. Skill-reward weight remained0; there was no online library admission or utility update. This is an explicit mechanism variant, not the paper's full300-step training. Final weights were not retained, so independent restoration or retrospective evaluation is unavailable. Original free-text E and full F remain PARTIAL. A proposed eight-request scoring diagnostic has not started.
 
-## Earlier evidence retained
+## Earlier results retained
 
-The earlier128-episode capacity run produced15 successes,8 quality-eligible trajectories,5 valid strategies and3 admitted one-step diagnostic skills. All3 eligible multi-step trajectories failed distillation. Another96 bounded prompt/schema/observation calls met no qualification gate. A separate64-episode dynamics-wording check had2/32 versus3/32 successes and2/32 quality-eligible in both arms; its improvement gate failed. Those protocols remain closed, and the old3-skill diagnostic library is separate from the new5-skill online library.
+The earlier online bootstrap completed576 episodes/2,056 calls. Its B arm went from9/64 to10/64 successes, but multi-step success fell from6/53 to2/53. A learning benefit was not established. It produced four one-step cards and one three-step card; that three-step card had no later training exposure. See [report11](reports/11_bootstrap_pair_results.md).
 
-Earlier one-batch PPO and independent model reload established real updates and empty-library restoration. P0 checked real processor/worker image and mask handling using explicitly scripted fixtures. Neither substitutes for a scientific learning-benefit claim. See [P0/capacity report](reports/05_mechanism_p0.md) and [earlier PPO report](reports/02_ppo_smoke_test.md).
+Independent frozen-weight controls found an immediate context effect on a narrow Up-three-times applicability set: no card/real card/blank card/text yielded0/9/1/4 successes, each out of16. This justified the later bounded learning test; it does not override that test's negative result. See [reports12-14](reports/12_multi_card_transfer.md).
 
-## Explicit algorithm and runtime boundaries
+The initial128-episode capacity run produced15 successes,8 quality-eligible trajectories,5 valid strategies and3 admitted one-step skills. All three eligible multi-step trajectories failed distillation. Prompt/schema/observation and dynamics-wording diagnostics did not meet their improvement gates. Earlier one-batch PPO and model reload proved real updates and empty-library restoration; these engineering results do not establish scientific learning gains.
 
-The named directional variant changes the strategy representation and uses privileged deterministic state for reject-only semantic/admission/retrieval checks; reward and batch-novelty deviations are documented. Cold start is disabled and current-policy self-distillation is retained. Original free-text failures remain recorded. The paired pilot enabled accurate dynamics wording equally in both arms and used no schema/prompt search or curriculum.
+## Implementation and evidence boundaries
 
-A confirmed concurrent RGB-environment shutdown stall was repaired without repeating its54 completed requests, rewriting its failed episode or resetting clocks. B's resource gate was preserved; only its unstarted arm resumed after allowed GPU memory recovered. Model calls, failures and costs remain in the evidence. Monitored peak additional storage was about80.37MB, below the1.8GB write stop and2GB budget. Old checkpoints were retained; the new pilot deliberately saved no final model, optimizer or RNG state.
+The named directional variant changes strategy representation and uses privileged deterministic state for reject-only semantic/admission/retrieval checks. Original free-text failures and paper/code discrepancies are retained. Current-policy self-distillation and disabled cold start do not require an external model API. Actor self-consistency, finite gradients and weight-sync receipts do not yet establish SGLang-versus-production-actor probability equivalence. No claim about the paper's full-scale outcome follows from these reduced experiments.
 
 ## Source and public scope
 
 - [Official repository](https://github.com/ZJU-REAL/ViSkill), pinned upstream7acaff880871b8d898d91c515c151080eabcba20.
 - [Paper](https://arxiv.org/abs/2610.12403), [paper/code audit](docs/01_paper_code_audit.md), [upstream README](README_UPSTREAM.md).
-- [Environment and version deviations](docs/03_environment_setup.md), [publication manifest](PUBLIC_RELEASE.json).
+- [Environment deviations](docs/03_environment_setup.md), [publication manifest](PUBLIC_RELEASE.json).
 
-This sanitized source snapshot includes code, configs, exact synthetic map manifests, compact numeric outcomes, raw distillation outputs, five small cards and selected optimizer/sync/exit evidence. Model weights, checkpoints, full runtime request/log archives, machine-private paths, paper PDF/full text and private local Git history are excluded. Earlier public history retains a previously disclosed username-literal correction; this update does not rewrite that history.
+This sanitized snapshot includes code, configs, synthetic map manifests/images, episode outcomes, audit scripts and compact numeric/update/sync/exit evidence. Model weights, checkpoints, complete runtime request/log archives, private machine paths, paper PDF/full text and private Git history are excluded. Earlier public history retains the previously disclosed username-literal correction; this update does not rewrite that history.
 
-`/workspace/ViSkill-local-repro`, `/data/local` and `gpu-host` are deployment placeholders. Adapt them and provide the documented local weights/environment before using machine-specific wrappers. Historical PIDs, ports and receipts are evidence, not active endpoints. Some source references lead to excluded raw runtime artifacts.
+`/workspace/ViSkill-local-repro`, `/data/local` and `gpu-host` are deployment placeholders. Historical process IDs and receipts are evidence, not active endpoints. Some source references point to excluded runtime files. Future major results, including negative results, will be committed and pushed with the same public-data boundaries.
 
 Upstream licenses are retained: [MIT LICENSE](LICENSE), [bundled veRL license](verl/LICENSE).

@@ -1,0 +1,406 @@
+{
+  "model_calls": 0,
+  "transfer_request_parsing": {
+    "empty": {
+      "requests": 65,
+      "format_correct": 65,
+      "no_parsed_actions": 0,
+      "unsupported_action_turns": 14,
+      "stop_answers": 14
+    },
+    "cards": {
+      "requests": 67,
+      "format_correct": 67,
+      "no_parsed_actions": 0,
+      "unsupported_action_turns": 20,
+      "stop_answers": 20
+    }
+  },
+  "positive_shadow_episodes": [
+    {
+      "seed": 70014,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "shadow_bonus": 0.26666666666666666,
+      "raw_turns": [
+        "\nassistant\n<think>My goal is to reach the goal (G), which is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>"
+      ],
+      "parsed_actions": [
+        [
+          "up"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ]
+      ]
+    },
+    {
+      "seed": 70130,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "shadow_bonus": 0.26666666666666666,
+      "raw_turns": [
+        "\nassistant\n<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>"
+      ],
+      "parsed_actions": [
+        [
+          "up"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ]
+      ]
+    },
+    {
+      "seed": 70538,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "shadow_bonus": 0.26666666666666666,
+      "raw_turns": [
+        "\nassistant\n<think>My goal is to reach the goal (G), which is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>"
+      ],
+      "parsed_actions": [
+        [
+          "up"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ]
+      ]
+    },
+    {
+      "seed": 70949,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "shadow_bonus": 0.26666666666666666,
+      "raw_turns": [
+        "\nassistant\n<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>"
+      ],
+      "parsed_actions": [
+        [
+          "up"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ]
+      ]
+    },
+    {
+      "seed": 71004,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "shadow_bonus": 0.26666666666666666,
+      "raw_turns": [
+        "\nassistant\n<think>My goal is to reach the goal (G) which is directly above me. I should move up to reach it.</think>\n<answer>Up</answer>",
+        "\nassistant\n<think>I have reached the goal (G) and there are no more actions needed. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I have reached the goal (G) and there are no more actions needed. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I have reached the goal (G) and there are no more actions needed. I should stop here.</think>\n<answer>Stop</answer>",
+        "\nassistant\n<think>I have reached the goal (G) and there are no more actions needed. I should stop here.</think>\n<answer>Stop</answer>"
+      ],
+      "parsed_actions": [
+        [
+          "up"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ],
+        [
+          "stop"
+        ]
+      ]
+    }
+  ],
+  "B_multi_regressions": [
+    {
+      "seed": 61001,
+      "0": {
+        "calls": 2,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the hole. I am currently at the top-left corner. Moving down will allow me to get closer to the goal without falling into the hole.</think>\n<answer>Down</answer>",
+          "<think>I am at the top-left corner and need to move down to get closer to the goal. Moving down will allow me to avoid the hole and get closer to the goal.</think>\n<answer>Down</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "down"
+          ],
+          [
+            "down"
+          ]
+        ]
+      },
+      "4": {
+        "calls": 5,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly below me, and the goal is to my right. I should move right to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>Since I moved right, I am now in a position where I can move down to reach the goal. The hole is still below me, but I can now move down to avoid it and reach the goal.</think>\n<answer>Down</answer>",
+          "<think>Since I have reached the goal (G), I should stop moving. The goal is now in my current position, and I have successfully avoided the hole.</think>\n<answer>Stop</answer>",
+          "<think>Since I have reached the goal, I should stop moving to complete the task.</think>\n<answer>Stop</answer>",
+          "<think>Since I have reached the goal, I should stop moving to complete the task.</think>\n<answer>Stop</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "down"
+          ],
+          [
+            "stop"
+          ],
+          [
+            "stop"
+          ],
+          [
+            "stop"
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 61004,
+      "0": {
+        "calls": 2,
+        "raw_turns": [
+          "<think>There is a hole directly below me, and I need to avoid it. The goal is to my right, so I should move right first to get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>I need to move right to get closer to the goal, but I must avoid the hole directly below me. Moving right will take me to the hole, so I should move up first to avoid it.</think>\n<answer>Up</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "up"
+          ]
+        ]
+      },
+      "4": {
+        "calls": 3,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the hole (O). The initial observation shows that I am at the starting position (P) and there is a hole directly below me. I should move to the right to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>Since I moved right, I am now at the same position as before, indicating I have not moved away from the hole. I need to move to the left to avoid the hole and get closer to the goal.</think>\n<answer>Left</answer>",
+          "<think>After moving left, I am still at the same position as before, indicating I have not moved away from the hole. I need to move up to avoid the hole and get closer to the goal.</think>\n<answer>Up</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "left"
+          ],
+          [
+            "up"
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 61042,
+      "0": {
+        "calls": 3,
+        "raw_turns": [
+          "<think>There is a hole directly below me, and I need to avoid it. The goal is to my right, so I should move right first to get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>I have moved right and am now closer to the goal. I should now move up to reach the goal while avoiding the hole directly below me.</think>\n<answer>Up</answer>",
+          "<think>I have moved up and am now closer to the goal. I should now move right to reach the goal while avoiding the hole directly below me.</think>\n<answer>Right</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "up"
+          ],
+          [
+            "right"
+          ]
+        ]
+      },
+      "4": {
+        "calls": 5,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly below me, and the goal is to my right. Moving right will allow me to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>Since I moved right, I am now closer to the goal. The hole is still directly below me, but I can now move up to avoid it and reach the goal.</think>\n<answer>Up</answer>",
+          "<think>After moving up, I am now at the goal (G). The hole is no longer in my way, and I have successfully reached the goal.</think>\n<answer>Up</answer>",
+          "<think>Since I have reached the goal, I should stop moving. The action 'up' is the last valid action to take.</think>\n<answer>Up</answer>",
+          "<think>Since I have reached the goal, I should stop moving. The action 'up' is the last valid action to take.</think>\n<answer>Up</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "up"
+          ],
+          [
+            "up"
+          ],
+          [
+            "up"
+          ],
+          [
+            "up"
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 61055,
+      "0": {
+        "calls": 2,
+        "raw_turns": [
+          "<think>There is a hole directly below me, and I need to avoid it. The goal is to my right, so I should move right first to get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>I need to avoid the hole directly below me and move towards the goal. Since the goal is to my right, I should move right first to get closer.</think>\n<answer>Right</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "right"
+          ]
+        ]
+      },
+      "4": {
+        "calls": 5,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the holes. The goal is directly to my right, and there's a hole directly below me. I should move right to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>Since I moved right, I am now in a position where I can move down to reach the goal. There is no hole directly below me, so I can move down without risk.</think>\n<answer>Down</answer>",
+          "<think>Since I have reached the goal, I should stop moving. The goal is directly in front of me, and there are no obstacles to avoid.</think>\n<answer>Stop</answer>",
+          "<think>Since I have reached the goal, I should stop moving. The goal is directly in front of me, and there are no obstacles to avoid.</think>\n<answer>Stop</answer>",
+          "<think>Since I have reached the goal, I should stop moving. The goal is directly in front of me, and there are no obstacles to avoid.</think>\n<answer>Stop</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "down"
+          ],
+          [
+            "stop"
+          ],
+          [
+            "stop"
+          ],
+          [
+            "stop"
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 61058,
+      "0": {
+        "calls": 2,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the hole. The hole is directly below me, and the goal is to my right. I should move right first to avoid the hole and then move up to reach the goal.</think>\n<answer>Right, Up</answer>",
+          "<think>Since I've already moved right and am now at the edge of the grid, I need to move up to reach the goal. Moving up will allow me to avoid the hole and reach the goal.</think>\n<answer>Up</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right",
+            "up"
+          ],
+          [
+            "up"
+          ]
+        ]
+      },
+      "4": {
+        "calls": 5,
+        "raw_turns": [
+          "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly below me, and the goal is to my right. I should move right to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+          "<think>Since I moved right, I am now in a position where I can move down to reach the goal. The hole is still below me, but I can now move down to avoid it and reach the goal.</think>\n<answer>Down</answer>",
+          "<think>Since I have reached the goal (G), I should stop moving. The goal is to reach the goal, and I have done that.</think>\n<answer>Stop</answer>",
+          "<think>Since I have reached the goal, I should stop moving to complete the task.</think>\n<answer>Stop</answer>",
+          "<think>Since I have reached the goal, I should stop moving to complete the task.</think>\n<answer>Stop</answer>"
+        ],
+        "parsed_actions": [
+          [
+            "right"
+          ],
+          [
+            "down"
+          ],
+          [
+            "stop"
+          ],
+          [
+            "stop"
+          ],
+          [
+            "stop"
+          ]
+        ]
+      }
+    }
+  ],
+  "scope": "Parsing actual saved requests does not verify original processed image tensors or logprob agreement."
+}

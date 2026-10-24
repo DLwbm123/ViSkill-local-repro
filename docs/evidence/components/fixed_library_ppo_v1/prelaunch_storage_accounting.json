@@ -1,0 +1,7 @@
+{
+  "prelaunch_allocated_bytes": 1363968,
+  "runtime_write_stop_increment": 1800000000,
+  "combined_known_prelaunch_at_write_stop": 1801363968,
+  "absolute_new_storage_cap": 2000000000,
+  "measurement": "Frozen CPU artifact/source paths, measured once after launch; counts full changed bootstrap source conservatively, no hash."
+}

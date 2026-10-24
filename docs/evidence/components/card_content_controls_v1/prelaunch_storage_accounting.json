@@ -1,0 +1,8 @@
+{
+  "prelaunch_allocated_bytes": 606208,
+  "measurement": "Frozen prelaunch outputs/source paths measured once after launch; immutable CPU fixture and frozen data/config. Runtime supervisor baseline starts after these writes.",
+  "runtime_write_stop_increment": 450000000,
+  "combined_with_prelaunch_at_write_stop": 450606208,
+  "absolute_new_storage_cap": 500000000,
+  "clock_unchanged": true
+}

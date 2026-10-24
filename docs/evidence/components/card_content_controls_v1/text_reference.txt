@@ -1,0 +1,31 @@
+```json
+{
+  "when": {
+    "goal_direction": "up",
+    "goal_manhattan_distance": 3,
+    "requires_clear_route": true
+  },
+  "what": [
+    {
+      "action": "up",
+      "count": 1
+    },
+    {
+      "action": "up",
+      "count": 1
+    },
+    {
+      "action": "up",
+      "count": 1
+    }
+  ]
+}
+```
+Trajectory example:
+Source grid (F frozen, H hole, S original start, G goal):
+HFFG
+FFFF
+FFFF
+FFFS
+Player positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]
+Actions: ["up", "up", "up"]

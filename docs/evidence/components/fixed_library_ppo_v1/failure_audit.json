@@ -1,0 +1,2597 @@
+{
+  "model_calls": 0,
+  "training": {
+    "A": {
+      "single_BFS1": {
+        "episodes": 32,
+        "success": 7,
+        "quality": 6
+      },
+      "multi_up3_applicable": {
+        "episodes": 32,
+        "success": 2,
+        "quality": 1
+      },
+      "medium_BFS2_3_without_multicard": {
+        "episodes": 32,
+        "success": 5,
+        "quality": 4
+      },
+      "long_BFS4plus": {
+        "episodes": 32,
+        "success": 0,
+        "quality": 0
+      }
+    },
+    "B": {
+      "single_BFS1": {
+        "episodes": 32,
+        "success": 14,
+        "quality": 11
+      },
+      "multi_up3_applicable": {
+        "episodes": 32,
+        "success": 9,
+        "quality": 4
+      },
+      "medium_BFS2_3_without_multicard": {
+        "episodes": 32,
+        "success": 4,
+        "quality": 3
+      },
+      "long_BFS4plus": {
+        "episodes": 32,
+        "success": 0,
+        "quality": 0
+      }
+    }
+  },
+  "conditional_cards_behavior": {
+    "A": {
+      "0": {
+        "counts": {
+          "episodes": 32,
+          "retrieved_skill4": 32,
+          "success": 11,
+          "quality": 10,
+          "goal": 11,
+          "requests": 119,
+          "tag_correct": 119,
+          "unsupported_action_turns": 43,
+          "stop_only_turns": 43,
+          "episodes_with_stop": 11,
+          "up_then_4stop": 10,
+          "at_512_output_token_limit": 0,
+          "turn_limit": 15,
+          "hole": 6
+        },
+        "cases": [
+          {
+            "seed": 112361,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110412,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112569,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113718,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111872,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112164,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111549,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111923,
+            "success": false,
+            "actions": [
+              "up",
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 3
+          },
+          {
+            "seed": 113690,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112007,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112129,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112330,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112566,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113098,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112329,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111308,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110421,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111722,
+            "success": false,
+            "actions": [
+              "up",
+              "down",
+              "up",
+              "down",
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110865,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113137,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110074,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113117,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110513,
+            "success": false,
+            "actions": [
+              "up",
+              "left",
+              "up"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112932,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113123,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110265,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112492,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111118,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111301,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112563,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111252,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110002,
+            "success": true,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          }
+        ]
+      },
+      "2": {
+        "counts": {
+          "episodes": 32,
+          "retrieved_skill4": 32,
+          "success": 13,
+          "quality": 12,
+          "hole": 6,
+          "requests": 112,
+          "tag_correct": 112,
+          "unsupported_action_turns": 24,
+          "stop_only_turns": 24,
+          "episodes_with_stop": 6,
+          "up_then_4stop": 5,
+          "at_512_output_token_limit": 0,
+          "goal": 13,
+          "turn_limit": 13
+        },
+        "cases": [
+          {
+            "seed": 113117,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111252,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113690,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110002,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112932,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112007,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111118,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110265,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111722,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112329,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112492,
+            "success": true,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113137,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113098,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110865,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110513,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112566,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112129,
+            "success": false,
+            "actions": [
+              "left"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111308,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112569,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110074,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112361,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111301,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113123,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112563,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112164,
+            "success": false,
+            "actions": [
+              "right",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111923,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110421,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111549,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110412,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112330,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113718,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111872,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          }
+        ]
+      },
+      "4": {
+        "counts": {
+          "episodes": 32,
+          "retrieved_skill4": 32,
+          "success": 9,
+          "quality": 9,
+          "turn_limit": 16,
+          "requests": 119,
+          "tag_correct": 119,
+          "unsupported_action_turns": 32,
+          "stop_only_turns": 28,
+          "episodes_with_stop": 7,
+          "up_then_4stop": 7,
+          "at_512_output_token_limit": 0,
+          "goal": 9,
+          "hole": 7
+        },
+        "cases": [
+          {
+            "seed": 113718,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110865,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112492,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112932,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112007,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110002,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111118,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112129,
+            "success": false,
+            "actions": [
+              "left"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111872,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112329,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111923,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113137,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111722,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112569,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112566,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110412,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111308,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111252,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111549,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113690,
+            "success": false,
+            "actions": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112361,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110421,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110513,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112330,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112164,
+            "success": false,
+            "actions": [
+              "right",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113098,
+            "success": false,
+            "actions": [
+              "right",
+              "up",
+              "right",
+              "up",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113117,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110265,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111301,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113123,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110074,
+            "success": false,
+            "actions": [
+              "up",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112563,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          }
+        ]
+      }
+    },
+    "B": {
+      "0": {
+        "counts": {
+          "episodes": 32,
+          "retrieved_skill4": 32,
+          "success": 11,
+          "quality": 10,
+          "goal": 11,
+          "requests": 119,
+          "tag_correct": 119,
+          "unsupported_action_turns": 47,
+          "stop_only_turns": 47,
+          "episodes_with_stop": 12,
+          "up_then_4stop": 11,
+          "at_512_output_token_limit": 0,
+          "turn_limit": 15,
+          "hole": 6
+        },
+        "cases": [
+          {
+            "seed": 110002,
+            "success": true,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111549,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110865,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113117,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110074,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111308,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111252,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113098,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110513,
+            "success": false,
+            "actions": [
+              "up",
+              "left",
+              "up"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111301,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110265,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111118,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112569,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110412,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113123,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112129,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112492,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112329,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112361,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111872,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112566,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113690,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110421,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112007,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112563,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111923,
+            "success": false,
+            "actions": [
+              "up",
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 3
+          },
+          {
+            "seed": 113137,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112330,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112164,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111722,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112932,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113718,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          }
+        ]
+      },
+      "2": {
+        "counts": {
+          "episodes": 32,
+          "retrieved_skill4": 32,
+          "success": 6,
+          "quality": 6,
+          "turn_limit": 21,
+          "requests": 131,
+          "tag_correct": 131,
+          "unsupported_action_turns": 62,
+          "stop_only_turns": 62,
+          "episodes_with_stop": 16,
+          "up_then_4stop": 14,
+          "at_512_output_token_limit": 0,
+          "goal": 6,
+          "hole": 5
+        },
+        "cases": [
+          {
+            "seed": 110865,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112361,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112007,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111118,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112563,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110265,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111549,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112330,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110412,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112932,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113123,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110074,
+            "success": false,
+            "actions": [
+              "up",
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113690,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113098,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112164,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110513,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112566,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112329,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113718,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111923,
+            "success": false,
+            "actions": [
+              "up",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 3
+          },
+          {
+            "seed": 110421,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111872,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112492,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 3
+          },
+          {
+            "seed": 112129,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112569,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111722,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111301,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113117,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110002,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111252,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111308,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113137,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right",
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          }
+        ]
+      },
+      "4": {
+        "counts": {
+          "episodes": 32,
+          "retrieved_skill4": 32,
+          "success": 1,
+          "quality": 1,
+          "turn_limit": 27,
+          "requests": 144,
+          "tag_correct": 144,
+          "unsupported_action_turns": 82,
+          "stop_only_turns": 82,
+          "episodes_with_stop": 21,
+          "up_then_4stop": 18,
+          "at_512_output_token_limit": 0,
+          "hole": 4,
+          "goal": 1
+        },
+        "cases": [
+          {
+            "seed": 112566,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112569,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 110513,
+            "success": false,
+            "actions": [
+              "right",
+              "up",
+              "down",
+              "up",
+              "down"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113123,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111118,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111923,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110412,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110074,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110865,
+            "success": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "reason": "goal",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111549,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113718,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110421,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112164,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112361,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112932,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112329,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112563,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110002,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 111301,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112129,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112330,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 110265,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 3
+          },
+          {
+            "seed": 111872,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113137,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113098,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "down"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 3
+          },
+          {
+            "seed": 111722,
+            "success": false,
+            "actions": [
+              "up",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111252,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 112007,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          },
+          {
+            "seed": 113117,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 111308,
+            "success": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 0
+          },
+          {
+            "seed": 113690,
+            "success": false,
+            "actions": [
+              "right"
+            ],
+            "reason": "hole",
+            "stop_turns": 0
+          },
+          {
+            "seed": 112492,
+            "success": false,
+            "actions": [
+              "up"
+            ],
+            "reason": "turn_limit",
+            "stop_turns": 4
+          }
+        ]
+      }
+    }
+  },
+  "paired": {
+    "B_self_conditional": {
+      "traj_success": {
+        "pairs": 32,
+        "improved": 0,
+        "worsened": 10,
+        "net": -10,
+        "difference": -0.3125,
+        "posthoc_descriptive_paired_map_95": [
+          -0.46875,
+          -0.15625
+        ],
+        "posthoc_exact_mcnemar_p": 0.001953125
+      },
+      "quality": {
+        "pairs": 32,
+        "improved": 0,
+        "worsened": 9,
+        "net": -9,
+        "difference": -0.28125,
+        "posthoc_descriptive_paired_map_95": [
+          -0.4375,
+          -0.125
+        ],
+        "posthoc_exact_mcnemar_p": 0.00390625
+      }
+    },
+    "B_vs_A_conditional": {
+      "traj_success": {
+        "pairs": 32,
+        "improved": 1,
+        "worsened": 9,
+        "net": -8,
+        "difference": -0.25,
+        "posthoc_descriptive_paired_map_95": [
+          -0.4375,
+          -0.09375
+        ],
+        "posthoc_exact_mcnemar_p": 0.021484375
+      },
+      "quality": {
+        "pairs": 32,
+        "improved": 1,
+        "worsened": 9,
+        "net": -8,
+        "difference": -0.25,
+        "posthoc_descriptive_paired_map_95": [
+          -0.4375,
+          -0.09375
+        ],
+        "posthoc_exact_mcnemar_p": 0.021484375
+      }
+    },
+    "B_self_natural_multi": {
+      "traj_success": {
+        "pairs": 53,
+        "improved": 4,
+        "worsened": 4,
+        "net": 0,
+        "difference": 0.0,
+        "posthoc_descriptive_paired_map_95": [
+          -0.09433962264150944,
+          0.11320754716981132
+        ],
+        "posthoc_exact_mcnemar_p": 1.0
+      },
+      "quality": {
+        "pairs": 53,
+        "improved": 2,
+        "worsened": 4,
+        "net": -2,
+        "difference": -0.03773584905660377,
+        "posthoc_descriptive_paired_map_95": [
+          -0.1320754716981132,
+          0.05660377358490566
+        ],
+        "posthoc_exact_mcnemar_p": 0.6875
+      }
+    }
+  },
+  "B_lost_initial_successes": [
+    {
+      "seed": 110002,
+      "before_actions": [
+        "up",
+        "right",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I need to move up to get closer to the goal. However, I should also avoid the hole directly to my left. Since the hole is blocking my way, I should move to the right first to clear the path.</think>\n<answer>Right</answer>",
+        "<think>I need to move up to reach the goal while avoiding the hole. Since the hole is blocking my way, I should move to the right first to clear the path.</think>\n<answer>Up</answer>",
+        "<think>I need to move up to reach the goal while avoiding the hole. Since the hole is blocking my way, I should move to the right first to clear the path.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G), which is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there are no more actions needed to reach it. I should stop here.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 110074,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the bottom of the lake, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the bottom of the lake, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G), which is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 110265,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up",
+        "right",
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>Since the goal is directly above me, I should move up to reach it.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is still directly above me, I should continue moving up to reach it.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is still directly above me, I should continue moving up to reach it.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The initial observation shows that I am in the bottom left corner of the grid. The goal is located in the top right corner. To reach the goal, I need to move up and then right. Since I can take up to 5 actions at a time, I will move up first to get closer to the goal.</think>\n<answer>Up, Right</answer>",
+        "<think>After taking the action of moving up and then right, I am now in the top right corner of the grid. The goal (G) is still in the top right corner, so I need to move up again to reach it.</think>\n<answer>Up</answer>",
+        "<think>I have reached the goal (G) after moving up. Since the goal is now in the top right corner, I should stop moving.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal (G) and there are no more actions needed to achieve the goal. I should stop moving.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal (G) and there are no more actions needed to achieve the goal. I should stop moving.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 111118,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the bottom of the screen, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the bottom of the screen, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 113123,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to the left of me, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>Since I'm still not at the goal and the hole is still in the way, I should continue moving up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>Since I'm still not at the goal and the hole is still in the way, I should continue moving up to get closer to the goal.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is directly above me. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>",
+        "<think>I am at the goal (G) and there is no need to move further. I should stop here.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 112129,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The hole is directly to my left, and the goal is up and to the right. I should move up first to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the bottom of the screen, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am at the bottom of the screen, and the goal is up and to the right. I should move up to get closer to the goal.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole. The hole is directly to my left, and the goal is to my right. I should move right to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+        "<think>I need to move to the right to avoid the hole and get closer to the goal. The hole is directly to my left, and the goal is to my right. Moving right will help me reach the goal.</think>\n<answer>Right</answer>",
+        "<think>I need to move to the right to avoid the hole and get closer to the goal. The hole is directly to my left, and the goal is to my right. Moving right will help me reach the goal.</think>\n<answer>Right</answer>",
+        "<think>I need to move to the right to avoid the hole and get closer to the goal. The hole is directly to my left, and the goal is to my right. Moving right will help me reach the goal.</think>\n<answer>Right</answer>",
+        "<think>I need to move to the right to avoid the hole and get closer to the goal. The hole is directly to my left, and the goal is to my right. Moving right will help me reach the goal.</think>\n<answer>Right</answer>"
+      ]
+    },
+    {
+      "seed": 112361,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>Since the goal is directly above me, I should move up to reach it. There are no obstacles in the way.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is still directly above me, I should continue moving up to reach it.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is still directly above me, I should continue moving up to reach it.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>Since the goal is directly above me, I should move up to reach it. There are no obstacles in the way.</think>\n<answer>Up</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 113137,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up",
+        "right",
+        "up",
+        "right",
+        "right"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The initial state shows that I am in the bottom-right corner, and the goal is in the top-left corner. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>Since I am in the bottom-right corner and the goal is in the top-left corner, moving up will help me get closer to the goal. I should continue moving up to reach the goal.</think>\n<answer>Up</answer>",
+        "<think>Since I am in the bottom-right corner and the goal is in the top-left corner, moving up will help me get closer to the goal. I should continue moving up to reach the goal.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The initial observation shows that I am in a position where I can move up to the top-right corner to potentially reach the goal. Moving up is a logical first step to explore the top-right area.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is up and to the right, and I am currently in the bottom-right corner, moving up will not help me reach the goal. Instead, I should move right to explore the top-right area.</think>\n<answer>Right</answer>",
+        "<think>Given the goal is up and to the right, and I am currently in the bottom-right corner, moving right will not help me reach the goal. Instead, I should move up to explore the top-right area.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is up and to the right, and I am currently in the bottom-right corner, moving up will not help me reach the goal. Instead, I should move right to explore the top-right area.</think>\n<answer>Right</answer>",
+        "<think>Given the goal is up and to the right, and I am currently in the bottom-right corner, moving up will not help me reach the goal. Instead, I should move right to explore the top-right area.</think>\n<answer>Right</answer>"
+      ]
+    },
+    {
+      "seed": 112330,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>Since the goal is directly above me, I should move up to reach it.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is still directly above me, I should continue moving up to reach it.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is still directly above me, I should continue moving up to reach it.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>Since the goal is directly above me, I should move up to reach it. There are no obstacles in the way.</think>\n<answer>Up</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>",
+        "<think>I have reached the goal. The task is complete.</think>\n<answer>Stop</answer>"
+      ]
+    },
+    {
+      "seed": 111722,
+      "before_actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "after_actions": [
+        "up",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "after_reason": "turn_limit",
+      "before_raw": [
+        "<think>Since the goal is directly above me, I should move up to reach it. There are no obstacles in the way.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is directly above me, I should move up to reach it. There are no obstacles in the way.</think>\n<answer>Up</answer>",
+        "<think>Since the goal is directly above me, I should move up to reach it. There are no obstacles in the way.</think>\n<answer>Up</answer>"
+      ],
+      "after_raw": [
+        "<think>My goal is to reach the goal (G) while avoiding the hole (O). The initial observation shows that I am in the bottom left corner of the grid. The goal is located in the top right corner. I should move up to get closer to the goal.</think>\n<answer>Up</answer>",
+        "<think>I am still in the bottom left corner, and the goal is in the top right corner. I need to move up to get closer to the goal. However, I should also consider the hole (O) that is directly above me. Moving up would put me in the hole, so I should move right instead to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+        "<think>I am now in the middle of the grid, closer to the goal. I should continue moving up to reach the goal. However, I need to be careful not to fall into the hole (O) that is directly above me. Moving up would put me in the hole, so I should move right instead to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+        "<think>I am still in the middle of the grid, closer to the goal. I should continue moving up to reach the goal. However, I need to be careful not to fall into the hole (O) that is directly above me. Moving up would put me in the hole, so I should move right instead to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>",
+        "<think>I am still in the middle of the grid, closer to the goal. I should continue moving up to reach the goal. However, I need to be careful not to fall into the hole (O) that is directly above me. Moving up would put me in the hole, so I should move right instead to avoid the hole and get closer to the goal.</think>\n<answer>Right</answer>"
+      ]
+    }
+  ],
+  "available_console_metrics": {
+    "A": [
+      {
+        "step": 1,
+        "actor/ppo_kl": 0.0001682204585904401,
+        "actor/pg_clipfrac": 0.0007626774677191861,
+        "actor/entropy": 1.7229775190353394,
+        "critic/vf_loss": 1.6771499626338482,
+        "critic/vf_clipfrac": 0.6210312005132437,
+        "critic/vpred_mean": 2.3138497434556484,
+        "critic/returns/mean": 0.18697279691696167,
+        "critic/score/mean": 0.25312501192092896
+      },
+      {
+        "step": 2,
+        "actor/ppo_kl": -0.00015515353334194515,
+        "actor/pg_clipfrac": 0.0010760175428004004,
+        "actor/entropy": 1.5539783239364624,
+        "critic/vf_loss": 0.28514473885297775,
+        "critic/vf_clipfrac": 0.3440530546940863,
+        "critic/vpred_mean": 0.7006670711562037,
+        "critic/returns/mean": 0.17172200977802277,
+        "critic/score/mean": 0.19437497854232788
+      },
+      {
+        "step": 3,
+        "actor/ppo_kl": 0.00012416137246873404,
+        "actor/pg_clipfrac": 0.0017767034623830114,
+        "actor/entropy": 1.6250759363174438,
+        "critic/vf_loss": 0.11713746876921505,
+        "critic/vf_clipfrac": 0.21120404615066946,
+        "critic/vpred_mean": 0.29379069712013006,
+        "critic/returns/mean": 0.11061347275972366,
+        "critic/score/mean": 0.15562500059604645
+      },
+      {
+        "step": 4,
+        "actor/ppo_kl": 0.00033893625095515745,
+        "actor/pg_clipfrac": 0.0011529016264830716,
+        "actor/entropy": 1.858605146408081,
+        "critic/vf_loss": 0.06322391238063574,
+        "critic/vf_clipfrac": 0.15699507360113785,
+        "critic/vpred_mean": 0.06796177808428183,
+        "critic/returns/mean": 0.07956194877624512,
+        "critic/score/mean": 0.0912499949336052
+      }
+    ],
+    "B": [
+      {
+        "step": 1,
+        "actor/ppo_kl": -8.706134644853591e-05,
+        "actor/pg_clipfrac": 0.0003451713782851584,
+        "actor/entropy": 1.5544310808181763,
+        "critic/vf_loss": 1.8333848416805267,
+        "critic/vf_clipfrac": 0.6146190129220486,
+        "critic/vpred_mean": 2.3574319016188383,
+        "critic/returns/mean": 0.08395267277956009,
+        "critic/score/mean": 0.11874999105930328
+      },
+      {
+        "step": 2,
+        "actor/ppo_kl": -0.0005727059988203109,
+        "actor/pg_clipfrac": 0.0013833925113431178,
+        "actor/entropy": 1.782875895500183,
+        "critic/vf_loss": 0.3108123163692653,
+        "critic/vf_clipfrac": 0.31129463855177164,
+        "critic/vpred_mean": 0.5198060901311692,
+        "critic/returns/mean": 0.3387928009033203,
+        "critic/score/mean": 0.2849999964237213
+      },
+      {
+        "step": 3,
+        "actor/ppo_kl": 0.0002615204389257997,
+        "actor/pg_clipfrac": 0.0015021891595097259,
+        "actor/entropy": 1.5279805660247803,
+        "critic/vf_loss": 0.1436239497270435,
+        "critic/vf_clipfrac": 0.23974012059625238,
+        "critic/vpred_mean": 0.4921678154496476,
+        "critic/returns/mean": 0.3579287827014923,
+        "critic/score/mean": 0.37312498688697815
+      }
+    ]
+  },
+  "causal_scope": "Observed behavioral failure and logged numerical summaries; no token-level advantage attribution or causal diagnosis from these aggregates alone. No reruns or reward edits."
+}

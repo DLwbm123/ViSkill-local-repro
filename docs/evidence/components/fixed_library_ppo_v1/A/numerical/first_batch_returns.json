@@ -1,0 +1,154 @@
+{
+  "samples": [
+    {
+      "seed": 90016,
+      "success_reward": 0.0,
+      "format_reward": 0.02,
+      "skill_reward": 0,
+      "episode_reward": 0.02,
+      "terminal_batch_reward": 0.019999999552965164,
+      "generated_tokens": 41
+    },
+    {
+      "seed": 90005,
+      "success_reward": 0.0,
+      "format_reward": 0.02,
+      "skill_reward": 0,
+      "episode_reward": 0.02,
+      "terminal_batch_reward": 0.019999999552965164,
+      "generated_tokens": 71
+    },
+    {
+      "seed": 90011,
+      "success_reward": 1.0,
+      "format_reward": 0.06000000000000005,
+      "skill_reward": 0,
+      "episode_reward": 1.06,
+      "terminal_batch_reward": 1.059999942779541,
+      "generated_tokens": 298
+    },
+    {
+      "seed": 90001,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 208
+    },
+    {
+      "seed": 90009,
+      "success_reward": 0.0,
+      "format_reward": 0.04,
+      "skill_reward": 0,
+      "episode_reward": 0.04,
+      "terminal_batch_reward": 0.03999999910593033,
+      "generated_tokens": 256
+    },
+    {
+      "seed": 90931,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 267
+    },
+    {
+      "seed": 90772,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 275
+    },
+    {
+      "seed": 90015,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 341
+    },
+    {
+      "seed": 90017,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 390
+    },
+    {
+      "seed": 90013,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 295
+    },
+    {
+      "seed": 90002,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 269
+    },
+    {
+      "seed": 90398,
+      "success_reward": 0.0,
+      "format_reward": 0.02,
+      "skill_reward": 0,
+      "episode_reward": 0.02,
+      "terminal_batch_reward": 0.019999999552965164,
+      "generated_tokens": 266
+    },
+    {
+      "seed": 91305,
+      "success_reward": 0.0,
+      "format_reward": 0.1,
+      "skill_reward": 0,
+      "episode_reward": 0.1,
+      "terminal_batch_reward": 0.10000000149011612,
+      "generated_tokens": 217
+    },
+    {
+      "seed": 91132,
+      "success_reward": 0.0,
+      "format_reward": 0.08,
+      "skill_reward": 0,
+      "episode_reward": 0.08,
+      "terminal_batch_reward": 0.07999999821186066,
+      "generated_tokens": 218
+    },
+    {
+      "seed": 90570,
+      "success_reward": 0.0,
+      "format_reward": 0.04,
+      "skill_reward": 0,
+      "episode_reward": 0.04,
+      "terminal_batch_reward": 0.03999999910593033,
+      "generated_tokens": 128
+    },
+    {
+      "seed": 90025,
+      "success_reward": 1.0,
+      "format_reward": 0.020000000000000018,
+      "skill_reward": 0,
+      "episode_reward": 1.02,
+      "terminal_batch_reward": 1.0199999809265137,
+      "generated_tokens": 57
+    }
+  ],
+  "batch_rows": 32,
+  "finite": true,
+  "max_abs_terminal_return_error": 5.327165126800537e-07,
+  "reward_on_generated_only": true,
+  "loss_mask_observation_padding_zero": true,
+  "scope": "Mask used by unchanged actor/critic loss; advantages outside mask need not be zero."
+}

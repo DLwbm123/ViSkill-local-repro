@@ -1,0 +1,12 @@
+{
+  "training_batches": 4,
+  "scientific_midpoint_stop": false,
+  "cross_versions": [
+    0,
+    2,
+    4
+  ],
+  "checkpoint_saved": false,
+  "final_model_retained": false,
+  "learning_benefit_established": false
+}

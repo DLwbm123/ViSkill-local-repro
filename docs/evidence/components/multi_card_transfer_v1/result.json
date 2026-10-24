@@ -1,0 +1,808 @@
+{
+  "summary": {
+    "empty": {
+      "episodes": 16,
+      "success": 1,
+      "quality": 1,
+      "three_step_injections": 0
+    },
+    "cards": {
+      "episodes": 16,
+      "success": 6,
+      "quality": 6,
+      "three_step_injections": 16
+    }
+  },
+  "paired": {
+    "success": {
+      "improved": 5,
+      "worsened": 0
+    },
+    "quality": {
+      "improved": 5,
+      "worsened": 0
+    }
+  },
+  "engineering_reuse_gate": true,
+  "learning_benefit_established": false,
+  "conditional_only": true,
+  "training": false,
+  "library_unchanged": true,
+  "model_calls": 132,
+  "records": [
+    {
+      "seed": 70014,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70014_7d4eb0a33b124875a7d22902e0314ae1/episode.json"
+    },
+    {
+      "seed": 70014,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70014_82c590badc4a43b89767b0010310e716/episode.json"
+    },
+    {
+      "seed": 70044,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 6,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70044_491aaaaed2b9446ebae5a9d541016b1e/episode.json"
+    },
+    {
+      "seed": 70044,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70044_9d36c9eab06c44d0a7f95e56dbbf76f2/episode.json"
+    },
+    {
+      "seed": 70073,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "left",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70073_fa227c3708f542b6a638e734695d107a/episode.json"
+    },
+    {
+      "seed": 70073,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "right",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "action_cost_cancels_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70073_4aa6f21131644b498dd1c52a6c717544/episode.json"
+    },
+    {
+      "seed": 70130,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70130_adfd976c40974e7ebbae1e821fa23d54/episode.json"
+    },
+    {
+      "seed": 70130,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70130_0e2252073f52473bb52aee4b0b7a0549/episode.json"
+    },
+    {
+      "seed": 70213,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "down",
+        "left",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70213_8fa791bc6730460d9ce0237a7c5b98a8/episode.json"
+    },
+    {
+      "seed": 70213,
+      "arm": "cards",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70213_40f330e70824444dadd60a955d26382e/episode.json"
+    },
+    {
+      "seed": 70273,
+      "arm": "cards",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70273_0bd332cc987649269cfad6cb029c6589/episode.json"
+    },
+    {
+      "seed": 70273,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70273_4b9e5ca1ec724366ada50ef173caa44f/episode.json"
+    },
+    {
+      "seed": 70349,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "turns": 2,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70349_7e5aa399933c4025b4213855cb58b1d0/episode.json"
+    },
+    {
+      "seed": 70349,
+      "arm": "cards",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70349_06ad144fad2a4dd49aa84dd1c9944d54/episode.json"
+    },
+    {
+      "seed": 70538,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70538_cd4c986f091e4653963385cdc26855d3/episode.json"
+    },
+    {
+      "seed": 70538,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70538_21b0d6827e3d43af979c988e79a29b97/episode.json"
+    },
+    {
+      "seed": 70573,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70573_aa503425cb3d4effa5bf2fe370ad299a/episode.json"
+    },
+    {
+      "seed": 70573,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "turns": 4,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 4,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "action_cost_cancels_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70573_db4d458cd8304d6184b9f37d864315a0/episode.json"
+    },
+    {
+      "seed": 70704,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70704_00675eb97c954cfabf1efadad6552765/episode.json"
+    },
+    {
+      "seed": 70704,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70704_fc368e321fd942ecb4ddb358c82c05f3/episode.json"
+    },
+    {
+      "seed": 70941,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "left",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70941_dcaf71e113bf49888ebc346735400d40/episode.json"
+    },
+    {
+      "seed": 70941,
+      "arm": "cards",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70941_6b1198d9a4e148bebfa9eee870ee53c8/episode.json"
+    },
+    {
+      "seed": 70949,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70949_b31d6194d1274153b96e6147b6796d2a/episode.json"
+    },
+    {
+      "seed": 70949,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70949_7868166a20c448a6b6bdcb7db3aa9653/episode.json"
+    },
+    {
+      "seed": 70957,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_70957_f87c3ee214114567a6fd421f05f75179/episode.json"
+    },
+    {
+      "seed": 70957,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "down",
+        "up",
+        "down",
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 5,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "action_cost_cancels_progress"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_70957_4522beaf2757491381abd58791acd661/episode.json"
+    },
+    {
+      "seed": 71004,
+      "arm": "cards",
+      "success": false,
+      "quality": false,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 1,
+        "executed_actions": 1,
+        "shadow_bonus_lambda_0_8": 0.26666666666666666,
+        "applied_skill_bonus": 0.0,
+        "reason": "positive_shadow_only"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_71004_287bd12a70a945e69df62c84bc54ddc9/episode.json"
+    },
+    {
+      "seed": 71004,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "up"
+      ],
+      "turns": 1,
+      "terminal_reason": "hole",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_71004_5e49951759de4d9e80318e66a6ccd88d/episode.json"
+    },
+    {
+      "seed": 71066,
+      "arm": "empty",
+      "success": false,
+      "quality": false,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "turns": 5,
+      "terminal_reason": "turn_limit",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 2,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "no_retrieval"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_71066_49a9f93790844b969fc740dc2f0d68ba/episode.json"
+    },
+    {
+      "seed": 71066,
+      "arm": "cards",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_71066_92b72cc0c33544c682e54756b2748813/episode.json"
+    },
+    {
+      "seed": 71079,
+      "arm": "cards",
+      "success": true,
+      "quality": true,
+      "injected_skill": "skill_4",
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 3,
+        "furthest_progress": 3,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/cards/episodes/dev_0_71079_994989477c964197af5327373a9ea90c/episode.json"
+    },
+    {
+      "seed": 71079,
+      "arm": "empty",
+      "success": true,
+      "quality": true,
+      "injected_skill": null,
+      "bfs": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "turns": 3,
+      "terminal_reason": "goal",
+      "reward_support": {
+        "reference_length": 0,
+        "furthest_progress": 0,
+        "executed_actions": 3,
+        "shadow_bonus_lambda_0_8": 0.0,
+        "applied_skill_bonus": 0.0,
+        "reason": "success_no_bonus"
+      },
+      "episode_path": "/data/local/ViSkill/artifacts/component_tests/multi_card_transfer_v1/empty/episodes/dev_0_71079_6d0d177ea6b04db8af174b571a164dac/episode.json"
+    }
+  ],
+  "worker_seconds": 173.35665845870972,
+  "preparation_seconds": 250.73827242851257
+}

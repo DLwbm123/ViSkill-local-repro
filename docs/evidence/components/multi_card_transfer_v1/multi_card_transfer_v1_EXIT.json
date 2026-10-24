@@ -1,0 +1,9 @@
+{
+  "exits": {
+    "transfer": 0
+  },
+  "reason": null,
+  "end_unix": 1792841346.9662037,
+  "peak_allocated_bytes": 68520423424,
+  "deadline_unix": 1792842884.900123
+}

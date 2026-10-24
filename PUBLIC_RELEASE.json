@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "01ad349f96ef4f3ddc5e447cabc261cf66ac0e5f",
+  "local_source_commit": "4a3b582af73a205f80b9046cde7325ef135f3bee",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "PARTIAL: paired4-batch arms complete; real one-step online-card training exposure verified; learning benefit, multi-step reuse, reward training and nonempty recovery NOT established.",
+  "status": "PARTIAL: fixed-library paired PPO completed; primary learning gate FAILED. Original free-text E and full F remain PARTIAL.",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -76,12 +76,38 @@
       "full_F": "PARTIAL"
     },
     "bootstrap_training_batches_total": 8,
-    "training_update_unit": "A/B each4 rollout-update batches; multiple optimizer mini-batches per rollout batch."
+    "training_update_unit": "A/B each4 rollout-update batches; multiple optimizer mini-batches per rollout batch.",
+    "fixed_library_ppo": {
+      "episodes": 1408,
+      "model_calls": 5135,
+      "training_batches_per_arm": 4,
+      "conditional_maps": 32,
+      "B_cards_before_success": 11,
+      "B_cards_before_quality": 10,
+      "B_cards_after_success": 1,
+      "B_cards_after_quality": 1,
+      "A_cards_after_success": 9,
+      "A_cards_after_quality": 9,
+      "B_self_success_improved": 0,
+      "B_self_success_regressed": 10,
+      "B_vs_A_success_improved": 1,
+      "B_vs_A_success_regressed": 9,
+      "natural_multi_maps": 53,
+      "B_cards_natural_multi_success_before": 6,
+      "B_cards_natural_multi_success_after": 6,
+      "B_cards_natural_multi_quality_before": 6,
+      "B_cards_natural_multi_quality_after": 4,
+      "actual_three_step_training_card_exposures": 32,
+      "learning_investment_gate": false,
+      "final_weights_retained": false,
+      "skill_reward_weight": 0
+    }
   },
-  "latest_update_scope": "Completed paired PPO pilot, detailed claim-bounded summary,576 episode outcomes,29 distillation outputs, five small cards, frozen protocols/manifests, optimizer/sync/exit evidence and source. Full raw runtime archives excluded.",
-  "latest_copied_files": 76,
+  "latest_update_scope": "Reports12-17, complete fixed-library PPO results/failure audit, preceding input controls, frozen protocols, synthetic data manifests, numeric/update/sync/exit evidence and corresponding source. No model weights or full runtime archive.",
+  "latest_copied_files": 436,
   "source_packaging_repair": {
     "files_restored": 65,
     "reason": "Prior broad models/ ignore accidentally excluded bundled veRL model implementations and tests; output directory exclusions are now root-anchored."
-  }
+  },
+  "sanitized_text_files_latest_update": 17
 }

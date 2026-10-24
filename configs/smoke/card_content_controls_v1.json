@@ -1,0 +1,209 @@
+{
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "project_write_stop_bytes": 85000000000,
+  "source_library": "results/ppo_smoke/bootstrap_card_pair_v1/B/library",
+  "source_skill": "skill_4",
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think",
+    "accurate_dynamics_prompt": true
+  },
+  "context_length": 12288,
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_new_tokens": 512
+  },
+  "name": "card_content_controls_v1",
+  "status": "FROZEN_CPU_PREFLIGHT_PASS",
+  "purpose": "Prospective four-condition content-specific transfer check on new applicable Up3 maps. Fixed b0, not learning or theta4 recovery.",
+  "preparation_started_unix": 1792842073.0,
+  "max_attempt_seconds": 1800,
+  "maximum_additional_bytes": 450000000,
+  "absolute_new_storage_cap": 500000000,
+  "entry_script": "run_card_content_controls.py",
+  "phases": [
+    "controls"
+  ],
+  "allowed_physical_gpus": [
+    4
+  ],
+  "candidate_seed_bounds": [
+    80001,
+    84096
+  ],
+  "target_pairs": 16,
+  "max_model_calls": 320,
+  "arms": [
+    "N",
+    "V",
+    "Blank",
+    "Text"
+  ],
+  "arm_orders": [
+    [
+      "N",
+      "V",
+      "Text",
+      "Blank"
+    ],
+    [
+      "V",
+      "Blank",
+      "N",
+      "Text"
+    ],
+    [
+      "Blank",
+      "Text",
+      "V",
+      "N"
+    ],
+    [
+      "Text",
+      "N",
+      "Blank",
+      "V"
+    ]
+  ],
+  "source_state_seed": 60099,
+  "exclude_previous_screened_seed_bounds": [
+    70001,
+    71079
+  ],
+  "selection": "First16 exact new board/position pairs where unchanged full5 library original top1+guard gives skill_4 score>=.8. Exclude all historical/withinpool identities, all prior1079 CPU-screened states, and reserved Test. No model outcomes or BFS difficulty selection; fixed candidate pool, insufficient16 means no inference.",
+  "conditions": {
+    "N": "Immutable empty library, ordinary observation only.",
+    "V": "Original actual skill_4 bitmap, unchanged SKILL_INTRO; full real five-card library.",
+    "Blank": "Same intro, same image slot/order/RGB dimensions, white pixels replacing entire reference card only. Original environment observation unchanged.",
+    "Text": "Same intro plus fixed transcription of original strategy, source-board symbols, original player positions and action sequence; no reference bitmap and no target-state facts. Text differs in token count and representation; not a token-length control."
+  },
+  "limits": {
+    "max_turns": 5,
+    "response_tokens_per_turn": 512,
+    "training": false,
+    "distillation": false,
+    "admission": false,
+    "utility_updates": false,
+    "new_weights": false,
+    "skill_reward_weight": 0
+  },
+  "primary_metrics": [
+    "paired full success V-N and V-Blank",
+    "paired quality-success V-N and V-Blank"
+  ],
+  "secondary_metrics": [
+    "Text-N/Text-V paired success and quality, diagnostic only",
+    "unsupported Stop and natural executed actions",
+    "actual processed image count/dimensions/prompt lengths",
+    "shadow reward support and stall patterns, never applied"
+  ],
+  "PPO_investment_gate": "All64 complete; correct condition input/no contamination/no mutation; for BOTH V-N and V-Blank, success AND quality net>=4/16 (25pp), with <=1 regression each. Screening threshold only, not statistical learning evidence. If fail do not enlarge PPO. If pass independently assess seed/critic/numerical/cross-context feasibility under remaining original clock before any new protocol; no automatic full P2/P3.",
+  "stop": "Exactly16 new maps x4 max64 full episodes/320 calls. No added samples, output-conditioned replacement, prompt revisions, cross-protocol pooling, best-condition selection or training. Failure/repair preserves calls, episodes, first clock. Lambda training stays off regardless of shadow positivity.",
+  "frozen_seeds": [
+    80045,
+    80112,
+    80537,
+    80824,
+    80829,
+    81049,
+    81146,
+    81252,
+    81266,
+    81500,
+    81559,
+    81615,
+    81696,
+    81873,
+    81921,
+    82018
+  ],
+  "frozen_text_reference": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 3,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```\nTrajectory example:\nSource grid (F frozen, H hole, S original start, G goal):\nHFFG\nFFFF\nFFFF\nFFFS\nPlayer positions (row,column): [[3, 3], [2, 3], [1, 3], [0, 3]]\nActions: [\"up\", \"up\", \"up\"]",
+  "cpu_selection": {
+    "historical_exact_states": 1769,
+    "screened": 2018,
+    "reasons": {
+      "no_top1_three_step_applicability": 1896,
+      "historical_or_pool_duplicate": 106,
+      "selected": 16
+    },
+    "model_calls": 0,
+    "source_library_unchanged": true
+  },
+  "cpu_control_checks": {
+    "status": "PASS",
+    "model_calls": 0,
+    "scripted_fixture_generate_calls": 4,
+    "real_processor_and_loop": true,
+    "captures": {
+      "N": {
+        "prompt_tokens": 368,
+        "image_count": 1,
+        "image_sizes": [
+          [
+            256,
+            256
+          ]
+        ]
+      },
+      "V": {
+        "prompt_tokens": 553,
+        "image_count": 2,
+        "image_sizes": [
+          [
+            552,
+            232
+          ],
+          [
+            256,
+            256
+          ]
+        ],
+        "reference_grid": [
+          [
+            1,
+            16,
+            40
+          ]
+        ]
+      },
+      "Blank": {
+        "prompt_tokens": 553,
+        "image_count": 2,
+        "image_sizes": [
+          [
+            552,
+            232
+          ],
+          [
+            256,
+            256
+          ]
+        ],
+        "reference_grid": [
+          [
+            1,
+            16,
+            40
+          ]
+        ]
+      },
+      "Text": {
+        "prompt_tokens": 564,
+        "image_count": 1,
+        "image_sizes": [
+          [
+            256,
+            256
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "name": "multi_card_transfer_v1",
+  "status": "FROZEN_CPU_PREFLIGHT_PASS",
+  "purpose": "Conditional transfer of the actual final B three-step card to frozen b0, not PPO learning or natural population performance. Full five-card library versus empty; select only existing top1 guard applicability, no model outcomes.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "preparation_started_unix": 1792841084.900123,
+  "max_attempt_seconds": 1800,
+  "maximum_additional_bytes": 450000000,
+  "absolute_new_storage_cap": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "entry_script": "run_multi_card_transfer.py",
+  "phases": [
+    "transfer"
+  ],
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think",
+    "accurate_dynamics_prompt": true
+  },
+  "candidate_seed_bounds": [
+    70001,
+    74096
+  ],
+  "target_pairs": 16,
+  "max_model_calls": 160,
+  "context_length": 12288,
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_new_tokens": 512
+  },
+  "source_library": "results/ppo_smoke/bootstrap_card_pair_v1/B/library",
+  "source_skill": "skill_4",
+  "arms": [
+    "empty",
+    "cards"
+  ],
+  "selection": "First16 exact new board+position pairs in ascending fixed pool where unchanged actual full-five-card provider retrieves skill_4 at score>=.8; exclude all prior states and reserved Test; record every screened candidate and exclusion; if fewer than16 stop without inference. This deliberately conditional up3 stratum is not IID or general success rate.",
+  "limits": {
+    "max_turns": 5,
+    "response_tokens_per_turn": 512,
+    "training": false,
+    "distillation": false,
+    "admission": false,
+    "utility_updates": false,
+    "new_weights": false,
+    "skill_reward_weight": 0
+  },
+  "engineering_reuse_gate": "At least3 distinct selected new maps with actual three-step card image injection and quality-success. Descriptive component exposure/reuse only; no performance or learning gate.",
+  "metrics": [
+    "all16 outcomes/arm",
+    "paired success and quality improve/regress",
+    "actual 3-step skill injection and images",
+    "all natural actions/turns",
+    "shadow reward support never applied",
+    "complete calls/time/storage and screening denominator"
+  ],
+  "stop": "Exactly16 pairs maximum; no output-conditioned additions, early termination or forced actions, solver actions, prompt changes, library mutations, PPO or extra batch. Original total campaign deadline unchanged.",
+  "frozen_seeds": [
+    70014,
+    70044,
+    70073,
+    70130,
+    70213,
+    70273,
+    70349,
+    70538,
+    70573,
+    70704,
+    70941,
+    70949,
+    70957,
+    71004,
+    71066,
+    71079
+  ],
+  "cpu_selection": {
+    "historical_exact_states": 717,
+    "screened": 1079,
+    "reasons": {
+      "no_top1_three_step_applicability": 1036,
+      "historical_or_pool_duplicate": 27,
+      "selected": 16
+    },
+    "model_calls": 0,
+    "source_library_unchanged": true
+  },
+  "allowed_physical_gpus": [
+    4
+  ]
+}

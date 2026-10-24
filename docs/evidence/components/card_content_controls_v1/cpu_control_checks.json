@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "model_calls": 0,
+  "scripted_fixture_generate_calls": 4,
+  "real_processor_and_loop": true,
+  "captures": {
+    "N": {
+      "prompt_tokens": 368,
+      "image_count": 1,
+      "image_sizes": [
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    "V": {
+      "prompt_tokens": 553,
+      "image_count": 2,
+      "image_sizes": [
+        [
+          552,
+          232
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "reference_grid": [
+        [
+          1,
+          16,
+          40
+        ]
+      ]
+    },
+    "Blank": {
+      "prompt_tokens": 553,
+      "image_count": 2,
+      "image_sizes": [
+        [
+          552,
+          232
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "reference_grid": [
+        [
+          1,
+          16,
+          40
+        ]
+      ]
+    },
+    "Text": {
+      "prompt_tokens": 564,
+      "image_count": 1,
+      "image_sizes": [
+        [
+          256,
+          256
+        ]
+      ]
+    }
+  }
+}

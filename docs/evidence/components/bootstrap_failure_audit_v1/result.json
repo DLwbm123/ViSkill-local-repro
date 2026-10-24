@@ -1,0 +1,224 @@
+{
+  "model_calls": 0,
+  "original_outputs_modified": false,
+  "BFS_dev": {
+    "1": {
+      "maps": 11,
+      "before": 3,
+      "A_after": 3,
+      "B_after": 8
+    },
+    "2": {
+      "maps": 21,
+      "before": 4,
+      "A_after": 2,
+      "B_after": 2
+    },
+    "3": {
+      "maps": 10,
+      "before": 2,
+      "A_after": 1,
+      "B_after": 0
+    },
+    "4+": {
+      "maps": 22,
+      "before": 0,
+      "A_after": 0,
+      "B_after": 0
+    }
+  },
+  "first_training_batch": {
+    "A": {
+      "episodes": 32,
+      "success": 7,
+      "quality": 5,
+      "injected": 0
+    },
+    "B": {
+      "episodes": 32,
+      "success": 2,
+      "quality": 1,
+      "injected": 0
+    }
+  },
+  "B_multi_transitions": {
+    "improved": 1,
+    "worsened": 5,
+    "regression_seeds": [
+      61001,
+      61004,
+      61042,
+      61055,
+      61058
+    ]
+  },
+  "distill_multistep": {
+    "total": 13,
+    "valid": 2,
+    "failed": 11,
+    "failed_distance_one": 11,
+    "failed_what_matches": 9,
+    "failed_when_only_counterfactual_pass": 9,
+    "records": [
+      {
+        "arm": "A",
+        "seed": 62001,
+        "phase": "probe",
+        "policy_version": 4,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "up_right",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "A",
+        "seed": 60024,
+        "phase": "train",
+        "policy_version": 0,
+        "original_valid": true,
+        "predicted_distance": 3,
+        "what_matches_actions": true,
+        "actual_direction": "down",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "A",
+        "seed": 60033,
+        "phase": "train",
+        "policy_version": 1,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "up_left",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "A",
+        "seed": 60057,
+        "phase": "train",
+        "policy_version": 1,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "down_right",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "A",
+        "seed": 60058,
+        "phase": "train",
+        "policy_version": 1,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "down_left",
+        "actual_distance": 2,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "A",
+        "seed": 60112,
+        "phase": "train",
+        "policy_version": 3,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "up_left",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "B",
+        "seed": 60043,
+        "phase": "train",
+        "policy_version": 1,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "down_left",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "B",
+        "seed": 60044,
+        "phase": "train",
+        "policy_version": 1,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "up_right",
+        "actual_distance": 2,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "B",
+        "seed": 60057,
+        "phase": "train",
+        "policy_version": 1,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "down_right",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "B",
+        "seed": 60072,
+        "phase": "train",
+        "policy_version": 2,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": false,
+        "actual_direction": "down",
+        "actual_distance": 2,
+        "when_only_counterfactual_valid": false,
+        "counterfactual_rejection": "not the observed successful actions"
+      },
+      {
+        "arm": "B",
+        "seed": 60099,
+        "phase": "train",
+        "policy_version": 3,
+        "original_valid": true,
+        "predicted_distance": 3,
+        "what_matches_actions": true,
+        "actual_direction": "up",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      },
+      {
+        "arm": "B",
+        "seed": 60114,
+        "phase": "train",
+        "policy_version": 3,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": false,
+        "actual_direction": "down_right",
+        "actual_distance": 2,
+        "when_only_counterfactual_valid": false,
+        "counterfactual_rejection": "not the observed successful actions"
+      },
+      {
+        "arm": "B",
+        "seed": 60124,
+        "phase": "train",
+        "policy_version": 3,
+        "original_valid": false,
+        "predicted_distance": 1,
+        "what_matches_actions": true,
+        "actual_direction": "down_left",
+        "actual_distance": 3,
+        "when_only_counterfactual_valid": true
+      }
+    ]
+  },
+  "counterfactual_scope": "Memory-only WHEN diagnosis, not self-distillation output correction or admission."
+}

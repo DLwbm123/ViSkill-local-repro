@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "empty": {
+      "episodes": 16,
+      "requests": 65
+    },
+    "cards": {
+      "episodes": 16,
+      "requests": 67
+    }
+  },
+  "owned_residual_processes": [],
+  "positive_shadow_failures": 5,
+  "card_failures": 10,
+  "positive_shadow_values": [
+    0.26666666666666666,
+    0.26666666666666666,
+    0.26666666666666666,
+    0.26666666666666666,
+    0.26666666666666666
+  ],
+  "training": false,
+  "distillation_calls": 0,
+  "source_library_index_equal": true
+}

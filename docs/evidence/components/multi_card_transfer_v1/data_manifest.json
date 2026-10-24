@@ -1,0 +1,7117 @@
+{
+  "status": "CPU_PASS",
+  "model_calls": 0,
+  "historical_exact_states": 717,
+  "screened": 1079,
+  "reasons": {
+    "no_top1_three_step_applicability": 1036,
+    "historical_or_pool_duplicate": 27,
+    "selected": 16
+  },
+  "splits": {
+    "dev": [
+      {
+        "seed": 70014,
+        "state": {
+          "desc": [
+            [
+              "G",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "H",
+              "H",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "S",
+              "H",
+              "F",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            0
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70044,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "G",
+              "F",
+              "F"
+            ],
+            [
+              "H",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "H"
+            ],
+            [
+              "H",
+              "S",
+              "F",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            1
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70073,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "G",
+              "F",
+              "F"
+            ],
+            [
+              "H",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "S",
+              "H",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            1
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70130,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "H",
+              "F",
+              "G"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "S"
+            ]
+          ],
+          "player_pos": [
+            3,
+            3
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70213,
+        "state": {
+          "desc": [
+            [
+              "G",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "H"
+            ],
+            [
+              "F",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "S",
+              "F",
+              "F",
+              "H"
+            ]
+          ],
+          "player_pos": [
+            3,
+            0
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70273,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "H",
+              "F",
+              "G"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "S"
+            ]
+          ],
+          "player_pos": [
+            3,
+            3
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70349,
+        "state": {
+          "desc": [
+            [
+              "G",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "S",
+              "F",
+              "H",
+              "H"
+            ]
+          ],
+          "player_pos": [
+            3,
+            0
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70538,
+        "state": {
+          "desc": [
+            [
+              "G",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "S",
+              "F",
+              "F",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            0
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70573,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "G",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "H"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "H",
+              "S",
+              "F",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            1
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70704,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "H",
+              "F",
+              "G"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "S"
+            ]
+          ],
+          "player_pos": [
+            3,
+            3
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70941,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "F",
+              "F",
+              "G"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "H",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "S"
+            ]
+          ],
+          "player_pos": [
+            3,
+            3
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70949,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "F",
+              "G",
+              "H"
+            ],
+            [
+              "H",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "H",
+              "S",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            2
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 70957,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "F",
+              "F",
+              "G"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "S"
+            ]
+          ],
+          "player_pos": [
+            3,
+            3
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 71004,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "F",
+              "G",
+              "H"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "H"
+            ],
+            [
+              "F",
+              "F",
+              "F",
+              "H"
+            ],
+            [
+              "F",
+              "F",
+              "S",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            2
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 71066,
+        "state": {
+          "desc": [
+            [
+              "F",
+              "F",
+              "H",
+              "G"
+            ],
+            [
+              "F",
+              "H",
+              "F",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "H",
+              "F",
+              "F",
+              "S"
+            ]
+          ],
+          "player_pos": [
+            3,
+            3
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      },
+      {
+        "seed": 71079,
+        "state": {
+          "desc": [
+            [
+              "H",
+              "G",
+              "F",
+              "F"
+            ],
+            [
+              "H",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "F",
+              "F",
+              "H",
+              "F"
+            ],
+            [
+              "F",
+              "S",
+              "F",
+              "F"
+            ]
+          ],
+          "player_pos": [
+            3,
+            1
+          ],
+          "is_slippery": false,
+          "slip_prob": 0.0
+        },
+        "selected_skill_id": "skill_4",
+        "score": 0.95
+      }
+    ]
+  },
+  "screening": [
+    {
+      "seed": 70001,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70002,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70003,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70004,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70005,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70006,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70007,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70008,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70009,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70010,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70011,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70012,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70013,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70014,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70015,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70016,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70017,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70018,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70019,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70020,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70021,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70022,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70023,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70024,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70025,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70026,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70027,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70028,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70029,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70030,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70031,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70032,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70033,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70034,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70035,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70036,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70037,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70038,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70039,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70040,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70041,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70042,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70043,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70044,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70045,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70046,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70047,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70048,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70049,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70050,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70051,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70052,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70053,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70054,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70055,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70056,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70057,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70058,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70059,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70060,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70061,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70062,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70063,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70064,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70065,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70066,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70067,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70068,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70069,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70070,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70071,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70072,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70073,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70074,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70075,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70076,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70077,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70078,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70079,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70080,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70081,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70082,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70083,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70084,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70085,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70086,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70087,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70088,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70089,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70090,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70091,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70092,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70093,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70094,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70095,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70096,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70097,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70098,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70099,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70100,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70101,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70102,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70103,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70104,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70105,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70106,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70107,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70108,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70109,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70110,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70111,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70112,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70113,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70114,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70115,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70116,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70117,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70118,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70119,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70120,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70121,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70122,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70123,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70124,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70125,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70126,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70127,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70128,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70129,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70130,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70131,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70132,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70133,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70134,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70135,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70136,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70137,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70138,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70139,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70140,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70141,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70142,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70143,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70144,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70145,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70146,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70147,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70148,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70149,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70150,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70151,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70152,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70153,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70154,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70155,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70156,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70157,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70158,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70159,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70160,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70161,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70162,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70163,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70164,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70165,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70166,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70167,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70168,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70169,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70170,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70171,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70172,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70173,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70174,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70175,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70176,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70177,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70178,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70179,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70180,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70181,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70182,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70183,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70184,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70185,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70186,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70187,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70188,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70189,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70190,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70191,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70192,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70193,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70194,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70195,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70196,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70197,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70198,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70199,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70200,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70201,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70202,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70203,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70204,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70205,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70206,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70207,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70208,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70209,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70210,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70211,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70212,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70213,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70214,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70215,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70216,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70217,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70218,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70219,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70220,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70221,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70222,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70223,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70224,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70225,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70226,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70227,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70228,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70229,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70230,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70231,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70232,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70233,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70234,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70235,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70236,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70237,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70238,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70239,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70240,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70241,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70242,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70243,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70244,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70245,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70246,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70247,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70248,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70249,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70250,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70251,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70252,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70253,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70254,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70255,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70256,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70257,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70258,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70259,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70260,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70261,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70262,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70263,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70264,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70265,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70266,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70267,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70268,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70269,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70270,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70271,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70272,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70273,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70274,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70275,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70276,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70277,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70278,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70279,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70280,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70281,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70282,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70283,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70284,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70285,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70286,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70287,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70288,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70289,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70290,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70291,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70292,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70293,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70294,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70295,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70296,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70297,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70298,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70299,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70300,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70301,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70302,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70303,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70304,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70305,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70306,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70307,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70308,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70309,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70310,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70311,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70312,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70313,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70314,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70315,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70316,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70317,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70318,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70319,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70320,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70321,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70322,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70323,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70324,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70325,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70326,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70327,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70328,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70329,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70330,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70331,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70332,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70333,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70334,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70335,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70336,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70337,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70338,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70339,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70340,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70341,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70342,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70343,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70344,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70345,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70346,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70347,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70348,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70349,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70350,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70351,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70352,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70353,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70354,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70355,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70356,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70357,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70358,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70359,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70360,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70361,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70362,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70363,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70364,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70365,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70366,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70367,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70368,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70369,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70370,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70371,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70372,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70373,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70374,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70375,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70376,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70377,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70378,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70379,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70380,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70381,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70382,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70383,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70384,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70385,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70386,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70387,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70388,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70389,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70390,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70391,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70392,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70393,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70394,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70395,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70396,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70397,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70398,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70399,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70400,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70401,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70402,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70403,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70404,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70405,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70406,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70407,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70408,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70409,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70410,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70411,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70412,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70413,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70414,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70415,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70416,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70417,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70418,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70419,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70420,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70421,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70422,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70423,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70424,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70425,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70426,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70427,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70428,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70429,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70430,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70431,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70432,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70433,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70434,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70435,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70436,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70437,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70438,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70439,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70440,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70441,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70442,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70443,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70444,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70445,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70446,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70447,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70448,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70449,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70450,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70451,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70452,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70453,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70454,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70455,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70456,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70457,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70458,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70459,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70460,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70461,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70462,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70463,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70464,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70465,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70466,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70467,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70468,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70469,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70470,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70471,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70472,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70473,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70474,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70475,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70476,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70477,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70478,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70479,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70480,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70481,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70482,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70483,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70484,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70485,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70486,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70487,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70488,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70489,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70490,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70491,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70492,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70493,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70494,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70495,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70496,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70497,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70498,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70499,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70500,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70501,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70502,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70503,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70504,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70505,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70506,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70507,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70508,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70509,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70510,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70511,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70512,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70513,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70514,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70515,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70516,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70517,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70518,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70519,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70520,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70521,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70522,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70523,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70524,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70525,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70526,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70527,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70528,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70529,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70530,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70531,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70532,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70533,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70534,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70535,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70536,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70537,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70538,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70539,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70540,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70541,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70542,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70543,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70544,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70545,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70546,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70547,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70548,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70549,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70550,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70551,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70552,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70553,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70554,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70555,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70556,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70557,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70558,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70559,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70560,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70561,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70562,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70563,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70564,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70565,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70566,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70567,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70568,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70569,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70570,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70571,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70572,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70573,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70574,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70575,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70576,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70577,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70578,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70579,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70580,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70581,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70582,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70583,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70584,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70585,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70586,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70587,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70588,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70589,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70590,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70591,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70592,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70593,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70594,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70595,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70596,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70597,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70598,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70599,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70600,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70601,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70602,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70603,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70604,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70605,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70606,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70607,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70608,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70609,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70610,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70611,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70612,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70613,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70614,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70615,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70616,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70617,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70618,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70619,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70620,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70621,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70622,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70623,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70624,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70625,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70626,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70627,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70628,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70629,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70630,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70631,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70632,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70633,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70634,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70635,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70636,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70637,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70638,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70639,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70640,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70641,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70642,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70643,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70644,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70645,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70646,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70647,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70648,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70649,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70650,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70651,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70652,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70653,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70654,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70655,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70656,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70657,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70658,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70659,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70660,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70661,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70662,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70663,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70664,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70665,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70666,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70667,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70668,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70669,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70670,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70671,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70672,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70673,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70674,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70675,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70676,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70677,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70678,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70679,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70680,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70681,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70682,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70683,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70684,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70685,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70686,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70687,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70688,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70689,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70690,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70691,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70692,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70693,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70694,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70695,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70696,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70697,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70698,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70699,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70700,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70701,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70702,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70703,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70704,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70705,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70706,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70707,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70708,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70709,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70710,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70711,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70712,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70713,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70714,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70715,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70716,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70717,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70718,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70719,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70720,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70721,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70722,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70723,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70724,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70725,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70726,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70727,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70728,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70729,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70730,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70731,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70732,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70733,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70734,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70735,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70736,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70737,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70738,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70739,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70740,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70741,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70742,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70743,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70744,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70745,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70746,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70747,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70748,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70749,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70750,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70751,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70752,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70753,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70754,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70755,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70756,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70757,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70758,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70759,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70760,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70761,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70762,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70763,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70764,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70765,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70766,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70767,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70768,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70769,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70770,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70771,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70772,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70773,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70774,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70775,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70776,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70777,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70778,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70779,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70780,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70781,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70782,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70783,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70784,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70785,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70786,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70787,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70788,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70789,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70790,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70791,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70792,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70793,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70794,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70795,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70796,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70797,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70798,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70799,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70800,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70801,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70802,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70803,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70804,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70805,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70806,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70807,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70808,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70809,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70810,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70811,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70812,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70813,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70814,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70815,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70816,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70817,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70818,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70819,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70820,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70821,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70822,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70823,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70824,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70825,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70826,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70827,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70828,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70829,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70830,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70831,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70832,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70833,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70834,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70835,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70836,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70837,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70838,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70839,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70840,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70841,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70842,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70843,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70844,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70845,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70846,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70847,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70848,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70849,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70850,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70851,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70852,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70853,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70854,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70855,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70856,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70857,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70858,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70859,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70860,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70861,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70862,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70863,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70864,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70865,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70866,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70867,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70868,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70869,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70870,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70871,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70872,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70873,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70874,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70875,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70876,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70877,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70878,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70879,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70880,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70881,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70882,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70883,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70884,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70885,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70886,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70887,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70888,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70889,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70890,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70891,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70892,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70893,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70894,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70895,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70896,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70897,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70898,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70899,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70900,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70901,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70902,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70903,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70904,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70905,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70906,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70907,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70908,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70909,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70910,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70911,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70912,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70913,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70914,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70915,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70916,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70917,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70918,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70919,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70920,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70921,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70922,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70923,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70924,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70925,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70926,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70927,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70928,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70929,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70930,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70931,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70932,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70933,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70934,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70935,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70936,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70937,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70938,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70939,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70940,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70941,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70942,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70943,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70944,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70945,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70946,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70947,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70948,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70949,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70950,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70951,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70952,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70953,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70954,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70955,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70956,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70957,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 70958,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70959,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70960,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70961,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70962,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70963,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70964,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70965,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70966,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70967,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70968,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70969,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70970,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70971,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70972,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70973,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70974,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 70975,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70976,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70977,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70978,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 70979,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70980,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70981,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70982,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70983,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70984,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 70985,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70986,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70987,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 70988,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70989,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70990,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70991,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70992,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70993,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70994,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70995,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70996,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70997,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70998,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 70999,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71000,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 71001,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71002,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71003,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 71004,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 71005,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71006,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 71007,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71008,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71009,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 71010,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 71011,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 71012,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71013,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71014,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71015,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71016,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71017,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71018,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71019,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 71020,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71021,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71022,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71023,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71024,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71025,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71026,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 71027,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71028,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71029,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71030,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 71031,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71032,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71033,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71034,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71035,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71036,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71037,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71038,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71039,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71040,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71041,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71042,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71043,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 71044,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71045,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71046,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 71047,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71048,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71049,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 71050,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_2",
+      "score": 0.9450000000000001
+    },
+    {
+      "seed": 71051,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71052,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71053,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71054,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71055,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71056,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71057,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71058,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71059,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_1",
+      "score": 0.95545
+    },
+    {
+      "seed": 71060,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71061,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71062,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71063,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71064,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71065,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71066,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    },
+    {
+      "seed": 71067,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71068,
+      "reason": "historical_or_pool_duplicate",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71069,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71070,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_3",
+      "score": 0.9595
+    },
+    {
+      "seed": 71071,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71072,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": "skill_0",
+      "score": 0.967195
+    },
+    {
+      "seed": 71073,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71074,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71075,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71076,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71077,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71078,
+      "reason": "no_top1_three_step_applicability",
+      "top1_valid_id": null,
+      "score": null
+    },
+    {
+      "seed": 71079,
+      "reason": "selected",
+      "top1_valid_id": "skill_4",
+      "score": 0.95
+    }
+  ],
+  "source_library_unchanged": true,
+  "conditional_only": true
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "episodes": 192,
+  "contexts": [
+    "empty",
+    "cards"
+  ],
+  "natural_multi": {
+    "empty": {
+      "success": 7,
+      "quality": 5
+    },
+    "cards": {
+      "success": 7,
+      "quality": 5
+    }
+  }
+}

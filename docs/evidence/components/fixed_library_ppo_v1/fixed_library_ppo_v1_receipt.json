@@ -1,0 +1,27 @@
+{
+  "start_unix": 1792844600.7204762,
+  "preparation_start_unix": 1792843382.0,
+  "deadline_unix": 1792852382.0,
+  "original_total_deadline": 1792858781.9046373,
+  "supervisor_pid": 286374,
+  "run_token": "d3721447c4c04139ba5c2f95a621c658",
+  "baseline_bytes": 68532609024,
+  "write_limit_bytes": 70332609024,
+  "maximum_additional_bytes": 2000000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "checkpoint_save": false,
+  "arms": {
+    "A": {
+      "start_unix": 1792844601.8235335,
+      "deadline_unix": 1792848201.8235335,
+      "exit_code": 0
+    },
+    "B": {
+      "start_unix": 1792847295.7593894,
+      "deadline_unix": 1792850895.7593894
+    }
+  }
+}

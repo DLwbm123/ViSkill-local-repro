@@ -1,13 +1,13 @@
 """Own-tree hard timeout, disk guard and two sequential isolated Ray phases."""
 import json, os, pathlib, signal, subprocess, time, uuid
 import psutil
-ROOT=pathlib.Path(os.environ['TASK_ROOT']); STATE=ROOT/'state/components'; NAME='dynamics_wording_v1'
-protocol=json.loads((ROOT/'src/configs/smoke/dynamics_wording_v1.json').read_text())
+ROOT=pathlib.Path(os.environ['TASK_ROOT']); STATE=ROOT/'state/components'; NAME=os.environ.get('TASK_COMPONENT','dynamics_wording_v1')
+protocol=json.loads((ROOT/f'src/configs/smoke/{NAME}.json').read_text())
 original=json.loads((ROOT/'state/setup_receipt.json').read_text())
 assert original['started_unix']==protocol['original_total_clock_start']
 receipt=STATE/f'{NAME}_receipt.json'
 if receipt.exists():raise RuntimeError('receipt exists; refuse duplicate')
-start=time.time();deadline=min(protocol['absolute_total_deadline'],start+protocol['max_attempt_seconds'])
+start=time.time();deadline=min(protocol['absolute_total_deadline'],start+protocol['max_attempt_seconds'],protocol.get('preparation_started_unix',start)+protocol['max_attempt_seconds'])
 def usage():
  return sum(int(subprocess.check_output(['du','-s','-B1','.'],cwd=folder,text=True).split()[0]) for folder in original['paths'])
 baseline=usage();limit=min(protocol['project_write_stop_bytes'],baseline+protocol['maximum_additional_bytes'])
@@ -17,11 +17,11 @@ for gpu in [4]:
  assert free>=28000, (gpu,free)
 probe=ROOT/'state/.ppo_probe';probe.write_text('ok');assert probe.read_text()=='ok';probe.unlink()
 token=uuid.uuid4().hex
-ENV=dict(os.environ,ENTRY=str(ROOT/'src/scripts/run_dynamics_wording.py'),TASK_RUN_TOKEN=token,
+ENV=dict(os.environ,ENTRY=str(ROOT/'src/scripts'/protocol.get('entry_script','run_dynamics_wording.py')),TASK_RUN_TOKEN=token,
  CUDA_VISIBLE_DEVICES='4',CUDA_DEVICE_ORDER='PCI_BUS_ID',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_HUB_DISABLE_TELEMETRY='1',WANDB_MODE='disabled',RAY_USAGE_STATS_ENABLED='0',
  HF_HOME=str(ROOT/'cache/hf'),TMPDIR='/data/local/tmp/z0',SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy',PYTHONDONTWRITEBYTECODE='1',TOKENIZERS_PARALLELISM='false',
  XDG_CACHE_HOME='/data/local/tools/z0/cache/xdg',TORCH_EXTENSIONS_DIR='/data/local/tools/z0/cache/torch_extensions',TRITON_CACHE_DIR='/data/local/tools/z0/cache/triton',
- FLASHINFER_WORKSPACE_BASE='/data/local/tools/z0/cache/flashinfer',CUDA_CACHE_PATH='/data/local/tools/z0/cache/cuda',SGLANG_ENABLE_JIT_DEEPGEMM='0',
+ TORCHINDUCTOR_CACHE_DIR='/data/local/tools/z0/cache/torchinductor',FLASHINFER_WORKSPACE_BASE='/data/local/tools/z0/cache/flashinfer',CUDA_CACHE_PATH='/data/local/tools/z0/cache/cuda',SGLANG_ENABLE_JIT_DEEPGEMM='0',
  PATH='/data/local/envs/z0/bin:/usr/local/cuda/bin:'+os.environ.get('PATH',''),CUDA_HOME='/usr/local/cuda',
  PYTHONPATH=str(ROOT/'src')+':'+str(ROOT/'src/verl'),OMP_NUM_THREADS='4')
 receipt.write_text(json.dumps({'start_unix':start,'original_start_unix':original['started_unix'],'deadline_unix':deadline,'supervisor_pid':os.getpid(),'run_token':token,'baseline_bytes':baseline,'write_limit_bytes':limit,'physical_gpus':[4]},indent=2))
@@ -50,7 +50,7 @@ def cleanup():
 
 reason=None;exits={}
 try:
- for phase in ['wording']:
+ for phase in protocol.get('phases',['wording']):
   env=dict(ENV,TASK_PHASE=phase)
   logfile=ROOT/f'logs/ppo_smoke/{NAME}_{phase}.log';logfile.parent.mkdir(parents=True,exist_ok=True)
   with logfile.open('w') as log:

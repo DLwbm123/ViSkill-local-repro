@@ -1,0 +1,227 @@
+{"arm": "N", "seed": 80045, "call": 1, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 80045, "call": 2, "prompt_tokens": 533, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 80045, "call": 3, "prompt_tokens": 690, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80045, "call": 4, "prompt_tokens": 851, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80045, "call": 5, "prompt_tokens": 1012, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80045, "call": 6, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 80045, "call": 7, "prompt_tokens": 735, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80045, "call": 8, "prompt_tokens": 889, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80045, "call": 9, "prompt_tokens": 1043, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80045, "call": 10, "prompt_tokens": 1197, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80045, "call": 11, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 80045, "call": 12, "prompt_tokens": 756, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80045, "call": 13, "prompt_tokens": 929, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80045, "call": 14, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 80045, "call": 15, "prompt_tokens": 718, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80045, "call": 16, "prompt_tokens": 877, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80045, "call": 17, "prompt_tokens": 1036, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80045, "call": 18, "prompt_tokens": 1195, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80112, "call": 19, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 80112, "call": 20, "prompt_tokens": 744, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80112, "call": 21, "prompt_tokens": 927, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80112, "call": 22, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 80112, "call": 23, "prompt_tokens": 722, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80112, "call": 24, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 80112, "call": 25, "prompt_tokens": 546, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80112, "call": 26, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 80112, "call": 27, "prompt_tokens": 720, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80537, "call": 28, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 80537, "call": 29, "prompt_tokens": 730, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80537, "call": 30, "prompt_tokens": 905, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80537, "call": 31, "prompt_tokens": 1080, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80537, "call": 32, "prompt_tokens": 1255, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80537, "call": 33, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 80537, "call": 34, "prompt_tokens": 734, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80537, "call": 35, "prompt_tokens": 915, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80537, "call": 36, "prompt_tokens": 1096, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80537, "call": 37, "prompt_tokens": 1277, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80537, "call": 38, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 80537, "call": 39, "prompt_tokens": 734, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80537, "call": 40, "prompt_tokens": 890, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80537, "call": 41, "prompt_tokens": 1046, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80537, "call": 42, "prompt_tokens": 1202, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80537, "call": 43, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 80537, "call": 44, "prompt_tokens": 558, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 80537, "call": 45, "prompt_tokens": 735, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80537, "call": 46, "prompt_tokens": 912, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80824, "call": 47, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 80824, "call": 48, "prompt_tokens": 733, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 80824, "call": 49, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 80824, "call": 50, "prompt_tokens": 537, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 80824, "call": 51, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 80824, "call": 52, "prompt_tokens": 722, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80824, "call": 53, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 80824, "call": 54, "prompt_tokens": 727, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80829, "call": 55, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 80829, "call": 56, "prompt_tokens": 603, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 80829, "call": 57, "prompt_tokens": 829, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80829, "call": 58, "prompt_tokens": 1055, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 80829, "call": 59, "prompt_tokens": 1281, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80829, "call": 60, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 80829, "call": 61, "prompt_tokens": 734, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80829, "call": 62, "prompt_tokens": 890, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80829, "call": 63, "prompt_tokens": 1046, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 80829, "call": 64, "prompt_tokens": 1202, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 80829, "call": 65, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Blank", "seed": 80829, "call": 66, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 80829, "call": 67, "prompt_tokens": 725, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81049, "call": 68, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81049, "call": 69, "prompt_tokens": 714, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81049, "call": 70, "prompt_tokens": 875, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81049, "call": 71, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81049, "call": 72, "prompt_tokens": 711, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81049, "call": 73, "prompt_tokens": 869, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81049, "call": 74, "prompt_tokens": 1027, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81049, "call": 75, "prompt_tokens": 1185, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81049, "call": 76, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81049, "call": 77, "prompt_tokens": 540, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81049, "call": 78, "prompt_tokens": 709, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81049, "call": 79, "prompt_tokens": 878, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81049, "call": 80, "prompt_tokens": 1047, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81049, "call": 81, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81049, "call": 82, "prompt_tokens": 732, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81049, "call": 83, "prompt_tokens": 901, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81049, "call": 84, "prompt_tokens": 1070, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81049, "call": 85, "prompt_tokens": 1239, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81146, "call": 86, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81146, "call": 87, "prompt_tokens": 722, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81146, "call": 88, "prompt_tokens": 888, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81146, "call": 89, "prompt_tokens": 1038, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81146, "call": 90, "prompt_tokens": 1188, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81146, "call": 91, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81146, "call": 92, "prompt_tokens": 734, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "V", "seed": 81146, "call": 93, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81146, "call": 94, "prompt_tokens": 733, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81146, "call": 95, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81146, "call": 96, "prompt_tokens": 548, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81146, "call": 97, "prompt_tokens": 722, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81146, "call": 98, "prompt_tokens": 881, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81146, "call": 99, "prompt_tokens": 1038, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81252, "call": 100, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81252, "call": 101, "prompt_tokens": 730, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81252, "call": 102, "prompt_tokens": 890, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81252, "call": 103, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "Blank", "seed": 81252, "call": 104, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81252, "call": 105, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81252, "call": 106, "prompt_tokens": 714, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81252, "call": 107, "prompt_tokens": 869, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81266, "call": 108, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "V", "seed": 81266, "call": 109, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81266, "call": 110, "prompt_tokens": 743, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81266, "call": 111, "prompt_tokens": 922, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81266, "call": 112, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81266, "call": 113, "prompt_tokens": 745, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81266, "call": 114, "prompt_tokens": 916, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81266, "call": 115, "prompt_tokens": 1075, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81266, "call": 116, "prompt_tokens": 1234, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81266, "call": 117, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81500, "call": 118, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81500, "call": 119, "prompt_tokens": 714, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81500, "call": 120, "prompt_tokens": 875, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81500, "call": 121, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81500, "call": 122, "prompt_tokens": 711, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81500, "call": 123, "prompt_tokens": 874, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81500, "call": 124, "prompt_tokens": 1038, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81500, "call": 125, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81500, "call": 126, "prompt_tokens": 550, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81500, "call": 127, "prompt_tokens": 722, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81500, "call": 128, "prompt_tokens": 895, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81500, "call": 129, "prompt_tokens": 1067, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81500, "call": 130, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81500, "call": 131, "prompt_tokens": 717, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81500, "call": 132, "prompt_tokens": 870, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81559, "call": 133, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81559, "call": 134, "prompt_tokens": 718, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81559, "call": 135, "prompt_tokens": 890, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81559, "call": 136, "prompt_tokens": 1062, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81559, "call": 137, "prompt_tokens": 1234, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81559, "call": 138, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81559, "call": 139, "prompt_tokens": 745, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81559, "call": 140, "prompt_tokens": 926, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81559, "call": 141, "prompt_tokens": 1107, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81559, "call": 142, "prompt_tokens": 1288, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81559, "call": 143, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81559, "call": 144, "prompt_tokens": 735, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81559, "call": 145, "prompt_tokens": 901, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81559, "call": 146, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81559, "call": 147, "prompt_tokens": 540, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81559, "call": 148, "prompt_tokens": 706, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81559, "call": 149, "prompt_tokens": 872, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81559, "call": 150, "prompt_tokens": 1038, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81615, "call": 151, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81615, "call": 152, "prompt_tokens": 748, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81615, "call": 153, "prompt_tokens": 915, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81615, "call": 154, "prompt_tokens": 1079, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81615, "call": 155, "prompt_tokens": 1234, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81615, "call": 156, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81615, "call": 157, "prompt_tokens": 540, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81615, "call": 158, "prompt_tokens": 711, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81615, "call": 159, "prompt_tokens": 882, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81615, "call": 160, "prompt_tokens": 1053, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81615, "call": 161, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81615, "call": 162, "prompt_tokens": 723, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81615, "call": 163, "prompt_tokens": 892, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81615, "call": 164, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81615, "call": 165, "prompt_tokens": 737, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81615, "call": 166, "prompt_tokens": 893, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81615, "call": 167, "prompt_tokens": 1049, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81615, "call": 168, "prompt_tokens": 1205, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81696, "call": 169, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81696, "call": 170, "prompt_tokens": 549, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81696, "call": 171, "prompt_tokens": 719, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81696, "call": 172, "prompt_tokens": 889, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81696, "call": 173, "prompt_tokens": 1059, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81696, "call": 174, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81696, "call": 175, "prompt_tokens": 721, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81696, "call": 176, "prompt_tokens": 883, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81696, "call": 177, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81696, "call": 178, "prompt_tokens": 754, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81696, "call": 179, "prompt_tokens": 924, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81696, "call": 180, "prompt_tokens": 1095, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81696, "call": 181, "prompt_tokens": 1267, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81696, "call": 182, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81696, "call": 183, "prompt_tokens": 731, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81696, "call": 184, "prompt_tokens": 894, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81696, "call": 185, "prompt_tokens": 1056, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81696, "call": 186, "prompt_tokens": 1217, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81873, "call": 187, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81873, "call": 188, "prompt_tokens": 727, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81873, "call": 189, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81873, "call": 190, "prompt_tokens": 722, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81873, "call": 191, "prompt_tokens": 891, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81873, "call": 192, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81873, "call": 193, "prompt_tokens": 533, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81873, "call": 194, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81873, "call": 195, "prompt_tokens": 732, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81921, "call": 196, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 81921, "call": 197, "prompt_tokens": 723, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81921, "call": 198, "prompt_tokens": 892, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81921, "call": 199, "prompt_tokens": 1061, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 81921, "call": 200, "prompt_tokens": 1230, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81921, "call": 201, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 81921, "call": 202, "prompt_tokens": 725, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 81921, "call": 203, "prompt_tokens": 886, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81921, "call": 204, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 81921, "call": 205, "prompt_tokens": 744, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 81921, "call": 206, "prompt_tokens": 930, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81921, "call": 207, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 81921, "call": 208, "prompt_tokens": 538, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 81921, "call": 209, "prompt_tokens": 706, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81921, "call": 210, "prompt_tokens": 874, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 81921, "call": 211, "prompt_tokens": 1042, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Text", "seed": 82018, "call": 212, "prompt_tokens": 564, "image_sizes": [[256, 256]]}
+{"arm": "Text", "seed": 82018, "call": 213, "prompt_tokens": 725, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "Text", "seed": 82018, "call": 214, "prompt_tokens": 886, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 82018, "call": 215, "prompt_tokens": 368, "image_sizes": [[256, 256]]}
+{"arm": "N", "seed": 82018, "call": 216, "prompt_tokens": 533, "image_sizes": [[256, 256], [256, 256]]}
+{"arm": "N", "seed": 82018, "call": 217, "prompt_tokens": 705, "image_sizes": [[256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 82018, "call": 218, "prompt_tokens": 877, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "N", "seed": 82018, "call": 219, "prompt_tokens": 1049, "image_sizes": [[256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 82018, "call": 220, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "Blank", "seed": 82018, "call": 221, "prompt_tokens": 711, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 82018, "call": 222, "prompt_tokens": 867, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 82018, "call": 223, "prompt_tokens": 1023, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "Blank", "seed": 82018, "call": 224, "prompt_tokens": 1179, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 82018, "call": 225, "prompt_tokens": 553, "image_sizes": [[552, 232], [256, 256]]}
+{"arm": "V", "seed": 82018, "call": 226, "prompt_tokens": 734, "image_sizes": [[552, 232], [256, 256], [256, 256]]}
+{"arm": "V", "seed": 82018, "call": 227, "prompt_tokens": 911, "image_sizes": [[552, 232], [256, 256], [256, 256], [256, 256]]}

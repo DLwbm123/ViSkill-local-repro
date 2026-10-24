@@ -1,0 +1,143 @@
+{
+  "episodes_per_arm": 192,
+  "success_match": 190,
+  "quality_match": 189,
+  "actions_match": 173,
+  "counts": {
+    "A": {
+      "empty": {
+        "natural": {
+          "episodes": 64,
+          "success": 9,
+          "quality": 8
+        },
+        "conditional": {
+          "episodes": 32,
+          "success": 1,
+          "quality": 1
+        }
+      },
+      "cards": {
+        "natural": {
+          "episodes": 64,
+          "success": 10,
+          "quality": 10
+        },
+        "conditional": {
+          "episodes": 32,
+          "success": 11,
+          "quality": 10
+        }
+      }
+    },
+    "B": {
+      "empty": {
+        "natural": {
+          "episodes": 64,
+          "success": 9,
+          "quality": 8
+        },
+        "conditional": {
+          "episodes": 32,
+          "success": 1,
+          "quality": 0
+        }
+      },
+      "cards": {
+        "natural": {
+          "episodes": 64,
+          "success": 10,
+          "quality": 10
+        },
+        "conditional": {
+          "episodes": 32,
+          "success": 11,
+          "quality": 10
+        }
+      }
+    }
+  },
+  "mismatches": [
+    {
+      "A": {
+        "seed": 112329,
+        "context": "cards",
+        "group": "conditional",
+        "success": true,
+        "quality": true,
+        "actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      "B": {
+        "seed": 112329,
+        "context": "cards",
+        "group": "conditional",
+        "success": false,
+        "quality": false,
+        "actions": [
+          "up"
+        ]
+      }
+    },
+    {
+      "A": {
+        "seed": 111722,
+        "context": "cards",
+        "group": "conditional",
+        "success": false,
+        "quality": false,
+        "actions": [
+          "up",
+          "down",
+          "up",
+          "down",
+          "up"
+        ]
+      },
+      "B": {
+        "seed": 111722,
+        "context": "cards",
+        "group": "conditional",
+        "success": true,
+        "quality": true,
+        "actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      }
+    },
+    {
+      "A": {
+        "seed": 111301,
+        "context": "empty",
+        "group": "conditional",
+        "success": true,
+        "quality": true,
+        "actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      "B": {
+        "seed": 111301,
+        "context": "empty",
+        "group": "conditional",
+        "success": true,
+        "quality": false,
+        "actions": [
+          "right",
+          "up",
+          "up",
+          "right",
+          "up"
+        ]
+      }
+    }
+  ],
+  "scope": "Observed initial greedy cases only; paired random critic heads do not imply identical policy outputs or training stochastic streams."
+}

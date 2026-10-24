@@ -38,7 +38,7 @@ class _RecordedManager:
             fcntl.flock(stream, fcntl.LOCK_EX)
             stream.seek(0)
             call = int(stream.read() or "0") + 1
-            assert call <= 1600, "pilot model-call limit"
+            assert call <= int(os.getenv("PILOT_MAX_MODEL_CALLS", "1600")), "pilot model-call limit"
             stream.seek(0)
             stream.truncate()
             stream.write(str(call))
@@ -46,6 +46,7 @@ class _RecordedManager:
         output = await self.original.generate(**kwargs)
         record = {"call": call, "seed": agent.pilot_seed,
                   "phase": agent.pilot_phase, "policy_version": agent.pilot_version,
+                  "fixed_context": getattr(agent, "pilot_context", None),
                   "kind": "distill" if agent.pilot_distilling else "rollout",
                   "request_id": kwargs["request_id"],
                   "sampling": kwargs["sampling_params"],
@@ -85,7 +86,7 @@ class BootstrapGymAgentLoop(GymAgentLoop):
         assert self.skill_provider.guided_weight == 0
         if self.pilot_phase == "dev":
             assert not (row.get("distillation_audit") or {}).get("model_calls", 0)
-        if os.environ["TASK_PHASE"] == "A":
+        if kwargs.get("fixed_context", os.environ["TASK_PHASE"]) in {"A", "empty"}:
             assert row["retrieved_skill_id"] is None
             assert not self.skill_provider.library._skills
         expected = json.loads(Path(os.environ["PILOT_DATA_MANIFEST"]).read_text())

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "config_arms_validated": [
+    "A",
+    "B"
+  ],
+  "real_processor_loop_concurrent_contexts": [
+    "cards",
+    "empty",
+    "empty",
+    "cards"
+  ],
+  "scripted_fixture_generate_calls": 4,
+  "model_calls": 0,
+  "empty_card_provider_no_leakage": true,
+  "A_can_evaluate_cards": true
+}

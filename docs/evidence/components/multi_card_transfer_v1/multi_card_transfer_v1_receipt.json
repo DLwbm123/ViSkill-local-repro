@@ -1,0 +1,12 @@
+{
+  "start_unix": 1792841139.6517038,
+  "original_start_unix": 1792772381.9046373,
+  "deadline_unix": 1792842884.900123,
+  "supervisor_pid": 142214,
+  "run_token": "40ce7581aa09422c897d167e98cb6cf6",
+  "baseline_bytes": 68513636352,
+  "write_limit_bytes": 68963636352,
+  "physical_gpus": [
+    4
+  ]
+}
