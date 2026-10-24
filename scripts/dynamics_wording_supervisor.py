@@ -35,7 +35,7 @@ def discover():
     if process.pid not in audited:
      argv=process.cmdline(); audited.add(process.pid)
      with (STATE/f'{NAME}_processes.jsonl').open('a') as f:f.write(json.dumps({'pid':process.pid,'argv':argv})+'\n')
-     assert not any(word in ' '.join(argv).lower() for word in ['wangbomin','viskill','directional']), 'non-neutral child argv'
+     assert not any(word in ' '.join(argv).lower() for word in ['local-user','viskill','directional']), 'non-neutral child argv'
   except (psutil.NoSuchProcess,psutil.AccessDenied):pass
 
 def cleanup():
