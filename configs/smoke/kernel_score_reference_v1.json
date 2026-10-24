@@ -1,0 +1,33 @@
+{
+  "name": "kernel_score_reference_v1",
+  "status": "FROZEN",
+  "preparation_started_unix": 1792859912.0,
+  "max_seconds_including_preparation": 3600,
+  "absolute_total_deadline": 1792899507.0,
+  "storage_baseline_reference_bytes": 68530110464,
+  "maximum_additional_bytes": 500000000,
+  "write_stop_additional_bytes": 450000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "max_actor_forward_samples": 8,
+  "max_native_requests": 0,
+  "max_generated_tokens": 0,
+  "max_environment_steps": 0,
+  "max_optimizer_steps": 0,
+  "hypothesis": "Disabling fused output/logprob kernels reduces the observed cross-backend discrepancy. Diagnostic only; official FrozenLake scripts also enable fused kernels.",
+  "input_selection": "Exactly prior four full trajectories plus four prefixes ending at response2, same order and existing native8 scores; no new outcome selection.",
+  "required_cpu_gate": "All four reconstructed prefixes have equal causal token IDs, attention-selected positions and image pixels/grids before any forward.",
+  "intervention": "model.use_fused_kernels=False and its actor consumer=False. BF16/FSDP/FA2/remove_padding and production compute_log_prob unchanged. Actor-only initialization avoids unused rollout/critic; no optimizer is stepped.",
+  "probability_gate": {
+    "max_abs_nats": 0.05,
+    "mean_abs_nats": 0.005
+  },
+  "decision": "Report unchanged tolerance. If failure close kernel-reference branch; no precision/kernel grid. Preserve original8 failures regardless of reference outcome.",
+  "limitations": [
+    "Current reconstructed inputs, not historical intermediate tensor identity",
+    "Frozen b0 only; no theta4 recovery",
+    "No new native scores; retained original maxnew0 incident remains failed"
+  ]
+}

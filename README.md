@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+Latest kernel reference (2026-10-25): disabling fused output kernels on the same8 actor layouts left **all8 probability comparisons outside the frozen tolerance**, with errors close to the fused result. Shared causal input prefixes match exactly in tokens, positions and image tensors. No new native requests, generated tokens, environment actions or optimizer steps. This kernel branch is closed; no learning benefit or collapse cause is established. See [report19](reports/19_kernel_score_reference.md).
+
 Latest diagnostic (2026-10-25): **all8 saved-request comparisons failed the frozen all-token probability-error gate**. Differences concentrate in think tokens; the8 observed action tokens differ by at most.001381 nats. Reconstructed first-batch signals match seven historical aggregate metrics. Two Stop action tokens have positive original whitened advantages and negative zero-baseline counterfactuals; no causal update test has been performed. Zero-generation and dispatch-contract incidents remain failures (9 dispatch attempts,8 actual prefills,1 unwanted unused newline), with0 environment actions or optimizer updates. See [report18](reports/18_recorded_backend_audit.md) and [numeric evidence](docs/evidence/components/recorded_backend_audit_v2/summary.json).
 
 Independent local reproduction of **ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills**, using local inference with no external model API. This is not the official repository.

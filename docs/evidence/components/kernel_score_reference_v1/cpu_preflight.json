@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "episode_index": 0,
+      "valid_prefix_tokens": 786,
+      "ids_positions_pixels_exact_prefix": true
+    },
+    {
+      "episode_index": 1,
+      "valid_prefix_tokens": 773,
+      "ids_positions_pixels_exact_prefix": true
+    },
+    {
+      "episode_index": 2,
+      "valid_prefix_tokens": 588,
+      "ids_positions_pixels_exact_prefix": true
+    },
+    {
+      "episode_index": 3,
+      "valid_prefix_tokens": 582,
+      "ids_positions_pixels_exact_prefix": true
+    }
+  ],
+  "model_forwards": 0,
+  "generation": 0,
+  "environment_steps": 0
+}

@@ -1,7 +1,7 @@
 {
   "paper_title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
   "arxiv_id": "2610.12403v1",
-  "paper_local_path": "<paper PDF omitted from public snapshot>",
+  "paper_local_path": "/home/local-user/Desktop/\u6211\u7684\u8bba\u6587\u4eec/2610.12403v1.pdf",
   "repository_url": "https://github.com/ZJU-REAL/ViSkill",
   "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
   "branch": "repro/local-no-api",
@@ -24,7 +24,7 @@
     "reproduction_torch_runtime": "12.8"
   },
   "gpu": {
-    "target_server": "gpu-host",
+    "target_server": "local-gpu",
     "max_gpu_count": 3,
     "hardware_verified": true,
     "authorized_indices": [
@@ -103,9 +103,9 @@
         "diff",
         "--no-index",
         "/tmp/viskill-verl-v061-audit/verl",
-        "/workspace/ViSkill-local-repro/verl/verl"
+        "/home/local-user/Documents/ChatGPT/Viskill/upstream/verl/verl"
       ],
-      "cwd": "/workspace/ViSkill-local-repro",
+      "cwd": "/home/local-user/Documents/ChatGPT/Viskill",
       "exit_code": 1,
       "output": "upstream/docs/evidence/verl_package_diff.patch"
     },
@@ -130,8 +130,8 @@
     {
       "command": "background independent setup, see scripts/prepare_environment_worker.py",
       "exit_code": null,
-      "remote_command_log": "/data/local/ViSkill/state/setup_commands.json",
-      "remote_stdout": "/data/local/ViSkill/logs/setup.log",
+      "remote_command_log": "/data/local/project/state/setup_commands.json",
+      "remote_stdout": "/data/local/project/logs/setup.log",
       "supervisor_pid": 2545403
     }
   ],
@@ -159,7 +159,7 @@
     "tests/"
   ],
   "known_deviations": [
-    "FrozenLake GPU counts: main text 4, Table 6 2, script 4; user upper limit 3 on gpu-host",
+    "FrozenLake GPU counts: main text 4, Table 6 2, script 4; user upper limit 3 on local-gpu",
     "script training steps 301 vs paper 300",
     "official reward uses action prefix vs paper state-progress matching",
     "library not snapshotted/restored with policy checkpoint",
@@ -262,7 +262,7 @@
     "stop_writes_at_bytes": 85000000000,
     "setup_timeout_seconds": 21600,
     "paths": [
-      "/data/local/ViSkill",
+      "/data/local/project",
       "/data/local/envs/z0",
       "/data/local/tools/z0",
       "/data/local/tmp/z0"
@@ -298,7 +298,7 @@
       "stop_writes_at_bytes": 85000000000,
       "setup_timeout_seconds": 21600,
       "paths": [
-        "/data/local/ViSkill",
+        "/data/local/project",
         "/data/local/envs/z0",
         "/data/local/tools/z0",
         "/data/local/tmp/z0"
@@ -340,8 +340,8 @@
     "supervisor_pid": 2848985,
     "worker_pid": 2849010,
     "protocol": "configs/low_resource/local_eval.json",
-    "result_dir": "/data/local/ViSkill/results/local_eval",
-    "state_dir": "/data/local/ViSkill/state/local_eval",
+    "result_dir": "/data/local/project/results/local_eval",
+    "state_dir": "/data/local/project/state/local_eval",
     "training": false,
     "processor_note": "AutoProcessor default fast in Transformers4.56.1, matching installed official loader default; warning retained",
     "A_summary": {
@@ -1156,7 +1156,7 @@
     "final_diagnosis_audit": {
       "time_unix": 1792816851.663797,
       "allocated_bytes": {
-        "/data/local/ViSkill": 24041500672,
+        "/data/local/project": 24041500672,
         "/data/local/envs/z0": 11708379136,
         "/data/local/tools/z0": 25296896,
         "/data/local/tmp/z0": 3829760
@@ -1528,7 +1528,7 @@
       "stop_writes_at_bytes": 85000000000,
       "setup_timeout_seconds": 21600,
       "paths": [
-        "/data/local/ViSkill",
+        "/data/local/project",
         "/data/local/envs/z0",
         "/data/local/tools/z0",
         "/data/local/tmp/z0"
@@ -1547,10 +1547,10 @@
       "attempt": "ppo_runtime_setup",
       "proxy": "loopback SSH reverse forward"
     },
-    "log": "/data/local/ViSkill/logs/ppo_runtime_srt.log",
-    "exit": "/data/local/ViSkill/state/PPO_RUNTIME_SRT_EXIT.json",
+    "log": "/data/local/project/logs/ppo_runtime_srt.log",
+    "exit": "/data/local/project/state/PPO_RUNTIME_SRT_EXIT.json",
     "training": false,
-    "active_receipt": "/data/local/ViSkill/state/ppo_runtime_srt_receipt.json",
+    "active_receipt": "/data/local/project/state/ppo_runtime_srt_receipt.json",
     "repair_pids": {
       "supervisor": 2977006,
       "worker": 2977037
@@ -1891,7 +1891,7 @@
     "sync_await_records_per_arm": 152
   },
   "next_backend_score_audit": {
-    "status": "DESIGN_ONLY_NOT_FROZEN_NOT_STARTED",
+    "status": "SUPERSEDED_BY_COMPLETED_RECORDED_BACKEND_AUDIT_V2",
     "report": "reports/17_fixed_library_failure_audit.md",
     "max_saved_cases": 8,
     "new_generated_tokens": 0,
@@ -1935,5 +1935,17 @@
     "monitor_id": "viskill-12",
     "current_guard_pid": 575742,
     "old_campaign_deadline_kept_as_history": 1792858781.9046373
+  },
+  "kernel_score_reference_v1": {
+    "status": "COMPLETE_GATE_FAILED",
+    "actor_forward_samples": 8,
+    "new_native_requests": 0,
+    "generated_tokens": 0,
+    "optimizer_steps": 0,
+    "all_eight_probability_gate_pass": false,
+    "exit_code": 0,
+    "peak_incremental_bytes": 2392064,
+    "report": "reports/19_kernel_score_reference.md",
+    "decision": "Close kernel branch; next single-value-head intervention requires a separately frozen protocol and fresh target-successful on-policy data."
   }
 }

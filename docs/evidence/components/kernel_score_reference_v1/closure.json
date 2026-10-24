@@ -1,0 +1,12 @@
+{
+  "exit": {
+    "exit_code": 0,
+    "reason": null,
+    "end_unix": 1792860106.6531305,
+    "deadline_unix": 1792863512.0,
+    "peak_allocated_bytes": 68532502528,
+    "command_line_violations": []
+  },
+  "scope": "8 forward samples; no parameters/checkpoints saved",
+  "peak_incremental_bytes_including_preparation": 2392064
+}
