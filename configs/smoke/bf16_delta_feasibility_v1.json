@@ -1,0 +1,26 @@
+{
+  "name": "bf16_delta_feasibility_v1",
+  "status": "FROZEN_CPU_ENCODING_READY",
+  "preparation_started_unix": 1792870405.3465996,
+  "max_seconds_including_preparation": 1200,
+  "absolute_total_deadline": 1792899507.0,
+  "storage_baseline_reference_bytes": 83976933376,
+  "maximum_additional_bytes": 300000000,
+  "write_stop_bytes": 250000000,
+  "target": "artifacts/component_tests/value_head_single_step_v1/Z/inference_actor/model.safetensors",
+  "base": "models/b0",
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "optimizer_steps": 0,
+  "max_fixed_targets": 1,
+  "codec": "single fixed NumPy/ZIP deflate6 uint16 BF16 XOR; no codec search",
+  "source_weights_read_only": true,
+  "weight_deltas_are_private": true,
+  "gate": "All canonical keys/shapes/dtypes accounted, tied lm_head alias known, small CPU bit-roundtrip test PASS, bounded archive write completes; no full byte-identity/model reload claim. Stop on mapping/dtype/size/time failure.",
+  "purpose": "Determine recoverable small inference artifact feasibility before any distinct answer-loss mainline one-step experiment; not method efficacy",
+  "future_answer_loss_earliest_preparation_preserved": 1792869769.007,
+  "official_checkpoint_conversion_mapping": {
+    "^visual": "model.visual",
+    "^model(?!\\.(language_model|visual))": "model.language_model"
+  }
+}

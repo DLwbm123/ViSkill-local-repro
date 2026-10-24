@@ -2033,5 +2033,17 @@
     "optimizer_steps": 0,
     "parameter_gradient_attribution_established": false,
     "answer_only_training_started": false
+  },
+  "bf16_delta_feasibility_v1": {
+    "status": "COMPLETE_FORMAT_FEASIBLE",
+    "report": "reports/23_bf16_delta_feasibility.md",
+    "fixed_targets": 1,
+    "covered_tensors": 824,
+    "private_archive_bytes": 162568984,
+    "encoded_delta_is_private_model_weights": true,
+    "model_forwards": 0,
+    "optimizer_steps": 0,
+    "full_model_reload_verified": false,
+    "new_training_started": false
   }
 }

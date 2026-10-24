@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_FORMAT_FEASIBLE",
+  "error": null,
+  "completed_unix": 1792870793.8783824,
+  "preparation_started_unix": 1792870405.3465996,
+  "deadline_unix": 1792871605.3465996,
+  "covered_tensors": 824,
+  "stored_delta_arrays": 694,
+  "total_elements_processed": 3754622976,
+  "changed_BF16_elements": 56661072,
+  "private_archive_bytes": 162568984,
+  "small_CPU_bit_roundtrip_passed": true,
+  "bounded_writer_fixture_passed": true,
+  "tiny_tied_module_apply_fixture_passed": true,
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "optimizer_steps": 0,
+  "full_model_roundtrip_or_reload_verified": false,
+  "scope": "Parameter encoding only. Archive and parameter schema are PRIVATE weights, never public numerical evidence. No model byte-identity/hash check and no training-resume claim."
+}
