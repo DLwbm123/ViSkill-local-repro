@@ -2015,5 +2015,23 @@
     "original_initialization_failure_retained": true,
     "failed_attempt_business_queries": 0,
     "next_route": "CPU saved-signal loss support audit only before any distinct new mechanism protocol; no more zero-head-only training."
+  },
+  "actor_loss_support_audit_v1": {
+    "status": "COMPLETE_CPU_ONLY",
+    "report": "reports/22_actor_loss_support_audit.md",
+    "rows": 32,
+    "generated_tokens": 6329,
+    "answer_overlap_tokens": 233,
+    "nonanswer_scalar_mass_O_Z": [
+      0.9488814312287219,
+      0.9647784248795965
+    ],
+    "all_rows_nonempty_answer_mask": true,
+    "distinct_loss_region_hypothesis_feasible": true,
+    "model_forwards": 0,
+    "model_backwards": 0,
+    "optimizer_steps": 0,
+    "parameter_gradient_attribution_established": false,
+    "answer_only_training_started": false
   }
 }

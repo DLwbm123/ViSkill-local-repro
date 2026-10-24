@@ -1,0 +1,29 @@
+{
+  "name": "actor_loss_support_audit_v1",
+  "status": "FROZEN_CPU_ONLY",
+  "preparation_started_unix": 1792869769.007,
+  "max_seconds_including_preparation": 900,
+  "absolute_total_deadline": 1792899507.0,
+  "maximum_additional_bytes": 2000000,
+  "source": "Only saved C32 and O_repair1/Z outputs/configs; no model forwards/backward. Two tiny CPU scalar-autograd fixtures validate installed vanilla coefficient formula.",
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "optimizer_steps": 0,
+  "primary_definition": "For actual one-normalized-mini/one-epoch,use_rollout_log_probs=False,vanilla branch, installed worker replaces old_log_prob with current.detach so r=1 exactly. Scalar dL/dlogp coefficient = -A_it/(32*N_i) for generated token i, after micro1 token-mean and2-rank mean. This is not a parameter gradient norm or Adam influence.",
+  "roles": [
+    "answer_content_overlap",
+    "think_content_overlap",
+    "EOS",
+    "format_role_or_unparsed"
+  ],
+  "partition": "Exact saved generated spans and full response_mask; prefix token decoding character boundaries. Answer overlaps can include punctuation or tag-boundary pieces; not pure-action logits. Observation/padding coefficients excluded.",
+  "proposal_readiness_gate": "All32 have nonempty answer candidate mask, both branches nonanswer absolute scalar coefficient mass>=90%, no input/mask/span mismatch; only feasibility of a distinct actor-loss-region hypothesis, no efficacy/causality support.",
+  "selection": "All32 unchanged original frozen order, no sample filtering/resampling/no Test inference",
+  "limitations": [
+    "Posthoc objective-support description on an already observed batch",
+    "Scalar coefficient mass is not Jacobian-weighted gradient mass",
+    "Historical Stop transfer mechanism and prospective zero-head efficacy gates remain failed",
+    "No new GPU training until independent scientific protocol and recoverable artifact/storage plan ready"
+  ],
+  "CPU_scalar_autograd_fixtures_allowed": 2
+}

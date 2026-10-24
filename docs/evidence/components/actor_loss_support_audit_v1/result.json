@@ -1,0 +1,375 @@
+{
+  "status": "COMPLETE_CPU_ONLY",
+  "completed_unix": 1792869945.3617306,
+  "rows": 32,
+  "generated_tokens": 6329,
+  "answer_tokens": 233,
+  "every_episode_nonempty_answer_mask": true,
+  "per_episode": [
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 316,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130007,
+      "category": "single_BFS1",
+      "success": true,
+      "generated_tokens": 55,
+      "answer_overlap_tokens": 3,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "generated_tokens": 249,
+      "answer_overlap_tokens": 23,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 340,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130013,
+      "category": "single_BFS1",
+      "success": false,
+      "generated_tokens": 191,
+      "answer_overlap_tokens": 8,
+      "turns": 2,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "generated_tokens": 456,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130133,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 93,
+      "answer_overlap_tokens": 4,
+      "turns": 2,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130020,
+      "category": "single_BFS1",
+      "success": false,
+      "generated_tokens": 55,
+      "answer_overlap_tokens": 1,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "generated_tokens": 242,
+      "answer_overlap_tokens": 9,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130204,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 46,
+      "answer_overlap_tokens": 3,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "generated_tokens": 222,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130006,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "generated_tokens": 76,
+      "answer_overlap_tokens": 3,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130285,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 319,
+      "answer_overlap_tokens": 3,
+      "turns": 3,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130028,
+      "category": "single_BFS1",
+      "success": true,
+      "generated_tokens": 53,
+      "answer_overlap_tokens": 1,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "generated_tokens": 421,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 322,
+      "answer_overlap_tokens": 15,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130032,
+      "category": "single_BFS1",
+      "success": true,
+      "generated_tokens": 55,
+      "answer_overlap_tokens": 3,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "generated_tokens": 502,
+      "answer_overlap_tokens": 47,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 308,
+      "answer_overlap_tokens": 30,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130036,
+      "category": "single_BFS1",
+      "success": true,
+      "generated_tokens": 45,
+      "answer_overlap_tokens": 1,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130016,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "generated_tokens": 52,
+      "answer_overlap_tokens": 3,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130663,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 188,
+      "answer_overlap_tokens": 4,
+      "turns": 4,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130039,
+      "category": "single_BFS1",
+      "success": false,
+      "generated_tokens": 103,
+      "answer_overlap_tokens": 1,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "generated_tokens": 303,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130830,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 193,
+      "answer_overlap_tokens": 3,
+      "turns": 3,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 130894,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 107,
+      "answer_overlap_tokens": 3,
+      "turns": 3,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 131280,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 99,
+      "answer_overlap_tokens": 7,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 131334,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 157,
+      "answer_overlap_tokens": 16,
+      "turns": 2,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 131363,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 97,
+      "answer_overlap_tokens": 3,
+      "turns": 3,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 131364,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "generated_tokens": 39,
+      "answer_overlap_tokens": 1,
+      "turns": 1,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 131578,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 160,
+      "answer_overlap_tokens": 3,
+      "turns": 3,
+      "unparsed_turns": 0
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "generated_tokens": 465,
+      "answer_overlap_tokens": 5,
+      "turns": 5,
+      "unparsed_turns": 0
+    }
+  ],
+  "branches": {
+    "O_repair1": {
+      "roles": {
+        "answer_content_overlap": {
+          "tokens": 233,
+          "signed_coefficient_sum": -0.03867065697148915,
+          "absolute_coefficient_mass": 0.0416729490479905,
+          "absolute_mass_fraction": 0.05111856877127813
+        },
+        "think_content_overlap": {
+          "tokens": 4993,
+          "signed_coefficient_sum": 0.21038466642692155,
+          "absolute_coefficient_mass": 0.4898292935641426,
+          "absolute_mass_fraction": 0.6008543431953881
+        },
+        "EOS": {
+          "tokens": 96,
+          "signed_coefficient_sum": -0.008566242498624444,
+          "absolute_coefficient_mass": 0.008663713524385256,
+          "absolute_mass_fraction": 0.01062743687999916
+        },
+        "format_role_or_unparsed": {
+          "tokens": 1007,
+          "signed_coefficient_sum": -0.27452957694690683,
+          "absolute_coefficient_mass": 0.2750554017706145,
+          "absolute_mass_fraction": 0.33739965115333487
+        }
+      },
+      "nonanswer_absolute_mass_fraction": 0.9488814312287219,
+      "absolute_mass_total": 0.8152213579071327,
+      "actual_config_checked": true
+    },
+    "Z": {
+      "roles": {
+        "answer_content_overlap": {
+          "tokens": 233,
+          "signed_coefficient_sum": 0.0009921025798519424,
+          "absolute_coefficient_mass": 0.03543516510184605,
+          "absolute_mass_fraction": 0.03522157512040346
+        },
+        "think_content_overlap": {
+          "tokens": 4993,
+          "signed_coefficient_sum": -0.12255332687320084,
+          "absolute_coefficient_mass": 0.7654587137433381,
+          "absolute_mass_fraction": 0.7608448136248089
+        },
+        "EOS": {
+          "tokens": 96,
+          "signed_coefficient_sum": -0.004551496919006355,
+          "absolute_coefficient_mass": 0.01778108531752962,
+          "absolute_mass_fraction": 0.017673907555775595
+        },
+        "format_role_or_unparsed": {
+          "tokens": 1007,
+          "signed_coefficient_sum": -0.04862145026758515,
+          "absolute_coefficient_mass": 0.18738921612202486,
+          "absolute_mass_fraction": 0.18625970369901207
+        }
+      },
+      "nonanswer_absolute_mass_fraction": 0.9647784248795965,
+      "absolute_mass_total": 1.0060641802847385,
+      "actual_config_checked": true
+    }
+  },
+  "distinct_loss_region_hypothesis_feasible": true,
+  "coefficient_definition": "-A_it/(32*N_i) on generated tokens. Actual installed one-normalized-mini/one-epoch/use_rollout_log_probsFalse branch sets old_logp=current.detach; r=1 exactly. No entropy/KL/IS contribution in this diagnostic.",
+  "CPU_scalar_autograd_fixture_branches": 2,
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "model_backward_passes": 0,
+  "optimizer_steps": 0,
+  "limitations": [
+    "Posthoc saved-batch objective support, not independent performance evidence",
+    "Coefficient mass is not Jacobian-weighted parameter-gradient mass, Adam influence or Stop causality",
+    "Answer-overlap includes punctuation/boundary tokens; no pure-action-logit claim",
+    "Old zero-head performance and historical Stop mechanism gates remain failed"
+  ]
+}

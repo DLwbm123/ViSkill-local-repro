@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+Saved-batch CPU audit: answer-overlap tokens account for5.11%/3.52% of absolute scalar logprob-loss coefficient mass in O/Z; this is **not parameter-gradient attribution or efficacy evidence**. All32 rows admit a nonempty answer mask; no new model forward or training. See [report22](reports/22_actor_loss_support_audit.md).
+
 Prospective validation (2026-10-25): the zero-head performance hint **failed its frozen gate** on32 new boards. Conditional success/quality were7/6 for original b0,3/3 for O,4/4 for Z (each/16); Z had6 success declines against b0. Other-multistep Stop turns increased4 to10. All96 episodes and364 calls completed with0 new training. This closes the zero-head-only performance route; see [report21](reports/21_prospective_value_head_eval.md). Historical results and the retained zero-query initialization fault are preserved.
 
 Latest single-step control (2026-10-25): the zero value-head arm gained **one conditional success (0/8 to1/8)**; the original-head arm stayed0/8 and both other-multistep panels stayed1/8. Paired intervals include zero. The two historical Stop transfer probes failed the predicted direction, and the fresh training batch contained no Stop turns. No stable learning benefit or collapse cause is established. All96 episodes,338 native calls, retained pre-update serialization failure and numeric signals are reported in [report20](reports/20_value_head_single_step.md). Two inference snapshots are retained privately; no further training is started.
