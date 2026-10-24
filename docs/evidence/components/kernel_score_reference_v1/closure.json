@@ -8,5 +8,7 @@
     "command_line_violations": []
   },
   "scope": "8 forward samples; no parameters/checkpoints saved",
-  "peak_incremental_bytes_including_preparation": 2392064
+  "peak_incremental_bytes_including_preparation": 2392064,
+  "post_export_observed_incremental_bytes": 2404352,
+  "storage_accounting_scope": "Guard peak through runtime exit; separate post-export observation includes numeric publication artifacts."
 }
