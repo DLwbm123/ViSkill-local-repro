@@ -1,0 +1,61 @@
+{
+  "name": "bf16_delta_reload_v1",
+  "status": "FROZEN_CPU_READY",
+  "preparation_started_unix": 1792871569.412,
+  "max_seconds_including_preparation": 3600,
+  "absolute_total_deadline": 1792899507,
+  "maximum_additional_bytes": 100000000,
+  "write_stop_additional_bytes": 90000000,
+  "storage_baseline_reference_bytes": 84139737088,
+  "project_write_stop_bytes": 85000000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "policy_order": [
+    "full",
+    "delta"
+  ],
+  "model_paths": {
+    "full": "artifacts/component_tests/value_head_single_step_v1/Z/inference_actor",
+    "delta": "models/b0"
+  },
+  "fixed_input": "Existing C/shared_batch.pt first two rows in original order, seeds130014/130007; no outcome selection or reconstruction",
+  "business_forward_samples_per_policy": 2,
+  "extra_alignment_samples_per_policy": 2,
+  "total_actual_actor_forward_samples": 8,
+  "actor_path": "Production FSDP FP32 master/BF16 mixed precision, fused kernels, micro1; actor-only role skips unused rollout initialization",
+  "generated_tokens": 0,
+  "environment_steps": 0,
+  "critic_forwards": 0,
+  "optimizer_steps": 0,
+  "new_model_snapshots": 0,
+  "probability_gate": {
+    "per_row_max_abs_nats": 0.05,
+    "per_row_mean_abs_nats": 0.005
+  },
+  "hard_fail": [
+    "key/shape/dtype/alias mismatch",
+    "actual HF missing/unexpected/mismatched/error",
+    "nonfinite",
+    "numeric gate failure",
+    "budget/time or command-line privacy violation"
+  ],
+  "stopping": "One fixed pair, no model fallback, extra score, seed, threshold change or GPU codec search. Retain failure and all original protected models.",
+  "purpose": "Required operational inference-artifact recovery gate before any independently frozen answer-region actor loss intervention; no learning or FP32/optimizer resume claim.",
+  "earliest_followup_research_preparation_unix": 1792869769.007,
+  "private_weights": "The existing encoded delta and parameter schema remain remote and private; only scores and nonparameter metadata may be published.",
+  "cpu_preflight_completed_unix": 1792871740.6381433,
+  "initial_CPU_assertion_failure_retained": "Optional mixed_precision section absent; corrected assertion to actual dtype=bfloat16,0 model initialization/forward,original preparation clock retained.",
+  "policy_output_folders": {
+    "full": "full_repair1",
+    "delta": "delta"
+  },
+  "pre_model_initialization_repair": {
+    "original_worker_failure": "Colocation framework selects MRO base by class name Worker. New custom Worker collided and outer constructor lacked config/role, before any model initialization or score. Rename LocalActor and regression-check actual selector.",
+    "original_zero_exit_contract_pass": false,
+    "business_scores_replayed": 0,
+    "original_start_and_all_costs_preserved": true,
+    "repair_limit": 1
+  }
+}

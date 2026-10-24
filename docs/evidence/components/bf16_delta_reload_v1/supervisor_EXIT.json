@@ -1,0 +1,10 @@
+{
+  "exits": {
+    "full": 1
+  },
+  "reason": "RuntimeError('full exited 1; preserve completed calls/updates, no replay')",
+  "end_unix": 1792871800.238844,
+  "peak_allocated_bytes": 84140363776,
+  "deadline_unix": 1792875169.412,
+  "command_line_violations": []
+}

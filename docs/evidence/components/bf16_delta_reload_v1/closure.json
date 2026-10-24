@@ -1,0 +1,9 @@
+{
+  "observed_unix": 1792873384.364959,
+  "own_residual_processes": [],
+  "current_allocated_bytes": 84142272512,
+  "campaign_added_bytes": 15650463744,
+  "component_additional_bytes": 2535424,
+  "campaign_guard_status": "ACTIVE",
+  "original_models_preserved": true
+}

@@ -1,0 +1,28 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792871740.6381433,
+  "rows": 2,
+  "seeds": [
+    130014,
+    130007
+  ],
+  "exact_saved_multimodal_batch": true,
+  "checks": {
+    "full": {
+      "actor_only_role": true,
+      "same_mixed_precision_config": true,
+      "actual_HF_config_tied": true,
+      "worker_colocation_API_valid": true
+    },
+    "delta": {
+      "actor_only_role": true,
+      "same_mixed_precision_config": true,
+      "actual_HF_config_tied": true,
+      "worker_colocation_API_valid": true
+    }
+  },
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "optimizer_steps": 0,
+  "retained_preflight_failure": "Initial CPU guard incorrectly expected optional mixed_precision section; actual resolved config uses FSDPEngineConfig.dtype=bfloat16. Fixed assertion without changing model settings, before any Ray/model startup."
+}

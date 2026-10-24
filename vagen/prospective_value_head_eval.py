@@ -14,6 +14,9 @@ def validate_loading(info,tied):
     return {'missing_keys':missing,'unexpected_keys':[],'mismatched_keys':[],'error_msgs':[],'actual_embedding_parameter_tied':True}
 
 class EvalActor(SingleActor):
+    def prepare_loaded_model(self,model):
+        return {}
+
     def _build_model_optimizer(self,*args,**kwargs):
         from transformers import AutoConfig,AutoModelForVision2Seq,AutoModelForCausalLM,AutoModelForImageTextToText
         config=AutoConfig.from_pretrained(kwargs['model_path'],trust_remote_code=True)
@@ -26,6 +29,7 @@ class EvalActor(SingleActor):
             model,info=original(*a,**kw,output_loading_info=True)
             tied=model.get_input_embeddings().weight is model.get_output_embeddings().weight
             check=validate_loading(info,tied);called.append(check)
+            check.update(self.prepare_loaded_model(model))
             if self.rank==0:
                 check.update(auto_class=selected.__name__,policy=os.environ['TASK_PHASE'],scope='Actual model initialization; no extra load, hash or full-state equality claim.')
                 (Path(os.environ['PILOT_OUT'])/'actual_loading_info.json').write_text(json.dumps(check,indent=2))

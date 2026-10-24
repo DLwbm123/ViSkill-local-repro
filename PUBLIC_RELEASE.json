@@ -137,5 +137,12 @@
     "files_restored": 65,
     "reason": "Prior broad models/ ignore accidentally excluded bundled veRL model implementations and tests; output directory exclusions are now root-anchored."
   },
-  "sanitized_text_files_latest_update": 17
+  "sanitized_text_files_latest_update": 17,
+  "bf16_delta_reload_v1": {
+    "source_commit": "f1521b9d3079e7e42bff7bfe287ea57ea4798164",
+    "report": "reports/24_bf16_delta_reload.md",
+    "private_learned_delta_and_schema_exported": false,
+    "two_input_operational_gate_pass": true,
+    "learning_gain_established": false
+  }
 }

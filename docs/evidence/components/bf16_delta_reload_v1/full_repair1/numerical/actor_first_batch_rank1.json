@@ -1,0 +1,16 @@
+{
+  "samples": [
+    {
+      "seed": 130007,
+      "generated_tokens": 55,
+      "processed_image_count": 2,
+      "max_abs_logprob_error": 0.0,
+      "mean_abs_logprob_error": 0.0
+    }
+  ],
+  "extra_forward_seconds": 0.34758472442626953,
+  "max_abs_logprob_error": 0.0,
+  "rng_preserved": true,
+  "same_preupdate_weights": true,
+  "SGLang_logprob_alignment_verified": false
+}

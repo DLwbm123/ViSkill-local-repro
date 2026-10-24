@@ -1,0 +1,11 @@
+{
+  "exits": {
+    "full": 0,
+    "delta": 0
+  },
+  "reason": null,
+  "end_unix": 1792872274.4074917,
+  "peak_allocated_bytes": 84142276608,
+  "deadline_unix": 1792875169.412,
+  "command_line_violations": []
+}

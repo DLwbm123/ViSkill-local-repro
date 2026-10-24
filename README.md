@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+Bounded inference-artifact recovery: existing Z loaded from its full snapshot and from retained b0 plus a private BF16 delta produced identical logprobs on two fixed saved inputs (371 generated tokens). Eight actual actor forwards, zero training/generation; the original zero-score initialization fault remains recorded. This is operational recovery evidence only; see [report24](reports/24_bf16_delta_reload.md).
+
 Saved-batch CPU audit: answer-overlap tokens account for5.11%/3.52% of absolute scalar logprob-loss coefficient mass in O/Z; this is **not parameter-gradient attribution or efficacy evidence**. All32 rows admit a nonempty answer mask; no new model forward or training. See [report22](reports/22_actor_loss_support_audit.md).
 
 Prospective validation (2026-10-25): the zero-head performance hint **failed its frozen gate** on32 new boards. Conditional success/quality were7/6 for original b0,3/3 for O,4/4 for Z (each/16); Z had6 success declines against b0. Other-multistep Stop turns increased4 to10. All96 episodes and364 calls completed with0 new training. This closes the zero-head-only performance route; see [report21](reports/21_prospective_value_head_eval.md). Historical results and the retained zero-query initialization fault are preserved.
