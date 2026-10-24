@@ -1,0 +1,24 @@
+{
+  "start_unix": 1792882654.194612,
+  "preparation_start_unix": 1792876970.446,
+  "deadline_unix": 1792891370.446,
+  "original_total_deadline": 1792899507,
+  "supervisor_pid": 1888737,
+  "baseline_bytes": 84359839744,
+  "write_limit_bytes": 84927259392,
+  "maximum_additional_bytes": 650000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "full_checkpoint_save": false,
+  "new_private_inference_delta": true,
+  "new_global_actor_step_limit": 2,
+  "arms": {
+    "collect": {
+      "start_unix": 1792882654.5340903,
+      "deadline_unix": 1792891370.446,
+      "exit_code": 1
+    }
+  }
+}

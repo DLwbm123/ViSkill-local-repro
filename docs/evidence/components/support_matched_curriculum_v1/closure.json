@@ -1,0 +1,19 @@
+{
+  "closed_unix": 1792884829.7378752,
+  "owned_residual_processes": 0,
+  "current_allocated_bytes": 84365950976,
+  "candidate_reference_incremental_bytes": 58691584,
+  "campaign_incremental_bytes": 15874142208,
+  "guard_active": true,
+  "status": "ENGINEERING_FAILURE_NO_TRAINING_OR_DEV",
+  "original_exit_preserved": true,
+  "all40_outcomes_preserved": true,
+  "native_calls": 134,
+  "rollout_calls": 132,
+  "unexpected_distill_calls": 2,
+  "actor_optimizer_steps": 0,
+  "critic_optimizer_steps": 0,
+  "private_processed_bank_saved": false,
+  "paired_scientific_gate_evaluated": false,
+  "resampling_allowed": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "CPU_DISPATCH_GUARD_PASS",
+  "completed_unix": 1792884818.7489715,
+  "original_resolved_distill_mode": "self",
+  "corrected_future_config_mode": "disabled",
+  "actual_original_should_distill_fixture": true,
+  "actual_corrected_should_distill_fixture": false,
+  "new_model_forwards": 0,
+  "new_optimizer_steps": 0,
+  "new_environment_steps": 0,
+  "failed_job_relaunched": false,
+  "scope": "Only future dispatch prevention; original failed protocol and all134 calls remain unchanged. No current-pair resampling or training."
+}

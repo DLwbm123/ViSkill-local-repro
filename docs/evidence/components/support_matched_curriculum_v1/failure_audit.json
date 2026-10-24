@@ -1,0 +1,1128 @@
+{
+  "status": "COMPLETE_POSTHOC_FAILURE_CENSUS",
+  "preparation_started_unix": 1792884681.834,
+  "deadline_unix": 1792885281.834,
+  "completed_unix": 1792884781.9952993,
+  "maximum_new_audit_bytes": 2000000,
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "model_optimizer_steps": 0,
+  "environment_steps": 0,
+  "new_model_dispatches": 0,
+  "actual_saved_collection": {
+    "episodes": 40,
+    "rollout_calls": 132,
+    "distill_calls": 2,
+    "total_calls": 134
+  },
+  "counts": {
+    "all": {
+      "episodes": 40,
+      "success": 15,
+      "quality": 13,
+      "Stop_turns": 3,
+      "Stop_episodes": 2,
+      "holes": 8
+    },
+    "conditional": {
+      "episodes": 16,
+      "success": 8,
+      "quality": 6,
+      "Stop_turns": 1,
+      "Stop_episodes": 1,
+      "holes": 2
+    },
+    "medium": {
+      "episodes": 8,
+      "success": 2,
+      "quality": 2,
+      "Stop_turns": 0,
+      "Stop_episodes": 0,
+      "holes": 3
+    },
+    "single": {
+      "episodes": 8,
+      "success": 5,
+      "quality": 5,
+      "Stop_turns": 2,
+      "Stop_episodes": 1,
+      "holes": 1
+    },
+    "long": {
+      "episodes": 8,
+      "success": 0,
+      "quality": 0,
+      "Stop_turns": 0,
+      "Stop_episodes": 0,
+      "holes": 2
+    }
+  },
+  "records": [
+    {
+      "seed": 400035,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down",
+        "down",
+        "down"
+      ],
+      "action_count": 3,
+      "turns": 5,
+      "stop_turns": 2,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_2",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400002,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400001,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 5,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400017,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "up",
+        "left",
+        "down",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400346,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": false,
+      "actions": [
+        "up",
+        "down",
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 4,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 402408,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400026,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 7,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "left",
+        "up",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400004,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400011,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 5,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 10,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 401283,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "up",
+        "right",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400005,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_0",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 401689,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "right",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 5,
+      "stop_turns": 1,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400784,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400008,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "left"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_3",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400007,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_2",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400010,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 5,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "up",
+        "left",
+        "left",
+        "left",
+        "left",
+        "down"
+      ],
+      "action_count": 7,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400139,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "up",
+        "right"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400006,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "down"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_1",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400003,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400014,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "down",
+        "right",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400013,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "quality_ratio"
+      }
+    },
+    {
+      "seed": 401246,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 402314,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down",
+        "left",
+        "left",
+        "left",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400474,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400044,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_2",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400018,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "raw": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": false,
+        "reason": "relative goal condition mismatch",
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 401105,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 401657,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "right",
+        "down"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400030,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 5,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400015,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "raw": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "valid": false,
+        "reason": "relative goal condition mismatch",
+        "model_calls": 1
+      }
+    },
+    {
+      "seed": 400025,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400037,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "long",
+      "bfs": 5,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400009,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_2",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400284,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 401903,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400012,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "down",
+        "down",
+        "down"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400062,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_0",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    },
+    {
+      "seed": 400016,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 400036,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "left",
+        "up",
+        "left"
+      ],
+      "action_count": 4,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "not_success"
+      }
+    },
+    {
+      "seed": 402550,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "distillation_audit": {
+        "model_calls": 0,
+        "reason": "already_covered"
+      }
+    }
+  ],
+  "library_json_unchanged": true,
+  "admissions": 0,
+  "exact_processed_bank_preserved": false,
+  "new_training_steps": 0,
+  "new_Dev_episodes": 0,
+  "frozen_scientific_gate_evaluated": false,
+  "cause": "Inherited train-phase distill.mode=self permits independent self-distillation; the no-distill assertion runs only after all40 trajectories. Two attempts occurred. Assertion stopped before private bank persistence and before any actor scoring/update.",
+  "decision": "Close the dispatched pair as engineering/protocol failure; preserve all40 outcomes/134 calls, no repeated sampling or reconstruction-as-original-input training.",
+  "scope": "Posthoc full census of completed collection, not a heldout performance comparison or a scientific rejection of support matching."
+}

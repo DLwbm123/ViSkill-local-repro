@@ -182,10 +182,18 @@
     "basic_usability_passed": true
   },
   "support_matched_curriculum_v1": {
-    "source_commit": "617e9c2720c111b7a492477eb8b8c4c21f14d168",
+    "source_commit": "3620d07ad81a6e4398c0ec5b7d289916b9f0e621",
     "report": "reports/28_support_matched_curriculum.md",
-    "status": "FROZEN_CPU_READY_BEFORE_MODELCALL",
+    "status": "CLOSED_WITH_ENGINEERING_PROTOCOL_FAILURE",
     "actual_model_calls_at_publication": 0,
-    "private_input_or_weights_exported": false
+    "private_input_or_weights_exported": false,
+    "result_report": "reports/29_curriculum_collection_failure.md",
+    "actual_collection_episodes": 40,
+    "actual_rollout_calls": 132,
+    "unexpected_distill_calls": 2,
+    "new_global_actor_steps": 0,
+    "actual_Dev_episodes": 0,
+    "private_bank_saved": false,
+    "paired_scientific_gate_evaluated": false
   }
 }

@@ -1,0 +1,1 @@
+{"time": 1792882807.9929202, "pid": 1891908, "rank": 1, "sync_count": 1, "update_weights_await_returned": true, "scope": "actual rollout-mode tensor update returned; not a full-weight identity check"}

@@ -59,6 +59,7 @@ def make_config(phase,folder):
     cfg.data.train_batch_size=cfg.data.gen_batch_size=40 if phase=='collect' else 32
     cfg.actor_rollout_ref.actor.ppo_mini_batch_size=40 if phase=='collect' else 32
     cfg.actor_rollout_ref.actor.optim.total_training_steps=1
+    cfg.skill_system.distill.mode='disabled'  # Intended no-distillation contract; the failed dispatch inherited self.
     cfg.data.val_batch_size=1;cfg.actor_rollout_ref.rollout.agent.num_workers=4 if phase=='collect' else 1
     cfg.algorithm.adv_estimator='gae' if phase in ['Q','R','reload_Q','reload_R'] else 'grpo'
     cfg.ray_kwargs.ray_init._temp_dir='/data/tmp/z0/c'+str(protocol()['phase_order'].index(phase))

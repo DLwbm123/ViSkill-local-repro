@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+Curriculum pair closed after collection: all40 episodes/134 calls retained, but two unintended distillation calls violated the frozen zero-distillation contract. No actor update or Dev evaluation occurred; long-start success0/8 also misses the prespecified positive-feedback prerequisite. See [report29](reports/29_curriculum_collection_failure.md). This is an engineering/protocol failure, with no paired learning result.
+
 CPU input readiness: the fixed gzip1 container reduced one existing C32 input from290.59MB to27.54MB with basic loading checks, zero model operations. Private inputs stay remote. A new support-matched curriculum comparison now has a frozen80-board protocol and CPU-checked interfaces; no model calls or results at publication. See [report27](reports/27_input_container_feasibility.md) and [protocol28](reports/28_support_matched_curriculum.md).
 
 CPU retention screen:9/16 natural Dev starts have BFS4–6 while C32 starts stop at3; this does not establish the cause of the single natural regression. Tiny AdamW fixtures retain an epsilon-sensitive counterexample, and identical-reference KL/EWC have zero initial penalty gradients. No new GPU experiment; a support-matched curriculum remains design-only with input-storage readiness unresolved. See [report26](reports/26_retention_cpu_screen.md).

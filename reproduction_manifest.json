@@ -2120,7 +2120,7 @@
     "report": "reports/27_input_container_feasibility.md"
   },
   "support_matched_curriculum_v1": {
-    "status": "FROZEN_CPU_READY_NO_MODEL_RESULT",
+    "status": "CLOSED_WITH_ENGINEERING_PROTOCOL_FAILURE",
     "bank_rows": 40,
     "Dev_rows": 40,
     "branch_training_rows": 32,
@@ -2128,6 +2128,17 @@
     "maximum_global_actor_steps": 2,
     "maximum_native_calls": 800,
     "deadline_unix": 1792891370.446,
-    "report": "reports/28_support_matched_curriculum.md"
+    "report": "reports/28_support_matched_curriculum.md",
+    "actual_collection_episodes": 40,
+    "actual_rollout_calls": 132,
+    "unexpected_distill_calls": 2,
+    "new_global_actor_steps": 0,
+    "actual_Dev_episodes": 0,
+    "processed_bank_preserved": false,
+    "paired_scientific_gate_evaluated": false,
+    "long_collection_successes": 0,
+    "long_collection_denominator": 8,
+    "resampling_allowed": false,
+    "result_report": "reports/29_curriculum_collection_failure.md"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "exits": {
+    "collect": 1
+  },
+  "reason": "RuntimeError('collect exited 1; preserve completed calls/updates, no replay')",
+  "end_unix": 1792882947.26426,
+  "peak_allocated_bytes": 84365852672,
+  "deadline_unix": 1792891370.446,
+  "command_line_violations": []
+}
