@@ -1,0 +1,86 @@
+[
+  {
+    "condition": "explicit_route_clause",
+    "response": "```plaintext\n<strategy>\n    WHEN the elf is at the top-left corner of the board and the gift is located at the bottom-right corner of the board,\n    PROVIDED THAT no hole exists on the route from the elf to the gift,\n    THEN record the actions as follows:\n        {\"direction\": \"down\", \"count\": 3}\n        {\"direction\": \"right\", \"count\": 3}\n</strategy>\n```",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ]
+    ],
+    "image_tokens": 81,
+    "prompt_tokens": 245,
+    "completion_tokens": 88,
+    "pixel_stats": {
+      "shape": [
+        324,
+        1176
+      ],
+      "mean": 1.7262396812438965,
+      "std": 0.6209819316864014
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          81,
+          2048
+        ]
+      ],
+      "norm": [
+        476.0726318359375
+      ]
+    },
+    "generation_seconds": 2.770641803741455
+  },
+  {
+    "condition": "structured_applicability_fields",
+    "response": "```json\n{\n  \"applicability\": \"The elf is at the top-left corner, and the gift is at the bottom-right corner.\",\n  \"route_requirement\": \"A clear path from the top-left to the bottom-right is required.\",\n  \"actions_summary\": \"The elf has moved down 3 times and right 3 times.\"\n}\n```",
+    "strict_tags": false,
+    "image_sizes": [
+      [
+        256,
+        256
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ]
+    ],
+    "image_tokens": 81,
+    "prompt_tokens": 245,
+    "completion_tokens": 74,
+    "pixel_stats": {
+      "shape": [
+        324,
+        1176
+      ],
+      "mean": 1.7262396812438965,
+      "std": 0.6209819316864014
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          81,
+          2048
+        ]
+      ],
+      "norm": [
+        476.0726318359375
+      ]
+    },
+    "generation_seconds": 1.4988994598388672
+  }
+]

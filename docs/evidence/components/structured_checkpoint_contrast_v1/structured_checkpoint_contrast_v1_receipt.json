@@ -1,0 +1,13 @@
+{
+  "original_start_unix": 1792772381.9046373,
+  "start_unix": 1792818440.900457,
+  "deadline_unix": 1792818740.900457,
+  "supervisor_pid": 3652054,
+  "worker_pid": 3652080,
+  "physical_gpu": 4,
+  "fixture_only": false,
+  "training": false,
+  "protocol": "structured_checkpoint_contrast_v1",
+  "original_preparation_window_remains_closed": true,
+  "write_limit_bytes": 36029133440
+}

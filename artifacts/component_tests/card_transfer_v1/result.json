@@ -1,0 +1,22 @@
+{
+  "fixture_only": true,
+  "test": "one fixed local base-policy card transfer, no resampling",
+  "success": false,
+  "turns": [
+    {
+      "turn": 0,
+      "response": "<think>There is a hole directly ahead, so I need to move down to avoid it. After that, I will continue moving right to reach the goal.</think>\n<answer>Down, Right</answer>",
+      "executed_actions": [
+        "down",
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false,
+      "prompt_tokens": 618
+    }
+  ],
+  "wall_seconds": 31.38595676422119,
+  "peak_gpu_allocated_bytes": 7599674368,
+  "skill_id": "skill_0",
+  "retrieval_score": 0.95
+}

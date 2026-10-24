@@ -1,0 +1,27 @@
+{
+  "original_E": "PARTIAL: original free-text strategy semantic failures preserved",
+  "directional_variant_E": "SCOPED_COMPONENT_PASS",
+  "variant_config": "configs/low_resource/directional_skill_system.yaml",
+  "D": "PASS engineering only",
+  "evidence": [
+    "artifacts/component_tests/directional_contract_v1/result.json",
+    "artifacts/component_tests/directional_agent_loop_v1/result.json",
+    "artifacts/component_tests/directional_native_loop_v1_recovery/result.json"
+  ],
+  "negative_retained": [
+    "signed-coordinate strategies",
+    "original prompts",
+    "invalid multi-step contracts",
+    "first native role-envelope parse failures",
+    "initial missing-cachetools entry failure"
+  ],
+  "limits": [
+    "privileged environment-state verification/retrieval",
+    "current accepted skills are one-step",
+    "no paper-performance claim",
+    "no native Ray/FSDP weight sync yet",
+    "PPO NOT RUN"
+  ],
+  "next": "Prepare exactly1 full-parameter PPO step for the named variant only; all actual F acceptance must be measured, no automatic300-step training",
+  "original_total_deadline": 1792858781.9046373
+}

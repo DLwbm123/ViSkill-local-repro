@@ -1,0 +1,10 @@
+{
+  "skill_system.checkpoint_pairing.enable": true,
+  "default_in_upstream": false,
+  "scope": "local policy/skill checkpoint pairing; no optimizer-continuous resume claim",
+  "publication_order": ["actor", "critic", "dataloader", "paired skill snapshot and marker", "latest step tracker"],
+  "resume_order": ["validate step/roles/index/images", "load actor/critic/dataloader", "restore skill snapshot and refresh callback"],
+  "prior_active_library": "retained as uniquely named before_restore backup",
+  "tests": "6 CPU persistence tests; dummy model role files, not actual PPO checkpoint validation",
+  "training": false
+}

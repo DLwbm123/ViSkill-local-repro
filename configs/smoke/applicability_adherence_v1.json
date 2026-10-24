@@ -1,0 +1,38 @@
+{
+  "experiment": "applicability_adherence_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "Does adding the model-generated route-validity clause actually prevent following an unsafe retrieved route?"
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "same existing solver-only SFFF/FHHF/FFFF/FFFG component fixture; no new seeds or held-out evaluation data",
+  "conditions": [
+    "original_map_policy_reuse",
+    "blocked_first_down_policy_reuse"
+  ],
+  "generation": {
+    "seed": 42,
+    "do_sample": false,
+    "repetition_penalty": 1.05,
+    "max_new_tokens": 256,
+    "one_generation_per_condition": true
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "Policy action safety test, not merely wording validation. Original and counterfactual maps frozen in strategy_applicability_v1. No threshold adjustment, no ground-truth action intervention.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 900,
+  "baseline_four_roots_bytes": 35777069056,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Use the predeclared prose route-clause output, unchanged, to match existing strategy-tag interface; both maps once, max5 turns each, no additional caption generation. Share deadline1792815515.061637 and original24h clock."
+}

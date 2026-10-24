@@ -1,0 +1,44 @@
+[
+  {
+    "name": "visual_condition",
+    "raw": "The elf is at the top-left corner of the board. The gift is located at the bottom-right corner of the board.",
+    "prompt_tokens": 154,
+    "image_count": 1
+  },
+  {
+    "name": "action_compression",
+    "raw": "```json\n[\n    {\"direction\": \"down\", \"count\": 3},\n    {\"direction\": \"right\", \"count\": 3}\n]\n```",
+    "prompt_tokens": 69,
+    "image_count": 0
+  },
+  {
+    "name": "strategy",
+    "raw": "<strategy>\nWHEN the elf is at the top-left corner of the board AND the gift is located at the bottom-right corner of the board THEN move down three times and then move right three times.\n</strategy>",
+    "prompt_tokens": 264,
+    "image_count": 1
+  },
+  {
+    "name": "reuse_0",
+    "raw": "<think>Since the goal is located at the bottom-right corner and the elf is at the top-left corner, I need to move downwards to get closer to the goal. The presence of frozen tiles suggests that I might need to move diagonally to avoid the hole.</think>\n<answer>Down, Down, Down</answer>",
+    "prompt_tokens": 651,
+    "image_count": 2
+  },
+  {
+    "name": "reuse_1",
+    "raw": "<think>Given the current position and the frozen tiles, moving diagonally will help me navigate around the obstacles. Since the goal is still far away, I should continue moving downwards to get closer.</think>\n<answer>Down, Down, Down</answer>",
+    "prompt_tokens": 845,
+    "image_count": 3
+  },
+  {
+    "name": "reuse_2",
+    "raw": "<think>Since the goal is still not within reach and I have already moved down three times, I should try moving right to explore other possible paths. The frozen tiles suggest that diagonal movement might be necessary to avoid the hole.</think>\n<answer>Right, Down, Down</answer>",
+    "prompt_tokens": 1025,
+    "image_count": 4
+  },
+  {
+    "name": "reuse_3",
+    "raw": "<think>With the goal still out of reach and the presence of frozen tiles, I should continue moving right to explore other potential paths. This will allow me to potentially find a way around the obstacles.</think>\n<answer>Right, Right, Down</answer>",
+    "prompt_tokens": 1211,
+    "image_count": 5
+  }
+]

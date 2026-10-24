@@ -1,0 +1,15 @@
+{
+  "purpose": "Single-factor diagnostic of exact prompt-example copying observed in SGLang fixture v1",
+  "fixture": "same original six-action component fixture; no training use",
+  "model": "same pinned base b0",
+  "prompt": "original distill template with example block removed only; ground_actions=false",
+  "render": "same original120px path annotation",
+  "sampling": "same greedy seed42; exactly one strategy generation; max256tokens",
+  "reuse": "same fixture max5turns max512tokens, visual card injected and retrieved",
+  "backend": "SGLang0.5.2 with Triton text attention, SDPA vision attention",
+  "budget": "original setup deadline plus max600seconds per diagnostic; 85GB write stop",
+  "not_a_claim": "No training, no new seeds, no generalization, no fixture cold-start",
+  "include_examples": false,
+  "original_defaults_preserved": true,
+  "stop": "one generation, no resampling; if semantic/reuse failure persists, no further fixture prompt variants in this preparation attempt"
+}

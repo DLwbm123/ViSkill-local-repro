@@ -1,0 +1,8 @@
+{
+  "raw": "<strategy>\nWHEN adjacent to a blue object\nWHAT move down once\n</strategy>",
+  "relative_evidence": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+  "action_compression": "```json\n[\n    {\"direction\": \"down\", \"count\": 1}\n]\n```",
+  "eligibility_from_prior_quality_gate": true,
+  "paper_exact": false,
+  "semantic_review_required": true
+}

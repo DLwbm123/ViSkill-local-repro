@@ -1,0 +1,13 @@
+{
+  "fixture_only": true,
+  "different_seed_same_geometry": true,
+  "metrics": {
+    "skill/admitted": 2,
+    "skill/library_size": 2,
+    "skill/retrieved_count": 0,
+    "skill/avg_utility": 0.5,
+    "skill/avg_score": 0.0
+  },
+  "expected_admissions": 1,
+  "actual_admissions": 2
+}

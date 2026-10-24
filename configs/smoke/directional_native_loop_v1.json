@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_FORMAT_NEGATIVE",
+  "purpose": "Qualify the same explicit directional variant through the real GymAgentLoop and bundled SGLangHttpServer.generate method with a local native SGLang Engine.",
+  "scope": "Same fixed training seeds1..8 once in the native backend from an empty library, then same8 reuse only if a valid skill is admitted. Separate backend integration test; do not replace earlier results or compare sample success rates as a controlled performance estimate.",
+  "representation": "directional_contract_v1; exact prompt builder preserved; one greedy current-policy request per quality-success trajectory, no correction; strict field verification with lossless single outer JSON fence support.",
+  "backend": "Local SGLang0.5.2 Engine, BF16, text Triton/vision SDPA, TP1, mem_fraction_static0.25, context9216, single request. Invoke the actual bundled SGLangHttpServer.generate method on a local handle with Engine tokenizer_manager. No Ray actor scheduling, FSDP weight synchronization or PPO verification is implied.",
+  "training_sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "seed": 42,
+    "max_new_tokens": 512
+  },
+  "limits": {
+    "max_turns": 5,
+    "max_distill_calls": 16,
+    "max_model_calls": 96,
+    "max_context_tokens": 9216
+  },
+  "acceptance": [
+    "Actual successful rollout with valid current-policy contract",
+    "Callback admission into initially empty library and save/reload",
+    "Actual guarded retrieval, skill image injection, reward and utility update",
+    "Raw output/masks/trajectory/strategy audit preserved",
+    "Report rejected contracts and all outcomes; no selected successful sample reporting"
+  ],
+  "non_original": [
+    "Directional JSON strategy and greedy distillation",
+    "Privileged environment-state admission/retrieval verification",
+    "Explicit bounded state-progress reward and batch novelty repair",
+    "Native backend uses Triton/SDPA instead of default FA3; local handle omits distributed transport only"
+  ],
+  "default_behavior": "Existing free_text and unguarded configs retain original behavior. No default changes. Unknown/stochastic dynamics fail the optional guard.",
+  "stop": "Zero admitted collection skills stops reuse. No new seeds/models/prompts. No training or automatic E/PPO release; evaluate full evidence first.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 900,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

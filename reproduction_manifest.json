@@ -1,0 +1,1621 @@
+{
+  "paper_title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
+  "arxiv_id": "2610.12403v1",
+  "paper_local_path": "/path/to/2610.12403v1.pdf",
+  "repository_url": "https://github.com/ZJU-REAL/ViSkill",
+  "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "branch": "repro/local-no-api",
+  "stage": "C/D PASS; original E PARTIAL; directional E scoped PASS; F PARTIAL (updates/save/reload verified, zero skill admission); G/H NOT RUN",
+  "audit_date": "2026-10-24",
+  "base_model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "released_checkpoint_id": "hongxingli/ViSkill-FrozenLake",
+  "huggingface_revisions": {
+    "hongxingli/ViSkill-FrozenLake": "edafb2b71f73afb1c35b82d264346c2ae2b5981e",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3"
+  },
+  "huggingface_revision_status": "Both fixed model snapshots downloaded; released *.jinja omission repaired with exact pinned file; both models and released 265-card library loaded",
+  "python_version": "3.10.22",
+  "python_role": "independent reproduction environment /data/local/envs/z0",
+  "pytorch_version": "2.8.0+cu128",
+  "cuda_version": {
+    "driver_max": "13.2",
+    "system_toolkit": "13.2.51",
+    "probe_torch_runtime": "12.8",
+    "reproduction_torch_runtime": "12.8"
+  },
+  "gpu": {
+    "target_server": "pro5000",
+    "max_gpu_count": 3,
+    "hardware_verified": true,
+    "authorized_indices": [
+      3,
+      4,
+      5
+    ],
+    "model": "NVIDIA RTX PRO 5000 72GB Blackwell",
+    "memory_total_mib": 73415,
+    "driver": "595.104.02",
+    "multigpu_collective_status": "PASS: new z0 environment GPU3/4/5 NCCL all_reduce, ranks each observed 6; prior v0 timeouts retained"
+  },
+  "random_seeds": {
+    "training_range": [
+      1,
+      10000
+    ],
+    "validation_range": [
+      10001,
+      10256
+    ],
+    "executed_model_seeds": [
+      10001,
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008,
+      10009,
+      10010,
+      10011,
+      10012,
+      10013,
+      10014,
+      10015,
+      10016,
+      10017,
+      10018,
+      10019,
+      10020
+    ]
+  },
+  "config_hashes": {
+    "examples/train/frozenlake/train_ppo_qwen25vl3b_skill.sh": "5b4277c822ce4fb72aaa7bb26e95026a230114525b76a94ba571eb9733f43818",
+    "examples/train/frozenlake/train_frozenlake_vision_free_think.yaml": "97352c2233b3a6121f3d0aac853f9f7f01eeeab37eee6ceb19e357dc9435689b",
+    "examples/train/frozenlake/val_frozenlake_vision_free_think.yaml": "071a03e35afe7ee45830d4ccaad988f47f3107a063123da6e91b84f0736a3da3",
+    "vagen/configs/vagen_multiturn_skill.yaml": "eede40343da825597ea12e8f3a41295f9f058a83d4def7e74b19154f6d2d7fd6",
+    "docs/evidence/hardware/proposed_config.json": "72fac9875a7b9e6ecafe2eba305f3f31a0483ecfa7d49285ccdb09f165040324",
+    "configs/low_resource/local_eval.json": "9ec9d56cb66f0f3c796d2315576489300a087b811127ffbeffc2fa65d2124e12",
+    "configs/smoke/component_repairs_v1.json": "2fae355e1d27a5949067309f83737be5996c9631ca7ee6817a74516517d04f6d",
+    "configs/smoke/grounded_fixture_v1.json": "4d7c02cf4ab8d0aa5394da04c33247f8736a4ed2d68c56c32b1bca15c1ee4647",
+    "configs/smoke/grounded_fixture_v2_render_corrected.json": "a525793e7f4de81e69fc88c2e5b4040ed1364a127b8a0cff257d14a4c3071ca4",
+    "configs/smoke/policy_cycle_v1.json": "5b6704e2790a3381d65a1b73639ade84ea9e17fa4cc0275d84a7e232d41f526f",
+    "configs/smoke/policy_cycle_v2_train_sampling.json": "227552bbc52f6d8800bf44a71de221a5413cfcddb0ffe3d245def73cbfcd6496",
+    "configs/smoke/checkpoint_pairing_v1.json": "9ea2c2d81285c961944fef03b91cf343b4e9942e026372b5a47ce3c1c405de1c",
+    "configs/smoke/sglang_fixture_v1.json": "189211780b5bbde584612f5f31589d7379f88b4d0211073495187f704642b665",
+    "configs/smoke/sglang_fixture_v2_noexamples.json": "64a6f576177a02c1ba262b2d7cfb502866a61d8309eed8585c70a894fcaa6168"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "log",
+        "-1",
+        "--format=%H%n%aI%n%s"
+      ],
+      "cwd": "upstream",
+      "exit_code": 0,
+      "output": "upstream/docs/evidence/repository_identity.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-index",
+        "/tmp/viskill-verl-v061-audit/verl",
+        "/workspace/ViSkill-local-repro/verl/verl"
+      ],
+      "cwd": "/workspace",
+      "exit_code": 1,
+      "output": "upstream/docs/evidence/verl_package_diff.patch"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/tmp/viskill-verl-v061-audit",
+      "exit_code": 0,
+      "output": "upstream/docs/evidence/upstream_verl_identity.txt"
+    },
+    {
+      "command": "python3 - (public Hugging Face model manifest and skill_index download)",
+      "exit_code": 0,
+      "outputs": [
+        "docs/evidence/released_model_manifest.json",
+        "docs/evidence/released_skill_index.json"
+      ]
+    },
+    {
+      "command": "background independent setup, see scripts/prepare_environment_worker.py",
+      "exit_code": null,
+      "remote_command_log": "/data/local/ViSkill/state/setup_commands.json",
+      "remote_stdout": "/data/local/ViSkill/logs/setup.log",
+      "supervisor_pid": 2545403
+    }
+  ],
+  "outputs": [
+    "docs/01_paper_code_audit.md",
+    "reports/REPRODUCTION_STATUS.md",
+    "docs/evidence/reward_counterexample.json",
+    "docs/evidence/verl_tree_comparison.json",
+    "docs/evidence/released_asset_checks.json",
+    "docs/02_hardware_and_feasibility.md",
+    "docs/evidence/hardware/proposed_config.json",
+    "docs/evidence/hardware/resource_estimates.json",
+    "docs/03_environment_setup.md",
+    "scripts/prepare_environment_worker.py",
+    "scripts/setup_supervisor.py",
+    "configs/low_resource/local_eval.json",
+    "scripts/local_eval.py",
+    "scripts/local_eval_supervisor.py",
+    "reports/01_local_evaluation.md",
+    "results/local_eval/A.jsonl",
+    "results/local_eval/A.annotated.jsonl",
+    "results/local_eval/A_summary.json",
+    "reports/03_component_tests.md",
+    "scripts/component_supervisor.py",
+    "tests/"
+  ],
+  "known_deviations": [
+    "FrozenLake GPU counts: main text 4, Table 6 2, script 4; user upper limit 3 on pro5000",
+    "script training steps 301 vs paper 300",
+    "official reward uses action prefix vs paper state-progress matching",
+    "library not snapshotted/restored with policy checkpoint",
+    "distillation novelty uses rollout-time score, no geometric recheck between candidates",
+    "Opt-in state_progress_bounded uses observed relative positions plus explicit upper cap1; cap is engineering variant, not exact Eq6",
+    "Opt-in live batch novelty recheck; default original mode preserved",
+    "D Transformers greedy/batch1 evaluation of20 seeds per arm; no published success-rate claim",
+    "SGLang runtime uses text Triton and vision SDPA vs trainer FA3 default",
+    "Optional checkpoint_pairing preserves local per-step skill snapshots, default disabled; CPU tests only so far",
+    "Opt-in distill.include_examples=false tested once to diagnose prompt-example copying; default true unchanged, failed variant not adopted",
+    "Diagnostic three-stage current-policy distillation uses recorded action compression and explicit visual condition generation; not adopted into PPO or claimed paper-exact. Verifier-assisted feedback variant is predeclared but NOT RUN."
+  ],
+  "failed_runs": [
+    {
+      "id": "hardware-nccl-fork-two-gpu",
+      "type": "hardware probe, not model experiment",
+      "status": "timeout75s",
+      "cleanup": "only verified own three PIDs terminated",
+      "evidence": "docs/02_hardware_and_feasibility.md"
+    },
+    {
+      "id": "hardware-nccl-spawn-three-gpu",
+      "type": "hardware probe",
+      "status": "timeout50s",
+      "evidence": "docs/evidence/hardware/nccl_three_gpu_probe.json"
+    },
+    {
+      "id": "hardware-nccl-three-gpu-p2p-disabled",
+      "type": "hardware probe",
+      "status": "timeout50s",
+      "evidence": "docs/evidence/hardware/nccl_three_gpu_fallback.json"
+    },
+    {
+      "id": "setup-initial-model-download",
+      "type": "setup network failure; no inference/training cost",
+      "status": "exit1 Network is unreachable for huggingface.co",
+      "evidence": "docs/evidence/environment/SETUP_EXIT.json",
+      "repair": "loopback reverse SSH proxy; only download step resumed using original start/deadline"
+    },
+    {
+      "id": "setup-network-repair-1-truncated-download",
+      "type": "asset transfer, no training",
+      "status": "exit1 ChunkedEncodingError/IncompleteRead",
+      "evidence": "docs/evidence/environment/setup_repair_1_failure.txt",
+      "repair": "resume cached release files with up to4 bounded attempts; original deadline unchanged"
+    },
+    {
+      "id": "B_missing_chat_template",
+      "status": "exit1 before any generation/episode",
+      "cause": "download allowlist omitted *.jinja",
+      "repair": "download exact pinned release template; original D clock unchanged",
+      "evidence": "docs/evidence/local_eval/failed_template_B_EXIT.json"
+    },
+    {
+      "id": "ppo_runtime_blackwell_python_mismatch",
+      "type": "dependency resolver; no training",
+      "status": "EXIT1 no cp310 nvidia-cutlass-dsl4.1.0 wheel",
+      "evidence": "docs/evidence/environment/runtime_attempt1",
+      "repair": "same SGLang0.5.2 srt extra, original clock unchanged"
+    },
+    {
+      "id": "runtime_engine_v1",
+      "status": "EXIT1 FA cute/CUTLASS ThrMma incompatibility; pinned transitive packages"
+    },
+    {
+      "id": "runtime_engine_v2_pins",
+      "status": "EXIT1 diagnostic asyncio loop registration after Engine policy change"
+    },
+    {
+      "id": "runtime_engine_v3_loop",
+      "status": "EXIT-9 child failure: ninja missing from PATH; no model update"
+    }
+  ],
+  "diagnostic_command_notes": [
+    "git diff --no-index returns 1 when differences exist; this is expected",
+    "initial file search returned 1 because workspace had no project files",
+    "one inspection command ended with zsh unmatched glob upstream/verl/.git* (exit 1); prior reads succeeded",
+    "pdftotext returned 0 with font-type mismatch warning"
+  ],
+  "network_policy": "Only permitted public code/dependency/model downloads; no paid/external inference or uploads; GitHub through proxy",
+  "preparation_completed": false,
+  "resource_budget": {
+    "max_new_allocated_bytes": 100000000000,
+    "setup_write_stop_bytes": 85000000000,
+    "independent_experiment_max_hours": 24,
+    "setup_hard_timeout_hours": 6,
+    "user_absence_hours": 12,
+    "additional_small_cache_bytes": 8192
+  },
+  "automation": {
+    "id": "viskill",
+    "kind": "heartbeat",
+    "interval_minutes": 30,
+    "thread_id": "01a1697b-7e1a-7890-9226-8e69981f8fec"
+  },
+  "setup": {
+    "started_unix": 1792772381.9046373,
+    "pid": 2545403,
+    "budget_bytes": 100000000000,
+    "stop_writes_at_bytes": 85000000000,
+    "setup_timeout_seconds": 21600,
+    "paths": [
+      "/data/local/ViSkill",
+      "/data/local/envs/z0",
+      "/data/local/tools/z0",
+      "/data/local/tmp/z0"
+    ],
+    "baseline_allocated_bytes": 20033536,
+    "gpu_indices_for_future_work": [
+      3,
+      4,
+      5
+    ],
+    "training": false,
+    "worker_pid": 2545406,
+    "status": "COMPLETE install/runtime probes; original preparation window elapsed; no active process; E still PARTIAL",
+    "latest_observation": {
+      "time_unix": 1792816434.0790393,
+      "allocated_bytes_in_four_roots": 35778920448,
+      "extra_conservative_cache_bytes": 8192,
+      "total_counted_bytes": 35778928640,
+      "active_project_jobs": 0,
+      "peak_recorded_allocated_bytes": 42268741632,
+      "heartbeat_id": "viskill",
+      "gpu_free_mib": {
+        "3": 56667,
+        "4": 48411,
+        "5": 64919
+      },
+      "original_preparation_remaining_seconds": 0
+    },
+    "repair": {
+      "started_unix": 1792772381.9046373,
+      "pid": 2545403,
+      "budget_bytes": 100000000000,
+      "stop_writes_at_bytes": 85000000000,
+      "setup_timeout_seconds": 21600,
+      "paths": [
+        "/data/local/ViSkill",
+        "/data/local/envs/z0",
+        "/data/local/tools/z0",
+        "/data/local/tmp/z0"
+      ],
+      "baseline_allocated_bytes": 20033536,
+      "gpu_indices_for_future_work": [
+        3,
+        4,
+        5
+      ],
+      "training": false,
+      "worker_pid": 2929334,
+      "supervisor_pid": 2929332,
+      "repair_started_unix": 1792781047.47412,
+      "original_deadline_unix": 1792793981.9046373,
+      "attempt": "setup_repair_2",
+      "proxy": "loopback SSH reverse forward"
+    },
+    "original_window_elapsed": true
+  },
+  "runtime_checks": {
+    "pip_check": "PASS",
+    "core_imports": "PASS",
+    "sglang": "PASS imports and real FrozenLake image/action, v4 EXIT0",
+    "flash_attn": "PASS2.8.3 BF16 attention forward/backward finite gradients; not PPO",
+    "gpu4_bf16_sdpa": "PASS",
+    "gpu4_nccl_world1": "PASS",
+    "gpu345_nccl_world3": "PASS",
+    "frozenlake_vision_reset": "PASS: 256x256 RGB, seed1; no model rollout",
+    "evidence_directory": "docs/evidence/environment",
+    "trainer_imports": "PASS",
+    "cutlass_atexit_warning": "nonfatal AttributeError CACHE_FILE retained"
+  },
+  "local_eval": {
+    "status": "A/B/C PASS engineering pipelines; 20 episodes each, EXIT0; not paper-scale success reproduction",
+    "started_unix": 1792779344.2749124,
+    "deadline_unix": 1792800944.2749124,
+    "physical_gpu": 4,
+    "supervisor_pid": 2848985,
+    "worker_pid": 2849010,
+    "protocol": "configs/low_resource/local_eval.json",
+    "result_dir": "/data/local/ViSkill/results/local_eval",
+    "state_dir": "/data/local/ViSkill/state/local_eval",
+    "training": false,
+    "processor_note": "AutoProcessor default fast in Transformers4.56.1, matching installed official loader default; warning retained",
+    "A_summary": {
+      "arm": "A",
+      "episodes": 20,
+      "success_rate": 0.25,
+      "mean_episode_turns": 3.35,
+      "mean_primitive_actions": 2.35,
+      "invalid_action_turn_rate": 0.31343283582089554,
+      "skill_retrieval_fraction": 0.0,
+      "mean_retrieval_score": null,
+      "mean_prompt_tokens": 643.4776119402985,
+      "max_prompt_tokens": 1068,
+      "mean_response_tokens": 43.92537313432836,
+      "wall_seconds": 83.83500528335571,
+      "peak_gpu_allocated_bytes": 7656217088,
+      "peak_gpu_reserved_bytes": 7761559552,
+      "process_max_rss_kib": 4912660,
+      "all_episodes_finished": true,
+      "has_valid_action": true,
+      "training": false,
+      "protocol": {
+        "protocol": "local_eval_v1",
+        "seeds": [
+          10001,
+          10002,
+          10003,
+          10004,
+          10005,
+          10006,
+          10007,
+          10008,
+          10009,
+          10010,
+          10011,
+          10012,
+          10013,
+          10014,
+          10015,
+          10016,
+          10017,
+          10018,
+          10019,
+          10020
+        ],
+        "generation_seed": 42,
+        "max_turns": 5,
+        "max_new_tokens": 512,
+        "max_context_tokens": 9216,
+        "do_sample": false,
+        "precision": "bfloat16",
+        "attention": "sdpa",
+        "environment": {
+          "render_mode": "vision",
+          "size": 4,
+          "p": 0.8,
+          "is_slippery": false,
+          "slip_prob": 0.0,
+          "max_actions_per_step": 5,
+          "prompt_format": "free_think"
+        },
+        "retrieval_threshold": 0.8,
+        "similarity_weight": 0.9,
+        "guided_weight": 0.8,
+        "arms": {
+          "A": {
+            "model": "b0",
+            "skills": false
+          },
+          "B": {
+            "model": "r0",
+            "skills": false
+          },
+          "C": {
+            "model": "r0",
+            "skills": true
+          }
+        },
+        "evaluation_library_updates": false,
+        "cold_start": false,
+        "distill_mode": "self",
+        "scope": "Pipeline validation only; no training or paper-number claim. Full history retokenized by Transformers; native processor image resizing. Code-as-released prefix reward recorded, no algorithm repair hidden. All arms frozen before observing results."
+      }
+    },
+    "B_summary": {
+      "arm": "B",
+      "episodes": 20,
+      "success_rate": 0.15,
+      "mean_episode_turns": 2.7,
+      "mean_primitive_actions": 9.2,
+      "invalid_action_turn_rate": 0.7777777777777778,
+      "skill_retrieval_fraction": 0.0,
+      "mean_retrieval_score": null,
+      "mean_prompt_tokens": 608.0,
+      "max_prompt_tokens": 1010,
+      "mean_response_tokens": 33.0,
+      "wall_seconds": 70.19014954566956,
+      "peak_gpu_allocated_bytes": 7653486080,
+      "peak_gpu_reserved_bytes": 9607053312,
+      "process_max_rss_kib": 5868476,
+      "all_episodes_finished": true,
+      "has_valid_action": true,
+      "training": false,
+      "protocol": {
+        "protocol": "local_eval_v1",
+        "seeds": [
+          10001,
+          10002,
+          10003,
+          10004,
+          10005,
+          10006,
+          10007,
+          10008,
+          10009,
+          10010,
+          10011,
+          10012,
+          10013,
+          10014,
+          10015,
+          10016,
+          10017,
+          10018,
+          10019,
+          10020
+        ],
+        "generation_seed": 42,
+        "max_turns": 5,
+        "max_new_tokens": 512,
+        "max_context_tokens": 9216,
+        "do_sample": false,
+        "precision": "bfloat16",
+        "attention": "sdpa",
+        "environment": {
+          "render_mode": "vision",
+          "size": 4,
+          "p": 0.8,
+          "is_slippery": false,
+          "slip_prob": 0.0,
+          "max_actions_per_step": 5,
+          "prompt_format": "free_think"
+        },
+        "retrieval_threshold": 0.8,
+        "similarity_weight": 0.9,
+        "guided_weight": 0.8,
+        "arms": {
+          "A": {
+            "model": "b0",
+            "skills": false
+          },
+          "B": {
+            "model": "r0",
+            "skills": false
+          },
+          "C": {
+            "model": "r0",
+            "skills": true
+          }
+        },
+        "evaluation_library_updates": false,
+        "cold_start": false,
+        "distill_mode": "self",
+        "scope": "Pipeline validation only; no training or paper-number claim. Full history retokenized by Transformers; native processor image resizing. Code-as-released prefix reward recorded, no algorithm repair hidden. All arms frozen before observing results."
+      }
+    },
+    "C_summary": {
+      "arm": "C",
+      "episodes": 20,
+      "success_rate": 1.0,
+      "mean_episode_turns": 1.0,
+      "mean_primitive_actions": 2.05,
+      "invalid_action_turn_rate": 0.0,
+      "skill_retrieval_fraction": 1.0,
+      "mean_retrieval_score": 0.9959034273216425,
+      "mean_prompt_tokens": 519.85,
+      "max_prompt_tokens": 579,
+      "mean_response_tokens": 24.75,
+      "wall_seconds": 25.95991086959839,
+      "peak_gpu_allocated_bytes": 7601062400,
+      "peak_gpu_reserved_bytes": 9581887488,
+      "process_max_rss_kib": 5871260,
+      "all_episodes_finished": true,
+      "has_valid_action": true,
+      "training": false,
+      "protocol": {
+        "protocol": "local_eval_v1",
+        "seeds": [
+          10001,
+          10002,
+          10003,
+          10004,
+          10005,
+          10006,
+          10007,
+          10008,
+          10009,
+          10010,
+          10011,
+          10012,
+          10013,
+          10014,
+          10015,
+          10016,
+          10017,
+          10018,
+          10019,
+          10020
+        ],
+        "generation_seed": 42,
+        "max_turns": 5,
+        "max_new_tokens": 512,
+        "max_context_tokens": 9216,
+        "do_sample": false,
+        "precision": "bfloat16",
+        "attention": "sdpa",
+        "environment": {
+          "render_mode": "vision",
+          "size": 4,
+          "p": 0.8,
+          "is_slippery": false,
+          "slip_prob": 0.0,
+          "max_actions_per_step": 5,
+          "prompt_format": "free_think"
+        },
+        "retrieval_threshold": 0.8,
+        "similarity_weight": 0.9,
+        "guided_weight": 0.8,
+        "arms": {
+          "A": {
+            "model": "b0",
+            "skills": false
+          },
+          "B": {
+            "model": "r0",
+            "skills": false
+          },
+          "C": {
+            "model": "r0",
+            "skills": true
+          }
+        },
+        "evaluation_library_updates": false,
+        "cold_start": false,
+        "distill_mode": "self",
+        "scope": "Pipeline validation only; no training or paper-number claim. Full history retokenized by Transformers; native processor image resizing. Code-as-released prefix reward recorded, no algorithm repair hidden. All arms frozen before observing results."
+      }
+    },
+    "release_library_seed_audit": {
+      "count": 265,
+      "eval_seed_overlap": [],
+      "min_seed": 88,
+      "max_seed": 9942
+    }
+  },
+  "component_tests": {
+    "attempt": "original_v1",
+    "pytest_passed": 9,
+    "pytest_failed": 2,
+    "exit_code": 1,
+    "status": "E FAIL/PARTIAL; no PPO gate pass",
+    "fixture_only": true,
+    "strategy_parse": "PASS",
+    "strategy_semantic_grounding": "PARTIAL; manual concerns retained",
+    "receipt": {
+      "start_unix": 1792781194.464318,
+      "deadline_unix": 1792782994.464318,
+      "supervisor_pid": 2930817,
+      "worker_pid": 2930821,
+      "physical_gpu": 4,
+      "fixture_only": true,
+      "training": false
+    },
+    "artifacts": "artifacts/component_tests/original_v1",
+    "repairs_v1": {
+      "cpu_tests_passed": 4,
+      "exit_code": 0,
+      "config": "configs/smoke/component_repairs_v1.json",
+      "paper_exact": false
+    },
+    "card_transfer_v1": {
+      "process_exit": 0,
+      "task_success": false,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "reason": "base current-policy strategy causes hole in fixed fixture",
+      "no_resampling": true
+    },
+    "grounded_fixture_v1": {
+      "strategy_semantics": "FAIL",
+      "reuse_success": false,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "process_exit": 0,
+      "artifacts": "artifacts/component_tests/grounded_fixture_v1"
+    },
+    "grounded_fixture_v2_render_corrected": {
+      "strategy_semantics": "FAIL",
+      "reuse_success": false,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "process_exit": 0,
+      "artifacts": "artifacts/component_tests/grounded_fixture_v2_render_corrected"
+    },
+    "policy_cycle_v1": {
+      "seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "collection_successes": 0,
+      "eligible": 0,
+      "admitted": 0,
+      "reuse_episodes": 0,
+      "reuse_successes": 0,
+      "reused_skills": [],
+      "no_solver_trajectory": true,
+      "no_training": true,
+      "no_cold_start": true,
+      "original_distill_prompt": true,
+      "semantic_review_required": true,
+      "wall_seconds": 22.944836139678955,
+      "peak_gpu_allocated_bytes": 7652701184,
+      "status": "FAIL to establish cycle: zero policy successes, EXIT0"
+    },
+    "policy_cycle_v2_train_sampling": {
+      "seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "training_sampling": true,
+      "collection_successes": 0,
+      "eligible": 0,
+      "admitted": 0,
+      "reuse_episodes": 0,
+      "reuse_successes": 0,
+      "reused_skills": [],
+      "no_solver_trajectory": true,
+      "no_training": true,
+      "no_cold_start": true,
+      "original_distill_prompt": true,
+      "semantic_review_required": true,
+      "wall_seconds": 57.19410514831543,
+      "peak_gpu_allocated_bytes": 7728349184,
+      "status": "No skill cycle established: zero successes, EXIT0"
+    },
+    "checkpoint_pair_v2_paths": {
+      "passed": 6,
+      "exit_code": 0,
+      "actual_ppo_reload": false,
+      "model_role_files": "dummy tests only"
+    },
+    "sglang_fixture_v1": {
+      "fixture_only": true,
+      "solver_source": "previous component fixture only, not training library",
+      "strategy": "When the goal is directly adjacent with no holes in between, move straight toward it.",
+      "success": false,
+      "turns": [
+        {
+          "response": "<think>There is a hole directly below the player, so moving down would lead to falling into it. The goal is to the right, so moving right is the safest option to avoid the hole.</think>\n<answer>Right</answer>",
+          "actions": [
+            "right"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+          "actions": [
+            "right"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+          "actions": [
+            "right"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+          "actions": [
+            "right"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+          "actions": [
+            "right"
+          ],
+          "reward": 0.02,
+          "success": false
+        }
+      ],
+      "score": 0.95,
+      "wall_seconds": 11.868166446685791,
+      "backend": "SGLang0.5.2 Triton/vision SDPA",
+      "same_original_prompt": true,
+      "generation_count": 1,
+      "training": false,
+      "status": "FAIL semantics/reuse; diagnostic EXIT0"
+    },
+    "sglang_fixture_v2_noexamples": {
+      "fixture_only": true,
+      "solver_source": "previous component fixture only, not training library",
+      "strategy": "When the player is on a frozen tile and there is a hole directly in front of them, move down to avoid the hole. If there is no hole directly in front, move right to continue towards the goal.",
+      "success": false,
+      "turns": [
+        {
+          "response": "<think>There is a hole directly in front of me, and I am on a frozen tile. To avoid falling into the hole, I should move down to the left.</think>\n<answer>Down, Left</answer>",
+          "actions": [
+            "down",
+            "left"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since I moved down and left, I am now on a frozen tile with a hole directly in front of me. To avoid falling into the hole, I should move down again.</think>\n<answer>Down</answer>",
+          "actions": [
+            "down"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since I moved down and am now on a frozen tile with a hole directly in front of me, I should move down again to avoid falling into the hole.</think>\n<answer>Down</answer>",
+          "actions": [
+            "down"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since I moved down and am now on a frozen tile with a hole directly in front of me, I should move down again to avoid falling into the hole.</think>\n<answer>Down</answer>",
+          "actions": [
+            "down"
+          ],
+          "reward": 0.02,
+          "success": false
+        },
+        {
+          "response": "<think>Since I moved down and am now on a frozen tile with a hole directly in front of me, I should move down again to avoid falling into the hole.</think>\n<answer>Down</answer>",
+          "actions": [
+            "down"
+          ],
+          "reward": 0.02,
+          "success": false
+        }
+      ],
+      "score": 0.95,
+      "wall_seconds": 12.157314538955688,
+      "backend": "SGLang0.5.2 Triton/vision SDPA",
+      "same_original_prompt": false,
+      "generation_count": 1,
+      "training": false,
+      "status": "FAIL semantics/reuse; diagnostic EXIT0"
+    },
+    "checkpoint_pair_trainer_v1": {
+      "passed": 3,
+      "exit_code": 0,
+      "scope": "actual trainer save/load methods with CPU dummy workers, not real PPO parameters"
+    },
+    "released_distillation_contrast_v1": {
+      "status": "COMPLETE diagnostic; strategy semantics FAIL; reuse success true; E remains PARTIAL",
+      "purpose": "policy capability contrast only; cannot satisfy base E gate",
+      "protocol": "configs/smoke/released_distillation_contrast_v1.json",
+      "supervisor_pid": 3433922,
+      "worker_pid": 3433944,
+      "original_start_unix": 1792772381.9046373,
+      "start_unix": 1792800949.635662,
+      "deadline_unix": 1792801549.635662,
+      "write_limit_bytes": 36026811008,
+      "physical_gpu": 4,
+      "training": false,
+      "result": {
+        "fixture_only": true,
+        "solver_source": "previous component fixture only, not training library",
+        "strategy": "When the goal is directly adjacent with no holes in between, move straight toward it.",
+        "success": true,
+        "turns": [
+          {
+            "response": "<think>I need to start by moving down to reach the goal.</think>\n<answer>Down, Down, Down, Right, Right, Right</answer>",
+            "actions": [
+              "down",
+              "down",
+              "down",
+              "right",
+              "right"
+            ],
+            "reward": 0.02,
+            "success": false
+          },
+          {
+            "response": "<think>I need to start by moving down to reach the goal.</think>\n<answer>Down, Down, Down, Right, Right, Right</answer>",
+            "actions": [
+              "down",
+              "down",
+              "down",
+              "right"
+            ],
+            "reward": 1.02,
+            "success": true
+          }
+        ],
+        "score": 0.95,
+        "wall_seconds": 10.459060907363892,
+        "backend": "SGLang0.5.2 Triton/vision SDPA",
+        "same_original_prompt": true,
+        "generation_count": 1,
+        "training": false
+      },
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792801055.1548214,
+        "peak_allocated_bytes": 35777069056
+      },
+      "semantic_review": "Verbatim adjacent-goal example contradicts fixture goal at (3,3) vs player (0,0); same failure as base historical control. Two-turn reuse succeeds with nine executed actions including boundary no-ops; not proof of caption usefulness.",
+      "scope": "checkpoint capability contrast only; not baseline initialization replacement or PPO gate pass"
+    },
+    "distill_causal_v1": {
+      "status": "COMPLETE diagnostic, E not passed",
+      "protocol": "configs/smoke/distill_causal_v1.json",
+      "conditions_completed": 9,
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792814652.3645601,
+        "peak_allocated_bytes": 35777208320
+      },
+      "results": "artifacts/component_tests/distill_causal_v1/results.json"
+    },
+    "distill_decomposition_v1": {
+      "status": "COMPLETE diagnostic, E not passed",
+      "protocol": "configs/smoke/distill_decomposition_v1.json",
+      "conditions_completed": 5,
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792814879.67892,
+        "peak_allocated_bytes": 35777339392
+      },
+      "results": "artifacts/component_tests/distill_decomposition_v1/results.json"
+    },
+    "structured_distill_cycle_v1": {
+      "status": "COMPLETE diagnostic; E overall remains PARTIAL",
+      "protocol": "configs/smoke/structured_distill_cycle_v1.json",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792815048.5200264,
+        "peak_allocated_bytes": 35777495040
+      },
+      "artifacts": "artifacts/component_tests/structured_distill_cycle_v1",
+      "paper_exact": false
+    },
+    "applicability_contract_v1": {
+      "status": "COMPLETE diagnostic; E overall remains PARTIAL",
+      "protocol": "configs/smoke/applicability_contract_v1.json",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792815271.5853446,
+        "peak_allocated_bytes": 35777613824
+      },
+      "artifacts": "artifacts/component_tests/applicability_contract_v1",
+      "paper_exact": false
+    },
+    "applicability_adherence_v1": {
+      "status": "COMPLETE diagnostic; E overall remains PARTIAL",
+      "protocol": "configs/smoke/applicability_adherence_v1.json",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792815395.5062418,
+        "peak_allocated_bytes": 35777748992
+      },
+      "artifacts": "artifacts/component_tests/applicability_adherence_v1",
+      "paper_exact": false
+    },
+    "strategy_applicability_v1": {
+      "status": "COMPLETE CPU reference-route falsification, not policy rollout",
+      "original_score": 0.95,
+      "counterfactual_score": 0.8,
+      "counterfactual_reference_route_success": false
+    },
+    "onpolicy_structured_v1": {
+      "status": "FAIL retained; resumed saved data without rerollout",
+      "exit": {
+        "exit_code": 1,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792815648.89212,
+        "peak_allocated_bytes": 35778150400
+      },
+      "no_collection_rerun": true,
+      "no_distillation_rerun": true
+    },
+    "onpolicy_structured_v1_recovery": {
+      "status": "FAIL retained; resumed saved data without rerollout",
+      "exit": {
+        "exit_code": 1,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792815835.2493017,
+        "peak_allocated_bytes": 35778252800
+      },
+      "no_collection_rerun": true,
+      "no_distillation_rerun": true
+    },
+    "onpolicy_structured_v1_recovery2": {
+      "status": "COMPLETE",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792816006.79087,
+        "peak_allocated_bytes": 35778699264
+      },
+      "no_collection_rerun": true,
+      "no_distillation_rerun": true,
+      "result": {
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "training_sampling": true,
+        "collection_successes": 2,
+        "eligible": 1,
+        "admitted": 1,
+        "reuse_episodes": 8,
+        "reuse_successes": 2,
+        "reused_skills": [
+          null,
+          null,
+          null,
+          null,
+          "skill_0",
+          "skill_0",
+          "skill_0",
+          null
+        ],
+        "no_solver_trajectory": true,
+        "no_training": true,
+        "no_cold_start": true,
+        "original_distill_prompt": false,
+        "paper_exact": false,
+        "paired_original_control_saved": true,
+        "semantic_review_required": true,
+        "wall_seconds": 67.24517583847046,
+        "peak_gpu_allocated_bytes": 7728349184
+      },
+      "semantic_review": "FAIL: seed6 goal is (1,0), structured WHEN says bottom-right. Mechanical admission/utility evolution is real but not semantic gate pass."
+    },
+    "relative_geometry_v1": {
+      "status": "COMPLETE negative diagnostic",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792816125.1796212,
+        "peak_allocated_bytes": 35778842624
+      },
+      "summary": {
+        "direction_correct": 0,
+        "adjacent_correct": 3,
+        "both_correct": 0,
+        "episodes": 8,
+        "model_calls": 17,
+        "wall_seconds": 11.241814136505127,
+        "peak_gpu_allocated_bytes": 7543968768,
+        "training": false
+      }
+    },
+    "processor_parity_v1": {
+      "status": "COMPLETE negative diagnostic",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792816257.6335132,
+        "peak_allocated_bytes": 35778912256
+      },
+      "summary": {
+        "slow_direction_correct": 0,
+        "slow_adjacent_correct": 3,
+        "spatial_cases": 8,
+        "total_calls": 9,
+        "fast_processor_class": "Qwen2VLImageProcessorFast",
+        "slow_processor_class": "Qwen2VLImageProcessor",
+        "wall_seconds": 5.999476671218872,
+        "peak_gpu_allocated_bytes": 7582556672
+      }
+    },
+    "verified_self_distill_v1": {
+      "status": "COMPLETE negative diagnostic",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792816723.851723,
+        "peak_allocated_bytes": 35778953216
+      },
+      "semantic_review": "FAIL; no admission or reuse; no PPO",
+      "evidence": "artifacts/component_tests/verified_self_distill_v1",
+      "result": {
+        "raw_response": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>",
+        "feedback": {
+          "player_row_col": [
+            0,
+            0
+          ],
+          "goal_row_col": [
+            1,
+            0
+          ],
+          "goal_relative_to_player": "below",
+          "goal_cardinally_adjacent": true,
+          "executed_actions": [
+            "down"
+          ],
+          "success": true,
+          "source": "saved training environment records, NOT model perception"
+        },
+        "previous_strategy": {
+          "original_control": "<strategy>When facing a hole directly ahead, move diagonally to avoid it and then continue moving forward on frozen tiles until reaching the goal.</strategy>",
+          "visual_facts": "The elf starts at the top-left corner of the board. The gift goal is located at the bottom-right corner of the board.",
+          "action_compression": "```json\n[\n    {\"direction\": \"down\", \"count\": 1}\n]\n```",
+          "raw": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>",
+          "strategy": "WHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once",
+          "strict_tags": true,
+          "source": "current base policy actual successful rollout",
+          "paper_exact": false
+        },
+        "model_calls": 1,
+        "paper_exact": false,
+        "training": false,
+        "semantic_review_required_before_reuse": true,
+        "wall_seconds": 2.600682020187378,
+        "peak_gpu_allocated_bytes": 7553938432
+      }
+    },
+    "feedback_factorial_v1": {
+      "status": "COMPLETE negative diagnostic",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792816818.0634444,
+        "peak_allocated_bytes": 35779002368
+      },
+      "semantic_review": "FAIL; no admission or reuse; no PPO",
+      "evidence": "artifacts/component_tests/feedback_factorial_v1",
+      "results": [
+        {
+          "image": true,
+          "old_answer": true,
+          "response": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>",
+          "source": "reused prior exact cell"
+        },
+        {
+          "image": false,
+          "old_answer": true,
+          "response": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>"
+        },
+        {
+          "image": true,
+          "old_answer": false,
+          "response": "<strategy>\nWHEN the player is at the bottom-right corner of the map (row 2, column 3) AND the goal is directly below the player (goal_row_col = 1, 0)\nWHAT retain the observed action direction (down) and count (1)\n</strategy>"
+        },
+        {
+          "image": false,
+          "old_answer": false,
+          "response": "<strategy>\nWHEN the player is at the bottom row (row 0) and the goal is in the same column (column 0), AND the goal is directly below the player, THEN execute the action \"down\" to move the player closer to the goal.\n</strategy>"
+        }
+      ],
+      "summary": {
+        "new_calls": 3,
+        "training": false,
+        "admission": false,
+        "wall_seconds": 5.318408966064453,
+        "peak_gpu_allocated_bytes": 7550497280
+      }
+    },
+    "final_diagnosis_audit": {
+      "time_unix": 1792816851.663797,
+      "allocated_bytes": {
+        "/data/local/ViSkill": 24041500672,
+        "/data/local/envs/z0": 11708379136,
+        "/data/local/tools/z0": 25296896,
+        "/data/local/tmp/z0": 3829760
+      },
+      "total_four_roots_bytes": 35779006464,
+      "conservative_bytes": 35779014656,
+      "project_processes": [],
+      "gpu": "3, 52693 MiB\n4, 45571 MiB\n5, 64919 MiB\n",
+      "original_total_start": 1792772381.9046373,
+      "absolute_total_deadline": 1792858781.9046373
+    },
+    "structured_contract_v1": {
+      "status": "COMPLETE negative diagnostic",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792817209.9730926,
+        "peak_allocated_bytes": 35779076096
+      },
+      "result": {
+        "semantic_gate": false,
+        "reason": "Expecting value: line 1 column 1 (char 0)",
+        "raw_response": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "distill_model_calls": 1,
+        "admitted": 0,
+        "reuse_episodes": 0,
+        "training": false,
+        "paper_exact": false
+      },
+      "training": false,
+      "validator_tests": "6 passed; initial test collection namespace error retained",
+      "semantic_review": {
+        "analysis_only_fence_removed": true,
+        "not_admitted": true,
+        "prediction": {
+          "when": {
+            "goal_offset": [
+              -1,
+              0
+            ],
+            "requires_clear_route": true
+          },
+          "what": [
+            {
+              "action": "down",
+              "count": 1
+            }
+          ]
+        },
+        "observed_actual_offset": [
+          1,
+          0
+        ],
+        "predicted_offset": [
+          -1,
+          0
+        ],
+        "actions_correct": true,
+        "condition_correct": false,
+        "conclusion": "Strict parse failure preserved. Offline removal of markdown still exposes a sign error; format normalization alone would not qualify the skill."
+      }
+    },
+    "contract_numerics_v1": {
+      "status": "COMPLETE negative diagnostic",
+      "exit": {
+        "exit_code": 0,
+        "reason": null,
+        "original_start_unix": 1792772381.9046373,
+        "end_unix": 1792817358.3629644,
+        "peak_allocated_bytes": 35779112960
+      },
+      "result": {
+        "raw_response": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "control": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "same_saved_prompt": true,
+        "dtype": "float32",
+        "attention": "eager",
+        "calls": 1,
+        "training": false,
+        "admission": false,
+        "wall_seconds": 4.023180246353149,
+        "peak_gpu_allocated_bytes": 15128573440
+      },
+      "training": false
+    },
+    "latest_resource_audit": {
+      "time_unix": 1792819815.8867328,
+      "conservative_total_bytes": 35784060928,
+      "rows": [
+        {
+          "seed": 1,
+          "traj_success": true,
+          "retrieved_skill_id": null,
+          "trajectory_actions": [
+            "up",
+            "up",
+            "right"
+          ],
+          "reward_score": 1.06
+        },
+        {
+          "seed": 2,
+          "traj_success": true,
+          "retrieved_skill_id": "skill_0",
+          "trajectory_actions": [
+            "left"
+          ],
+          "reward_score": 1.02
+        },
+        {
+          "seed": 3,
+          "traj_success": false,
+          "retrieved_skill_id": null,
+          "trajectory_actions": [
+            "down",
+            "right",
+            "down",
+            "right"
+          ],
+          "reward_score": 0.04
+        },
+        {
+          "seed": 4,
+          "traj_success": false,
+          "retrieved_skill_id": null,
+          "trajectory_actions": [
+            "left",
+            "down",
+            "right",
+            "down"
+          ],
+          "reward_score": 0.04
+        },
+        {
+          "seed": 5,
+          "traj_success": false,
+          "retrieved_skill_id": null,
+          "trajectory_actions": [
+            "up",
+            "down",
+            "up",
+            "up",
+            "up"
+          ],
+          "reward_score": 0.1
+        },
+        {
+          "seed": 6,
+          "traj_success": true,
+          "retrieved_skill_id": "skill_1",
+          "trajectory_actions": [
+            "down"
+          ],
+          "reward_score": 1.02
+        },
+        {
+          "seed": 7,
+          "traj_success": true,
+          "retrieved_skill_id": "skill_1",
+          "trajectory_actions": [
+            "down"
+          ],
+          "reward_score": 1.02
+        },
+        {
+          "seed": 8,
+          "traj_success": false,
+          "retrieved_skill_id": null,
+          "trajectory_actions": [
+            "down",
+            "down",
+            "down",
+            "down",
+            "down",
+            "up",
+            "up",
+            "up",
+            "up",
+            "up",
+            "up",
+            "up",
+            "down",
+            "down",
+            "down",
+            "down",
+            "down"
+          ],
+          "reward_score": 0.08
+        }
+      ],
+      "gpus": "3, 51615 MiB\n4, 42617 MiB\n5, 64919 MiB\n",
+      "original_total_deadline": 1792858781.9046373,
+      "project_processes": []
+    },
+    "structured_checkpoint_contrast_v1": {
+      "result": {
+        "raw_response": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "control": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "same_saved_prompt": true,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "weights": "existing pinned r0",
+        "processor": "b0; exact input parity verified",
+        "calls": 1,
+        "training": false,
+        "admission": false,
+        "wall_seconds": 2.9755773544311523,
+        "peak_gpu_allocated_bytes": 9291524608
+      },
+      "training": false
+    },
+    "directional_contract_v1": {
+      "result": {
+        "semantic_gate": true,
+        "raw_response": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+        "official_agent_loop_used": false,
+        "privileged_retrieval_guard": true,
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "training_sampling": true,
+        "collection_successes": 2,
+        "eligible": 1,
+        "admitted": 1,
+        "reuse_episodes": 8,
+        "reuse_successes": 3,
+        "reused_skills": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "skill_0",
+          "skill_0",
+          null
+        ],
+        "no_solver_trajectory": true,
+        "no_training": true,
+        "no_cold_start": true,
+        "original_distill_prompt": false,
+        "paper_exact": false,
+        "paired_original_control_saved": true,
+        "semantic_review_required": false,
+        "wall_seconds": 80.60075640678406,
+        "peak_gpu_allocated_bytes": 7728923648
+      },
+      "training": false
+    },
+    "directional_agent_loop_v1": {
+      "result": {
+        "official_agent_loop_used": true,
+        "backend": "local Transformers adapter, not native rollout workers",
+        "collection_successes": 1,
+        "collection_admitted": 1,
+        "reuse_episodes": 8,
+        "reuse_successes": 2,
+        "reuse_skill_ids": [
+          null,
+          "skill_0",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "distillation_calls": 2,
+        "valid_distillations": 1,
+        "library_size": 1,
+        "skills": [
+          {
+            "id": "skill_0",
+            "utility": 0.55,
+            "use_count": 1
+          }
+        ],
+        "total_model_calls": 57,
+        "paper_exact": false,
+        "training": false,
+        "cold_start": false,
+        "wall_seconds": 177.27380347251892,
+        "peak_gpu_allocated_bytes": 7734105600
+      },
+      "training": false
+    },
+    "directional_native_loop_v1": {
+      "result": {
+        "official_agent_loop_used": true,
+        "backend": "native SGLang Engine with bundled SGLangHttpServer.generate; no Ray/FSDP synchronization",
+        "collection_successes": 3,
+        "collection_admitted": 0,
+        "reuse_episodes": 0,
+        "reuse_successes": 0,
+        "reuse_skill_ids": [],
+        "distillation_calls": 3,
+        "valid_distillations": 0,
+        "library_size": 0,
+        "skills": [],
+        "total_model_calls": 23,
+        "paper_exact": false,
+        "training": false,
+        "cold_start": false,
+        "wall_seconds": 49.71412110328674,
+        "driver_torch_peak_bytes": 29533696,
+        "native_engine_memory_is_in_child_process": true
+      },
+      "training": false
+    },
+    "directional_native_loop_v1_recovery": {
+      "result": {
+        "official_agent_loop_used": true,
+        "backend": "native SGLang Engine with bundled SGLangHttpServer.generate; no Ray/FSDP synchronization",
+        "collection_successes": 3,
+        "collection_admitted": 2,
+        "reuse_episodes": 8,
+        "reuse_successes": 4,
+        "reuse_skill_ids": [
+          null,
+          "skill_0",
+          null,
+          null,
+          null,
+          "skill_1",
+          "skill_1",
+          null
+        ],
+        "new_distillation_calls": 1,
+        "collection_reexecuted": false,
+        "saved_distillation_reexecuted": false,
+        "valid_distillations": 2,
+        "library_size": 2,
+        "skills": [
+          {
+            "id": "skill_0",
+            "utility": 0.55,
+            "use_count": 1
+          },
+          {
+            "id": "skill_1",
+            "utility": 0.5950000000000001,
+            "use_count": 2
+          }
+        ],
+        "total_model_calls": 22,
+        "paper_exact": false,
+        "training": false,
+        "cold_start": false,
+        "wall_seconds": 41.45057153701782,
+        "driver_torch_peak_bytes": 29533696,
+        "native_engine_memory_is_in_child_process": true
+      },
+      "training": false
+    }
+  },
+  "ppo_runtime_setup": {
+    "status": "COMPLETE: srt and pin repair EXIT0/pip check0; actual SGLang VLM action PASS",
+    "receipt": {
+      "started_unix": 1792772381.9046373,
+      "pid": 2545403,
+      "budget_bytes": 100000000000,
+      "stop_writes_at_bytes": 85000000000,
+      "setup_timeout_seconds": 21600,
+      "paths": [
+        "/data/local/ViSkill",
+        "/data/local/envs/z0",
+        "/data/local/tools/z0",
+        "/data/local/tmp/z0"
+      ],
+      "baseline_allocated_bytes": 20033536,
+      "gpu_indices_for_future_work": [
+        3,
+        4,
+        5
+      ],
+      "training": false,
+      "worker_pid": 2948358,
+      "supervisor_pid": 2948356,
+      "repair_started_unix": 1792783444.5973248,
+      "original_deadline_unix": 1792793981.9046373,
+      "attempt": "ppo_runtime_setup",
+      "proxy": "loopback SSH reverse forward"
+    },
+    "log": "/data/local/ViSkill/logs/ppo_runtime_srt.log",
+    "exit": "/data/local/ViSkill/state/PPO_RUNTIME_SRT_EXIT.json",
+    "training": false,
+    "active_receipt": "/data/local/ViSkill/state/ppo_runtime_srt_receipt.json",
+    "repair_pids": {
+      "supervisor": 2977006,
+      "worker": 2977037
+    }
+  },
+  "runtime_versions": {
+    "sglang": "0.5.2",
+    "flash-attn": "2.8.3",
+    "flashinfer_python": "0.3.1",
+    "sgl-kernel": "0.3.9.post2",
+    "nvidia-cutlass-dsl": "4.2.0",
+    "nvidia-cudnn-frontend": "1.13.0",
+    "cuda-python": "12.9.10",
+    "cachetools": "5.5.2"
+  },
+  "next_step": "Prepare exactly1 full-parameter PPO step for the named variant only; all actual F acceptance must be measured, no automatic300-step training",
+  "directional_variant_gate": {
+    "original_E": "PARTIAL: original free-text strategy semantic failures preserved",
+    "directional_variant_E": "SCOPED_COMPONENT_PASS",
+    "variant_config": "configs/low_resource/directional_skill_system.yaml",
+    "D": "PASS engineering only",
+    "evidence": [
+      "artifacts/component_tests/directional_contract_v1/result.json",
+      "artifacts/component_tests/directional_agent_loop_v1/result.json",
+      "artifacts/component_tests/directional_native_loop_v1_recovery/result.json"
+    ],
+    "negative_retained": [
+      "signed-coordinate strategies",
+      "original prompts",
+      "invalid multi-step contracts",
+      "first native role-envelope parse failures",
+      "initial missing-cachetools entry failure"
+    ],
+    "limits": [
+      "privileged environment-state verification/retrieval",
+      "current accepted skills are one-step",
+      "no paper-performance claim",
+      "no native Ray/FSDP weight sync yet",
+      "PPO NOT RUN"
+    ],
+    "next": "Prepare exactly1 full-parameter PPO step for the named variant only; all actual F acceptance must be measured, no automatic300-step training",
+    "original_total_deadline": 1792858781.9046373
+  },
+  "directional_ppo_smoke": {
+    "status": "PARTIAL_REAL_UPDATE_SAVE_RELOAD_ZERO_ADMISSION",
+    "protocol": "configs/smoke/directional_ppo_v1.json",
+    "report": "reports/02_ppo_smoke_test.md",
+    "start_unix": 1792820313.2427847,
+    "deadline_unix": 1792825713.2427847,
+    "physical_gpus": [
+      3,
+      5
+    ],
+    "checkpoint_contents": [
+      "model"
+    ],
+    "optimizer_resume_claim": false,
+    "training_successes": 1,
+    "skill_admitted": 0,
+    "train_exit_code": 0,
+    "reload_exit_code": 0,
+    "reload_validation_successes": 2,
+    "reload_validation_episodes": 2,
+    "restored_skill_count": 0,
+    "end_unix": 1792820802.6111708,
+    "peak_allocated_bytes": 68347863040
+  }
+}

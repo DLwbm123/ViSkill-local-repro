@@ -1,0 +1,73 @@
+{
+  "next_id": 2,
+  "skills": [
+    {
+      "id": "skill_0",
+      "seed": 2,
+      "env_id": null,
+      "features": [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"left\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"left\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "image_path": "skill_0.png",
+      "utility": 0.55,
+      "use_count": 1,
+      "trajectory": [
+        "left"
+      ],
+      "positions": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "skill_1",
+      "seed": 6,
+      "env_id": null,
+      "features": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+      "image_path": "skill_1.png",
+      "utility": 0.5950000000000001,
+      "use_count": 2,
+      "trajectory": [
+        "down"
+      ],
+      "positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  ]
+}

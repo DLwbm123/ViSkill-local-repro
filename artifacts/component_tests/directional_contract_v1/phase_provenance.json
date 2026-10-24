@@ -1,0 +1,9 @@
+{
+  "source": "/data/local/ViSkill/artifacts/component_tests/onpolicy_structured_v1",
+  "collection_reexecuted": false,
+  "reuse_rng_seed": 42,
+  "one_distillation_call": true,
+  "official_callback_used": true,
+  "official_agent_loop_used": false,
+  "retrieval_guard_is_privileged_state": true
+}

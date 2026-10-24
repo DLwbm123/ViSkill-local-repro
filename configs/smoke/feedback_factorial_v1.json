@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_NEGATIVE",
+  "purpose": "Separate old-answer anchoring from image interference after the single correction failed; diagnostic only, not another correction/admission attempt.",
+  "source": "Saved eligible training seed6 and exact verified_self_distill_v1 prompt.",
+  "design": "2x2: image present/absent \u00d7 previous answer present/absent. Image+old cell is reused unchanged; exactly three new greedy calls. Remove only previous-answer body or image placeholder; keep task wording and verifier facts.",
+  "stop": "No admission, reuse, prompt retries or PPO from any result; preserve all four cells.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "local_limit_seconds": 300,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+___________ ERROR collecting tests/test_structured_skill_contract.py ___________
+ImportError while importing test module '/data/local/ViSkill/src/tests/test_structured_skill_contract.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/data/local/envs/z0/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/data/local/ViSkill/src/tests/test_structured_skill_contract.py:3: in <module>
+    from scripts.structured_skill_contract import parse_contract, validate_observed_contract, check_applicability
+E   ModuleNotFoundError: No module named 'scripts.structured_skill_contract'
+=========================== short test summary info ============================
+ERROR ../../data/local/ViSkill/src/tests/test_structured_skill_contract.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.15s

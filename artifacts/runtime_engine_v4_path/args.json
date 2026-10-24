@@ -1,0 +1,16 @@
+{
+  "model_path": "/data/local/ViSkill/models/b0",
+  "host": "127.0.0.1",
+  "port": 42585,
+  "dtype": "bfloat16",
+  "tp_size": 1,
+  "mem_fraction_static": 0.25,
+  "context_length": 9216,
+  "max_running_requests": 1,
+  "disable_cuda_graph": true,
+  "attention_backend": "triton",
+  "mm_attention_backend": "sdpa",
+  "trust_remote_code": false,
+  "random_seed": 42,
+  "log_level": "info"
+}

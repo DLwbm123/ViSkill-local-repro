@@ -1,0 +1,85 @@
+{
+  "vocab_equal": true,
+  "special_tokens_equal": true,
+  "effective_config": {
+    "vocab_size": [
+      151936,
+      151936
+    ],
+    "hidden_size": [
+      2048,
+      2048
+    ],
+    "num_hidden_layers": [
+      36,
+      36
+    ],
+    "num_attention_heads": [
+      16,
+      16
+    ],
+    "num_key_value_heads": [
+      2,
+      2
+    ],
+    "image_token_id": [
+      151655,
+      151655
+    ],
+    "video_token_id": [
+      151656,
+      151656
+    ],
+    "vision_start_token_id": [
+      151652,
+      151652
+    ],
+    "vision_end_token_id": [
+      151653,
+      151653
+    ],
+    "rope_theta": [
+      1000000.0,
+      1000000.0
+    ],
+    "rope_scaling": [
+      {
+        "type": "default",
+        "mrope_section": [
+          16,
+          24,
+          24
+        ],
+        "rope_type": "default"
+      },
+      {
+        "mrope_section": [
+          16,
+          24,
+          24
+        ],
+        "rope_type": "default",
+        "type": "default"
+      }
+    ]
+  },
+  "tensor_parity": {
+    "input_ids": {
+      "shape_equal": true,
+      "exact_equal": true
+    },
+    "attention_mask": {
+      "shape_equal": true,
+      "exact_equal": true
+    },
+    "pixel_values": {
+      "shape_equal": true,
+      "exact_equal": true
+    },
+    "image_grid_thw": {
+      "shape_equal": true,
+      "exact_equal": true
+    }
+  },
+  "generation_config_diffs": {}
+}

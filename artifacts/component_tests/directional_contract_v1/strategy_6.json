@@ -1,0 +1,20 @@
+{
+  "raw": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "validated_contract": {
+    "when": {
+      "goal_direction": "down",
+      "goal_manhattan_distance": 1,
+      "requires_clear_route": true
+    },
+    "what": [
+      {
+        "action": "down",
+        "count": 1
+      }
+    ]
+  },
+  "model_input_has_environment_truth": false,
+  "verifier_uses_environment_truth": true,
+  "paper_exact": false,
+  "semantic_gate": true
+}

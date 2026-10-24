@@ -1,0 +1,15 @@
+{
+  "time_unix": 1792816851.663797,
+  "allocated_bytes": {
+    "/data/local/ViSkill": 24041500672,
+    "/data/local/envs/z0": 11708379136,
+    "/data/local/tools/z0": 25296896,
+    "/data/local/tmp/z0": 3829760
+  },
+  "total_four_roots_bytes": 35779006464,
+  "conservative_bytes": 35779014656,
+  "project_processes": [],
+  "gpu": "3, 52693 MiB\n4, 45571 MiB\n5, 64919 MiB\n",
+  "original_total_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373
+}

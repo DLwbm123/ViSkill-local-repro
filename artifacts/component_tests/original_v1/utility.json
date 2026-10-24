@@ -1,0 +1,6 @@
+{
+  "initial": 0.5,
+  "after_success": 0.55,
+  "after_failure": 0.49500000000000005,
+  "use_count": 2
+}

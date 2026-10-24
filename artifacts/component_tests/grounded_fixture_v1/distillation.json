@@ -1,0 +1,8 @@
+{
+  "raw": "<strategy>When facing a hole directly ahead, move down until you reach a frozen tile, then turn right and continue moving down until you reach the goal.</strategy>",
+  "strategy": "When facing a hole directly ahead, move down until you reach a frozen tile, then turn right and continue moving down until you reach the goal.",
+  "prompt_tokens": 1081,
+  "fixture_only": true,
+  "source": "solver fixture; never training library",
+  "generation_count": 1
+}

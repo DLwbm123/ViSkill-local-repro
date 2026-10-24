@@ -1,0 +1,10 @@
+{
+  "purpose":"Falsify overbroad WHEN condition without additional model sampling",
+  "original_map":["SFFF","FHHF","FFFF","FFFG"],
+  "counterfactual_map":["SFFF","HFHF","FFFF","FFFG"],
+  "change":"Move the hole at (1,1) to (1,0); preserve player/goal and hole count, block the first suggested Down",
+  "inputs":"Already-generated three-stage base strategy and isolated fixture library",
+  "execution":"CPU-only: retrieve on each map and execute the six recorded reference actions matching the generated WHAT; not a new policy rollout",
+  "metrics":["retrieval score","reference actions executed","terminal success/failure","caption condition still matches corners"],
+  "limits":"Two maps exactly, no model calls or training; 60-second hard timeout; no clock reset"
+}

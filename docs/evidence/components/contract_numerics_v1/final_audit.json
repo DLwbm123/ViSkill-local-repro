@@ -1,0 +1,7 @@
+{
+  "time_unix": 1792817420.918315,
+  "conservative_total_bytes": 35779121152,
+  "project_processes": [],
+  "gpus": "3, 52675 MiB\n4, 43695 MiB\n5, 64919 MiB\n",
+  "original_total_deadline": 1792858781.9046373
+}

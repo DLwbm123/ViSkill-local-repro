@@ -1,0 +1,29 @@
+# Explicit experimental variant; not the original paper algorithm.
+# Generation uses current-policy success/actions/images, with no oracle answer.
+# Admission and retrieval guards use privileged deterministic environment state.
+skill_system:
+  enable: true
+  cold_start:
+    enable: false
+  distill:
+    mode: self
+    representation: directional_contract_v1
+    allow_assistant_envelope: true # Explicit native-output framing compatibility
+    quality_ratio: 1.0
+    min_score: 0.9
+    recheck_batch_novelty: true
+  retrieval:
+    similarity_weight: 0.9
+    min_score: 0.8
+    contract_guard: true
+  reward:
+    mode: state_progress_bounded
+    guided_weight: 0.8
+  render:
+    trajectory:
+      enable: true
+      draw_path: true
+      thumbnail_size: 120
+    strategy:
+      enable: true
+      type: vision

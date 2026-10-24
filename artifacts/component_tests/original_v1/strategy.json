@@ -1,0 +1,23 @@
+{
+  "raw_response": "<strategy>When facing a hole directly ahead, move down to avoid it and then continue moving right until you reach the goal.</strategy>",
+  "parsed_strategy": "When facing a hole directly ahead, move down to avoid it and then continue moving right until you reach the goal.",
+  "strict_tags": true,
+  "model": "pinned base current policy, no finetuning",
+  "fixture_only": true,
+  "prompt_tokens": 475,
+  "response_tokens": 26,
+  "card_size": [
+    918,
+    192
+  ],
+  "card_image_grid_thw": [
+    [
+      1,
+      14,
+      66
+    ]
+  ],
+  "card_visual_tokens": 231,
+  "wall_seconds": 37.23925542831421,
+  "peak_gpu_allocated_bytes": 7582014464
+}

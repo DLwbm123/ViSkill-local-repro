@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE_NEGATIVE",
+  "purpose": "Distinguish the pinned base policy from the already downloaded released policy on the exact same structured successful-trajectory request, after FP32/eager reproduced the base error.",
+  "control": "Saved structured_contract_v1 base BF16/SDPA output, no rerun.",
+  "treatment": "One generation with existing pinned r0 weights; same saved prompt, two saved images, greedy max256 and seed42. Before use, check processor/tokenizer/vision configuration compatibility; retain same base processor only if compatible, otherwise record confounding and do not silently substitute.",
+  "model_source": "Existing released checkpoint only; no download, seed expansion, prompt change or selection loop.",
+  "scope": "Diagnostic checkpoint contrast; no skill admission, no reuse, no training. A positive result does not change base E or release PPO. A negative result closes this contrast.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 300,
+  "maximum_additional_bytes": 250000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

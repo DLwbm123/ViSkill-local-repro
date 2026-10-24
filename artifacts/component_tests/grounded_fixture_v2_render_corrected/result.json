@@ -1,0 +1,22 @@
+{
+  "fixture_only": true,
+  "test": "one predeclared action-grounded fixture distillation and reuse, no resampling",
+  "success": false,
+  "turns": [
+    {
+      "turn": 0,
+      "response": "<think>There is a hole directly ahead, so I need to move down to avoid it. After reaching a frozen tile, I will turn right to continue moving down until I reach another frozen tile.</think>\n<answer>Down, Right</answer>",
+      "executed_actions": [
+        "down",
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false,
+      "prompt_tokens": 651
+    }
+  ],
+  "wall_seconds": 6.6558287143707275,
+  "peak_gpu_allocated_bytes": 7604426752,
+  "skill_id": "skill_0",
+  "retrieval_score": 0.95
+}

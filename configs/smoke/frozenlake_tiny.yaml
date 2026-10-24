@@ -1,0 +1,87 @@
+# Explicit directional variant, one PPO update batch; not paper-exact.
+data:
+  train_files: /data/local/ViSkill/src/configs/smoke/ppo_train8.yaml
+  val_files: /data/local/ViSkill/src/configs/smoke/ppo_val2.yaml
+  train_batch_size: 8
+  val_batch_size: 2
+  shuffle: false
+  seed: 42
+  dataloader_num_workers: 0
+  max_prompt_length: 8192
+  max_response_length: 4096
+actor_rollout_ref:
+  model:
+    path: /data/local/ViSkill/models/b0
+    use_remove_padding: true
+    use_fused_kernels: true
+    enable_gradient_checkpointing: true
+    lora_rank: 0
+  actor:
+    optim: {lr: 1.0e-6}
+    ppo_mini_batch_size: 4
+    ppo_micro_batch_size_per_gpu: 1
+    use_kl_loss: false
+    entropy_coeff: 0.0
+    freeze_vision_tower: false
+    fsdp_config: {param_offload: true, optimizer_offload: true, use_torch_compile: false}
+    checkpoint: {save_contents: [model], load_contents: [model]}
+  rollout:
+    name: sglang
+    mode: async
+    n: 1
+    tensor_model_parallel_size: 1
+    gpu_memory_utilization: 0.22
+    max_model_len: 12288
+    max_num_batched_tokens: 12288
+    max_num_seqs: 1
+    enforce_eager: true
+    free_cache_engine: true
+    log_prob_micro_batch_size_per_gpu: 1
+    multi_turn: {enable: true}
+    agent:
+      num_workers: 1
+      agent_loop_config_path: /data/local/ViSkill/src/vagen/configs/agent_skill.yaml
+    engine_kwargs:
+      sglang: {attention_backend: triton, mm_attention_backend: sdpa, context_length: 12288, random_seed: 42}
+critic:
+  optim: {lr: 1.0e-5}
+  ppo_mini_batch_size: 4
+  ppo_micro_batch_size_per_gpu: 1
+  model:
+    path: /data/local/ViSkill/models/b0
+    use_remove_padding: true
+    enable_gradient_checkpointing: true
+    lora_rank: 0
+    fsdp_config: {param_offload: true, optimizer_offload: true, use_torch_compile: false}
+  checkpoint: {save_contents: [model], load_contents: [model]}
+algorithm:
+  adv_estimator: gae
+  use_kl_in_reward: false
+  kl_ctrl: {kl_coef: 0.0}
+trainer:
+  total_training_steps: 1
+  total_epochs: 1
+  n_gpus_per_node: 2
+  nnodes: 1
+  logger: [console]
+  val_before_train: false
+  test_freq: 1
+  save_freq: 1
+  resume_mode: disable
+  project_name: local
+  experiment_name: smoke
+  default_local_dir: /data/local/ViSkill/checkpoints/smoke/directional_ppo_v1
+  rollout_data_dir: /data/local/ViSkill/results/ppo_smoke/directional_ppo_v1/rollout
+  validation_data_dir: /data/local/ViSkill/results/ppo_smoke/directional_ppo_v1/validation
+skill_system:
+  library: {path: /data/local/ViSkill/artifacts/ppo_smoke/directional_ppo_v1/library, max_size: 10000}
+  checkpoint_pairing: {enable: true}
+huggingface_hub: {hf_save_freq: null}
+ray_kwargs:
+  ray_init:
+    num_cpus: 16
+    num_gpus: 2
+    include_dashboard: false
+    _node_ip_address: 127.0.0.1
+    _temp_dir: /data/local/tmp/z0/r0
+    object_store_memory: 4294967296

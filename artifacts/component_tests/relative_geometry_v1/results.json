@@ -1,0 +1,186 @@
+[
+  {
+    "seed": 1,
+    "corner_response": "The elf is at the bottom left corner of the board. The gift goal is located at the top right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        3,
+        0
+      ],
+      "goal": [
+        1,
+        1
+      ],
+      "direction": "above_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "seed": 2,
+    "corner_response": "The elf is at the bottom left corner of the board. The gift goal is located at the top right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        3,
+        3
+      ],
+      "goal": [
+        3,
+        2
+      ],
+      "direction": "left",
+      "adjacent": true
+    },
+    "direction_correct": false,
+    "adjacent_correct": true
+  },
+  {
+    "seed": 3,
+    "corner_response": "The elf is at the bottom left corner of the board. The gift is located at the top right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        3,
+        1
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "direction": "above_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "seed": 4,
+    "corner_response": "The elf is at the top-left corner of the board. The gift is located at the bottom-right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above_right\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above_right",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        0,
+        1
+      ],
+      "goal": [
+        3,
+        3
+      ],
+      "direction": "below_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "seed": 5,
+    "corner_response": "The elf starts at the top-left corner of the board. The gift goal is located at the bottom-right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        0,
+        1
+      ],
+      "goal": [
+        2,
+        1
+      ],
+      "direction": "below",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "seed": 6,
+    "corner_response": "The elf is at the top-left corner of the board. The gift goal is located at the bottom-right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        0,
+        0
+      ],
+      "goal": [
+        1,
+        0
+      ],
+      "direction": "below",
+      "adjacent": true
+    },
+    "direction_correct": false,
+    "adjacent_correct": true
+  },
+  {
+    "seed": 7,
+    "corner_response": "The elf is at the bottom right corner of the board. The gift is located at the top left corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"above_right\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "above_right",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        2,
+        3
+      ],
+      "goal": [
+        3,
+        3
+      ],
+      "direction": "below",
+      "adjacent": true
+    },
+    "direction_correct": false,
+    "adjacent_correct": true
+  },
+  {
+    "seed": 8,
+    "corner_response": "The elf is at the top-left corner of the board. The gift goal is located at the bottom-right corner of the board.",
+    "relative_response": "```json\n{\n  \"direction\": \"right\",\n  \"adjacent\": true\n}\n```",
+    "parsed": {
+      "direction": "right",
+      "adjacent": true
+    },
+    "truth": {
+      "player": [
+        0,
+        1
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "direction": "below_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  }
+]

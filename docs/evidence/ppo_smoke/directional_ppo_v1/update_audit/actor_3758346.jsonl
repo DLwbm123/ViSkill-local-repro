@@ -1,0 +1,2 @@
+{"role": "actor", "pid": 3758346, "rank": 0, "sample_delta_l2": 0.0005103824011010961, "grad_norm": 10.521018028259277, "finite": true, "sampled_values": 282624, "trainable_local_elements": 1877311488}
+{"role": "actor", "pid": 3758346, "rank": 0, "sample_delta_l2": 0.00036952671674166153, "grad_norm": 6.706231594085693, "finite": true, "sampled_values": 282624, "trainable_local_elements": 1877311488}

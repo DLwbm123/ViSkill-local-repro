@@ -1,0 +1,32 @@
+{
+  "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
+  "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "local_source_commit": "03b17a7b6b28e66f5bf7a708bebffa936481a3eb",
+  "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
+  "removed_paths": [
+    "docs/evidence/hardware",
+    "docs/evidence/upstream_verl_identity.txt",
+    "docs/evidence/verl_tree_comparison.json",
+    "docs/evidence/paper_fulltext.txt",
+    "docs/evidence/reward_counterexample.json",
+    "docs/evidence/verl_package_diff.patch",
+    "docs/evidence/released_model_manifest.json",
+    "docs/evidence/released_asset_checks.json",
+    "docs/evidence/paper_pages",
+    "docs/evidence/released_skill_index.json",
+    "docs/evidence/environment",
+    "docs/evidence/delivery_checks.json",
+    "docs/evidence/resource_summary.json",
+    "docs/evidence/local_eval",
+    "docs/evidence/repository_identity.txt",
+    "docs/evidence/components/final_resource_0414.txt",
+    "docs/evidence/components/policy_cycle_v2_startup.txt"
+  ],
+  "sanitized_text_files": 54,
+  "path_mapping": {
+    "workspace": "/workspace/ViSkill-local-repro",
+    "server_storage": "/data/local"
+  },
+  "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
+  "status": "PARTIAL: PPO updates/model reload verified; online skill admission zero in the PPO batch."
+}

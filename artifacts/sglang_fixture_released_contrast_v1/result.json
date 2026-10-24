@@ -1,0 +1,37 @@
+{
+  "fixture_only": true,
+  "solver_source": "previous component fixture only, not training library",
+  "strategy": "When the goal is directly adjacent with no holes in between, move straight toward it.",
+  "success": true,
+  "turns": [
+    {
+      "response": "<think>I need to start by moving down to reach the goal.</think>\n<answer>Down, Down, Down, Right, Right, Right</answer>",
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "right",
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>I need to start by moving down to reach the goal.</think>\n<answer>Down, Down, Down, Right, Right, Right</answer>",
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "reward": 1.02,
+      "success": true
+    }
+  ],
+  "score": 0.95,
+  "wall_seconds": 10.459060907363892,
+  "backend": "SGLang0.5.2 Triton/vision SDPA",
+  "same_original_prompt": true,
+  "generation_count": 1,
+  "training": false
+}

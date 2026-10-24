@@ -1,0 +1,18 @@
+{
+  "raw": "<strategy>When the player is on a frozen tile and there is a hole directly in front of them, move down to avoid the hole. If there is no hole directly in front, move right to continue towards the goal.</strategy>",
+  "strategy": "When the player is on a frozen tile and there is a hole directly in front of them, move down to avoid the hole. If there is no hole directly in front, move right to continue towards the goal.",
+  "generation_meta": {
+    "id": "af79de5047f34b908876617f59b78612",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 151645
+    },
+    "prompt_tokens": 411,
+    "weight_version": "default",
+    "completion_tokens": 46,
+    "cached_tokens": 0,
+    "e2e_latency": 6.011451959609985
+  },
+  "fixture_only": true,
+  "prompt_changed": true
+}

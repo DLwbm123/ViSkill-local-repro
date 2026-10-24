@@ -1,0 +1,13 @@
+{
+  "original_start_unix": 1792772381.9046373,
+  "start_unix": 1792815379.2051814,
+  "deadline_unix": 1792815515.061637,
+  "supervisor_pid": 3540262,
+  "worker_pid": 3540271,
+  "physical_gpu": 4,
+  "fixture_only": true,
+  "training": false,
+  "protocol": "applicability_adherence_v1",
+  "original_preparation_window_remains_closed": true,
+  "write_limit_bytes": 36277069056
+}

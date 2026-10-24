@@ -1,0 +1,8 @@
+{
+  "conditions_finished": 9,
+  "wall_seconds": 14.199964761734009,
+  "peak_gpu_allocated_bytes": 7691363328,
+  "training": false,
+  "fixture_only": true,
+  "semantic_review_required": true
+}

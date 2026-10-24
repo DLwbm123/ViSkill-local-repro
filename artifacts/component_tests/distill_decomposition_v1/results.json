@@ -1,0 +1,270 @@
+[
+  {
+    "condition": "echo_actions",
+    "response": "[\"down\", \"down\", \"down\", \"right\", \"right\", \"right\"]",
+    "strict_tags": false,
+    "image_sizes": [],
+    "grid": [],
+    "image_tokens": 0,
+    "prompt_tokens": 51,
+    "completion_tokens": 19,
+    "pixel_stats": null,
+    "vision": {
+      "calls": 0,
+      "shape": [],
+      "norm": []
+    },
+    "generation_seconds": 1.1361844539642334
+  },
+  {
+    "condition": "compress_actions",
+    "response": "```json\n[\n  {\"direction\": \"down\", \"count\": 3},\n  {\"direction\": \"right\", \"count\": 3}\n]\n```",
+    "strict_tags": false,
+    "image_sizes": [],
+    "grid": [],
+    "image_tokens": 0,
+    "prompt_tokens": 79,
+    "completion_tokens": 33,
+    "pixel_stats": null,
+    "vision": {
+      "calls": 0,
+      "shape": [],
+      "norm": []
+    },
+    "generation_seconds": 0.8317346572875977
+  },
+  {
+    "condition": "perception_with_legend",
+    "response": "```json\n{\n  \"player_row_col\": [0, 2],\n  \"goal_row_col\": [3, 3],\n  \"hole_row_cols\": [[1, 1], [1, 3]]\n}\n```",
+    "strict_tags": false,
+    "image_sizes": [
+      [
+        256,
+        256
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ]
+    ],
+    "image_tokens": 81,
+    "prompt_tokens": 166,
+    "completion_tokens": 49,
+    "pixel_stats": {
+      "shape": [
+        324,
+        1176
+      ],
+      "mean": 1.7262396812438965,
+      "std": 0.6209819316864014
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          81,
+          2048
+        ]
+      ],
+      "norm": [
+        476.0726318359375
+      ]
+    },
+    "generation_seconds": 1.261472463607788
+  },
+  {
+    "condition": "separate_frames",
+    "response": "**Start:**\n- The player (elf) starts at the top-left corner of the grid.\n\n**End:**\n- The player reaches the bottom-right corner of the grid.\n\n**Sequence of Six Moves:**\n1. **Move Right:** The player moves to the right, avoiding the hole in the first frame.\n2. **Move Down:** The player moves down, avoiding the hole in the second frame.\n3. **Move Left:** The player moves to the left, avoiding the hole in the third frame.\n4. **Move Up:** The player moves up, avoiding the hole in the fourth frame.\n5. **Move Right:** The player moves to the right, avoiding the hole in the fifth frame.\n6. **Move Down:** The player moves down, reaching the goal in the sixth frame.",
+    "strict_tags": false,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ]
+    ],
+    "image_tokens": 567,
+    "prompt_tokens": 689,
+    "completion_tokens": 164,
+    "pixel_stats": {
+      "shape": [
+        2268,
+        1176
+      ],
+      "mean": 1.7210921049118042,
+      "std": 0.6283946633338928
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          567,
+          2048
+        ]
+      ],
+      "norm": [
+        1250.400634765625
+      ]
+    },
+    "generation_seconds": 4.440771102905273
+  },
+  {
+    "condition": "two_stage_strategy",
+    "response": "<strategy>\nThe elf successfully navigates to the goal by moving down three times and then right three times, avoiding obstacles and holes along the way.\n</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        18,
+        18
+      ]
+    ],
+    "image_tokens": 567,
+    "prompt_tokens": 764,
+    "completion_tokens": 34,
+    "pixel_stats": {
+      "shape": [
+        2268,
+        1176
+      ],
+      "mean": 1.7210921049118042,
+      "std": 0.6283946633338928
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          567,
+          2048
+        ]
+      ],
+      "norm": [
+        1250.400634765625
+      ]
+    },
+    "generation_seconds": 0.765777587890625
+  }
+]

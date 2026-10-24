@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETE_SCOPED_PASS_AFTER_IMPORT_REPAIR",
+  "purpose": "Qualify the explicit directional-contract variant through the real GymAgentLoop.run state machine, current-policy self-distillation, DistillCallback and persistent provider; no PPO.",
+  "scope": "New integration test uses the same fixed training seeds1..8 once from an empty library. This reexecutes environments because the official loop/token pipeline is the tested component, not a retry of the earlier wrapper. Only if the collection batch admits a valid skill, reuse the same8 states once. No solver or prior diagnostic library initializes it.",
+  "representation": "directional_contract_v1; exact prompt builder preserved; one greedy current-policy request per quality-success trajectory, no correction; strict field verification with lossless single outer JSON fence support.",
+  "backend": "Direct local Transformers BF16 SDPA adapter implements server_manager.generate from already expanded token IDs and real image tensors. Official GymAgentLoop state machine/tokenization/self-distillation and callback execute unchanged except opt-in representation/guard hooks. This is not native SGLang worker or distributed PPO verification.",
+  "training_sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "seed": 42,
+    "max_new_tokens": 512
+  },
+  "limits": {
+    "max_turns": 5,
+    "max_distill_calls": 16,
+    "max_model_calls": 96,
+    "max_context_tokens": 9216
+  },
+  "acceptance": [
+    "Actual successful rollout with valid current-policy contract",
+    "Callback admission into initially empty library and save/reload",
+    "Actual guarded retrieval, skill image injection, reward and utility update",
+    "Raw output/masks/trajectory/strategy audit preserved",
+    "Report rejected contracts and all outcomes; no selected successful sample reporting"
+  ],
+  "non_original": [
+    "Directional JSON strategy and greedy distillation",
+    "Privileged environment-state admission/retrieval verification",
+    "Explicit bounded state-progress reward and batch novelty repair"
+  ],
+  "default_behavior": "Existing free_text and unguarded configs retain original behavior. No default changes. Unknown/stochastic dynamics fail the optional guard.",
+  "stop": "Zero admitted collection skills stops reuse. No new seeds/models/prompts. No training or automatic E/PPO release; evaluate full evidence first.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 900,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

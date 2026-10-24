@@ -1,0 +1,37 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "training_sampling": true,
+  "collection_successes": 2,
+  "eligible": 1,
+  "admitted": 1,
+  "reuse_episodes": 8,
+  "reuse_successes": 2,
+  "reused_skills": [
+    null,
+    null,
+    null,
+    null,
+    "skill_0",
+    "skill_0",
+    "skill_0",
+    null
+  ],
+  "no_solver_trajectory": true,
+  "no_training": true,
+  "no_cold_start": true,
+  "original_distill_prompt": false,
+  "paper_exact": false,
+  "paired_original_control_saved": true,
+  "semantic_review_required": true,
+  "wall_seconds": 67.24517583847046,
+  "peak_gpu_allocated_bytes": 7728349184
+}

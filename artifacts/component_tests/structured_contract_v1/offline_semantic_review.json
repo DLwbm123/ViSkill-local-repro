@@ -1,0 +1,30 @@
+{
+  "analysis_only_fence_removed": true,
+  "not_admitted": true,
+  "prediction": {
+    "when": {
+      "goal_offset": [
+        -1,
+        0
+      ],
+      "requires_clear_route": true
+    },
+    "what": [
+      {
+        "action": "down",
+        "count": 1
+      }
+    ]
+  },
+  "observed_actual_offset": [
+    1,
+    0
+  ],
+  "predicted_offset": [
+    -1,
+    0
+  ],
+  "actions_correct": true,
+  "condition_correct": false,
+  "conclusion": "Strict parse failure preserved. Offline removal of markdown still exposes a sign error; format normalization alone would not qualify the skill."
+}

@@ -1,0 +1,10 @@
+# Planned isolated environment; exact resolved packages await setup completion.
+# Neutral prefix required by process command-line privacy rules.
+name: z0
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+# Exact pip requirements/commands: scripts/prepare_environment_worker.py
+# Final pip_freeze.txt is emitted only after successful installation and pip check.

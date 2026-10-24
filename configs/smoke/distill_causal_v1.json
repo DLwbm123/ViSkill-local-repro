@@ -1,0 +1,18 @@
+{
+  "experiment": "distill_causal_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": ["images absent or not reaching visual encoder", "120px trajectory thumbnails obscure spatial facts", "forced assistant strategy prefix favors shallow continuation", "few-shot examples dominate visual evidence", "spatial perception vs trajectory reading vs strategy synthesis failure"],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "same existing solver-only SFFF/FHHF/FFFF/FFFG component fixture; no new seeds or held-out evaluation data",
+  "conditions": ["original_120", "blank_120", "original_256", "no_prefix_120", "no_prefix_256", "no_prefix_no_examples_256", "perception_initial", "transcribe_card_256", "symbolic_no_images"],
+  "generation": {"seed":42,"do_sample":false,"repetition_penalty":1.05,"max_new_tokens":256,"one_generation_per_condition":true},
+  "metrics": ["exact serialized prompt", "image grid and image token count", "pixel tensor statistics", "vision encoder execution and output norm", "real-vs-blank visual embedding difference", "raw response/strict parse", "manually audited WHEN/WHAT grounding", "generation seconds and GPU memory"],
+  "interpretation": "Blank-image sensitivity diagnoses use of visual evidence but identical decoded words do not alone prove images are ignored. Resolution/prefix/example contrasts identify specific inference changes, not faithful paper settings. Symbolic arm provides ground-truth state/actions only for capability diagnosis; never becomes a training skill or E substitute. No arm alone proves E or releases PPO.",
+  "physical_gpu":4,
+  "original_total_clock_start":1792772381.9046373,
+  "absolute_total_deadline":1792858781.9046373,
+  "wall_limit_seconds":900,
+  "baseline_four_roots_bytes":35777069056,
+  "maximum_extra_bytes":500000000,
+  "stop_rule":"All nine declared cases once, no resampling; stop on technical error or budget. Preserve earlier failures and current clock; review evidence before any next protocol. No parameter updates or checkpoint downloads."
+}

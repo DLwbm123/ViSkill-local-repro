@@ -1,0 +1,411 @@
+[
+  {
+    "condition": "original_120",
+    "response": "<strategy>When facing a hole directly ahead, move down to avoid it and then continue moving right until you reach the goal.</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        918,
+        168
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        12,
+        66
+      ]
+    ],
+    "image_tokens": 279,
+    "prompt_tokens": 475,
+    "completion_tokens": 26,
+    "pixel_stats": {
+      "shape": [
+        1116,
+        1176
+      ],
+      "mean": 1.619694471359253,
+      "std": 0.9071130156517029
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          279,
+          2048
+        ]
+      ],
+      "norm": [
+        778.765869140625
+      ]
+    },
+    "generation_seconds": 1.3615195751190186
+  },
+  {
+    "condition": "blank_120",
+    "response": "<strategy>When approaching the goal, if there are multiple paths available, choose the one that avoids holes and moves you closer to the goal. If a direct path is blocked by holes, move sideways to an adjacent frozen tile to create a new path.</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        918,
+        168
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        12,
+        66
+      ]
+    ],
+    "image_tokens": 279,
+    "prompt_tokens": 475,
+    "completion_tokens": 51,
+    "pixel_stats": {
+      "shape": [
+        1116,
+        1176
+      ],
+      "mean": 0.1804518699645996,
+      "std": 0.10939837247133255
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          279,
+          2048
+        ]
+      ],
+      "norm": [
+        2353.14599609375
+      ],
+      "relative_l2_vs_real": 3.049806833267212,
+      "cosine_vs_real": 0.13709309697151184
+    },
+    "generation_seconds": 1.1004810333251953
+  },
+  {
+    "condition": "original_256",
+    "response": "<strategy>When the goal is directly adjacent with no holes in between, move straight toward it.</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        1870,
+        304
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        22,
+        134
+      ]
+    ],
+    "image_tokens": 818,
+    "prompt_tokens": 1014,
+    "completion_tokens": 20,
+    "pixel_stats": {
+      "shape": [
+        3272,
+        1176
+      ],
+      "mean": 1.6401792764663696,
+      "std": 0.8555528521537781
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          818,
+          2048
+        ]
+      ],
+      "norm": [
+        1171.8411865234375
+      ]
+    },
+    "generation_seconds": 0.7458271980285645
+  },
+  {
+    "condition": "no_prefix_120",
+    "response": "<strategy>When facing a hole directly ahead, move down to avoid it and then continue moving right until you reach the goal.</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        918,
+        168
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        12,
+        66
+      ]
+    ],
+    "image_tokens": 279,
+    "prompt_tokens": 472,
+    "completion_tokens": 29,
+    "pixel_stats": {
+      "shape": [
+        1116,
+        1176
+      ],
+      "mean": 1.619694471359253,
+      "std": 0.9071130156517029
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          279,
+          2048
+        ]
+      ],
+      "norm": [
+        778.765869140625
+      ]
+    },
+    "generation_seconds": 0.6241645812988281
+  },
+  {
+    "condition": "no_prefix_256",
+    "response": "<strategy>When the goal is directly adjacent with no holes in between, move straight toward it.</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        1870,
+        304
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        22,
+        134
+      ]
+    ],
+    "image_tokens": 818,
+    "prompt_tokens": 1011,
+    "completion_tokens": 23,
+    "pixel_stats": {
+      "shape": [
+        3272,
+        1176
+      ],
+      "mean": 1.6401792764663696,
+      "std": 0.8555528521537781
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          818,
+          2048
+        ]
+      ],
+      "norm": [
+        1171.8411865234375
+      ]
+    },
+    "generation_seconds": 0.5757248401641846
+  },
+  {
+    "condition": "no_prefix_no_examples_256",
+    "response": "<strategy>\nWhen you encounter a hole, move diagonally up-left to avoid it. This diagonal movement helps you navigate around obstacles more efficiently than moving straight.\n</strategy>",
+    "strict_tags": true,
+    "image_sizes": [
+      [
+        256,
+        256
+      ],
+      [
+        1870,
+        304
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ],
+      [
+        1,
+        22,
+        134
+      ]
+    ],
+    "image_tokens": 818,
+    "prompt_tokens": 947,
+    "completion_tokens": 36,
+    "pixel_stats": {
+      "shape": [
+        3272,
+        1176
+      ],
+      "mean": 1.6401792764663696,
+      "std": 0.8555528521537781
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          818,
+          2048
+        ]
+      ],
+      "norm": [
+        1171.8411865234375
+      ]
+    },
+    "generation_seconds": 0.8210551738739014
+  },
+  {
+    "condition": "perception_initial",
+    "response": "```json\n{\n  \"grid_size\": 4,\n  \"player_row_col\": [0, 1],\n  \"goal_row_col\": [2, 2],\n  \"hole_row_cols\": [3, 3]\n}\n```",
+    "strict_tags": false,
+    "image_sizes": [
+      [
+        256,
+        256
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        18,
+        18
+      ]
+    ],
+    "image_tokens": 81,
+    "prompt_tokens": 143,
+    "completion_tokens": 51,
+    "pixel_stats": {
+      "shape": [
+        324,
+        1176
+      ],
+      "mean": 1.7262396812438965,
+      "std": 0.6209819316864014
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          81,
+          2048
+        ]
+      ],
+      "norm": [
+        476.0726318359375
+      ]
+    },
+    "generation_seconds": 1.0820791721343994
+  },
+  {
+    "condition": "transcribe_card_256",
+    "response": "The trajectory card provided is a sequence of actions taken by a character moving through a grid-like environment, likely representing a game or simulation. Here's the transcription of the six action labels in order:\n\n1. **down**\n2. **right**\n3. **down**\n4. **right**\n5. **right**\n6. **right**\n\n### Starting and Ending Points:\n- **Starting Point:** The character begins at the top-left corner of the grid.\n- **Ending Point:** The character ends at the bottom-right corner of the grid.\n\n### Description:\nThe character moves down one cell, then to the right, down again, to the right, to the right, and finally to the right. This sequence of movements takes the character from the top-left corner to the bottom-right corner of the grid.",
+    "strict_tags": false,
+    "image_sizes": [
+      [
+        1870,
+        304
+      ]
+    ],
+    "grid": [
+      [
+        1,
+        22,
+        134
+      ]
+    ],
+    "image_tokens": 737,
+    "prompt_tokens": 790,
+    "completion_tokens": 163,
+    "pixel_stats": {
+      "shape": [
+        2948,
+        1176
+      ],
+      "mean": 1.630720853805542,
+      "std": 0.8770024180412292
+    },
+    "vision": {
+      "calls": 1,
+      "shape": [
+        [
+          737,
+          2048
+        ]
+      ],
+      "norm": [
+        1070.691162109375
+      ]
+    },
+    "generation_seconds": 3.3279285430908203
+  },
+  {
+    "condition": "symbolic_no_images",
+    "response": "<strategy>\n  - **Turn Point:** Move down to (0,1).\n    - **Action:** Down.\n  - **Turn Point:** Move down to (1,1).\n    - **Action:** Down.\n  - **Turn Point:** Move down to (2,1).\n    - **Action:** Down.\n  - **Turn Point:** Move right to (2,2).\n    - **Action:** Right.\n  - **Turn Point:** Move right to (2,3).\n    - **Action:** Right.\n</strategy>",
+    "strict_tags": true,
+    "image_sizes": [],
+    "grid": [],
+    "image_tokens": 0,
+    "prompt_tokens": 129,
+    "completion_tokens": 112,
+    "pixel_stats": null,
+    "vision": {
+      "calls": 0,
+      "shape": [],
+      "norm": []
+    },
+    "generation_seconds": 2.4612488746643066
+  }
+]

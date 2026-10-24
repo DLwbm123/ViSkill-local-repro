@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Summarize this actual successful FrozenLake trajectory as a reusable JSON contract. The two images show its initial and terminal states. The executed actions below reached the goal. Use ONLY keys when and what. when has goal_offset (integer [delta_row,delta_col] from start to goal) and requires_clear_route (boolean true, a REQUIRED applicability condition). Rows increase downward; columns increase rightward. what is a list of action/count objects; action is up/down/left/right and count is a positive integer. Preserve the observed action sequence. Do not add corner names, explanations, markdown or other keys. Return only JSON.
+Observed terminal success: true
+Executed actions: ["down"]<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|><|im_end|>
+<|im_start|>assistant

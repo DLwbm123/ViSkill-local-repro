@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE_NEGATIVE",
+  "purpose": "Test a bounded verifier-assisted current-policy correction, explicitly separate from faithful one-stage ViSkill",
+  "source": "The same eight saved onpolicy_structured_v1 training episodes; only seed6 is quality eligible. No new seeds, models, sampling or solver trajectories.",
+  "negative_control": "Saved original and structured strategy_6 claim a wrong bottom-right goal; preserve unchanged.",
+  "procedure": [
+    "Derive observed player/goal positions, relative direction, adjacency and executed action counts from saved environment records; these are audit facts, not model predictions.",
+    "Compare the saved model-generated WHEN and WHAT with these facts; record mismatches without silently fixing text.",
+    "Allow exactly one current-base-policy correction request with original image, original response and explicit verifier feedback. Keep raw response and all supplied feedback.",
+    "Validate corrected applicability and action counts against the same records; no second correction or alternate prompt.",
+    "If semantics fails, stop negative. If it passes, render into a new isolated diagnostic library and run the already-fixed eight reuse states once, saving every outcome and utility change. This does not erase original failures or automatically pass E/PPO."
+  ],
+  "fidelity": "Non-paper-exact: verified environment-state feedback augments image-only self-distillation. Current local policy still generates all strategy text. No external teacher, hand-written final strategy or training cold-start. Never label this faithful reproduction or adopt into PPO silently.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 600,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ],
+  "stop_rule": "One bounded correction only; any retries share the first receipt deadline. Do not expand seeds or use test/evaluation answers. Integrating a candidate into the official agent loop and its E tests remains a separate gate before PPO."
+}

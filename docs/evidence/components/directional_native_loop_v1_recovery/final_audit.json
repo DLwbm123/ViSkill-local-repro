@@ -1,0 +1,109 @@
+{
+  "time_unix": 1792819815.8867328,
+  "conservative_total_bytes": 35784060928,
+  "rows": [
+    {
+      "seed": 1,
+      "traj_success": true,
+      "retrieved_skill_id": null,
+      "trajectory_actions": [
+        "up",
+        "up",
+        "right"
+      ],
+      "reward_score": 1.06
+    },
+    {
+      "seed": 2,
+      "traj_success": true,
+      "retrieved_skill_id": "skill_0",
+      "trajectory_actions": [
+        "left"
+      ],
+      "reward_score": 1.02
+    },
+    {
+      "seed": 3,
+      "traj_success": false,
+      "retrieved_skill_id": null,
+      "trajectory_actions": [
+        "down",
+        "right",
+        "down",
+        "right"
+      ],
+      "reward_score": 0.04
+    },
+    {
+      "seed": 4,
+      "traj_success": false,
+      "retrieved_skill_id": null,
+      "trajectory_actions": [
+        "left",
+        "down",
+        "right",
+        "down"
+      ],
+      "reward_score": 0.04
+    },
+    {
+      "seed": 5,
+      "traj_success": false,
+      "retrieved_skill_id": null,
+      "trajectory_actions": [
+        "up",
+        "down",
+        "up",
+        "up",
+        "up"
+      ],
+      "reward_score": 0.1
+    },
+    {
+      "seed": 6,
+      "traj_success": true,
+      "retrieved_skill_id": "skill_1",
+      "trajectory_actions": [
+        "down"
+      ],
+      "reward_score": 1.02
+    },
+    {
+      "seed": 7,
+      "traj_success": true,
+      "retrieved_skill_id": "skill_1",
+      "trajectory_actions": [
+        "down"
+      ],
+      "reward_score": 1.02
+    },
+    {
+      "seed": 8,
+      "traj_success": false,
+      "retrieved_skill_id": null,
+      "trajectory_actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "reward_score": 0.08
+    }
+  ],
+  "gpus": "3, 51615 MiB\n4, 42617 MiB\n5, 64919 MiB\n",
+  "original_total_deadline": 1792858781.9046373,
+  "project_processes": []
+}

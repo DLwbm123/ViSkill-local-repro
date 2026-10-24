@@ -1,0 +1,20 @@
+{
+  "protocol": "local_eval_v1",
+  "seeds": [10001,10002,10003,10004,10005,10006,10007,10008,10009,10010,10011,10012,10013,10014,10015,10016,10017,10018,10019,10020],
+  "generation_seed": 42,
+  "max_turns": 5,
+  "max_new_tokens": 512,
+  "max_context_tokens": 9216,
+  "do_sample": false,
+  "precision": "bfloat16",
+  "attention": "sdpa",
+  "environment": {"render_mode":"vision","size":4,"p":0.8,"is_slippery":false,"slip_prob":0.0,"max_actions_per_step":5,"prompt_format":"free_think"},
+  "retrieval_threshold": 0.8,
+  "similarity_weight": 0.9,
+  "guided_weight": 0.8,
+  "arms": {"A":{"model":"b0","skills":false},"B":{"model":"r0","skills":false},"C":{"model":"r0","skills":true}},
+  "evaluation_library_updates": false,
+  "cold_start": false,
+  "distill_mode": "self",
+  "scope": "Pipeline validation only; no training or paper-number claim. Full history retokenized by Transformers; native processor image resizing. Code-as-released prefix reward recorded, no algorithm repair hidden. All arms frozen before observing results."
+}

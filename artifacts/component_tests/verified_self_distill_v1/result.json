@@ -1,0 +1,36 @@
+{
+  "raw_response": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>",
+  "feedback": {
+    "player_row_col": [
+      0,
+      0
+    ],
+    "goal_row_col": [
+      1,
+      0
+    ],
+    "goal_relative_to_player": "below",
+    "goal_cardinally_adjacent": true,
+    "executed_actions": [
+      "down"
+    ],
+    "success": true,
+    "source": "saved training environment records, NOT model perception"
+  },
+  "previous_strategy": {
+    "original_control": "<strategy>When facing a hole directly ahead, move diagonally to avoid it and then continue moving forward on frozen tiles until reaching the goal.</strategy>",
+    "visual_facts": "The elf starts at the top-left corner of the board. The gift goal is located at the bottom-right corner of the board.",
+    "action_compression": "```json\n[\n    {\"direction\": \"down\", \"count\": 1}\n]\n```",
+    "raw": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>",
+    "strategy": "WHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once",
+    "strict_tags": true,
+    "source": "current base policy actual successful rollout",
+    "paper_exact": false
+  },
+  "model_calls": 1,
+  "paper_exact": false,
+  "training": false,
+  "semantic_review_required_before_reuse": true,
+  "wall_seconds": 2.600682020187378,
+  "peak_gpu_allocated_bytes": 7553938432
+}

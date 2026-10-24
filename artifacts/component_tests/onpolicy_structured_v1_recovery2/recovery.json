@@ -1,0 +1,8 @@
+{
+  "source": "/data/local/ViSkill/artifacts/component_tests/onpolicy_structured_v1",
+  "collection_reexecuted": false,
+  "distillation_reexecuted": false,
+  "reuse_rng_seed": 42,
+  "reuse_rng_continuation": false,
+  "original_phase_deadline": 1792816169.5443912
+}

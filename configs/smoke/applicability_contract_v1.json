@@ -1,0 +1,38 @@
+{
+  "experiment": "applicability_contract_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "A required route-validity output field can prevent omission of applicability constraints; compare prose and structured output without changing model/seed/fixture"
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "same existing solver-only SFFF/FHHF/FFFF/FFFG component fixture; no new seeds or held-out evaluation data",
+  "conditions": [
+    "explicit_route_clause",
+    "structured_applicability_fields"
+  ],
+  "generation": {
+    "seed": 42,
+    "do_sample": false,
+    "repetition_penalty": 1.05,
+    "max_new_tokens": 256,
+    "one_generation_per_condition": true
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "Use raw previously generated visual facts and action compression plus original image. No hand-written strategy or counterfactual evaluation response is supplied. This tests interface completeness, not semantic robustness or PPO eligibility.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 900,
+  "baseline_four_roots_bytes": 35777495040,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Two fixed calls, no retries. Share causal diagnostic deadline1792815515.061637 and original24h clock. All outputs reviewed including failures; no threshold tuning."
+}

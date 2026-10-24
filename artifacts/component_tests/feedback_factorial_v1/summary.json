@@ -1,0 +1,7 @@
+{
+  "new_calls": 3,
+  "training": false,
+  "admission": false,
+  "wall_seconds": 5.318408966064453,
+  "peak_gpu_allocated_bytes": 7550497280
+}

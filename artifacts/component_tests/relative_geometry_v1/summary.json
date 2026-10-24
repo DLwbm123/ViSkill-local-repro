@@ -1,0 +1,10 @@
+{
+  "direction_correct": 0,
+  "adjacent_correct": 3,
+  "both_correct": 0,
+  "episodes": 8,
+  "model_calls": 17,
+  "wall_seconds": 11.241814136505127,
+  "peak_gpu_allocated_bytes": 7543968768,
+  "training": false
+}

@@ -1,0 +1,7 @@
+{
+  "collection_reexecuted": false,
+  "saved_distillation_reexecuted": false,
+  "reuse_rng_seed": 42,
+  "rng_continuation": false,
+  "source": "/data/local/ViSkill/artifacts/component_tests/directional_native_loop_v1"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE_NEGATIVE",
+  "purpose": "Rule out low-precision/fused-attention arithmetic as a sufficient explanation for the sign inversion in the exact structured successful-trajectory request on Blackwell. This is a numerical implementation contrast, not a new prompt.",
+  "control": "Saved structured_contract_v1 BF16/SDPA output; do not rerun.",
+  "treatment": "Same pinned weights, processor, images, exact serialized prompt, seed42 and greedy max256; only model arithmetic FP32 and eager attention. These two changes are coupled, so an output difference alone cannot attribute to either one.",
+  "calls": 1,
+  "stop": "No new prompt, no admission/reuse/training; preserve output even if valid. Cannot release PPO.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 300,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

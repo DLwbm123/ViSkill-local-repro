@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "global_step": 1,
+  "library": "paired_skill_library",
+  "skill_count": 0,
+  "model_roles": [
+    "actor",
+    "critic"
+  ],
+  "scope": "weights and skill snapshot pairing; optimizer continuity depends on save_contents"
+}

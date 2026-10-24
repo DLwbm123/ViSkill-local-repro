@@ -1,0 +1,12 @@
+{
+  "raw_response": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "control": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "same_saved_prompt": true,
+  "dtype": "float32",
+  "attention": "eager",
+  "calls": 1,
+  "training": false,
+  "admission": false,
+  "wall_seconds": 4.023180246353149,
+  "peak_gpu_allocated_bytes": 15128573440
+}

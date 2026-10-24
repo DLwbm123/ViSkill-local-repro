@@ -1,0 +1,38 @@
+{
+  "experiment": "processor_parity_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "Automatic fast-image-processor migration may alter visual preprocessing and cause errors; test slow saved implementation with exact same serialized requests"
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "Only the same8 saved training observations, no new rollouts/seeds; all predictions retained, truth scored after each generation and never fed to model.",
+  "conditions": [
+    "slow_processor_all8_fixed_relative_requests",
+    "slow_processor_original_fixed_distill_prompt"
+  ],
+  "generation": {
+    "seed": 42,
+    "do_sample": false,
+    "max_new_tokens_relative": 160,
+    "max_new_tokens_strategy": 256,
+    "calls": 9
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "Change only image processor implementation. Compare token IDs/grid/pixel differences and outputs. No automatic adoption of slow processor based on selected successes.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 300,
+  "baseline_four_roots_bytes": 35778842624,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Nine calls exactly, retain all fast controls and negative results. No new prompts or images, no downloads. Original24h clock and300s bound."
+}

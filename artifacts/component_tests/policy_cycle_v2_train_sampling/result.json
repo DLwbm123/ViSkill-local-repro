@@ -1,0 +1,22 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "training_sampling": true,
+  "collection_successes": 0,
+  "eligible": 0,
+  "admitted": 0,
+  "reuse_episodes": 0,
+  "reuse_successes": 0,
+  "reused_skills": [],
+  "no_solver_trajectory": true,
+  "no_training": true,
+  "no_cold_start": true,
+  "original_distill_prompt": true,
+  "semantic_review_required": true,
+  "wall_seconds": 57.19410514831543,
+  "peak_gpu_allocated_bytes": 7728349184
+}

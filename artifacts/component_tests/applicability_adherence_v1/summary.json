@@ -1,0 +1,7 @@
+{
+  "wall_seconds": 4.591513156890869,
+  "peak_gpu_allocated_bytes": 7604421632,
+  "fixture_only": true,
+  "training": false,
+  "paper_exact": false
+}

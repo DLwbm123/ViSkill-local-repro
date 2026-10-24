@@ -1,0 +1,18 @@
+{
+  "raw": "<strategy>When the goal is directly adjacent with no holes in between, move straight toward it.</strategy>",
+  "strategy": "When the goal is directly adjacent with no holes in between, move straight toward it.",
+  "generation_meta": {
+    "id": "23b4bb8803334d51b03f0b944ed84215",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 151645
+    },
+    "prompt_tokens": 475,
+    "weight_version": "default",
+    "completion_tokens": 20,
+    "cached_tokens": 0,
+    "e2e_latency": 8.081818103790283
+  },
+  "fixture_only": true,
+  "prompt_changed": false
+}

@@ -1,0 +1,14 @@
+{
+  "raw_response": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "control": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "same_saved_prompt": true,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "weights": "existing pinned r0",
+  "processor": "b0; exact input parity verified",
+  "calls": 1,
+  "training": false,
+  "admission": false,
+  "wall_seconds": 2.9755773544311523,
+  "peak_gpu_allocated_bytes": 9291524608
+}

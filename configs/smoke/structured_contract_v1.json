@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE_NEGATIVE",
+  "hypothesis": "An extractive JSON strategy grounded in recorded successful actions avoids unsupported free-form spatial clauses; a separate executable applicability check prevents approximate retrieval from injecting an unsafe reference route.",
+  "source": "Existing training seeds1..8 from onpolicy_structured_v1; quality gate must reproduce eligible seed6 only. No new collection or solver trajectory.",
+  "model_input": "Initial and terminal RGB frames, actual successful executed actions and terminal-success flag. No environment coordinates, desc or verifier answers supplied to model. One greedy call; strict JSON without completion repair.",
+  "schema": {
+    "when": {
+      "goal_offset": "[integer delta_row, integer delta_col]",
+      "requires_clear_route": true
+    },
+    "what": "list of {action: down/up/left/right, count: positive integer}"
+  },
+  "acceptance": "Strict JSON keys/types; expanded actions equal recorded actions, predicted goal offset equals observed endpoint displacement; deterministic replay of reference actions is in bounds, avoids holes, reaches goal only on final action. If any failure, stop without admission/retry.",
+  "reuse": "On passing candidate only: unchanged actual DistillCallback admission/render/save/reload. Diagnostic wrapper checks retrieved goal offset and reference route on all existing8 initial states before prompt injection; fixed sampling seed42, at most5 turns per state, utility updates saved. This is callback+provider integration, not official GymAgentLoopSkill execution or PPO integration.",
+  "fidelity": "Changed method, not original reproduction. Generation uses recorded policy success/actions, not external teacher. Acceptance and retrieval guard use privileged environment state; disclose it. No handwritten final strategy. Outputs cannot automatically pass original E or release PPO.",
+  "control": "Saved free-form structured strategy and original callback/retrieval results preserved; no claimed paired performance effect from this small diagnostic.",
+  "stop": "Exactly one model distillation request. Negative stops variant. No additional seeds, prompts or models.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 600,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

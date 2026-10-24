@@ -1,0 +1,26 @@
+{
+  "response": "<think>There is a hole directly below me, and I should avoid it. The goal is to my right, so I should move right first to get closer.</think>\n<answer>Right</answer>",
+  "actions": [
+    "right"
+  ],
+  "reward": 0.02,
+  "done": false,
+  "success": false,
+  "generation_metadata": {
+    "id": "eb322834adf84c8382b21757f2ff36b5",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 151645
+    },
+    "prompt_tokens": 362,
+    "weight_version": "default",
+    "completion_tokens": 44,
+    "cached_tokens": 0,
+    "e2e_latency": 34.50959634780884
+  },
+  "wall_seconds": 49.16656756401062,
+  "training": false,
+  "scope": "one local FrozenLake image/action; not a full episode or PPO",
+  "backend_deviation": "text Triton and vision SDPA instead of trainer default FA3",
+  "image_count": 1
+}

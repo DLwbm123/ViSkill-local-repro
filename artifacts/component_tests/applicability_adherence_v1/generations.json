@@ -1,0 +1,14 @@
+[
+  {
+    "name": "original_map_0",
+    "raw": "<think>My goal is to reach the gift located at the bottom-right corner of the board. The current state shows that I am at the top-left corner with two frozen tiles in front of me. Since there are no holes, I can move down to progress towards the gift. After reaching the bottom row, I will need to move right to reach the gift.</think>\n<answer>Down, Right</answer>",
+    "prompt_tokens": 651,
+    "image_count": 2
+  },
+  {
+    "name": "counterfactual_map_0",
+    "raw": "<think>Since the goal is located at the bottom-right corner of the board, I need to move downwards to reach it. There are no obstacles or holes in this path.</think>\n<answer>Down</answer>",
+    "prompt_tokens": 651,
+    "image_count": 2
+  }
+]

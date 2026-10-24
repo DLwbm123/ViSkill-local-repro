@@ -1,0 +1,23 @@
+[
+  {
+    "image": true,
+    "old_answer": true,
+    "response": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>",
+    "source": "reused prior exact cell"
+  },
+  {
+    "image": false,
+    "old_answer": true,
+    "response": "<strategy>\nWHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once\n</strategy>"
+  },
+  {
+    "image": true,
+    "old_answer": false,
+    "response": "<strategy>\nWHEN the player is at the bottom-right corner of the map (row 2, column 3) AND the goal is directly below the player (goal_row_col = 1, 0)\nWHAT retain the observed action direction (down) and count (1)\n</strategy>"
+  },
+  {
+    "image": false,
+    "old_answer": false,
+    "response": "<strategy>\nWHEN the player is at the bottom row (row 0) and the goal is in the same column (column 0), AND the goal is directly below the player, THEN execute the action \"down\" to move the player closer to the goal.\n</strategy>"
+  }
+]

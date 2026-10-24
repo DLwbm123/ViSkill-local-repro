@@ -1,0 +1,41 @@
+{
+  "semantic_gate": true,
+  "raw_response": "```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "official_agent_loop_used": false,
+  "privileged_retrieval_guard": true,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "training_sampling": true,
+  "collection_successes": 2,
+  "eligible": 1,
+  "admitted": 1,
+  "reuse_episodes": 8,
+  "reuse_successes": 3,
+  "reused_skills": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "skill_0",
+    "skill_0",
+    null
+  ],
+  "no_solver_trajectory": true,
+  "no_training": true,
+  "no_cold_start": true,
+  "original_distill_prompt": false,
+  "paper_exact": false,
+  "paired_original_control_saved": true,
+  "semantic_review_required": false,
+  "wall_seconds": 80.60075640678406,
+  "peak_gpu_allocated_bytes": 7728923648
+}

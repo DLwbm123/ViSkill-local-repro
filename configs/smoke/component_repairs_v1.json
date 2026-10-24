@@ -1,0 +1,11 @@
+{
+  "purpose": "FrozenLake engineering repairs; not paper-exact or original-code equivalence",
+  "reward_mode": "state_progress_bounded",
+  "recheck_batch_novelty": true,
+  "cold_start": false,
+  "distill_mode": "self",
+  "upper_clip_reason": "Eq6 can exceed 1 for a shortcut to a late reference state; cap at 1 explicitly preserves the paper's stated completion-bonus ordering",
+  "original_route": "skill_guided action-prefix mode and recheck_batch_novelty=false remain available and default",
+  "reference_positions": "stored actual per-action positions required; no action-derived fallback",
+  "test_scope": "CPU fixtures only, reuse saved strategy; no additional model sampling, training, or held-out tuning"
+}

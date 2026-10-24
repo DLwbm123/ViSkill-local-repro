@@ -1,0 +1,39 @@
+{
+  "next_id": 1,
+  "skills": [
+    {
+      "id": "skill_0",
+      "seed": 6,
+      "env_id": null,
+      "features": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "WHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner\nDO move down once",
+      "image_path": "skill_0.png",
+      "utility": 0.5355000000000001,
+      "use_count": 3,
+      "trajectory": [
+        "down"
+      ],
+      "positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  ]
+}

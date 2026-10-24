@@ -1,0 +1,22 @@
+{
+  "purpose": "Test actual training-sampling mechanism after greedy v1 had zero successes; one fixed batch, no resampling or seed search",
+  "train_seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "heldout": false,
+  "original_distill_prompt": true,
+  "ground_actions": false,
+  "collection": "all 4 with empty library; official training sampling temperature1 top_p1 unlimited top_k, n1, base b0 seed42 5turn x512tokens",
+  "admission": "all successful quality_ratio1 candidates, live novelty .9; no solver trajectory",
+  "reuse": "all same 4 seeds once with newly created library; diagnostic not generalization",
+  "render": "120px path-annotated visual card, original component settings",
+  "reward": "explicit state_progress_bounded for retrieved failures",
+  "budget": "original setup deadline, additional max600s, write stop85GB",
+  "training": false,
+  "fixture_or_cycle_library_never_used_as_training_cold_start": true,
+  "acceptance": "actual success->self strategy->card->admission->save reload->retrieval->interaction; all strategies reviewed regardless of outcome",
+  "sampling_source": "verl/verl/trainer/config/rollout/rollout.yaml:11,14,17,99 (Transformers top_k0 means unlimited)"
+}

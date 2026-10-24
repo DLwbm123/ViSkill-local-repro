@@ -1,0 +1,74 @@
+[
+  {
+    "player_pos": [
+      3,
+      0
+    ],
+    "score": 0.5,
+    "accepted": false,
+    "reason": "no threshold-qualified candidate"
+  },
+  {
+    "player_pos": [
+      3,
+      3
+    ],
+    "score": 0.5,
+    "accepted": false,
+    "reason": "no threshold-qualified candidate"
+  },
+  {
+    "player_pos": [
+      3,
+      1
+    ],
+    "score": 0.5,
+    "accepted": false,
+    "reason": "no threshold-qualified candidate"
+  },
+  {
+    "player_pos": [
+      0,
+      1
+    ],
+    "score": 0.5375000000000001,
+    "accepted": false,
+    "reason": "no threshold-qualified candidate"
+  },
+  {
+    "player_pos": [
+      0,
+      1
+    ],
+    "score": 0.8374999999999999,
+    "accepted": false,
+    "reason": "relative goal condition mismatch"
+  },
+  {
+    "player_pos": [
+      0,
+      0
+    ],
+    "score": 0.95,
+    "accepted": true,
+    "reason": "reference route reaches goal"
+  },
+  {
+    "player_pos": [
+      2,
+      3
+    ],
+    "score": 0.95,
+    "accepted": true,
+    "reason": "reference route reaches goal"
+  },
+  {
+    "player_pos": [
+      0,
+      1
+    ],
+    "score": 0.7250000000000001,
+    "accepted": false,
+    "reason": "no threshold-qualified candidate"
+  }
+]

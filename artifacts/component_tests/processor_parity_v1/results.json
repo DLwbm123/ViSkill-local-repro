@@ -1,0 +1,339 @@
+[
+  {
+    "case": "relative_1",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.0002033134369412437,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        3,
+        0
+      ],
+      "goal": [
+        1,
+        1
+      ],
+      "direction": "above_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "case": "relative_2",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.0001761093153618276,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        3,
+        3
+      ],
+      "goal": [
+        3,
+        2
+      ],
+      "direction": "left",
+      "adjacent": true
+    },
+    "direction_correct": false,
+    "adjacent_correct": true
+  },
+  {
+    "case": "relative_3",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.00018994715355802327,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        3,
+        1
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "direction": "above_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "case": "relative_4",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.00020331508130766451,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above_right\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        0,
+        1
+      ],
+      "goal": [
+        3,
+        3
+      ],
+      "direction": "below_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "case": "relative_5",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.00021632738935295492,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        0,
+        1
+      ],
+      "goal": [
+        2,
+        1
+      ],
+      "direction": "below",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "case": "relative_6",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.0002033155906246975,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        0,
+        0
+      ],
+      "goal": [
+        1,
+        0
+      ],
+      "direction": "below",
+      "adjacent": true
+    },
+    "direction_correct": false,
+    "adjacent_correct": true
+  },
+  {
+    "case": "relative_7",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.00020331365521997213,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"above\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"above_right\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        2,
+        3
+      ],
+      "goal": [
+        3,
+        3
+      ],
+      "direction": "below",
+      "adjacent": true
+    },
+    "direction_correct": false,
+    "adjacent_correct": true
+  },
+  {
+    "case": "relative_8",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.00018994709535036236,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "```json\n{\n  \"direction\": \"right\",\n  \"adjacent\": true\n}\n```",
+    "fast_response": "```json\n{\n  \"direction\": \"right\",\n  \"adjacent\": true\n}\n```",
+    "truth": {
+      "player": [
+        0,
+        1
+      ],
+      "goal": [
+        1,
+        2
+      ],
+      "direction": "below_right",
+      "adjacent": false
+    },
+    "direction_correct": false,
+    "adjacent_correct": false
+  },
+  {
+    "case": "original_fixture_strategy",
+    "processor_comparison": {
+      "fast_grid": [
+        [
+          1,
+          18,
+          18
+        ],
+        [
+          1,
+          12,
+          66
+        ]
+      ],
+      "slow_grid": [
+        [
+          1,
+          18,
+          18
+        ],
+        [
+          1,
+          12,
+          66
+        ]
+      ],
+      "same_input_ids": true,
+      "relative_pixel_l2": 0.0003134343714918941,
+      "max_pixel_absdiff": 0.028440117835998535
+    },
+    "slow_response": "<strategy>When facing a hole directly ahead, move down to avoid it and then continue moving right until you reach the goal.</strategy>"
+  }
+]

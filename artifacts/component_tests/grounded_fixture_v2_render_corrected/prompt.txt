@@ -1,0 +1,24 @@
+[Skill Distillation]
+Task: Navigate the player to the goal tile while avoiding holes. Move only on frozen tiles.
+
+You successfully completed this task. Based on the initial state and your trajectory, distill a reusable strategy that can guide solving similar tasks.
+
+The strategy should describe WHEN to apply it (what the state looks like) and WHAT to do (concrete actions or approach).
+
+Your response should be in the format of:
+<strategy>...</strategy>
+
+Example 1:
+<strategy>When the goal is directly adjacent with no holes in between, move straight toward it.</strategy>
+
+Example 2:
+<strategy>When holes block the direct path to the goal, first move sideways to a clear column or row, then navigate toward the goal along frozen tiles.</strategy>
+
+Initial state:
+<image>
+Successful trajectory:
+<image>
+Observed executed primitive actions, in order (one tile per action): down, down, down, right, right, right.
+Ground WHAT to do in this observed sequence: preserve direction order and the number of repeated moves before each turn. Ground WHEN in the images; do not invent a hole or obstacle. Generate the strategy yourself.
+
+Now distill your strategy:

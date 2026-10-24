@@ -1,0 +1,20 @@
+{
+  "name": "directional_ppo_v1",
+  "purpose": "One full-parameter PPO batch, followed by independent weights/skill-pair load and validation. Engineering only; explicit non-paper directional variant.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "max_attempt_seconds": 5400,
+  "project_write_stop_bytes": 85000000000,
+  "maximum_additional_bytes": 40000000000,
+  "allowed_physical_gpus": [3,5],
+  "training_seeds": [1,2,3,4,5,6,7,8],
+  "validation_seeds": [9,10],
+  "sampling_seed": 42,
+  "batch_size": 8,
+  "mini_batch_size": 4,
+  "total_training_batches": 1,
+  "selection": "Fixed seeds; no outcome-based replacement or repeat. Zero admitted skills means incomplete loop, not permission to replace seeds.",
+  "checkpoint": "Model shards only for actor and critic plus paired library and dataloader. No optimizer or RNG continuity claim.",
+  "acceptance": ["real rollout and reward", "finite actor/critic losses and backward", "nonzero actual sampled parameter delta", "new library admission from current policy", "actual model save/load", "matching skill pair restored", "validation after training and after independent load"],
+  "stop": "No extra PPO batch, no 300-step training. Repairs before first update retain this receipt deadline; after a partial update preserve state and reassess before any rerun. Never stop unrelated Ray or GPU processes."
+}

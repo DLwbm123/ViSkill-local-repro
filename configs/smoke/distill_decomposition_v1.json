@@ -1,0 +1,41 @@
+{
+  "experiment": "distill_decomposition_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "Coordinate-heavy synthesis and sprite/trajectory interpretation fail even though visual encoder works; test elementary instruction following, action compression, explicit sprite legend, separate frames, and local-policy two-stage synthesis."
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "same existing solver-only SFFF/FHHF/FFFF/FFFG component fixture; no new seeds or held-out evaluation data",
+  "conditions": [
+    "echo_actions",
+    "compress_actions",
+    "perception_with_legend",
+    "separate_frames",
+    "two_stage_strategy"
+  ],
+  "generation": {
+    "seed": 42,
+    "do_sample": false,
+    "repetition_penalty": 1.05,
+    "max_new_tokens": 256,
+    "one_generation_per_condition": true
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "Final two-stage strategy is a non-paper-exact inference variant using recorded action metadata and separate visual frames; success must be semantically reviewed and then tested through card reuse. No standalone result grants PPO. Earlier original and causal failures remain.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 900,
+  "baseline_four_roots_bytes": 35777208320,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Five calls exactly, same fixture/base. Final synthesis uses raw model-generated action compression plus the seven original frames; no hand-corrected strategy or truth-derived caption. No tuning after output. Retain original 24h start and 900s local deadline. Symbolic controls are diagnostic only."
+}

@@ -1,0 +1,10 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Correct your previous strategy using the attached initial image and the verified feedback below. The previous bottom-right goal claim is false. Generate one reusable conditional strategy inside <strategy>...</strategy>. WHEN must state the verified relative goal condition; WHAT must retain the observed action direction and count. Do not invent a longer route, diagonal action, or additional observations. Return the corrected strategy only.
+Previous model output:
+WHEN the elf is at the top-left corner of the board AND there are no holes on the path to the bottom-right corner
+DO move down once
+Verified feedback:
+{"player_row_col": [0, 0], "goal_row_col": [1, 0], "goal_relative_to_player": "below", "goal_cardinally_adjacent": true, "executed_actions": ["down"], "success": true, "source": "saved training environment records, NOT model perception"}<|vision_start|><|image_pad|><|vision_end|><|im_end|>
+<|im_start|>assistant

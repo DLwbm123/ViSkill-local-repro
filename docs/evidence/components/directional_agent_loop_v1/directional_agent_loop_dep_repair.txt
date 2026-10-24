@@ -1,0 +1,5 @@
+Collecting cachetools==5.5.2
+  Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+Installing collected packages: cachetools
+Successfully installed cachetools-5.5.2

@@ -1,0 +1,37 @@
+{
+  "experiment": "relative_geometry_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "Corner/edge instruction plus standard-board prior produces false conditions on randomly placed goals; relative geometry may reduce this failure"
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "Only the same8 saved training observations, no new rollouts/seeds; all predictions retained, truth scored after each generation and never fed to model.",
+  "conditions": [
+    "corner_prompt_and_relative_prompt_on_all8_saved_initial_images",
+    "one_strategy_on_previously_quality_eligible_seed6"
+  ],
+  "generation": {
+    "seed": 42,
+    "do_sample": false,
+    "max_new_tokens": 160,
+    "calls": 17
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "This tests and quantifies the new inference variant bias. All8 images must be reported. Seed6 synthesis eligibility came from the prior quality gate, not favorable geometry predictions. A new caption is not accepted without semantic and execution validation.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 300,
+  "baseline_four_roots_bytes": 35778699264,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Exactly17 calls; no retries/new images. Keep original24h clock, add300s local hard cap; no PPO or library mutation."
+}

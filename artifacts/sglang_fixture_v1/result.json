@@ -1,0 +1,54 @@
+{
+  "fixture_only": true,
+  "solver_source": "previous component fixture only, not training library",
+  "strategy": "When the goal is directly adjacent with no holes in between, move straight toward it.",
+  "success": false,
+  "turns": [
+    {
+      "response": "<think>There is a hole directly below the player, so moving down would lead to falling into it. The goal is to the right, so moving right is the safest option to avoid the hole.</think>\n<answer>Right</answer>",
+      "actions": [
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+      "actions": [
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+      "actions": [
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+      "actions": [
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since the goal is to the right and there are no holes in the way, moving right will lead directly to the goal without any risk of falling into a hole.</think>\n<answer>Right</answer>",
+      "actions": [
+        "right"
+      ],
+      "reward": 0.02,
+      "success": false
+    }
+  ],
+  "score": 0.95,
+  "wall_seconds": 11.868166446685791,
+  "backend": "SGLang0.5.2 Triton/vision SDPA",
+  "same_original_prompt": true,
+  "generation_count": 1,
+  "training": false
+}

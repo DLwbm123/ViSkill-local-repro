@@ -1,0 +1,146 @@
+{
+  "skill_system": {
+    "enable": true,
+    "library": {
+      "path": "${EXPERIMENT_DIR}/skill_library",
+      "max_size": 10000
+    },
+    "cold_start": {
+      "enable": false,
+      "source": "${BASEDIR}/skill_library_cold_start/frozenlake"
+    },
+    "distill": {
+      "min_score": 0.9
+    },
+    "retrieval": {
+      "min_score": 0.8
+    },
+    "reward": {
+      "mode": "skill_guided",
+      "guided_weight": 0.8
+    },
+    "render": {
+      "trajectory": {
+        "enable": true,
+        "action_type": "text",
+        "draw_path": true,
+        "thumbnail_size": 120
+      },
+      "strategy": {
+        "enable": true,
+        "type": "vision"
+      },
+      "scale": 1
+    }
+  },
+  "data": {
+    "train_files": "${DATASET_TRAIN}",
+    "val_files": "${DATASET_VAL}",
+    "train_batch_size": 128,
+    "max_prompt_length": 5000,
+    "max_response_length": 4000
+  },
+  "algorithm": {
+    "adv_estimator": "gae",
+    "kl_ctrl": {
+      "kl_coef": 0.0
+    }
+  },
+  "actor_rollout_ref": {
+    "model": {
+      "path": "${REF_MODEL_PATH}",
+      "use_remove_padding": true,
+      "use_fused_kernels": true,
+      "enable_gradient_checkpointing": true
+    },
+    "actor": {
+      "optim": {
+        "lr": 1e-06
+      },
+      "ppo_mini_batch_size": 32,
+      "ppo_micro_batch_size_per_gpu": 1,
+      "use_kl_loss": false,
+      "kl_loss_coef": 0.0,
+      "kl_loss_type": "low_var_kl",
+      "entropy_coeff": 0.0,
+      "checkpoint": {
+        "save_contents": [
+          "model",
+          "hf_model",
+          "optimizer",
+          "extra"
+        ]
+      },
+      "ulysses_sequence_parallel_size": 1,
+      "fsdp_config": {
+        "param_offload": true,
+        "optimizer_offload": true
+      }
+    },
+    "rollout": {
+      "log_prob_micro_batch_size_per_gpu": 1,
+      "tensor_model_parallel_size": 1,
+      "name": "sglang",
+      "mode": "async",
+      "n": 1,
+      "max_num_batched_tokens": 10000,
+      "gpu_memory_utilization": 0.6,
+      "enforce_eager": true,
+      "free_cache_engine": true,
+      "enable_chunked_prefill": true,
+      "multi_turn": {
+        "enable": true
+      },
+      "agent": {
+        "agent_loop_config_path": "$agent_loop_config_path"
+      },
+      "disable_log_stats": false
+    },
+    "ref": {
+      "log_prob_micro_batch_size_per_gpu": 1,
+      "fsdp_config": {
+        "param_offload": true
+      }
+    }
+  },
+  "trainer": {
+    "critic_warmup": 0,
+    "logger": [
+      "console",
+      "wandb"
+    ],
+    "val_before_train": true,
+    "n_gpus_per_node": "$(echo $CUDA_VISIBLE_DEVICES | tr ',' '\\n' | wc -l)",
+    "nnodes": 1,
+    "save_freq": 100,
+    "test_freq": 20,
+    "project_name": "${PROJECT_NAME}",
+    "experiment_name": "${EXPERIMENT_NAME}",
+    "default_local_dir": "${SAVE_CHECKPOINT_DIR}",
+    "validation_data_dir": "${EXPERIMENT_DIR}/validation",
+    "rollout_data_dir": "${EXPERIMENT_DIR}/rollout_data",
+    "log_val_generations": 32,
+    "total_training_steps": 301
+  },
+  "critic": {
+    "optim": {
+      "lr": 1e-05
+    },
+    "model": {
+      "use_remove_padding": true,
+      "path": "${REF_MODEL_PATH}",
+      "enable_gradient_checkpointing": true,
+      "fsdp_config": {
+        "param_offload": true,
+        "optimizer_offload": true
+      }
+    },
+    "ppo_micro_batch_size_per_gpu": 1
+  },
+  "_audit_metadata": {
+    "source": "examples/train/frozenlake/train_ppo_qwen25vl3b_skill.sh at upstream 7acaff880871b8d898d91c515c151080eabcba20",
+    "purpose": "Exact explicit script overrides; unresolved shell paths retained. Non-executable archival YAML, not a claim paper and code agree. See docs/01_paper_code_audit.md.",
+    "gpu_count_in_script": 4,
+    "paper_table_and_appendix_discrepancies": "See audit; not silently reconciled."
+  }
+}

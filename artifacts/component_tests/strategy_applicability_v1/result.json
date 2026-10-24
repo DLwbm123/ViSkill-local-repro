@@ -1,0 +1,97 @@
+[
+  {
+    "map": "original_map",
+    "retrieval_score": 0.95,
+    "retrieved": true,
+    "success": true,
+    "steps": [
+      {
+        "action": "Down",
+        "positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "done": false,
+        "success": false
+      },
+      {
+        "action": "Down",
+        "positions": [
+          [
+            2,
+            0
+          ]
+        ],
+        "done": false,
+        "success": false
+      },
+      {
+        "action": "Down",
+        "positions": [
+          [
+            3,
+            0
+          ]
+        ],
+        "done": false,
+        "success": false
+      },
+      {
+        "action": "Right",
+        "positions": [
+          [
+            3,
+            1
+          ]
+        ],
+        "done": false,
+        "success": false
+      },
+      {
+        "action": "Right",
+        "positions": [
+          [
+            3,
+            2
+          ]
+        ],
+        "done": false,
+        "success": false
+      },
+      {
+        "action": "Right",
+        "positions": [
+          [
+            3,
+            3
+          ]
+        ],
+        "done": true,
+        "success": true
+      }
+    ],
+    "policy_rollout": false
+  },
+  {
+    "map": "counterfactual_map",
+    "retrieval_score": 0.8,
+    "retrieved": true,
+    "success": false,
+    "steps": [
+      {
+        "action": "Down",
+        "positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "done": true,
+        "success": false
+      }
+    ],
+    "policy_rollout": false
+  }
+]

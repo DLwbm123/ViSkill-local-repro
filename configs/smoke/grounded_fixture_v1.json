@@ -1,0 +1,19 @@
+{
+  "purpose": "Repair E self-distillation grounding; diagnostic synthetic fixture only",
+  "fixed_map": ["SFFF", "FHHF", "FFFF", "FFFG"],
+  "model": "pinned base policy b0; same model distills and consumes card",
+  "generation_seed": 42,
+  "strategy_generations": 1,
+  "do_sample": false,
+  "distill_max_tokens": 256,
+  "reuse_max_tokens": 512,
+  "reuse_max_turns": 5,
+  "ground_actions": true,
+  "original_prompt_remains_default": true,
+  "success_criteria": "strict strategy tags, action counts/order consistent on review, saved/retrieved visual card, actual environment success",
+  "no_training": true,
+  "no_heldout_episodes": true,
+  "no_fixture_cold_start": true,
+  "deadline": "min(original setup deadline 1792793981.9046373, launch+600 seconds); no timer reset",
+  "storage_cutoff_bytes": 85000000000
+}

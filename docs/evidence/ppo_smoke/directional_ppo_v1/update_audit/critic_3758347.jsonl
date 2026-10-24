@@ -1,0 +1,2 @@
+{"role": "critic", "pid": 3758347, "rank": 1, "sample_delta_l2": 0.005033502530840036, "grad_norm": 396.3961486816406, "finite": true, "sampled_values": 282624, "trainable_local_elements": 1877312513}
+{"role": "critic", "pid": 3758347, "rank": 1, "sample_delta_l2": 0.003461609396530708, "grad_norm": 40.838436126708984, "finite": true, "sampled_values": 282624, "trainable_local_elements": 1877312513}

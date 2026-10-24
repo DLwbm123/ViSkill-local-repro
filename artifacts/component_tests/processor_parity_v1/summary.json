@@ -1,0 +1,10 @@
+{
+  "slow_direction_correct": 0,
+  "slow_adjacent_correct": 3,
+  "spatial_cases": 8,
+  "total_calls": 9,
+  "fast_processor_class": "Qwen2VLImageProcessorFast",
+  "slow_processor_class": "Qwen2VLImageProcessor",
+  "wall_seconds": 5.999476671218872,
+  "peak_gpu_allocated_bytes": 7582556672
+}

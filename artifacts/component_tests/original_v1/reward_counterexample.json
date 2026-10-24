@@ -1,0 +1,17 @@
+{
+  "reference": [
+    "right",
+    "right",
+    "down",
+    "down"
+  ],
+  "model": [
+    "down",
+    "right",
+    "right"
+  ],
+  "paper_state_progress": 0.75,
+  "official_prefix": 0.0,
+  "paper_total": 0.6200000000000001,
+  "official_total": 0.02
+}

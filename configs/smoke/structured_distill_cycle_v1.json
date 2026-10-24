@@ -1,0 +1,40 @@
+{
+  "experiment": "structured_distill_cycle_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "Separate visual applicability and action compression, then explicit conditional synthesis, can recover complete WHEN/WHAT without manual strategy text"
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "same existing solver-only SFFF/FHHF/FFFF/FFFG component fixture; no new seeds or held-out evaluation data",
+  "conditions": [
+    "visual_condition",
+    "action_compression",
+    "strategy",
+    "fixed_fixture_reuse_up_to5turns"
+  ],
+  "generation": {
+    "seed": 42,
+    "do_sample": false,
+    "repetition_penalty": 1.05,
+    "max_new_tokens": 256,
+    "one_generation_per_condition": true
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "Non-paper-exact three-stage inference using original image and recorded actions. Neither correct caption nor reuse success alone proves online full E closure. All model intermediates remain raw and unedited. Fixture library never used in training.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 900,
+  "baseline_four_roots_bytes": 35777339392,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Exactly three current-policy distillation calls and at most5 reuse turns; no repair/resampling. Share first causal diagnostic deadline1792815515.061637 and original24h clock. No training."
+}

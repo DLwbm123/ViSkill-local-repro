@@ -1,0 +1,55 @@
+{
+  "fixture_only": true,
+  "solver_source": "previous component fixture only, not training library",
+  "strategy": "When the player is on a frozen tile and there is a hole directly in front of them, move down to avoid the hole. If there is no hole directly in front, move right to continue towards the goal.",
+  "success": false,
+  "turns": [
+    {
+      "response": "<think>There is a hole directly in front of me, and I am on a frozen tile. To avoid falling into the hole, I should move down to the left.</think>\n<answer>Down, Left</answer>",
+      "actions": [
+        "down",
+        "left"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since I moved down and left, I am now on a frozen tile with a hole directly in front of me. To avoid falling into the hole, I should move down again.</think>\n<answer>Down</answer>",
+      "actions": [
+        "down"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since I moved down and am now on a frozen tile with a hole directly in front of me, I should move down again to avoid falling into the hole.</think>\n<answer>Down</answer>",
+      "actions": [
+        "down"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since I moved down and am now on a frozen tile with a hole directly in front of me, I should move down again to avoid falling into the hole.</think>\n<answer>Down</answer>",
+      "actions": [
+        "down"
+      ],
+      "reward": 0.02,
+      "success": false
+    },
+    {
+      "response": "<think>Since I moved down and am now on a frozen tile with a hole directly in front of me, I should move down again to avoid falling into the hole.</think>\n<answer>Down</answer>",
+      "actions": [
+        "down"
+      ],
+      "reward": 0.02,
+      "success": false
+    }
+  ],
+  "score": 0.95,
+  "wall_seconds": 12.157314538955688,
+  "backend": "SGLang0.5.2 Triton/vision SDPA",
+  "same_original_prompt": false,
+  "generation_count": 1,
+  "training": false
+}

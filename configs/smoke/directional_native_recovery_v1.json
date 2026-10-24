@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_SCOPED_PASS",
+  "purpose": "Recover the unstarted native reuse phase by explicitly allowing one outer assistant role line; never edit JSON fields or repeat collection/distillation.",
+  "source": "directional_native_loop_v1 complete8 collection records, original3 generated raw strategies and frame files; first library0 because strict parsing rejected role envelopes.",
+  "repair": "distill.allow_assistant_envelope=true, default false everywhere else. Remove at most one leading assistant newline before existing one-fence handling; reject extra prose/messages and verify all semantic fields as before. Preserve raw text unchanged in library/audits.",
+  "acceptance": "Saved seed2 left1 and seed6 down1 must pass semantic checks; saved multi-step seed1 remains rejected because direction/distance are wrong. Real callback admission/save/reload then all8 native official-loop reuse once.",
+  "rng": "Reuse had not started. Native engine seed42 is explicit new-phase initialization, not bit-identical continuation of lost RNG state. No new collection or strategy generation for saved rows.",
+  "backend": "Same native SGLang Engine and actual bundled SGLangHttpServer.generate method, same current base weights.",
+  "sampling": "Same temperature1 top_p1 top_k-1, max512/turn, max5turn, fixedseeds1..8; new valid-success distillation within reuse follows original loop with explicit wrapper compatibility.",
+  "stop": "One reuse phase; do not repeat/favorably select seeds. Negative semantic results remain negative. No PPO release from parsing alone.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "shared_attempt_deadline_from": "state/components/directional_native_loop_v1_receipt.json",
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ]
+}

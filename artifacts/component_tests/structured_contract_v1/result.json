@@ -1,0 +1,10 @@
+{
+  "semantic_gate": false,
+  "reason": "Expecting value: line 1 column 1 (char 0)",
+  "raw_response": "```json\n{\n  \"when\": {\n    \"goal_offset\": [-1, 0],\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```",
+  "distill_model_calls": 1,
+  "admitted": 0,
+  "reuse_episodes": 0,
+  "training": false,
+  "paper_exact": false
+}

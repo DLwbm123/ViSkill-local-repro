@@ -1,0 +1,42 @@
+{
+  "official_agent_loop_used": true,
+  "backend": "native SGLang Engine with bundled SGLangHttpServer.generate; no Ray/FSDP synchronization",
+  "collection_successes": 3,
+  "collection_admitted": 2,
+  "reuse_episodes": 8,
+  "reuse_successes": 4,
+  "reuse_skill_ids": [
+    null,
+    "skill_0",
+    null,
+    null,
+    null,
+    "skill_1",
+    "skill_1",
+    null
+  ],
+  "new_distillation_calls": 1,
+  "collection_reexecuted": false,
+  "saved_distillation_reexecuted": false,
+  "valid_distillations": 2,
+  "library_size": 2,
+  "skills": [
+    {
+      "id": "skill_0",
+      "utility": 0.55,
+      "use_count": 1
+    },
+    {
+      "id": "skill_1",
+      "utility": 0.5950000000000001,
+      "use_count": 2
+    }
+  ],
+  "total_model_calls": 22,
+  "paper_exact": false,
+  "training": false,
+  "cold_start": false,
+  "wall_seconds": 41.45057153701782,
+  "driver_torch_peak_bytes": 29533696,
+  "native_engine_memory_is_in_child_process": true
+}

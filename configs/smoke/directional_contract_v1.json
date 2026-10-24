@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_SCOPED_PASS",
+  "hypothesis": "The correct Down1 action is translated incorrectly into signed coordinates in both pinned checkpoints and FP32. Replace only the condition output representation with named direction and Manhattan distance, retaining original model input evidence and one-call design.",
+  "source": "Existing training seeds1..8 from onpolicy_structured_v1; quality gate must reproduce eligible seed6 only. No new collection or solver trajectory.",
+  "model_input": "Initial and terminal RGB frames, actual successful executed actions and terminal-success flag. No environment coordinates, desc or verifier answers supplied to model. One greedy call; strict JSON without completion repair.",
+  "schema": {
+    "when": {
+      "goal_direction": "up/down/left/right/up_left/up_right/down_left/down_right",
+      "goal_manhattan_distance": "positive integer",
+      "requires_clear_route": true
+    },
+    "what": "list of {action: down/up/left/right, count: positive integer}"
+  },
+  "acceptance": "Exact keys/types; expanded model actions equal actual successful actions; model goal direction/distance match observed start-to-terminal displacement; verify deterministic transitions and reference route reaches actual goal safely. Invalid stops, zero admission. All eight saved states remain fixed.",
+  "reuse": "On passing candidate only: unchanged actual DistillCallback admission/render/save/reload. Diagnostic wrapper checks retrieved goal offset and reference route on all existing8 initial states before prompt injection; fixed sampling seed42, at most5 turns per state, utility updates saved. This is callback+provider integration, not official GymAgentLoopSkill execution or PPO integration.",
+  "fidelity": "Changed method, not original reproduction. Generation uses recorded policy success/actions, not external teacher. Acceptance and retrieval guard use privileged environment state; disclose it. No handwritten final strategy. Outputs cannot automatically pass original E or release PPO.",
+  "control": "Saved structured_contract_v1 signed-offset output; no rerun.",
+  "stop": "Exactly one model distillation request. Negative stops variant. No additional seeds, prompts or models.",
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "local_limit_seconds": 600,
+  "maximum_additional_bytes": 500000000,
+  "project_write_stop_bytes": 85000000000,
+  "allowed_gpus": [
+    3,
+    4,
+    5
+  ],
+  "format_normalization": "Before any generation, allow exactly one complete outer ```json...``` fence with no extra text; preserve its raw response. No repair of JSON body, key, values or prose. This differs from the earlier strict JSON parser and does not retroactively pass it.",
+  "scope_limit": "Only one pre-existing quality-eligible real one-step trajectory. A valid result is scoped component evidence, not general multi-step spatial competence or performance benefit. Official full GymAgentLoopSkill integration remains separate."
+}

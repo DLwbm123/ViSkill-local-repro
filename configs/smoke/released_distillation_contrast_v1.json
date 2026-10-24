@@ -1,0 +1,21 @@
+{
+  "experiment": "sglang_fixture_released_contrast_v1",
+  "purpose": "Determine whether the released policy can ground a self-distilled strategy from the identical solver-only fixture that failed with the base policy; separate policy-capability limitation from a shared input/rendering limitation.",
+  "historical_control": "sglang_fixture_v1 (base model, original prompt); no control rerun",
+  "changed_factor": "model and its associated processor from pinned b0 to pinned r0",
+  "fixed_factors": "SFFF/FHHF/FFFF/FFFG, original 7 fixture frames and down3/right3 trajectory, original prompt including examples, 120px thumbnails with path, seed42, greedy, strategy256/reuse512 token limits, max5 reuse turns, SGLang Triton/vision SDPA",
+  "library": "empty isolated fixture library; released library never loaded; fixture never used for training",
+  "metrics": ["strategy parseability", "strategy WHEN/WHAT grounding and direction/count correctness", "actual reuse success and actions", "retrieval score", "exit code", "runtime and storage"],
+  "interpretation": "Success would support policy-specific capability as a cause, not establish base-policy E PASS. Failure would show this released policy also fails this diagnostic, not prove all local self-distillation impossible. Neither result authorizes PPO.",
+  "cold_start": false,
+  "distill": "self",
+  "training": false,
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 600,
+  "baseline_four_roots_bytes": 35776811008,
+  "maximum_extra_bytes": 250000000,
+  "project_write_stop_bytes": 85000000000,
+  "stop_rule": "One generation and at most five reuse turns, no additional prompt, seed, sampling or checkpoint variants; preserve all failures. Original six-hour preparation attempt remains closed. This distinct checkpoint contrast is additionally capped by the unchanged original 24-hour clock."
+}

@@ -1,0 +1,43 @@
+{
+  "experiment": "onpolicy_structured_v1",
+  "authorization": "2026-10-24 user explicitly requests new causal diagnosis and experiments, superseding earlier agent-declared no-more-variants stop; D/E prerequisite for PPO retained",
+  "hypotheses": [
+    "Determine whether a finite batch of genuine current-policy successes supports structured local distillation and library evolution beyond the solver fixture"
+  ],
+  "model": "pinned b0 only, Transformers BF16 SDPA",
+  "data": "Training seeds1..8 fixed before run; held-out evaluation seeds10001..10020 excluded. No seed selection, solver trajectories, or cold start.",
+  "conditions": [
+    "collect_all8_empty_library",
+    "paired_original_and_structured_distillation_on_quality_successes",
+    "batch_novelty_admission",
+    "reload_library",
+    "reuse_all8_if_nonempty",
+    "utility_update"
+  ],
+  "generation": {
+    "seed": 42,
+    "collection_and_reuse_sampling": "temperature1/top_p1/top_k0 (unlimited), n1",
+    "distillation": "greedy, original-prefix control versus three-stage structured",
+    "max_turns": 5,
+    "max_new_tokens": 512,
+    "distill_max_new_tokens": 256
+  },
+  "metrics": [
+    "exact serialized prompt",
+    "image grid and image token count",
+    "pixel tensor statistics",
+    "vision encoder execution and output norm",
+    "real-vs-blank visual embedding difference",
+    "raw response/strict parse",
+    "manually audited WHEN/WHAT grounding",
+    "generation seconds and GPU memory"
+  ],
+  "interpretation": "Original and structured strategies use the same actual successful trajectories and current base policy. Only structured variant is admitted to an isolated diagnostic library; admission is mechanical, not proof of semantic correctness. All strategies require review. No PPO until integrated E gate passes.",
+  "physical_gpu": 4,
+  "original_total_clock_start": 1792772381.9046373,
+  "absolute_total_deadline": 1792858781.9046373,
+  "wall_limit_seconds": 600,
+  "baseline_four_roots_bytes": 35777748992,
+  "maximum_extra_bytes": 500000000,
+  "stop_rule": "Exactly8 collection episodes and at most8 reuse episodes. Empty library/zero qualified successes stops with negative result. No additional seeds/retries. Original24h clock retained; separate10-minute online qualification bound."
+}

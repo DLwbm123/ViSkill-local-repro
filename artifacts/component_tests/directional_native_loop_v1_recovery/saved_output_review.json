@@ -1,0 +1,20 @@
+[
+  {
+    "seed": 1,
+    "valid": false,
+    "reason": "relative goal condition mismatch",
+    "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"up\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"up\",\n      \"count\": 1\n    },\n    {\n      \"action\": \"right\",\n      \"count\": 1\n    }\n  ]\n}\n```"
+  },
+  {
+    "seed": 2,
+    "valid": true,
+    "reason": null,
+    "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"left\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"left\",\n      \"count\": 1\n    }\n  ]\n}\n```"
+  },
+  {
+    "seed": 6,
+    "valid": true,
+    "reason": null,
+    "raw": "\nassistant\n```json\n{\n  \"when\": {\n    \"goal_direction\": \"down\",\n    \"goal_manhattan_distance\": 1,\n    \"requires_clear_route\": true\n  },\n  \"what\": [\n    {\n      \"action\": \"down\",\n      \"count\": 1\n    }\n  ]\n}\n```"
+  }
+]

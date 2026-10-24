@@ -1,0 +1,55 @@
+[
+  {
+    "map": "original_map",
+    "strategy": "WHEN the elf is at the top-left corner of the board and the gift is located at the bottom-right corner of the board,\n    PROVIDED THAT no hole exists on the route from the elf to the gift,\n    THEN record the actions as follows:\n        {\"direction\": \"down\", \"count\": 3}\n        {\"direction\": \"right\", \"count\": 3}",
+    "success": false,
+    "turns": [
+      {
+        "turn": 0,
+        "response": "<think>My goal is to reach the gift located at the bottom-right corner of the board. The current state shows that I am at the top-left corner with two frozen tiles in front of me. Since there are no holes, I can move down to progress towards the gift. After reaching the bottom row, I will need to move right to reach the gift.</think>\n<answer>Down, Right</answer>",
+        "actions": [
+          "down",
+          "right"
+        ],
+        "step_positions": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "reward": 0.02,
+        "success": false
+      }
+    ],
+    "retrieval_score": 0.95,
+    "policy_rollout": true
+  },
+  {
+    "map": "counterfactual_map",
+    "strategy": "WHEN the elf is at the top-left corner of the board and the gift is located at the bottom-right corner of the board,\n    PROVIDED THAT no hole exists on the route from the elf to the gift,\n    THEN record the actions as follows:\n        {\"direction\": \"down\", \"count\": 3}\n        {\"direction\": \"right\", \"count\": 3}",
+    "success": false,
+    "turns": [
+      {
+        "turn": 0,
+        "response": "<think>Since the goal is located at the bottom-right corner of the board, I need to move downwards to reach it. There are no obstacles or holes in this path.</think>\n<answer>Down</answer>",
+        "actions": [
+          "down"
+        ],
+        "step_positions": [
+          [
+            1,
+            0
+          ]
+        ],
+        "reward": 0.02,
+        "success": false
+      }
+    ],
+    "retrieval_score": 0.8,
+    "policy_rollout": true
+  }
+]
