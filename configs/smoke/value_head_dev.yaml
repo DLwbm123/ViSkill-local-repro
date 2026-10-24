@@ -1,0 +1,33 @@
+envs:
+- name: FrozenLake
+  n_envs: 16
+  data_source: frozenlake
+  seed_list:
+  - 150280
+  - 150002
+  - 150334
+  - 150004
+  - 150423
+  - 150006
+  - 150655
+  - 150007
+  - 150679
+  - 150011
+  - 150713
+  - 150012
+  - 150740
+  - 150014
+  - 150826
+  - 150015
+  - -1
+  max_turns: 5
+  response_length_per_turn: 512
+  config:
+    render_mode: vision
+    size: 4
+    p: 0.8
+    is_slippery: false
+    slip_prob: 0.0
+    max_actions_per_step: 5
+    prompt_format: free_think
+    accurate_dynamics_prompt: true

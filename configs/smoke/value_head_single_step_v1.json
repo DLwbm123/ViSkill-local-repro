@@ -1,0 +1,137 @@
+{
+  "name": "value_head_single_step_v1",
+  "status": "FROZEN_MODEL_READY_REPAIR1",
+  "preparation_started_unix": 1792860437.27,
+  "max_seconds_including_preparation": 14400,
+  "absolute_total_deadline": 1792899507.0,
+  "storage_baseline_reference_bytes": 68532514816,
+  "maximum_additional_bytes": 16000000000,
+  "write_stop_additional_bytes": 15800000000,
+  "project_write_stop_bytes": 85000000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "purpose": "Test whether initial state-dependent value estimates cause undesirable actor probability changes in one controlled update, motivated by two Stop tokens in prior audit. Not a claim to reproduce original collapse or full backend equivalence.",
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think",
+    "accurate_dynamics_prompt": true
+  },
+  "source_library": "results/ppo_smoke/bootstrap_card_pair_v1/B/library",
+  "train_candidate_bounds": [
+    130001,
+    146384
+  ],
+  "dev_candidate_bounds": [
+    150001,
+    166384
+  ],
+  "training_quotas": {
+    "multi_up3_applicable": 16,
+    "single_BFS1": 8,
+    "medium_BFS2_3_without_multicard": 8
+  },
+  "dev_quotas": {
+    "conditional": 8,
+    "natural_multi": 8
+  },
+  "selection": "Ascending seeds; first new board in each quota. Exclude every prior recorded board and all actual historical candidate-prefix seeds, all reserved Test states, and duplicates within this selection. No outcome or model-response filtering.",
+  "model_phase_prerequisite": "CPU data and runner checks PASS. Runtime before-generation guards still require actual tied embedding parameters and empty initial actor optimizer. Native-b0 rollout is the behavior source; known numerical discrepancy prevents claiming exact actor-backend on-policy equivalence.",
+  "planned_model_bounds": {
+    "collected_episodes": 32,
+    "own_pre_post_eval_episodes_pair": 64,
+    "maximum_environment_episodes": 96,
+    "maximum_native_rollout_calls": 480,
+    "maximum_sidechannel_distill_calls": 32,
+    "maximum_total_native_calls": 512,
+    "maximum_actor_optimizer_steps_per_branch": 1,
+    "maximum_critic_optimizer_steps": 0,
+    "maximum_admissions": 0
+  },
+  "planned_intervention": "Same b0, same exact native-b0 collected32/order, fresh identical optimizer state, same LR/clip/GAE1/1/terminal reward/card library. Only original saved initial small value-head versus zeros. One global mini32/micro1 actor step per branch. No critic update; finite-horizon one-step mechanism comparison.",
+  "collection_gate": "At least one of frozen16 target episodes succeeds; otherwise no update and no resampling to fill successes. No softening of old backend gates.",
+  "prior_backend_gate": "FAIL retained; numerical-kernel branch closed. Any successor explicitly records known think-token discrepancies; no on-policy-backend equivalence claim.",
+  "scientific_boundaries": [
+    "No regular multi-batch PPO expansion or300-step run",
+    "No test model inference",
+    "No warmup, LR/clip/reward/KL/grid changes",
+    "No solver action substitution or Stop blocking",
+    "Old b0/r0/checkpoints protected; no private raw or weights uploaded"
+  ],
+  "full_scientific_metrics_status": "FROZEN_BEFORE_MODEL_CALLS_CPU_RUNNER_CHECK_PASS",
+  "run_seed": 20261024,
+  "planned_actor_forward_samples": 280,
+  "planned_additional_train_mode_alignment_forward_samples": 48,
+  "planned_critic_forward_samples": 96,
+  "planned_global_backward_microbatches_per_rank": 16,
+  "planned_actor_steps_per_branch": 1,
+  "planned_control_probes": {
+    "historical_stop_tokens": 2,
+    "pre_post_samples_per_branch": 4,
+    "selection": "Exactly both pure Stop answer tokens identified in the already published original first32 audit; posthoc mechanistic probe, not fresh generalization."
+  },
+  "planned_inference_snapshots": {
+    "count": 2,
+    "maximum_payload_bytes_each": 7600000000,
+    "dtype": "bfloat16 inference-only",
+    "tied_alias_rule": "Require actual input/output parameter identity and model tie_word_embeddings=True before any generation, drop only lm_head duplicate; config/key/header readability checked, no claim of full optimizer resume or independently tested reload."
+  },
+  "scientific_metrics": {
+    "mechanism_primary": "For the two fixed historical Stop answer tokens, compare measured post-pre logprob changes Z minus O. Support this localized signal only if both differences<=0 and their mean<0. Report both tokens and all directions regardless of result; does not prove original collapse cause.",
+    "fresh_signal_strata": "On all32 retained new episodes, report actual answer-token old/post logprobs and advantages split by target success/failure, Stop/nonStop; denominators retained, no filtering before actor update.",
+    "evaluation_gate": "On frozen8 conditional+8 natural_multi panels, each branch has its own16 greedy b0 baseline and16 post-update episodes. Z conditional-quality gain>=1 and gain relative O own-change>=1; Z natural success and quality decline0, natural Stop/hole counts non-increasing. All conditions necessary for a bounded follow-up, not a scientific generalization claim.",
+    "paired_reporting": "Per-seed success, BFS-quality, action count, Stop count, hole count; improvements/declines and exact paired intervals on all16 plus both8 strata; no seed replacement or theta selection.",
+    "failure_rule": "If collection has zero target successes, skip both updates/no resampling. If update or finite/same-weight numerical guard fails, preserve all completed samples and exit; never replay completed actor step. If evidence gate fails, no automatic second actor step or larger training on this protocol."
+  },
+  "actor_forward_breakdown": {
+    "scoring_samples_including_failed_O": 168,
+    "additional_train_mode_alignment_samples_including_failed_O": 48,
+    "backward_pass_training_forward_samples": 64
+  },
+  "data_preflight": {
+    "historical_boards_excluded": 10369,
+    "historical_screened_seeds_excluded": 11298,
+    "new_unique_boards": 48,
+    "train_rows": 32,
+    "dev_rows": 16,
+    "ordered_loader_batches": {
+      "train": 1,
+      "dev": 2
+    },
+    "overlap": 0,
+    "identity": "desc board regardless of player position"
+  },
+  "bounded_preupdate_repair": {
+    "original_failure": "Torch serialization of DataProto consolidated tensor views with different dtypes; incomplete704-byte file has no data.pkl/tensor payload. New diagnostic code serialization error, not original PPO defect.",
+    "original_phase_C": "Complete32,97 native calls,target7/16; NEVER recollect",
+    "original_phase_O": "Complete16 b0 baseline,60 native calls; actor32+alignment16+critic32 complete but outputs lost before serialization; zero actor updates/probe forwards. All original files/logs retained.",
+    "repair": "Clone each output tensor to independent CPU storage before torch.save. Reinitialize same b0/empty optimizer/initial O head, carry all16 original O b0 baselines with explicit new-worker limitation, rerun only unavailable oldlogp/values for32+alignment16. No completed environment episode or optimizer step is repeated.",
+    "additional_actor_forward_samples": 48,
+    "additional_critic_forward_samples": 32,
+    "original_scoring_no_repeat_plan_pass": false,
+    "new_actor_forward_cap_samples": 280,
+    "new_critic_forward_cap_samples": 96,
+    "native_calls_pair_limit_unchanged": 512,
+    "native_O_chain_limit": 160,
+    "remaining_O_repair_native_limit": 100,
+    "environment_episodes_unchanged": 96,
+    "same_first_clock_deadline_storage_and_all_scientific_gates": true,
+    "max_preupdate_repair_attempts": 1
+  },
+  "analysis_details": {
+    "interval": "Conservative finite-sample95% paired rate difference: simultaneous97.5% Clopper-Pearson win/loss bounds with Bonferroni; exact discordant sign p also reported. No interval-based efficacy gate or multiplicity-adjusted claim.",
+    "within_pair_branch_pre_actor_guard": {
+      "max_abs_nats": 0.05,
+      "mean_abs_nats": 0.005,
+      "same_frozen_input_ids_and_mask_required": true
+    },
+    "Stop_metric": "Actual parsed answer actions limited to original first5; report Stop turns and Stop episodes. Both must not increase on Z other-natural8, along with hole episodes. No thought-string matching.",
+    "analysis_timing": "C and original O b0 baseline already observed; description fixed before inspecting any post-update result. Original numerical/scientific gates unchanged; extra alignment check can only withhold support."
+  }
+}

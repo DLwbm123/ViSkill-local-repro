@@ -1,0 +1,9 @@
+[
+  {
+    "stage": "CPU runner import",
+    "error": "scripts.run_value_head_single_step namespace import unavailable; resolved with runpy.run_path for this source checkout",
+    "model_forwards": 0,
+    "environment_steps": 0,
+    "generation": 0
+  }
+]

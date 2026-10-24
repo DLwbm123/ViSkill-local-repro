@@ -1,0 +1,13 @@
+{
+  "owned_residual_pids": [],
+  "observed_after_export_total_bytes": 83950977024,
+  "observed_after_export_component_incremental_bytes": 15418462208,
+  "campaign_added_bytes": 15459168256,
+  "component_write_stop_total_bytes": 84332514816,
+  "campaign_status": "ACTIVE",
+  "observed_unix": 1792863548.536763,
+  "snapshot_files": {
+    "O_repair1": 7509346928,
+    "Z": 7509346928
+  }
+}

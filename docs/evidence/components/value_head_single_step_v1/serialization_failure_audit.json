@@ -1,0 +1,16 @@
+{
+  "preupdate_partial_bytes": 704,
+  "zip_entries": [
+    "preupdate_signals/version",
+    "preupdate_signals/byteorder",
+    "preupdate_signals/.data/serialization_id"
+  ],
+  "baseline_complete_rows": 16,
+  "baseline_successes": 1,
+  "no_actor_step_dispatched": true,
+  "O_completed_native_calls": 60,
+  "old_actor_completed_samples": 32,
+  "old_additional_alignment_samples": 16,
+  "old_critic_completed_samples": 32,
+  "unrecoverable_tensor_payload": "No data.pkl or tensor payload saved before pickle dtype-alias error"
+}

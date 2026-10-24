@@ -1,0 +1,1 @@
+{"role": "actor", "pid": 876904, "time": 1792863104.6675806, "rank": 1, "sample_delta_l2": 0.0005099591340367007, "grad_norm": 6.295614242553711, "finite": true, "sampled_values": 282624, "trainable_local_elements": 1877311488}

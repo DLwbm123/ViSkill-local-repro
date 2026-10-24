@@ -1,0 +1,83 @@
+{
+  "episode_ids": [
+    "81ba15963ed44438a71fa3dce8b8dda0",
+    "b15d8b5a2bf04951b7a6aab423c7f582"
+  ],
+  "rows": [
+    {
+      "seed": 90931,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "stop",
+      "immediate_reward": 0.0,
+      "generated_start": 677,
+      "generated_end": 720,
+      "answer_token_positions": [
+        715
+      ],
+      "answer_token_ids": [
+        9495
+      ],
+      "answer_old_log_probs": [
+        -0.69140625
+      ],
+      "answer_values": [
+        0.11474609375
+      ],
+      "answer_raw_advantages": [
+        -0.09474611282348633
+      ],
+      "answer_advantages": [
+        1.5404092073440552
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.507097601890564
+      ],
+      "answer_per_turn_advantages": [
+        1.542677640914917
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0007702046036720275
+      ]
+    },
+    {
+      "seed": 90012,
+      "category": "long_BFS4plus",
+      "success": false,
+      "turn": 5,
+      "answer": "Stop",
+      "immediate_reward": 0.0,
+      "generated_start": 685,
+      "generated_end": 732,
+      "answer_token_positions": [
+        727
+      ],
+      "answer_token_ids": [
+        10674
+      ],
+      "answer_old_log_probs": [
+        -0.466796875
+      ],
+      "answer_values": [
+        -0.1806640625
+      ],
+      "answer_raw_advantages": [
+        0.24066400527954102
+      ],
+      "answer_advantages": [
+        1.6901060342788696
+      ],
+      "answer_zero_baseline_advantages": [
+        -0.1899266391992569
+      ],
+      "answer_per_turn_advantages": [
+        1.6744403839111328
+      ],
+      "initial_pg_loss_coefficients_original_mini8": [
+        -0.0008284833501367008
+      ]
+    }
+  ],
+  "selection": "Both previously published first32 pure Stop tokens; posthoc and not unseen"
+}

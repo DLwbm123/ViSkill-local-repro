@@ -1,0 +1,4 @@
+{"time": 1792862989.3758004, "pid": 876904, "rank": 1, "sync_count": 1, "update_weights_await_returned": true, "scope": "actual rollout-mode tensor update returned; not a full-weight identity check"}
+{"time": 1792863026.0532444, "pid": 876904, "rank": 1, "sync_count": 2, "update_weights_await_returned": true, "scope": "actual rollout-mode tensor update returned; not a full-weight identity check"}
+{"time": 1792863132.0975661, "pid": 876904, "rank": 1, "sync_count": 3, "update_weights_await_returned": true, "scope": "actual rollout-mode tensor update returned; not a full-weight identity check"}
+{"time": 1792863155.8521552, "pid": 876904, "rank": 1, "sync_count": 4, "update_weights_await_returned": true, "scope": "actual rollout-mode tensor update returned; not a full-weight identity check"}

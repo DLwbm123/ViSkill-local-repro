@@ -1,0 +1,3388 @@
+{
+  "turns": [
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        77
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.01171875
+      ],
+      "post_log_probs": [
+        -0.01202392578125
+      ],
+      "delta_log_probs": [
+        -0.00030517578125
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        253
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.0030975341796875
+      ],
+      "post_log_probs": [
+        -0.0026397705078125
+      ],
+      "delta_log_probs": [
+        0.000457763671875
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        430
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.0291748046875
+      ],
+      "post_log_probs": [
+        -0.033203125
+      ],
+      "delta_log_probs": [
+        -0.0040283203125
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        602
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00191497802734375
+      ],
+      "post_log_probs": [
+        -0.0015869140625
+      ],
+      "delta_log_probs": [
+        0.00032806396484375
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        787
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.006866455078125
+      ],
+      "post_log_probs": [
+        -0.00750732421875
+      ],
+      "delta_log_probs": [
+        -0.000640869140625
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130007,
+      "category": "single_BFS1",
+      "success": true,
+      "turn": 1,
+      "answer": "Left, Up",
+      "answer_overlapping_token_positions": [
+        48,
+        49,
+        50
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -0.0079345703125,
+        -0.003875732421875,
+        -0.01025390625
+      ],
+      "post_log_probs": [
+        -0.00830078125,
+        -0.0034637451171875,
+        -0.00958251953125
+      ],
+      "delta_log_probs": [
+        -0.0003662109375,
+        0.0004119873046875,
+        0.00067138671875
+      ],
+      "advantages": [
+        1.3961809873580933,
+        1.3961809873580933,
+        1.3961809873580933
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Right, Right, Right, Down, Down",
+      "answer_overlapping_token_positions": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        10083,
+        11,
+        10083,
+        11,
+        6285,
+        11,
+        6285
+      ],
+      "old_log_probs": [
+        -0.0042724609375,
+        -1.140625,
+        -0.046875,
+        -1.40625,
+        -0.2080078125,
+        -0.69921875,
+        -1.5859375,
+        -0.90625,
+        -0.064453125
+      ],
+      "post_log_probs": [
+        -0.004180908203125,
+        -1.2265625,
+        -0.051513671875,
+        -1.5078125,
+        -0.1865234375,
+        -0.69921875,
+        -1.5859375,
+        -0.90625,
+        -0.06396484375
+      ],
+      "delta_log_probs": [
+        9.1552734375e-05,
+        -0.0859375,
+        -0.004638671875,
+        -0.1015625,
+        0.021484375,
+        0.0,
+        0.0,
+        0.0,
+        0.00048828125
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Down, Down, Down, Down, Down",
+      "answer_overlapping_token_positions": [
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        6285,
+        11,
+        6285,
+        11,
+        6285,
+        11,
+        6285
+      ],
+      "old_log_probs": [
+        -0.005096435546875,
+        -0.25390625,
+        -0.00191497802734375,
+        -1.5,
+        -0.072265625,
+        -1.140625,
+        -0.06298828125,
+        -0.52734375,
+        -0.018798828125
+      ],
+      "post_log_probs": [
+        -0.00555419921875,
+        -0.25390625,
+        -0.00185394287109375,
+        -1.5,
+        -0.064453125,
+        -1.0546875,
+        -0.0634765625,
+        -0.4765625,
+        -0.0166015625
+      ],
+      "delta_log_probs": [
+        -0.000457763671875,
+        0.0,
+        6.103515625e-05,
+        0.0,
+        0.0078125,
+        0.0859375,
+        -0.00048828125,
+        0.05078125,
+        0.002197265625
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Down, Down",
+      "answer_overlapping_token_positions": [
+        430,
+        431,
+        432
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        6285
+      ],
+      "old_log_probs": [
+        -0.00193023681640625,
+        -0.349609375,
+        -0.0010833740234375
+      ],
+      "post_log_probs": [
+        -0.0018310546875,
+        -0.349609375,
+        -0.00116729736328125
+      ],
+      "delta_log_probs": [
+        9.918212890625e-05,
+        0.0,
+        -8.392333984375e-05
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        586
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.000522613525390625
+      ],
+      "post_log_probs": [
+        -0.00057220458984375
+      ],
+      "delta_log_probs": [
+        -4.9591064453125e-05
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        747
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.083984375
+      ],
+      "post_log_probs": [
+        -0.083984375
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        79
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.006744384765625
+      ],
+      "post_log_probs": [
+        -0.0072021484375
+      ],
+      "delta_log_probs": [
+        -0.000457763671875
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        285
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.0224609375
+      ],
+      "post_log_probs": [
+        -0.02099609375
+      ],
+      "delta_log_probs": [
+        0.00146484375
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        474
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.0037689208984375
+      ],
+      "post_log_probs": [
+        -0.00384521484375
+      ],
+      "delta_log_probs": [
+        -7.62939453125e-05
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        652
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00116729736328125
+      ],
+      "post_log_probs": [
+        -0.00118255615234375
+      ],
+      "delta_log_probs": [
+        -1.52587890625e-05
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        811
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.002655029296875
+      ],
+      "post_log_probs": [
+        -0.0027923583984375
+      ],
+      "delta_log_probs": [
+        -0.0001373291015625
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130013,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Move Down, then Move Right.",
+      "answer_overlapping_token_positions": [
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "answer_token_ids": [
+        9860,
+        6285,
+        11,
+        1221,
+        14561,
+        10083,
+        3918
+      ],
+      "old_log_probs": [
+        -0.84375,
+        -2.984375,
+        -1.21875,
+        -0.69921875,
+        -1.328125,
+        -0.73828125,
+        -3.28125
+      ],
+      "post_log_probs": [
+        -0.921875,
+        -2.984375,
+        -1.2890625,
+        -0.6640625,
+        -1.3203125,
+        -0.73828125,
+        -3.40625
+      ],
+      "delta_log_probs": [
+        -0.078125,
+        0.0,
+        -0.0703125,
+        0.03515625,
+        0.0078125,
+        0.0,
+        -0.125
+      ],
+      "advantages": [
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130013,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        303
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.251953125
+      ],
+      "post_log_probs": [
+        -0.248046875
+      ],
+      "delta_log_probs": [
+        0.00390625
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        147
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.033203125
+      ],
+      "post_log_probs": [
+        -0.033203125
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Forward",
+      "answer_overlapping_token_positions": [
+        342
+      ],
+      "answer_token_ids": [
+        25925
+      ],
+      "old_log_probs": [
+        -0.75390625
+      ],
+      "post_log_probs": [
+        -0.8125
+      ],
+      "delta_log_probs": [
+        -0.05859375
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Forward",
+      "answer_overlapping_token_positions": [
+        563
+      ],
+      "answer_token_ids": [
+        25925
+      ],
+      "old_log_probs": [
+        -0.0439453125
+      ],
+      "post_log_probs": [
+        -0.044677734375
+      ],
+      "delta_log_probs": [
+        -0.000732421875
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Forward",
+      "answer_overlapping_token_positions": [
+        732
+      ],
+      "answer_token_ids": [
+        25925
+      ],
+      "old_log_probs": [
+        -0.007080078125
+      ],
+      "post_log_probs": [
+        -0.007354736328125
+      ],
+      "delta_log_probs": [
+        -0.000274658203125
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Forward",
+      "answer_overlapping_token_positions": [
+        921
+      ],
+      "answer_token_ids": [
+        25925
+      ],
+      "old_log_probs": [
+        -0.0079345703125
+      ],
+      "post_log_probs": [
+        -0.00811767578125
+      ],
+      "delta_log_probs": [
+        -0.00018310546875
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130133,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Up, Up",
+      "answer_overlapping_token_positions": [
+        46,
+        47,
+        48
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -0.048095703125,
+        -0.01129150390625,
+        -0.006317138671875
+      ],
+      "post_log_probs": [
+        -0.0546875,
+        -0.00933837890625,
+        -0.00714111328125
+      ],
+      "delta_log_probs": [
+        -0.006591796875,
+        0.001953125,
+        -0.000823974609375
+      ],
+      "advantages": [
+        1.4398528337478638,
+        1.4398528337478638,
+        1.4398528337478638
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130133,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        210
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.001678466796875
+      ],
+      "post_log_probs": [
+        -0.00164031982421875
+      ],
+      "delta_log_probs": [
+        3.814697265625e-05
+      ],
+      "advantages": [
+        1.4398528337478638
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130020,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        50
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.07666015625
+      ],
+      "post_log_probs": [
+        -0.0771484375
+      ],
+      "delta_log_probs": [
+        -0.00048828125
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "turn": 1,
+      "answer": "Up, Down",
+      "answer_overlapping_token_positions": [
+        53,
+        54,
+        55
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        6285
+      ],
+      "old_log_probs": [
+        -1.5078125,
+        -0.1748046875,
+        -1.4765625
+      ],
+      "post_log_probs": [
+        -1.5078125,
+        -0.1748046875,
+        -1.359375
+      ],
+      "delta_log_probs": [
+        0.0,
+        0.0,
+        0.1171875
+      ],
+      "advantages": [
+        1.4835245609283447,
+        1.4835245609283447,
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        239
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.0038299560546875
+      ],
+      "post_log_probs": [
+        -0.0034027099609375
+      ],
+      "delta_log_probs": [
+        0.00042724609375
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "turn": 3,
+      "answer": "NoOp",
+      "answer_overlapping_token_positions": [
+        395,
+        396
+      ],
+      "answer_token_ids": [
+        41157,
+        7125
+      ],
+      "old_log_probs": [
+        -3.84375,
+        -4.21875
+      ],
+      "post_log_probs": [
+        -3.96875,
+        -4.3125
+      ],
+      "delta_log_probs": [
+        -0.125,
+        -0.09375
+      ],
+      "advantages": [
+        1.4835245609283447,
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "turn": 4,
+      "answer": "NoOp",
+      "answer_overlapping_token_positions": [
+        542,
+        543
+      ],
+      "answer_token_ids": [
+        41157,
+        7125
+      ],
+      "old_log_probs": [
+        -0.1455078125,
+        -0.0137939453125
+      ],
+      "post_log_probs": [
+        -0.1455078125,
+        -0.0113525390625
+      ],
+      "delta_log_probs": [
+        0.0,
+        0.00244140625
+      ],
+      "advantages": [
+        1.4835245609283447,
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "turn": 5,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        712
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.62109375
+      ],
+      "post_log_probs": [
+        -0.625
+      ],
+      "delta_log_probs": [
+        -0.00390625
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130204,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Right, Up",
+      "answer_overlapping_token_positions": [
+        39,
+        40,
+        41
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -1.9921875,
+        -0.4453125,
+        -1.5078125
+      ],
+      "post_log_probs": [
+        -2.125,
+        -0.4921875,
+        -1.5078125
+      ],
+      "delta_log_probs": [
+        -0.1328125,
+        -0.046875,
+        0.0
+      ],
+      "advantages": [
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        47
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.0147705078125
+      ],
+      "post_log_probs": [
+        -0.01458740234375
+      ],
+      "delta_log_probs": [
+        0.00018310546875
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        207
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.00140380859375
+      ],
+      "post_log_probs": [
+        -0.0014495849609375
+      ],
+      "delta_log_probs": [
+        -4.57763671875e-05
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        364
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.000423431396484375
+      ],
+      "post_log_probs": [
+        -0.00045013427734375
+      ],
+      "delta_log_probs": [
+        -2.6702880859375e-05
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 4,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        536
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.00110626220703125
+      ],
+      "post_log_probs": [
+        -0.00136566162109375
+      ],
+      "delta_log_probs": [
+        -0.0002593994140625
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 5,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        693
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.60546875
+      ],
+      "post_log_probs": [
+        -0.63671875
+      ],
+      "delta_log_probs": [
+        -0.03125
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130006,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "turn": 1,
+      "answer": "Right, Down",
+      "answer_overlapping_token_positions": [
+        69,
+        70,
+        71
+      ],
+      "answer_token_ids": [
+        5979,
+        11,
+        6285
+      ],
+      "old_log_probs": [
+        -0.020263671875,
+        -0.76171875,
+        -0.68359375
+      ],
+      "post_log_probs": [
+        -0.020751953125,
+        -0.83203125,
+        -0.74609375
+      ],
+      "delta_log_probs": [
+        -0.00048828125,
+        -0.0703125,
+        -0.0625
+      ],
+      "advantages": [
+        1.3961809873580933,
+        1.3961809873580933,
+        1.3961809873580933
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130285,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        80
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00701904296875
+      ],
+      "post_log_probs": [
+        -0.007598876953125
+      ],
+      "delta_log_probs": [
+        -0.000579833984375
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130285,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        300
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.006317138671875
+      ],
+      "post_log_probs": [
+        -0.006317138671875
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130285,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 3,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        552
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00164031982421875
+      ],
+      "post_log_probs": [
+        -0.0017547607421875
+      ],
+      "delta_log_probs": [
+        -0.00011444091796875
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130028,
+      "category": "single_BFS1",
+      "success": true,
+      "turn": 1,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        48
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00933837890625
+      ],
+      "post_log_probs": [
+        -0.00927734375
+      ],
+      "delta_log_probs": [
+        6.103515625e-05
+      ],
+      "advantages": [
+        1.3961809873580933
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        68
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.005401611328125
+      ],
+      "post_log_probs": [
+        -0.005218505859375
+      ],
+      "delta_log_probs": [
+        0.00018310546875
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "terminate",
+      "answer_overlapping_token_positions": [
+        301
+      ],
+      "answer_token_ids": [
+        48061
+      ],
+      "old_log_probs": [
+        -0.56640625
+      ],
+      "post_log_probs": [
+        -0.58984375
+      ],
+      "delta_log_probs": [
+        -0.0234375
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        505
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.040771484375
+      ],
+      "post_log_probs": [
+        -0.040771484375
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        696
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.006134033203125
+      ],
+      "post_log_probs": [
+        -0.005828857421875
+      ],
+      "delta_log_probs": [
+        0.00030517578125
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        890
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.0031280517578125
+      ],
+      "post_log_probs": [
+        -0.002960205078125
+      ],
+      "delta_log_probs": [
+        0.0001678466796875
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        39,
+        40,
+        41
+      ],
+      "answer_token_ids": [
+        397,
+        5979,
+        198
+      ],
+      "old_log_probs": [
+        -0.1005859375,
+        -0.0074462890625,
+        -0.1298828125
+      ],
+      "post_log_probs": [
+        -0.11328125,
+        -0.0074462890625,
+        -0.12353515625
+      ],
+      "delta_log_probs": [
+        -0.0126953125,
+        0.0,
+        0.00634765625
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        260,
+        261,
+        262
+      ],
+      "answer_token_ids": [
+        397,
+        4454,
+        198
+      ],
+      "old_log_probs": [
+        -0.000728607177734375,
+        -0.0439453125,
+        -0.0113525390625
+      ],
+      "post_log_probs": [
+        -0.000823974609375,
+        -0.04541015625,
+        -0.0128173828125
+      ],
+      "delta_log_probs": [
+        -9.5367431640625e-05,
+        -0.00146484375,
+        -0.00146484375
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        433,
+        434,
+        435
+      ],
+      "answer_token_ids": [
+        397,
+        4454,
+        198
+      ],
+      "old_log_probs": [
+        -0.000141143798828125,
+        -0.000820159912109375,
+        -0.003509521484375
+      ],
+      "post_log_probs": [
+        -0.000141143798828125,
+        -0.00077056884765625,
+        -0.0031280517578125
+      ],
+      "delta_log_probs": [
+        0.0,
+        4.9591064453125e-05,
+        0.0003814697265625
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        603,
+        604,
+        605
+      ],
+      "answer_token_ids": [
+        397,
+        5415,
+        198
+      ],
+      "old_log_probs": [
+        -0.0002346038818359375,
+        -0.04931640625,
+        -0.1806640625
+      ],
+      "post_log_probs": [
+        -0.00026702880859375,
+        -0.050048828125,
+        -0.203125
+      ],
+      "delta_log_probs": [
+        -3.24249267578125e-05,
+        -0.000732421875,
+        -0.0224609375
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        791,
+        792,
+        793
+      ],
+      "answer_token_ids": [
+        397,
+        5415,
+        198
+      ],
+      "old_log_probs": [
+        -0.00016117095947265625,
+        -0.00927734375,
+        -0.00579833984375
+      ],
+      "post_log_probs": [
+        -0.00016117095947265625,
+        -0.00933837890625,
+        -0.005157470703125
+      ],
+      "delta_log_probs": [
+        0.0,
+        -6.103515625e-05,
+        0.000640869140625
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130032,
+      "category": "single_BFS1",
+      "success": true,
+      "turn": 1,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        48,
+        49,
+        50
+      ],
+      "answer_token_ids": [
+        397,
+        5979,
+        198
+      ],
+      "old_log_probs": [
+        -0.1005859375,
+        -0.017822265625,
+        -0.07275390625
+      ],
+      "post_log_probs": [
+        -0.1005859375,
+        -0.017822265625,
+        -0.05859375
+      ],
+      "delta_log_probs": [
+        0.0,
+        0.0,
+        0.01416015625
+      ],
+      "advantages": [
+        1.3961809873580933,
+        1.3961809873580933,
+        1.3961809873580933
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Left, Up",
+      "answer_overlapping_token_positions": [
+        81,
+        82,
+        83
+      ],
+      "answer_token_ids": [
+        5415,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -2.328125,
+        -0.341796875,
+        -1.234375
+      ],
+      "post_log_probs": [
+        -2.375,
+        -0.310546875,
+        -1.2265625
+      ],
+      "delta_log_probs": [
+        -0.046875,
+        0.03125,
+        0.0078125
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Up, Up, or Up, Up",
+      "answer_overlapping_token_positions": [
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        3138,
+        11,
+        476,
+        3138,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -0.029052734375,
+        -0.76171875,
+        -0.34765625,
+        -2.578125,
+        -11.4375,
+        -0.73828125,
+        -0.193359375,
+        -0.5703125
+      ],
+      "post_log_probs": [
+        -0.029052734375,
+        -0.76171875,
+        -0.37109375,
+        -2.578125,
+        -11.375,
+        -0.69140625,
+        -0.169921875,
+        -0.609375
+      ],
+      "delta_log_probs": [
+        0.0,
+        0.0,
+        -0.0234375,
+        0.0,
+        0.0625,
+        0.046875,
+        0.0234375,
+        -0.0390625
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Down, Down",
+      "answer_overlapping_token_positions": [
+        464,
+        465,
+        466
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        6285
+      ],
+      "old_log_probs": [
+        -0.00135040283203125,
+        -1.8046875,
+        -0.103515625
+      ],
+      "post_log_probs": [
+        -0.00140380859375,
+        -1.9140625,
+        -0.0849609375
+      ],
+      "delta_log_probs": [
+        -5.340576171875e-05,
+        -0.109375,
+        0.0185546875
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Down, Down, Down for likely scavenging activity next steps if no new gameStart holes present;",
+      "answer_overlapping_token_positions": [
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        6285,
+        11,
+        6285,
+        369,
+        4363,
+        82650,
+        826,
+        287,
+        5702,
+        1790,
+        7354,
+        421,
+        902,
+        501,
+        1809,
+        3479,
+        19766,
+        3042,
+        11347
+      ],
+      "old_log_probs": [
+        -0.61328125,
+        -0.2314453125,
+        -0.322265625,
+        -0.78125,
+        -1.2109375,
+        -7.0,
+        -6.84375,
+        -0.482421875,
+        -0.01190185546875,
+        -0.004058837890625,
+        -7.125,
+        -5.5625,
+        -4.1875,
+        -3.296875,
+        -0.8359375,
+        -1.359375,
+        -7.5625,
+        -11.25,
+        -2.265625,
+        -3.40625,
+        -5.4375
+      ],
+      "post_log_probs": [
+        -0.61328125,
+        -0.2314453125,
+        -0.310546875,
+        -0.84765625,
+        -1.15625,
+        -7.0,
+        -6.84375,
+        -0.52734375,
+        -0.01312255859375,
+        -0.0040283203125,
+        -7.09375,
+        -5.53125,
+        -4.25,
+        -3.375,
+        -0.8359375,
+        -1.3203125,
+        -7.46875,
+        -11.25,
+        -2.265625,
+        -3.34375,
+        -5.4375
+      ],
+      "delta_log_probs": [
+        0.0,
+        0.0,
+        0.01171875,
+        -0.06640625,
+        0.0546875,
+        0.0,
+        0.0,
+        -0.044921875,
+        -0.001220703125,
+        3.0517578125e-05,
+        0.03125,
+        0.03125,
+        -0.0625,
+        -0.078125,
+        0.0,
+        0.0390625,
+        0.09375,
+        0.0,
+        0.0,
+        0.0625,
+        0.0
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Down, If not blocked or to revisit new goal area;",
+      "answer_overlapping_token_positions": [
+        975,
+        976,
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        1416,
+        537,
+        19299,
+        476,
+        311,
+        64778,
+        501,
+        5795,
+        3082,
+        11347
+      ],
+      "old_log_probs": [
+        -0.057861328125,
+        -0.5078125,
+        -7.0625,
+        -2.578125,
+        -2.125,
+        -2.625,
+        -4.15625,
+        -6.65625,
+        -5.59375,
+        -2.46875,
+        -2.53125,
+        -1.125
+      ],
+      "post_log_probs": [
+        -0.051513671875,
+        -0.462890625,
+        -7.0,
+        -2.65625,
+        -2.125,
+        -2.6875,
+        -4.1875,
+        -6.625,
+        -5.65625,
+        -2.421875,
+        -2.46875,
+        -1.1875
+      ],
+      "delta_log_probs": [
+        0.00634765625,
+        0.044921875,
+        0.0625,
+        -0.078125,
+        0.0,
+        -0.0625,
+        -0.03125,
+        0.03125,
+        -0.0625,
+        0.046875,
+        0.0625,
+        -0.0625
+      ],
+      "advantages": [
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771,
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Down, Right",
+      "answer_overlapping_token_positions": [
+        62,
+        63,
+        64
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        10083
+      ],
+      "old_log_probs": [
+        -0.01611328125,
+        -0.003509521484375,
+        -0.0103759765625
+      ],
+      "post_log_probs": [
+        -0.016845703125,
+        -0.0037078857421875,
+        -0.0093994140625
+      ],
+      "delta_log_probs": [
+        -0.000732421875,
+        -0.0001983642578125,
+        0.0009765625
+      ],
+      "advantages": [
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Down, Right",
+      "answer_overlapping_token_positions": [
+        244,
+        245,
+        246
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        10083
+      ],
+      "old_log_probs": [
+        -0.01318359375,
+        -0.0208740234375,
+        -0.00130462646484375
+      ],
+      "post_log_probs": [
+        -0.01336669921875,
+        -0.0211181640625,
+        -0.0012359619140625
+      ],
+      "delta_log_probs": [
+        -0.00018310546875,
+        -0.000244140625,
+        6.866455078125e-05
+      ],
+      "advantages": [
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "The move is successful, confirming that both the action aligns with reaching the goal properly.",
+      "answer_overlapping_token_positions": [
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461
+      ],
+      "answer_token_ids": [
+        16357,
+        3271,
+        374,
+        6849,
+        11,
+        48996,
+        429,
+        2176,
+        279,
+        1917,
+        5285,
+        82,
+        448,
+        18739,
+        279,
+        5795,
+        10277,
+        3918
+      ],
+      "old_log_probs": [
+        -8.0,
+        -3.125,
+        -1.7265625,
+        -2.03125,
+        -1.015625,
+        -3.078125,
+        -1.9296875,
+        -3.453125,
+        -1.703125,
+        -1.4140625,
+        -6.5,
+        -0.216796875,
+        -0.48046875,
+        -1.5546875,
+        -0.026123046875,
+        -0.0537109375,
+        -6.03125,
+        -1.15625
+      ],
+      "post_log_probs": [
+        -8.0,
+        -3.109375,
+        -1.734375,
+        -1.984375,
+        -1.0625,
+        -3.21875,
+        -2.015625,
+        -3.46875,
+        -1.7890625,
+        -1.4453125,
+        -6.53125,
+        -0.2001953125,
+        -0.462890625,
+        -1.46875,
+        -0.0234375,
+        -0.06005859375,
+        -5.90625,
+        -1.2109375
+      ],
+      "delta_log_probs": [
+        0.0,
+        0.015625,
+        -0.0078125,
+        0.046875,
+        -0.046875,
+        -0.140625,
+        -0.0859375,
+        -0.015625,
+        -0.0859375,
+        -0.03125,
+        -0.03125,
+        0.0166015625,
+        0.017578125,
+        0.0859375,
+        0.002685546875,
+        -0.00634765625,
+        0.125,
+        -0.0546875
+      ],
+      "advantages": [
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Down, Right",
+      "answer_overlapping_token_positions": [
+        625,
+        626,
+        627
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        10083
+      ],
+      "old_log_probs": [
+        -0.07373046875,
+        -0.0201416015625,
+        -0.0035858154296875
+      ],
+      "post_log_probs": [
+        -0.07470703125,
+        -0.0225830078125,
+        -0.003692626953125
+      ],
+      "delta_log_probs": [
+        -0.0009765625,
+        -0.00244140625,
+        -0.0001068115234375
+      ],
+      "advantages": [
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 5,
+      "answer": "Down, Right",
+      "answer_overlapping_token_positions": [
+        784,
+        785,
+        786
+      ],
+      "answer_token_ids": [
+        4454,
+        11,
+        10083
+      ],
+      "old_log_probs": [
+        -0.7109375,
+        -0.052001953125,
+        -0.09912109375
+      ],
+      "post_log_probs": [
+        -0.65234375,
+        -0.04638671875,
+        -0.0966796875
+      ],
+      "delta_log_probs": [
+        0.05859375,
+        0.005615234375,
+        0.00244140625
+      ],
+      "advantages": [
+        -0.6563955545425415,
+        -0.6563955545425415,
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130036,
+      "category": "single_BFS1",
+      "success": true,
+      "turn": 1,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        40
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.050048828125
+      ],
+      "post_log_probs": [
+        -0.03955078125
+      ],
+      "delta_log_probs": [
+        0.010498046875
+      ],
+      "advantages": [
+        1.3961809873580933
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130016,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Up, Up",
+      "answer_overlapping_token_positions": [
+        45,
+        46,
+        47
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -0.0011444091796875,
+        -2.015625,
+        -0.0101318359375
+      ],
+      "post_log_probs": [
+        -0.0010986328125,
+        -2.015625,
+        -0.01031494140625
+      ],
+      "delta_log_probs": [
+        4.57763671875e-05,
+        0.0,
+        -0.00018310546875
+      ],
+      "advantages": [
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130663,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        45
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.01446533203125
+      ],
+      "post_log_probs": [
+        -0.01275634765625
+      ],
+      "delta_log_probs": [
+        0.001708984375
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130663,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        209
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.00665283203125
+      ],
+      "post_log_probs": [
+        -0.00701904296875
+      ],
+      "delta_log_probs": [
+        -0.0003662109375
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130663,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 3,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        373
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.0004100799560546875
+      ],
+      "post_log_probs": [
+        -0.000396728515625
+      ],
+      "delta_log_probs": [
+        1.33514404296875e-05
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130663,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 4,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        540
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.000370025634765625
+      ],
+      "post_log_probs": [
+        -0.0004100799560546875
+      ],
+      "delta_log_probs": [
+        -4.00543212890625e-05
+      ],
+      "advantages": [
+        -0.6563955545425415
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130039,
+      "category": "single_BFS1",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        98
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.000881195068359375
+      ],
+      "post_log_probs": [
+        -0.000904083251953125
+      ],
+      "delta_log_probs": [
+        -2.288818359375e-05
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 1,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        78
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -0.004058837890625
+      ],
+      "post_log_probs": [
+        -0.004241943359375
+      ],
+      "delta_log_probs": [
+        -0.00018310546875
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 2,
+      "answer": "Left",
+      "answer_overlapping_token_positions": [
+        258
+      ],
+      "answer_token_ids": [
+        5415
+      ],
+      "old_log_probs": [
+        -0.00384521484375
+      ],
+      "post_log_probs": [
+        -0.00384521484375
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 3,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        430
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.2119140625
+      ],
+      "post_log_probs": [
+        -0.2265625
+      ],
+      "delta_log_probs": [
+        -0.0146484375
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 4,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        593
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.00439453125
+      ],
+      "post_log_probs": [
+        -0.004241943359375
+      ],
+      "delta_log_probs": [
+        0.000152587890625
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "turn": 5,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        774
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.25390625
+      ],
+      "post_log_probs": [
+        -0.2734375
+      ],
+      "delta_log_probs": [
+        -0.01953125
+      ],
+      "advantages": [
+        -0.612723708152771
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130830,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        62
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.0106201171875
+      ],
+      "post_log_probs": [
+        -0.01031494140625
+      ],
+      "delta_log_probs": [
+        0.00030517578125
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130830,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        252
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.2373046875
+      ],
+      "post_log_probs": [
+        -0.2373046875
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130830,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 3,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        426
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.0025787353515625
+      ],
+      "post_log_probs": [
+        -0.002899169921875
+      ],
+      "delta_log_probs": [
+        -0.0003204345703125
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130894,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        36
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00970458984375
+      ],
+      "post_log_probs": [
+        -0.01202392578125
+      ],
+      "delta_log_probs": [
+        -0.0023193359375
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130894,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        190
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.00102996826171875
+      ],
+      "post_log_probs": [
+        -0.000904083251953125
+      ],
+      "delta_log_probs": [
+        0.000125885009765625
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 130894,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 3,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        340
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.000316619873046875
+      ],
+      "post_log_probs": [
+        -0.0003376007080078125
+      ],
+      "delta_log_probs": [
+        -2.09808349609375e-05
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131280,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Up, Left, Up, Up",
+      "answer_overlapping_token_positions": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        13727,
+        11,
+        3138,
+        11,
+        3138
+      ],
+      "old_log_probs": [
+        -0.05419921875,
+        -0.984375,
+        -2.84375,
+        -1.7109375,
+        -0.12353515625,
+        -1.5078125,
+        -1.2734375
+      ],
+      "post_log_probs": [
+        -0.04443359375,
+        -0.98046875,
+        -2.734375,
+        -1.7109375,
+        -0.1328125,
+        -1.5078125,
+        -1.1953125
+      ],
+      "delta_log_probs": [
+        0.009765625,
+        0.00390625,
+        0.109375,
+        0.0,
+        -0.00927734375,
+        0.0,
+        0.078125
+      ],
+      "advantages": [
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083,
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131334,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Up, Right, Up, Left, Left",
+      "answer_overlapping_token_positions": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        10083,
+        11,
+        3138,
+        11,
+        13727,
+        11,
+        13727
+      ],
+      "old_log_probs": [
+        -1.09375,
+        -1.1484375,
+        -2.046875,
+        -0.98828125,
+        -0.765625,
+        -0.90625,
+        -2.0625,
+        -0.64453125,
+        -3.203125
+      ],
+      "post_log_probs": [
+        -1.0234375,
+        -1.1484375,
+        -2.046875,
+        -0.98828125,
+        -0.828125,
+        -0.90625,
+        -2.0625,
+        -0.64453125,
+        -3.203125
+      ],
+      "delta_log_probs": [
+        0.0703125,
+        0.0,
+        0.0,
+        0.0,
+        -0.0625,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131334,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 2,
+      "answer": "Up, Left, Up, Left",
+      "answer_overlapping_token_positions": [
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283
+      ],
+      "answer_token_ids": [
+        2324,
+        11,
+        13727,
+        11,
+        3138,
+        11,
+        13727
+      ],
+      "old_log_probs": [
+        -0.59375,
+        -0.0830078125,
+        -1.9765625,
+        -0.146484375,
+        -0.7421875,
+        -0.08056640625,
+        -0.69140625
+      ],
+      "post_log_probs": [
+        -0.59765625,
+        -0.083984375,
+        -2.015625,
+        -0.130859375,
+        -0.7421875,
+        -0.08056640625,
+        -0.67578125
+      ],
+      "delta_log_probs": [
+        -0.00390625,
+        -0.0009765625,
+        -0.0390625,
+        0.015625,
+        0.0,
+        0.0,
+        0.015625
+      ],
+      "advantages": [
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825,
+        -0.7437392473220825
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131363,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        26
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.028076171875
+      ],
+      "post_log_probs": [
+        -0.03173828125
+      ],
+      "delta_log_probs": [
+        -0.003662109375
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131363,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        175
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.0013885498046875
+      ],
+      "post_log_probs": [
+        -0.00146484375
+      ],
+      "delta_log_probs": [
+        -7.62939453125e-05
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131363,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 3,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        330
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.000743865966796875
+      ],
+      "post_log_probs": [
+        -0.000713348388671875
+      ],
+      "delta_log_probs": [
+        3.0517578125e-05
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131364,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "turn": 1,
+      "answer": "Right",
+      "answer_overlapping_token_positions": [
+        34
+      ],
+      "answer_token_ids": [
+        5979
+      ],
+      "old_log_probs": [
+        -0.0245361328125
+      ],
+      "post_log_probs": [
+        -0.0228271484375
+      ],
+      "delta_log_probs": [
+        0.001708984375
+      ],
+      "advantages": [
+        -0.7874110341072083
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131578,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        55
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.421875
+      ],
+      "post_log_probs": [
+        -0.46484375
+      ],
+      "delta_log_probs": [
+        -0.04296875
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131578,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        218
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.01068115234375
+      ],
+      "post_log_probs": [
+        -0.01055908203125
+      ],
+      "delta_log_probs": [
+        0.0001220703125
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131578,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 3,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        393
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.0016937255859375
+      ],
+      "post_log_probs": [
+        -0.00168609619140625
+      ],
+      "delta_log_probs": [
+        7.62939453125e-06
+      ],
+      "advantages": [
+        1.4835245609283447
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 1,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        149
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -2.3125
+      ],
+      "post_log_probs": [
+        -2.3125
+      ],
+      "delta_log_probs": [
+        0.0
+      ],
+      "advantages": [
+        1.5708684921264648
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 2,
+      "answer": "Down",
+      "answer_overlapping_token_positions": [
+        346
+      ],
+      "answer_token_ids": [
+        4454
+      ],
+      "old_log_probs": [
+        -1.546875
+      ],
+      "post_log_probs": [
+        -1.453125
+      ],
+      "delta_log_probs": [
+        0.09375
+      ],
+      "advantages": [
+        1.5708684921264648
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 3,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        556
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.404296875
+      ],
+      "post_log_probs": [
+        -0.30078125
+      ],
+      "delta_log_probs": [
+        0.103515625
+      ],
+      "advantages": [
+        1.5708684921264648
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 4,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        739
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.0166015625
+      ],
+      "post_log_probs": [
+        -0.01470947265625
+      ],
+      "delta_log_probs": [
+        0.00189208984375
+      ],
+      "advantages": [
+        1.5708684921264648
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "turn": 5,
+      "answer": "Up",
+      "answer_overlapping_token_positions": [
+        936
+      ],
+      "answer_token_ids": [
+        2324
+      ],
+      "old_log_probs": [
+        -0.005523681640625
+      ],
+      "post_log_probs": [
+        -0.005462646484375
+      ],
+      "delta_log_probs": [
+        6.103515625e-05
+      ],
+      "advantages": [
+        1.5708684921264648
+      ],
+      "scope": "Tokens overlapping answer content; may include punctuation or boundary text, no invented action-only logits."
+    }
+  ],
+  "strata": {
+    "target_success_nonStop": {
+      "turns": 22,
+      "tokens": 24,
+      "mean_delta_logprob": 0.00601347287495931,
+      "mean_advantage": 1.4944425920645397,
+      "positive_delta_tokens": 11,
+      "positive_advantage_tokens": 24
+    },
+    "target_success_Stop": {
+      "turns": 0,
+      "tokens": 0,
+      "mean_delta_logprob": null,
+      "mean_advantage": null,
+      "positive_delta_tokens": 0,
+      "positive_advantage_tokens": 0
+    },
+    "target_failure_nonStop": {
+      "turns": 29,
+      "tokens": 86,
+      "mean_delta_logprob": -0.0018358230590820312,
+      "mean_advantage": -0.6767080336116081,
+      "positive_delta_tokens": 29,
+      "positive_advantage_tokens": 0
+    },
+    "target_failure_Stop": {
+      "turns": 0,
+      "tokens": 0,
+      "mean_delta_logprob": null,
+      "mean_advantage": null,
+      "positive_delta_tokens": 0,
+      "positive_advantage_tokens": 0
+    },
+    "other_success_nonStop": {
+      "turns": 10,
+      "tokens": 20,
+      "mean_delta_logprob": -0.010523223876953125,
+      "mean_advantage": 1.4354855954647063,
+      "positive_delta_tokens": 8,
+      "positive_advantage_tokens": 20
+    },
+    "other_success_Stop": {
+      "turns": 0,
+      "tokens": 0,
+      "mean_delta_logprob": null,
+      "mean_advantage": null,
+      "positive_delta_tokens": 0,
+      "positive_advantage_tokens": 0
+    },
+    "other_failure_nonStop": {
+      "turns": 35,
+      "tokens": 103,
+      "mean_delta_logprob": -0.003877954575621966,
+      "mean_advantage": -0.6453715829015936,
+      "positive_delta_tokens": 38,
+      "positive_advantage_tokens": 0
+    },
+    "other_failure_Stop": {
+      "turns": 0,
+      "tokens": 0,
+      "mean_delta_logprob": null,
+      "mean_advantage": null,
+      "positive_delta_tokens": 0,
+      "positive_advantage_tokens": 0
+    }
+  }
+}

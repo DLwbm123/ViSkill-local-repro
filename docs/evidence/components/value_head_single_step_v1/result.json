@@ -1,0 +1,3174 @@
+{
+  "status": "COMPLETE_WITH_RETAINED_PREUPDATE_FAILURE",
+  "completed_unix": 1792863261.968212,
+  "collection_gate": {
+    "rows": [
+      {
+        "seed": 130014,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130014_c3d93cf764734b40a341595a6d426d35/episode.json"
+      },
+      {
+        "seed": 130007,
+        "category": "single_BFS1",
+        "success": true,
+        "reward": 1.0199999809265137,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130007_2231193eb2b84345aada91a55995b70b/episode.json"
+      },
+      {
+        "seed": 130001,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130001_cfb28cf65f104ab1ad9db09d94fcdf9a/episode.json"
+      },
+      {
+        "seed": 130047,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130047_a7604204fdbe4417b1dcd8ad0bc662f8/episode.json"
+      },
+      {
+        "seed": 130013,
+        "category": "single_BFS1",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130013_3c314ad5c8164ced9407a96cd207616c/episode.json"
+      },
+      {
+        "seed": 130003,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130003_660b678076404dce8be60fdb6bf81919/episode.json"
+      },
+      {
+        "seed": 130133,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.0399999618530273,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130133_62df649e3d5641398bfde64be238eaf6/episode.json"
+      },
+      {
+        "seed": 130020,
+        "category": "single_BFS1",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130020_ddbc36abf46a4453b62d8f38d85eb175/episode.json"
+      },
+      {
+        "seed": 130005,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": true,
+        "reward": 1.059999942779541,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130005_4731e27b162f4dea8451c80269a15209/episode.json"
+      },
+      {
+        "seed": 130204,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130204_d12678a801cb4b0fb34a8f0347687835/episode.json"
+      },
+      {
+        "seed": 130022,
+        "category": "single_BFS1",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130022_ed14f90f9a3c4628b3ce120cd55bc674/episode.json"
+      },
+      {
+        "seed": 130006,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": true,
+        "reward": 1.0199999809265137,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130006_ebd16f1224674d17822c5cc346d41639/episode.json"
+      },
+      {
+        "seed": 130285,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.059999942779541,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130285_47dc2db868574f6d811b3baf155afb45/episode.json"
+      },
+      {
+        "seed": 130028,
+        "category": "single_BFS1",
+        "success": true,
+        "reward": 1.0199999809265137,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130028_c54bd8b7e7bb4aa9ba4290fc34e545b0/episode.json"
+      },
+      {
+        "seed": 130010,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": false,
+        "reward": 0.07999999821186066,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130010_804efb3279a74427ac05d9ff0aec5774/episode.json"
+      },
+      {
+        "seed": 130482,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130482_fcfc4ae8b0f8405fb38deff653c57a8c/episode.json"
+      },
+      {
+        "seed": 130032,
+        "category": "single_BFS1",
+        "success": true,
+        "reward": 1.0199999809265137,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130032_9b97718e176f4fa49c2e678dd7a74951/episode.json"
+      },
+      {
+        "seed": 130011,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130011_9a5df90e24b142b4b369bc34f0621d11/episode.json"
+      },
+      {
+        "seed": 130625,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.07999999821186066,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130625_b9192904f0c94f3e83c622a8e3226baa/episode.json"
+      },
+      {
+        "seed": 130036,
+        "category": "single_BFS1",
+        "success": true,
+        "reward": 1.0199999809265137,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130036_9c8fc4a4c8034a46970ea171af4a25c7/episode.json"
+      },
+      {
+        "seed": 130016,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130016_0b4cbdfc15ed4482a145b5f101f631ef/episode.json"
+      },
+      {
+        "seed": 130663,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.07999999821186066,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130663_74ba3f1388ea4de29946759e30fb9b43/episode.json"
+      },
+      {
+        "seed": 130039,
+        "category": "single_BFS1",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130039_538348b2fcd149df80c728c5713e35ea/episode.json"
+      },
+      {
+        "seed": 130017,
+        "category": "medium_BFS2_3_without_multicard",
+        "success": false,
+        "reward": 0.10000000149011612,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130017_d40b24e7208240289e16f28db1a46db2/episode.json"
+      },
+      {
+        "seed": 130830,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.059999942779541,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130830_f8b0e7f185794471bd8c09d867cff59b/episode.json"
+      },
+      {
+        "seed": 130894,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.059999942779541,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130894_082465d69e2b478484c49313d635c2d7/episode.json"
+      },
+      {
+        "seed": 131280,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131280_4e39eecc10224477bd049a7077f976a6/episode.json"
+      },
+      {
+        "seed": 131334,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.03999999910593033,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131334_8e49bcb47e9141309f9c3be19c159e82/episode.json"
+      },
+      {
+        "seed": 131363,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.059999942779541,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131363_82b058ace2124fafb3faa2a4fa0ee183/episode.json"
+      },
+      {
+        "seed": 131364,
+        "category": "multi_up3_applicable",
+        "success": false,
+        "reward": 0.019999999552965164,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131364_91fc2ef8d330444b88134ea1bb3885a2/episode.json"
+      },
+      {
+        "seed": 131578,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.059999942779541,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131578_36e1e3c968a44b818d206404f92d6b7b/episode.json"
+      },
+      {
+        "seed": 131641,
+        "category": "multi_up3_applicable",
+        "success": true,
+        "reward": 1.100000023841858,
+        "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131641_55350fc88fa14014b9fe8c94c0dc31ec/episode.json"
+      }
+    ],
+    "target_successes": 7,
+    "target_denominator": 16,
+    "gate_pass": true,
+    "resampling_allowed": false
+  },
+  "branches": {
+    "O": {
+      "groups": {
+        "all": {
+          "success": {
+            "n": 16,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.23957414314634154,
+              0.23957414314634154
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "quality": {
+            "n": 16,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.23957414314634154,
+              0.23957414314634154
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "stop_episodes": {
+            "n": 16,
+            "before": 4,
+            "after": 4,
+            "improved": 1,
+            "declined": 1,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.3371170055574027,
+              0.3371170055574027
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "hole_episodes": {
+            "n": 16,
+            "before": 5,
+            "after": 5,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.23957414314634154,
+              0.23957414314634154
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "before_stop_turns": 15,
+          "after_stop_turns": 15
+        },
+        "conditional": {
+          "success": {
+            "n": 8,
+            "before": 0,
+            "after": 0,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "quality": {
+            "n": 8,
+            "before": 0,
+            "after": 0,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "stop_episodes": {
+            "n": 8,
+            "before": 3,
+            "after": 3,
+            "improved": 1,
+            "declined": 1,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.5738789073322239,
+              0.5738789073322239
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "hole_episodes": {
+            "n": 8,
+            "before": 3,
+            "after": 3,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "before_stop_turns": 12,
+          "after_stop_turns": 12
+        },
+        "natural_multi": {
+          "success": {
+            "n": 8,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "quality": {
+            "n": 8,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "stop_episodes": {
+            "n": 8,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "hole_episodes": {
+            "n": 8,
+            "before": 2,
+            "after": 2,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "before_stop_turns": 3,
+          "after_stop_turns": 3
+        }
+      },
+      "baseline_carried": true,
+      "completion": {
+        "phase": "O",
+        "time_unix": 1792862850.9137878,
+        "global_actor_optimizer_steps": 1,
+        "critic_optimizer_steps": 0,
+        "own_baseline_episodes": 16,
+        "baseline_carried_from_original_attempt": true,
+        "new_environment_episodes": 16,
+        "post_update_episodes": 16,
+        "inference_snapshot_retained": true,
+        "learning_benefit_established": false
+      },
+      "actor_metrics": {
+        "actor/pg_clipfrac": 0.0,
+        "actor/ppo_kl": 0.0,
+        "actor/pg_clipfrac_lower": 0.0,
+        "actor/pg_loss": -0.006961363118989539,
+        "actor/grad_norm": 8.252423286437988,
+        "perf/mfu/actor": 0.0,
+        "perf/max_memory_allocated_gb": 35.644526958465576,
+        "perf/max_memory_reserved_gb": 39.4921875,
+        "perf/cpu_memory_used_gb": 56.130693435668945,
+        "actor/lr": 1e-06
+      },
+      "inference_snapshot": {
+        "bytes": 7509346928,
+        "payload_bytes": 7509245952,
+        "stored_dtype": "bfloat16 for floating tensors",
+        "dropped_tied_alias": "lm_head.weight",
+        "embedding_shape": [
+          151936,
+          2048
+        ],
+        "optimizer_saved": false,
+        "full_training_resume_verified": false,
+        "standalone_reload_verified": false,
+        "scope": "Inference-only weights, key/shape/header readability checked; in-memory post-update evaluation is separate."
+      },
+      "fresh_answer_strata": {
+        "target_success_nonStop": {
+          "turns": 22,
+          "tokens": 24,
+          "mean_delta_logprob": 0.0010964075724283855,
+          "mean_advantage": 1.7562696908911068,
+          "positive_delta_tokens": 14,
+          "positive_advantage_tokens": 24
+        },
+        "target_success_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        },
+        "target_failure_nonStop": {
+          "turns": 29,
+          "tokens": 86,
+          "mean_delta_logprob": 0.0026471337606740553,
+          "mean_advantage": 0.725777423518255,
+          "positive_delta_tokens": 38,
+          "positive_advantage_tokens": 73
+        },
+        "target_failure_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        },
+        "other_success_nonStop": {
+          "turns": 10,
+          "tokens": 20,
+          "mean_delta_logprob": 0.004261016845703125,
+          "mean_advantage": 1.4187159392982722,
+          "positive_delta_tokens": 8,
+          "positive_advantage_tokens": 19
+        },
+        "other_success_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        },
+        "other_failure_nonStop": {
+          "turns": 35,
+          "tokens": 103,
+          "mean_delta_logprob": 0.0013264776433555825,
+          "mean_advantage": 0.5930737481967917,
+          "positive_delta_tokens": 44,
+          "positive_advantage_tokens": 79
+        },
+        "other_failure_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        }
+      }
+    },
+    "Z": {
+      "groups": {
+        "all": {
+          "success": {
+            "n": 16,
+            "before": 1,
+            "after": 2,
+            "improved": 1,
+            "declined": 0,
+            "net_count": 1,
+            "paired_rate_change": 0.0625,
+            "conservative_exact_95_interval": [
+              -0.23878827821213472,
+              0.3379028704916095
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "quality": {
+            "n": 16,
+            "before": 1,
+            "after": 2,
+            "improved": 1,
+            "declined": 0,
+            "net_count": 1,
+            "paired_rate_change": 0.0625,
+            "conservative_exact_95_interval": [
+              -0.23878827821213472,
+              0.3379028704916095
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "stop_episodes": {
+            "n": 16,
+            "before": 5,
+            "after": 3,
+            "improved": 0,
+            "declined": 2,
+            "net_count": -2,
+            "paired_rate_change": -0.125,
+            "conservative_exact_95_interval": [
+              -0.41953609681893633,
+              0.22884517166677654
+            ],
+            "exact_discordant_sign_p_two_sided": 0.5
+          },
+          "hole_episodes": {
+            "n": 16,
+            "before": 5,
+            "after": 4,
+            "improved": 0,
+            "declined": 1,
+            "net_count": -1,
+            "paired_rate_change": -0.0625,
+            "conservative_exact_95_interval": [
+              -0.3379028704916095,
+              0.23878827821213472
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "before_stop_turns": 19,
+          "after_stop_turns": 11
+        },
+        "conditional": {
+          "success": {
+            "n": 8,
+            "before": 0,
+            "after": 1,
+            "improved": 1,
+            "declined": 0,
+            "net_count": 1,
+            "paired_rate_change": 0.125,
+            "conservative_exact_95_interval": [
+              -0.4201814039436605,
+              0.5754500196169428
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "quality": {
+            "n": 8,
+            "before": 0,
+            "after": 1,
+            "improved": 1,
+            "declined": 0,
+            "net_count": 1,
+            "paired_rate_change": 0.125,
+            "conservative_exact_95_interval": [
+              -0.4201814039436605,
+              0.5754500196169428
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "stop_episodes": {
+            "n": 8,
+            "before": 4,
+            "after": 2,
+            "improved": 0,
+            "declined": 2,
+            "net_count": -2,
+            "paired_rate_change": -0.25,
+            "conservative_exact_95_interval": [
+              -0.694198842944765,
+              0.3996668390053815
+            ],
+            "exact_discordant_sign_p_two_sided": 0.5
+          },
+          "hole_episodes": {
+            "n": 8,
+            "before": 3,
+            "after": 3,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "before_stop_turns": 16,
+          "after_stop_turns": 8
+        },
+        "natural_multi": {
+          "success": {
+            "n": 8,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "quality": {
+            "n": 8,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "stop_episodes": {
+            "n": 8,
+            "before": 1,
+            "after": 1,
+            "improved": 0,
+            "declined": 0,
+            "net_count": 0,
+            "paired_rate_change": 0.0,
+            "conservative_exact_95_interval": [
+              -0.4217525162283793,
+              0.4217525162283793
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "hole_episodes": {
+            "n": 8,
+            "before": 2,
+            "after": 1,
+            "improved": 0,
+            "declined": 1,
+            "net_count": -1,
+            "paired_rate_change": -0.125,
+            "conservative_exact_95_interval": [
+              -0.5754500196169428,
+              0.4201814039436605
+            ],
+            "exact_discordant_sign_p_two_sided": 1.0
+          },
+          "before_stop_turns": 3,
+          "after_stop_turns": 3
+        }
+      },
+      "baseline_carried": false,
+      "completion": {
+        "phase": "Z",
+        "time_unix": 1792863204.3517804,
+        "global_actor_optimizer_steps": 1,
+        "critic_optimizer_steps": 0,
+        "own_baseline_episodes": 16,
+        "baseline_carried_from_original_attempt": false,
+        "new_environment_episodes": 32,
+        "post_update_episodes": 16,
+        "inference_snapshot_retained": true,
+        "learning_benefit_established": false
+      },
+      "actor_metrics": {
+        "actor/pg_clipfrac": 0.0,
+        "actor/ppo_kl": 0.0,
+        "actor/pg_clipfrac_lower": 0.0,
+        "actor/pg_loss": -0.010920885135419667,
+        "actor/grad_norm": 6.295614242553711,
+        "perf/mfu/actor": 0.0,
+        "perf/max_memory_allocated_gb": 35.644526958465576,
+        "perf/max_memory_reserved_gb": 39.4921875,
+        "perf/cpu_memory_used_gb": 62.84981155395508,
+        "actor/lr": 1e-06
+      },
+      "inference_snapshot": {
+        "bytes": 7509346928,
+        "payload_bytes": 7509245952,
+        "stored_dtype": "bfloat16 for floating tensors",
+        "dropped_tied_alias": "lm_head.weight",
+        "embedding_shape": [
+          151936,
+          2048
+        ],
+        "optimizer_saved": false,
+        "full_training_resume_verified": false,
+        "standalone_reload_verified": false,
+        "scope": "Inference-only weights, key/shape/header readability checked; in-memory post-update evaluation is separate."
+      },
+      "fresh_answer_strata": {
+        "target_success_nonStop": {
+          "turns": 22,
+          "tokens": 24,
+          "mean_delta_logprob": 0.00601347287495931,
+          "mean_advantage": 1.4944425920645397,
+          "positive_delta_tokens": 11,
+          "positive_advantage_tokens": 24
+        },
+        "target_success_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        },
+        "target_failure_nonStop": {
+          "turns": 29,
+          "tokens": 86,
+          "mean_delta_logprob": -0.0018358230590820312,
+          "mean_advantage": -0.6767080336116081,
+          "positive_delta_tokens": 29,
+          "positive_advantage_tokens": 0
+        },
+        "target_failure_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        },
+        "other_success_nonStop": {
+          "turns": 10,
+          "tokens": 20,
+          "mean_delta_logprob": -0.010523223876953125,
+          "mean_advantage": 1.4354855954647063,
+          "positive_delta_tokens": 8,
+          "positive_advantage_tokens": 20
+        },
+        "other_success_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        },
+        "other_failure_nonStop": {
+          "turns": 35,
+          "tokens": 103,
+          "mean_delta_logprob": -0.003877954575621966,
+          "mean_advantage": -0.6453715829015936,
+          "positive_delta_tokens": 38,
+          "positive_advantage_tokens": 0
+        },
+        "other_failure_Stop": {
+          "turns": 0,
+          "tokens": 0,
+          "mean_delta_logprob": null,
+          "mean_advantage": null,
+          "positive_delta_tokens": 0,
+          "positive_advantage_tokens": 0
+        }
+      }
+    }
+  },
+  "paired_pre_actor_alignment": {
+    "max_abs_nats": 0.0,
+    "mean_abs_nats": 0.0,
+    "gate_pass": true
+  },
+  "historical_stop_probe_contrasts": [
+    {
+      "seed": 90931,
+      "turn": 5,
+      "O_pre": -0.69140625,
+      "O_post": -0.75390625,
+      "O_delta": -0.0625,
+      "Z_pre": -0.69140625,
+      "Z_post": -0.69921875,
+      "Z_delta": -0.0078125,
+      "Z_minus_O_delta": 0.0546875
+    },
+    {
+      "seed": 90012,
+      "turn": 5,
+      "O_pre": -0.466796875,
+      "O_post": -0.48046875,
+      "O_delta": -0.013671875,
+      "Z_pre": -0.466796875,
+      "Z_post": -0.439453125,
+      "Z_delta": 0.02734375,
+      "Z_minus_O_delta": 0.041015625
+    }
+  ],
+  "localized_mechanism_gate_pass": false,
+  "evaluation_gate_checks": {
+    "Z_own_conditional_quality_gain_at_least1": true,
+    "Z_conditional_quality_gain_over_O_at_least1": true,
+    "Z_natural_success_non_decrease": true,
+    "Z_natural_quality_non_decrease": true,
+    "Z_natural_Stop_turns_non_increase": true,
+    "Z_natural_Stop_episodes_non_increase": true,
+    "Z_natural_hole_episodes_non_increase": true
+  },
+  "evaluation_followup_gate_pass": true,
+  "costs": {
+    "C": {
+      "native_calls": 97,
+      "actual_episodes": 32
+    },
+    "O": {
+      "native_calls": 60,
+      "actual_episodes": 16
+    },
+    "O_repair1": {
+      "native_calls": 60,
+      "actual_episodes": 16
+    },
+    "Z": {
+      "native_calls": 121,
+      "actual_episodes": 32
+    }
+  },
+  "actual_actor_forward_samples_including_failed_attempt": 280,
+  "actual_critic_forward_samples_including_failed_attempt": 96,
+  "actual_global_actor_steps": 2,
+  "actual_critic_steps": 0,
+  "admissions": 0,
+  "original_no_repeat_scoring_plan_pass": false,
+  "stable_generalization_or_original_collapse_cause_established": false,
+  "interval_method": "Conservative finite-sample paired rate-difference95% interval from two simultaneous97.5% Clopper-Pearson bounds on discordant win/loss probabilities; Bonferroni valid without within-pair independence. Exact two-sided sign p on discordant pairs also reported. Small fixed developed panels, no multiplicity-adjusted efficacy claim.",
+  "records": [
+    {
+      "seed": 150006,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150006_84685dc658914378a2991d587d29a26d/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150004,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150004_1f5d6e65d5d24d73af5bd4c8a38a501e/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150012,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 7,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150012_1584218e12204637ae58363165d57351/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150007,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150007_978969747269436ab02e16fbe3f8b31e/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150002,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150002_185d44190a9f466aa4c625ffe346b2ff/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150713,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150713_972bfcff90c749f2a7a0d197237ea759/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150015,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150015_8507ab71223b44dca7718d47280f65a1/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150740,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150740_51c9e759dcf3411d88bdc34e3b4a27e8/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150423,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150423_7c257fc240444190a7280d1544fe7c8b/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150280,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150280_6ec76e8da93a4ae9b1688f6ccfab7387/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150334,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150334_196234ed897b40e0b03b9ecdcdb04385/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150014,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 5,
+      "stop_turns": 3,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150014_779349d5123e453ca3c52e7cb800f02e/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150655,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150655_7db846b2bac24f5ba348749e492e0fe6/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150826,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150826_cab466637b8a4257bc8267df45e61596/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150011,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150011_de00453aa4dc4652b4d244d1698692cb/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150679,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O/episodes/dev_0_150679_d6208253337647c582d4543d694f6e25/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150740,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150740_4e6bb4377fce4e1a92920d7366daf998/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150002,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150002_806c9374963b4e5cb4a64455a1e4ea82/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150713,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150713_0cbe812a5f2f4440be215c8e6614ce63/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150655,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150655_ebefb4ffd05345fb8b91bf69b991e2bb/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150826,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150826_bc436e5bb7b148b1b47f453003172cb6/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150004,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150004_1dbf257b72084716b928e36e9aa935fe/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150007,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150007_b23cac00a0444e14be74444778ce9aaa/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150014,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 5,
+      "stop_turns": 3,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150014_a5ea1a3e73e74beab77b61349789424e/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150006,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150006_eec9993ece9a40b0b662932db781674c/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150012,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 7,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150012_95867aa2d8ab4c81b1f8e6f690711604/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150280,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150280_d3a2300da337402bac5f49748e05b9e3/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150011,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150011_53b31b7c8ca447bcb76ed647394ea4bc/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150015,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150015_744b195ae4db4f609aaf83d2a40aae57/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150334,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150334_b28df8a483fa497685212c42e61ee3f5/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150679,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150679_bb021444aa014718b922cafd4405562f/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150423,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O_repair1/episodes/dev_1_150423_068df1b7e9684664b9519f1009c39d5a/episode.json",
+      "branch": "O"
+    },
+    {
+      "seed": 150826,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150826_31b7d581db0644a5b40196332485a2c4/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150655,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150655_3cff248a7fcc4a4585af0a446b00f777/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150007,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150007_228acd10e6984e6dbc305b5f8b1ec26b/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150011,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150011_886c6955c88040339817e0e1a4dc0f97/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150655,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "up",
+        "right",
+        "up",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150655_8c8b40aa80474c77b58b2c08908f4464/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150012,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 7,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150012_528bdfea8cf44b31b2856b6cbcce5fe2/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150334,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "left"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150334_82e514ffbb6d4175a29a5acd66c4efb6/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150280,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150280_66f7a03de1c040c8baff4287810b6c32/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150015,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150015_aa828ffbbe8448fcaf98dde4f81bb579/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150334,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150334_6f6ee933d2f043a194c8d2ea1f6ffba0/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150713,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150713_a4349af532424c16807ac3ef78c601ed/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150713,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150713_31dfbda34ef642a6b80fe1ff0d2e71e9/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150014,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 5,
+      "stop_turns": 3,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150014_19bb0c7267bb486f815de73618b16c92/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150015,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150015_5e291f2fb785480db803a0d4d15e9fb0/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150679,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150679_e3810601b6204da6a154c25a0491d874/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150002,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150002_49f9ad3949774eeaa292efcd080dc235/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150004,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150004_22db3e1e5cc14e4ca3bc86c09d7a7bd2/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150002,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150002_393f43409ea74d8bac7a39c9c6d39967/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150004,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150004_4496edafc0c84bd786ad81fb6ad53e93/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150280,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150280_afd42558c00d4c74870dc2dfc543c7f6/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150740,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "right",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150740_bc3a49fc7c3e433791738f6f7b7eb677/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150740,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150740_c642b801eede4ea5beccfd62648f456d/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150007,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150007_36c4e89163a74f1d9a28608df0b37344/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150423,
+      "phase": "dev",
+      "version": 0,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150423_9e4c525ffa81416c93c1e899aa7d6fa6/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150006,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150006_2c611793c782477a8dd930025b89c097/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150423,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150423_8207fb36a4f04409b8194fbc5cf78bf4/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150014,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 5,
+      "stop_turns": 3,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150014_6e08a968d9664d81bf498e6572fb8f09/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150012,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 7,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150012_4f54052edc454e3d901737a636b11f2a/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150011,
+      "phase": "dev",
+      "version": 1,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150011_1f2c01b4517647bbb48faeaa0ca8b50a/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150679,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 4,
+      "has_stop": true,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150679_c1e57bcd58674104b62a50fbaadd959f/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150826,
+      "phase": "dev",
+      "version": 1,
+      "group": "conditional",
+      "category": "conditional",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "action_count": 2,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_1_150826_650e9273bd3d4886a965b987812167b8/episode.json",
+      "branch": "Z"
+    },
+    {
+      "seed": 150006,
+      "phase": "dev",
+      "version": 0,
+      "group": "natural_multi",
+      "category": "natural_multi",
+      "bfs": 4,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/Z/episodes/dev_0_150006_92eca160084043d088985fd188d603f2/episode.json",
+      "branch": "Z"
+    }
+  ],
+  "training_records": [
+    {
+      "seed": 130663,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "right",
+        "down",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 4,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130663_74ba3f1388ea4de29946759e30fb9b43/episode.json"
+    },
+    {
+      "seed": 130204,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130204_d12678a801cb4b0fb34a8f0347687835/episode.json"
+    },
+    {
+      "seed": 131641,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": false,
+      "actions": [
+        "down",
+        "down",
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131641_55350fc88fa14014b9fe8c94c0dc31ec/episode.json"
+    },
+    {
+      "seed": 130133,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130133_62df649e3d5641398bfde64be238eaf6/episode.json"
+    },
+    {
+      "seed": 130011,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "up",
+        "up",
+        "up",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "action_count": 9,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130011_9a5df90e24b142b4b369bc34f0621d11/episode.json"
+    },
+    {
+      "seed": 130006,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 2,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right",
+        "down"
+      ],
+      "action_count": 2,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130006_ebd16f1224674d17822c5cc346d41639/episode.json"
+    },
+    {
+      "seed": 130036,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "left"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_3",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130036_9c8fc4a4c8034a46970ea171af4a25c7/episode.json"
+    },
+    {
+      "seed": 130032,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_0",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130032_9b97718e176f4fa49c2e678dd7a74951/episode.json"
+    },
+    {
+      "seed": 130482,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down",
+        "down",
+        "left",
+        "left"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130482_fcfc4ae8b0f8405fb38deff653c57a8c/episode.json"
+    },
+    {
+      "seed": 130013,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_1",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130013_3c314ad5c8164ced9407a96cd207616c/episode.json"
+    },
+    {
+      "seed": 131280,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "left",
+        "up",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131280_4e39eecc10224477bd049a7077f976a6/episode.json"
+    },
+    {
+      "seed": 130007,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": true,
+      "quality": false,
+      "actions": [
+        "left",
+        "up"
+      ],
+      "action_count": 2,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_2",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130007_2231193eb2b84345aada91a55995b70b/episode.json"
+    },
+    {
+      "seed": 130028,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_2",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130028_c54bd8b7e7bb4aa9ba4290fc34e545b0/episode.json"
+    },
+    {
+      "seed": 130039,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_3",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130039_538348b2fcd149df80c728c5713e35ea/episode.json"
+    },
+    {
+      "seed": 130014,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down",
+        "right",
+        "right",
+        "up",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130014_c3d93cf764734b40a341595a6d426d35/episode.json"
+    },
+    {
+      "seed": 130016,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130016_0b4cbdfc15ed4482a145b5f101f631ef/episode.json"
+    },
+    {
+      "seed": 131334,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "up",
+        "right",
+        "up",
+        "left",
+        "left",
+        "up"
+      ],
+      "action_count": 6,
+      "turns": 2,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131334_8e49bcb47e9141309f9c3be19c159e82/episode.json"
+    },
+    {
+      "seed": 130005,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 2,
+      "success": true,
+      "quality": false,
+      "actions": [
+        "up",
+        "down",
+        "up",
+        "up"
+      ],
+      "action_count": 4,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130005_4731e27b162f4dea8451c80269a15209/episode.json"
+    },
+    {
+      "seed": 130001,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "action_count": 14,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130001_cfb28cf65f104ab1ad9db09d94fcdf9a/episode.json"
+    },
+    {
+      "seed": 130285,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130285_47dc2db868574f6d811b3baf155afb45/episode.json"
+    },
+    {
+      "seed": 130625,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down",
+        "right",
+        "down",
+        "right",
+        "down",
+        "right",
+        "down",
+        "right"
+      ],
+      "action_count": 8,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130625_b9192904f0c94f3e83c622a8e3226baa/episode.json"
+    },
+    {
+      "seed": 131578,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131578_36e1e3c968a44b818d206404f92d6b7b/episode.json"
+    },
+    {
+      "seed": 130022,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left",
+        "down",
+        "down",
+        "left",
+        "left"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_1",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130022_ed14f90f9a3c4628b3ce120cd55bc674/episode.json"
+    },
+    {
+      "seed": 130017,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "down",
+        "left",
+        "right",
+        "right",
+        "right"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130017_d40b24e7208240289e16f28db1a46db2/episode.json"
+    },
+    {
+      "seed": 130010,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 2,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down",
+        "down",
+        "down"
+      ],
+      "action_count": 4,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130010_804efb3279a74427ac05d9ff0aec5774/episode.json"
+    },
+    {
+      "seed": 130047,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right",
+        "down",
+        "right",
+        "up",
+        "up"
+      ],
+      "action_count": 5,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130047_a7604204fdbe4417b1dcd8ad0bc662f8/episode.json"
+    },
+    {
+      "seed": 131363,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131363_82b058ace2124fafb3faa2a4fa0ee183/episode.json"
+    },
+    {
+      "seed": 130830,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130830_f8b0e7f185794471bd8c09d867cff59b/episode.json"
+    },
+    {
+      "seed": 130020,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "single_BFS1",
+      "bfs": 1,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_1",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130020_ddbc36abf46a4453b62d8f38d85eb175/episode.json"
+    },
+    {
+      "seed": 130894,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": true,
+      "quality": true,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "action_count": 3,
+      "turns": 3,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "goal",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130894_082465d69e2b478484c49313d635c2d7/episode.json"
+    },
+    {
+      "seed": 130003,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "medium_BFS2_3_without_multicard",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "left"
+      ],
+      "action_count": 1,
+      "turns": 5,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": false,
+      "terminal_reason": "turn_limit",
+      "retrieved_skill_id": null,
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130003_660b678076404dce8be60fdb6bf81919/episode.json"
+    },
+    {
+      "seed": 131364,
+      "phase": "train",
+      "version": 0,
+      "group": "train",
+      "category": "multi_up3_applicable",
+      "bfs": 3,
+      "success": false,
+      "quality": false,
+      "actions": [
+        "right"
+      ],
+      "action_count": 1,
+      "turns": 1,
+      "stop_turns": 0,
+      "has_stop": false,
+      "hole": true,
+      "terminal_reason": "hole",
+      "retrieved_skill_id": "skill_4",
+      "episode_path": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131364_91fc2ef8d330444b88134ea1bb3885a2/episode.json"
+    }
+  ],
+  "limitations": [
+    "Known native/actor think-token discrepancy remains failed",
+    "O baseline carried from its original b0 instance after serialization failure; both instances load same retained b0 and empty optimizer, no full-weight identity claim",
+    "Two historical Stop probes were selected posthoc from the previous published audit",
+    "Inference snapshots retained with readable headers, not independently reloaded; no optimizer/full training recovery",
+    "Fresh32 contain zero parsed Stop turns; historical Stop probes measure shared-parameter transfer, not a direct same-Stop-token gradient contrast."
+  ],
+  "training_Stop_turns": 0
+}

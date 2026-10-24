@@ -1947,5 +1947,33 @@
     "peak_incremental_bytes": 2392064,
     "report": "reports/19_kernel_score_reference.md",
     "decision": "Close kernel branch; next single-value-head intervention requires a separately frozen protocol and fresh target-successful on-policy data."
+  },
+  "value_head_single_step_v1": {
+    "status": "COMPLETE_WITH_RETAINED_PREUPDATE_FAILURE",
+    "report": "reports/20_value_head_single_step.md",
+    "total_environment_episodes": 96,
+    "native_calls": 338,
+    "global_actor_steps": 2,
+    "critic_steps": 0,
+    "localized_mechanism_gate_pass": false,
+    "evaluation_followup_gate_pass": true,
+    "conditional_Z_before_after": [
+      0,
+      1
+    ],
+    "conditional_O_before_after": [
+      0,
+      0
+    ],
+    "conditional_denominator": 8,
+    "training_target_successes": 7,
+    "training_target_denominator": 16,
+    "training_Stop_turns": 0,
+    "stable_learning_benefit_established": false,
+    "original_no_repeat_scoring_plan_pass": false,
+    "retained_preupdate_failure": true,
+    "inference_snapshots_retained": 2,
+    "each_snapshot_bytes": 7509346928,
+    "next_route": "Freeze prospective32 new-board evaluation only of b0/O/Z; no further training under this protocol."
   }
 }

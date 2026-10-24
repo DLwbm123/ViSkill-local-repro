@@ -1,0 +1,6 @@
+{
+  "source": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/O",
+  "episodes": 16,
+  "new_baseline_calls": 0,
+  "scope": "Complete original O baseline, same retained b0 source and empty optimizer; new worker instance after pre-update serialization failure."
+}

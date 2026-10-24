@@ -1,0 +1,14 @@
+{
+  "bytes": 7509346928,
+  "payload_bytes": 7509245952,
+  "stored_dtype": "bfloat16 for floating tensors",
+  "dropped_tied_alias": "lm_head.weight",
+  "embedding_shape": [
+    151936,
+    2048
+  ],
+  "optimizer_saved": false,
+  "full_training_resume_verified": false,
+  "standalone_reload_verified": false,
+  "scope": "Inference-only weights, key/shape/header readability checked; in-memory post-update evaluation is separate."
+}

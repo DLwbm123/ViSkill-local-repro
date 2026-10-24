@@ -1,0 +1,232 @@
+{
+  "rows": [
+    {
+      "seed": 130014,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130014_c3d93cf764734b40a341595a6d426d35/episode.json"
+    },
+    {
+      "seed": 130007,
+      "category": "single_BFS1",
+      "success": true,
+      "reward": 1.0199999809265137,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130007_2231193eb2b84345aada91a55995b70b/episode.json"
+    },
+    {
+      "seed": 130001,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130001_cfb28cf65f104ab1ad9db09d94fcdf9a/episode.json"
+    },
+    {
+      "seed": 130047,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130047_a7604204fdbe4417b1dcd8ad0bc662f8/episode.json"
+    },
+    {
+      "seed": 130013,
+      "category": "single_BFS1",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130013_3c314ad5c8164ced9407a96cd207616c/episode.json"
+    },
+    {
+      "seed": 130003,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130003_660b678076404dce8be60fdb6bf81919/episode.json"
+    },
+    {
+      "seed": 130133,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.0399999618530273,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130133_62df649e3d5641398bfde64be238eaf6/episode.json"
+    },
+    {
+      "seed": 130020,
+      "category": "single_BFS1",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130020_ddbc36abf46a4453b62d8f38d85eb175/episode.json"
+    },
+    {
+      "seed": 130005,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "reward": 1.059999942779541,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130005_4731e27b162f4dea8451c80269a15209/episode.json"
+    },
+    {
+      "seed": 130204,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130204_d12678a801cb4b0fb34a8f0347687835/episode.json"
+    },
+    {
+      "seed": 130022,
+      "category": "single_BFS1",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130022_ed14f90f9a3c4628b3ce120cd55bc674/episode.json"
+    },
+    {
+      "seed": 130006,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": true,
+      "reward": 1.0199999809265137,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130006_ebd16f1224674d17822c5cc346d41639/episode.json"
+    },
+    {
+      "seed": 130285,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.059999942779541,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130285_47dc2db868574f6d811b3baf155afb45/episode.json"
+    },
+    {
+      "seed": 130028,
+      "category": "single_BFS1",
+      "success": true,
+      "reward": 1.0199999809265137,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130028_c54bd8b7e7bb4aa9ba4290fc34e545b0/episode.json"
+    },
+    {
+      "seed": 130010,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "reward": 0.07999999821186066,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130010_804efb3279a74427ac05d9ff0aec5774/episode.json"
+    },
+    {
+      "seed": 130482,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130482_fcfc4ae8b0f8405fb38deff653c57a8c/episode.json"
+    },
+    {
+      "seed": 130032,
+      "category": "single_BFS1",
+      "success": true,
+      "reward": 1.0199999809265137,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130032_9b97718e176f4fa49c2e678dd7a74951/episode.json"
+    },
+    {
+      "seed": 130011,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130011_9a5df90e24b142b4b369bc34f0621d11/episode.json"
+    },
+    {
+      "seed": 130625,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.07999999821186066,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130625_b9192904f0c94f3e83c622a8e3226baa/episode.json"
+    },
+    {
+      "seed": 130036,
+      "category": "single_BFS1",
+      "success": true,
+      "reward": 1.0199999809265137,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130036_9c8fc4a4c8034a46970ea171af4a25c7/episode.json"
+    },
+    {
+      "seed": 130016,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130016_0b4cbdfc15ed4482a145b5f101f631ef/episode.json"
+    },
+    {
+      "seed": 130663,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.07999999821186066,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130663_74ba3f1388ea4de29946759e30fb9b43/episode.json"
+    },
+    {
+      "seed": 130039,
+      "category": "single_BFS1",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130039_538348b2fcd149df80c728c5713e35ea/episode.json"
+    },
+    {
+      "seed": 130017,
+      "category": "medium_BFS2_3_without_multicard",
+      "success": false,
+      "reward": 0.10000000149011612,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130017_d40b24e7208240289e16f28db1a46db2/episode.json"
+    },
+    {
+      "seed": 130830,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.059999942779541,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130830_f8b0e7f185794471bd8c09d867cff59b/episode.json"
+    },
+    {
+      "seed": 130894,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.059999942779541,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_130894_082465d69e2b478484c49313d635c2d7/episode.json"
+    },
+    {
+      "seed": 131280,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131280_4e39eecc10224477bd049a7077f976a6/episode.json"
+    },
+    {
+      "seed": 131334,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.03999999910593033,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131334_8e49bcb47e9141309f9c3be19c159e82/episode.json"
+    },
+    {
+      "seed": 131363,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.059999942779541,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131363_82b058ace2124fafb3faa2a4fa0ee183/episode.json"
+    },
+    {
+      "seed": 131364,
+      "category": "multi_up3_applicable",
+      "success": false,
+      "reward": 0.019999999552965164,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131364_91fc2ef8d330444b88134ea1bb3885a2/episode.json"
+    },
+    {
+      "seed": 131578,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.059999942779541,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131578_36e1e3c968a44b818d206404f92d6b7b/episode.json"
+    },
+    {
+      "seed": 131641,
+      "category": "multi_up3_applicable",
+      "success": true,
+      "reward": 1.100000023841858,
+      "episode": "/data/local/project/artifacts/component_tests/value_head_single_step_v1/C/episodes/train_0_131641_55350fc88fa14014b9fe8c94c0dc31ec/episode.json"
+    }
+  ],
+  "target_successes": 7,
+  "target_denominator": 16,
+  "gate_pass": true,
+  "resampling_allowed": false
+}

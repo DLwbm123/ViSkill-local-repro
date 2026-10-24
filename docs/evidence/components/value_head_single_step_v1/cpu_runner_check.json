@@ -1,0 +1,22 @@
+{
+  "status": "CPU_PASS",
+  "dataset_checks": {
+    "train": {
+      "rows": 32,
+      "batches": 1,
+      "order_matches": true
+    },
+    "dev": {
+      "rows": 16,
+      "batches": 2,
+      "order_matches": true
+    }
+  },
+  "O_Z_config_equal_except_locations": true,
+  "historical_stop_probe_tokens": 2,
+  "head_values": 2049,
+  "model_forwards": 0,
+  "environment_steps": 0,
+  "generation": 0,
+  "runtime_snapshot_alias_check": "Required at init before generation; not falsely marked checked on CPU"
+}
