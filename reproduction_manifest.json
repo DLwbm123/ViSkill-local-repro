@@ -2096,5 +2096,19 @@
     "private_weights_published": false,
     "report": "reports/25_answer_region_step.md",
     "route_closed_without_extra_mask_LR_seed_search": true
+  },
+  "retention_cpu_screen_v1": {
+    "status": "COMPLETE_CPU_ONLY",
+    "model_forwards": 0,
+    "model_optimizer_steps": 0,
+    "tiny_CPU_optimizer_steps": 8,
+    "tiny_CPU_autograd_backwards": 2,
+    "training_rows": 32,
+    "Dev_rows": 32,
+    "natural_Dev_BFS4_plus": 9,
+    "natural_Dev_denominator": 16,
+    "new_GPU_experiment_launched": false,
+    "raw_new_bank_storage_feasible": false,
+    "report": "reports/26_retention_cpu_screen.md"
   }
 }

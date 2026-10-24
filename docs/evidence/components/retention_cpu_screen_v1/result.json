@@ -1,0 +1,3324 @@
+{
+  "status": "COMPLETE_CPU_ONLY",
+  "completed_unix": 1792878994.5032961,
+  "coverage": {
+    "train_all": {
+      "episodes": 32,
+      "BFS_counts": {
+        "3": 18,
+        "1": 8,
+        "2": 6
+      },
+      "optimal_signature_episode_counts": {
+        "up": 19,
+        "left+up": 2,
+        "down": 4,
+        "down+right": 1,
+        "right": 3,
+        "right+up": 1,
+        "left": 2
+      },
+      "optimal_action_episode_memberships": {
+        "up": 22,
+        "down": 5,
+        "left": 4,
+        "right": 5
+      },
+      "unknown_feature_rows": 0
+    },
+    "train_successful": {
+      "episodes": 13,
+      "BFS_counts": {
+        "1": 4,
+        "3": 7,
+        "2": 2
+      },
+      "optimal_signature_episode_counts": {
+        "up": 10,
+        "down+right": 1,
+        "right": 1,
+        "left": 1
+      },
+      "optimal_action_episode_memberships": {
+        "up": 10,
+        "down": 1,
+        "left": 1,
+        "right": 2
+      },
+      "unknown_feature_rows": 0
+    },
+    "dev_all": {
+      "episodes": 32,
+      "BFS_counts": {
+        "3": 20,
+        "2": 3,
+        "4": 6,
+        "5": 2,
+        "6": 1
+      },
+      "optimal_signature_episode_counts": {
+        "up": 21,
+        "down": 4,
+        "right+up": 2,
+        "right": 1,
+        "down+right": 1,
+        "left+up": 1,
+        "down+left": 2
+      },
+      "optimal_action_episode_memberships": {
+        "up": 24,
+        "down": 7,
+        "left": 3,
+        "right": 4
+      },
+      "unknown_feature_rows": 0
+    },
+    "dev_conditional": {
+      "episodes": 16,
+      "BFS_counts": {
+        "3": 16
+      },
+      "optimal_signature_episode_counts": {
+        "up": 16
+      },
+      "optimal_action_episode_memberships": {
+        "up": 16,
+        "down": 0,
+        "left": 0,
+        "right": 0
+      },
+      "unknown_feature_rows": 0
+    },
+    "dev_natural": {
+      "episodes": 16,
+      "BFS_counts": {
+        "2": 3,
+        "3": 4,
+        "4": 6,
+        "5": 2,
+        "6": 1
+      },
+      "optimal_signature_episode_counts": {
+        "down": 4,
+        "right+up": 2,
+        "right": 1,
+        "down+right": 1,
+        "up": 5,
+        "left+up": 1,
+        "down+left": 2
+      },
+      "optimal_action_episode_memberships": {
+        "up": 8,
+        "down": 7,
+        "left": 3,
+        "right": 4
+      },
+      "unknown_feature_rows": 0
+    },
+    "training_executed_action_events": {
+      "down": 35,
+      "right": 24,
+      "up": 42,
+      "left": 14
+    },
+    "successful_training_executed_action_events": {
+      "left": 2,
+      "up": 26,
+      "down": 4,
+      "right": 2
+    },
+    "all_dev_rows": [
+      {
+        "seed": 300003,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "left",
+              "up",
+              "left",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "hole",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300001,
+        "category": "natural_multi",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "down",
+          "right"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up",
+              "down",
+              "up",
+              "down"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "left",
+              "down"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "stop_turns",
+          "has_stop"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 300074,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300002,
+        "category": "natural_multi",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_signature": "right+up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "right",
+              "up",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "right",
+              "up",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 300080,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": true,
+            "quality": false,
+            "actions": [
+              "right",
+              "up",
+              "right",
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "stop_turns",
+          "has_stop"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300004,
+        "category": "natural_multi",
+        "bfs": 4,
+        "in_bounds_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "right"
+        ],
+        "optimal_signature": "right",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "down"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up",
+              "right",
+              "up",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "down"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300087,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "left"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300006,
+        "category": "natural_multi",
+        "bfs": 4,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 300241,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300010,
+        "category": "natural_multi",
+        "bfs": 4,
+        "in_bounds_initial_actions": [
+          "down",
+          "left"
+        ],
+        "safe_initial_actions": [
+          "down"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 300692,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "success",
+          "quality",
+          "actions",
+          "stop_turns",
+          "has_stop",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300012,
+        "category": "natural_multi",
+        "bfs": 4,
+        "in_bounds_initial_actions": [
+          "down",
+          "right"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "down",
+          "right"
+        ],
+        "optimal_signature": "down+right",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300719,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "down",
+              "left",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "down",
+              "left",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "stop_turns",
+          "has_stop",
+          "hole",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300013,
+        "category": "natural_multi",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300785,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": true,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "success",
+          "quality",
+          "actions",
+          "stop_turns",
+          "has_stop",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300014,
+        "category": "natural_multi",
+        "bfs": 5,
+        "in_bounds_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300833,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300016,
+        "category": "natural_multi",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_signature": "left+up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 300891,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300018,
+        "category": "natural_multi",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "down"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up",
+              "down"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 301000,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300020,
+        "category": "natural_multi",
+        "bfs": 4,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 301046,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up",
+              "up"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "success",
+          "quality",
+          "actions",
+          "stop_turns",
+          "has_stop",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300021,
+        "category": "natural_multi",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "down",
+          "left"
+        ],
+        "optimal_signature": "down+left",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": false,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 301114,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "stop_turns",
+          "has_stop",
+          "hole",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300022,
+        "category": "natural_multi",
+        "bfs": 4,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_signature": "right+up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "right",
+              "up",
+              "up",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "down"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "success",
+          "quality",
+          "actions",
+          "hole",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 301271,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "down",
+              "up",
+              "down",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "success",
+          "quality",
+          "actions",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300023,
+        "category": "natural_multi",
+        "bfs": 5,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "down",
+          "left"
+        ],
+        "optimal_signature": "down+left",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "up"
+            ],
+            "stop_turns": 3,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "down"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "stop_turns",
+          "has_stop"
+        ],
+        "optimal_signature_seen_in_C32": false,
+        "optimal_signature_seen_in_successful_C32": false
+      },
+      {
+        "seed": 301312,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "actions",
+          "stop_turns",
+          "has_stop"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300024,
+        "category": "natural_multi",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "right"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 301396,
+        "category": "conditional",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up",
+              "right",
+              "up",
+              "right",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": true,
+            "terminal_reason": "hole",
+            "retrieved_skill_id": "skill_4"
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "up"
+            ],
+            "stop_turns": 4,
+            "has_stop": true,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": "skill_4"
+          },
+          "A": {
+            "success": true,
+            "quality": true,
+            "actions": [
+              "up",
+              "up",
+              "up"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "goal",
+            "retrieved_skill_id": "skill_4"
+          }
+        },
+        "A_vs_b0_changed_fields": [
+          "success",
+          "quality",
+          "actions",
+          "hole",
+          "terminal_reason"
+        ],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": true
+      },
+      {
+        "seed": 300025,
+        "category": "natural_multi",
+        "bfs": 6,
+        "in_bounds_initial_actions": [
+          "down",
+          "left"
+        ],
+        "safe_initial_actions": [
+          "down"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "policies": {
+          "b0": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "down",
+              "down",
+              "down",
+              "down",
+              "down"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "Z": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "down",
+              "down",
+              "down",
+              "down",
+              "down"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          },
+          "A": {
+            "success": false,
+            "quality": false,
+            "actions": [
+              "down",
+              "down",
+              "down",
+              "down",
+              "down"
+            ],
+            "stop_turns": 0,
+            "has_stop": false,
+            "hole": false,
+            "terminal_reason": "turn_limit",
+            "retrieved_skill_id": null
+          }
+        },
+        "A_vs_b0_changed_fields": [],
+        "optimal_signature_seen_in_C32": true,
+        "optimal_signature_seen_in_successful_C32": false
+      }
+    ],
+    "all_train_rows": [
+      {
+        "seed": 130014,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "down",
+          "right",
+          "right",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 130007,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_2",
+        "executed_actions": [
+          "left",
+          "up"
+        ]
+      },
+      {
+        "seed": 130001,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_signature": "left+up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "right",
+          "right",
+          "right",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "right"
+        ]
+      },
+      {
+        "seed": 130047,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "right",
+          "down",
+          "right",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 130013,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_1",
+        "executed_actions": [
+          "up"
+        ]
+      },
+      {
+        "seed": 130003,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_signature": "left+up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "left"
+        ]
+      },
+      {
+        "seed": 130133,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 130020,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "down",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_1",
+        "executed_actions": [
+          "right"
+        ]
+      },
+      {
+        "seed": 130005,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "up",
+          "down",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 130204,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "right"
+        ]
+      },
+      {
+        "seed": 130022,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_1",
+        "executed_actions": [
+          "left",
+          "down",
+          "down",
+          "left",
+          "left"
+        ]
+      },
+      {
+        "seed": 130006,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "down",
+          "right"
+        ],
+        "optimal_signature": "down+right",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "right",
+          "down"
+        ]
+      },
+      {
+        "seed": 130285,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 130028,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_2",
+        "executed_actions": [
+          "up"
+        ]
+      },
+      {
+        "seed": 130010,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "right"
+        ],
+        "optimal_signature": "right",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "right",
+          "down",
+          "down",
+          "down"
+        ]
+      },
+      {
+        "seed": 130482,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "right",
+          "down",
+          "down",
+          "left",
+          "left"
+        ]
+      },
+      {
+        "seed": 130032,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "right"
+        ],
+        "optimal_signature": "right",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_0",
+        "executed_actions": [
+          "right"
+        ]
+      },
+      {
+        "seed": 130011,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_signature": "right+up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "left",
+          "up",
+          "up",
+          "up",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down"
+        ]
+      },
+      {
+        "seed": 130625,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "down",
+          "right",
+          "down",
+          "right",
+          "down",
+          "right",
+          "down",
+          "right"
+        ]
+      },
+      {
+        "seed": 130036,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "left",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "left"
+        ],
+        "optimal_signature": "left",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_3",
+        "executed_actions": [
+          "left"
+        ]
+      },
+      {
+        "seed": 130016,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "right"
+        ],
+        "optimal_signature": "right",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "up"
+        ]
+      },
+      {
+        "seed": 130663,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "left",
+          "right",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "seed": 130039,
+        "category": "single_BFS1",
+        "bfs": 1,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "left"
+        ],
+        "optimal_signature": "left",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_3",
+        "executed_actions": [
+          "down"
+        ]
+      },
+      {
+        "seed": 130017,
+        "category": "medium_BFS2_3_without_multicard",
+        "bfs": 2,
+        "in_bounds_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "safe_initial_actions": [
+          "down",
+          "left",
+          "right"
+        ],
+        "optimal_initial_actions": [
+          "down"
+        ],
+        "optimal_signature": "down",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": null,
+        "executed_actions": [
+          "down",
+          "left",
+          "right",
+          "right",
+          "right"
+        ]
+      },
+      {
+        "seed": 130830,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 130894,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 131280,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "left",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 131334,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "right",
+          "up",
+          "left",
+          "left",
+          "up"
+        ]
+      },
+      {
+        "seed": 131363,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 131364,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": false,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "right"
+        ]
+      },
+      {
+        "seed": 131578,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "up",
+          "up",
+          "up"
+        ]
+      },
+      {
+        "seed": 131641,
+        "category": "multi_up3_applicable",
+        "bfs": 3,
+        "in_bounds_initial_actions": [
+          "left",
+          "right",
+          "up"
+        ],
+        "safe_initial_actions": [
+          "left",
+          "up"
+        ],
+        "optimal_initial_actions": [
+          "up"
+        ],
+        "optimal_signature": "up",
+        "unknown_reason": null,
+        "collection_success": true,
+        "retrieved_skill_id": "skill_4",
+        "executed_actions": [
+          "down",
+          "down",
+          "up",
+          "up",
+          "up"
+        ]
+      }
+    ],
+    "causal_or_deployable_routing_claim": false
+  },
+  "optimizer_config": {
+    "_target_": "verl.workers.config.FSDPOptimizerConfig",
+    "optimizer": "AdamW",
+    "optimizer_impl": "torch.optim",
+    "lr": 1e-06,
+    "lr_warmup_steps_ratio": 0.0,
+    "total_training_steps": -1,
+    "weight_decay": 0.01,
+    "lr_warmup_steps": -1,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "clip_grad": 1.0,
+    "min_lr_ratio": 0.0,
+    "num_cycles": 0.5,
+    "lr_scheduler_type": "constant",
+    "warmup_style": null,
+    "override_optimizer_config": null
+  },
+  "optimizer_fixtures": [
+    {
+      "dtype": "torch.float32",
+      "case": "above_epsilon",
+      "initial_gradients": [
+        0.1,
+        -0.2,
+        0.3
+      ],
+      "positive_diagonal_scaling": [
+        0.1,
+        10.0,
+        0.01
+      ],
+      "pre_clip_norms": [
+        0.37416574358940125,
+        2.0000271797180176
+      ],
+      "base_update": [
+        -1.0132789611816406e-06,
+        1.0132789611816406e-06,
+        -9.98377799987793e-07
+      ],
+      "scaled_update": [
+        -1.0132789611816406e-06,
+        1.0132789611816406e-06,
+        -9.98377799987793e-07
+      ],
+      "maximum_update_difference": 0.0,
+      "difference_over_learning_rate": 0.0
+    },
+    {
+      "dtype": "torch.float32",
+      "case": "epsilon_sensitive",
+      "initial_gradients": [
+        1e-11,
+        -2e-10,
+        3e-09
+      ],
+      "positive_diagonal_scaling": [
+        0.1,
+        10.0,
+        0.01
+      ],
+      "pre_clip_norms": [
+        3.006675797223579e-09,
+        2.000225096665531e-09
+      ],
+      "base_update": [
+        0.0,
+        2.9802322387695312e-08,
+        -2.2351741790771484e-07
+      ],
+      "scaled_update": [
+        0.0,
+        1.7881393432617188e-07,
+        0.0
+      ],
+      "maximum_update_difference": 2.2351741790771484e-07,
+      "difference_over_learning_rate": 0.22351741790771484
+    },
+    {
+      "dtype": "torch.float64",
+      "case": "above_epsilon",
+      "initial_gradients": [
+        0.1,
+        -0.2,
+        0.3
+      ],
+      "positive_diagonal_scaling": [
+        0.1,
+        10.0,
+        0.01
+      ],
+      "pre_clip_norms": [
+        0.37416573867739417,
+        2.000027249814362
+      ],
+      "base_update": [
+        -1.004999900022785e-06,
+        1.002999950039385e-06,
+        -1.001999966665501e-06
+      ],
+      "scaled_update": [
+        -1.0049979999871006e-06,
+        1.0029999900074138e-06,
+        -1.001993333277218e-06
+      ],
+      "maximum_update_difference": 6.633388283106001e-12,
+      "difference_over_learning_rate": 6.633388283106001e-06
+    },
+    {
+      "dtype": "torch.float64",
+      "case": "epsilon_sensitive",
+      "initial_gradients": [
+        1e-11,
+        -2e-10,
+        3e-09
+      ],
+      "positive_diagonal_scaling": [
+        0.1,
+        10.0,
+        0.01
+      ],
+      "pre_clip_norms": [
+        3.0066759053812236e-09,
+        2.0002252373170377e-09
+      ],
+      "base_update": [
+        -5.999001018164307e-09,
+        2.2607843153110707e-08,
+        -2.3276923077908407e-07
+      ],
+      "scaled_update": [
+        -5.099990041390612e-09,
+        1.696666667161395e-07,
+        -4.99102692508302e-09
+      ],
+      "maximum_update_difference": 2.2777820385400105e-07,
+      "difference_over_learning_rate": 0.22777820385400105
+    }
+  ],
+  "initial_same_reference_EWC_max_gradient": 0.0,
+  "initial_same_reference_KL_max_gradient": 2.7755575615628914e-17,
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "model_optimizer_steps": 0,
+  "environment_steps": 0,
+  "tiny_CPU_optimizer_steps": 8,
+  "tiny_CPU_autograd_backwards": 2,
+  "limitations": [
+    "Posthoc64 saved states and96 policy outcomes; no independent new evaluation",
+    "BFS optimal actions are privileged diagnostics, not a deployment routing policy",
+    "First-action signature coverage does not establish board/state/action-history coverage or causality",
+    "First AdamW fixture includes an epsilon-sensitive counterexample; actual model gradient-coordinate distribution is not known",
+    "Identical-reference KL/EWC at initialization has zero first gradient in the fixture; no whole-model regularizer was tested",
+    "Old answer-region investment gate remains FAIL; no new GPU protocol, mask/LR/seed search or launch follows automatically"
+  ]
+}

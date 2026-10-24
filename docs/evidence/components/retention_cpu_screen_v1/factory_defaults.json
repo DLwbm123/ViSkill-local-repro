@@ -1,0 +1,24 @@
+{
+  "observed_unix": 1792879326.5907354,
+  "torch_version": "2.8.0+cu128",
+  "optimizer_class": "AdamW",
+  "defaults": {
+    "lr": 1e-06,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": null,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": true
+  },
+  "optimizer_steps": 0,
+  "model_forwards": 0,
+  "scope": "Read installed factory defaults without any update, in addition to the eight already completed tiny fixture steps; no fixture is rerun."
+}

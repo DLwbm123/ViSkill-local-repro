@@ -163,5 +163,15 @@
     "private_delta_or_schema_exported": false,
     "posthoc_analysis_labeled": true,
     "retained_preupdate_metadata_failure": true
+  },
+  "retention_cpu_screen_v1": {
+    "source_commit": "48d24c3c380e5a3fb1f08980456b4eb18cafa49d",
+    "report": "reports/26_retention_cpu_screen.md",
+    "model_forwards": 0,
+    "model_optimizer_steps": 0,
+    "tiny_CPU_optimizer_steps": 8,
+    "new_GPU_experiment_launched": false,
+    "curriculum_draft_not_model_ready": true,
+    "private_inputs_or_weights_exported": false
   }
 }

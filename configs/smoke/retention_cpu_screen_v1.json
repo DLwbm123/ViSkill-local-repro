@@ -1,0 +1,12 @@
+{
+  "name": "retention_cpu_screen_v1",
+  "status": "FROZEN_CPU_ONLY",
+  "preparation_started_unix": 1792878770.741,
+  "max_seconds_including_preparation": 900,
+  "candidate_preparation_started_unix": 1792876970.446,
+  "maximum_additional_bytes": 2000000,
+  "selection": "All originalC32 states/actions and all newDev32 states with96 saved policy outcomes, no result filtering. BFS/exact first optimal-action sets using existing solver.solve/distance only, never replay/env.step; all changed A-b0 cases retained.",
+  "optimizer_scope": "Actual resolved AdamW factory on3-dimensional CPU tensors, FP32/FP64, ordinary and epsilon-sensitive gradients, fixed positive diagonal scales [.1,10,.01], same clip/LR/weight_decay/betas.8 toy optimizer steps and2 tiny KL/EWC autograd fixtures;0 model steps. No coefficient grid or method performance claim.",
+  "purpose": "Check observed data support and whether a candidate retention construction can change the first Adam update before considering a genuinely independent mainline mechanism. Not reopening failed answer-mask protocol.",
+  "limits": "Descriptive posthoc features, privileged BFS not deployable routing, preserve unknowns/full denominators; no causal claim from one natural decline and no actual full-model FIM/gradients."
+}

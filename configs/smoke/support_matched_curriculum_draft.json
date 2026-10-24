@@ -1,0 +1,40 @@
+{
+  "status": "DESIGN_ONLY_NO_FROZEN_DATA_OR_MODEL_DISPATCH",
+  "purpose": "Improve the user method by testing initial-state training support, after observed9/16 natural Dev starts exceed originalC maximum BFS3. Old answer-region gate remains FAIL.",
+  "candidate_preparation_started_unix": 1792876970.446,
+  "candidate_max_seconds_including_preparation": 14400,
+  "absolute_campaign_deadline": 1792899507,
+  "shared_bank_design": {
+    "conditional_Up3": 16,
+    "nonconditional_BFS2_3": 8,
+    "single_BFS1": 8,
+    "natural_BFS4_plus": 8
+  },
+  "control_training32": "shared conditional16 + shared medium8 + single8",
+  "support_training32": "same exact shared conditional16 + shared medium8 + long8",
+  "changed_factor": "Replace eight single-start samples with eight long-start samples; same32 count, same frozen learning operator, common24 exact samples. This changes the data distribution, not an isolated length label or a loss-mask grid.",
+  "fixed_learning_operator_if_chosen": "Answer-region numerator from existing code as a fixed construction component, full-generated GAE/whitening/denominator, zero value baseline, empty optimizer, one global mini32/micro1 update per arm, LR1e-6 and unchanged clip/entropy/KL. No new mask/LR search and no continuation of oldA.",
+  "data_readiness": "Fresh disjoint bank40 and prospective Dev40 before any calls, exclude all historical boards/candidate-prefix seeds and reserved Test. Use every sampled outcome; no resample or positive-only selection. Require at least one conditional and one long-bank success, and nonempty answer support for all40, or stop before both updates and retain all failures.",
+  "proposed_evaluation": "Common originalb0/control/support on fresh16 conditional+16 other natural+8 single. Explicit long-subset and single-retention gates, all paired counts/CI and Stop/hole safety. Exact thresholds must be finalized before any call, not after results.",
+  "proposed_limits": {
+    "collection_episodes": 40,
+    "evaluation_episodes": 120,
+    "maximum_native_calls": 800,
+    "new_global_actor_steps_total": 2,
+    "new_critic_steps": 0,
+    "additional_hard_bytes": 600000000,
+    "additional_write_stop_bytes": 550000000,
+    "each_private_archive_write_stop_bytes": 225000000
+  },
+  "resource_readiness": "Recheck actual budget/free GPUs and a conservative first-preparation storage baseline, protect all old/private models. Stream private inference artifacts and require separate fixed-input reload gates before evaluation. No full new weight disk copies, no private delta/schema export. Stop dependent phases on failure without repeating completed updates.",
+  "draft_readiness_boundary": "This is not an executable or frozen GPU protocol. Continuous user autonomy permits choosing or rejecting it after readiness, without per-round approval; do not launch from this draft alone.",
+  "input_storage_readiness_blocker": {
+    "observed_existing_C32_pt_bytes": 290590081,
+    "estimated_uncompressed_C40_bytes": 363237601,
+    "two_archives_at_old_A_size_bytes": 319717626,
+    "observed_root_bytes": 84331327488,
+    "root_85GB_headroom_bytes": 668672512,
+    "assessment": "Raw input plus two expected artifacts already exceeds headroom before logs; do not launch the raw-input design. Estimate varies with actual image/turn counts.",
+    "next_CPU_only": "One fixed lossless gzip level1 input-container feasibility check on small mixed-dtype fixture and one read-only existingC32, <=15min/50MB early write-stop and original candidate deadline. No codec search/full uncompressed copy/source deletion/hash/full byte comparison; require basic DataProto/multimodal usability and conservative peak estimate before any fresh model call."
+  }
+}

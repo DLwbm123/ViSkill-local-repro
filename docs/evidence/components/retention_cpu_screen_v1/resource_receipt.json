@@ -1,0 +1,10 @@
+{
+  "observed_unix": 1792879757.300459,
+  "known_new_CPU_files_bytes": 91329,
+  "maximum_new_CPU_bytes": 2000000,
+  "existing_C32_input_container_bytes": 290590081,
+  "campaign_status": "ACTIVE",
+  "current_allocated_bytes": 84331327488,
+  "no_model_operations": true,
+  "all_old_inputs_models_preserved": true
+}

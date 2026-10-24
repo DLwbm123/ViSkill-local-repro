@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+CPU retention screen:9/16 natural Dev starts have BFS4–6 while C32 starts stop at3; this does not establish the cause of the single natural regression. Tiny AdamW fixtures retain an epsilon-sensitive counterexample, and identical-reference KL/EWC have zero initial penalty gradients. No new GPU experiment; a support-matched curriculum remains design-only with input-storage readiness unresolved. See [report26](reports/26_retention_cpu_screen.md).
+
 Answer-region loss numerator pilot: conditional success/quality rose from original b0 4/16 to A 7/16, but other-natural success/quality fell2/16 to1/16 and holes increased5 to6. The frozen investment gate failed; this protocol closes without extra mask/LR/seed search. All96 episodes/367 calls and one new actor step are reported in [report25](reports/25_answer_region_step.md). Paired intervals include zero; no stable learning benefit is established.
 
 Bounded inference-artifact recovery: existing Z loaded from its full snapshot and from retained b0 plus a private BF16 delta produced identical logprobs on two fixed saved inputs (371 generated tokens). Eight actual actor forwards, zero training/generation; the original zero-score initialization fault remains recorded. This is operational recovery evidence only; see [report24](reports/24_bf16_delta_reload.md).
