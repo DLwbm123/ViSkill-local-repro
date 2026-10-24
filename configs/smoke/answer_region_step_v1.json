@@ -1,0 +1,109 @@
+{
+  "name": "answer_region_step_v1",
+  "status": "FROZEN_CPU_READY",
+  "preparation_started_unix": 1792869769.007,
+  "max_seconds_including_preparation": 14400,
+  "absolute_total_deadline": 1792899507,
+  "storage_baseline_reference_bytes": 83976855552,
+  "maximum_additional_bytes": 900000000,
+  "write_stop_additional_bytes": 850000000,
+  "project_write_stop_bytes": 85000000000,
+  "private_archive_write_stop_bytes": 500000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "source_library": "results/ppo_smoke/bootstrap_card_pair_v1/B/library",
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think",
+    "accurate_dynamics_prompt": true
+  },
+  "candidate_seed_bounds": [
+    300001,
+    316384
+  ],
+  "dev_quotas": {
+    "conditional": 16,
+    "natural_multi": 16
+  },
+  "policy_order": [
+    "train",
+    "reload",
+    "b0",
+    "Z",
+    "A"
+  ],
+  "evaluation_order": [
+    "b0",
+    "Z",
+    "A"
+  ],
+  "training_rows": 32,
+  "new_global_actor_steps": 1,
+  "new_critic_forwards": 0,
+  "new_critic_steps": 0,
+  "total_actual_actor_forward_samples_before_native_evaluation": 116,
+  "maximum_environment_episodes": 96,
+  "maximum_native_calls": 480,
+  "maximum_native_calls_per_policy": 160,
+  "temperature_eval": 0,
+  "actor_learning_rate": 1e-06,
+  "global_minibatch": 32,
+  "microbatch_per_gpu": 1,
+  "changed_factor": "Only PG numerator support: multiply already full-generated GAE/whitened advantages by frozen answer-content-overlap mask. Keep original response_mask and full-generated per-episode token-mean denominator. No second whitening or answer-count normalization. All32 episodes retained.",
+  "not_changed": [
+    "b0 source",
+    "empty optimizer initialization",
+    "original C32 exact processed inputs/order/rewards",
+    "zero initial value baseline",
+    "full-generated GAE1/1 and whitening",
+    "learning rate/clip/entropy0/KL0",
+    "PPO single-mini ratio1 shortcut",
+    "immutable five cards"
+  ],
+  "primary_investment_gate": {
+    "A_conditional_quality_at_least": 6,
+    "conditional_success_and_quality_gain_vs_each_b0_Z_at_least": 2,
+    "conditional_paired_success_quality_declines_vs_each_at_most": 1,
+    "natural_success_and_quality_vs_b0_non_decreasing": true,
+    "natural_Stop_turns_Stop_episodes_holes_vs_b0_non_increasing": true,
+    "all_paired_CI_and_counts_reported": true,
+    "scope": "Pilot investment decision, not a significance or stable-benefit claim"
+  },
+  "readiness_gates": [
+    "CPU exact full GAE/returns match savedZ and nonempty answer mask all32",
+    "CPU scalar autograd preserves full denominator and zeros nonanswer coefficients",
+    "CPU bounded streaming tiny tied-model encode/apply fixture",
+    "prospective32 unique board identities exclude all historical screened candidate prefixes, reserved Test, all previous episodes",
+    "preupdate actual32 logprob comparison to savedZ max<=.05/mean<=.005 each full generated row",
+    "private artifact retained under cap",
+    "actual reload first2 matches new pre-save post scores max<=.05/mean<=.005 before any native calls"
+  ],
+  "stopping": "One fixed actor update and one fresh prospective panel only; no repeated dispatched actor steps/scores/episodes, seed/model/loss/LR grid or post-outcome gate changes. Any artifact/numerical/resource failure stops the dependent route and preserves available evidence. No protected model deletion.",
+  "retention_plan": "Read-only b0 and protected old O/Z/r0/full checkpoint. Stream BF16 delta from CPU full-state collection, never a new full weight disk copy. Old observed delta162.57MB; new500MB private write stop plus original prep artifacts and conservative900MB total envelope. Learned delta/schema remain private. No eval if new artifact or actual two-input reload gate fails.",
+  "old_results_unchanged": "Original zero-head performance and historical Stop mechanism gates FAIL. Current batch has no parsed Stop; no direct Stop gradient causal claim. Ratio1 is implementation identity, not backend equivalence.",
+  "cpu_preflight_completed_unix": 1792873981.5173168,
+  "historical_board_count_excluded": 13957,
+  "historical_actual_candidate_seed_prefix_count": 15662,
+  "new_CPU_forward_count": 0,
+  "storage_baseline_provenance": "Conservative report21 closure at03:00 before earliest03:22 audit preparation; includes all subsequent audit/codec/recovery/new work.",
+  "training_output_folder": "train_repair1",
+  "carry_preupdate_from": "train",
+  "preupdate_metadata_repair": {
+    "reason": "Driver did not union compute_log_prob meta_info, so temperature was absent. Actual update_policy reads it before training forward/backward/optimizer action. Original32 scores/16 checks retained; no completed step replayed.",
+    "original_train_exit": 1,
+    "original_all_exit_zero_contract_pass": false,
+    "one_repair_only": true,
+    "original_clock_scientific_inputs_mask_gates_budget_preserved": true,
+    "new_worker_instance_prescoring_gate_carried_not_repeated": true
+  },
+  "forward_accounting_scope": "Existing116 cap is the intervention pipeline including retained48 pre-failure samples. Earlier report24 readiness comparison adds8 separately; whole method since03:22 thus124 before native evaluation. No new forward allowance or changed inputs/steps/gates.",
+  "prior_artifact_readiness_actor_forward_samples": 8,
+  "method_total_actor_forward_samples_including_readiness": 124
+}

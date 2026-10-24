@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "generated_tokens": 316,
+      "max_abs_nats": 0.0,
+      "mean_abs_nats": 0.0,
+      "operational_gate_pass": true
+    },
+    {
+      "generated_tokens": 55,
+      "max_abs_nats": 0.0,
+      "mean_abs_nats": 0.0,
+      "operational_gate_pass": true
+    }
+  ],
+  "business_forward_samples": 2,
+  "extra_alignment_forward_samples": 2,
+  "operational_reload_verified": true,
+  "completed_unix": 1792875093.0173697,
+  "generation": 0,
+  "environment_steps": 0
+}

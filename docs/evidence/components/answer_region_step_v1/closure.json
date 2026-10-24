@@ -1,0 +1,13 @@
+{
+  "observed_unix": 1792876988.93853,
+  "own_residual_processes": [],
+  "current_allocated_bytes": 84322955264,
+  "campaign_added_bytes": 15831146496,
+  "method_added_bytes_including_preparation": 346099712,
+  "campaign_guard_status": "ACTIVE",
+  "original_models_preserved": true,
+  "new_private_actor_preserved": true,
+  "public_export_observed_unix": 1792877273.828614,
+  "allocated_bytes_after_public_export": 84331220992,
+  "method_added_after_export_bytes": 354365440
+}

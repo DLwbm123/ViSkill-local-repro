@@ -1,0 +1,14 @@
+{
+  "exits": {
+    "train": 0,
+    "reload": 0,
+    "b0": 0,
+    "Z": 0,
+    "A": 0
+  },
+  "reason": null,
+  "end_unix": 1792876309.987228,
+  "peak_allocated_bytes": 84322979840,
+  "deadline_unix": 1792884169.007,
+  "command_line_violations": []
+}

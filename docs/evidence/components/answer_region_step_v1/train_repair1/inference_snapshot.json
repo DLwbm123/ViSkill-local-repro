@@ -1,0 +1,8 @@
+{
+  "covered_tensors": 824,
+  "stored_delta_arrays": 694,
+  "changed_BF16_elements": 55447951,
+  "private_archive_bytes": 159858813,
+  "inference_only": true,
+  "operational_reload_verified": false
+}

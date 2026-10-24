@@ -1,0 +1,14 @@
+{
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "mismatched_keys": [],
+  "error_msgs": [],
+  "actual_embedding_parameter_tied": true,
+  "applied_parameter_tensors": 694,
+  "inference_only": true,
+  "full_FP32_optimizer_resume_verified": false,
+  "answer_region_private_delta_applied": true,
+  "auto_class": "AutoModelForVision2Seq",
+  "policy": "reload",
+  "scope": "Actual model initialization; no extra load, hash or full-state equality claim."
+}

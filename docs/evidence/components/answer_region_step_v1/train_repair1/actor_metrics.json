@@ -1,0 +1,12 @@
+{
+  "actor/pg_clipfrac": 0.0,
+  "actor/ppo_kl": 0.0,
+  "actor/pg_clipfrac_lower": 0.0,
+  "actor/pg_loss": 6.200642019393854e-05,
+  "actor/grad_norm": 0.8358245491981506,
+  "perf/mfu/actor": 0.0,
+  "perf/max_memory_allocated_gb": 35.19875383377075,
+  "perf/max_memory_reserved_gb": 40.421875,
+  "perf/cpu_memory_used_gb": 40.77418518066406,
+  "actor/lr": 1e-06
+}

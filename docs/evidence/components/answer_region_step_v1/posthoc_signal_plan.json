@@ -1,0 +1,14 @@
+{
+  "status": "POSTHOC_PLAN_FROZEN_AFTER_PROSPECTIVE_RESULTS",
+  "preparation_started_unix": 1792876970.446,
+  "max_seconds_including_preparation": 600,
+  "maximum_additional_bytes": 2000000,
+  "selection": "All original C32 rows and all four frozen generated-token roles; report every existing category x collection-success stratum and per-episode means, with token and episode denominators. No outcome-dependent subset removal.",
+  "comparisons": "Saved oldZ and newA before/after logprobs only, full masks and advantages; verify exact numerator support change and carried-pre agreement. Token-weighted and episode-weighted role means, median, positive/negative/zero counts, original-advantage sign overlap descriptively.",
+  "not_claimed": "No parameter-gradient attribution, causal explanation of prospective/Stop changes, token-level significance or independent validation. New prospective gate remains FAIL, this mask route closes.",
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "optimizer_steps": 0,
+  "environment_steps": 0,
+  "no_new_GPU_or_mask_LR_seed_search": true
+}

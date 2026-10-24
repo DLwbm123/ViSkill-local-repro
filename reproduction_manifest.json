@@ -2055,5 +2055,46 @@
     "learning_gain_established": false,
     "full_FP32_optimizer_resume_verified": false,
     "report": "reports/24_bf16_delta_reload.md"
+  },
+  "answer_region_step_v1": {
+    "status": "COMPLETE_WITH_RETAINED_PREUPDATE_METADATA_FAILURE",
+    "prospective_investment_gate_pass": false,
+    "conditional_success_quality": {
+      "b0": [
+        4,
+        4
+      ],
+      "Z": [
+        6,
+        4
+      ],
+      "A": [
+        7,
+        7
+      ]
+    },
+    "natural_success_quality": {
+      "b0": [
+        2,
+        2
+      ],
+      "Z": [
+        0,
+        0
+      ],
+      "A": [
+        1,
+        1
+      ]
+    },
+    "episodes": 96,
+    "native_calls": 367,
+    "new_global_actor_steps": 1,
+    "current_pipeline_actual_actor_forward_samples": 116,
+    "method_actor_forward_samples_including_readiness": 124,
+    "new_private_inference_delta_bytes": 159858813,
+    "private_weights_published": false,
+    "report": "reports/25_answer_region_step.md",
+    "route_closed_without_extra_mask_LR_seed_search": true
   }
 }

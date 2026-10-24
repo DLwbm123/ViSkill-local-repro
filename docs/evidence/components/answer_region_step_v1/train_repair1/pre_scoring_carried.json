@@ -1,0 +1,7 @@
+{
+  "source_folder": "train",
+  "original_business_forward_samples": 32,
+  "original_extra_alignment_samples": 16,
+  "new_prescoring_samples": 0,
+  "scope": "Same retained b0/config/seed and empty optimizer, but new worker instance; original update failed before any training forward/backward/optimizer action."
+}

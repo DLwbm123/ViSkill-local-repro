@@ -150,5 +150,18 @@
     "issue": "A failed privacy assertion did not halt subsequent shell commands; two unsanitized local paths from the source reproduction manifest entered public history. No model parameters or credentials were identified.",
     "correction": "Restore the already sanitized public manifest and merge only the new recovery result. Preserve public history and disclose the incident.",
     "failed_prepublication_guard_retained": true
+  },
+  "answer_region_step_v1": {
+    "source_commit": "60098379cdcf88d5329ec21bfb0705b7396ee769",
+    "report": "reports/25_answer_region_step.md",
+    "episodes": 96,
+    "native_calls": 367,
+    "new_global_actor_steps": 1,
+    "current_actor_forward_samples": 116,
+    "method_including_earlier_readiness_samples": 124,
+    "prospective_investment_gate_pass": false,
+    "private_delta_or_schema_exported": false,
+    "posthoc_analysis_labeled": true,
+    "retained_preupdate_metadata_failure": true
   }
 }

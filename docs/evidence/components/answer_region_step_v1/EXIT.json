@@ -1,0 +1,10 @@
+{
+  "exits": {
+    "train": 1
+  },
+  "reason": "RuntimeError('train exited 1; preserve completed calls/updates, no replay')",
+  "end_unix": 1792874305.4885383,
+  "peak_allocated_bytes": 84143689728,
+  "deadline_unix": 1792884169.007,
+  "command_line_violations": []
+}

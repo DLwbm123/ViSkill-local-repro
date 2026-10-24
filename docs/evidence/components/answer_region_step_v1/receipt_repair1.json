@@ -1,0 +1,44 @@
+{
+  "start_unix": 1792874733.3720825,
+  "preparation_start_unix": 1792869769.007,
+  "deadline_unix": 1792884169.007,
+  "original_total_deadline": 1792899507,
+  "supervisor_pid": 1506694,
+  "baseline_bytes": 84143702016,
+  "write_limit_bytes": 84826855552,
+  "maximum_additional_bytes": 900000000,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "full_checkpoint_save": false,
+  "new_private_inference_delta": true,
+  "new_global_actor_step_limit": 1,
+  "arms": {
+    "train": {
+      "start_unix": 1792874733.6700215,
+      "deadline_unix": 1792884169.007,
+      "exit_code": 0
+    },
+    "reload": {
+      "start_unix": 1792875024.4200428,
+      "deadline_unix": 1792884169.007,
+      "exit_code": 0
+    },
+    "b0": {
+      "start_unix": 1792875104.0257022,
+      "deadline_unix": 1792884169.007,
+      "exit_code": 0
+    },
+    "Z": {
+      "start_unix": 1792875504.4621613,
+      "deadline_unix": 1792884169.007,
+      "exit_code": 0
+    },
+    "A": {
+      "start_unix": 1792875899.0626981,
+      "deadline_unix": 1792884169.007,
+      "exit_code": 0
+    }
+  }
+}

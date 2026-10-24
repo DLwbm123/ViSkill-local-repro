@@ -1,0 +1,14 @@
+{
+  "status": "CPU_PREUPDATE_REPAIR_READY",
+  "completed_unix": 1792874669.136184,
+  "both_DP_shards_old_temperature_error_reproduced": true,
+  "both_fixed_shards_reach_first_training_forward_boundary": true,
+  "original_business_scores_to_carry": 32,
+  "original_extra_alignment_samples_to_carry": 16,
+  "original_actual_training_forwards_before_failure": 0,
+  "original_actual_optimizer_steps": 0,
+  "new_model_forwards": 0,
+  "new_model_backwards": 0,
+  "new_optimizer_steps": 0,
+  "scope": "Restore required temperature=1 metadata normally supplied by union(compute_log_prob output). Carry existing32 scores/16 alignment checks without replay; new same-source worker instance is disclosed."
+}

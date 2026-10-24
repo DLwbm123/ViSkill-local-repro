@@ -1,0 +1,12 @@
+{
+  "business_forward_samples": 64,
+  "extra_alignment_forward_samples": 0,
+  "carried_business_forward_samples": 32,
+  "carried_extra_alignment_samples": 16,
+  "global_actor_optimizer_steps": 1,
+  "critic_optimizer_steps": 0,
+  "private_inference_delta_retained": true,
+  "completed_unix": 1792875008.3001566,
+  "generation": 0,
+  "environment_steps": 0
+}

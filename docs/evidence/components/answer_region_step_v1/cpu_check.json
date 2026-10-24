@@ -1,0 +1,18 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792873981.5173168,
+  "all32_GAE_and_returns_exactly_match_savedZ": true,
+  "actor_model_and_optimizer_config_match_oldZ_runtime": true,
+  "full_generated_denominator_preserved_scalar_autograd": true,
+  "nonanswer_advantages_zero_after_full_whitening": true,
+  "tiny_tied_stream_encode_apply_passed": true,
+  "actual_MRO_base_checked": true,
+  "fresh_serial_dev_rows": 32,
+  "answer_overlap_tokens": 233,
+  "original_generated_tokens": 6329,
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "scalar_autograd_fixtures": 1,
+  "environment_steps": 0,
+  "optimizer_steps": 0
+}
