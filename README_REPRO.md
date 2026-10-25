@@ -1,12 +1,12 @@
-Bounded native train/save/reload correctness PASS: one128-example batch, finite actor/critic gradients,36850/36864 fixed actor samples changed, complete108.90GB state saved and freshly reloaded.10 skills admitted;122/256 restored validation episodes retrieved them. Final301-step performance and later skill-conditioned PPO updates remain untested. See [report37](reports/37_native_training_correctness_result.md).
+Bounded native correctness check passed: one original128-example batch, finite actor/critic gradients, nonzero fixed actor parameter samples, complete108.90GB save and fresh native model/optimizer/extra/dataloader reload.10 skills admitted and122/256 restored validation episodes retrieved them. No301-step or later skill-conditioned PPO claim. See [report37](reports/37_native_training_correctness_result.md).
 
-Full training closed after its first native update at a new observer Tensor-JSON error, before any checkpoint. Original384 outcomes/1447 replies and costs retained. A fixed one-batch native save/reload correctness check is preregistered and CPU-ready, with no new performance claim. See [report36](reports/36_training_observer_incident_and_correctness_check.md).
+Full training closed at a post-update observer Tensor-JSON error before first checkpoint. Original failure and costs are retained; a fixed one-batch save/reload correctness check is CPU-ready. No training correctness PASS or301-step result claimed. See [report36](reports/36_training_observer_incident_and_correctness_check.md).
 
-Official full-batch FrozenLake training task has started and is initializing base actor/critic; first-batch time and complete recovery-checkpoint size remain unmeasured. See [report35](reports/35_official_frozenlake_training_protocol.md).
+Original full-batch FrozenLake training task started on two GPUs at13:26, currently initializing base actor/critic. First-batch throughput and complete-checkpoint peak remain unmeasured. See [report35](reports/35_official_frozenlake_training_protocol.md).
 
-User authorized one official FrozenLake training exception:150GB additional/210GB four-root cap,24h unchanged. Original batch128/mini32 GAE/PPO from b0 and an empty online library is CPU-ready and preregistered; GPU training has not yet started. See [report35](reports/35_official_frozenlake_training_protocol.md).
+User authorized a storage exception for one faithful FrozenLake training run:150GB additional/210GB four-root cap,24h unchanged. Native full batch128/mini32 GAE/PPO from b0 plus an empty online library is CPU-ready, not yet launched. See [report35](reports/35_official_frozenlake_training_protocol.md).
 
-Original full-training checkpoint storage requires a budget decision: about105.13GB tensor payload exceeds the current50GB per-experiment cap; no GPU training launched. The original algorithm/config remains intact. See [report34](reports/34_official_training_storage_feasibility.md) for the numeric check and specific resource proposal.
+Official full-training preparation found a storage budget conflict: original complete actor/critic/Adam plus HF export tensor payload is about105.13GB, above the current50GB per-experiment limit. No GPU training launched; a reviewable resource proposal is in [report34](reports/34_official_training_storage_feasibility.md).
 
 Official released-model full256 verification completed:216/256(84.375%),284 rollout dispatches and1 post-episode distill,0 updates/admissions. Initialization failure and its costs retained. Full training reproduction remains pending. See [report33](reports/33_official_released_frozenlake_check.md).
 
@@ -69,3 +69,5 @@ Official256 evaluation: first initialization failed before task dispatch because
 
 
 2026-10-24：独立fixed_library_ppo_v1已启动，使用新的128训练/32条件Dev地图、原已开发自然Dev64，进行权重×上下文交叉评价。原bootstrap实验已结束，不追加第五批；新实验不保存权重，不声称独立恢复。
+
+当前补充核查：用户要求验证带检索技能输入的实际PPO更新，已冻结[单批协议38](reports/38_retrieved_input_ppo_correctness_protocol.md)；尚无本轮GPU结论。

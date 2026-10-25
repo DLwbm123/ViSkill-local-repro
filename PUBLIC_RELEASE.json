@@ -327,5 +327,14 @@
     "final_additional_bytes_including_small_export": 108972310528,
     "source_commit": "67dd9802d22b9f6acc74d7568b76cce39ee452cc",
     "private_model_or_optimizer_weights_exported": false
+  },
+  "retrieved_input_ppo_check_v1": {
+    "status": "FROZEN_CPU_READY_NO_GPU_AT_PREREGISTRATION",
+    "report": "reports/38_retrieved_input_ppo_correctness_protocol.md",
+    "protocol": "configs/reproduction/retrieved_input_ppo_check_v1.json",
+    "execution_source_commit": "5cdeb6d49611445a646c4d2db2f2dbbb6d2dea5f",
+    "scope": "next native global_step2 batch128, actual retrieved-input actor/critic PPO audit, no301 or validation",
+    "reference_global_step": 1,
+    "new_step2_full_state_saved": false
   }
 }
