@@ -1,3 +1,5 @@
+Official released-model full256 verification completed:216/256(84.375%),284 rollout dispatches and1 post-episode distill,0 updates/admissions. Initialization failure and its costs retained. Full training reproduction remains pending. See [report33](reports/33_official_released_frozenlake_check.md).
+
 # ViSkill local reproduction and audit
 
 Priority returns to faithful reproduction. A clean pinned official source tree and the full256 official FrozenLake validation maps are preregistered for the released model plus its original265-card library.40.04GB of explicitly authorized retired/redundant weights were removed; protected original/released models and all result evidence remain. First initialization failed before task dispatch due to the observer selecting a synchronous worker. The original failure is preserved; one repair restoring the released async worker is initializing under the same deadline. No performance result yet. See [report32](reports/32_paper_reproduction_reset.md).

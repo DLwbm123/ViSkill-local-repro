@@ -2167,7 +2167,7 @@
     "original_campaign_deadline_unix": 1792899507
   },
   "paper_reproduction_reset_20261025": {
-    "status": "OFFICIAL256_EVAL_ASYNC_OBSERVER_REPAIRED_REINITIALIZING",
+    "status": "RELEASED_MODEL_CHECK_COMPLETE_216_OF_256",
     "report": "reports/32_paper_reproduction_reset.md",
     "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
     "clean_execution_source_commit": "d7652143f446c7445d78855163fb7eeb9fd13757",
@@ -2184,5 +2184,21 @@
     "initialization_attempts": 2,
     "initialization_failure_task_dispatches": 0,
     "initialization_failure_audit": "docs/evidence/reproduction/reset_20261025/initialization_failure_audit.json"
+  },
+  "official_released_frozenlake_check_v1": {
+    "status": "COMPLETE_OFFICIAL_RELEASE_BENCHMARK_CHECK",
+    "report": "reports/33_official_released_frozenlake_check.md",
+    "result": "docs/evidence/reproduction/released_frozenlake_eval_v1/result.json",
+    "successes": 216,
+    "denominator": 256,
+    "success_rate": 0.84375,
+    "rollout_dispatches": 284,
+    "post_episode_distill_dispatches": 1,
+    "optimizer_steps": 0,
+    "admissions": 0,
+    "initialization_failure_task_dispatches": 0,
+    "additional_bytes_including_both_initializations": 70451200,
+    "clean_execution_source_commit": "d7652143f446c7445d78855163fb7eeb9fd13757",
+    "from_scratch_training_reproduced": false
   }
 }

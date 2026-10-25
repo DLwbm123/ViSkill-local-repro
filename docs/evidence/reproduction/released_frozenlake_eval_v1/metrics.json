@@ -1,0 +1,8 @@
+{
+  "val-core/frozenlake/reward/mean@1": 0.9187499840045348,
+  "val-aux/frozenlake/traj_success/mean@1": 0.84375,
+  "val-aux/num_turns/min": 1,
+  "val-aux/num_turns/max": 5,
+  "val-aux/num_turns/mean": 1.109375,
+  "custom_metrics/val/reward_variance": 0.0
+}

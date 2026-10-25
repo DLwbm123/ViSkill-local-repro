@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "reason": null,
+  "end_unix": 1792902150.2960725,
+  "deadline_unix": 1792910960.558764,
+  "peak_four_root_bytes": 44398727168,
+  "command_line_violations": []
+}

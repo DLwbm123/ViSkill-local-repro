@@ -1,0 +1,13 @@
+{
+  "closed_unix": 1792902192.1934536,
+  "four_root_bytes": 44402753536,
+  "baseline_after_authorized_cleanup_bytes": 44332302336,
+  "additional_bytes_including_both_initializations": 70451200,
+  "write_limit_bytes": 45232302336,
+  "deadline_unix": 1792910960.558764,
+  "live_owned_non_zombie_residuals": [],
+  "complete_successes": 216,
+  "complete_denominator": 256,
+  "parameter_updates": 0,
+  "original_initialization_failure_retained": true
+}

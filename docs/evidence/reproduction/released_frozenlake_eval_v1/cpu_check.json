@@ -1,0 +1,18 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792901057.9072654,
+  "official_train_seed_count": 10000,
+  "official_val_seed_count": 256,
+  "official_full_val_seed_set": true,
+  "original_algorithm_extensions_absent": true,
+  "transparent_recorder_return_identity_and_pre_dispatch_cap_pass": true,
+  "actor_MRO_correct": true,
+  "released_library_entries": 265,
+  "loaded_module_paths_use_clean_tree": true,
+  "CPU_RGB_fixture_resets": 8,
+  "CPU_RGB_fixture_env_step_calls": 1,
+  "CPU_RGB_fixture_primitive_actions": 2,
+  "new_model_calls": 0,
+  "new_optimizer_steps": 0,
+  "scope": "Tiny recorder mock is not a model call. RGB lifecycle fixture is separate from official256 evaluation and its costs."
+}

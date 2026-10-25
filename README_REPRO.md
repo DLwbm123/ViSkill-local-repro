@@ -1,3 +1,5 @@
+Official released-model full256 verification completed:216/256(84.375%),284 rollout dispatches and1 post-episode distill,0 updates/admissions. Initialization failure and its costs retained. Full training reproduction remains pending. See [report33](reports/33_official_released_frozenlake_check.md).
+
 Official256 evaluation: first initialization failed before task dispatch because the observer inherited the synchronous worker; the released async worker is restored, original failure retained, and one repair is initializing under the same deadline. No performance result yet. See [report32](reports/32_paper_reproduction_reset.md).
 
 按用户最新优先级回到官方论文/发布代码复现：已清理40.04GB退休权重，独立干净官方树冻结完整256图发布模型核对。此前方法诊断不作为原论文主结果复现。见[32](reports/32_paper_reproduction_reset.md)。

@@ -231,5 +231,23 @@
     "initialization_failure_task_dispatches": 0,
     "initialization_attempts": 2,
     "deadline_unix": 1792910960.558764
+  },
+  "official_released_frozenlake_check_v1": {
+    "status": "COMPLETE_OFFICIAL_RELEASE_BENCHMARK_CHECK",
+    "report": "reports/33_official_released_frozenlake_check.md",
+    "result": "docs/evidence/reproduction/released_frozenlake_eval_v1/result.json",
+    "successes": 216,
+    "denominator": 256,
+    "success_rate": 0.84375,
+    "rollout_dispatches": 284,
+    "post_episode_distill_dispatches": 1,
+    "optimizer_steps": 0,
+    "admissions": 0,
+    "initialization_failure_task_dispatches": 0,
+    "additional_bytes_including_both_initializations": 70451200,
+    "clean_execution_source_commit": "d7652143f446c7445d78855163fb7eeb9fd13757",
+    "from_scratch_training_reproduced": false,
+    "source_commit": "0a4928cc5bd096d92c441107e2f6ad5f593bfe33",
+    "private_inputs_or_weights_exported": false
   }
 }

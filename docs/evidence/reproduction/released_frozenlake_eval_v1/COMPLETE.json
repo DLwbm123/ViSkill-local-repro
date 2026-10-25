@@ -1,0 +1,14 @@
+{
+  "completed_unix": 1792902142.528335,
+  "episodes": 256,
+  "successes": 216,
+  "success_rate": 0.84375,
+  "rollout_dispatches": 284,
+  "post_episode_distill_dispatches": 1,
+  "optimizer_steps": 0,
+  "admissions": 0,
+  "library_json_values_unchanged": true,
+  "paper_reference_success": 0.84,
+  "release_cold_start_variant_unspecified_by_model_card": true,
+  "scope": "Official released model/library benchmark verification, not from-scratch training reproduction or statistical equivalence proof."
+}
