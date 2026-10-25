@@ -25,7 +25,8 @@
     "configs/reproduction/official_frozenlake_ppo_v1.json",
     "configs/reproduction/observed_train_agent.yaml",
     "scripts/audit_official_actor_parameters.py",
-    "configs/reproduction/official_frozenlake_correctness_v1.json"
+    "configs/reproduction/official_frozenlake_correctness_v1.json",
+    "scripts/close_official_correctness.py"
   ],
   "not_included": [
     "directional contract",

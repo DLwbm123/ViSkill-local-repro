@@ -1,0 +1,1 @@
+{"step": 0, "completed_unix": 1792908139.9156291, "episodes": 256, "successes": 33, "metrics": {"val-core/frozenlake/reward/mean@1": 0.19789062230847776, "val-aux/frozenlake/traj_success/mean@1": 0.12890625, "val-aux/num_turns/min": 1, "val-aux/num_turns/max": 5, "val-aux/num_turns/mean": 3.79296875, "custom_metrics/val/reward_variance": 0.0}}

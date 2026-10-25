@@ -1,0 +1,153 @@
+{
+  "status": "PASS_BOUNDED_NATIVE_TRAIN_SAVE_RELOAD_CORRECTNESS",
+  "closed_unix": 1792910696.2642825,
+  "native_global_training_batches": 1,
+  "additional_training_updates_during_reload": 0,
+  "metrics": {
+    "actor/pg_loss": 0.0027840297586863016,
+    "actor/grad_norm": 6.233655631542206,
+    "critic/vf_loss": 0.11568437918322161,
+    "critic/grad_norm": 113.75816059112549,
+    "actor/lr": 1e-06,
+    "critic/lr": 1e-05
+  },
+  "fixed_actor_delta_sample_elements": 36864,
+  "fixed_actor_changed_sample_elements": 36850,
+  "fixed_actor_sample_matrices": 9,
+  "native_full_checkpoint_allocated_bytes": 108898316288,
+  "native_checkpoint_file_count": 52,
+  "native_full_restore_load_returned": {
+    "applied_unix": 1792908722.61134,
+    "global_step": 1,
+    "native_actor_critic_model_optimizer_extra_and_dataloader_load_returned": true,
+    "load_contents_actor": [
+      "model",
+      "hf_model",
+      "optimizer",
+      "extra"
+    ],
+    "load_contents_critic": [
+      "model",
+      "optimizer",
+      "extra"
+    ],
+    "further_training_updates": 0
+  },
+  "library_snapshot_values_equal_current": true,
+  "library_entries": 10,
+  "partitions": {
+    "val_0": {
+      "episodes": 256,
+      "successes": 33,
+      "retrieved_episodes": 0,
+      "model_turns": 971
+    },
+    "train_1": {
+      "episodes": 128,
+      "successes": 16,
+      "retrieved_episodes": 0,
+      "model_turns": 452
+    },
+    "val_1": {
+      "episodes": 256,
+      "successes": 74,
+      "retrieved_episodes": 122,
+      "model_turns": 890
+    }
+  },
+  "paired_before_after": {
+    "improved": 51,
+    "regressed": 10,
+    "scope": "Same official256 panel; both policy weights and skill library changed, so not an isolated parameter-learning effect."
+  },
+  "prior_preupdate_repeat": {
+    "parent_successes": 34,
+    "child_successes": 33,
+    "same_initial_env_states": 256,
+    "same_first_prompt_token_ID_arrays": 256,
+    "same_first_raw_reply": 227,
+    "success_gained": 2,
+    "success_lost": 3,
+    "scope": "Descriptive comparison of existing recordings; not new model queries or pixel/tensor/weight equality proof. Greedy restart determinism and its cause were not established."
+  },
+  "child_actual_dispatches": {
+    "all": 2377,
+    "rollout": 2313,
+    "distill": 64
+  },
+  "child_request_errors": 0,
+  "child_actual_rollout_output_tokens": 110876,
+  "child_actual_distill_output_tokens": 1485,
+  "parent_failure_cost": {
+    "status": "CLOSED_POST_UPDATE_OBSERVER_SERIALIZATION_FAILURE_NO_CHECKPOINT",
+    "audited_unix": 1792907598.6985734,
+    "exit": {
+      "exit_code": 1,
+      "reason": "RuntimeError('worker exit1; retain dispatches and latest checkpoint, no blind replay')",
+      "end_unix": 1792906441.4902806,
+      "deadline_unix": 1792990927.566028,
+      "peak_four_root_bytes": 44427952128,
+      "new_peak_bytes_from_original_baseline": 25157632,
+      "command_line_violations": []
+    },
+    "failure": {
+      "failed_unix": 1792906431.7383428,
+      "global_step": 1,
+      "error": "TypeError('Object of type Tensor is not JSON serializable')",
+      "last_saved_step": null
+    },
+    "dispatches": {
+      "all": 1447,
+      "rollout": 1405,
+      "distill": 42
+    },
+    "completed_initial_val_episodes": 256,
+    "initial_val_successes": 34,
+    "completed_training_collection_episodes": 128,
+    "training_collection_successes": 20,
+    "request_results": 1447,
+    "request_errors": 0,
+    "original_checkpoint_saved": false,
+    "first_step_numeric_update_metrics_retained": false,
+    "native_update_methods_returned_before_failure": true,
+    "actual_optimizer_call_count": "UNMEASURED",
+    "sampled_parameter_delta": "UNMEASURED",
+    "live_owned_non_zombie_residuals": [],
+    "library_entries": 12,
+    "scope": "Training collection outcomes precede failed logging and are not post-update policy evaluation. No seamless recovery from lost parameters; preserve all costs."
+  },
+  "combined_parent_and_child_agent_dispatches": 3824,
+  "combined_episode_executions_cost_only": 1024,
+  "native_training_batch_seconds": 243.2002732299734,
+  "first_native_save_seconds": 106.47278594970703,
+  "child_supervisor_wall_seconds": 786.8183536529541,
+  "child_preparation_to_exit_seconds": 1438.0273966789246,
+  "final_four_root_bytes": 153375105024,
+  "parent_original_baseline_four_root_bytes": 44402794496,
+  "peak_additional_bytes_including_parent_failure": 108965445632,
+  "peak_four_root_bytes": 153368240128,
+  "live_owned_non_zombie_residuals": [],
+  "exit": {
+    "exit_code": 0,
+    "reason": null,
+    "end_unix": 1792908783.2775476,
+    "deadline_unix": 1792914545.250151,
+    "peak_four_root_bytes": 153368240128,
+    "new_peak_bytes_from_original_baseline": 108965445632,
+    "command_line_violations": [],
+    "completed_phases": [
+      "train",
+      "audit",
+      "reload"
+    ]
+  },
+  "limitations": [
+    "One global batch only, not301-step paper performance or long-term stability",
+    "Actor delta is a fixed36864-element sample, not full parameter equality or direct critic parameter-delta evidence",
+    "Native model/optimizer/extra/dataloader load returned; no bytewise equality or continued-training trajectory proof",
+    "Weights and online library both changed before restored256 validation; no pure parameter-learning claim",
+    "Greedy restart outputs are not all identical; causes and full sampling-training backend distribution equality remain unverified"
+  ],
+  "final_additional_bytes_including_small_export": 108972310528,
+  "final_budget_measurement_after_small_export": true
+}

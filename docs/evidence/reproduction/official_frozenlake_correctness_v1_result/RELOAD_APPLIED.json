@@ -1,0 +1,1 @@
+{"applied_unix": 1792908722.61134, "global_step": 1, "native_actor_critic_model_optimizer_extra_and_dataloader_load_returned": true, "load_contents_actor": ["model", "hf_model", "optimizer", "extra"], "load_contents_critic": ["model", "optimizer", "extra"], "further_training_updates": 0}

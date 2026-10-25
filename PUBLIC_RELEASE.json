@@ -294,9 +294,9 @@
     "failure_report": "reports/36_training_observer_incident_and_correctness_check.md"
   },
   "official_frozenlake_correctness_v1": {
-    "status": "FROZEN_CPU_READY_NOT_YET_LAUNCHED",
+    "status": "PASS_BOUNDED_NATIVE_TRAIN_SAVE_RELOAD_CORRECTNESS",
     "parent": "official_frozenlake_ppo_v1",
-    "report": "reports/36_training_observer_incident_and_correctness_check.md",
+    "report": "reports/37_native_training_correctness_result.md",
     "protocol": "configs/reproduction/official_frozenlake_correctness_v1.json",
     "clean_execution_source_commit": "e42708bfd48016ff617fc28ff172be8a909c87a1",
     "training_batches_target": 1,
@@ -308,7 +308,24 @@
     ],
     "new_method_requested": false,
     "same_parent_storage_and_clock": true,
-    "source_commit": "504fb1a1ae54cab204e46a60b183bc9263ce80d2",
-    "private_weights_exported": false
+    "result": "docs/evidence/reproduction/official_frozenlake_correctness_v1_result/result.json",
+    "native_global_training_batches": 1,
+    "additional_training_updates_during_reload": 0,
+    "actor_delta_sample_elements": 36864,
+    "actor_delta_changed_sample_elements": 36850,
+    "native_checkpoint_allocated_bytes": 108898316288,
+    "native_full_restore_load_returned": true,
+    "online_skills": 10,
+    "reload_retrieved_episodes": 122,
+    "initial_validation_successes": 33,
+    "reloaded_validation_successes": 74,
+    "validation_denominator": 256,
+    "actor_critic_update_with_retrieved_skills_covered": false,
+    "full_301_step_paper_performance_reproduced": false,
+    "all_potential_implementation_errors_excluded": false,
+    "actual_exit_unix": 1792908783.2775476,
+    "final_additional_bytes_including_small_export": 108972310528,
+    "source_commit": "67dd9802d22b9f6acc74d7568b76cce39ee452cc",
+    "private_model_or_optimizer_weights_exported": false
   }
 }

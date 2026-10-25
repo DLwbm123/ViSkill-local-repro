@@ -1,3 +1,5 @@
+Bounded native train/save/reload correctness PASS: one128-example batch, finite actor/critic gradients,36850/36864 fixed actor samples changed, complete108.90GB state saved and freshly reloaded.10 skills admitted;122/256 restored validation episodes retrieved them. Final301-step performance and later skill-conditioned PPO updates remain untested. See [report37](reports/37_native_training_correctness_result.md).
+
 Full training closed after its first native update at a new observer Tensor-JSON error, before any checkpoint. Original384 outcomes/1447 replies and costs retained. A fixed one-batch native save/reload correctness check is preregistered and CPU-ready, with no new performance claim. See [report36](reports/36_training_observer_incident_and_correctness_check.md).
 
 Official full-batch FrozenLake training task has started and is initializing base actor/critic; first-batch time and complete recovery-checkpoint size remain unmeasured. See [report35](reports/35_official_frozenlake_training_protocol.md).

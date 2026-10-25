@@ -1,0 +1,19 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792907531.7823684,
+  "official_train_seeds": 10000,
+  "official_val_seeds": 256,
+  "full_original_batch128_mini32_GAE_critic_lr_and_checkpoint_contents": true,
+  "native_async_actor_RPC_methods_and_two_role_MRO": true,
+  "recorder_exact_kwargs_and_return_identity": true,
+  "cap_stops_before_mock_native_call": true,
+  "actual_parent_get_gen_batch128": true,
+  "installed_HF_checkpoint_export_constructor_meta_only": true,
+  "actual_Tensor_metrics_logging_and_nonfinite_regression": true,
+  "new_actual_model_forward_backward_calls": 0,
+  "new_GPU_calls": 0,
+  "new_native_env_steps": 0,
+  "new_optimizer_steps": 0,
+  "prior_storage_cpu_scalar_fixture_steps_not_repeated": 1,
+  "scope": "CPU/meta and mocked recorder checks do not establish GPU/backward/serialization/throughput success."
+}

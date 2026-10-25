@@ -1,0 +1,102 @@
+{
+  "status": "FIXED_ACTOR_SLICES_AND_NATIVE_GRADIENT_METRICS_PASS",
+  "completed_unix": 1792908520.7518866,
+  "rows": [
+    {
+      "parameter": "model.layers.0.self_attn.q_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4096,
+      "max_abs_delta": 3.974884748458862e-06,
+      "L2_delta": 0.0001205418084282428
+    },
+    {
+      "parameter": "model.layers.0.self_attn.o_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4095,
+      "max_abs_delta": 3.986060619354248e-06,
+      "L2_delta": 0.00012943922774866223
+    },
+    {
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4095,
+      "max_abs_delta": 3.974884748458862e-06,
+      "L2_delta": 0.0001381902548018843
+    },
+    {
+      "parameter": "model.layers.18.self_attn.q_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4095,
+      "max_abs_delta": 3.9637088775634766e-06,
+      "L2_delta": 0.00013618527736980468
+    },
+    {
+      "parameter": "model.layers.18.self_attn.o_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4094,
+      "max_abs_delta": 4.003260983154178e-06,
+      "L2_delta": 0.00013731472427025437
+    },
+    {
+      "parameter": "model.layers.18.mlp.down_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4094,
+      "max_abs_delta": 3.984663635492325e-06,
+      "L2_delta": 0.00013929864508099854
+    },
+    {
+      "parameter": "model.layers.35.self_attn.q_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4094,
+      "max_abs_delta": 3.957189619541168e-06,
+      "L2_delta": 0.00013877668243367225
+    },
+    {
+      "parameter": "model.layers.35.self_attn.o_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4094,
+      "max_abs_delta": 3.9711594581604e-06,
+      "L2_delta": 0.0001328464859398082
+    },
+    {
+      "parameter": "model.layers.35.mlp.down_proj.weight",
+      "slice": "first2rows_first2048columns",
+      "sampled_elements": 4096,
+      "finite": true,
+      "nonzero_elements": 4093,
+      "max_abs_delta": 3.982335329055786e-06,
+      "L2_delta": 0.00013546878471970558
+    }
+  ],
+  "sampled_elements": 36864,
+  "fixed_sample_nonzero_delta": true,
+  "actor_grad_norm": 6.233655631542206,
+  "critic_grad_norm": 113.75816059112549,
+  "skill_metrics": {
+    "skill/admitted": 10,
+    "skill/library_size": 10,
+    "skill/retrieved_count": 0,
+    "skill/avg_utility": 0.5,
+    "skill/avg_score": 0.0
+  },
+  "new_model_forward_backward_calls": 0,
+  "new_GPU_calls": 0,
+  "new_optimizer_updates": 0,
+  "scope": "Small deterministic sample confirms actor changed vs promoted b0; not full parameter equality or direct critic parameter-delta verification. Native actor/critic save/load is checked separately."
+}

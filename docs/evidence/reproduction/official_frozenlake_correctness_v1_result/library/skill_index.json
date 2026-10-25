@@ -1,0 +1,251 @@
+{
+  "next_id": 10,
+  "skills": [
+    {
+      "id": "skill_0",
+      "seed": 1024,
+      "env_id": null,
+      "features": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When a frozen tile directly directly blocks a clear path to the goal, move straight down to uncover a new row of frozen tiles. If the same pattern repeats, continue moving down to reach a clear path.",
+      "image_path": "skill_0.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "down"
+      ]
+    },
+    {
+      "id": "skill_1",
+      "seed": 530,
+      "env_id": null,
+      "features": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When a hole is blocking the direct path to the goal, make a diagonal move first to clear a path through the ball to reach the goal.",
+      "image_path": "skill_1.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "up"
+      ]
+    },
+    {
+      "id": "skill_2",
+      "seed": 7700,
+      "env_id": null,
+      "features": [
+        1,
+        1,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When you encounter holes in the path to the goal, always alternate directions between right and downward to navigate around them and maintain a path towards the goal.",
+      "image_path": "skill_2.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "right",
+        "right",
+        "down",
+        "right"
+      ]
+    },
+    {
+      "id": "skill_3",
+      "seed": 6092,
+      "env_id": null,
+      "features": [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When a hole blocks the direct path to the goal, turn right and move across a series of frozen tiles until you encounter another hole, then continue moving towards the goal.",
+      "image_path": "skill_3.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "left"
+      ]
+    },
+    {
+      "id": "skill_4",
+      "seed": 88,
+      "env_id": null,
+      "features": [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When heading towards the goal, if there are holes at the next column in front, move left to the next frozen column that avoids any holes.",
+      "image_path": "skill_4.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "left"
+      ]
+    },
+    {
+      "id": "skill_5",
+      "seed": 8562,
+      "env_id": null,
+      "features": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When facing a wall or an obstacle directly in front of you, move to the side to negotiate a frozen path around it, then continue towards the goal on the frozen tiles.",
+      "image_path": "skill_5.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "down"
+      ]
+    },
+    {
+      "id": "skill_6",
+      "seed": 2711,
+      "env_id": null,
+      "features": [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When a hole blocks the path to the goal, move one tile to the side (left or right) to clear a path, then navigate toward the goal while moving on frozen tiles.",
+      "image_path": "skill_6.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "left"
+      ]
+    },
+    {
+      "id": "skill_7",
+      "seed": 1617,
+      "env_id": null,
+      "features": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When a hole is directly in front of the goal, move diagonally down to bypass it, then go straight towards the goal.",
+      "image_path": "skill_7.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "right",
+        "right",
+        "down",
+        "right"
+      ]
+    },
+    {
+      "id": "skill_8",
+      "seed": 6620,
+      "env_id": null,
+      "features": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When approaching the goal, identify the frozen tiles that are the closest to the goal when moving aligning with previous steps. Move diagonally to freeze adjacent unfrozen tiles, and then continue moving diagonally to cover gaps between tiles.",
+      "image_path": "skill_8.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "right"
+      ]
+    },
+    {
+      "id": "skill_9",
+      "seed": 2002,
+      "env_id": null,
+      "features": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strategy": "When you can move directly to the goal without hitting any holes, proceed directly. Otherwise, whenever you need to avoid holes, navigate in a way that maximizes the number of frozen tiles ahead, such as moving right, left, up, or down depending on the obstacles. Adjust your direction by avoiding columns or rows where multiple obstacles appear.",
+      "image_path": "skill_9.png",
+      "utility": 0.5,
+      "use_count": 0,
+      "trajectory": [
+        "right"
+      ]
+    }
+  ]
+}
