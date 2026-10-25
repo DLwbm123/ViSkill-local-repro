@@ -1,0 +1,46 @@
+{
+  "experiment": "grounded_reader_anchor_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792945098,
+  "cooperative_stop_unix": 1792959198,
+  "deadline_unix": 1792959498,
+  "four_root_baseline_bytes": 155296272384,
+  "write_stop_incremental_bytes": 8000000000,
+  "maximum_incremental_bytes": 10000000000,
+  "hypothesis": "Language-adapter region training shifted null-image answer priors, lacked consistent region-over-global gains, and harmed old tasks. Test visual-only region adaptation with fixed train-only null-prior and old-task distillation anchors. Preserve failed language-reader recipe; do not retune its LR/epochs/data.",
+  "training_data": "Reuse exact100strict-mask train questions75images from previous experiment; no new task selection. Each question two SFT single-image exposures. A full/full plus anchors, B full/correct-region plus anchors, U full/correct-region with anchor coefficient0. All arms forward the same100null and100old replay examples per epoch. Select100one-per-training-image old-task replay entries by fixed question-type filter and modality round robin, no model correctness or validation errors.",
+  "evaluation_data": "Primary: all71 English vqa validation questions with one named anatomical target and appearance/shape/normality task under the original answer-independent M0 classifier,46images, regardless of mask availability. Retention:69 frozen pilot validation questions of Organ/Position/Size/Quantity. Regional secondary:19 mask-supported primary questions on13images. No test access. Validation has been observed before and remains development evidence.",
+  "arms": [
+    "A",
+    "B",
+    "U"
+  ],
+  "training_seeds": [
+    42,
+    43
+  ],
+  "selection_seed": 20261031,
+  "epochs": 4,
+  "rows_per_update": 8,
+  "learning_rate": 0.0001,
+  "optimizer": "AdamW betas(.9,.999),eps1e-8,weight_decay0;clip_norm1;constantLR;no tuning or validation-based selection",
+  "adapter": "Visual self-attention qkv/proj LoRA rank16 alpha32 dropout0 biasnone. Freeze every language/base parameter. A/B/U paired seed initialization; BF16 SDPA. No module/rank search.",
+  "objective": "CE paired supervised responses +lambda_null*KL(p_base_null||p_student_null)+lambda_old*KL(p_base_old||p_student_old), each KL averaged over teacher-forced answer-token positions. A/B lambdas1, U lambdas0; same forward exposures. No claim that black/off-target images have false gold answers. Frozen teacher logits from train only; no validation distillation. No token sampling or extra teacher model.",
+  "inputs": "Exactly one336x336 raw RGB padded canvas per exposure/query, same system/user format. No rendered annotation, target label, source case, procedure or gold in generation interface. Train targets enter supervised labels only.",
+  "evaluation_engine": "Same local HF/PEFT backend, original318-entry schedule, greedy64output; reused original base-only scores matched to these inputs. Both training seeds42/43, no validation feedback before final4epoch.",
+  "formal_generation_calls": 1908,
+  "maximum_generation_calls": 2050,
+  "metric": "Unchanged normalized exact match. Average paired training seeds before10000-image-cluster bootstrap using selection_seed. Preserve every improvement/harm and all task/target/retention groups.",
+  "investment_gate": {
+    "B_minus_A_full_primary": ">=.10 mean,strictly positive each seed,95percent image-cluster lower>0",
+    "visual_specific_interaction": "(B_N-B_Blank)-(A_N-A_Blank)>0 mean/everyseed and95percent lower>0",
+    "retention": "B_N-base_N>=0 mean/everyseed,95percent lower>=-.05",
+    "anchor_ablation": "B_N-U_N>=0 mean/everyseed on primary; retention B_N-U_N>0 mean/everyseed and95percent lower>0 to support anchor contribution"
+  },
+  "stops": "Final4epochs52steps per arm; no val-scoring or best-epoch choice. No LR/rank/lambda/module/data/epoch/seed sweep. Gate failure closes this exact visual-anchor recipe. All retries share initial clock and original12h window.",
+  "limits": "Small development data, unknown patient independence and clinical label validity. Training-only annotated crops are privileged experience construction, not a learned locator or full ViSkill trajectory/PPO.",
+  "public_boundary": "Only source/config/counts/numeric evidence/report; no medical QA/gold/pixels/crops/raw generated outputs/full prompts/weights/adapters/recovery files/private paths/tokens.",
+  "teacher": "Existing b0,200train-only teacher forwards:100null current QA and100full-image old QA. Cache FP32 selected-position log probabilities privately; never publish. Production check must verify near-zero initial KL and finite full-objective backward.",
+  "base_reference": "Reuse all318 saved base records from region_reader_learning_v1 with identical HF engine, prompt, size and schedule. Do not replay base generations. Six new adapters318calls each=1908new formal,2050cap. No current source answers or query annotations at primary evaluation."
+}

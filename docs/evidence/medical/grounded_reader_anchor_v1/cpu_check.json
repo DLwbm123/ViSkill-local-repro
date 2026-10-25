@@ -1,0 +1,22 @@
+{
+  "status": "CPU_READY",
+  "same_original_train_validation_manifest": true,
+  "train_only_replay_questions": 100,
+  "replay_images": 100,
+  "replay_modality_counts": {
+    "CT": 34,
+    "MRI": 33,
+    "X-Ray": 33
+  },
+  "replay_content_counts": {
+    "Quantity": 11,
+    "Organ": 38,
+    "Size": 12,
+    "Position": 39
+  },
+  "train_validation_image_disjoint": true,
+  "answer_only_labels_and_matched_region_ids": true,
+  "gpu_initialized": false,
+  "new_generation_calls": 1908,
+  "reused_base_generation_calls": 318
+}

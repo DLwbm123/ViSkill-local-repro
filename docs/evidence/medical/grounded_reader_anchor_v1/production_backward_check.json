@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "language_parameters_frozen": true,
+  "visual_adapter_gradient_tensors": 128,
+  "finite_full_objective_backward": true,
+  "initial_null_KL": 0.0,
+  "initial_old_KL": 0.0,
+  "optimizer_steps": 0,
+  "generation_calls": 0
+}
