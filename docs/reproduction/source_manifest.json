@@ -1,0 +1,27 @@
+{
+  "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "mode": "Clean upstream worktree plus listed runtime-only patch and observer files",
+  "tracked_upstream_file_changes": [
+    "vagen/envs/frozenlake/frozenlake_env.py"
+  ],
+  "runtime_patch": "docs/reproduction/official_runtime.patch",
+  "new_execution_files": [
+    "scripts/release_eval_config.py",
+    "scripts/check_released_eval_cpu.py",
+    "scripts/run_released_eval.py",
+    "scripts/released_eval_supervisor.py",
+    "vagen/released_eval_observer.py",
+    "configs/reproduction/observed_agent.yaml",
+    "configs/reproduction/released_frozenlake_eval_v1.json",
+    "tests/test_frozenlake_lifecycle.py"
+  ],
+  "not_included": [
+    "directional contract",
+    "strict applicability guard",
+    "accurate-dynamics prompt",
+    "answer loss mask",
+    "zero value-head initialization",
+    "fixed5-card curriculum"
+  ],
+  "source_distribution": "Apply patch and copy the listed execution files into the pinned official checkout. Do not treat the historical modified reproduction tree as the clean formal source."
+}

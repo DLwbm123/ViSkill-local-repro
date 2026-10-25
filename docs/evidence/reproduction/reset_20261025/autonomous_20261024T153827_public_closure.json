@@ -1,0 +1,13 @@
+{
+  "status": "CLOSED",
+  "start_unix": 1792856307.0,
+  "deadline_unix": 1792899507.0,
+  "end_unix": 1792899542.5931845,
+  "stop_reason": "12_hour_campaign_deadline",
+  "baseline_allocated_bytes": 68491808768,
+  "current_allocated_bytes": 84369940480,
+  "peak_allocated_bytes": 84369940480,
+  "additional_bytes": 15878131712,
+  "additional_hard_cap_bytes": 50000000000,
+  "project_write_stop_bytes": 85000000000
+}

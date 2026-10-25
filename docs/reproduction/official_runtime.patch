@@ -1,0 +1,19 @@
+diff --git a/vagen/envs/frozenlake/frozenlake_env.py b/vagen/envs/frozenlake/frozenlake_env.py
+index 43977c9..d95ebf4 100644
+--- a/vagen/envs/frozenlake/frozenlake_env.py
++++ b/vagen/envs/frozenlake/frozenlake_env.py
+@@ -109,9 +109,12 @@ class FrozenLake(GymImageEnv):
+     # GymImageEnv abstract methods
+     # ------------------------------
+     async def close(self) -> None:
+-        """Non-blocking close via to_thread to avoid blocking the loop."""
++        """Release this RGB environment without shutting down process-wide SDL."""
+         if self.gym_env is not None:
+-            await asyncio.to_thread(self.gym_env.close)
++            # Gymnasium close calls pygame.quit globally, which can deadlock concurrent RGB episodes.
++            self.gym_env.window = None
++            self.gym_env.clock = None
++            self.gym_env = None
+ 
+     async def reset(self, seed: int) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+         """

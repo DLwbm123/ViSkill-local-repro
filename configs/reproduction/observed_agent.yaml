@@ -1,0 +1,2 @@
+- name: gym_agent
+  _target_: vagen.released_eval_observer.ObservedGymAgentLoop

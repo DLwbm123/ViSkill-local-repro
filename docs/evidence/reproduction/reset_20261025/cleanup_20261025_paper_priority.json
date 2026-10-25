@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE",
+  "created_unix": 1792900513.37016,
+  "authorization": "Direct user allows deleting unnecessary large files and prioritizes faithful original-paper reproduction",
+  "locked_root": "/data/local",
+  "active_consumers": [],
+  "delete_files": [
+    {
+      "path": "checkpoints/smoke/directional_ppo_v1/global_step_1/actor/model_world_size_2_rank_0.pt",
+      "logical_bytes": 8132050803,
+      "allocated_bytes": 8132055040,
+      "reason": "Closed diagnostic smoke; official reproduction restarts from protectedb0/r0; retain configs/pair/data/results"
+    },
+    {
+      "path": "checkpoints/smoke/directional_ppo_v1/global_step_1/actor/model_world_size_2_rank_1.pt",
+      "logical_bytes": 8132050803,
+      "allocated_bytes": 8132055040,
+      "reason": "Closed diagnostic smoke; official reproduction restarts from protectedb0/r0; retain configs/pair/data/results"
+    },
+    {
+      "path": "checkpoints/smoke/directional_ppo_v1/global_step_1/critic/model_world_size_2_rank_0.pt",
+      "logical_bytes": 8132090759,
+      "allocated_bytes": 8132096000,
+      "reason": "Closed diagnostic smoke; official reproduction restarts from protectedb0/r0; retain configs/pair/data/results"
+    },
+    {
+      "path": "checkpoints/smoke/directional_ppo_v1/global_step_1/critic/model_world_size_2_rank_1.pt",
+      "logical_bytes": 8132082567,
+      "allocated_bytes": 8132087808,
+      "reason": "Closed diagnostic smoke; official reproduction restarts from protectedb0/r0; retain configs/pair/data/results"
+    },
+    {
+      "path": "artifacts/component_tests/value_head_single_step_v1/Z/inference_actor/model.safetensors",
+      "logical_bytes": 7509346928,
+      "allocated_bytes": 7509352448,
+      "reason": "Redundant fullZ inference weights; retained privateb0+BF16delta already passed actual two-input recovery gate"
+    }
+  ],
+  "protected": [
+    "models/b0",
+    "models/r0",
+    "artifacts/component_tests/value_head_single_step_v1/O_repair1/inference_actor",
+    "artifacts/component_tests/bf16_delta_feasibility_v1",
+    "artifacts/component_tests/answer_region_step_v1/train_repair1/private_actor",
+    "all_reports_numeric_source_configs_raw_episode_records_and_saved_inputs"
+  ],
+  "no_hashes": true,
+  "old_smoke_will_no_longer_be_weight_restorable": true,
+  "Z_private_inference_recovery_retained": true,
+  "completed_unix": 1792900530.553799,
+  "deleted_files": 5,
+  "allocated_bytes_removed": 40037646336,
+  "after_four_root_bytes": 44332302336,
+  "old_smoke_weight_restorable": false
+}

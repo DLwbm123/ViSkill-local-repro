@@ -1,0 +1,52 @@
+{
+  "name": "released_frozenlake_eval_v1",
+  "status": "FROZEN_CPU_READY",
+  "preparation_started_unix": 1792900160.558764,
+  "deadline_unix": 1792910960.558764,
+  "maximum_seconds_including_preparation": 10800,
+  "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "model": "hongxingli/ViSkill-FrozenLake",
+  "model_revision": "edafb2b71f73afb1c35b82d264346c2ae2b5981e",
+  "official_validation_seeds": [
+    10001,
+    10256
+  ],
+  "episodes": 256,
+  "validation_batch_size": 256,
+  "max_turns": 5,
+  "max_actions_per_turn": 5,
+  "response_length_per_turn": 512,
+  "max_prompt_length": 5000,
+  "max_response_length": 4000,
+  "context_length": 9000,
+  "agent_workers": 8,
+  "temperature": 0,
+  "rollout_dispatch_limit": 1280,
+  "post_episode_distill_limit": 256,
+  "total_dispatch_limit": 1536,
+  "distill_mode": "self unchanged from released validation loop; post-episode calls counted, no admission callback",
+  "new_optimizer_steps": 0,
+  "physical_gpus": [
+    3,
+    5
+  ],
+  "storage_baseline_bytes": 44332302336,
+  "maximum_additional_bytes": 1000000000,
+  "write_stop_additional_bytes": 900000000,
+  "project_write_stop_bytes": 85000000000,
+  "method_route": "CODE_AS_RELEASED, no directional contracts/strict applicability guard, no accurate-dynamics prompt, no fixed5-card curriculum, no zero value head, no answer loss mask; original skill_guided reward weight0.8 and original released library.",
+  "execution_adaptations": [
+    "2 physical GPUs instead of script4; no training, so no global-batch reduction",
+    "Existing Blackwell runtime text attentionTriton/visionSDPA",
+    "Skip unused critic via GRPO selector in val_only only; no GRPO/advantages/updates computed",
+    "Pygame RGB close lifetime fix from observed prior concurrency deadlock",
+    "Add transparent request/episode/loading instrumentation; original loop output returned unchanged",
+    "Record unpublished evaluation ordering RNG42; no seed/config search",
+    "Console/offline logging only; no remote uploads"
+  ],
+  "acceptance": "All256 official seeds exactly once, original model/library loaded, library values unchanged,0updates/admissions, full outputs/costs. Report success gap to paper0.84 and Wilson95 interval without posthoc tolerance or statistical-equivalence claims. No early success-based stopping/retry/reselection.",
+  "release_variant_limitation": "Model card does not specify cold-start variant or training-seed provenance; compare published0.84 as reference, not guaranteed exact checkpoint correspondence.",
+  "next_training": "Restore released officialbatch128/mini32/self-distill/skill reward/fullgenerated PPO and original train/val sets. Full300-step feasibility requires actual throughput and a recoverable checkpoint budget below50GB/24h; not automatically promised or launched by this evaluation.",
+  "CPU_check_completed_unix": 1792901057.9072654,
+  "released_library_entries": 265
+}
