@@ -1,0 +1,12 @@
+{
+  "status": "REPEAT_TRANSITION_GPU_RELEASE_CHECK_STOP",
+  "recorded_unix": 1792923293.720163,
+  "completed_repeat0_episodes": 192,
+  "repeat0_actual_requests": 691,
+  "repeat1_model_generation_calls": 0,
+  "repeat1_engine_initialized": false,
+  "complete_repeat0_schedule_and_input_checks_PASS": true,
+  "cause": "The60GB free-memory check immediately after engine.shutdown failed. The exact failing free-memory value and GPU consumer were not saved. Delayed release is a working explanation, not a proven exclusive cause; after scoped cleanup free memory was72.83GB.",
+  "repair": "Each repeat now runs in its own neutral child process; supervisor cleans owned processes between repetitions. Resume only index1/seed43, reject index0 replay.",
+  "clock_budget_maps_schedule_gates_unchanged": true
+}

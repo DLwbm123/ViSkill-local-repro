@@ -2323,10 +2323,10 @@
     ]
   },
   "skill_gain_384_v1": {
-    "status": "PRESAMPLING_FAILURE_REPAIRED_CPU_READY",
+    "status": "REPEAT0_COMPLETE_REPEAT1_ONLY_RECOVERY_READY",
     "report": "reports/41_skill_gain_384_protocol_and_cleanup.md",
     "protocol": "configs/reproduction/skill_gain_384_v1.json",
-    "execution_source_commit": "2d5cff664d7fbb62e1da934e43fe323dc9b56bce",
+    "execution_source_commit": "f4a8488147c1d9ff81c11ac2faf646189a7cd1c5",
     "episodes": 384,
     "unique_maps": 64,
     "conditions": [
@@ -2352,6 +2352,10 @@
     "cleanup_allocated_bytes_removed": 1050189824,
     "unique_O_weight_kept_by_user": true,
     "initial_failure_actual_generation_dispatches": 0,
-    "initial_failure_GPU_initialization_happened": true
+    "initial_failure_GPU_initialization_happened": true,
+    "completed_repeat0_episodes": 192,
+    "repeat0_actual_requests": 691,
+    "repeat1_requests_before_recovery": 0,
+    "repeat0_replay_forbidden": true
   }
 }

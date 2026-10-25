@@ -1,0 +1,11 @@
+{
+  "supervisor_pid": 3628686,
+  "supervisor_ctime": 1792921040.8,
+  "start_unix": 1792921041.1254306,
+  "initial_four_root_bytes": 154222141440,
+  "baseline_bytes": 154221658112,
+  "write_stop_bytes": 161221658112,
+  "strict_hard_bytes": 162221658112,
+  "deadline_unix": 1792934046.0,
+  "GPU_free_MiB": 72830
+}

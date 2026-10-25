@@ -83,5 +83,8 @@
   "real_recorder_IO_CPU_stub_PASS": true,
   "scripted_recorder_fixture_calls": 3,
   "recorder_actual_model_calls": 0,
-  "recorder_fixture_checked_unix": 1792920869.848034
+  "recorder_fixture_checked_unix": 1792920869.848034,
+  "repeat1_only_resume_preflight_PASS": true,
+  "completed_repeat0_replay_rejected": true,
+  "repeat_resume_actual_model_calls": 0
 }

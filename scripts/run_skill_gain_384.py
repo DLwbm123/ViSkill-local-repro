@@ -30,12 +30,25 @@ async def run_repeat(engine,repeat,processor):
         print('EPISODE',repeat,condition,seed,bool(extra['traj_success']),flush=True)
     assert json.loads((ROOT/P['source_library']/'skill_index.json').read_text())==data['library_index']
 
+def selected_repeat():
+    repeat=int(os.environ.get('TASK_REPEAT_INDEX','0'));assert repeat in [0,1]
+    existing=[json.loads(p.read_text()) for p in (OUT/'episodes').glob('*.json')]
+    if repeat==0:assert not existing and not (OUT/'dispatch_count.json').exists()
+    else:
+        data=json.loads((OUT/'data_manifest.json').read_text());expected={(x['seed'],x['repeat'],x['condition']) for x in data['schedule'] if x['repeat']==0}
+        assert len(existing)==192 and {(x['seed'],x['repeat'],x['condition']) for x in existing}==expected
+        events=[json.loads(x) for x in (OUT/'requests.jsonl').read_text().splitlines()]
+        assert all(x['repeat']==0 for x in events) and not [x for x in events if x['event']=='error']
+        assert len([x for x in events if x['event']=='intent'])==len([x for x in events if x['event']=='result'])==json.loads((OUT/'dispatch_count.json').read_text())['count']
+        assert not (OUT/'engine_args_r1.json').exists()
+    return repeat
+
 def launch():
     import sglang
-    assert P['status']=='FROZEN_CPU_READY' and not (OUT/'dispatch_count.json').exists()
+    assert P['status']=='FROZEN_CPU_READY';selected=selected_repeat()
     prepare_output_folders()
     processor=AutoProcessor.from_pretrained(ROOT/'models/b0',local_files_only=True)
-    for repeat,seed in enumerate(P['engine_seeds']):
+    for repeat,seed in [(selected,P['engine_seeds'][selected])]:
         assert time.time()<P['cooperative_stop_unix'];free=int(subprocess.check_output(['nvidia-smi','-i','3','--query-gpu=memory.free','--format=csv,noheader,nounits'],text=True).strip());assert free>=60000
         loop=asyncio.new_event_loop();asyncio.set_event_loop(loop);engine=None
         try:
@@ -45,6 +58,8 @@ def launch():
         finally:
             if engine is not None:engine.shutdown()
             loop.close()
-    assert len(list((OUT/'episodes').glob('*.json')))==384
+    assert len(list((OUT/'episodes').glob('*.json')))==192*(selected+1)
+    write(OUT/f'REPEAT_{selected}_COMPLETED.json',{'repeat':selected,'episodes':192,'completed_unix':time.time(),'engine_process_completed':True})
+    if selected==0:return
     write(OUT/'WORKER_COMPLETED.json',{'status':'COMPLETE_384_FROZEN_SKILL_GAIN_EPISODES','completed_unix':time.time(),'episodes':384,'model_calls':json.loads((OUT/'dispatch_count.json').read_text())['count'],'optimizer_steps':0,'admissions':0,'distill_calls':0,'utility_updates':0})
 if __name__=='__main__':launch()
