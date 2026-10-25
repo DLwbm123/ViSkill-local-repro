@@ -1,0 +1,7 @@
+{
+  "local_source_commit": "8a0b3706765cf4f64f7af2242591829f8966b72b",
+  "initial_source_commit": "4df4dac1058d2e5b219ceaab87a6d5ff9cd6f527",
+  "runtime_PATH_and_cache_recovery": true,
+  "completed_responses_before_recovery": 0,
+  "scientific_protocol_unchanged": true
+}

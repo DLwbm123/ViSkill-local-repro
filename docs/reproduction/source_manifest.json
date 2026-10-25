@@ -55,5 +55,16 @@
       "configs/reproduction/slake_en_pilot_v1.json"
     ],
     "scope": "Static English medical VQA evidence-card retrieval screen; existing game algorithms unchanged; no parameter training"
+  },
+  "medical_region_evidence_adapter": {
+    "files": [
+      "scripts/slake_evidence_probe.py",
+      "scripts/slake_evidence_supervisor.py",
+      "scripts/slake_evidence_summary.py"
+    ],
+    "description": "Answer-free train-region evidence cards; hard question intent/target compatibility, train-only threshold, abstention and matched-region controls. Component screen only, not native game algorithm changes or parameter learning.",
+    "protocol": "configs/reproduction/slake_evidence_v2.json",
+    "report": "reports/45_slake_region_evidence_result.md",
+    "execution_source_commit": "8a0b3706765cf4f64f7af2242591829f8966b72b"
   }
 }

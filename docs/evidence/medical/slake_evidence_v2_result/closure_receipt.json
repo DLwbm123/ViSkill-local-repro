@@ -1,0 +1,17 @@
+{
+  "status": "CLOSED",
+  "observed_unix": 1792933127.2296417,
+  "owned_non_zombie_processes": 0,
+  "four_root_bytes_after_primary_export": 154663333888,
+  "incremental_bytes_after_primary_export": 226234368,
+  "strict_limit_bytes": 4000000000,
+  "exit": {
+    "exit_code": 0,
+    "reason": null,
+    "end_unix": 1792932824.0414805,
+    "peak_bytes": 154662121472,
+    "incremental_bytes": 225021952,
+    "argv_violations": []
+  },
+  "note": "Small closing metadata written after this usage measurement; not byte-exact peak or GPU busy time."
+}

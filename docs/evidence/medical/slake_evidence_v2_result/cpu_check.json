@@ -1,0 +1,10 @@
+{
+  "status": "CPU_READY",
+  "gpu_initialized": false,
+  "query_and_source_answer_fields_rejected": true,
+  "V_Blank_Wrong_prompt_and_grid_equal": true,
+  "current_pixels_equal": true,
+  "different_target_and_decoy_pixels": true,
+  "test_opened": false,
+  "completed_unix": 1792931532.326251
+}

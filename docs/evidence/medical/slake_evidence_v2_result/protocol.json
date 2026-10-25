@@ -1,0 +1,52 @@
+{
+  "experiment": "slake_evidence_v2",
+  "status": "FROZEN_CPU_READY",
+  "first_preparation_unix": 1792931263.1971216,
+  "cooperative_stop_unix": 1792936363.1971216,
+  "deadline_unix": 1792936663.1971216,
+  "four_root_baseline_bytes": 154437099520,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "dataset_revision": "a9083ce6c34ac3ffb17671a605962924d8a8f9e9",
+  "selection_seed": 20261026,
+  "engine_seeds": [
+    42,
+    43
+  ],
+  "conditions": [
+    "N",
+    "V",
+    "Blank",
+    "Text",
+    "Wrong"
+  ],
+  "eligible_content_types": [
+    "Organ",
+    "Position",
+    "Abnormality",
+    "Size",
+    "Shape",
+    "Quantity"
+  ],
+  "panels": "Coverage: one uniformly drawn eligible previously unused question per validation image. Mechanism: up to two previously unused, compatible questions per image, chosen without query answers before inference. Report their union and each panel separately, with image-cluster uncertainty. These are new questions on already observed validation images, not blind images or the test set.",
+  "reference_bank": "Use train-only region annotations and questions. Parse a single named target and task intent from the question; require matching target region and a disjoint different-entity decoy region in that training image. Deduplicate image/intent/target. No source correctness generation or parameter updates. No source question, answer, side label, diagnosis label, count or coordinates are shown to the VLM.",
+  "retrieval": "Hard same parsed intent and named target; at least two distinct compatible training images. Rank by 0.7 existing CLIP image cosine plus 0.3 question token Jaccard. Abstain below max(0.75, train leave-one-image-out top-score 10th percentile). Threshold uses training data only. Query answer, modality labels, content type and query ROI never enter parsing, scoring or card rendering.",
+  "card": "672x336 image: source full context with one annotated target region boxed, plus a padded close-up. Text outside the image supplies a task-specific procedure and target derived from the current question. It explicitly forbids transferring source presence, count, position or diagnosis. No example answer is displayed. Wrong uses the same source full image and layout but highlights and crops a disjoint different-entity annotated region. Blank changes the complete reference card to white; Text omits the reference image. All supported V/Blank/Wrong prompt IDs and image grids must match.",
+  "image_features": "Reuse the previous fixed CLIP image embeddings for the same 450 train and 96 validation images, keyed by image name; no text embedding reuse or new feature fitting.",
+  "model": "Unmodified existing Qwen2.5-VL-3B-Instruct b0",
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 64
+  },
+  "maximum_image_pixels": 401408,
+  "query_long_side": 512,
+  "maximum_questions": 288,
+  "maximum_generation_calls": 2880,
+  "primary_metric": "Original normalized exact match, unchanged from pilot v1. V-minus-Blank and V-minus-Text on the answer-free mechanism panel are co-primary; V-minus-Wrong and V-minus-N are required supporting comparisons. Repeat engines are reproducibility checks, not independent training seeds.",
+  "visual_evidence_gate": "At least 40 mechanism questions across at least 30 images. Each co-primary difference must be positive in both repeats and have a strictly positive lower 95% image-cluster bootstrap bound after averaging repeats. V-minus-Wrong must be positive in both repeats. On the pre-specified stratum where the hidden source answer differs from query gold, require at least 20 questions, positive V-minus-Blank and V-minus-Text means, and no increase in erroneous source-answer matches relative to Blank. Also require overall V-minus-N nonnegative and report all harms. Otherwise report insufficient evidence, never promote a text-only gain to visual gain.",
+  "secondary_metrics": "Full coverage and union scores, role and answer-type breakdowns, source/query hidden-answer agreement strata, erroneous source-answer matches, per-repeat gains/harms, all response changes, exact-match lexical limitations. No retrospective synonym credit or panel changes.",
+  "test_annotation_opened": false,
+  "optimizer_steps": 0,
+  "public_boundary": "Only code, protocol and numeric evidence. Raw dataset content, source cards, images, prompts, answers, model raw responses, features and run tokens remain protected."
+}

@@ -1,0 +1,16 @@
+{
+  "incident": "missing_existing_ninja_in_launcher_PATH",
+  "completed_responses": 0,
+  "incomplete_request_intents": 1,
+  "completed_response_replays": 0,
+  "original_deadline_preserved": true,
+  "first_attempt_exit": {
+    "exit_code": -9,
+    "reason": "RuntimeError('worker failed; preserve completed records and do not blindly replay')",
+    "end_unix": 1792931803.4242566,
+    "peak_bytes": 154450722816,
+    "incremental_bytes": 13623296,
+    "argv_violations": []
+  },
+  "archived_unix": 1792932034.0563145
+}

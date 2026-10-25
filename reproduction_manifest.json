@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/ZJU-REAL/ViSkill",
   "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
   "branch": "repro/local-no-api",
-  "stage": "C/D PASS; original E PARTIAL; directional E scoped PASS; F PARTIAL (updates/save/reload verified, zero skill admission); G/H NOT RUN",
+  "stage": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
   "audit_date": "2026-10-24",
   "base_model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
   "released_checkpoint_id": "hongxingli/ViSkill-FrozenLake",
@@ -1566,7 +1566,7 @@
     "cuda-python": "12.9.10",
     "cachetools": "5.5.2"
   },
-  "next_step": "Prepare exactly1 full-parameter PPO step for the named variant only; all actual F acceptance must be measured, no automatic300-step training",
+  "next_step": "The requested regional-card round is complete. Additional research should use a separately frozen protocol addressing shared-context regression and positive-only exemplars; no further experiment or training launched.",
   "directional_variant_gate": {
     "original_E": "PARTIAL: original free-text strategy semantic failures preserved",
     "directional_variant_E": "SCOPED_COMPONENT_PASS",
@@ -2397,5 +2397,36 @@
     "source_generation_replays": 0,
     "test_used": false,
     "source_scorer_failure_preserved": true
+  },
+  "slake_evidence_v2": {
+    "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
+    "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
+    "report": "reports/45_slake_region_evidence_result.md",
+    "protocol": "configs/reproduction/slake_evidence_v2.json",
+    "result": "docs/evidence/medical/slake_evidence_v2_result/result.json",
+    "initial_source_commit": "4df4dac1058d2e5b219ceaab87a6d5ff9cd6f527",
+    "execution_source_commit": "8a0b3706765cf4f64f7af2242591829f8966b72b",
+    "questions": 145,
+    "images": 96,
+    "mechanism_questions": 64,
+    "mechanism_images": 40,
+    "coverage_retrieved": 18,
+    "coverage_questions": 96,
+    "conditions": 5,
+    "repeats": 2,
+    "completed_calls": 1450,
+    "total_request_intents": 1451,
+    "mechanism_correct": {
+      "N": 73,
+      "V": 56,
+      "Blank": 58,
+      "Text": 57,
+      "Wrong": 59
+    },
+    "all_gates_pass": false,
+    "optimizer_steps": 0,
+    "test_used": false,
+    "completed_response_replays": 0,
+    "runtime_failure_preserved": true
   }
 }

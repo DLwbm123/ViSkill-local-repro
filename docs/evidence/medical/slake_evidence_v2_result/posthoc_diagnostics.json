@@ -1,0 +1,208 @@
+{
+  "analysis_type": "posthoc_descriptive_saved_response_only",
+  "new_model_calls": 0,
+  "original_scores_and_gates_unchanged": true,
+  "context_differences": {
+    "Text_minus_N": {
+      "mean": -0.125,
+      "image_cluster_bootstrap_95": [
+        -0.2196969696969697,
+        -0.03731343283582089
+      ],
+      "questions": 64,
+      "images": 40,
+      "by_repeat": [
+        {
+          "repeat": 0,
+          "mean": -0.125,
+          "improved_qids": [
+            10063
+          ],
+          "harmed_qids": [
+            9859,
+            9976,
+            10034,
+            10047,
+            10234,
+            10508,
+            10825,
+            10840,
+            10842
+          ]
+        },
+        {
+          "repeat": 1,
+          "mean": -0.125,
+          "improved_qids": [
+            10063
+          ],
+          "harmed_qids": [
+            9859,
+            9976,
+            10034,
+            10047,
+            10234,
+            10508,
+            10675,
+            10825,
+            10842
+          ]
+        }
+      ]
+    },
+    "Blank_minus_N": {
+      "mean": -0.1171875,
+      "image_cluster_bootstrap_95": [
+        -0.2076923076923077,
+        -0.031237980769230945
+      ],
+      "questions": 64,
+      "images": 40,
+      "by_repeat": [
+        {
+          "repeat": 0,
+          "mean": -0.125,
+          "improved_qids": [
+            10063
+          ],
+          "harmed_qids": [
+            9976,
+            10002,
+            10034,
+            10047,
+            10234,
+            10508,
+            10825,
+            10840,
+            10842
+          ]
+        },
+        {
+          "repeat": 1,
+          "mean": -0.109375,
+          "improved_qids": [
+            10063
+          ],
+          "harmed_qids": [
+            9976,
+            10002,
+            10034,
+            10047,
+            10234,
+            10508,
+            10825,
+            10842
+          ]
+        }
+      ]
+    },
+    "Wrong_minus_N": {
+      "mean": -0.109375,
+      "image_cluster_bootstrap_95": [
+        -0.19230769230769232,
+        -0.03029172320217113
+      ],
+      "questions": 64,
+      "images": 40,
+      "by_repeat": [
+        {
+          "repeat": 0,
+          "mean": -0.125,
+          "improved_qids": [
+            10063
+          ],
+          "harmed_qids": [
+            9859,
+            9976,
+            10034,
+            10047,
+            10076,
+            10234,
+            10508,
+            10825,
+            10842
+          ]
+        },
+        {
+          "repeat": 1,
+          "mean": -0.09375,
+          "improved_qids": [
+            10063,
+            10840
+          ],
+          "harmed_qids": [
+            9976,
+            10034,
+            10047,
+            10076,
+            10234,
+            10508,
+            10825,
+            10842
+          ]
+        }
+      ]
+    }
+  },
+  "presence_confusion": {
+    "N": {
+      "negative_questions": 16,
+      "negative_executions": 32,
+      "false_yes_on_gold_no": 16,
+      "correct_no": 16,
+      "positive_questions": 24,
+      "positive_executions": 48,
+      "false_no_on_gold_yes": 7
+    },
+    "V": {
+      "negative_questions": 16,
+      "negative_executions": 32,
+      "false_yes_on_gold_no": 27,
+      "correct_no": 5,
+      "positive_questions": 24,
+      "positive_executions": 48,
+      "false_no_on_gold_yes": 8
+    },
+    "Blank": {
+      "negative_questions": 16,
+      "negative_executions": 32,
+      "false_yes_on_gold_no": 24,
+      "correct_no": 8,
+      "positive_questions": 24,
+      "positive_executions": 48,
+      "false_no_on_gold_yes": 8
+    },
+    "Text": {
+      "negative_questions": 16,
+      "negative_executions": 32,
+      "false_yes_on_gold_no": 26,
+      "correct_no": 6,
+      "positive_questions": 24,
+      "positive_executions": 48,
+      "false_no_on_gold_yes": 9
+    },
+    "Wrong": {
+      "negative_questions": 16,
+      "negative_executions": 32,
+      "false_yes_on_gold_no": 27,
+      "correct_no": 5,
+      "positive_questions": 24,
+      "positive_executions": 48,
+      "false_no_on_gold_yes": 6
+    }
+  },
+  "selected_presence_sources": 30,
+  "selected_presence_sources_with_gold_yes": 30,
+  "stable_V_over_N_gain_qids": [
+    10063
+  ],
+  "stable_V_over_Blank_gain_qids": [
+    10825
+  ],
+  "limitations": [
+    "Shared context regressions locate an effect of the added text on this panel, not which phrase caused it.",
+    "Reference selection supplies positive target exemplars for presence; this may induce a presence prior, but a balanced-reference control was not run.",
+    "Binary wrong-source matches are not causal proof of copying; source answers were never shown.",
+    "The single stable V-over-Blank gain is not a V-over-N improvement and cannot establish overall efficacy."
+  ]
+}

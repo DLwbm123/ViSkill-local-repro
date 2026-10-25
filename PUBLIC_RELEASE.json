@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "cee374af1b0fa955d2723ed26af9aeca4c10974b",
+  "local_source_commit": "77024417be9543302a84c184b925e8d38ace7de2",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "PARTIAL: saved-request numerical gate failed8/8, action fields close, first-batch signal audit complete; no causal learning repair established.",
+  "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -131,8 +131,16 @@
       "cpu_recovery_without_new_model_forward": true
     }
   },
-  "latest_update_scope": "Report18, eight native input scores,32-row token-level signal audit,166 small evidence files including used images, exact inputs, numeric NPZ, historical aggregate checks and retained incident summaries, corresponding source/protocols. No model weights.",
-  "latest_copied_files": 180,
+  "latest_update_scope": "One completed answer-free regional SLAKE round: source, frozen protocol, all 1450 numeric results, all positive and negative controls, hidden-answer strata, posthoc context-regression analysis, original initialization failure and full costs. No raw medical data, model outputs, weights, machine identifiers or tokens.",
+  "latest_copied_files": [
+    "scripts/slake_evidence_probe.py",
+    "scripts/slake_evidence_supervisor.py",
+    "scripts/slake_evidence_summary.py",
+    "configs/reproduction/slake_evidence_v2.json",
+    "reports/44_slake_visual_evidence_protocol.md",
+    "reports/45_slake_region_evidence_result.md",
+    "docs/evidence/medical/slake_evidence_v2_result"
+  ],
   "source_packaging_repair": {
     "files_restored": 65,
     "reason": "Prior broad models/ ignore accidentally excluded bundled veRL model implementations and tests; output directory exclusions are now root-anchored."
@@ -447,5 +455,36 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/43_slake_english_retrieval_screen.md"
+  "latest_report": "reports/45_slake_region_evidence_result.md",
+  "slake_evidence_v2": {
+    "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
+    "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
+    "report": "reports/45_slake_region_evidence_result.md",
+    "protocol": "configs/reproduction/slake_evidence_v2.json",
+    "result": "docs/evidence/medical/slake_evidence_v2_result/result.json",
+    "initial_source_commit": "4df4dac1058d2e5b219ceaab87a6d5ff9cd6f527",
+    "execution_source_commit": "8a0b3706765cf4f64f7af2242591829f8966b72b",
+    "questions": 145,
+    "images": 96,
+    "mechanism_questions": 64,
+    "mechanism_images": 40,
+    "coverage_retrieved": 18,
+    "coverage_questions": 96,
+    "conditions": 5,
+    "repeats": 2,
+    "completed_calls": 1450,
+    "total_request_intents": 1451,
+    "mechanism_correct": {
+      "N": 73,
+      "V": 56,
+      "Blank": 58,
+      "Text": 57,
+      "Wrong": 59
+    },
+    "all_gates_pass": false,
+    "optimizer_steps": 0,
+    "test_used": false,
+    "completed_response_replays": 0,
+    "runtime_failure_preserved": true
+  }
 }

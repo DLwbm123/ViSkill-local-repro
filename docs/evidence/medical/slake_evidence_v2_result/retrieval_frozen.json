@@ -1,0 +1,23 @@
+{
+  "training_bank_entries": 323,
+  "training_images": 141,
+  "train_loo_count": 276,
+  "threshold": 0.9511365860700607,
+  "coverage_questions": 96,
+  "coverage_retrieved": 18,
+  "mechanism_questions": 64,
+  "mechanism_images": 40,
+  "union_questions": 145,
+  "union_images": 96,
+  "model_calls_planned": 1450,
+  "role_counts": {
+    "location": 10,
+    "presence": 40,
+    "count": 5,
+    "normality": 1,
+    "shape": 7,
+    "appearance": 1
+  },
+  "test_opened": false,
+  "query_answers_used_for_retrieval": false
+}

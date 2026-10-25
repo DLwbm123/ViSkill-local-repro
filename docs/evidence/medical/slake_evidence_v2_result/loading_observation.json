@@ -1,0 +1,8 @@
+{
+  "observation_unix": 1792932442.803675,
+  "scheduler_status": "sleeping",
+  "scheduler_wait": "futex_wait_queue",
+  "host_io_pressure": "some avg10=31.30 avg60=42.34 avg300=49.73 total=104832213818\nfull avg10=31.04 avg60=42.12 avg300=49.42 total=104114001804\n",
+  "no_completed_responses_at_observation": true,
+  "interpretation": "Observed page I/O wait during model loading; competing workload or device cause not determined."
+}
