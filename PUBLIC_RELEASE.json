@@ -370,5 +370,35 @@
       "Earlier backend numeric negatives and greedy restart differences remain unresolved",
       "Recovery reconstructs saved replies with original environment/processor and checks every prompt/trajectory; not bytewise equality to lost original processed tensors"
     ]
+  },
+  "skill_gain_384_v1": {
+    "status": "FROZEN_CPU_READY_NO_MODEL_CALLS_AT_PUBLICATION",
+    "report": "reports/41_skill_gain_384_protocol_and_cleanup.md",
+    "protocol": "configs/reproduction/skill_gain_384_v1.json",
+    "execution_source_commit": "eaf85eaae9e223cc27bc6679dea477530aa9717a",
+    "episodes": 384,
+    "unique_maps": 64,
+    "conditions": [
+      "N",
+      "V",
+      "Blank"
+    ],
+    "repeats": 2,
+    "source_skill_count": 10,
+    "new_training_authorized_this_stage": false,
+    "gate": {
+      "complete_all_384_required": true,
+      "reproducible_benefit": "Actual skill retrieved, Vsuccess and Nfailure in BOTH greedy repeats",
+      "minimum_benefit_maps": 12,
+      "harm": "Nsuccess and Vfailure in ANY repeat",
+      "maximum_harm_maps": 4,
+      "minimum_distinct_benefit_action_patterns": 3,
+      "at_least_one_multistep_pattern": true,
+      "Blank": "complete paired content-control results reported; no additional numerical threshold beyond prior agreed gate",
+      "scope": "Investment screen, not statistical proof or automatic authorization to launch internalization training",
+      "eligible_required_for_benefit": true
+    },
+    "cleanup_allocated_bytes_removed": 1050189824,
+    "unique_O_weight_kept_by_user": true
   }
 }

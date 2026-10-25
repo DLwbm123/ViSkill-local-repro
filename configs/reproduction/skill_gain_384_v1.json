@@ -1,0 +1,99 @@
+{
+  "name": "skill_gain_384_v1",
+  "status": "FROZEN_CPU_READY",
+  "preparation_started_unix": 1792919646.0,
+  "deadline_unix": 1792934046.0,
+  "cooperative_stop_unix": 1792933146.0,
+  "maximum_seconds_including_preparation": 14400,
+  "maximum_incremental_bytes": 8000000000,
+  "write_stop_incremental_bytes": 7000000000,
+  "source_library": "artifacts/reproduction/official_frozenlake_correctness_v1/checkpoints/global_step_1/online_library",
+  "base_model": "models/b0",
+  "environment": {
+    "render_mode": "vision",
+    "size": 4,
+    "p": 0.8,
+    "is_slippery": false,
+    "slip_prob": 0.0,
+    "max_actions_per_step": 5,
+    "prompt_format": "free_think"
+  },
+  "maps": {
+    "natural": {
+      "bounds": [
+        1000001,
+        1065536
+      ],
+      "count": 32
+    },
+    "retrievable": {
+      "bounds": [
+        1100001,
+        1165536
+      ],
+      "count": 32
+    },
+    "identity": "entire desc board with S/G; exclude all recorded historical and reserved manifest/episode boards and new-panel duplicates",
+    "selection": "ascending first unseen32 per stratum; retrievable additionally original top1score>=.8; no model-output selection"
+  },
+  "conditions": [
+    "N",
+    "V",
+    "Blank"
+  ],
+  "repeats": 2,
+  "engine_seeds": [
+    42,
+    43
+  ],
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0,
+    "logprobs": false
+  },
+  "sampling_scope": "Two separately initialized greedy evaluation repeats (engine seeds42/43), testing restart repeatability; not128independent maps or guaranteed bitwise outputs",
+  "order_seed": 20261025,
+  "limits": {
+    "episodes": 384,
+    "model_generation_dispatches": 1920,
+    "post_episode_distill": 0,
+    "optimizer_steps": 0,
+    "admissions": 0,
+    "utility_updates": 0,
+    "max_turns": 5,
+    "response_length_per_turn": 512,
+    "prompt_length": 5000,
+    "response_length": 4000,
+    "context_length": 9000
+  },
+  "gate": {
+    "complete_all_384_required": true,
+    "reproducible_benefit": "Actual skill retrieved, Vsuccess and Nfailure in BOTH greedy repeats",
+    "minimum_benefit_maps": 12,
+    "harm": "Nsuccess and Vfailure in ANY repeat",
+    "maximum_harm_maps": 4,
+    "minimum_distinct_benefit_action_patterns": 3,
+    "at_least_one_multistep_pattern": true,
+    "Blank": "complete paired content-control results reported; no additional numerical threshold beyond prior agreed gate",
+    "scope": "Investment screen, not statistical proof or automatic authorization to launch internalization training",
+    "eligible_required_for_benefit": true
+  },
+  "execution": {
+    "physical_gpu": 3,
+    "single_engine_per_repeat": true,
+    "max_running_requests": 1,
+    "dtype": "bfloat16",
+    "attention_backend": "triton",
+    "vision_attention_backend": "sdpa",
+    "mem_fraction_static": 0.3,
+    "disable_cuda_graph": true
+  },
+  "expected_maximum_incremental_bytes": 2500000000,
+  "library_updates_disabled": true,
+  "full_positive_negative_requests_and_episodes_retained": true,
+  "failure": "retain allcompleted outcomes/costs, no seed replacement or sampling until pass",
+  "four_root_baseline_bytes": 154221658112,
+  "baseline_recorded_unix": 1792920101.3268638,
+  "cpu_check_completed_unix": 1792920207.4346185
+}

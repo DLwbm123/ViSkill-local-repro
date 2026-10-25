@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "created_unix": 1792919866.6937213,
+  "locked_root": "/data/ViSkill",
+  "user_authorization": "Direct user requests deleting obsolete unnecessary large project files",
+  "delete_files": [
+    {
+      "path": "artifacts/reproduction/retrieved_input_ppo_replay_v1/PRIVATE_REPLAY_GENERATION.pt",
+      "logical_bytes": 1050185307,
+      "allocated_bytes": 1050189824,
+      "reason": "Completed CPU reconstructed generation cache; native effective actor banks and original415 recorded replies plus reconstruction source retained; no pending replay consumer"
+    }
+  ],
+  "active_consumers": [],
+  "protected": [
+    "models/b0",
+    "models/r0",
+    "artifacts/reproduction/official_frozenlake_correctness_v1/checkpoints/global_step_1",
+    "PRIVATE_ACTOR_INPUT_rank0.pt and rank1.pt",
+    "all raw requests episodes results sources numeric audits and unique historical inference models"
+  ],
+  "no_hashes": true,
+  "free_bytes_before": 15106247237632,
+  "completed_unix": 1792919866.79217,
+  "free_bytes_after": 15107297423360,
+  "observed_filesystem_free_change_bytes": 1050185728,
+  "unique_O_weight_retirement": "Direct user choseKEEP unique oldO inference weight; no deletion authorized for it"
+}

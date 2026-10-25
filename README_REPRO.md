@@ -75,3 +75,5 @@ Official256 evaluation: first initialization failed before task dispatch because
 补充核查首轮中断：actor输入证据保存的混合dtype共享存储问题；critic部分证据保留。已修复并CPU验证全部128固定记录，恢复仍待执行，见[报告39](reports/39_retrieved_input_audit_incident_and_replay_protocol.md)。
 
 限定带检索输入PPO核查已完成：actor与critic各128输入/51检索，4次原生分布式optimizer更新、有限损失/梯度及非零参数样本变化；修复我方审计保存故障后用原固定记录恢复，新增生成0，见[报告40](reports/40_retrieved_input_native_ppo_correctness_result.md)。
+
+下一主线准备：384局冻结b0技能增益对照已预注册，64图×3条件×2重启；按门槛判断是否值得内化，不自动训练。清理1.05GB派生缓存，用户指定旧O唯一权重保留。见[报告41](reports/41_skill_gain_384_protocol_and_cleanup.md)。
