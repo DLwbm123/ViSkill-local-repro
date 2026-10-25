@@ -267,7 +267,7 @@
     "private_model_weights_exported": false
   },
   "official_frozenlake_ppo_v1": {
-    "status": "FROZEN_CPU_READY_NOT_YET_LAUNCHED",
+    "status": "BACKGROUND_STARTED_NATIVE_MODELS_INITIALIZING",
     "protocol": "configs/reproduction/official_frozenlake_ppo_v1.json",
     "report": "reports/35_official_frozenlake_training_protocol.md",
     "official_train_seeds": 10000,
@@ -283,9 +283,13 @@
     "four_root_stop_bytes": 210000000000,
     "deadline_unix": 1792990927.566028,
     "CPU_check_passed": true,
-    "GPU_training_started": false,
+    "GPU_training_started": true,
     "clean_execution_source_commit": "a3e18a54cfc35180193954fae1536c52da733b05",
-    "source_commit": "fd3bff5eefc050a96444357bb0c9701d6a423fee",
+    "supervisor_pid": 2873801,
+    "supervisor_start_unix": 1792905967.047821,
+    "supervisor_ctime": 1792905966.71,
+    "first_full_training_batch_completed": false,
+    "source_commit": "f7e5284e868e53314d8ccdb4717c042792639596",
     "private_weights_exported": false
   }
 }

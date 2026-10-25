@@ -1,3 +1,5 @@
+Official full-batch FrozenLake training task has started and is initializing base actor/critic; first-batch time and complete recovery-checkpoint size remain unmeasured. See [report35](reports/35_official_frozenlake_training_protocol.md).
+
 User authorized one official FrozenLake training exception:150GB additional/210GB four-root cap,24h unchanged. Original batch128/mini32 GAE/PPO from b0 and an empty online library is CPU-ready and preregistered; GPU training has not yet started. See [report35](reports/35_official_frozenlake_training_protocol.md).
 
 Original full-training checkpoint storage requires a budget decision: about105.13GB tensor payload exceeds the current50GB per-experiment cap; no GPU training launched. The original algorithm/config remains intact. See [report34](reports/34_official_training_storage_feasibility.md) for the numeric check and specific resource proposal.

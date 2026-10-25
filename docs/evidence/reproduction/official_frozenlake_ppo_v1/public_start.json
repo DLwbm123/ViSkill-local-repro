@@ -1,0 +1,18 @@
+{
+  "supervisor_pid": 2873801,
+  "supervisor_ctime": 1792905966.71,
+  "start_unix": 1792905967.047821,
+  "preparation_started_unix": 1792904527.566028,
+  "deadline_unix": 1792990927.566028,
+  "cooperative_stop_unix": 1792985527.566028,
+  "initial_four_root_bytes": 44406620160,
+  "baseline_four_root_bytes": 44402794496,
+  "write_limit_bytes": 174402794496,
+  "hard_limit_bytes_strict": 194402794496,
+  "initial_GPU_free_MiB": {
+    "3": 72830,
+    "5": 66207
+  },
+  "filesystem": "ext4   /data",
+  "free_filesystem_bytes": 15187789316096
+}
