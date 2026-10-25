@@ -1,0 +1,35 @@
+{
+  "experiment": "natural_scope_validation_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792952635,
+  "cooperative_stop_unix": 1792963135,
+  "deadline_unix": 1792963435,
+  "four_root_baseline_bytes": 155896000512,
+  "write_stop_incremental_bytes": 1500000000,
+  "maximum_incremental_bytes": 2000000000,
+  "selection_seed": 20261102,
+  "adapter_seeds": [
+    42,
+    43
+  ],
+  "formal_generation_calls": 1962,
+  "maximum_generation_calls": 2062,
+  "objective": "One bounded natural-prevalence safety/coverage audit after task-supported activation passed a conditional panel. Freeze all reader/router weights, threshold.90, text features, task support and policies. No reoptimization or repeated conditional efficacy claim.",
+  "data": "All1053English officialvalidation questions96images:898vqa+155kvqa.39VQAquestions satisfy frozen train task-target support,1014offscope. All39supported questions were already among140development questions; only913other questions are new to this HF policy study. Images previously observed; no blind/test/independent efficacy claim. SLAKEtestlabels remain unopened.",
+  "reference": "Base matched records from region_reader_learning_v1 and A42/A43records from grounded_reader_anchor_v1, N/B views only:840available records on140questions. Reuse only required branches, count available vs used separately. Identical reader weights/processor336/prompt/greedy64 protocol; no claim of newly checked bitwise identity.",
+  "policies": "N=base;R=frozen .90 learnedtextadmission;F=original question-only task-target rule reference;S=fixed permutation of Rflags across1053questions(seed selection_seed+1),same total activation. No U-always-adapt whole-cohort score unless all its branches are observed. Scope weak label=vqa and rule; controls and coverage do not certify clinical applicability.",
+  "inference_plan": "Every question needs base N/B. A42/A43 N/B generated only if any R/F/S policy selects A. Reuse existing matching branches, generate missing only; seal exact request plan before model calls using questions/keys only, not correctness. At most6000new attempts, tighten to planned+100 after CPU plan. No phantom R/S/F generations or completed branch replays.",
+  "investment_gate": {
+    "natural_R_minus_base": ">0 average and eachseed,95percent image-cluster lower>0 over1053questions",
+    "natural_R_minus_sham": ">0 average and eachseed,95percent lower>0",
+    "natural_visual_interaction": "(R_N-R_Blank)-(base_N-base_Blank)>0average/everyseed and95percent lower>0",
+    "offscope_safety": "R-base mean/everyseed>=0,95percent lower>=-.05 and zero harmed questions perseed across1014offscope; also zero harmed among913new questions",
+    "scope_prediction": "weak-rule precision>=.95 and recall>=.70 at unchanged .90threshold"
+  },
+  "statistics": "Paired adapter seeds averaged before image-cluster bootstrap10000,96imageclusters; report eachseed, allscope/subtype/old-vs-new/harms and activation/coverage. All39supported observations are historical and descriptive; this audit does not revalidate the previous >=10pp efficacy gate independently. Natural prevalence has a different denominator; do not rewrite old gates.",
+  "new_reader_optimizer_steps": 0,
+  "new_router_optimizer_steps": 0,
+  "stops": "Only one full-English natural-coverage audit; no benchmark/prompt/threshold/data/feature search, no escalation into generic evaluation infrastructure. Failure closes frozen learned-admission deployment recipe on natural data; do not promote F posthoc as original R pass. Retain old positive conditional result and all earlier negatives.",
+  "public_boundary": "Source/config/numeric evidence/report only; no originalQA/gold/pixels/rawreplies/prompts/routervocabweights/readerweights/privatepaths/tokens."
+}

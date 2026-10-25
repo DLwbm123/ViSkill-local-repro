@@ -1,0 +1,28 @@
+{
+  "status": "CPU_READY",
+  "questions": 1053,
+  "images": 96,
+  "VQA_questions": 898,
+  "knowledge_questions": 155,
+  "weak_supported_questions": 39,
+  "weak_offscope_questions": 1014,
+  "previously_evaluated_questions": 140,
+  "new_questions_on_observed_images": 913,
+  "all_supported_questions_previously_evaluated": true,
+  "legacy_catalog_records": 840,
+  "legacy_records_required": 444,
+  "required_physical_branch_records": 2406,
+  "new_generations_planned": 1962,
+  "new_by_model": {
+    "base": 1826,
+    "A_42": 68,
+    "A_43": 68
+  },
+  "all_required_policy_branches_present_or_scheduled": true,
+  "no_duplicate_reader_generations": true,
+  "saved_router_probability_fixture_matches": true,
+  "router_refitted": false,
+  "reader_updated": false,
+  "matched_N_Blank_ids_grids": true,
+  "gpu_initialized": false
+}

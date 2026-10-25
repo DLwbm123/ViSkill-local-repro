@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "f1b1d85abf788d44d912e4a020ed3b5b4037794f",
+  "local_source_commit": "435a57481ba6188a4d7b3dc34fdaf0b65f9d80b7",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "ACTIVE_MEDICAL_WINDOW_NATURAL_SCOPE",
+  "status": "ACTIVE_MEDICAL_WINDOW_SECOND_CAPABILITY",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -225,6 +225,28 @@
       "weak_scope_precision": 1.0,
       "weak_scope_recall": 0.9710144927536232,
       "external_policy_fallback_not_parameter_retention": true
+    },
+    "medical_natural_scope": {
+      "status": "COMPLETE_NATURAL_SCOPE_NOT_ESTABLISHED",
+      "questions": 1053,
+      "images": 96,
+      "new_generations": 1962,
+      "required_reused_branches": 444,
+      "base_correct": 560,
+      "R_correct_by_adapter_seed": [
+        569,
+        565
+      ],
+      "R_offscope_harmed_by_seed": [
+        1,
+        1
+      ],
+      "weak_scope_precision": 0.9743589743589743,
+      "weak_scope_recall": 0.9743589743589743,
+      "new_913_question_harms": [
+        0,
+        0
+      ]
     }
   },
   "latest_update_scope": "Final balanced-source feasibility stop: source/protocol, all 84 numeric returns, balanced admission and input-only test coverage checks, costs and warnings. No test QA outputs, gold, raw images, machine identifiers or tokens.",
@@ -627,7 +649,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "natural_scope_validation_v1",
+    "next_experiment": "continual_acquisition_bank_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   }

@@ -1,0 +1,47 @@
+{
+  "experiment": "continual_acquisition_bank_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792955358,
+  "cooperative_stop_unix": 1792969458,
+  "deadline_unix": 1792969758,
+  "four_root_baseline_bytes": 155906727936,
+  "write_stop_incremental_bytes": 6000000000,
+  "maximum_incremental_bytes": 8000000000,
+  "selection_seed": 20261103,
+  "training_seeds": [
+    42,
+    43
+  ],
+  "arms": [
+    "I",
+    "K",
+    "S"
+  ],
+  "epochs": 4,
+  "rows_per_update": 8,
+  "learning_rate": 0.0001,
+  "formal_generation_calls": 4188,
+  "maximum_generation_calls": 4288,
+  "objective": "Actual second medical capability acquisition: distinguish shared-parameter consolidation from external preservation by a contract-gated module bank. Learned probabilistic admission failed natural safety and stays closed; use the already defined exact train-support contract, not a retuned classifier.",
+  "new_capability": "Author-provided acquisition properties: Modality (including MR weighting) and Plane. From officialtrain excluding all138old-source evaluation images,530candidates,529typed-domain-valid and1schema-conflicting Plane label. Retain exclusion evidence; no validation question removal/rescoring. Select100distinct images,50Modality/50Plane,rare-template-first coverage29normalized train questions then fixedseedfill. CT42/MRI41/X-Ray17. No model-correctness selection.",
+  "old_capability": "Original100anatomical attribute train questions75images remain teacher-only replay, unchanged. Old-source69attribute+69background images138all excluded from new CE/replay. Officialvalidation172acquisition questions88images and39historical old-scope questions32images, no train-image overlap. Data/task metadata existed before this design; no comorbidity or temporal-domain claim.",
+  "contracts": "A uses original27task-target question support pairs. B uses exact normalized question templates present in100new training examples(29),not answers or QA-type metadata at inference. A has priority; no A/B overlap on evaluated cohorts. B covers all172acquisition validation questions; no unseen-template routing claim. Bank chooses oldA for A, newI for B, base otherwise. Shared policy chooses K or S on union A/B, base otherwise.",
+  "arms_description": {
+    "I": "Fresh visual LoRA on base, new CE +base nullKL+base old-attributeKL; independent new module used with immutable old A in bank. It never inherited A, so relative A differences are not called forgetting.",
+    "K": "Start from immutable A_seed adapter, new CE +A_seed nullKL+A_seed old-attributeKL; primary shared-parameter consolidation.",
+    "S": "Same A_seed start and new CE+nullKL,old-attributeKL coefficient0 while same branch computed; sequential ablation."
+  },
+  "optimizer": "Visual attention qkv/proj LoRA rank16alpha32dropout0;language/basefrozen. AdamWconstantLR1e-4betas.9/.999eps1e-8wd0clip1,BF16SDPA;4epochs52updates/arm,800supervised+800anchor-forwardexposures. No hyperparam/epoch/rank/data/contract search. Reset optimizer for each new stage by protocol; old checkpoints are read-only.",
+  "teacher": "Familiesbase/A42/A43,each100new-train null+100old-attribute full teacher-forced answer-position distributions,600forwards0teacher generations. Private FP32 caches. Per-model production CE+KL backward/initialKLnear0/visual-only trainability check before optimizer updates. Parameter delta from exact loaded initialization recorded so nonzero inherited weights are not mistaken for new learning.",
+  "evaluation": "Before new updates, generate only missing A_seed acquisition N/B records. Reuse original base/all available A matching branches read-only from previous ledgers. Afterfixed52updates K/S evaluate349questions×N/B (172newval+39oldval+69oldsource+69oldbackground);I evaluates only B-contract cases actually needed by bank. Freeze exact physical plan before any new generation; no extra bank generations or unconditional I-on-old claims. Greedy64sameHF336format.",
+  "investment_gate": {
+    "K_parameter_consolidation": "New172 K_N-A_before_N>=.10mean/everyseed positive/95percent imageLB>0;new visual interaction positive/everyseed/LB>0;oldsource69 andoldval39 K_N-A_before_Nmean/everyseed>=0,LB>=-.05,zero newly harmed eachseed onboth panels.",
+    "bank_external_preservation": "New172 I_N-base_N>=.10mean/everyseed positive/LB>0;new visual interaction positive/everyseed/LB>0;bankoldsource69/oldval39 equals immutable A branch bycase;oldbackground69bank minus prior A-contract policy mean/everyseed>=0,LB>=-.05,zero new harm.",
+    "ablation": "Report K-S old/new effects and whether old-replay KL has positive CI contribution; do not require or assert unique KL benefit without that evidence. Judge K and bank as separately preregistered objects, never relabel Kfailure as parameter consolidation because bank succeeds."
+  },
+  "statistics": "Unchangednormalizedexactmatch,pairedtrainingseedsaveragebeforeimageclusterbootstrap10000selectionseed20261103. Allbefore/after/gains/harms/newly-wrong acquisitions,parent baselines,contracts/coverage,blankbehavior andcosts preserved. Complete Englishvalidation policy outcomes can be derived from old base/A records+new scope predictions withno extra reader runs; distinguish historical observations.",
+  "stops": "No bestepoch/seed/module/lambda/LR/sample/contract retuning. Failure closes this recipe/object separately. Per-model checkpoints and last optimizer recovery preserved, originals never overwritten. Four-hour original clock includes teacher/beforeeval/retries; window10:58:35and50GBcumulative remain binding.",
+  "limits": "Same-template development visual QA, not clinical trajectory/PPO/visual-card evidence. Unknown patient independence and unverified labels. Old raw shared-adapter retention is assessed separately from externally gated bank retention. No clinical deployment/safety claim.",
+  "public_boundary": "Onlysource/config/numeric/report. No medicalQA/gold/images/rawoutputs/prompts/templates/vocab/teacherlogp/weights/recovery/privatepaths/tokens."
+}
