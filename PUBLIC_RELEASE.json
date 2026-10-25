@@ -195,5 +195,15 @@
     "actual_Dev_episodes": 0,
     "private_bank_saved": false,
     "paired_scientific_gate_evaluated": false
+  },
+  "turn_retrieval_cpu_v1": {
+    "source_commit": "a383e039396e69b0659ec5a496e4323d55fde233",
+    "report": "reports/30_turn_retrieval_cpu_screen.md",
+    "status": "COMPLETE_CPU_ONLY_CANDIDATE_CLOSED",
+    "actual_saved_model_turns": 132,
+    "new_model_calls": 0,
+    "new_environment_steps": 0,
+    "GPU_dispatched": false,
+    "private_inputs_or_weights_exported": false
   }
 }

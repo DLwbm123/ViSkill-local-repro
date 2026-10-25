@@ -1,0 +1,21 @@
+{
+  "name": "turn_retrieval_cpu_v1",
+  "status": "FROZEN_CPU_ONLY",
+  "preparation_started_unix": 1792886486,
+  "max_seconds_including_preparation": 600,
+  "maximum_additional_bytes": 2000000,
+  "source_component": "support_matched_curriculum_v1/collect",
+  "population": "All40 completed collection episodes and every actual rollout request start, full category and success/failure strata. No selected cases or resampling.",
+  "input_rule": "Align actual parsed action prefixes with saved executed actions/positions. Nonfinal turns consume valid prefix before first unsupported action; final turn may stop on observed terminal. Any mismatch is unknown, retains denominator. No environment steps, new action simulation or lost tensor reconstruction.",
+  "fixed_retrieval": "Read-only original5 cards, existing provider.retrieve+directional guard and min_score0.8; no threshold/library/feature changes. Only states at actual model decision starts count.",
+  "candidate_gap": "Current agent retrieves/injects only before initial observation; _handle_env_state appends new observations without another retrieve/inject. No algorithm change in this CPU screen.",
+  "gate_before_new_GPU_discussion": {
+    "minimum_long_episodes_initial_none_later_valid_at_actual_model_decision": 2,
+    "if_below": "Close dynamic-retrieval candidate without GPU or threshold/seed search."
+  },
+  "new_model_calls": 0,
+  "new_environment_steps": 0,
+  "new_optimizer_steps": 0,
+  "scientific_scope": "Posthoc mechanism opportunity census, not efficacy evidence or independent validation. Original40 outcomes known.",
+  "publication": "Code/config and full parameter-free state/retrieval result only. Protect input containers and all prior models."
+}

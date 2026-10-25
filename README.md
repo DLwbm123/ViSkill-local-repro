@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+Dynamic-retrieval CPU screen: all40 saved episodes/132 actual model-turn starts yielded zero new valid-card opportunities among initial non-hits, including0/8 long episodes. The preregistered feasibility gate failed; no GPU, model calls or environment steps. See [report30](reports/30_turn_retrieval_cpu_screen.md). This is a posthoc opportunity screen, not efficacy evidence.
+
 Curriculum pair closed after collection: all40 episodes/134 calls retained, but two unintended distillation calls violated the frozen zero-distillation contract. No actor update or Dev evaluation occurred; long-start success0/8 also misses the prespecified positive-feedback prerequisite. See [report29](reports/29_curriculum_collection_failure.md). This is an engineering/protocol failure, with no paired learning result.
 
 CPU input readiness: the fixed gzip1 container reduced one existing C32 input from290.59MB to27.54MB with basic loading checks, zero model operations. Private inputs stay remote. A new support-matched curriculum comparison now has a frozen80-board protocol and CPU-checked interfaces; no model calls or results at publication. See [report27](reports/27_input_container_feasibility.md) and [protocol28](reports/28_support_matched_curriculum.md).

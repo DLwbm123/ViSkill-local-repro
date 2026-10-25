@@ -2140,5 +2140,19 @@
     "long_collection_denominator": 8,
     "resampling_allowed": false,
     "result_report": "reports/29_curriculum_collection_failure.md"
+  },
+  "turn_retrieval_cpu_v1": {
+    "status": "COMPLETE_CPU_ONLY_CANDIDATE_CLOSED",
+    "report": "reports/30_turn_retrieval_cpu_screen.md",
+    "episodes": 40,
+    "actual_model_turns": 132,
+    "unknown_turn_states": 0,
+    "long_initial_none_later_valid_episodes": 0,
+    "long_denominator": 8,
+    "discussion_gate_pass": false,
+    "new_model_calls": 0,
+    "new_environment_steps": 0,
+    "new_optimizer_steps": 0,
+    "GPU_dispatched": false
   }
 }

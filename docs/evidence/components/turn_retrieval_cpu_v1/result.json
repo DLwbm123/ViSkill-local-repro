@@ -1,0 +1,2047 @@
+{
+  "status": "COMPLETE_CPU_ONLY",
+  "preparation_started_unix": 1792886486,
+  "deadline_unix": 1792887086,
+  "completed_unix": 1792886551.8772173,
+  "counts": {
+    "all/all": {
+      "episodes": 40,
+      "actual_model_turns": 132,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 40,
+      "initial_hit_episodes": 24,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "all/success": {
+      "episodes": 15,
+      "actual_model_turns": 30,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 15,
+      "initial_hit_episodes": 13,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "all/failure": {
+      "episodes": 25,
+      "actual_model_turns": 102,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 25,
+      "initial_hit_episodes": 11,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "conditional/all": {
+      "episodes": 16,
+      "actual_model_turns": 58,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 16,
+      "initial_hit_episodes": 16,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "conditional/success": {
+      "episodes": 8,
+      "actual_model_turns": 22,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 8,
+      "initial_hit_episodes": 8,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "conditional/failure": {
+      "episodes": 8,
+      "actual_model_turns": 36,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 8,
+      "initial_hit_episodes": 8,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "medium/all": {
+      "episodes": 8,
+      "actual_model_turns": 25,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 8,
+      "initial_hit_episodes": 0,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "medium/success": {
+      "episodes": 2,
+      "actual_model_turns": 3,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 2,
+      "initial_hit_episodes": 0,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "medium/failure": {
+      "episodes": 6,
+      "actual_model_turns": 22,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 6,
+      "initial_hit_episodes": 0,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "single/all": {
+      "episodes": 8,
+      "actual_model_turns": 17,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 8,
+      "initial_hit_episodes": 8,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "single/success": {
+      "episodes": 5,
+      "actual_model_turns": 5,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 5,
+      "initial_hit_episodes": 5,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "single/failure": {
+      "episodes": 3,
+      "actual_model_turns": 12,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 3,
+      "initial_hit_episodes": 3,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "long/all": {
+      "episodes": 8,
+      "actual_model_turns": 32,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 8,
+      "initial_hit_episodes": 0,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "long/success": {
+      "episodes": 0,
+      "actual_model_turns": 0,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 0,
+      "initial_hit_episodes": 0,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    },
+    "long/failure": {
+      "episodes": 8,
+      "actual_model_turns": 32,
+      "unknown_turn_states": 0,
+      "alignment_complete_episodes": 8,
+      "initial_hit_episodes": 0,
+      "initial_none_later_valid_episodes": 0,
+      "opportunity_turns": 0
+    }
+  },
+  "records": [
+    {
+      "seed": 400013,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 37,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 70,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 98,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400002,
+      "category": "medium",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 12,
+          "known_state": true,
+          "position": [
+            1,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400005,
+      "category": "single",
+      "success": false,
+      "initial_retrieved_id": "skill_0",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 10,
+          "known_state": true,
+          "position": [
+            1,
+            1
+          ],
+          "retrieved_id": "skill_0",
+          "score": 0.967195
+        },
+        {
+          "turn": 2,
+          "request_call": 49,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400001,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 24,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400036,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 18,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 56,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 81,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 105,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 122,
+          "known_state": true,
+          "position": [
+            1,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400003,
+      "category": "medium",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 21,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 53,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 82,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 108,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 130,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400006,
+      "category": "single",
+      "success": true,
+      "initial_retrieved_id": "skill_1",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 32,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": "skill_1",
+          "score": 0.95545
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400010,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 2,
+          "known_state": true,
+          "position": [
+            0,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 46,
+          "known_state": true,
+          "position": [
+            0,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 73,
+          "known_state": true,
+          "position": [
+            0,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 99,
+          "known_state": true,
+          "position": [
+            0,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 118,
+          "known_state": true,
+          "position": [
+            0,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400139,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 29,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 64,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 92,
+          "known_state": true,
+          "position": [
+            1,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400004,
+      "category": "medium",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 6,
+          "known_state": true,
+          "position": [
+            0,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400007,
+      "category": "single",
+      "success": true,
+      "initial_retrieved_id": "skill_2",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 20,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": "skill_2",
+          "score": 0.9450000000000001
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400011,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 3,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 43,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 71,
+          "known_state": true,
+          "position": [
+            0,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 97,
+          "known_state": true,
+          "position": [
+            0,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 117,
+          "known_state": true,
+          "position": [
+            0,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400284,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 9,
+          "known_state": true,
+          "position": [
+            3,
+            2
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 45,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 76,
+          "known_state": true,
+          "position": [
+            1,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400012,
+      "category": "medium",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 16,
+          "known_state": true,
+          "position": [
+            0,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 50,
+          "known_state": true,
+          "position": [
+            0,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 78,
+          "known_state": true,
+          "position": [
+            0,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 106,
+          "known_state": true,
+          "position": [
+            1,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 127,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400008,
+      "category": "single",
+      "success": true,
+      "initial_retrieved_id": "skill_3",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 13,
+          "known_state": true,
+          "position": [
+            1,
+            1
+          ],
+          "retrieved_id": "skill_3",
+          "score": 0.9595
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400017,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 36,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 69,
+          "known_state": true,
+          "position": [
+            1,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 96,
+          "known_state": true,
+          "position": [
+            0,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 120,
+          "known_state": true,
+          "position": [
+            0,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 134,
+          "known_state": true,
+          "position": [
+            1,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400346,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 25,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 57,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 87,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 4,
+          "request_call": 111,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400014,
+      "category": "medium",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 34,
+          "known_state": true,
+          "position": [
+            1,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 65,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 90,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 112,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 129,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400009,
+      "category": "single",
+      "success": true,
+      "initial_retrieved_id": "skill_2",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 31,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": "skill_2",
+          "score": 0.9450000000000001
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400025,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 28,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 61,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 86,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 110,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 126,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400474,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 15,
+          "known_state": true,
+          "position": [
+            3,
+            2
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 54,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400015,
+      "category": "medium",
+      "success": true,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 5,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400035,
+      "category": "single",
+      "success": false,
+      "initial_retrieved_id": "skill_2",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 7,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": "skill_2",
+          "score": 0.9450000000000001
+        },
+        {
+          "turn": 2,
+          "request_call": 48,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 75,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 101,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 119,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400026,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 1,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 41,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 68,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 95,
+          "known_state": true,
+          "position": [
+            1,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 115,
+          "known_state": true,
+          "position": [
+            0,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400784,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 19,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 55,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 84,
+          "known_state": true,
+          "position": [
+            1,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400016,
+      "category": "medium",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 11,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 47,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 77,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 104,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 125,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400044,
+      "category": "single",
+      "success": false,
+      "initial_retrieved_id": "skill_2",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 27,
+          "known_state": true,
+          "position": [
+            2,
+            2
+          ],
+          "retrieved_id": "skill_2",
+          "score": 0.9450000000000001
+        },
+        {
+          "turn": 2,
+          "request_call": 62,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 91,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 116,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 133,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400030,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 23,
+          "known_state": true,
+          "position": [
+            0,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 60,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 85,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 109,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 124,
+          "known_state": true,
+          "position": [
+            0,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 401105,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 35,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 66,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 94,
+          "known_state": true,
+          "position": [
+            1,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400018,
+      "category": "medium",
+      "success": true,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 30,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 2,
+          "request_call": 63,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400062,
+      "category": "single",
+      "success": true,
+      "initial_retrieved_id": "skill_0",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 33,
+          "known_state": true,
+          "position": [
+            1,
+            0
+          ],
+          "retrieved_id": "skill_0",
+          "score": 0.967195
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 400037,
+      "category": "long",
+      "success": false,
+      "initial_retrieved_id": null,
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 4,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 401246,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 38,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 401283,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 14,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 52,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 3,
+          "request_call": 79,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 4,
+          "request_call": 103,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 121,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 401657,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 39,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 67,
+          "known_state": true,
+          "position": [
+            3,
+            2
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 93,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 113,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 131,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 401689,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 26,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 58,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 89,
+          "known_state": true,
+          "position": [
+            2,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 114,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 132,
+          "known_state": true,
+          "position": [
+            1,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 401903,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 40,
+          "known_state": true,
+          "position": [
+            3,
+            2
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 72,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 100,
+          "known_state": true,
+          "position": [
+            3,
+            3
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 402314,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 8,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 44,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 3,
+          "request_call": 74,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 102,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 123,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 402408,
+      "category": "conditional",
+      "success": false,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 17,
+          "known_state": true,
+          "position": [
+            3,
+            1
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 51,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 80,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 4,
+          "request_call": 107,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 5,
+          "request_call": 128,
+          "known_state": true,
+          "position": [
+            2,
+            1
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    },
+    {
+      "seed": 402550,
+      "category": "conditional",
+      "success": true,
+      "initial_retrieved_id": "skill_4",
+      "alignment_complete": true,
+      "turns": [
+        {
+          "turn": 1,
+          "request_call": 22,
+          "known_state": true,
+          "position": [
+            3,
+            0
+          ],
+          "retrieved_id": "skill_4",
+          "score": 0.95
+        },
+        {
+          "turn": 2,
+          "request_call": 59,
+          "known_state": true,
+          "position": [
+            2,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        },
+        {
+          "turn": 3,
+          "request_call": 83,
+          "known_state": true,
+          "position": [
+            1,
+            0
+          ],
+          "retrieved_id": null,
+          "score": null
+        }
+      ],
+      "new_valid_card_turns": [],
+      "initial_none_later_valid": false
+    }
+  ],
+  "discussion_gate_pass": false,
+  "minimum_long_opportunity_episodes": 2,
+  "model_forwards": 0,
+  "model_backwards": 0,
+  "optimizer_steps": 0,
+  "environment_steps": 0,
+  "library_json_values_unchanged": true,
+  "actual_model_turns": 132,
+  "scope": "Posthoc mechanism opportunity census, not efficacy evidence or independent validation. Original40 outcomes known.",
+  "decision": "Close dynamic-retrieval candidate; no GPU, threshold search or resampling."
+}
