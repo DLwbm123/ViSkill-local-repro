@@ -77,3 +77,5 @@ Official256 evaluation: first initialization failed before task dispatch because
 限定带检索输入PPO核查已完成：actor与critic各128输入/51检索，4次原生分布式optimizer更新、有限损失/梯度及非零参数样本变化；修复我方审计保存故障后用原固定记录恢复，新增生成0，见[报告40](reports/40_retrieved_input_native_ppo_correctness_result.md)。
 
 下一主线准备：384局冻结b0技能增益对照已预注册，64图×3条件×2重启；按门槛判断是否值得内化，不自动训练。清理1.05GB派生缓存，用户指定旧O唯一权重保留。见[报告41](reports/41_skill_gain_384_protocol_and_cleanup.md)。
+
+384局技能增益完成并通过投入门：17张可重复增益、1张受损、4种动作模式含多步；真实卡59/128、无卡25/128、空白25/128（64图×2重复，非128独立图）。自然落洞与条件Stop增加保留。建议下一受控内化pilot，未自动训练。见[报告42](reports/42_skill_gain_384_result.md)。

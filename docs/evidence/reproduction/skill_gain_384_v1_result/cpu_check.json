@@ -1,0 +1,90 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792920207.4346185,
+  "actual_model_calls": 0,
+  "GPU_calls": 0,
+  "scripted_fixture_episodes": 3,
+  "V_Blank_first_prompt_IDs_sizes_grids_equal": true,
+  "Blank_reference_pixels_white": true,
+  "N_no_card_V_Blank_original_retrieval_id_correct": true,
+  "original_state_matches_frozen_manifest": true,
+  "distillation_disabled": true,
+  "captures": {
+    "N": {
+      "prompt_token_count": 377,
+      "image_sizes": [
+        [
+          256,
+          256
+        ]
+      ],
+      "grids": [
+        [
+          1,
+          18,
+          18
+        ]
+      ]
+    },
+    "V": {
+      "prompt_token_count": 490,
+      "image_sizes": [
+        [
+          308,
+          232
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "grids": [
+        [
+          1,
+          16,
+          22
+        ],
+        [
+          1,
+          18,
+          18
+        ]
+      ]
+    },
+    "Blank": {
+      "prompt_token_count": 490,
+      "image_sizes": [
+        [
+          308,
+          232
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "grids": [
+        [
+          1,
+          16,
+          22
+        ],
+        [
+          1,
+          18,
+          18
+        ]
+      ]
+    }
+  },
+  "gate_boundary_fixtures_PASS": true,
+  "runtime_temperature_final": 0.0,
+  "gate_fixture_checked_unix": 1792920456.18819,
+  "real_recorder_IO_CPU_stub_PASS": true,
+  "scripted_recorder_fixture_calls": 3,
+  "recorder_actual_model_calls": 0,
+  "recorder_fixture_checked_unix": 1792920869.848034,
+  "repeat1_only_resume_preflight_PASS": true,
+  "completed_repeat0_replay_rejected": true,
+  "repeat_resume_actual_model_calls": 0
+}

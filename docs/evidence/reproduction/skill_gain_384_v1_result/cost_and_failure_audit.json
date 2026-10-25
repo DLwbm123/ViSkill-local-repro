@@ -1,0 +1,52 @@
+{
+  "stages": [
+    {
+      "stage": "initialization_failure",
+      "start_unix": 1792920701.0785651,
+      "end_unix": 1792920748.3867755,
+      "supervisor_wall_seconds": 47.308210372924805,
+      "exit_code": 1,
+      "reason": "RuntimeError('worker failed; retain all records and no blind replay')",
+      "business_generation_requests": 0,
+      "completed_business_episodes": 0
+    },
+    {
+      "stage": "repeat0_and_transition_stop",
+      "start_unix": 1792921041.1254306,
+      "end_unix": 1792921866.582503,
+      "supervisor_wall_seconds": 825.4570724964142,
+      "exit_code": 1,
+      "reason": "RuntimeError('worker failed; retain all records and no blind replay')",
+      "business_generation_requests": 691,
+      "completed_business_episodes": 192
+    },
+    {
+      "stage": "repeat1_complete",
+      "start_unix": 1792923465.3843598,
+      "end_unix": 1792924271.2002587,
+      "supervisor_wall_seconds": 805.8158988952637,
+      "exit_code": 0,
+      "reason": null,
+      "business_generation_requests": 688,
+      "completed_business_episodes": 192
+    }
+  ],
+  "sum_supervisor_wall_seconds_including_failed_initialization": 1678.5811817646027,
+  "original_preparation_started_unix": 1792919646.0,
+  "end_unix": 1792924271.2002587,
+  "total_preparation_to_end_seconds": 4625.200258731842,
+  "business_generation_requests": 1379,
+  "completed_business_episodes": 384,
+  "initial_failed_partial_environment_resets": 1,
+  "initial_failed_reserved_counter_not_dispatched": 1,
+  "CPU_scripted_native_fixture_episodes": 3,
+  "CPU_scripted_recorder_transport_calls": 3,
+  "CPU_gate_fixtures_real_model_calls": 0,
+  "GPU_initialization_did_happen_in_first_failed_attempt": true,
+  "replayed_completed_business_episodes": 0,
+  "final_four_root_bytes": 154305282048,
+  "new_bytes_from_original_experiment_baseline": 83623936,
+  "cleanup_allocated_bytes_removed": 1050189824,
+  "old_O_unique_inference_weight_kept_by_explicit_user_choice": true,
+  "scope": "Supervisor spans include CPU/setup/cleanup, not measured GPU busy time; initial partial reset and CPU stubs are not included in384 completed business episodes."
+}

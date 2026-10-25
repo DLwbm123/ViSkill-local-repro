@@ -1,0 +1,14 @@
+{
+  "remaining_repeats": [
+    1
+  ],
+  "supervisor_pid": 3744432,
+  "supervisor_ctime": 1792923465.05,
+  "start_unix": 1792923465.3843598,
+  "initial_four_root_bytes": 154257723392,
+  "baseline_bytes": 154221658112,
+  "write_stop_bytes": 161221658112,
+  "strict_hard_bytes": 162221658112,
+  "deadline_unix": 1792934046.0,
+  "GPU_free_MiB": 72830
+}

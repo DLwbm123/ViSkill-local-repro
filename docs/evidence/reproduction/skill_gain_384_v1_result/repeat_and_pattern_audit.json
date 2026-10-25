@@ -1,0 +1,107 @@
+{
+  "per_repeat": {
+    "0": {
+      "N": {
+        "successes": 12,
+        "episodes": 64,
+        "model_calls": 248
+      },
+      "V": {
+        "successes": 29,
+        "episodes": 64,
+        "model_calls": 196
+      },
+      "Blank": {
+        "successes": 12,
+        "episodes": 64,
+        "model_calls": 247
+      }
+    },
+    "1": {
+      "N": {
+        "successes": 13,
+        "episodes": 64,
+        "model_calls": 249
+      },
+      "V": {
+        "successes": 30,
+        "episodes": 64,
+        "model_calls": 195
+      },
+      "Blank": {
+        "successes": 13,
+        "episodes": 64,
+        "model_calls": 244
+      }
+    }
+  },
+  "repeat_agreement": {
+    "N": {
+      "success_equal_maps": 63,
+      "same_first_reply_maps": 49,
+      "same_full_executed_action_sequence_maps": 52,
+      "maps": 64
+    },
+    "V": {
+      "success_equal_maps": 63,
+      "same_first_reply_maps": 57,
+      "same_full_executed_action_sequence_maps": 57,
+      "maps": 64
+    },
+    "Blank": {
+      "success_equal_maps": 63,
+      "same_first_reply_maps": 57,
+      "same_full_executed_action_sequence_maps": 58,
+      "maps": 64
+    }
+  },
+  "benefit_pattern_counts": {
+    "up": 4,
+    "right,right,down,right": 5,
+    "down": 7,
+    "left": 1
+  },
+  "reproducible_V_over_Blank_maps": [
+    1000006,
+    1000009,
+    1000015,
+    1100003,
+    1100004,
+    1100006,
+    1100010,
+    1100032,
+    1100033,
+    1100041,
+    1100042,
+    1100048,
+    1100051,
+    1100054,
+    1100055,
+    1100060,
+    1100062,
+    1100064,
+    1100066
+  ],
+  "harm_maps": [
+    {
+      "seed": 1100071,
+      "stratum": "retrievable",
+      "pattern": [
+        "right"
+      ],
+      "per_repeat": {
+        "0": {
+          "N": true,
+          "V": false,
+          "Blank": true
+        },
+        "1": {
+          "N": true,
+          "V": false,
+          "Blank": true
+        }
+      }
+    }
+  ],
+  "scope": "Descriptive derived audit after all384 outcomes; does not change preregistered gate."
+}
