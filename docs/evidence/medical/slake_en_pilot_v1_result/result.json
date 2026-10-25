@@ -1,0 +1,199 @@
+{
+  "status": "COMPLETE_BOUNDED_ENGLISH_SLAKE_SCREEN",
+  "source_bank": {
+    "attempted": 450,
+    "accepted": 234,
+    "completed_unix": 1792929318.0207853,
+    "test_or_validation_admissions": 0,
+    "source_generation_replayed": false,
+    "source_header_rescore_applied": true
+  },
+  "summary": {
+    "N": {
+      "correct": 58,
+      "n": 96,
+      "accuracy": 0.6041666666666666,
+      "truncated_at_token_cap": 0,
+      "by_content_type": {
+        "Abnormality": {
+          "correct": 18,
+          "n": 26
+        },
+        "Organ": {
+          "correct": 21,
+          "n": 32
+        },
+        "Position": {
+          "correct": 10,
+          "n": 25
+        },
+        "Quantity": {
+          "correct": 3,
+          "n": 6
+        },
+        "Shape": {
+          "correct": 0,
+          "n": 1
+        },
+        "Size": {
+          "correct": 6,
+          "n": 6
+        }
+      }
+    },
+    "V": {
+      "correct": 65,
+      "n": 96,
+      "accuracy": 0.6770833333333334,
+      "truncated_at_token_cap": 0,
+      "by_content_type": {
+        "Abnormality": {
+          "correct": 20,
+          "n": 26
+        },
+        "Organ": {
+          "correct": 23,
+          "n": 32
+        },
+        "Position": {
+          "correct": 15,
+          "n": 25
+        },
+        "Quantity": {
+          "correct": 2,
+          "n": 6
+        },
+        "Shape": {
+          "correct": 0,
+          "n": 1
+        },
+        "Size": {
+          "correct": 5,
+          "n": 6
+        }
+      }
+    },
+    "Blank": {
+      "correct": 67,
+      "n": 96,
+      "accuracy": 0.6979166666666666,
+      "truncated_at_token_cap": 0,
+      "by_content_type": {
+        "Abnormality": {
+          "correct": 20,
+          "n": 26
+        },
+        "Organ": {
+          "correct": 24,
+          "n": 32
+        },
+        "Position": {
+          "correct": 16,
+          "n": 25
+        },
+        "Quantity": {
+          "correct": 2,
+          "n": 6
+        },
+        "Shape": {
+          "correct": 0,
+          "n": 1
+        },
+        "Size": {
+          "correct": 5,
+          "n": 6
+        }
+      }
+    },
+    "Text": {
+      "correct": 66,
+      "n": 96,
+      "accuracy": 0.6875,
+      "truncated_at_token_cap": 0,
+      "by_content_type": {
+        "Abnormality": {
+          "correct": 19,
+          "n": 26
+        },
+        "Organ": {
+          "correct": 24,
+          "n": 32
+        },
+        "Position": {
+          "correct": 16,
+          "n": 25
+        },
+        "Quantity": {
+          "correct": 2,
+          "n": 6
+        },
+        "Shape": {
+          "correct": 0,
+          "n": 1
+        },
+        "Size": {
+          "correct": 5,
+          "n": 6
+        }
+      }
+    }
+  },
+  "paired_differences": {
+    "V_minus_N": {
+      "accuracy_difference": 0.07291666666666667,
+      "paired_image_bootstrap_95": [
+        0.0,
+        0.15625
+      ],
+      "improved": 11,
+      "harmed": 4
+    },
+    "V_minus_Blank": {
+      "accuracy_difference": -0.020833333333333332,
+      "paired_image_bootstrap_95": [
+        -0.052083333333333336,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 2
+    },
+    "V_minus_Text": {
+      "accuracy_difference": -0.010416666666666666,
+      "paired_image_bootstrap_95": [
+        -0.052083333333333336,
+        0.020833333333333332
+      ],
+      "improved": 1,
+      "harmed": 2
+    }
+  },
+  "predeclared_promising_screen": false,
+  "screen_rule": "Exploratory promising only if V exceeds N by at least 5 net correct questions and V exceeds Blank by at least 3 net correct questions. Report Text and uncertainty regardless. This screen is not a claim of clinical benefit, statistical significance, or authorization to automatically train.",
+  "worker_completed": {
+    "status": "COMPLETE_450_BANK_384_VALIDATION",
+    "completed_unix": 1792929430.2316718,
+    "generation_calls": 834,
+    "optimizer_steps": 0,
+    "validation_admissions": 0,
+    "test_annotation_opened": false,
+    "V_Blank_prompt_and_grid_pairs_checked": 96
+  },
+  "exit": {
+    "exit_code": 0,
+    "reason": null,
+    "end_unix": 1792929441.977787,
+    "peak_bytes": 154436710400,
+    "incremental_bytes": 131428352,
+    "argv_violations": []
+  },
+  "output_tokens_all_calls": 6293,
+  "sealed_test_used": false,
+  "optimizer_steps": 0,
+  "limitations": [
+    "One question per validation image from six visual content types; not the full 1053-question validation benchmark.",
+    "One greedy model initialization; no training-seed replication.",
+    "Exact normalized answers; open-answer synonyms can be undercounted.",
+    "Reference examples and source ROIs are an initial medical card adapter, not validated clinical procedures or the complete native game skill loop.",
+    "Source correctness is answer verification; it does not verify a clinical reasoning trajectory."
+  ]
+}

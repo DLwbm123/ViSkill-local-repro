@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "reason": null,
+  "end_unix": 1792929441.977787,
+  "peak_bytes": 154436710400,
+  "incremental_bytes": 131428352,
+  "argv_violations": []
+}

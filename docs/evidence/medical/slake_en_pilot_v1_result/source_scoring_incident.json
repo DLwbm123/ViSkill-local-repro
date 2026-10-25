@@ -1,0 +1,14 @@
+{
+  "status": "SOURCE_HEADER_SCORER_RECOVERY",
+  "failure_discovered_unix": 1792928965,
+  "recovery_ready_unix": 1792929281.9575887,
+  "original_source_generations": 450,
+  "original_validation_generations": 0,
+  "source_correct_after_format_only_rescore": 234,
+  "source_generation_replay_allowed": false,
+  "feature_replay_allowed": false,
+  "original_deadline_unix": 1792931414.8599694,
+  "original_baseline_bytes": 154305282048,
+  "source_execution_commit": "aa1f8567f4225727f84ac8abe397ce4468850111",
+  "recovery_execution_commit": "de8df9a94bba573e993d52e1c2c75268c9f8b6a1"
+}

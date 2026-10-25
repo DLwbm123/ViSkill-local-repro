@@ -1,0 +1,50 @@
+{
+  "experiment": "slake_en_pilot_v1",
+  "status": "FROZEN_CPU_READY",
+  "first_preparation_unix": 1792927814.8599694,
+  "deadline_unix": 1792931414.8599694,
+  "cooperative_stop_unix": 1792931234.8599694,
+  "four_root_baseline_bytes": 154305282048,
+  "maximum_incremental_bytes": 4000000000,
+  "write_stop_incremental_bytes": 3000000000,
+  "dataset": "SLAKE author release, English only; existing assets read only",
+  "dataset_revision": "a9083ce6c34ac3ffb17671a605962924d8a8f9e9",
+  "selection_seed": 20261025,
+  "engine_seed": 42,
+  "eligible_content_types": [
+    "Organ",
+    "Position",
+    "Abnormality",
+    "Size",
+    "Shape",
+    "Quantity"
+  ],
+  "selection": "One uniformly selected eligible English question per image, fixed before inference; 450 train source attempts and 96 validation images. Full test JSON is not opened.",
+  "conditions": [
+    "N",
+    "V",
+    "Blank",
+    "Text"
+  ],
+  "schedule": "All 24 condition permutations repeated four times, with a fixed shuffled image order. Source generation used the initial engine; after correcting the transport-header scorer, validation uses one fresh engine with the same seed. All four validation conditions share this engine.",
+  "source_bank": "Admit source examples only after a correct normalized train answer. Fixed bank before validation. No validation/test admission or utility update.",
+  "retrieval": "Top one admitted source example by 0.7 image cosine plus 0.3 question-text cosine from the existing frozen CLIP ViT-L/14-336. Query answer, type, modality label and ROI annotations are not retrieval features.",
+  "card": "336x336 RGB source image. Unlabeled source bounding boxes are drawn only when the annotation name occurs in source question or answer; otherwise full source image without an asserted question-specific ROI. Source question and verified answer appear as text outside the card in V, Blank and Text.",
+  "controls": "V and Blank have identical text, prompt IDs, image sizes and grids. Blank replaces only source card pixels with white. Text keeps identical reference question/answer text and omits the reference image. N omits the reference case.",
+  "model": "Existing unmodified Qwen2.5-VL-3B-Instruct base b0; no game-trained checkpoint",
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 64
+  },
+  "maximum_image_pixels": 401408,
+  "query_image_preprocessing": "Convert to RGB and downsize only when needed to fit a 512x512 box with Lanczos before both HF tokenization and backend image processing; do not upscale small images. Source card canvas is 336x336. This prevents a differing HF/backend pixel cap from changing image-token grids on the 1024x1024 source images.",
+  "maximum_generation_calls": 834,
+  "primary_metric": "Normalized exact-match accuracy on 96 fixed validation questions, each on a different image; strip a leading transport assistant role line and accept leading yes/no for yes/no targets. The role-header correction was made before any validation call; no medical synonym matching was added.",
+  "source_scoring_recovery": "Initial source scorer rejected all 450 replies because every returned token list contained the same leading ChatML assistant header. Retain original raw replies and scores, rescore those exact 450 saved replies, and resume only the untouched 384 validation cases. Do not repeat source generation or feature extraction; retain original clock and storage baseline.",
+  "secondary_metrics": "Paired improved/harmed counts, content-type accuracy, truncation counts and paired image bootstrap 95% intervals with 10000 resamples.",
+  "screen_rule": "Exploratory promising only if V exceeds N by at least 5 net correct questions and V exceeds Blank by at least 3 net correct questions. Report Text and uncertainty regardless. This screen is not a claim of clinical benefit, statistical significance, or authorization to automatically train.",
+  "optimizer_steps": 0,
+  "test_annotation_opened": false,
+  "public_data_boundary": "Publish source, protocol, aggregate metrics and complete numeric records; retain original images, questions, answers, prompt IDs, cards, features and raw model responses privately on the server."
+}

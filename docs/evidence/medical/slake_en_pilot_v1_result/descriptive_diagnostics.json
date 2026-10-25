@@ -1,0 +1,77 @@
+{
+  "posthoc_descriptive_only": true,
+  "source_bank_with_matched_source_roi": 58,
+  "source_bank_without_matched_source_roi": 176,
+  "validation_reference_with_matched_source_roi": 22,
+  "validation_reference_without_matched_source_roi": 74,
+  "source_and_query_content_type_agree": 74,
+  "source_admission_by_content_type": {
+    "Organ": 95,
+    "Abnormality": 42,
+    "Size": 34,
+    "Position": 46,
+    "Quantity": 17
+  },
+  "additional_context_differences": {
+    "Blank_minus_N": {
+      "difference": 0.09375,
+      "improved": 12,
+      "harmed": 3,
+      "paired_image_bootstrap_95": [
+        0.020833333333333332,
+        0.17708333333333334
+      ]
+    },
+    "Text_minus_N": {
+      "difference": 0.08333333333333333,
+      "improved": 11,
+      "harmed": 3,
+      "paired_image_bootstrap_95": [
+        0.010416666666666666,
+        0.15625
+      ]
+    }
+  },
+  "by_answer_type": {
+    "N": {
+      "CLOSED": {
+        "correct": 45,
+        "n": 54
+      },
+      "OPEN": {
+        "correct": 13,
+        "n": 42
+      }
+    },
+    "V": {
+      "CLOSED": {
+        "correct": 46,
+        "n": 54
+      },
+      "OPEN": {
+        "correct": 19,
+        "n": 42
+      }
+    },
+    "Blank": {
+      "CLOSED": {
+        "correct": 48,
+        "n": 54
+      },
+      "OPEN": {
+        "correct": 19,
+        "n": 42
+      }
+    },
+    "Text": {
+      "CLOSED": {
+        "correct": 47,
+        "n": 54
+      },
+      "OPEN": {
+        "correct": 19,
+        "n": 42
+      }
+    }
+  }
+}

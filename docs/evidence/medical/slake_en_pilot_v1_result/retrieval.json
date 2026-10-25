@@ -1,0 +1,482 @@
+{
+  "9838": {
+    "bank_index": 47,
+    "score": 0.9352893829345703,
+    "source_qid": 679
+  },
+  "9848": {
+    "bank_index": 89,
+    "score": 0.9364904165267944,
+    "source_qid": 1568
+  },
+  "9856": {
+    "bank_index": 4,
+    "score": 0.9744969606399536,
+    "source_qid": 75
+  },
+  "9871": {
+    "bank_index": 6,
+    "score": 0.9389387369155884,
+    "source_qid": 93
+  },
+  "9880": {
+    "bank_index": 229,
+    "score": 0.9630118608474731,
+    "source_qid": 4823
+  },
+  "9888": {
+    "bank_index": 21,
+    "score": 0.9626710414886475,
+    "source_qid": 313
+  },
+  "9891": {
+    "bank_index": 14,
+    "score": 0.961003303527832,
+    "source_qid": 233
+  },
+  "9898": {
+    "bank_index": 18,
+    "score": 0.9783728122711182,
+    "source_qid": 288
+  },
+  "9908": {
+    "bank_index": 128,
+    "score": 0.9315320253372192,
+    "source_qid": 2716
+  },
+  "9916": {
+    "bank_index": 42,
+    "score": 0.9677382111549377,
+    "source_qid": 607
+  },
+  "9922": {
+    "bank_index": 34,
+    "score": 0.9620993137359619,
+    "source_qid": 496
+  },
+  "9932": {
+    "bank_index": 44,
+    "score": 0.9606369137763977,
+    "source_qid": 633
+  },
+  "9938": {
+    "bank_index": 34,
+    "score": 0.9765676259994507,
+    "source_qid": 496
+  },
+  "9945": {
+    "bank_index": 98,
+    "score": 0.9718867540359497,
+    "source_qid": 1800
+  },
+  "9962": {
+    "bank_index": 55,
+    "score": 0.9837757349014282,
+    "source_qid": 788
+  },
+  "9970": {
+    "bank_index": 41,
+    "score": 0.9692343473434448,
+    "source_qid": 589
+  },
+  "9977": {
+    "bank_index": 70,
+    "score": 0.9892804622650146,
+    "source_qid": 1121
+  },
+  "9994": {
+    "bank_index": 96,
+    "score": 0.9219720959663391,
+    "source_qid": 1739
+  },
+  "10001": {
+    "bank_index": 97,
+    "score": 0.9848108291625977,
+    "source_qid": 1750
+  },
+  "10021": {
+    "bank_index": 50,
+    "score": 0.9675558805465698,
+    "source_qid": 698
+  },
+  "10029": {
+    "bank_index": 69,
+    "score": 0.9918965101242065,
+    "source_qid": 1100
+  },
+  "10048": {
+    "bank_index": 70,
+    "score": 0.9910311102867126,
+    "source_qid": 1121
+  },
+  "10062": {
+    "bank_index": 86,
+    "score": 0.9503449201583862,
+    "source_qid": 1507
+  },
+  "10078": {
+    "bank_index": 85,
+    "score": 0.9851573705673218,
+    "source_qid": 1495
+  },
+  "10097": {
+    "bank_index": 84,
+    "score": 0.9469100832939148,
+    "source_qid": 1473
+  },
+  "10103": {
+    "bank_index": 79,
+    "score": 0.9896841049194336,
+    "source_qid": 1348
+  },
+  "10124": {
+    "bank_index": 97,
+    "score": 0.9652040004730225,
+    "source_qid": 1750
+  },
+  "10132": {
+    "bank_index": 73,
+    "score": 0.9782445430755615,
+    "source_qid": 1170
+  },
+  "10149": {
+    "bank_index": 108,
+    "score": 0.9461206197738647,
+    "source_qid": 2166
+  },
+  "10164": {
+    "bank_index": 108,
+    "score": 0.9792194366455078,
+    "source_qid": 2166
+  },
+  "10177": {
+    "bank_index": 100,
+    "score": 0.9524766206741333,
+    "source_qid": 1903
+  },
+  "10191": {
+    "bank_index": 123,
+    "score": 0.9329695701599121,
+    "source_qid": 2609
+  },
+  "10212": {
+    "bank_index": 111,
+    "score": 0.964673638343811,
+    "source_qid": 2270
+  },
+  "10224": {
+    "bank_index": 112,
+    "score": 0.9474196434020996,
+    "source_qid": 2322
+  },
+  "10236": {
+    "bank_index": 105,
+    "score": 0.9446725249290466,
+    "source_qid": 2076
+  },
+  "10245": {
+    "bank_index": 126,
+    "score": 0.9717097282409668,
+    "source_qid": 2675
+  },
+  "10259": {
+    "bank_index": 29,
+    "score": 0.9390095472335815,
+    "source_qid": 406
+  },
+  "10271": {
+    "bank_index": 112,
+    "score": 0.965804934501648,
+    "source_qid": 2322
+  },
+  "10290": {
+    "bank_index": 33,
+    "score": 0.9623240828514099,
+    "source_qid": 474
+  },
+  "10305": {
+    "bank_index": 129,
+    "score": 0.9669342041015625,
+    "source_qid": 2731
+  },
+  "10317": {
+    "bank_index": 124,
+    "score": 0.9736998081207275,
+    "source_qid": 2626
+  },
+  "10336": {
+    "bank_index": 98,
+    "score": 0.9471982717514038,
+    "source_qid": 1800
+  },
+  "10350": {
+    "bank_index": 128,
+    "score": 0.9757086038589478,
+    "source_qid": 2716
+  },
+  "10364": {
+    "bank_index": 100,
+    "score": 0.9103721380233765,
+    "source_qid": 1903
+  },
+  "10382": {
+    "bank_index": 130,
+    "score": 0.9450637102127075,
+    "source_qid": 2778
+  },
+  "10395": {
+    "bank_index": 122,
+    "score": 0.9389994144439697,
+    "source_qid": 2600
+  },
+  "10412": {
+    "bank_index": 21,
+    "score": 0.934356689453125,
+    "source_qid": 313
+  },
+  "10425": {
+    "bank_index": 132,
+    "score": 0.9184349775314331,
+    "source_qid": 2842
+  },
+  "10437": {
+    "bank_index": 230,
+    "score": 0.9545944929122925,
+    "source_qid": 4850
+  },
+  "10442": {
+    "bank_index": 137,
+    "score": 0.9198813438415527,
+    "source_qid": 2963
+  },
+  "10458": {
+    "bank_index": 141,
+    "score": 0.957632303237915,
+    "source_qid": 3037
+  },
+  "10477": {
+    "bank_index": 142,
+    "score": 0.9215610027313232,
+    "source_qid": 3053
+  },
+  "10483": {
+    "bank_index": 162,
+    "score": 0.9441288709640503,
+    "source_qid": 3655
+  },
+  "10495": {
+    "bank_index": 144,
+    "score": 0.940758466720581,
+    "source_qid": 3075
+  },
+  "10506": {
+    "bank_index": 145,
+    "score": 0.9170125722885132,
+    "source_qid": 3105
+  },
+  "10519": {
+    "bank_index": 145,
+    "score": 0.9033145308494568,
+    "source_qid": 3105
+  },
+  "10535": {
+    "bank_index": 170,
+    "score": 0.9293358325958252,
+    "source_qid": 3891
+  },
+  "10541": {
+    "bank_index": 154,
+    "score": 0.9649999141693115,
+    "source_qid": 3363
+  },
+  "10548": {
+    "bank_index": 168,
+    "score": 0.9448122978210449,
+    "source_qid": 3826
+  },
+  "10560": {
+    "bank_index": 154,
+    "score": 0.9283975958824158,
+    "source_qid": 3363
+  },
+  "10570": {
+    "bank_index": 156,
+    "score": 0.9751294255256653,
+    "source_qid": 3471
+  },
+  "10578": {
+    "bank_index": 176,
+    "score": 0.9195448160171509,
+    "source_qid": 3995
+  },
+  "10585": {
+    "bank_index": 187,
+    "score": 0.908947229385376,
+    "source_qid": 4141
+  },
+  "10597": {
+    "bank_index": 165,
+    "score": 0.9245184659957886,
+    "source_qid": 3794
+  },
+  "10605": {
+    "bank_index": 166,
+    "score": 0.8993447422981262,
+    "source_qid": 3811
+  },
+  "10612": {
+    "bank_index": 198,
+    "score": 0.969223141670227,
+    "source_qid": 4385
+  },
+  "10622": {
+    "bank_index": 165,
+    "score": 0.8795954585075378,
+    "source_qid": 3794
+  },
+  "10629": {
+    "bank_index": 169,
+    "score": 0.9413538575172424,
+    "source_qid": 3863
+  },
+  "10642": {
+    "bank_index": 170,
+    "score": 0.9307448863983154,
+    "source_qid": 3891
+  },
+  "10648": {
+    "bank_index": 158,
+    "score": 0.865128219127655,
+    "source_qid": 3557
+  },
+  "10659": {
+    "bank_index": 165,
+    "score": 0.9443157911300659,
+    "source_qid": 3794
+  },
+  "10666": {
+    "bank_index": 163,
+    "score": 0.9401238560676575,
+    "source_qid": 3765
+  },
+  "10672": {
+    "bank_index": 152,
+    "score": 0.9668537974357605,
+    "source_qid": 3342
+  },
+  "10682": {
+    "bank_index": 163,
+    "score": 0.9210258722305298,
+    "source_qid": 3765
+  },
+  "10691": {
+    "bank_index": 160,
+    "score": 0.8969581723213196,
+    "source_qid": 3610
+  },
+  "10701": {
+    "bank_index": 199,
+    "score": 0.930877149105072,
+    "source_qid": 4397
+  },
+  "10712": {
+    "bank_index": 57,
+    "score": 0.95438551902771,
+    "source_qid": 838
+  },
+  "10723": {
+    "bank_index": 174,
+    "score": 0.9370419979095459,
+    "source_qid": 3927
+  },
+  "10729": {
+    "bank_index": 175,
+    "score": 0.9412702322006226,
+    "source_qid": 3963
+  },
+  "10745": {
+    "bank_index": 181,
+    "score": 0.9732364416122437,
+    "source_qid": 4056
+  },
+  "10752": {
+    "bank_index": 179,
+    "score": 0.9501653909683228,
+    "source_qid": 4029
+  },
+  "10766": {
+    "bank_index": 184,
+    "score": 0.9580394625663757,
+    "source_qid": 4108
+  },
+  "10779": {
+    "bank_index": 185,
+    "score": 0.9362636208534241,
+    "source_qid": 4118
+  },
+  "10787": {
+    "bank_index": 186,
+    "score": 0.9553688168525696,
+    "source_qid": 4127
+  },
+  "10800": {
+    "bank_index": 174,
+    "score": 0.9556360840797424,
+    "source_qid": 3927
+  },
+  "10808": {
+    "bank_index": 192,
+    "score": 0.9267417788505554,
+    "source_qid": 4335
+  },
+  "10813": {
+    "bank_index": 6,
+    "score": 0.9519292116165161,
+    "source_qid": 93
+  },
+  "10822": {
+    "bank_index": 206,
+    "score": 0.9752615690231323,
+    "source_qid": 4538
+  },
+  "10829": {
+    "bank_index": 198,
+    "score": 0.9634717106819153,
+    "source_qid": 4385
+  },
+  "10839": {
+    "bank_index": 204,
+    "score": 0.9277483820915222,
+    "source_qid": 4517
+  },
+  "10848": {
+    "bank_index": 210,
+    "score": 0.951989471912384,
+    "source_qid": 4571
+  },
+  "10856": {
+    "bank_index": 180,
+    "score": 0.979210615158081,
+    "source_qid": 4040
+  },
+  "10863": {
+    "bank_index": 178,
+    "score": 0.9760133028030396,
+    "source_qid": 4022
+  },
+  "10865": {
+    "bank_index": 215,
+    "score": 0.9356991648674011,
+    "source_qid": 4639
+  },
+  "10875": {
+    "bank_index": 86,
+    "score": 0.9581470489501953,
+    "source_qid": 1507
+  },
+  "10880": {
+    "bank_index": 6,
+    "score": 0.9721693992614746,
+    "source_qid": 93
+  }
+}

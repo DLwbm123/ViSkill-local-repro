@@ -1,0 +1,10 @@
+{
+  "images": 546,
+  "question_embeddings": 546,
+  "shape": [
+    546,
+    768
+  ],
+  "completed_unix": 1792928762.9536185,
+  "optimizer_steps": 0
+}

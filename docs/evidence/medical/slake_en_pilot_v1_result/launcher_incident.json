@@ -1,0 +1,9 @@
+{
+  "phase": "launcher preflight",
+  "error": "system Python lacks psutil; import failed before any run-side actions",
+  "correction": "use existing experiment Python environment",
+  "generation_calls": 0,
+  "gpu_initializations": 0,
+  "clock_reset": false,
+  "recorded_unix": 1792928737.5608406
+}

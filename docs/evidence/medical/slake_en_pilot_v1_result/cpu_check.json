@@ -1,0 +1,37 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792929182.5828776,
+  "train_images": 450,
+  "validation_images": 96,
+  "validation_episodes": 384,
+  "selection_categories": {
+    "train": {
+      "Organ": 165,
+      "Abnormality": 80,
+      "Size": 42,
+      "Position": 128,
+      "Quantity": 31,
+      "Shape": 4
+    },
+    "validation": {
+      "Abnormality": 26,
+      "Quantity": 6,
+      "Size": 6,
+      "Position": 25,
+      "Organ": 32,
+      "Shape": 1
+    }
+  },
+  "source_roi_rendering_fixture_count": 1,
+  "V_Blank_identical_prompt_ids_and_image_grids": true,
+  "query_answer_field_rejected": true,
+  "query_long_side_limit": 512,
+  "largest_query_fixture_size": [
+    512,
+    512
+  ],
+  "gpu_initialized": false,
+  "model_calls": 0,
+  "test_annotation_opened": false,
+  "source_fixture_region_count": 0
+}

@@ -1,0 +1,8 @@
+{
+  "initial_source_generation_commit": "aa1f8567f4225727f84ac8abe397ce4468850111",
+  "validation_recovery_commit": "de8df9a94bba573e993d52e1c2c75268c9f8b6a1",
+  "clip_repository": "openai/clip-vit-large-patch14-336",
+  "clip_revision": "ce19dc912ca5cd21c8a653c79e251e808ccabcd1",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "source_and_validation_same_seed_42_but_separate_initializations": true
+}

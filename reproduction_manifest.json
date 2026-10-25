@@ -2373,5 +2373,29 @@
       "One map N/Blank success but V fails in both repeats"
     ],
     "initial_and_transition_failures_preserved": true
+  },
+  "slake_en_pilot_v1": {
+    "status": "COMPLETE_MEDICAL_SCREEN_VISUAL_SPECIFICITY_NOT_ESTABLISHED",
+    "report": "reports/43_slake_english_retrieval_screen.md",
+    "protocol": "configs/reproduction/slake_en_pilot_v1.json",
+    "result": "docs/evidence/medical/slake_en_pilot_v1_result/result.json",
+    "execution_source_commit": "de8df9a94bba573e993d52e1c2c75268c9f8b6a1",
+    "initial_source_commit": "aa1f8567f4225727f84ac8abe397ce4468850111",
+    "source_attempts": 450,
+    "source_cards": 234,
+    "validation_images": 96,
+    "validation_episodes": 384,
+    "generation_calls": 834,
+    "correct": {
+      "N": 58,
+      "V": 65,
+      "Blank": 67,
+      "Text": 66
+    },
+    "promising_screen": false,
+    "optimizer_steps": 0,
+    "source_generation_replays": 0,
+    "test_used": false,
+    "source_scorer_failure_preserved": true
   }
 }

@@ -1,0 +1,15 @@
+{
+  "status": "CPU_RECOVERY_READY",
+  "completed_unix": 1792929177.2088008,
+  "original_generation_calls": 450,
+  "original_source_records": 450,
+  "validation_calls": 0,
+  "request_errors": 0,
+  "all_source_qids_match_frozen_manifest": true,
+  "all_sources_have_same_leading_transport_ids": true,
+  "original_scored_correct": 0,
+  "correct_after_role_header_removal": 234,
+  "new_model_calls": 0,
+  "owned_non_zombie_processes": 0,
+  "protocol_sample_or_gate_changed": false
+}

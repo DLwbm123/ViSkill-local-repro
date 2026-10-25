@@ -45,5 +45,15 @@
     "applies_to": "official_frozenlake_ppo_v1 only;24h unchanged",
     "other_experiments_keep_prior_limits": true
   },
-  "post_update_observer_incident": "Original attempt lost live first-batch weights because Tensor metrics were not JSON-serializable before first save. Retained as failure; Tensor/finite handling and save-on-observation-error tested before new bounded correctness attempt."
+  "post_update_observer_incident": "Original attempt lost live first-batch weights because Tensor metrics were not JSON-serializable before first save. Retained as failure; Tensor/finite handling and save-on-observation-error tested before new bounded correctness attempt.",
+  "medical_static_card_adapter": {
+    "execution_source_commit": "de8df9a94bba573e993d52e1c2c75268c9f8b6a1",
+    "initial_source_commit": "aa1f8567f4225727f84ac8abe397ce4468850111",
+    "files": [
+      "scripts/slake_probe.py",
+      "scripts/slake_probe_supervisor.py",
+      "configs/reproduction/slake_en_pilot_v1.json"
+    ],
+    "scope": "Static English medical VQA evidence-card retrieval screen; existing game algorithms unchanged; no parameter training"
+  }
 }

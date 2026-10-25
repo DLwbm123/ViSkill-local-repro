@@ -1,0 +1,2092 @@
+{
+  "train_selected_qids": [
+    5,
+    14,
+    18,
+    26,
+    40,
+    44,
+    60,
+    68,
+    75,
+    86,
+    93,
+    108,
+    120,
+    126,
+    136,
+    139,
+    148,
+    156,
+    163,
+    166,
+    179,
+    184,
+    192,
+    195,
+    206,
+    215,
+    217,
+    225,
+    233,
+    243,
+    251,
+    259,
+    265,
+    275,
+    280,
+    288,
+    302,
+    308,
+    313,
+    322,
+    330,
+    336,
+    343,
+    354,
+    361,
+    368,
+    378,
+    384,
+    393,
+    395,
+    406,
+    414,
+    423,
+    433,
+    437,
+    448,
+    454,
+    466,
+    474,
+    484,
+    490,
+    496,
+    504,
+    511,
+    521,
+    529,
+    540,
+    543,
+    557,
+    560,
+    570,
+    578,
+    589,
+    607,
+    610,
+    623,
+    633,
+    643,
+    649,
+    657,
+    668,
+    679,
+    686,
+    694,
+    698,
+    713,
+    725,
+    747,
+    760,
+    768,
+    788,
+    804,
+    822,
+    838,
+    850,
+    870,
+    881,
+    898,
+    905,
+    918,
+    942,
+    955,
+    959,
+    978,
+    992,
+    1006,
+    1024,
+    1032,
+    1047,
+    1058,
+    1075,
+    1087,
+    1100,
+    1121,
+    1135,
+    1152,
+    1155,
+    1170,
+    1184,
+    1211,
+    1219,
+    1230,
+    1248,
+    1262,
+    1282,
+    1295,
+    1302,
+    1319,
+    1340,
+    1348,
+    1367,
+    1385,
+    1398,
+    1419,
+    1433,
+    1457,
+    1462,
+    1473,
+    1495,
+    1507,
+    1521,
+    1533,
+    1550,
+    1568,
+    1590,
+    1596,
+    1612,
+    1625,
+    1634,
+    1653,
+    1666,
+    1688,
+    1697,
+    1709,
+    1729,
+    1739,
+    1750,
+    1759,
+    1775,
+    1789,
+    1800,
+    1809,
+    1825,
+    1842,
+    1858,
+    1866,
+    1872,
+    1886,
+    1903,
+    1923,
+    1929,
+    1945,
+    1960,
+    1971,
+    1985,
+    2007,
+    2021,
+    2033,
+    2051,
+    2060,
+    2076,
+    2087,
+    2108,
+    2117,
+    2133,
+    2150,
+    2166,
+    2179,
+    2191,
+    2202,
+    2223,
+    2232,
+    2255,
+    2270,
+    2280,
+    2293,
+    2306,
+    2322,
+    2337,
+    2351,
+    2368,
+    2387,
+    2405,
+    2417,
+    2430,
+    2440,
+    2462,
+    2470,
+    2490,
+    2501,
+    2519,
+    2525,
+    2546,
+    2555,
+    2570,
+    2590,
+    2600,
+    2609,
+    2626,
+    2641,
+    2663,
+    2675,
+    2690,
+    2698,
+    2716,
+    2731,
+    2745,
+    2760,
+    2778,
+    2790,
+    2799,
+    2814,
+    2827,
+    2842,
+    2858,
+    2878,
+    2894,
+    2903,
+    2919,
+    2933,
+    2945,
+    2963,
+    2974,
+    2984,
+    3004,
+    3012,
+    3021,
+    3037,
+    3053,
+    3065,
+    3075,
+    3095,
+    3105,
+    3114,
+    3124,
+    3138,
+    3151,
+    3164,
+    3175,
+    3186,
+    3196,
+    3211,
+    3219,
+    3236,
+    3246,
+    3253,
+    3265,
+    3272,
+    3280,
+    3292,
+    3299,
+    3307,
+    3314,
+    3323,
+    3335,
+    3342,
+    3350,
+    3363,
+    3368,
+    3376,
+    3388,
+    3397,
+    3407,
+    3414,
+    3426,
+    3433,
+    3443,
+    3449,
+    3459,
+    3471,
+    3479,
+    3486,
+    3494,
+    3503,
+    3512,
+    3525,
+    3532,
+    3538,
+    3548,
+    3557,
+    3563,
+    3573,
+    3580,
+    3594,
+    3599,
+    3610,
+    3617,
+    3626,
+    3635,
+    3643,
+    3649,
+    3655,
+    3666,
+    3675,
+    3683,
+    3695,
+    3705,
+    3712,
+    3723,
+    3728,
+    3741,
+    3747,
+    3759,
+    3765,
+    3776,
+    3784,
+    3794,
+    3802,
+    3811,
+    3818,
+    3826,
+    3836,
+    3848,
+    3855,
+    3863,
+    3874,
+    3882,
+    3891,
+    3898,
+    3907,
+    3921,
+    3927,
+    3942,
+    3954,
+    3963,
+    3981,
+    3995,
+    3997,
+    4009,
+    4022,
+    4029,
+    4040,
+    4056,
+    4068,
+    4073,
+    4087,
+    4098,
+    4108,
+    4118,
+    4127,
+    4141,
+    4146,
+    4158,
+    4172,
+    4188,
+    4199,
+    4209,
+    4218,
+    4233,
+    4245,
+    4257,
+    4263,
+    4278,
+    4287,
+    4300,
+    4311,
+    4317,
+    4326,
+    4335,
+    4339,
+    4346,
+    4357,
+    4362,
+    4367,
+    4374,
+    4382,
+    4385,
+    4397,
+    4402,
+    4408,
+    4418,
+    4429,
+    4442,
+    4454,
+    4466,
+    4477,
+    4482,
+    4497,
+    4503,
+    4512,
+    4517,
+    4522,
+    4538,
+    4542,
+    4552,
+    4558,
+    4566,
+    4571,
+    4580,
+    4586,
+    4592,
+    4601,
+    4605,
+    4608,
+    4615,
+    4619,
+    4623,
+    4635,
+    4639,
+    4645,
+    4650,
+    4663,
+    4668,
+    4676,
+    4688,
+    4696,
+    4707,
+    4711,
+    4725,
+    4730,
+    4740,
+    4748,
+    4757,
+    4766,
+    4773,
+    4783,
+    4793,
+    4805,
+    4814,
+    4823,
+    4833,
+    4842,
+    4850,
+    4861,
+    4863,
+    4872,
+    4890,
+    4893,
+    4908,
+    4914
+  ],
+  "validation_selected_qids": [
+    9838,
+    9848,
+    9856,
+    9871,
+    9880,
+    9888,
+    9891,
+    9898,
+    9908,
+    9916,
+    9922,
+    9932,
+    9938,
+    9945,
+    9962,
+    9970,
+    9977,
+    9994,
+    10001,
+    10021,
+    10029,
+    10048,
+    10062,
+    10078,
+    10097,
+    10103,
+    10124,
+    10132,
+    10149,
+    10164,
+    10177,
+    10191,
+    10212,
+    10224,
+    10236,
+    10245,
+    10259,
+    10271,
+    10290,
+    10305,
+    10317,
+    10336,
+    10350,
+    10364,
+    10382,
+    10395,
+    10412,
+    10425,
+    10437,
+    10442,
+    10458,
+    10477,
+    10483,
+    10495,
+    10506,
+    10519,
+    10535,
+    10541,
+    10548,
+    10560,
+    10570,
+    10578,
+    10585,
+    10597,
+    10605,
+    10612,
+    10622,
+    10629,
+    10642,
+    10648,
+    10659,
+    10666,
+    10672,
+    10682,
+    10691,
+    10701,
+    10712,
+    10723,
+    10729,
+    10745,
+    10752,
+    10766,
+    10779,
+    10787,
+    10800,
+    10808,
+    10813,
+    10822,
+    10829,
+    10839,
+    10848,
+    10856,
+    10863,
+    10865,
+    10875,
+    10880
+  ],
+  "validation_schedule": [
+    {
+      "qid": 10437,
+      "condition": "N"
+    },
+    {
+      "qid": 10437,
+      "condition": "V"
+    },
+    {
+      "qid": 10437,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10437,
+      "condition": "Text"
+    },
+    {
+      "qid": 10642,
+      "condition": "N"
+    },
+    {
+      "qid": 10642,
+      "condition": "V"
+    },
+    {
+      "qid": 10642,
+      "condition": "Text"
+    },
+    {
+      "qid": 10642,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10578,
+      "condition": "N"
+    },
+    {
+      "qid": 10578,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10578,
+      "condition": "V"
+    },
+    {
+      "qid": 10578,
+      "condition": "Text"
+    },
+    {
+      "qid": 10682,
+      "condition": "N"
+    },
+    {
+      "qid": 10682,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10682,
+      "condition": "Text"
+    },
+    {
+      "qid": 10682,
+      "condition": "V"
+    },
+    {
+      "qid": 10691,
+      "condition": "N"
+    },
+    {
+      "qid": 10691,
+      "condition": "Text"
+    },
+    {
+      "qid": 10691,
+      "condition": "V"
+    },
+    {
+      "qid": 10691,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10541,
+      "condition": "N"
+    },
+    {
+      "qid": 10541,
+      "condition": "Text"
+    },
+    {
+      "qid": 10541,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10541,
+      "condition": "V"
+    },
+    {
+      "qid": 10701,
+      "condition": "V"
+    },
+    {
+      "qid": 10701,
+      "condition": "N"
+    },
+    {
+      "qid": 10701,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10701,
+      "condition": "Text"
+    },
+    {
+      "qid": 10570,
+      "condition": "V"
+    },
+    {
+      "qid": 10570,
+      "condition": "N"
+    },
+    {
+      "qid": 10570,
+      "condition": "Text"
+    },
+    {
+      "qid": 10570,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9880,
+      "condition": "V"
+    },
+    {
+      "qid": 9880,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9880,
+      "condition": "N"
+    },
+    {
+      "qid": 9880,
+      "condition": "Text"
+    },
+    {
+      "qid": 10808,
+      "condition": "V"
+    },
+    {
+      "qid": 10808,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10808,
+      "condition": "Text"
+    },
+    {
+      "qid": 10808,
+      "condition": "N"
+    },
+    {
+      "qid": 9962,
+      "condition": "V"
+    },
+    {
+      "qid": 9962,
+      "condition": "Text"
+    },
+    {
+      "qid": 9962,
+      "condition": "N"
+    },
+    {
+      "qid": 9962,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10856,
+      "condition": "V"
+    },
+    {
+      "qid": 10856,
+      "condition": "Text"
+    },
+    {
+      "qid": 10856,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10856,
+      "condition": "N"
+    },
+    {
+      "qid": 9908,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9908,
+      "condition": "N"
+    },
+    {
+      "qid": 9908,
+      "condition": "V"
+    },
+    {
+      "qid": 9908,
+      "condition": "Text"
+    },
+    {
+      "qid": 10149,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10149,
+      "condition": "N"
+    },
+    {
+      "qid": 10149,
+      "condition": "Text"
+    },
+    {
+      "qid": 10149,
+      "condition": "V"
+    },
+    {
+      "qid": 9856,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9856,
+      "condition": "V"
+    },
+    {
+      "qid": 9856,
+      "condition": "N"
+    },
+    {
+      "qid": 9856,
+      "condition": "Text"
+    },
+    {
+      "qid": 9970,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9970,
+      "condition": "V"
+    },
+    {
+      "qid": 9970,
+      "condition": "Text"
+    },
+    {
+      "qid": 9970,
+      "condition": "N"
+    },
+    {
+      "qid": 10766,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10766,
+      "condition": "Text"
+    },
+    {
+      "qid": 10766,
+      "condition": "N"
+    },
+    {
+      "qid": 10766,
+      "condition": "V"
+    },
+    {
+      "qid": 10723,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10723,
+      "condition": "Text"
+    },
+    {
+      "qid": 10723,
+      "condition": "V"
+    },
+    {
+      "qid": 10723,
+      "condition": "N"
+    },
+    {
+      "qid": 10048,
+      "condition": "Text"
+    },
+    {
+      "qid": 10048,
+      "condition": "N"
+    },
+    {
+      "qid": 10048,
+      "condition": "V"
+    },
+    {
+      "qid": 10048,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10245,
+      "condition": "Text"
+    },
+    {
+      "qid": 10245,
+      "condition": "N"
+    },
+    {
+      "qid": 10245,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10245,
+      "condition": "V"
+    },
+    {
+      "qid": 10395,
+      "condition": "Text"
+    },
+    {
+      "qid": 10395,
+      "condition": "V"
+    },
+    {
+      "qid": 10395,
+      "condition": "N"
+    },
+    {
+      "qid": 10395,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10177,
+      "condition": "Text"
+    },
+    {
+      "qid": 10177,
+      "condition": "V"
+    },
+    {
+      "qid": 10177,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10177,
+      "condition": "N"
+    },
+    {
+      "qid": 10612,
+      "condition": "Text"
+    },
+    {
+      "qid": 10612,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10612,
+      "condition": "N"
+    },
+    {
+      "qid": 10612,
+      "condition": "V"
+    },
+    {
+      "qid": 10305,
+      "condition": "Text"
+    },
+    {
+      "qid": 10305,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10305,
+      "condition": "V"
+    },
+    {
+      "qid": 10305,
+      "condition": "N"
+    },
+    {
+      "qid": 10191,
+      "condition": "N"
+    },
+    {
+      "qid": 10191,
+      "condition": "V"
+    },
+    {
+      "qid": 10191,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10191,
+      "condition": "Text"
+    },
+    {
+      "qid": 10745,
+      "condition": "N"
+    },
+    {
+      "qid": 10745,
+      "condition": "V"
+    },
+    {
+      "qid": 10745,
+      "condition": "Text"
+    },
+    {
+      "qid": 10745,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10666,
+      "condition": "N"
+    },
+    {
+      "qid": 10666,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10666,
+      "condition": "V"
+    },
+    {
+      "qid": 10666,
+      "condition": "Text"
+    },
+    {
+      "qid": 10629,
+      "condition": "N"
+    },
+    {
+      "qid": 10629,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10629,
+      "condition": "Text"
+    },
+    {
+      "qid": 10629,
+      "condition": "V"
+    },
+    {
+      "qid": 10458,
+      "condition": "N"
+    },
+    {
+      "qid": 10458,
+      "condition": "Text"
+    },
+    {
+      "qid": 10458,
+      "condition": "V"
+    },
+    {
+      "qid": 10458,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10560,
+      "condition": "N"
+    },
+    {
+      "qid": 10560,
+      "condition": "Text"
+    },
+    {
+      "qid": 10560,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10560,
+      "condition": "V"
+    },
+    {
+      "qid": 9848,
+      "condition": "V"
+    },
+    {
+      "qid": 9848,
+      "condition": "N"
+    },
+    {
+      "qid": 9848,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9848,
+      "condition": "Text"
+    },
+    {
+      "qid": 10412,
+      "condition": "V"
+    },
+    {
+      "qid": 10412,
+      "condition": "N"
+    },
+    {
+      "qid": 10412,
+      "condition": "Text"
+    },
+    {
+      "qid": 10412,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10001,
+      "condition": "V"
+    },
+    {
+      "qid": 10001,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10001,
+      "condition": "N"
+    },
+    {
+      "qid": 10001,
+      "condition": "Text"
+    },
+    {
+      "qid": 10132,
+      "condition": "V"
+    },
+    {
+      "qid": 10132,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10132,
+      "condition": "Text"
+    },
+    {
+      "qid": 10132,
+      "condition": "N"
+    },
+    {
+      "qid": 10672,
+      "condition": "V"
+    },
+    {
+      "qid": 10672,
+      "condition": "Text"
+    },
+    {
+      "qid": 10672,
+      "condition": "N"
+    },
+    {
+      "qid": 10672,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10364,
+      "condition": "V"
+    },
+    {
+      "qid": 10364,
+      "condition": "Text"
+    },
+    {
+      "qid": 10364,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10364,
+      "condition": "N"
+    },
+    {
+      "qid": 10290,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10290,
+      "condition": "N"
+    },
+    {
+      "qid": 10290,
+      "condition": "V"
+    },
+    {
+      "qid": 10290,
+      "condition": "Text"
+    },
+    {
+      "qid": 10506,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10506,
+      "condition": "N"
+    },
+    {
+      "qid": 10506,
+      "condition": "Text"
+    },
+    {
+      "qid": 10506,
+      "condition": "V"
+    },
+    {
+      "qid": 10382,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10382,
+      "condition": "V"
+    },
+    {
+      "qid": 10382,
+      "condition": "N"
+    },
+    {
+      "qid": 10382,
+      "condition": "Text"
+    },
+    {
+      "qid": 10875,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10875,
+      "condition": "V"
+    },
+    {
+      "qid": 10875,
+      "condition": "Text"
+    },
+    {
+      "qid": 10875,
+      "condition": "N"
+    },
+    {
+      "qid": 10548,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10548,
+      "condition": "Text"
+    },
+    {
+      "qid": 10548,
+      "condition": "N"
+    },
+    {
+      "qid": 10548,
+      "condition": "V"
+    },
+    {
+      "qid": 10078,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10078,
+      "condition": "Text"
+    },
+    {
+      "qid": 10078,
+      "condition": "V"
+    },
+    {
+      "qid": 10078,
+      "condition": "N"
+    },
+    {
+      "qid": 10271,
+      "condition": "Text"
+    },
+    {
+      "qid": 10271,
+      "condition": "N"
+    },
+    {
+      "qid": 10271,
+      "condition": "V"
+    },
+    {
+      "qid": 10271,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10029,
+      "condition": "Text"
+    },
+    {
+      "qid": 10029,
+      "condition": "N"
+    },
+    {
+      "qid": 10029,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10029,
+      "condition": "V"
+    },
+    {
+      "qid": 10848,
+      "condition": "Text"
+    },
+    {
+      "qid": 10848,
+      "condition": "V"
+    },
+    {
+      "qid": 10848,
+      "condition": "N"
+    },
+    {
+      "qid": 10848,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10622,
+      "condition": "Text"
+    },
+    {
+      "qid": 10622,
+      "condition": "V"
+    },
+    {
+      "qid": 10622,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10622,
+      "condition": "N"
+    },
+    {
+      "qid": 9916,
+      "condition": "Text"
+    },
+    {
+      "qid": 9916,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9916,
+      "condition": "N"
+    },
+    {
+      "qid": 9916,
+      "condition": "V"
+    },
+    {
+      "qid": 10729,
+      "condition": "Text"
+    },
+    {
+      "qid": 10729,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10729,
+      "condition": "V"
+    },
+    {
+      "qid": 10729,
+      "condition": "N"
+    },
+    {
+      "qid": 10752,
+      "condition": "N"
+    },
+    {
+      "qid": 10752,
+      "condition": "V"
+    },
+    {
+      "qid": 10752,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10752,
+      "condition": "Text"
+    },
+    {
+      "qid": 10535,
+      "condition": "N"
+    },
+    {
+      "qid": 10535,
+      "condition": "V"
+    },
+    {
+      "qid": 10535,
+      "condition": "Text"
+    },
+    {
+      "qid": 10535,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10829,
+      "condition": "N"
+    },
+    {
+      "qid": 10829,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10829,
+      "condition": "V"
+    },
+    {
+      "qid": 10829,
+      "condition": "Text"
+    },
+    {
+      "qid": 10605,
+      "condition": "N"
+    },
+    {
+      "qid": 10605,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10605,
+      "condition": "Text"
+    },
+    {
+      "qid": 10605,
+      "condition": "V"
+    },
+    {
+      "qid": 10236,
+      "condition": "N"
+    },
+    {
+      "qid": 10236,
+      "condition": "Text"
+    },
+    {
+      "qid": 10236,
+      "condition": "V"
+    },
+    {
+      "qid": 10236,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10648,
+      "condition": "N"
+    },
+    {
+      "qid": 10648,
+      "condition": "Text"
+    },
+    {
+      "qid": 10648,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10648,
+      "condition": "V"
+    },
+    {
+      "qid": 10259,
+      "condition": "V"
+    },
+    {
+      "qid": 10259,
+      "condition": "N"
+    },
+    {
+      "qid": 10259,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10259,
+      "condition": "Text"
+    },
+    {
+      "qid": 10880,
+      "condition": "V"
+    },
+    {
+      "qid": 10880,
+      "condition": "N"
+    },
+    {
+      "qid": 10880,
+      "condition": "Text"
+    },
+    {
+      "qid": 10880,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9994,
+      "condition": "V"
+    },
+    {
+      "qid": 9994,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9994,
+      "condition": "N"
+    },
+    {
+      "qid": 9994,
+      "condition": "Text"
+    },
+    {
+      "qid": 9945,
+      "condition": "V"
+    },
+    {
+      "qid": 9945,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9945,
+      "condition": "Text"
+    },
+    {
+      "qid": 9945,
+      "condition": "N"
+    },
+    {
+      "qid": 10350,
+      "condition": "V"
+    },
+    {
+      "qid": 10350,
+      "condition": "Text"
+    },
+    {
+      "qid": 10350,
+      "condition": "N"
+    },
+    {
+      "qid": 10350,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9898,
+      "condition": "V"
+    },
+    {
+      "qid": 9898,
+      "condition": "Text"
+    },
+    {
+      "qid": 9898,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9898,
+      "condition": "N"
+    },
+    {
+      "qid": 10477,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10477,
+      "condition": "N"
+    },
+    {
+      "qid": 10477,
+      "condition": "V"
+    },
+    {
+      "qid": 10477,
+      "condition": "Text"
+    },
+    {
+      "qid": 10779,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10779,
+      "condition": "N"
+    },
+    {
+      "qid": 10779,
+      "condition": "Text"
+    },
+    {
+      "qid": 10779,
+      "condition": "V"
+    },
+    {
+      "qid": 9838,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9838,
+      "condition": "V"
+    },
+    {
+      "qid": 9838,
+      "condition": "N"
+    },
+    {
+      "qid": 9838,
+      "condition": "Text"
+    },
+    {
+      "qid": 9932,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9932,
+      "condition": "V"
+    },
+    {
+      "qid": 9932,
+      "condition": "Text"
+    },
+    {
+      "qid": 9932,
+      "condition": "N"
+    },
+    {
+      "qid": 10317,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10317,
+      "condition": "Text"
+    },
+    {
+      "qid": 10317,
+      "condition": "N"
+    },
+    {
+      "qid": 10317,
+      "condition": "V"
+    },
+    {
+      "qid": 10425,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10425,
+      "condition": "Text"
+    },
+    {
+      "qid": 10425,
+      "condition": "V"
+    },
+    {
+      "qid": 10425,
+      "condition": "N"
+    },
+    {
+      "qid": 10224,
+      "condition": "Text"
+    },
+    {
+      "qid": 10224,
+      "condition": "N"
+    },
+    {
+      "qid": 10224,
+      "condition": "V"
+    },
+    {
+      "qid": 10224,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10865,
+      "condition": "Text"
+    },
+    {
+      "qid": 10865,
+      "condition": "N"
+    },
+    {
+      "qid": 10865,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10865,
+      "condition": "V"
+    },
+    {
+      "qid": 10839,
+      "condition": "Text"
+    },
+    {
+      "qid": 10839,
+      "condition": "V"
+    },
+    {
+      "qid": 10839,
+      "condition": "N"
+    },
+    {
+      "qid": 10839,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10336,
+      "condition": "Text"
+    },
+    {
+      "qid": 10336,
+      "condition": "V"
+    },
+    {
+      "qid": 10336,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10336,
+      "condition": "N"
+    },
+    {
+      "qid": 10585,
+      "condition": "Text"
+    },
+    {
+      "qid": 10585,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10585,
+      "condition": "N"
+    },
+    {
+      "qid": 10585,
+      "condition": "V"
+    },
+    {
+      "qid": 10103,
+      "condition": "Text"
+    },
+    {
+      "qid": 10103,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10103,
+      "condition": "V"
+    },
+    {
+      "qid": 10103,
+      "condition": "N"
+    },
+    {
+      "qid": 10062,
+      "condition": "N"
+    },
+    {
+      "qid": 10062,
+      "condition": "V"
+    },
+    {
+      "qid": 10062,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10062,
+      "condition": "Text"
+    },
+    {
+      "qid": 10442,
+      "condition": "N"
+    },
+    {
+      "qid": 10442,
+      "condition": "V"
+    },
+    {
+      "qid": 10442,
+      "condition": "Text"
+    },
+    {
+      "qid": 10442,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10212,
+      "condition": "N"
+    },
+    {
+      "qid": 10212,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10212,
+      "condition": "V"
+    },
+    {
+      "qid": 10212,
+      "condition": "Text"
+    },
+    {
+      "qid": 10124,
+      "condition": "N"
+    },
+    {
+      "qid": 10124,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10124,
+      "condition": "Text"
+    },
+    {
+      "qid": 10124,
+      "condition": "V"
+    },
+    {
+      "qid": 10800,
+      "condition": "N"
+    },
+    {
+      "qid": 10800,
+      "condition": "Text"
+    },
+    {
+      "qid": 10800,
+      "condition": "V"
+    },
+    {
+      "qid": 10800,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10822,
+      "condition": "N"
+    },
+    {
+      "qid": 10822,
+      "condition": "Text"
+    },
+    {
+      "qid": 10822,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10822,
+      "condition": "V"
+    },
+    {
+      "qid": 10519,
+      "condition": "V"
+    },
+    {
+      "qid": 10519,
+      "condition": "N"
+    },
+    {
+      "qid": 10519,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10519,
+      "condition": "Text"
+    },
+    {
+      "qid": 9922,
+      "condition": "V"
+    },
+    {
+      "qid": 9922,
+      "condition": "N"
+    },
+    {
+      "qid": 9922,
+      "condition": "Text"
+    },
+    {
+      "qid": 9922,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9888,
+      "condition": "V"
+    },
+    {
+      "qid": 9888,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9888,
+      "condition": "N"
+    },
+    {
+      "qid": 9888,
+      "condition": "Text"
+    },
+    {
+      "qid": 10659,
+      "condition": "V"
+    },
+    {
+      "qid": 10659,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10659,
+      "condition": "Text"
+    },
+    {
+      "qid": 10659,
+      "condition": "N"
+    },
+    {
+      "qid": 10787,
+      "condition": "V"
+    },
+    {
+      "qid": 10787,
+      "condition": "Text"
+    },
+    {
+      "qid": 10787,
+      "condition": "N"
+    },
+    {
+      "qid": 10787,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10495,
+      "condition": "V"
+    },
+    {
+      "qid": 10495,
+      "condition": "Text"
+    },
+    {
+      "qid": 10495,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10495,
+      "condition": "N"
+    },
+    {
+      "qid": 10597,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10597,
+      "condition": "N"
+    },
+    {
+      "qid": 10597,
+      "condition": "V"
+    },
+    {
+      "qid": 10597,
+      "condition": "Text"
+    },
+    {
+      "qid": 10813,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10813,
+      "condition": "N"
+    },
+    {
+      "qid": 10813,
+      "condition": "Text"
+    },
+    {
+      "qid": 10813,
+      "condition": "V"
+    },
+    {
+      "qid": 9871,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9871,
+      "condition": "V"
+    },
+    {
+      "qid": 9871,
+      "condition": "N"
+    },
+    {
+      "qid": 9871,
+      "condition": "Text"
+    },
+    {
+      "qid": 10164,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10164,
+      "condition": "V"
+    },
+    {
+      "qid": 10164,
+      "condition": "Text"
+    },
+    {
+      "qid": 10164,
+      "condition": "N"
+    },
+    {
+      "qid": 9938,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9938,
+      "condition": "Text"
+    },
+    {
+      "qid": 9938,
+      "condition": "N"
+    },
+    {
+      "qid": 9938,
+      "condition": "V"
+    },
+    {
+      "qid": 10483,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10483,
+      "condition": "Text"
+    },
+    {
+      "qid": 10483,
+      "condition": "V"
+    },
+    {
+      "qid": 10483,
+      "condition": "N"
+    },
+    {
+      "qid": 10863,
+      "condition": "Text"
+    },
+    {
+      "qid": 10863,
+      "condition": "N"
+    },
+    {
+      "qid": 10863,
+      "condition": "V"
+    },
+    {
+      "qid": 10863,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10712,
+      "condition": "Text"
+    },
+    {
+      "qid": 10712,
+      "condition": "N"
+    },
+    {
+      "qid": 10712,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10712,
+      "condition": "V"
+    },
+    {
+      "qid": 10097,
+      "condition": "Text"
+    },
+    {
+      "qid": 10097,
+      "condition": "V"
+    },
+    {
+      "qid": 10097,
+      "condition": "N"
+    },
+    {
+      "qid": 10097,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9977,
+      "condition": "Text"
+    },
+    {
+      "qid": 9977,
+      "condition": "V"
+    },
+    {
+      "qid": 9977,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9977,
+      "condition": "N"
+    },
+    {
+      "qid": 9891,
+      "condition": "Text"
+    },
+    {
+      "qid": 9891,
+      "condition": "Blank"
+    },
+    {
+      "qid": 9891,
+      "condition": "N"
+    },
+    {
+      "qid": 9891,
+      "condition": "V"
+    },
+    {
+      "qid": 10021,
+      "condition": "Text"
+    },
+    {
+      "qid": 10021,
+      "condition": "Blank"
+    },
+    {
+      "qid": 10021,
+      "condition": "V"
+    },
+    {
+      "qid": 10021,
+      "condition": "N"
+    }
+  ],
+  "training_and_validation_image_ids_disjoint": true,
+  "test_annotation_opened": false
+}

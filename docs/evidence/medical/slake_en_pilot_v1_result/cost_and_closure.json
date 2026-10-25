@@ -1,0 +1,38 @@
+{
+  "initial_source_attempt": {
+    "start_unix": 1792928737.6170578,
+    "end_unix": 1792928897.0639706,
+    "wall_seconds": 159.44691276550293,
+    "generation_calls": 450,
+    "validation_calls": 0,
+    "exit_code": 1,
+    "primary_failure": "transport role header was not removed by the source-answer scorer"
+  },
+  "validation_only_recovery": {
+    "start_unix": 1792929282.0168622,
+    "end_unix": 1792929441.977787,
+    "wall_seconds": 159.9609248638153,
+    "generation_calls": 384,
+    "exit_code": 0
+  },
+  "generation_calls_total": 834,
+  "source_replays": 0,
+  "feature_replays": 0,
+  "returned_token_ids_total_including_chat_markers": 6293,
+  "original_preparation_start_unix": 1792927814.8599694,
+  "preparation_to_final_exit_seconds": 1627.1178176403046,
+  "summed_supervisor_wall_seconds_not_gpu_busy_time": 319.40783762931824,
+  "completed_before_original_deadline": true,
+  "deadline_unix": 1792931414.8599694,
+  "remaining_owned_non_zombie_processes": 0,
+  "optimizer_steps": 0,
+  "base_or_historical_weights_modified": false,
+  "original_dataset_modified": false,
+  "four_root_baseline_bytes": 154305282048,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "usage_after_primary_export_bytes": 154437095424,
+  "incremental_after_primary_export_bytes": 131813376,
+  "closure_measured_unix": 1792929631.0510085,
+  "small_final_closure_metadata_written_after_measurement": true
+}
