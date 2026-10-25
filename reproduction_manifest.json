@@ -2167,10 +2167,10 @@
     "original_campaign_deadline_unix": 1792899507
   },
   "paper_reproduction_reset_20261025": {
-    "status": "OFFICIAL256_RELEASED_MODEL_CHECK_RUNNING",
+    "status": "OFFICIAL256_EVAL_ASYNC_OBSERVER_REPAIRED_REINITIALIZING",
     "report": "reports/32_paper_reproduction_reset.md",
     "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-    "clean_execution_source_commit": "b856d7ae941d2df5abf10d3b7efdd0943093d863",
+    "clean_execution_source_commit": "d7652143f446c7445d78855163fb7eeb9fd13757",
     "deleted_unneeded_allocated_bytes": 40037646336,
     "after_cleanup_four_root_bytes": 44332302336,
     "old_smoke_checkpoint_weights_retired": true,
@@ -2178,8 +2178,11 @@
     "evaluation_episodes": 256,
     "new_model_calls_at_preregistration": 0,
     "full_training_reproduced": false,
-    "supervisor_pid": 2537307,
-    "supervisor_start_unix": 1792901346.9373066,
-    "deadline_unix": 1792910960.558764
+    "supervisor_pid": 2589775,
+    "supervisor_start_unix": 1792902037.3204908,
+    "deadline_unix": 1792910960.558764,
+    "initialization_attempts": 2,
+    "initialization_failure_task_dispatches": 0,
+    "initialization_failure_audit": "docs/evidence/reproduction/reset_20261025/initialization_failure_audit.json"
   }
 }

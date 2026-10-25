@@ -1,3 +1,15 @@
+Official256 evaluation: first initialization failed before task dispatch because the observer inherited the synchronous worker; the released async worker is restored, original failure retained, and one repair is initializing under the same deadline. No performance result yet. See [report32](reports/32_paper_reproduction_reset.md).
+
+按用户最新优先级回到官方论文/发布代码复现：已清理40.04GB退休权重，独立干净官方树冻结完整256图发布模型核对。此前方法诊断不作为原论文主结果复现。见[32](reports/32_paper_reproduction_reset.md)。
+
+研究交接31：工程运行/推理恢复可用，稳定参数学习收益未建立。所有候选按原门关闭，现无待续跑GPU；后续先取得不同机制的数据/技能支持证据。见[交接报告](reports/31_research_handoff.md)。
+
+动态检索CPU筛查30：全40局/132真实回合，long0/8新增有效命中机会，门未通过；0模型/环境操作，不启动该候选GPU。见[报告30](reports/30_turn_retrieval_cpu_screen.md)。
+
+课程对照29：40局采集后发现意外2次蒸馏，程序退出；0训练/Dev，long成功0/8也不满足预定正反馈条件。本候选关闭。见[报告29](reports/29_curriculum_collection_failure.md)。
+
+输入保存CPU验证完成（06:26）：C32实际容器290.59MB→私有gzip1 27.54MB，基本多模态读取通过，未做全文件字节核验。新的起点支持课程对照已beforecall冻结40条bank/40张Dev及共同24条位置，尚无模型结果。见[报告27](reports/27_input_container_feasibility.md)与[冻结协议28](reports/28_support_matched_curriculum.md)。
+
 自然保持CPU筛查完成（2026-10-25）：原C32起点BFS均≤3，新自然Dev有9/16为4–6；唯一自然退步为BFS4，但初始动作正确，不能据此建立原因。微型fixture显示同参考KL/EWC首梯度为0，首步Adam的缩放效应取决于epsilon区域。未启动GPU；新课程对照仅设计，输入保存尚有容量阻塞。见[报告26](reports/26_retention_cpu_screen.md)。
 
 答案区域损失分子试验完成（2026-10-25）：条件成功/质量b0 4/16→A 7/16，但其他自然2/16→1/16、hole5→6；A相对全生成Z条件成功仅净增1。冻结投入门失败，关闭当前协议，不追加mask/LR/seed搜索。96局/367调用、一个实际actor step，保留故障、换实例carry和私有恢复证明。见[报告25](reports/25_answer_region_step.md)。
@@ -31,7 +43,7 @@
 - [本地评估](reports/01_local_evaluation.md)
 - [复现清单](reproduction_manifest.json)
 
-仅使用gpu-host物理GPU3/4/5，最多3卡。当前12小时自主窗口截止2026-10-25 11:38:27，累计新增严格<50GB，另保留项目85GB保守停止线；旧起点与截止仅作历史。唯一30分钟监测为viskill-12。禁止自动300-step训练，医学迁移仍仅设计；显式修复、算法变体与原始失败分开记录。
+仅使用GPU-server物理GPU3/4/5，最多3卡。当前12小时自主窗口截止2026-10-25 11:38:27，累计新增严格<50GB，另保留项目85GB保守停止线；旧起点与截止仅作历史。唯一30分钟监测为viskill-12。禁止自动300-step训练，医学迁移仍仅设计；显式修复、算法变体与原始失败分开记录。
 
 公开源码快照：[ViSkill-local-repro](https://github.com/DLwbm123/ViSkill-local-repro)。公开交付当前按用户要求更新完整A/B结果；发布commit以交付回执为准。不表示原论文复现成功。
 

@@ -1,6 +1,6 @@
 # 回到官方方法复现：清理旧权重，冻结官方256图发布模型核对
 
-用户最新优先级是先较准确复现原论文，并明确允许删除不需要的大文件。已读用户提供的Pro分析（分享链接不随公开报告发布）：其中对结果边界、行为概率、精确输入和故障成本的提醒保留；轨迹记忆、监督正对照等属于新方法研究，当前不启动。旧缩减诊断结论不作为原论文性能复现失败的证据。
+用户最新优先级是先较准确复现原论文，并明确允许删除不需要的大文件。已读用户提供的分析：其中对结果边界、行为概率、精确输入和故障成本的提醒保留；轨迹记忆、监督正对照等属于新方法研究，当前不启动。旧缩减诊断结论不作为原论文性能复现失败的证据。
 
 核对来源：[论文v1](https://arxiv.org/html/2610.12403v1)、[官方代码](https://github.com/ZJU-REAL/ViSkill/tree/7acaff880871b8d898d91c515c151080eabcba20)、[发布模型说明](https://huggingface.co/hongxingli/ViSkill-FrozenLake/blob/edafb2b71f73afb1c35b82d264346c2ae2b5981e/README.md)。
 
@@ -46,3 +46,15 @@ CPU已通过：实际Hydra配置、官方10000/256 seed全集、模块均来自�
 ## 启动回执（尚无性能结果）
 
 12:09:06已启动独立supervisor2537307，原14:49:20含准备截止不变。CPU/原设置检查通过后，使用干净执行提交b856d7ae941d2df5abf10d3b7efdd0943093d863；新增明确server context9000与官方wrapper的5000+4000上限相同，未改请求长度。初始GPU3/5剩余69759/66207MiB，四根占用44,355,239,936 bytes，写停45,232,302,336。首次检查进程存活、日志可读、无立即失败，实际加载官方r0四个shards，24个own进程argv违规0。该观察只确认加载阶段健康，不是256图完成或成功率。见[启动回执](../docs/evidence/reproduction/reset_20261025/released_frozenlake_eval_v1_public_start.json)。
+
+
+## 初始化失败与一次调用前修复
+
+首次worker于12:11:58退出，错误为`ActorHandle has no attribute sleep`。问题来自新增观察器错误继承了同步ActorRolloutRefWorker，而官方async配置选择AsyncActorRolloutRefWorker。这是本次实现错误；先前CPU检查只覆盖Worker MRO，未覆盖异步RPC，故未提前发现。模型权重实际加载成功，但尚未进入evaluation、没有任务dispatch、episode、自蒸馏或optimizer更新；GPU初始化成本不为零，不能记成零计算或论文性能失败。
+
+原始输出目录、完整日志和退出回执保留。已确认无本次残留活动进程，CPU检查实际配置async、继承官方AsyncActorRolloutRefWorker、sleep/wake_up/generate接口及Ray Worker MRO全部通过。只允许一次任务调用前修复；原准备起点、14:49:20截止、总存储口径及完整256图设置不变。后续再失败则保留证据关闭，不自动重放。见[失败与修复审计](../docs/evidence/reproduction/reset_20261025/initialization_failure_audit.json)。
+
+12:20:37已在同一原钟下启动第2次初始化，执行代码冻结d7652143f446c7445d78855163fb7eeb9fd13757。启动检查确认官方异步sleep/wake_up/generate接口已实际绑定，24个own进程命令行违规0；尚无256图性能结论。见[第2次启动回执](../docs/evidence/reproduction/reset_20261025/released_frozenlake_eval_v1_retry_public_start.json)。此处补充保留前述初始启动事实，不覆盖原失败。
+
+
+结果汇总器另完成一次256条纯合成CPU fixture，覆盖比例计算、完整请求导出、失败成本合并和token剥离；0模型/环境/optimizer调用，不计入真实性能分母。

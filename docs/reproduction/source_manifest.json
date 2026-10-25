@@ -13,7 +13,8 @@
     "vagen/released_eval_observer.py",
     "configs/reproduction/observed_agent.yaml",
     "configs/reproduction/released_frozenlake_eval_v1.json",
-    "tests/test_frozenlake_lifecycle.py"
+    "tests/test_frozenlake_lifecycle.py",
+    "scripts/close_released_eval.py"
   ],
   "not_included": [
     "directional contract",
@@ -23,5 +24,6 @@
     "zero value-head initialization",
     "fixed5-card curriculum"
   ],
-  "source_distribution": "Apply patch and copy the listed execution files into the pinned official checkout. Do not treat the historical modified reproduction tree as the clean formal source."
+  "source_distribution": "Apply patch and copy the listed execution files into the pinned official checkout. Do not treat the historical modified reproduction tree as the clean formal source.",
+  "observer_initialization_repair": "Use the released AsyncActorRolloutRefWorker selected by the official async configuration; first synchronous observer failed before task dispatch. No algorithm change."
 }

@@ -5,7 +5,7 @@ import numpy as np
 from vagen.agent_loop.gym_agent_loop_skill import GymAgentLoop
 from vagen.ray_trainer_skill import RayPPOTrainerSkill
 from vagen.main_ppo_skill import TaskRunner
-from verl.workers.fsdp_workers import ActorRolloutRefWorker
+from verl.workers.fsdp_workers import AsyncActorRolloutRefWorker
 ROOT=Path(os.environ['TASK_ROOT']);OUT=ROOT/'artifacts/reproduction/released_frozenlake_eval_v1'
 def plain(value):
     if isinstance(value,dict):return {str(k):plain(v) for k,v in value.items()}
@@ -44,7 +44,7 @@ class ObservedGymAgentLoop(GymAgentLoop):
         self.observed_kind='distill'
         try:return await super()._self_distill(*args,**kwargs)
         finally:self.observed_kind='rollout'
-class ObserverActor(ActorRolloutRefWorker):
+class ObserverActor(AsyncActorRolloutRefWorker):
     def _build_model_optimizer(self,*args,**kwargs):
         from transformers import AutoModelForVision2Seq
         cls=AutoModelForVision2Seq;descriptor=cls.__dict__.get('from_pretrained');original=cls.from_pretrained;calls=[]

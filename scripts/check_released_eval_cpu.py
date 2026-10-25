@@ -21,6 +21,8 @@ assert len(train)==10000 and len(val)==256 and {r['seed'] for r in train.items}=
 assert cfg.actor_rollout_ref.rollout.agent.num_workers==8 and cfg.data.val_batch_size is None
 assert cfg.actor_rollout_ref.rollout.val_kwargs.temperature==0 and not cfg.actor_rollout_ref.rollout.val_kwargs.do_sample
 assert _determine_fsdp_megatron_base_class([ObserverActor.__mro__]) is Worker
+assert cfg.actor_rollout_ref.rollout.mode == "async"
+assert all(callable(getattr(ObserverActor, name, None)) for name in ["sleep", "wake_up", "generate"])
 skill_cfg=OmegaConf.to_container(cfg.skill_system,resolve=True);skill_cfg['library']['path']=str(ROOT/'models/r0/skill_library');provider=get_skill_provider(skill_cfg);provider.init_env_type('frozenlake');assert len(provider.library)>0
 assert not hasattr(provider,'contract_guard') and not hasattr(provider,'distill_representation')
 async def recorder_check(folder):

@@ -218,15 +218,18 @@
     "private_inputs_or_weights_exported": false
   },
   "paper_reproduction_reset_20261025": {
-    "source_commit": "4b4693bb3bdf749015032bc0e569742f38340fa3",
-    "clean_execution_source_commit": "b856d7ae941d2df5abf10d3b7efdd0943093d863",
+    "source_commit": "09bcda5f338112c7a92f480df713dec952dd0e98",
+    "clean_execution_source_commit": "d7652143f446c7445d78855163fb7eeb9fd13757",
     "report": "reports/32_paper_reproduction_reset.md",
-    "status": "OFFICIAL256_EVAL_RUNNING_INITIAL_LOADING_HEALTHY",
+    "status": "INITIALIZATION_FAILURE_RETAINED_ONE_ASYNC_REPAIR_RUNNING",
     "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
     "authorized_retired_weight_allocated_bytes_removed": 40037646336,
     "old_smoke_weight_restore_retired": true,
     "new_model_calls_at_preregistration": 0,
     "private_inputs_or_weights_exported": false,
-    "new_optimizer_steps": 0
+    "new_optimizer_steps": 0,
+    "initialization_failure_task_dispatches": 0,
+    "initialization_attempts": 2,
+    "deadline_unix": 1792910960.558764
   }
 }

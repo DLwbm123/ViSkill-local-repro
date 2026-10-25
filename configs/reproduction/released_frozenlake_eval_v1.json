@@ -48,5 +48,14 @@
   "release_variant_limitation": "Model card does not specify cold-start variant or training-seed provenance; compare published0.84 as reference, not guaranteed exact checkpoint correspondence.",
   "next_training": "Restore released officialbatch128/mini32/self-distill/skill reward/fullgenerated PPO and original train/val sets. Full300-step feasibility requires actual throughput and a recoverable checkpoint budget below50GB/24h; not automatically promised or launched by this evaluation.",
   "CPU_check_completed_unix": 1792901057.9072654,
-  "released_library_entries": 265
+  "released_library_entries": 265,
+  "initialization_repair": {
+    "attempt": 2,
+    "maximum_attempts": 2,
+    "reason": "Observer incorrectly inherited synchronous worker while released rollout mode is async; restore released AsyncActorRolloutRefWorker base.",
+    "original_attempt_task_dispatches": 0,
+    "original_attempt_evaluation_started": false,
+    "original_attempt_exit_code": 1,
+    "retry_policy": "One pre-business-call repair only; original preparation/deadline/storage unchanged; original failure retained. Any further failure closes this attempt without automatic replay."
+  }
 }

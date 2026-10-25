@@ -1,0 +1,24 @@
+{
+  "status": "PRE_DISPATCH_FAILURE_RETAINED_AND_CPU_REPAIR_PASS",
+  "checked_unix": 1792901984.580057,
+  "original_exit": {
+    "exit_code": 1,
+    "reason": "RuntimeError('worker exit1; preserve actual calls, no replay')",
+    "end_unix": 1792901518.223764,
+    "deadline_unix": 1792910960.558764,
+    "peak_four_root_bytes": 44365778944,
+    "command_line_violations": []
+  },
+  "original_task_dispatches": 0,
+  "original_episodes": 0,
+  "original_evaluation_started": false,
+  "model_initialization_was_nonzero_GPU_cost": true,
+  "live_owned_non_zombie_residuals": [],
+  "original_error": "ActorHandle has no attribute sleep: observer inherited sync worker instead of released async worker",
+  "repair": "Observer inherits released AsyncActorRolloutRefWorker; actual configured mode async and sleep/wake_up/generate callable; Ray MRO correct",
+  "new_CPU_model_calls": 0,
+  "new_CPU_env_steps": 0,
+  "new_optimizer_steps": 0,
+  "deadline_unix": 1792910960.558764,
+  "attempt2_maximum_attempts": 2
+}
