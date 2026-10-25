@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "e63b4a69e759b6b2a0468f0a9a2b8cf949597e71",
+  "local_source_commit": "f1b1d85abf788d44d912e4a020ed3b5b4037794f",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "ACTIVE_MEDICAL_WINDOW_SUPPORT_ACTIVATION",
+  "status": "ACTIVE_MEDICAL_WINDOW_NATURAL_SCOPE",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -203,6 +203,28 @@
         37
       ],
       "retention_questions": 69
+    },
+    "medical_task_support_activation": {
+      "status": "COMPLETE_SUPPORT_ACTIVATION_GATE_PASS",
+      "new_generation_calls": 828,
+      "new_reader_updates": 0,
+      "router_LBFGS_iterations": 25,
+      "primary_questions": 69,
+      "base_primary_correct": 30,
+      "R_primary_correct_by_adapter_seed": [
+        49,
+        45
+      ],
+      "primary_mean_gain": 0.2463768115942029,
+      "retention_questions": 69,
+      "base_retention_correct": 45,
+      "R_retention_correct_by_adapter_seed": [
+        45,
+        45
+      ],
+      "weak_scope_precision": 1.0,
+      "weak_scope_recall": 0.9710144927536232,
+      "external_policy_fallback_not_parameter_retention": true
     }
   },
   "latest_update_scope": "Final balanced-source feasibility stop: source/protocol, all 84 numeric returns, balanced admission and input-only test coverage checks, costs and warnings. No test QA outputs, gold, raw images, machine identifiers or tokens.",
@@ -605,7 +627,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "task_supported_adapter_v1",
+    "next_experiment": "natural_scope_validation_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   }

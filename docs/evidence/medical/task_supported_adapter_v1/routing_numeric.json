@@ -1,0 +1,1244 @@
+[
+  {
+    "question_group": 0,
+    "image_group": 0,
+    "weak_support_label": false,
+    "probability": 0.045967388596586854,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 1,
+    "image_group": 1,
+    "weak_support_label": false,
+    "probability": 0.019405168660601907,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 2,
+    "image_group": 2,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 3,
+    "image_group": 3,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 4,
+    "image_group": 4,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 5,
+    "image_group": 5,
+    "weak_support_label": false,
+    "probability": 0.03468759505000847,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 6,
+    "image_group": 6,
+    "weak_support_label": false,
+    "probability": 0.01665740825752564,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 7,
+    "image_group": 7,
+    "weak_support_label": false,
+    "probability": 0.015759586292957296,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 8,
+    "image_group": 8,
+    "weak_support_label": false,
+    "probability": 0.01607011947215411,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 9,
+    "image_group": 9,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 10,
+    "image_group": 10,
+    "weak_support_label": false,
+    "probability": 0.015759586292957296,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 11,
+    "image_group": 11,
+    "weak_support_label": false,
+    "probability": 0.0266708162981973,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 12,
+    "image_group": 12,
+    "weak_support_label": false,
+    "probability": 0.01665740825752564,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 13,
+    "image_group": 13,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 14,
+    "image_group": 14,
+    "weak_support_label": false,
+    "probability": 0.04408658490560657,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 15,
+    "image_group": 15,
+    "weak_support_label": false,
+    "probability": 0.04033738538772342,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 16,
+    "image_group": 16,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 17,
+    "image_group": 17,
+    "weak_support_label": false,
+    "probability": 0.01607011947215411,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 18,
+    "image_group": 18,
+    "weak_support_label": false,
+    "probability": 0.015759586292957296,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 19,
+    "image_group": 19,
+    "weak_support_label": false,
+    "probability": 0.11956777780832091,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 20,
+    "image_group": 20,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 21,
+    "image_group": 21,
+    "weak_support_label": false,
+    "probability": 0.04033738538772342,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 22,
+    "image_group": 22,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 23,
+    "image_group": 23,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 24,
+    "image_group": 24,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 25,
+    "image_group": 25,
+    "weak_support_label": false,
+    "probability": 0.14785221744142835,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 26,
+    "image_group": 26,
+    "weak_support_label": false,
+    "probability": 0.14785221744142835,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 27,
+    "image_group": 27,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 28,
+    "image_group": 28,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 29,
+    "image_group": 29,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 30,
+    "image_group": 30,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 31,
+    "image_group": 31,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 32,
+    "image_group": 32,
+    "weak_support_label": true,
+    "probability": 0.9721654285249556,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 33,
+    "image_group": 33,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 34,
+    "image_group": 34,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 35,
+    "image_group": 35,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 36,
+    "image_group": 36,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 37,
+    "image_group": 37,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 38,
+    "image_group": 38,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 39,
+    "image_group": 39,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 40,
+    "image_group": 40,
+    "weak_support_label": false,
+    "probability": 0.021835962826242516,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 41,
+    "image_group": 41,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 42,
+    "image_group": 42,
+    "weak_support_label": false,
+    "probability": 0.04269833740002253,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 43,
+    "image_group": 43,
+    "weak_support_label": false,
+    "probability": 0.02625056866913465,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 44,
+    "image_group": 44,
+    "weak_support_label": false,
+    "probability": 0.04408658490560657,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 45,
+    "image_group": 45,
+    "weak_support_label": false,
+    "probability": 0.024165294008305895,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 46,
+    "image_group": 46,
+    "weak_support_label": true,
+    "probability": 0.9578955117498893,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 47,
+    "image_group": 47,
+    "weak_support_label": false,
+    "probability": 0.019405168660601907,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 48,
+    "image_group": 48,
+    "weak_support_label": false,
+    "probability": 0.031264323578701146,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 49,
+    "image_group": 49,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 50,
+    "image_group": 50,
+    "weak_support_label": true,
+    "probability": 0.9667319160706965,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 51,
+    "image_group": 51,
+    "weak_support_label": false,
+    "probability": 0.04408658490560657,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 52,
+    "image_group": 52,
+    "weak_support_label": true,
+    "probability": 0.6625709937813947,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 53,
+    "image_group": 53,
+    "weak_support_label": false,
+    "probability": 0.03097089874724754,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 54,
+    "image_group": 54,
+    "weak_support_label": false,
+    "probability": 0.03468759505000847,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 55,
+    "image_group": 55,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 56,
+    "image_group": 56,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 57,
+    "image_group": 57,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 58,
+    "image_group": 58,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 59,
+    "image_group": 59,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 60,
+    "image_group": 60,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 61,
+    "image_group": 61,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 62,
+    "image_group": 62,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 63,
+    "image_group": 63,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 64,
+    "image_group": 64,
+    "weak_support_label": true,
+    "probability": 0.9636534696469148,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 65,
+    "image_group": 65,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 66,
+    "image_group": 66,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 67,
+    "image_group": 67,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 68,
+    "image_group": 68,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 69,
+    "image_group": 69,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 70,
+    "image_group": 70,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 71,
+    "image_group": 71,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 72,
+    "image_group": 72,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 73,
+    "image_group": 73,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 74,
+    "image_group": 74,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 75,
+    "image_group": 75,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 76,
+    "image_group": 76,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 77,
+    "image_group": 77,
+    "weak_support_label": true,
+    "probability": 0.9636534696469148,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 78,
+    "image_group": 78,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 79,
+    "image_group": 79,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 80,
+    "image_group": 80,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 81,
+    "image_group": 81,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 82,
+    "image_group": 82,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 83,
+    "image_group": 83,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 84,
+    "image_group": 84,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 85,
+    "image_group": 85,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 86,
+    "image_group": 86,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 87,
+    "image_group": 87,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 88,
+    "image_group": 88,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 89,
+    "image_group": 89,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 90,
+    "image_group": 90,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 91,
+    "image_group": 91,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 92,
+    "image_group": 92,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 93,
+    "image_group": 93,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 94,
+    "image_group": 94,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 95,
+    "image_group": 95,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 96,
+    "image_group": 96,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 97,
+    "image_group": 97,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 98,
+    "image_group": 98,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 99,
+    "image_group": 99,
+    "weak_support_label": true,
+    "probability": 0.9810191733825598,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 100,
+    "image_group": 100,
+    "weak_support_label": true,
+    "probability": 0.9811214604786744,
+    "admit": true,
+    "sham_admit": false,
+    "rule_admit": true
+  },
+  {
+    "question_group": 101,
+    "image_group": 101,
+    "weak_support_label": false,
+    "probability": 0.02963572547302714,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 102,
+    "image_group": 102,
+    "weak_support_label": false,
+    "probability": 0.029554392732584412,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 103,
+    "image_group": 103,
+    "weak_support_label": false,
+    "probability": 0.01607011947215411,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 104,
+    "image_group": 104,
+    "weak_support_label": false,
+    "probability": 0.029873289193123393,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 105,
+    "image_group": 105,
+    "weak_support_label": false,
+    "probability": 0.023170616387887227,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 106,
+    "image_group": 106,
+    "weak_support_label": false,
+    "probability": 0.04033738538772342,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 107,
+    "image_group": 107,
+    "weak_support_label": false,
+    "probability": 0.027398600801278854,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 108,
+    "image_group": 108,
+    "weak_support_label": false,
+    "probability": 0.02339085387485729,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 109,
+    "image_group": 109,
+    "weak_support_label": false,
+    "probability": 0.02907112222967163,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 110,
+    "image_group": 110,
+    "weak_support_label": false,
+    "probability": 0.042975364694115,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 111,
+    "image_group": 111,
+    "weak_support_label": false,
+    "probability": 0.8028535077002716,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 112,
+    "image_group": 112,
+    "weak_support_label": false,
+    "probability": 0.037003872586762736,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 113,
+    "image_group": 113,
+    "weak_support_label": false,
+    "probability": 0.023170616387887227,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 114,
+    "image_group": 114,
+    "weak_support_label": false,
+    "probability": 0.022816707873811144,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 115,
+    "image_group": 115,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 116,
+    "image_group": 116,
+    "weak_support_label": false,
+    "probability": 0.027209969207653055,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 117,
+    "image_group": 117,
+    "weak_support_label": false,
+    "probability": 0.04033738538772342,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 118,
+    "image_group": 118,
+    "weak_support_label": false,
+    "probability": 0.03975842086374953,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 119,
+    "image_group": 119,
+    "weak_support_label": false,
+    "probability": 0.023878860219809776,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 120,
+    "image_group": 120,
+    "weak_support_label": true,
+    "probability": 0.9544969692956938,
+    "admit": true,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 121,
+    "image_group": 121,
+    "weak_support_label": false,
+    "probability": 0.04408658490560657,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 122,
+    "image_group": 122,
+    "weak_support_label": false,
+    "probability": 0.02960390089115638,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 123,
+    "image_group": 123,
+    "weak_support_label": false,
+    "probability": 0.02963572547302714,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 124,
+    "image_group": 124,
+    "weak_support_label": false,
+    "probability": 0.03136515246275889,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 125,
+    "image_group": 125,
+    "weak_support_label": false,
+    "probability": 0.02963572547302714,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 126,
+    "image_group": 126,
+    "weak_support_label": false,
+    "probability": 0.02963572547302714,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 127,
+    "image_group": 127,
+    "weak_support_label": false,
+    "probability": 0.049574182372243245,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 128,
+    "image_group": 128,
+    "weak_support_label": false,
+    "probability": 0.027398600801278854,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 129,
+    "image_group": 129,
+    "weak_support_label": false,
+    "probability": 0.023422850946789527,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 130,
+    "image_group": 130,
+    "weak_support_label": false,
+    "probability": 0.010508969523526368,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 131,
+    "image_group": 131,
+    "weak_support_label": false,
+    "probability": 0.04033738538772342,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 132,
+    "image_group": 132,
+    "weak_support_label": false,
+    "probability": 0.01607011947215411,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 133,
+    "image_group": 133,
+    "weak_support_label": false,
+    "probability": 0.02963572547302714,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 134,
+    "image_group": 134,
+    "weak_support_label": false,
+    "probability": 0.04033738538772342,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": false
+  },
+  {
+    "question_group": 135,
+    "image_group": 135,
+    "weak_support_label": false,
+    "probability": 0.13343501941811467,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  },
+  {
+    "question_group": 136,
+    "image_group": 136,
+    "weak_support_label": true,
+    "probability": 0.30867252086324243,
+    "admit": false,
+    "sham_admit": true,
+    "rule_admit": true
+  },
+  {
+    "question_group": 137,
+    "image_group": 137,
+    "weak_support_label": false,
+    "probability": 0.01607011947215411,
+    "admit": false,
+    "sham_admit": false,
+    "rule_admit": false
+  }
+]

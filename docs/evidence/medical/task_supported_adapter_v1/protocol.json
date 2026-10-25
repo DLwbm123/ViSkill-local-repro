@@ -1,0 +1,38 @@
+{
+  "experiment": "task_supported_adapter_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792950622,
+  "cooperative_stop_unix": 1792957522,
+  "deadline_unix": 1792957822,
+  "four_root_baseline_bytes": 155891445760,
+  "write_stop_incremental_bytes": 1500000000,
+  "maximum_incremental_bytes": 2000000000,
+  "selection_seed": 20261101,
+  "adapter_seeds": [
+    42,
+    43
+  ],
+  "admission_threshold": 0.9,
+  "hypothesis": "Retain the global-image visual+KL component A as a prospectively tested method component after ROI recipe failure. Learn query intent admission on train-only questions so the frozen component is applied in its supported task-target scope, with base fallback outside. This is external policy retention, not proof of single-parameter nonforgetting or ROI efficacy.",
+  "component_selection": "A42/A43 from grounded_reader_anchor_v1 chosen using observed development evidence; no weight/epoch/module/lambda tuning or new reader updates. Selection is disclosed and requires new-to-update image/question development panels. Old ROI and language-adapter gates remain failed.",
+  "router_fit": "1569EnglishVQA questions on165official-train images previously used for reader supervision or teacher replay. Weak applicability labels derive solely from question text using frozen M0 task/target rules and task-target pairs present in100SFTexamples;124positives. No answer field in classifier fit records. Word uni/bigram TF-IDF(df>=2,max4096),all vocabulary and IDF fit only here; float64 linear logistic fullbatch CPU L-BFGS(lr1,maxiter100,maxeval150,strong_wolfe,tolgrad1e-8,tolchange1e-10),positiveweight1445/124,L2coef1/N,zero init;no search.",
+  "evaluation_panels": "Exclude all165reader-supervision/teacher images from primary, retention, and router fit evaluation. From remaining285official-train images take one fixed supported question on each of all69supported images; take one fixed unsupported question on69other images.138distinct images. Sampling seed20261101, independent of VQA correctness. Prior project inference/feature use and pretrained exposure may exist; these are new-to-current-update development panels, not official test or certified blind images. Conditional balanced panels are not natural benchmark prevalence.",
+  "policy": "R applies frozen A_seed if learned probability>=.90 else originalb0; question text only, no image modality metadata, query ROI, answer, QA-type metadata or correctness used for routing. S uses a fixed permutation of the exact admission flags across both panels preserving total adapter activation. U always applies A_seed. N always b0. Route and permutation sealed before new model generations.",
+  "evaluation": "New queries:69primary+69retention, each whole336 andblack336, threeweightsets b0/A42/A43.828actualgenerations,max900. Same HF/PEFT processor/greedy64output. R/S/always/base share exact generated branch records; do not count extra imaginary policy generations. Frozen original b0/A weights read-only, no generation of old panels.",
+  "formal_generation_calls": 828,
+  "maximum_generation_calls": 900,
+  "new_reader_optimizer_steps": 0,
+  "metric": "Original normalized exact match; average paired frozen-adapter seeds then image-cluster bootstrap10000 with selection_seed. Every improvement/harm, activation, scope error, blank behavior and cost retained. Router scope accuracy is against weak training rules, not clinical validity.",
+  "investment_gate": {
+    "R_minus_base_primary": ">=.10 mean;strictlypositive eachseed;95percent image-cluster lower>0",
+    "R_minus_sham_union": ">0 mean/everyseed;95percent lower>0",
+    "visual_specific_primary": "(R_N-R_Blank)-(base_N-base_Blank)>0 mean/everyseed;95percent lower>0",
+    "retention_R_minus_base": ">=0 mean/everyseed;95percent lower>=-.05;zero harmed retention questions in eachseed",
+    "scope_prediction": "heldout weak-label applicability precision>=.95 and recall>=.70"
+  },
+  "stops": "Do not tune threshold, vocabulary, regularization, fit pool, component choice or panels from heldout results. Failed gate closes this exact admission recipe. No alternative A/B/U or best-seed selection after outputs.",
+  "limits": "Observed development component selection; new questions/images are held out of current updates but not claimed clinically blind. Unknown patient independence. External base fallback does not prove the adapted parameters retain old capabilities. No visual-card, autonomous ROI, full ViSkill/PPO or clinical safety claim.",
+  "public_boundary": "Source/config/numeric counts/outcomes/report only. No medicalQA/gold/images/outputs/promptIDs/classifier vocabulary/weights/reader adapters/private paths/tokens.",
+  "reference_rule_policy": "Report the original question-only task-target support predicate as deterministic F control, already used for weak labels. It is not an oracle or independent clinical annotation. R superiority over F is not assumed; the need for learned admission remains unestablished. Do not promote F to the preregistered R main result after outputs."
+}

@@ -1,0 +1,15 @@
+{
+  "fit_questions": 1569,
+  "fit_images": 165,
+  "fit_positives": 124,
+  "features": 663,
+  "parameters": 664,
+  "LBFGS_iterations": 25,
+  "closure_evaluations": 26,
+  "initial_objective": 1.2767338125036591,
+  "final_objective": 0.192766025815744,
+  "finite_gradient": true,
+  "coefficient_square_norm": 342.11733389262776,
+  "evaluation_answers_used": false,
+  "completed_unix": 1792950995.5434847
+}

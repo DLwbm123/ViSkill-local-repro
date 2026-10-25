@@ -1,0 +1,21 @@
+{
+  "status": "CPU_READY",
+  "router_fit_questions": 1569,
+  "router_fit_images": 165,
+  "router_fit_positive": 124,
+  "primary_questions": 69,
+  "primary_images": 69,
+  "primary_tasks": {
+    "normality": 12,
+    "shape": 10,
+    "appearance": 47
+  },
+  "retention_questions": 69,
+  "retention_images": 69,
+  "all_evaluation_images_excluded_from_adapter_and_router_updates": true,
+  "fit_contains_no_answer_fields": true,
+  "matched_N_Blank_ids_grids": true,
+  "zero_vector_and_normalization_fixture": true,
+  "gpu_initialized": false,
+  "new_generation_calls": 828
+}
