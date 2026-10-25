@@ -1,0 +1,25 @@
+{
+  "status": "CPU_READY",
+  "training_candidates": 868,
+  "training_questions": 100,
+  "training_images": 81,
+  "training_templates": 95,
+  "training_modality": {
+    "CT": 86,
+    "MRI": 11,
+    "X-Ray": 3
+  },
+  "training_answer_classes": 28,
+  "new_validation_questions": 254,
+  "new_validation_images": 87,
+  "C_template_covered_validation": 251,
+  "changed_background_questions": 21,
+  "new_eval_questions_per_adapter": 275,
+  "before_I_generations": 1016,
+  "formal_new_generations": 3216,
+  "train_evaluation_image_disjoint": true,
+  "training_images_shared_with_prior_B_training": 22,
+  "N_B_equal_input_ids_grid": true,
+  "gpu_initialized": false,
+  "parent_completed_response_non_replay": true
+}
