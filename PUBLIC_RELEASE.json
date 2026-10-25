@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "8baab4175f98286ee8b7e0ca6539e9a4a173ca9e",
+  "local_source_commit": "63bffb926d30da90d3ac9cb16d3449ad1e67b1be",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "ACTIVE_MEDICAL_WINDOW_M1_FAILED_ISOLATED_RUNNING",
+  "status": "ACTIVE_MEDICAL_WINDOW_READER_LEARNING",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -138,6 +138,17 @@
       "D_correct": 55,
       "O_correct": 52,
       "W_correct": 52,
+      "executions_per_condition": 128,
+      "optimizer_steps": 0,
+      "test_annotation_opened": false
+    },
+    "medical_isolated_view": {
+      "status": "COMPLETE_LOCAL_VIEW_NOT_ESTABLISHED",
+      "calls": 512,
+      "N_correct": 58,
+      "O_correct": 62,
+      "W_correct": 38,
+      "B_correct": 36,
       "executions_per_condition": 128,
       "optimizer_steps": 0,
       "test_annotation_opened": false
@@ -543,8 +554,8 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "roi_mask_isolated_v1",
-    "next_experiment_status": "RUNNING_NOT_RESULT",
+    "next_experiment": "region_reader_learning_v1",
+    "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   }
 }

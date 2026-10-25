@@ -1,0 +1,11 @@
+{
+  "status": "CPU_READY",
+  "view_mode": "isolated",
+  "small_and_large_region_fixtures": true,
+  "matched_condition_prompts_ids_grids": true,
+  "current_full_pixels_identical": false,
+  "crop_pixels_are_raw_source_not_masks": true,
+  "gold_field_rejected": true,
+  "gpu_initialized": false,
+  "completed_unix": 1792942339.486288
+}

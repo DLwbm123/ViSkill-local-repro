@@ -1,0 +1,39 @@
+{
+  "experiment": "roi_mask_isolated_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792942285,
+  "cooperative_stop_unix": 1792949185,
+  "deadline_unix": 1792949485,
+  "four_root_baseline_bytes": 154735009792,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "selection_seed": 20261029,
+  "engine_seeds": [
+    42,
+    43
+  ],
+  "conditions": [
+    "N",
+    "O",
+    "W",
+    "B"
+  ],
+  "panel": "Use exactly the 64-image, one-question-per-image mask-grounded M0 panel. Question and anatomical target determine the mask; labels are never used to select region or model failures. Development panel includes train/validation, not a blind evaluation. Preserve stopped box M0 with 50 images separately.",
+  "data": "Existing SLAKE train/validation only. Author mask.txt exact anatomical grayscale codes with aligned dimensions; reject overlays, disease labels, ambiguous singular bilateral targets and invalid geometry. No test labels or images.",
+  "views": "Exactly one336x336 raw RGB canvas, equal text/prompt IDs/grids for all conditions. N full image, O anatomical bbox+15percent crop, W equal native size off-target crop, B black canvas. No masks, names, labels or prior case context. Same64 images/questions irrespective of prior correctness.",
+  "maximum_generation_calls": 550,
+  "formal_generation_calls": 512,
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 64
+  },
+  "maximum_image_pixels": 401408,
+  "metric": "Original normalized exact match. Primary O-N and O-D, paired image bootstrap10000 after averaging repeats. Two initializations are inference reproducibility, not independent training seeds. Report every failure, improvement, harm, target and task group.",
+  "investment_gate": "O-N and O-B each >=.10 with strictly positive image95percent bootstrap lower bounds and positive each repeat; O-W positive average/nonnegative each repeat; same-image stable gains over N and B across both repeats in at least two targets. Failure closes this isolated configuration; do not train a locator on a failed intervention.",
+  "optimizer_steps": 0,
+  "public_boundary": "Only protocol, source and numeric evidence; never raw medical QA/gold, masks/images/crops, raw responses, complete prompts, features, private paths or run tokens.",
+  "view_mode": "isolated",
+  "hypothesis": "M1 additional views may not control the answer. Test whether isolated target crops provide useful visual evidence once the full image is removed; the all-black image diagnoses nonvisual priors. This is not an autonomous locator or a clinical benchmark."
+}

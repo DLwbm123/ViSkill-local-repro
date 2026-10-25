@@ -1,0 +1,1 @@
+{"stage": "CPU_PREPARATION", "cause": "GPU visibility inherited from guard allowed fast processor to initialize CUDA; CPU-only assertion caught it", "completed_model_generations": 0, "retry": "Explicit CUDA_VISIBLE_DEVICES empty for CPU preparation only", "clock_reset": false}
