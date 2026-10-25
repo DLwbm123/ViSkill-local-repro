@@ -41,3 +41,8 @@
 CPU已通过：实际Hydra配置、官方10000/256 seed全集、模块均来自干净树、无原诊断扩展、记录器返回对象不变及调用前上限、正确Worker MRO、265张发布库、8环境生命周期。0模型调用，CPU fixture不混入256性能分母。见[CPU回执](../docs/evidence/reproduction/reset_20261025/cpu_check.json)。
 
 本文为调用前协议，尚无本次256图性能结果。后续只有实际COMPLETE/退出/全256结局齐备才汇总；不以模型初始化或工程检查替代复现结果。后继完整训练在发布模型核对之后推进，仍沿用同一唯一监测，不开展新的改进支线。
+
+
+## 启动回执（尚无性能结果）
+
+12:09:06已启动独立supervisor2537307，原14:49:20含准备截止不变。CPU/原设置检查通过后，使用干净执行提交b856d7ae941d2df5abf10d3b7efdd0943093d863；新增明确server context9000与官方wrapper的5000+4000上限相同，未改请求长度。初始GPU3/5剩余69759/66207MiB，四根占用44,355,239,936 bytes，写停45,232,302,336。首次检查进程存活、日志可读、无立即失败，实际加载官方r0四个shards，24个own进程argv违规0。该观察只确认加载阶段健康，不是256图完成或成功率。见[启动回执](../docs/evidence/reproduction/reset_20261025/released_frozenlake_eval_v1_public_start.json)。

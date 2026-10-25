@@ -19,7 +19,7 @@ def config():
     OmegaConf.set_struct(cfg,False);official=OmegaConf.to_container(cfg,resolve=True)
     cfg.trainer.logger=['console'];cfg.trainer.val_only=True;cfg.trainer.resume_mode='disable';cfg.trainer.save_freq=-1
     cfg.trainer.validation_data_dir=str(OUT/'validation');cfg.skill_system.library.path=str(OUT/'library')
-    cfg.actor_rollout_ref.rollout.engine_kwargs.sglang.update(attention_backend='triton',mm_attention_backend='sdpa',random_seed=42)
+    cfg.actor_rollout_ref.rollout.engine_kwargs.sglang.update(attention_backend='triton',mm_attention_backend='sdpa',random_seed=42,context_length=9000)
     cfg.actor_rollout_ref.rollout.agent.agent_loop_config_path=str(SRC/'configs/reproduction/observed_agent.yaml')
     cfg.algorithm.adv_estimator='grpo'  # No advantages or updates in val_only; omit the unused critic.
     cfg.ray_kwargs.ray_init.update(num_cpus=16,num_gpus=2,include_dashboard=False,_node_ip_address='127.0.0.1',_temp_dir='/data/tmp/z0/p0',object_store_memory=4294967296,runtime_env={})

@@ -2167,16 +2167,19 @@
     "original_campaign_deadline_unix": 1792899507
   },
   "paper_reproduction_reset_20261025": {
-    "status": "RELEASED_METHOD_EVAL_FROZEN_CPU_READY",
+    "status": "OFFICIAL256_RELEASED_MODEL_CHECK_RUNNING",
     "report": "reports/32_paper_reproduction_reset.md",
     "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-    "clean_execution_source_commit": "4039c7680cd9a2be16e6e2b5bf13e5433061f409",
+    "clean_execution_source_commit": "b856d7ae941d2df5abf10d3b7efdd0943093d863",
     "deleted_unneeded_allocated_bytes": 40037646336,
     "after_cleanup_four_root_bytes": 44332302336,
     "old_smoke_checkpoint_weights_retired": true,
     "official_model_and_library_preserved": true,
     "evaluation_episodes": 256,
     "new_model_calls_at_preregistration": 0,
-    "full_training_reproduced": false
+    "full_training_reproduced": false,
+    "supervisor_pid": 2537307,
+    "supervisor_start_unix": 1792901346.9373066,
+    "deadline_unix": 1792910960.558764
   }
 }

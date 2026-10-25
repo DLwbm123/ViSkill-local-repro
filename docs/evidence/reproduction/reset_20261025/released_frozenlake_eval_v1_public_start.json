@@ -1,0 +1,14 @@
+{
+  "supervisor_pid": 2537307,
+  "start_unix": 1792901346.9373066,
+  "preparation_started_unix": 1792900160.558764,
+  "deadline_unix": 1792910960.558764,
+  "initial_four_root_bytes": 44355239936,
+  "write_limit_bytes": 45232302336,
+  "initial_GPU_free_MiB": {
+    "3": 69759,
+    "5": 66207
+  },
+  "source_base_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "clean_execution_source_commit": "b856d7ae941d2df5abf10d3b7efdd0943093d863"
+}

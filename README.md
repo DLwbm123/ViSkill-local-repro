@@ -1,6 +1,6 @@
 # ViSkill local reproduction and audit
 
-Priority returns to faithful reproduction. A clean pinned official source tree and the full256 official FrozenLake validation maps are preregistered for the released model plus its original265-card library.40.04GB of explicitly authorized retired/redundant weights were removed; protected original/released models and all result evidence remain. No new model result at preregistration. See [report32](reports/32_paper_reproduction_reset.md).
+Priority returns to faithful reproduction. A clean pinned official source tree and the full256 official FrozenLake validation maps are preregistered for the released model plus its original265-card library.40.04GB of explicitly authorized retired/redundant weights were removed; protected original/released models and all result evidence remain. The official256 evaluation has started; initial checkpoint loading is healthy, with no performance result yet. See [report32](reports/32_paper_reproduction_reset.md).
 
 Research handoff: operational updates and bounded inference recovery are verified, but stable parameter-learning benefit remains unestablished. Closed protocols retain their negative results and engineering failures; no GPU experiment awaits continuation. [Report31](reports/31_research_handoff.md) maps the evidence, unknown causes and prerequisites for a different next-stage study.
 
