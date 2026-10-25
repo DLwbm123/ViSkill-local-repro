@@ -573,7 +573,7 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/48_slake_balanced_final_feasibility_stop.md",
+  "latest_report": "reports/61_medical_continual_acquisition_result.md",
   "slake_evidence_v2": {
     "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
     "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
@@ -649,8 +649,18 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "continual_acquisition_bank_v1",
+    "next_experiment": "old_loss_update_projection_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
+  },
+  "continual_acquisition_bank_v1": {
+    "status": "COMPLETE_K_FAIL_BANK_PASS",
+    "report": "reports/61_medical_continual_acquisition_result.md",
+    "result": "docs/evidence/medical/continual_acquisition_bank_v1/result.json",
+    "execution_source_commit": "435a574",
+    "new_generations": 4188,
+    "optimizer_steps": 312,
+    "parameter_consolidation_gate_pass": false,
+    "external_module_bank_gate_pass": true
   }
 }

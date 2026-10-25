@@ -1,7 +1,7 @@
 {
   "paper_title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
   "arxiv_id": "2610.12403v1",
-  "paper_local_path": "/home/local-user/Desktop/我的论文们/2610.12403v1.pdf",
+  "paper_local_path": "/home/local-user/Desktop/\u6211\u7684\u8bba\u6587\u4eec/2610.12403v1.pdf",
   "repository_url": "https://github.com/ZJU-REAL/ViSkill",
   "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
   "branch": "repro/local-no-api",
@@ -2468,5 +2468,24 @@
     "test_answer_fields_used": false,
     "optimizer_steps": 0,
     "completed_response_replays": 0
-  }
+  },
+  "active_medical_window": {
+    "hours": 12,
+    "maximum_incremental_bytes": 50000000000,
+    "monitor_interval_minutes": 30,
+    "next_experiment": "old_loss_update_projection_v1",
+    "next_experiment_status": "LAUNCHED_NOT_RESULT",
+    "raw_medical_material_excluded": true
+  },
+  "continual_acquisition_bank_v1": {
+    "status": "COMPLETE_K_FAIL_BANK_PASS",
+    "report": "reports/61_medical_continual_acquisition_result.md",
+    "result": "docs/evidence/medical/continual_acquisition_bank_v1/result.json",
+    "execution_source_commit": "435a574",
+    "new_generations": 4188,
+    "optimizer_steps": 312,
+    "parameter_consolidation_gate_pass": false,
+    "external_module_bank_gate_pass": true
+  },
+  "latest_report": "reports/61_medical_continual_acquisition_result.md"
 }

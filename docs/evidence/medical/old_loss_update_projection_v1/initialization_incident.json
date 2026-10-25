@@ -1,0 +1,10 @@
+{
+  "stage": "before_worker_creation",
+  "cause": "Missing TASK_GPU in launcher environment",
+  "exit_code": 1,
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "scientific_protocol_changed": false,
+  "original_clock_retained": true,
+  "initial_attempt_end_unix": 1792962014.0053113
+}

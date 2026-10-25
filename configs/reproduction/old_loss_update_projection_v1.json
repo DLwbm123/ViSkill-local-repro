@@ -1,0 +1,40 @@
+{
+  "experiment": "old_loss_update_projection_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792961763,
+  "cooperative_stop_unix": 1792975863,
+  "deadline_unix": 1792976163,
+  "four_root_baseline_bytes": 157149761536,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "selection_seed": 20261104,
+  "training_seeds": [
+    42,
+    43
+  ],
+  "arms": [
+    "P"
+  ],
+  "epochs": 4,
+  "rows_per_update": 8,
+  "learning_rate": 0.0001,
+  "formal_generation_calls": 1396,
+  "maximum_generation_calls": 1496,
+  "hypothesis": "Old train answer-loss gradient constrains the actual Adam parameter displacement to be first-order non-increasing, reducing old-capability interference while retaining acquisition learning. This does not guarantee finite-step loss or per-case QA preservation. Projection is applied after Adam preconditioning, not to raw gradients.",
+  "protected_object": "Same visual adapter A_seed anatomical attribute function on update-isolated source69 and official validation39, not immutable-module fallback.",
+  "data": "Reuse exact frozen100 acquisition train/100 old attribute train/349evaluation manifest from continual_acquisition_bank_v1. No added samples, exclusions, contract changes or test access. New group old-gradient rows use the same fixed new-row index to old-train index as previous KL replay.",
+  "objective": "Identical parent K CE+nullKL+oldKL, each coefficient1, visual LoRA16alpha32dropout0, language/basefrozen. Only P changes actual update application. Parent K fixed results are reused as paired comparator, not retrained or replayed.",
+  "projection": "For proposed Adam displacement d and pre-update mean old supervised-CE gradient h, if h dot d>0 and h norm>0, apply d-(h dot d)/(h dot h)*h; otherwise apply d. FP64 projection arithmetic, then cast to existing parameter dtype; assert actual first-order dot<=recorded rounding tolerance. Keep Adam moment state from candidate update; no line search, radius or tuned multiplier.",
+  "teacher": "Reuse400 private A42/A43 train null/old distributions from parent. No new teacher forwards/generations. OldCE gradient adds one old full-image teacher-forced training forward/backward per row; labels train-only.",
+  "training": "Two paired final adapters52steps/800supervised/800KLanchor exposures each; extra400 old supervised gradient exposures per adapter. Same row order seed+1000epoch and Adam settings as parent K. Greedy64new final349N/B perseed total1396 new generations cap1496, no extra base/parent or policy calls. Final epoch only.",
+  "investment_gate": {
+    "new_learning": "P_N-A_Nmean>=.10,eachseed>0,image95lower>0;newvisualinteraction(PN-Pblank)-(AN-Ablank)mean/eachseed/95lower>0.",
+    "old_retention": "Source69 andvalidation39 P_N-A_Nmean/everyseed>=0,image95lower>=-.05,zero newly harmed cases EACH seed EACH panel. Same gates as closed K; no relaxation.",
+    "mechanism_comparison": "Report P-K source/validation/new paired changes with CI and all harms, plus projected-step counts/linear change/cost. Claim unique retention contribution only if old P-K positiveCI and no loss of new-learning gate; zero activations or nonpositiveCI does not support projection efficacy."
+  },
+  "statistics": "Unchangednormalizedexactmatch,paired trainingseedsaverage thenimageclusterbootstrap10000selectionseed20261104. Per-seed effects, task/modality, all improvements/harms/before baselines retained. Existing outcomes observed; independent mechanism followup on same development data, not blind replication.",
+  "stops": "Fail closes this update-projection recipe; no extra epochs/seeds/threshold/lambda/sample/contract tuning. Four-hour original preparation clock and strict4GB subbudget, plus unchanged12h1792983515/50GBcumulative. All parent assets private/read-only; final adapter and last recovery retained.",
+  "limits": "First-order old training loss is a proxy; Adam moments continue after projected displacement. It need not preserve every old answer or generalize to validation/patients. FullViSkill/PPO/clinical trajectory not established.",
+  "public_boundary": "source/config/report/anonymousnumerics only. No gold/images/QA/rawreplies/templates/teachers/weights/recovery/paths/tokens."
+}

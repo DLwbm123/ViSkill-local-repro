@@ -1,0 +1,39 @@
+{
+  "status": "CPU_READY",
+  "training_candidates": 530,
+  "training_valid_candidates": 529,
+  "training_schema_excluded": 1,
+  "training_questions": 100,
+  "training_images": 100,
+  "training_types": {
+    "Modality": 50,
+    "Plane": 50
+  },
+  "training_modality": {
+    "CT": 42,
+    "MRI": 41,
+    "X-Ray": 17
+  },
+  "B_question_templates": 29,
+  "new_validation_questions": 172,
+  "new_validation_images": 88,
+  "B_validation_template_coverage": 172,
+  "old_source_questions": 69,
+  "old_background_questions": 69,
+  "old_validation_questions": 39,
+  "registry_A_B_overlap": 0,
+  "train_evaluation_image_disjoint": true,
+  "old_background_B_activations": 11,
+  "formal_new_generations": 4188,
+  "before_A_missing_generations": 664,
+  "after_by_model": {
+    "I_42": 366,
+    "K_42": 698,
+    "S_42": 698,
+    "I_43": 366,
+    "K_43": 698,
+    "S_43": 698
+  },
+  "answer_only_labels_and_full_full_pair": true,
+  "gpu_initialized": false
+}

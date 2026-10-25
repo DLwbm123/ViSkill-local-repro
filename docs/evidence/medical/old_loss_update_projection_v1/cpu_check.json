@@ -1,0 +1,14 @@
+{
+  "status": "CPU_READY",
+  "same_frozen_train_and_evaluation_as_parent": true,
+  "training_questions": 100,
+  "old_gradient_questions": 100,
+  "evaluation_questions": 349,
+  "train_evaluation_image_disjoint": true,
+  "formal_generations": 1396,
+  "reused_teacher_distributions": 400,
+  "new_teacher_forwards": 0,
+  "projection_positive_negative_zero_fixtures_pass": true,
+  "gpu_initialized": false,
+  "unchanged_parent_K_comparison_no_retraining": true
+}

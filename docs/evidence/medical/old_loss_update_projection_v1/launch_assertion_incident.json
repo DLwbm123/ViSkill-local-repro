@@ -1,0 +1,8 @@
+{
+  "stage": "before_process_creation",
+  "cause": "Launcher expected HEALTHY but valid guardian status is GUARDING",
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "scientific_protocol_changed": false,
+  "original_clock_retained": true
+}
