@@ -1,0 +1,37 @@
+{
+  "experiment": "roi_mask_m1_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792941453,
+  "cooperative_stop_unix": 1792948353,
+  "deadline_unix": 1792948653,
+  "four_root_baseline_bytes": 154677043200,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "selection_seed": 20261029,
+  "engine_seeds": [
+    42,
+    43
+  ],
+  "conditions": [
+    "N",
+    "D",
+    "O",
+    "W"
+  ],
+  "panel": "Use exactly the 64-image, one-question-per-image mask-grounded M0 panel. Question and anatomical target determine the mask; labels are never used to select region or model failures. Development panel includes train/validation, not a blind evaluation. Preserve stopped box M0 with 50 images separately.",
+  "data": "Existing SLAKE train/validation only. Author mask.txt exact anatomical grayscale codes with aligned dimensions; reject overlays, disease labels, ambiguous singular bilateral targets and invalid geometry. No test labels or images.",
+  "views": "Current full RGB image longest side512 in every condition. N has no extra view. D adds the whole current image on a336x336 canvas. O adds a raw-image crop from the known anatomical mask bbox plus15% margin, on the same336x336 canvas. W adds an equal-native-size crop with <=5% of target bbox covered and <=.1 crop IoU with O. No mask pixels, boxes, names, source cases, answers or procedures are rendered. D/O/W use identical neutral text, prompt IDs and grids.",
+  "maximum_generation_calls": 550,
+  "formal_generation_calls": 512,
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 64
+  },
+  "maximum_image_pixels": 401408,
+  "metric": "Original normalized exact match. Primary O-N and O-D, paired image bootstrap10000 after averaging repeats. Two initializations are inference reproducibility, not independent training seeds. Report every failure, improvement, harm, target and task group.",
+  "investment_gate": "O-N and O-D each >=.10 with strictly positive image-cluster95% lower bounds and positive means in each repeat; O-W positive overall/nonnegative in each repeat; stable gains represented in at least two named targets. Otherwise close this exact oracle-local-view configuration; choose a separately justified next hypothesis within the unchanged12h window rather than lowering its gate or blindly training a locator.",
+  "optimizer_steps": 0,
+  "public_boundary": "Only protocol, source and numeric evidence; never raw medical QA/gold, masks/images/crops, raw responses, complete prompts, features, private paths or run tokens."
+}

@@ -1,0 +1,514 @@
+[
+  {
+    "qid": 4445,
+    "image_group": 479,
+    "target": "bladder",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.02410125732421875
+  },
+  {
+    "qid": 2860,
+    "image_group": 282,
+    "target": "brain stem",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.004016876220703125
+  },
+  {
+    "qid": 4197,
+    "image_group": 449,
+    "target": "colon",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.04091644287109375
+  },
+  {
+    "qid": 4043,
+    "image_group": 432,
+    "target": "duodenum",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0082244873046875
+  },
+  {
+    "qid": 3211,
+    "image_group": 317,
+    "target": "esophagus",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.00092315673828125
+  },
+  {
+    "qid": 2879,
+    "image_group": 283,
+    "target": "eye",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.005950927734375
+  },
+  {
+    "qid": 4553,
+    "image_group": 494,
+    "target": "femoral head",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0012359619140625
+  },
+  {
+    "qid": 4310,
+    "image_group": 460,
+    "target": "heart",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.04046630859375
+  },
+  {
+    "qid": 2182,
+    "image_group": 220,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0401611328125
+  },
+  {
+    "qid": 3125,
+    "image_group": 308,
+    "target": "larynx",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0044097900390625
+  },
+  {
+    "qid": 1150,
+    "image_group": 136,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.01373291015625
+  },
+  {
+    "qid": 4256,
+    "image_group": 454,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.060291290283203125
+  },
+  {
+    "qid": 10858,
+    "image_group": 498,
+    "target": "small bowel",
+    "task": "appearance",
+    "split": "validation",
+    "target_area_fraction": 0.0629119873046875
+  },
+  {
+    "qid": 10747,
+    "image_group": 428,
+    "target": "spinal cord",
+    "task": "shape",
+    "split": "validation",
+    "target_area_fraction": 0.000545501708984375
+  },
+  {
+    "qid": 4149,
+    "image_group": 445,
+    "target": "spleen",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0341796875
+  },
+  {
+    "qid": 2932,
+    "image_group": 288,
+    "target": "temporal lobe",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.006725311279296875
+  },
+  {
+    "qid": 3029,
+    "image_group": 297,
+    "target": "tooth",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.01361846923828125
+  },
+  {
+    "qid": 3199,
+    "image_group": 316,
+    "target": "trachea",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.001880645751953125
+  },
+  {
+    "qid": 4525,
+    "image_group": 491,
+    "target": "bladder",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.020050048828125
+  },
+  {
+    "qid": 10462,
+    "image_group": 293,
+    "target": "brain stem",
+    "task": "appearance",
+    "split": "validation",
+    "target_area_fraction": 0.0011444091796875
+  },
+  {
+    "qid": 4220,
+    "image_group": 451,
+    "target": "colon",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.06145477294921875
+  },
+  {
+    "qid": 2844,
+    "image_group": 281,
+    "target": "eye",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0065460205078125
+  },
+  {
+    "qid": 4487,
+    "image_group": 485,
+    "target": "femoral head",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0080718994140625
+  },
+  {
+    "qid": 4358,
+    "image_group": 467,
+    "target": "heart",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.058879852294921875
+  },
+  {
+    "qid": 1601,
+    "image_group": 171,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0953369140625
+  },
+  {
+    "qid": 10511,
+    "image_group": 311,
+    "target": "larynx",
+    "task": "shape",
+    "split": "validation",
+    "target_area_fraction": 0.0053558349609375
+  },
+  {
+    "qid": 939,
+    "image_group": 118,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.014892578125
+  },
+  {
+    "qid": 4340,
+    "image_group": 465,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.07112503051757812
+  },
+  {
+    "qid": 10823,
+    "image_group": 481,
+    "target": "small bowel",
+    "task": "appearance",
+    "split": "validation",
+    "target_area_fraction": 0.0058746337890625
+  },
+  {
+    "qid": 4175,
+    "image_group": 447,
+    "target": "spinal cord",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.000461578369140625
+  },
+  {
+    "qid": 4088,
+    "image_group": 436,
+    "target": "spleen",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.010814666748046875
+  },
+  {
+    "qid": 2907,
+    "image_group": 285,
+    "target": "temporal lobe",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0115814208984375
+  },
+  {
+    "qid": 2991,
+    "image_group": 294,
+    "target": "tooth",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.01255035400390625
+  },
+  {
+    "qid": 3187,
+    "image_group": 315,
+    "target": "trachea",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.001682281494140625
+  },
+  {
+    "qid": 10447,
+    "image_group": 291,
+    "target": "brain stem",
+    "task": "appearance",
+    "split": "validation",
+    "target_area_fraction": 0.003387451171875
+  },
+  {
+    "qid": 10426,
+    "image_group": 280,
+    "target": "eye",
+    "task": "appearance",
+    "split": "validation",
+    "target_area_fraction": 0.00679779052734375
+  },
+  {
+    "qid": 4055,
+    "image_group": 433,
+    "target": "kidney",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.009521484375
+  },
+  {
+    "qid": 10523,
+    "image_group": 313,
+    "target": "larynx",
+    "task": "appearance",
+    "split": "validation",
+    "target_area_fraction": 0.0020599365234375
+  },
+  {
+    "qid": 913,
+    "image_group": 115,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.167266845703125
+  },
+  {
+    "qid": 4012,
+    "image_group": 427,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0881195068359375
+  },
+  {
+    "qid": 3223,
+    "image_group": 318,
+    "target": "spinal cord",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.00080108642578125
+  },
+  {
+    "qid": 310,
+    "image_group": 47,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.094482421875
+  },
+  {
+    "qid": 2892,
+    "image_group": 284,
+    "target": "temporal lobe",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.05207061767578125
+  },
+  {
+    "qid": 3059,
+    "image_group": 299,
+    "target": "tooth",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.0040283203125
+  },
+  {
+    "qid": 3236,
+    "image_group": 319,
+    "target": "trachea",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.0016021728515625
+  },
+  {
+    "qid": 2081,
+    "image_group": 211,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.04931640625
+  },
+  {
+    "qid": 3154,
+    "image_group": 310,
+    "target": "larynx",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.005474090576171875
+  },
+  {
+    "qid": 1741,
+    "image_group": 182,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.11865234375
+  },
+  {
+    "qid": 3980,
+    "image_group": 424,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.015239715576171875
+  },
+  {
+    "qid": 3106,
+    "image_group": 303,
+    "target": "spinal cord",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0006103515625
+  },
+  {
+    "qid": 67,
+    "image_group": 10,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.050537109375
+  },
+  {
+    "qid": 2947,
+    "image_group": 289,
+    "target": "temporal lobe",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.00324249267578125
+  },
+  {
+    "qid": 3044,
+    "image_group": 298,
+    "target": "tooth",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.00438690185546875
+  },
+  {
+    "qid": 2490,
+    "image_group": 249,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.024169921875
+  },
+  {
+    "qid": 3014,
+    "image_group": 296,
+    "target": "larynx",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.00331878662109375
+  },
+  {
+    "qid": 4186,
+    "image_group": 448,
+    "target": "liver",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.1240692138671875
+  },
+  {
+    "qid": 4289,
+    "image_group": 457,
+    "target": "spinal cord",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.000377655029296875
+  },
+  {
+    "qid": 2591,
+    "image_group": 258,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0080413818359375
+  },
+  {
+    "qid": 4119,
+    "image_group": 441,
+    "target": "kidney",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0130462646484375
+  },
+  {
+    "qid": 3140,
+    "image_group": 309,
+    "target": "larynx",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.005645751953125
+  },
+  {
+    "qid": 2790,
+    "image_group": 275,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.023712158203125
+  },
+  {
+    "qid": 4003,
+    "image_group": 426,
+    "target": "spinal cord",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.000644683837890625
+  },
+  {
+    "qid": 1341,
+    "image_group": 152,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.06549072265625
+  },
+  {
+    "qid": 2923,
+    "image_group": 287,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.067138671875
+  }
+]

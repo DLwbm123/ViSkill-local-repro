@@ -1,0 +1,10 @@
+{
+  "status": "CPU_READY",
+  "small_and_large_region_fixtures": true,
+  "D_O_W_identical_prompts_ids_grids": true,
+  "current_full_pixels_identical": true,
+  "crop_pixels_are_raw_source_not_masks": true,
+  "gold_field_rejected": true,
+  "gpu_initialized": false,
+  "completed_unix": 1792941672.4212215
+}

@@ -1,0 +1,87 @@
+{
+  "status": "M0_MASK_PASS",
+  "model_calls": 0,
+  "new_image_encodings": 0,
+  "test_accessed": false,
+  "prior_box_audit_preserved": "roi_task_m0_v1",
+  "anatomical_mask_mapping_from_author_file": true,
+  "mask_quality_rule": "Exact grayscale code from author mask.txt, aligned dimensions; non-discrete overlays rejected.",
+  "roi_rule": "Question-named anatomical code only, side-aware, no disease code, no gold-based target selection; >=6 native pixels per side and <=60% image area. No 1%-of-image floor because valid small structures are the stated task.",
+  "eligible_questions": 119,
+  "eligible_images": 88,
+  "eligible_by_target": {
+    "spleen": 12,
+    "kidney": 11,
+    "liver": 30,
+    "eye": 7,
+    "brain stem": 3,
+    "temporal lobe": 4,
+    "spinal cord": 14,
+    "tooth": 6,
+    "larynx": 12,
+    "trachea": 4,
+    "esophagus": 1,
+    "lung": 4,
+    "duodenum": 1,
+    "colon": 2,
+    "heart": 2,
+    "bladder": 2,
+    "femoral head": 2,
+    "small bowel": 2
+  },
+  "eligible_by_task": {
+    "normality": 40,
+    "appearance": 46,
+    "shape": 33
+  },
+  "eligible_by_split": {
+    "train": 100,
+    "validation": 19
+  },
+  "exclusions": {
+    "not_explicit_visual_attribute_task": 4569,
+    "no_matching_anatomical_mask": 49,
+    "no_single_named_anatomical_target": 257,
+    "non_discrete_overlay_or_unaligned_mask": 216,
+    "no_same_size_off_target_control": 11,
+    "singular_target_ambiguous_bilateral_masks": 14
+  },
+  "panel_images": 64,
+  "panel_targets": {
+    "bladder": 2,
+    "brain stem": 3,
+    "colon": 2,
+    "duodenum": 1,
+    "esophagus": 1,
+    "eye": 3,
+    "femoral head": 2,
+    "heart": 2,
+    "kidney": 7,
+    "larynx": 6,
+    "liver": 6,
+    "lung": 4,
+    "small bowel": 2,
+    "spinal cord": 6,
+    "spleen": 6,
+    "temporal lobe": 4,
+    "tooth": 4,
+    "trachea": 3
+  },
+  "panel_tasks": {
+    "appearance": 32,
+    "shape": 18,
+    "normality": 14
+  },
+  "panel_split": {
+    "train": 56,
+    "validation": 8
+  },
+  "panel_under_one_percent_target_area": 32,
+  "remaining_train_images": 19,
+  "panel_majority_answer_fraction": 0.265625,
+  "patient_independence": "unknown",
+  "independent_clinical_truth_certified": false,
+  "roi_selection_uses_gold_answers": false,
+  "model_correctness_used_for_selection": false,
+  "completed_unix": 1792941349.4551754
+}

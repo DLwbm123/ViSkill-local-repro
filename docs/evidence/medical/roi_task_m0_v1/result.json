@@ -1,0 +1,68 @@
+{
+  "status": "M0_STOP",
+  "model_calls": 0,
+  "new_image_encodings": 0,
+  "test_accessed": false,
+  "rows_screened": 5235,
+  "eligible_questions": 57,
+  "eligible_images": 50,
+  "eligible_by_split": {
+    "train": 54,
+    "validation": 3
+  },
+  "eligible_by_target": {
+    "spleen": 11,
+    "kidney": 8,
+    "liver": 22,
+    "temporal lobe": 2,
+    "tooth": 4,
+    "lung": 4,
+    "colon": 2,
+    "heart": 2,
+    "bladder": 2
+  },
+  "eligible_by_task": {
+    "normality": 31,
+    "appearance": 21,
+    "shape": 5
+  },
+  "exclusions": {
+    "not_explicit_visual_attribute_task": 4569,
+    "no_matching_anatomical_region": 265,
+    "no_single_named_anatomical_target": 257,
+    "no_same_size_off_target_control": 10,
+    "singular_target_multiple_disjoint_regions": 19,
+    "nonlocal_or_tiny_target": 58
+  },
+  "panel_images": 50,
+  "panel_targets": {
+    "bladder": 2,
+    "colon": 2,
+    "heart": 2,
+    "kidney": 6,
+    "liver": 20,
+    "lung": 4,
+    "spleen": 9,
+    "temporal lobe": 2,
+    "tooth": 3
+  },
+  "panel_tasks": {
+    "appearance": 20,
+    "normality": 26,
+    "shape": 4
+  },
+  "panel_split": {
+    "train": 47,
+    "validation": 3
+  },
+  "remaining_train_images": 0,
+  "panel_majority_answer_fraction": 0.34,
+  "suspected_near_content_pairs_existing_CLIP_cosine_ge_0_9995": 0,
+  "patient_independence": "unknown",
+  "pixel_duplicates_or_clinical_validity_certified": false,
+  "selection_uses_model_correctness": false,
+  "roi_selection_uses_answers": false,
+  "mapping_rule": "Exact question-named anatomical target, side-aware label match, no disease-label ROI, all unambiguous target regions; no answer-based region choice.",
+  "oracle_interpretation": "Privileged anatomical localization diagnosis only; neither autonomous selection nor proof of clinical evidence sufficiency.",
+  "completed_unix": 1792940919.4329834
+}

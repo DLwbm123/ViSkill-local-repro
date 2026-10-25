@@ -1,0 +1,14 @@
+{
+  "window": "medical_window_12h_20261025",
+  "start_unix": 1792940315,
+  "cooperative_stop_unix": 1792982915,
+  "deadline_unix": 1792983515,
+  "four_root_baseline_bytes": 154672701440,
+  "write_stop_incremental_bytes": 45000000000,
+  "maximum_incremental_bytes": 50000000000,
+  "objective": "Evidence-led medical task/ROI audit, current-image local evidence diagnosis, then autonomous operation/learning experiments justified by results. Closed static reference configurations remain closed. No routine approval.",
+  "scientific_rules": "Freeze each hypothesis, split, conditions, seeds, counts, gates and budget before outputs; retain all failures and costs. Do not lower old gates or use held-out answers for tuning.",
+  "monitor_interval_minutes": 30,
+  "new_model_downloads": false,
+  "raw_medical_publication": false
+}

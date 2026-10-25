@@ -1,0 +1,12 @@
+{
+  "analysis": "posthoc_saved_responses_only",
+  "new_model_calls": 0,
+  "executions_per_comparison": 128,
+  "O_identical_normalized_response": {
+    "N": 115,
+    "D": 110,
+    "W": 114
+  },
+  "scores_and_gates_unchanged": true,
+  "interpretation": "High response agreement motivates an independent isolated-view intervention; it does not establish attention weights or causally prove ignored images."
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "qid": 4445,
+    "image_group": 479,
+    "target": "bladder",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.02410125732421875
+  },
+  {
+    "qid": 4197,
+    "image_group": 449,
+    "target": "colon",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.04091644287109375
+  },
+  {
+    "qid": 4358,
+    "image_group": 467,
+    "target": "heart",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.058879852294921875
+  },
+  {
+    "qid": 2691,
+    "image_group": 266,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0400543212890625
+  },
+  {
+    "qid": 869,
+    "image_group": 112,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.11429595947265625
+  },
+  {
+    "qid": 4340,
+    "image_group": 465,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.07112503051757812
+  },
+  {
+    "qid": 4088,
+    "image_group": 436,
+    "target": "spleen",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.010814666748046875
+  },
+  {
+    "qid": 2892,
+    "image_group": 284,
+    "target": "temporal lobe",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.05207061767578125
+  },
+  {
+    "qid": 2991,
+    "image_group": 294,
+    "target": "tooth",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.01255035400390625
+  },
+  {
+    "qid": 4525,
+    "image_group": 491,
+    "target": "bladder",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.020050048828125
+  },
+  {
+    "qid": 4220,
+    "image_group": 451,
+    "target": "colon",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.06145477294921875
+  },
+  {
+    "qid": 4310,
+    "image_group": 460,
+    "target": "heart",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.04046630859375
+  },
+  {
+    "qid": 2081,
+    "image_group": 211,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.04931640625
+  },
+  {
+    "qid": 1467,
+    "image_group": 161,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0218963623046875
+  },
+  {
+    "qid": 4256,
+    "image_group": 454,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.060291290283203125
+  },
+  {
+    "qid": 1742,
+    "image_group": 182,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.030120849609375
+  },
+  {
+    "qid": 2907,
+    "image_group": 285,
+    "target": "temporal lobe",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0115814208984375
+  },
+  {
+    "qid": 10465,
+    "image_group": 293,
+    "target": "tooth",
+    "task": "shape",
+    "split": "validation",
+    "target_area_fraction": 0.016021728515625
+  },
+  {
+    "qid": 1601,
+    "image_group": 171,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0953369140625
+  },
+  {
+    "qid": 2590,
+    "image_group": 258,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.03173828125
+  },
+  {
+    "qid": 4012,
+    "image_group": 427,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0881195068359375
+  },
+  {
+    "qid": 2403,
+    "image_group": 240,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.046875
+  },
+  {
+    "qid": 3029,
+    "image_group": 297,
+    "target": "tooth",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.01361846923828125
+  },
+  {
+    "qid": 2182,
+    "image_group": 220,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0401611328125
+  },
+  {
+    "qid": 2790,
+    "image_group": 275,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.023712158203125
+  },
+  {
+    "qid": 3980,
+    "image_group": 424,
+    "target": "lung",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.015239715576171875
+  },
+  {
+    "qid": 310,
+    "image_group": 47,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.094482421875
+  },
+  {
+    "qid": 379,
+    "image_group": 56,
+    "target": "kidney",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.04671826774691358
+  },
+  {
+    "qid": 1964,
+    "image_group": 203,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.116180419921875
+  },
+  {
+    "qid": 67,
+    "image_group": 10,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.050537109375
+  },
+  {
+    "qid": 4119,
+    "image_group": 441,
+    "target": "kidney",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0130462646484375
+  },
+  {
+    "qid": 4099,
+    "image_group": 438,
+    "target": "liver",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.022029876708984375
+  },
+  {
+    "qid": 4149,
+    "image_group": 445,
+    "target": "spleen",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.0341796875
+  },
+  {
+    "qid": 2489,
+    "image_group": 249,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.06640625
+  },
+  {
+    "qid": 3909,
+    "image_group": 415,
+    "target": "spleen",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.01532745361328125
+  },
+  {
+    "qid": 1866,
+    "image_group": 193,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.03369140625
+  },
+  {
+    "qid": 1341,
+    "image_group": 152,
+    "target": "spleen",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.06549072265625
+  },
+  {
+    "qid": 2922,
+    "image_group": 287,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.01611328125
+  },
+  {
+    "qid": 9994,
+    "image_group": 116,
+    "target": "spleen",
+    "task": "normality",
+    "split": "validation",
+    "target_area_fraction": 0.0567626953125
+  },
+  {
+    "qid": 4078,
+    "image_group": 435,
+    "target": "liver",
+    "task": "shape",
+    "split": "train",
+    "target_area_fraction": 0.01329803466796875
+  },
+  {
+    "qid": 10019,
+    "image_group": 125,
+    "target": "liver",
+    "task": "normality",
+    "split": "validation",
+    "target_area_fraction": 0.05196380615234375
+  },
+  {
+    "qid": 4161,
+    "image_group": 446,
+    "target": "liver",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.1181488037109375
+  },
+  {
+    "qid": 913,
+    "image_group": 115,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.167266845703125
+  },
+  {
+    "qid": 4107,
+    "image_group": 439,
+    "target": "liver",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.024982452392578125
+  },
+  {
+    "qid": 1022,
+    "image_group": 126,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.064697265625
+  },
+  {
+    "qid": 839,
+    "image_group": 109,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.0885009765625
+  },
+  {
+    "qid": 854,
+    "image_group": 111,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.04929351806640625
+  },
+  {
+    "qid": 4186,
+    "image_group": 448,
+    "target": "liver",
+    "task": "appearance",
+    "split": "train",
+    "target_area_fraction": 0.1240692138671875
+  },
+  {
+    "qid": 746,
+    "image_group": 101,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.072509765625
+  },
+  {
+    "qid": 939,
+    "image_group": 118,
+    "target": "liver",
+    "task": "normality",
+    "split": "train",
+    "target_area_fraction": 0.014892578125
+  }
+]
