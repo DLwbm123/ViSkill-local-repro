@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "finite_loss_and_adapter_gradients": true,
+  "optimizer_steps": 0,
+  "generation_calls": 0,
+  "loss": 0.4027233123779297,
+  "gradient_tensors": 288,
+  "completed_unix": 1792943443.3274803
+}

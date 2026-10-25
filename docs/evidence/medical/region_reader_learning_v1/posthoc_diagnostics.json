@@ -1,0 +1,95 @@
+{
+  "analysis": "posthoc_saved_outputs_and_manifest_only",
+  "new_model_calls": 0,
+  "original_gates_and_scores_unchanged": true,
+  "train_modality": {
+    "MRI": 29,
+    "CT": 71
+  },
+  "primary_modality": {
+    "MRI": 3,
+    "CT": 26,
+    "X-Ray": 42
+  },
+  "primary_modality_scores": {
+    "CT": {
+      "questions": 26,
+      "models": {
+        "base": {
+          "correct_full": 8
+        },
+        "A_42": {
+          "correct_full": 18
+        },
+        "B_42": {
+          "correct_full": 17
+        },
+        "C_42": {
+          "correct_full": 16
+        },
+        "A_43": {
+          "correct_full": 17
+        },
+        "B_43": {
+          "correct_full": 17
+        },
+        "C_43": {
+          "correct_full": 16
+        }
+      }
+    },
+    "MRI": {
+      "questions": 3,
+      "models": {
+        "base": {
+          "correct_full": 2
+        },
+        "A_42": {
+          "correct_full": 3
+        },
+        "B_42": {
+          "correct_full": 3
+        },
+        "C_42": {
+          "correct_full": 3
+        },
+        "A_43": {
+          "correct_full": 3
+        },
+        "B_43": {
+          "correct_full": 3
+        },
+        "C_43": {
+          "correct_full": 3
+        }
+      }
+    },
+    "X-Ray": {
+      "questions": 42,
+      "models": {
+        "base": {
+          "correct_full": 29
+        },
+        "A_42": {
+          "correct_full": 24
+        },
+        "B_42": {
+          "correct_full": 23
+        },
+        "C_42": {
+          "correct_full": 14
+        },
+        "A_43": {
+          "correct_full": 20
+        },
+        "B_43": {
+          "correct_full": 21
+        },
+        "C_43": {
+          "correct_full": 16
+        }
+      }
+    }
+  },
+  "interpretation": "Mask availability selected CT/MRI training while most primary validation questions are X-Ray. This observed mismatch and null-image score shifts motivate testing visual-only adaptation and train-only anchors; they do not prove a causal explanation of every error."
+}

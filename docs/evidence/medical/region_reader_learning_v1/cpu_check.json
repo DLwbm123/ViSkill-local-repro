@@ -1,0 +1,50 @@
+{
+  "status": "CPU_READY",
+  "generation_gold_field_rejected": true,
+  "answer_only_labels_nonempty": true,
+  "arms_have_equal_ids_and_labels": true,
+  "same_example_order_and_update_budget": true,
+  "train_validation_image_disjoint": true,
+  "gpu_initialized": false,
+  "counts": {
+    "train": {
+      "questions": 100,
+      "images": 75,
+      "tasks": {
+        "normality": 37,
+        "appearance": 38,
+        "shape": 25
+      }
+    },
+    "primary": {
+      "questions": 71,
+      "images": 46,
+      "tasks": {
+        "normality": 33,
+        "shape": 11,
+        "appearance": 27
+      }
+    },
+    "retention": {
+      "questions": 69,
+      "images": 69,
+      "tasks": {
+        "Quantity": 6,
+        "Size": 6,
+        "Position": 25,
+        "Organ": 32
+      }
+    },
+    "regional": {
+      "questions": 19,
+      "images": 13,
+      "tasks": {
+        "normality": 3,
+        "appearance": 8,
+        "shape": 8
+      }
+    }
+  },
+  "generation_calls_per_model": 318,
+  "formal_generation_calls": 2226
+}

@@ -1,0 +1,44 @@
+{
+  "experiment": "region_reader_learning_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792943264,
+  "cooperative_stop_unix": 1792957364,
+  "deadline_unix": 1792957664,
+  "four_root_baseline_bytes": 154752520192,
+  "write_stop_incremental_bytes": 6000000000,
+  "maximum_incremental_bytes": 8000000000,
+  "hypothesis": "Question-named anatomical crops contain visual information but the frozen reader shows weak attribute readout. Test whether training-only region experience improves a reader without any query localization at primary evaluation. This does not advance the failed oracle locator configuration or claim learned autonomous skills.",
+  "training_data": "All100 strictly mask-grounded English train questions on75train images from existing M0, not selected by model correctness. Full+additional second single-image exposure per question, both supervised by original train answer. A full/full, B full/correct region, C full/off-target same-size region. No validation images in training.",
+  "evaluation_data": "Primary: all71 English vqa validation questions with one named anatomical target and appearance/shape/normality task under the original answer-independent M0 classifier,46images, regardless of mask availability. Retention:69 frozen pilot validation questions of Organ/Position/Size/Quantity. Regional secondary:19 mask-supported primary questions on13images. No test access. Validation has been observed before and remains development evidence.",
+  "arms": [
+    "A",
+    "B",
+    "C"
+  ],
+  "training_seeds": [
+    42,
+    43
+  ],
+  "selection_seed": 20261030,
+  "epochs": 4,
+  "rows_per_update": 8,
+  "learning_rate": 0.0001,
+  "optimizer": "AdamW betas(.9,.999),eps1e-8,weight_decay0;clip_norm1;constantLR;no tuning or validation-based selection",
+  "adapter": "language self-attention q/k/v/o LoRA rank16 alpha32 dropout0,biasnone; visual encoder and base weights frozen; paired arm initialization same seed; bf16 sdpa",
+  "objective": "Mean answer-token CE within each two-view identical-answer pair, then equal mean over rows per update. Include EOS; mask prompt and padding. Fixed final4epochs,52updates/arm,800supervised image exposures/arm. No best-epoch selection.",
+  "inputs": "Exactly one336x336 raw RGB padded canvas per exposure/query, same system/user format. No rendered annotation, target label, source case, procedure or gold in generation interface. Train targets enter supervised labels only.",
+  "evaluation_engine": "Same local HF/PEFT backend for base and all6final adapters; independent from earlier SGLang. Greedy max64 tokens, no sampling, same saved schedule for all models. Base is reevaluated once for backend-matched causal comparisons; not a retry of prior responses.",
+  "formal_generation_calls": 2226,
+  "maximum_generation_calls": 2400,
+  "metric": "Unchanged normalized exact match. Average paired training seeds before10000-image-cluster bootstrap using selection_seed. Preserve every improvement/harm and all task/target/retention groups.",
+  "investment_gate": {
+    "B_minus_A_full_primary": ">=.10 mean,strictly positive each training seed,95percent image-cluster lower>0",
+    "B_minus_C_full_primary": ">0 mean and each seed,95percent lower>0",
+    "visual_specific_interaction": "(B_N-B_Blank)-(A_N-A_Blank)>0 mean and each seed,95percent lower>0; blank-only gain is not visual learning",
+    "retention": "B_N-base_N>=0 mean and each seed on69 off-task questions,95percent image-cluster lower>=-.05"
+  },
+  "stops": "No validation scoring during training, no early best-epoch choice, no prompt/LR/rank/data search. Stop at hard clock or storage guard; save last recoverable adapters. Failed gate closes this exact adaptation recipe.",
+  "limits": "Small development data, unknown patient independence and clinical label validity. Training-only annotated crops are privileged experience construction, not a learned locator or full ViSkill trajectory/PPO.",
+  "public_boundary": "Only source/config/counts/numeric evidence/report; no medical QA/gold/pixels/crops/raw generated outputs/full prompts/weights/adapters/recovery files/private paths/tokens."
+}

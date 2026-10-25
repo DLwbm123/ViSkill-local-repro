@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "63bffb926d30da90d3ac9cb16d3449ad1e67b1be",
+  "local_source_commit": "805564ec5cea6ec07a663fec4d53e22f4b4d618e",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "ACTIVE_MEDICAL_WINDOW_READER_LEARNING",
+  "status": "ACTIVE_MEDICAL_WINDOW_VISUAL_ANCHOR",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -152,6 +152,31 @@
       "executions_per_condition": 128,
       "optimizer_steps": 0,
       "test_annotation_opened": false
+    },
+    "medical_region_reader_learning": {
+      "status": "COMPLETE_REGION_READER_LEARNING_NOT_ESTABLISHED",
+      "new_generation_calls": 2226,
+      "optimizer_steps": 312,
+      "primary_questions": 71,
+      "retention_questions": 69,
+      "base_primary_correct": 39,
+      "A_primary_correct_by_seed": [
+        45,
+        40
+      ],
+      "B_primary_correct_by_seed": [
+        43,
+        41
+      ],
+      "C_primary_correct_by_seed": [
+        33,
+        35
+      ],
+      "base_retention_correct": 38,
+      "B_retention_correct_by_seed": [
+        37,
+        37
+      ]
     }
   },
   "latest_update_scope": "Final balanced-source feasibility stop: source/protocol, all 84 numeric returns, balanced admission and input-only test coverage checks, costs and warnings. No test QA outputs, gold, raw images, machine identifiers or tokens.",
@@ -554,7 +579,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "region_reader_learning_v1",
+    "next_experiment": "grounded_reader_anchor_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   }
