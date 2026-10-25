@@ -73,3 +73,5 @@ Official256 evaluation: first initialization failed before task dispatch because
 当前补充核查：用户要求验证带检索技能输入的实际PPO更新，已冻结[单批协议38](reports/38_retrieved_input_ppo_correctness_protocol.md)；尚无本轮GPU结论。
 
 补充核查首轮中断：actor输入证据保存的混合dtype共享存储问题；critic部分证据保留。已修复并CPU验证全部128固定记录，恢复仍待执行，见[报告39](reports/39_retrieved_input_audit_incident_and_replay_protocol.md)。
+
+限定带检索输入PPO核查已完成：actor与critic各128输入/51检索，4次原生分布式optimizer更新、有限损失/梯度及非零参数样本变化；修复我方审计保存故障后用原固定记录恢复，新增生成0，见[报告40](reports/40_retrieved_input_native_ppo_correctness_result.md)。

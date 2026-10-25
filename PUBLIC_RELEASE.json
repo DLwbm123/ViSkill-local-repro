@@ -341,15 +341,34 @@
     "episodes": 128,
     "retrieved_episodes": 51,
     "actor_update_completed": false,
-    "critic_update_completed": true
+    "critic_update_completed": true,
+    "recovery_result_report": "reports/40_retrieved_input_native_ppo_correctness_result.md"
   },
   "retrieved_input_ppo_replay_v1": {
-    "status": "FROZEN_CPU_READY_NO_RECOVERY_GPU_AT_PUBLICATION",
-    "report": "reports/39_retrieved_input_audit_incident_and_replay_protocol.md",
+    "status": "PASS_RECORDED_RETRIEVED_INPUT_NATIVE_PPO",
+    "report": "reports/40_retrieved_input_native_ppo_correctness_result.md",
     "protocol": "configs/reproduction/retrieved_input_ppo_replay_v1.json",
     "execution_source_commit": "742d38fc6d727bfe8b93ba9cb9806951f62a0c94",
     "new_model_generation_dispatches_allowed": 0,
     "fixed_recorded_episodes": 128,
-    "new_full_step2_checkpoint": false
+    "new_full_step2_checkpoint": false,
+    "result": "docs/evidence/reproduction/retrieved_input_ppo_replay_v1_result/result.json",
+    "actor_retrieved_rows": 51,
+    "critic_retrieved_rows": 51,
+    "distributed_optimizer_steps_per_role": 4,
+    "actor_changed_samples": 35148,
+    "critic_changed_samples": 35313,
+    "sample_elements_each_role": 35328,
+    "additional_global_batches": 1,
+    "new_model_generation_dispatches": 0,
+    "post_step2_model_optimizer_saved": false,
+    "actual_exit_code": 0,
+    "actual_end_unix": 1792918264.9123287,
+    "limitations": [
+      "Fixed local shard samples do not prove every parameter or exclude every possible bug",
+      "No301-step performance or long-run stability claim",
+      "Earlier backend numeric negatives and greedy restart differences remain unresolved",
+      "Recovery reconstructs saved replies with original environment/processor and checks every prompt/trajectory; not bytewise equality to lost original processed tensors"
+    ]
   }
 }

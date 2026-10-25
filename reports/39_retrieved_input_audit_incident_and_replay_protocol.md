@@ -29,3 +29,5 @@
 [首轮完整结果](../docs/evidence/reproduction/retrieved_input_ppo_check_v1_result/result.json) · [冻结恢复协议](../configs/reproduction/retrieved_input_ppo_replay_v1.json) · [CPU重建回执](../docs/evidence/reproduction/retrieved_input_ppo_replay_v1_prereg/cpu_check.json)
 
 恢复执行源码 `742d38fc6d727bfe8b93ba9cb9806951f62a0c94`；本协议先于恢复GPU调用发布。
+
+实际恢复于16:51:04退出0，actor与critic四份审计均通过，新增生成请求0；完整结果及保留边界见[报告40](40_retrieved_input_native_ppo_correctness_result.md)。原首轮故障不覆盖。

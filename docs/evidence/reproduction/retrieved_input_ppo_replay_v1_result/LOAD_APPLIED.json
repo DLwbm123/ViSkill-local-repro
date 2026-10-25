@@ -1,0 +1,1 @@
+{"applied_unix": 1792918032.5196083, "global_step": 1, "native_full_actor_critic_model_optimizer_extra_dataloader_load_returned": true, "reference_checkpoint": "official_frozenlake_correctness_v1/global_step_1", "reference_retained_read_only": true}

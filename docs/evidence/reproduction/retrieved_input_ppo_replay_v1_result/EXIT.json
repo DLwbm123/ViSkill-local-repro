@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "reason": null,
+  "end_unix": 1792918264.9123287,
+  "deadline_unix": 1792920278.0,
+  "peak_four_root_bytes": 155270840320,
+  "new_peak_bytes_from_original_baseline": 110868045824,
+  "command_line_violations": [],
+  "completed_phases": [
+    "train"
+  ]
+}
