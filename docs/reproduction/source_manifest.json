@@ -16,7 +16,14 @@
     "tests/test_frozenlake_lifecycle.py",
     "scripts/close_released_eval.py",
     "scripts/check_official_train_storage_cpu.py",
-    "configs/reproduction/official_train_checkpoint_cpu_v1.json"
+    "configs/reproduction/official_train_checkpoint_cpu_v1.json",
+    "scripts/official_train_config.py",
+    "scripts/run_official_train.py",
+    "scripts/check_official_train_cpu.py",
+    "scripts/official_train_supervisor.py",
+    "vagen/official_train_observer.py",
+    "configs/reproduction/official_frozenlake_ppo_v1.json",
+    "configs/reproduction/observed_train_agent.yaml"
   ],
   "not_included": [
     "directional contract",
@@ -27,5 +34,12 @@
     "fixed5-card curriculum"
   ],
   "source_distribution": "Apply patch and copy the listed execution files into the pinned official checkout. Do not treat the historical modified reproduction tree as the clean formal source.",
-  "observer_initialization_repair": "Use the released AsyncActorRolloutRefWorker selected by the official async configuration; first synchronous observer failed before task dispatch. No algorithm change."
+  "observer_initialization_repair": "Use the released AsyncActorRolloutRefWorker selected by the official async configuration; first synchronous observer failed before task dispatch. No algorithm change.",
+  "official_training_storage_exception": {
+    "strict_additional_bytes": 150000000000,
+    "four_root_stop_bytes": 210000000000,
+    "user_authorized_unix": 1792904527.566028,
+    "applies_to": "official_frozenlake_ppo_v1 only;24h unchanged",
+    "other_experiments_keep_prior_limits": true
+  }
 }

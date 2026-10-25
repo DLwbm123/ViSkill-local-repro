@@ -1,0 +1,111 @@
+{
+  "name": "official_frozenlake_ppo_v1",
+  "status": "FROZEN_CPU_READY",
+  "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "preparation_started_unix": 1792904527.566028,
+  "deadline_unix": 1792990927.566028,
+  "cooperative_stop_unix": 1792985527.566028,
+  "maximum_seconds_including_preparation": 86400,
+  "storage_baseline_four_root_bytes": 44402794496,
+  "storage_baseline_recorded_unix": 1792904587.0220916,
+  "strict_maximum_additional_bytes": 150000000000,
+  "additional_write_stop_bytes": 130000000000,
+  "four_root_stop_bytes": 210000000000,
+  "pre_checkpoint_expected_complete_payload_reserve_bytes": 120000000000,
+  "storage_exception_directly_authorized_by_user": true,
+  "storage_authorization_unix": 1792904527.566028,
+  "data": {
+    "environment": "FrozenLake vision",
+    "training_seeds": [
+      1,
+      10000
+    ],
+    "validation_seeds": [
+      10001,
+      10256
+    ],
+    "train_batch_size": 128,
+    "val_batch_size": 256,
+    "training_initialization": "existing Qwen/Qwen2.5-VL-3B-Instruct b0 and empty new library; not released r0 weights/library",
+    "selection": "official data expansion and sampler; no historical/outcome subset or seed search"
+  },
+  "training": {
+    "global_steps": 301,
+    "paper_reported_steps": 300,
+    "algorithm": "original GAE/PPO over full generated response mask",
+    "actor_lr": 1e-06,
+    "critic_lr": 1e-05,
+    "minibatch": 32,
+    "optimizer": "original FP32 AdamW",
+    "self_distill": "original self, minscore .9, qualityratio1",
+    "reward": "released code skill_guided .8 action prefix, unchanged",
+    "retrieval_minscore": 0.8,
+    "online_library_maxsize": 10000,
+    "cold_start": false,
+    "train_temperature": 1.0,
+    "validation_temperature": 0.0,
+    "max_turns": 5,
+    "response_length_per_turn": 512,
+    "max_actions_per_turn": 5,
+    "max_prompt_length": 5000,
+    "max_response_length": 4000
+  },
+  "execution": {
+    "physical_gpus": [
+      3,
+      5
+    ],
+    "GPU_count": 2,
+    "official_script_GPU_count": 4,
+    "context_length": 9000,
+    "text_attention": "Triton",
+    "vision_attention": "SDPA",
+    "logging": "console and local structured files only, no external upload",
+    "seed": 42,
+    "core_patch": "previously verified FrozenLake close lifetime fix only",
+    "resume": "initial launch refuses existing dispatched output; any authorized recovery retains this same clock and budget"
+  },
+  "checkpoint": {
+    "native_save_frequency": 100,
+    "native_max_actor_to_keep": 1,
+    "native_max_critic_to_keep": 1,
+    "extra_save_after_global_step": 1,
+    "actor_contents": [
+      "model",
+      "hf_model",
+      "optimizer",
+      "extra"
+    ],
+    "critic_contents": [
+      "model",
+      "optimizer",
+      "extra"
+    ],
+    "additional": "copy contemporaneous original online library into each native checkpoint and record native file manifest, metrics, recipe and data-loader state; no optimizer or precision omission",
+    "risk": "Original native single-generation role rotation deletes old role before new save; not two-generation atomic recovery"
+  },
+  "evaluation": {
+    "frequency": 20,
+    "before_train": true,
+    "primary": "full official validation at final CODE_AS_RELEASED step301; also report step300 and all intermediate results; no selecting best checkpoint as primary",
+    "reference_success": 0.84,
+    "limitations": "one training seed; released model provenance variant unspecified; no statistical equivalence claim, medical transfer or new method claim"
+  },
+  "cost_bounds": {
+    "maximum_train_episodes": 38528,
+    "maximum_val_passes": 17,
+    "maximum_val_episodes": 4352,
+    "maximum_rollout_dispatches": 214400,
+    "maximum_post_episode_self_distill_dispatches": 42880,
+    "maximum_total_agent_dispatches": 257280
+  },
+  "stops": [
+    "Original hard24h includes preparation/repairs/recovery; cooperative request90min before hard deadline for current native batch and save",
+    "Raw storage guard and pre-checkpoint complete-state forecast; no checksum/extra full-state reload by default",
+    "After first native batch, record actual throughput and full-checkpoint peak; do not extrapolate released-model validation throughput or tune from partial success",
+    "Nonfinite actor/critic loss/grad, process/interface failure or hard resource bound: retain failure/cost/checkpoint when safe, no blind replay/resampling",
+    "No further methods, hyperparameter search, budget extension or silent dataset changes"
+  ],
+  "storage_write_stop_reason": "Tighter130GB write stop reserves20GB below the150GB authorized strict cap; full-state pre-checkpoint forecast remains120GB plus non-checkpoint growth.",
+  "cpu_check_completed_unix": 1792905733.1518118
+}

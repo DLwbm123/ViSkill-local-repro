@@ -2212,7 +2212,28 @@
     "existing_strict_new_storage_limit_bytes": 50000000000,
     "proposed_exception_new_storage_limit_bytes": 150000000000,
     "proposed_four_root_stop_bytes": 210000000000,
-    "budget_exception_authorized": false,
-    "full_training_started": false
+    "budget_exception_authorized": true,
+    "full_training_started": false,
+    "user_authorized_unix": 1792904527.566028
+  },
+  "official_frozenlake_ppo_v1": {
+    "status": "FROZEN_CPU_READY_NOT_YET_LAUNCHED",
+    "protocol": "configs/reproduction/official_frozenlake_ppo_v1.json",
+    "report": "reports/35_official_frozenlake_training_protocol.md",
+    "official_train_seeds": 10000,
+    "official_val_seeds": 256,
+    "global_training_steps_target": 301,
+    "batch_size": 128,
+    "minibatch": 32,
+    "algorithm": "original GAE/fullgenerated PPO",
+    "initial_model": "original b0 Qwen2.5-VL-3B-Instruct",
+    "initial_online_library": "empty",
+    "storage_exception_authorized": true,
+    "strict_new_storage_limit_bytes": 150000000000,
+    "four_root_stop_bytes": 210000000000,
+    "deadline_unix": 1792990927.566028,
+    "CPU_check_passed": true,
+    "GPU_training_started": false,
+    "clean_execution_source_commit": "a3e18a54cfc35180193954fae1536c52da733b05"
   }
 }
