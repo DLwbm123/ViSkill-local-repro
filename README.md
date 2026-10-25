@@ -1,5 +1,7 @@
 # ViSkill local reproduction and audit
 
+Research handoff: operational updates and bounded inference recovery are verified, but stable parameter-learning benefit remains unestablished. Closed protocols retain their negative results and engineering failures; no GPU experiment awaits continuation. [Report31](reports/31_research_handoff.md) maps the evidence, unknown causes and prerequisites for a different next-stage study.
+
 Dynamic-retrieval CPU screen: all40 saved episodes/132 actual model-turn starts yielded zero new valid-card opportunities among initial non-hits, including0/8 long episodes. The preregistered feasibility gate failed; no GPU, model calls or environment steps. See [report30](reports/30_turn_retrieval_cpu_screen.md). This is a posthoc opportunity screen, not efficacy evidence.
 
 Curriculum pair closed after collection: all40 episodes/134 calls retained, but two unintended distillation calls violated the frozen zero-distillation contract. No actor update or Dev evaluation occurred; long-start success0/8 also misses the prespecified positive-feedback prerequisite. See [report29](reports/29_curriculum_collection_failure.md). This is an engineering/protocol failure, with no paired learning result.
