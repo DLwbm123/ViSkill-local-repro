@@ -2428,5 +2428,20 @@
     "test_used": false,
     "completed_response_replays": 0,
     "runtime_failure_preserved": true
+  },
+  "slake_medical_summary_20261025": {
+    "report": "reports/46_slake_medical_transfer_experiment_summary.md",
+    "date": "2026-10-25",
+    "scope": "Two completed English SLAKE medical-card rounds; consolidated results and evidence-bounded dataset-versus-method attribution. No new experiment.",
+    "experiments": [
+      "slake_en_pilot_v1",
+      "slake_evidence_v2"
+    ],
+    "completed_generation_calls": 2284,
+    "incomplete_request_intents": 1,
+    "optimizer_steps": 0,
+    "test_used": false,
+    "reliable_medical_visual_gain_established": false,
+    "attribution": "Evidence prioritizes current adaptation and prompt/reference construction problems; dataset errors and clinical label correctness have not been independently ruled out."
   }
 }

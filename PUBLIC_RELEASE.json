@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "77024417be9543302a84c184b925e8d38ace7de2",
+  "local_source_commit": "a8d2fa37741cc9f87518cb234ae623182a3c23ec",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -131,15 +131,12 @@
       "cpu_recovery_without_new_model_forward": true
     }
   },
-  "latest_update_scope": "One completed answer-free regional SLAKE round: source, frozen protocol, all 1450 numeric results, all positive and negative controls, hidden-answer strata, posthoc context-regression analysis, original initialization failure and full costs. No raw medical data, model outputs, weights, machine identifiers or tokens.",
+  "latest_update_scope": "Consolidated medical transfer experiment report: both SLAKE rounds, paired controls, positive and negative cases, evidence-bounded dataset/method attribution, failure costs and untested next hypotheses. No new experiment or raw medical material.",
   "latest_copied_files": [
-    "scripts/slake_evidence_probe.py",
-    "scripts/slake_evidence_supervisor.py",
-    "scripts/slake_evidence_summary.py",
-    "configs/reproduction/slake_evidence_v2.json",
-    "reports/44_slake_visual_evidence_protocol.md",
-    "reports/45_slake_region_evidence_result.md",
-    "docs/evidence/medical/slake_evidence_v2_result"
+    "reports/46_slake_medical_transfer_experiment_summary.md",
+    "README.md",
+    "reproduction_manifest.json",
+    "PUBLIC_RELEASE.json"
   ],
   "source_packaging_repair": {
     "files_restored": 65,
@@ -455,7 +452,7 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/45_slake_region_evidence_result.md",
+  "latest_report": "reports/46_slake_medical_transfer_experiment_summary.md",
   "slake_evidence_v2": {
     "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
     "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
@@ -486,5 +483,20 @@
     "test_used": false,
     "completed_response_replays": 0,
     "runtime_failure_preserved": true
+  },
+  "slake_medical_summary_20261025": {
+    "report": "reports/46_slake_medical_transfer_experiment_summary.md",
+    "date": "2026-10-25",
+    "scope": "Two completed English SLAKE medical-card rounds; consolidated results and evidence-bounded dataset-versus-method attribution. No new experiment.",
+    "experiments": [
+      "slake_en_pilot_v1",
+      "slake_evidence_v2"
+    ],
+    "completed_generation_calls": 2284,
+    "incomplete_request_intents": 1,
+    "optimizer_steps": 0,
+    "test_used": false,
+    "reliable_medical_visual_gain_established": false,
+    "attribution": "Evidence prioritizes current adaptation and prompt/reference construction problems; dataset errors and clinical label correctness have not been independently ruled out."
   }
 }
