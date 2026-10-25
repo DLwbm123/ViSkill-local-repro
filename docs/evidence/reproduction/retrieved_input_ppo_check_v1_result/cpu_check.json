@@ -1,0 +1,15 @@
+{
+  "status": "CPU_READY",
+  "completed_unix": 1792914413.3631983,
+  "actual_next_original128_sampler_seeds_frozen": true,
+  "source_checkpoint_not_modified": true,
+  "disjoint_first_training_batch": true,
+  "native_two_role_async_MRO": true,
+  "packet_token_mask_grid_checks_and_mismatch_rejection": true,
+  "optimizer_post_hook_counts_exactly4_and_native_result_identity": true,
+  "tiny_CPU_optimizer_fixture_calls": 4,
+  "actual_model_forward_backward_calls": 0,
+  "actual_GPU_calls": 0,
+  "native_env_steps": 0,
+  "scope": "Fixture uses a2x2 CPU linear parameter with assigned gradients, not the real model. No GPU update correctness claim."
+}

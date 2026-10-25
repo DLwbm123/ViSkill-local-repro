@@ -10,6 +10,16 @@ from . import official_train_observer as base
 ROOT,SRC,OUT,P=base.ROOT,base.SRC,base.OUT,base.P
 
 
+def snapshot(value):
+    if torch.is_tensor(value):return value.detach().cpu().clone()
+    if isinstance(value,dict):return {k:snapshot(v) for k,v in value.items()}
+    if isinstance(value,(list,tuple)):return type(value)(snapshot(v) for v in value)
+    if isinstance(value,np.ndarray) and value.dtype==object:
+        out=np.empty(value.shape,dtype=object)
+        for i in np.ndindex(value.shape):out[i]=snapshot(value[i])
+        return out
+    return value
+
 def parameters(module):
     return {name:p.detach().reshape(-1)[:256].float().cpu().clone() for name,p in module.named_parameters() if p.requires_grad and p.numel()}
 
@@ -41,7 +51,7 @@ def audit_update(worker,role,data,native_call):
         bank={'tensors':{k:v.detach().cpu() for k,v in data.batch.items()},'multi_modal_inputs':data.non_tensor_batch['multi_modal_inputs'],'seeds':data.non_tensor_batch['seed'],'retrieved_skill_id':data.non_tensor_batch['retrieved_skill_id'],'uid':data.non_tensor_batch['uid'],'meta_info':data.meta_info}
         tensor_bytes=sum(v.numel()*v.element_size() for v in bank['tensors'].values())+sum(v.numel()*v.element_size() for mm in bank['multi_modal_inputs'] for v in mm.values() if torch.is_tensor(v))
         assert tensor_bytes<P['maximum_private_bank_tensor_bytes_per_rank']
-        torch.save(bank,OUT/f'PRIVATE_ACTOR_INPUT_rank{worker.rank}.pt')
+        torch.save(snapshot(bank),OUT/f'PRIVATE_ACTOR_INPUT_rank{worker.rank}.pt')
     base.write(OUT/f'{role}_rank{worker.rank}_intent.json',{'started_unix':time.time(),'rows':rows,'native_update_about_to_call':True})
     try:result=native_call(data)
     finally:hook.remove()

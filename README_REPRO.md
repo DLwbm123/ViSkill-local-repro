@@ -71,3 +71,5 @@ Official256 evaluation: first initialization failed before task dispatch because
 2026-10-24：独立fixed_library_ppo_v1已启动，使用新的128训练/32条件Dev地图、原已开发自然Dev64，进行权重×上下文交叉评价。原bootstrap实验已结束，不追加第五批；新实验不保存权重，不声称独立恢复。
 
 当前补充核查：用户要求验证带检索技能输入的实际PPO更新，已冻结[单批协议38](reports/38_retrieved_input_ppo_correctness_protocol.md)；尚无本轮GPU结论。
+
+补充核查首轮中断：actor输入证据保存的混合dtype共享存储问题；critic部分证据保留。已修复并CPU验证全部128固定记录，恢复仍待执行，见[报告39](reports/39_retrieved_input_audit_incident_and_replay_protocol.md)。

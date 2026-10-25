@@ -22,3 +22,5 @@ CPU检查已实际通过，包括真实下一批sampler恢复、MRO/config、2x2
 既有报告18/19后端数值负证据和报告37的greedy重启差异仍有效。本核查不证明所有采样/训练输入的数值等价、长期稳定性、论文性能或所有潜在错误均已排除。
 
 [冻结协议](../configs/reproduction/retrieved_input_ppo_check_v1.json) · [CPU回执](../docs/evidence/reproduction/retrieved_input_ppo_check_v1_prereg/cpu_check.json) · [下一批种子](../docs/evidence/reproduction/retrieved_input_ppo_check_v1_prereg/next_batch_manifest.json)
+
+实际首轮因我方输入证据保存代码中断，critic已完成但actor未更新；故障与零新采样固定记录恢复协议见[报告39](39_retrieved_input_audit_incident_and_replay_protocol.md)。

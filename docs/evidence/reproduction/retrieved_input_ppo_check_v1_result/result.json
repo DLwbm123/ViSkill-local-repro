@@ -1,0 +1,76 @@
+{
+  "status": "INCOMPLETE_ACTOR_AUDIT_SERIALIZATION_FAILURE",
+  "closed_unix": 1792916914.1960168,
+  "role_summary": {
+    "actor": {
+      "complete": false,
+      "available_rank_audits": 0
+    },
+    "critic": {
+      "complete": true,
+      "rows": 128,
+      "retrieved_rows": 51,
+      "optimizer_steps_per_rank": [
+        4,
+        4
+      ],
+      "sampled_elements": 35328,
+      "changed_sample_elements": 35317,
+      "grad_norms": [
+        58.61618423461914,
+        97.40631866455078,
+        32.2049446105957,
+        108.26859283447266
+      ]
+    }
+  },
+  "episodes": 128,
+  "retrieved_episodes": 51,
+  "collection_successes_before_update": 32,
+  "source_model_generation_dispatches": {
+    "all": 415,
+    "rollout": 406,
+    "distill": 9
+  },
+  "new_generation_dispatches_this_recovery": null,
+  "source_request_errors": 0,
+  "source_output_tokens": 24976,
+  "combined_parent_and_supplement_model_dispatches_cost_only": 4239,
+  "combined_original_model_collected_episodes_cost_only": 1152,
+  "CPU_replayed_environment_episodes": 0,
+  "supervisor_wall_seconds": 831.056878566742,
+  "preparation_to_exit_seconds": 2324.4914577007294,
+  "private_bank_file_sizes": {
+    "PRIVATE_ACTOR_INPUT_rank0.pt": 792
+  },
+  "native_full_reference_checkpoint_retained": true,
+  "post_step2_model_optimizer_saved": false,
+  "live_owned_non_zombie": [],
+  "exit": {
+    "exit_code": 1,
+    "reason": "RuntimeError('train exit1; retain dispatches/checkpoint, no blind replay')",
+    "end_unix": 1792915402.4914577,
+    "deadline_unix": 1792920278.0,
+    "peak_four_root_bytes": 153386475520,
+    "new_peak_bytes_from_original_baseline": 108983681024,
+    "command_line_violations": [],
+    "completed_phases": []
+  },
+  "limitations": [
+    "Fixed local shard samples do not prove every parameter or exclude every possible bug",
+    "No301-step performance or long-run stability claim",
+    "Earlier backend numeric negatives and greedy restart differences remain unresolved",
+    "Recovery reconstructs saved replies with original environment/processor and checks every prompt/trajectory; not bytewise equality to lost original processed tensors"
+  ],
+  "failure": {
+    "error": "Cannot save multiple tensors or storages that view the same data as different types",
+    "location": "new audit-only torch.save(input bank), before native actor update",
+    "critic_real_update_completed": true,
+    "actor_native_update_not_completed": true,
+    "updated_critic_live_state_not_saved": true,
+    "partial_private_bank_bytes": 792
+  },
+  "final_four_root_bytes": 154438930432,
+  "combined_supplement_new_bytes": 1063825408,
+  "original_parent_additional_bytes": 110036135936
+}

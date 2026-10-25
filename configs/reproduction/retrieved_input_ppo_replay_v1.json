@@ -1,0 +1,130 @@
+{
+  "name": "retrieved_input_ppo_replay_v1",
+  "status": "FROZEN_CPU_READY",
+  "upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
+  "preparation_started_unix": 1792913078.0,
+  "deadline_unix": 1792920278.0,
+  "cooperative_stop_unix": 1792919378.0,
+  "maximum_seconds_including_preparation": 86400,
+  "storage_baseline_four_root_bytes": 44402794496,
+  "storage_baseline_recorded_unix": 1792904587.0220916,
+  "strict_maximum_additional_bytes": 150000000000,
+  "additional_write_stop_bytes": 114972310528,
+  "four_root_stop_bytes": 210000000000,
+  "pre_checkpoint_expected_complete_payload_reserve_bytes": 0,
+  "storage_exception_directly_authorized_by_user": true,
+  "storage_authorization_unix": 1792904527.566028,
+  "data": {
+    "environment": "FrozenLake vision",
+    "training_seeds": [
+      1,
+      10000
+    ],
+    "validation_seeds": [
+      10001,
+      10256
+    ],
+    "train_batch_size": 128,
+    "val_batch_size": 256,
+    "training_initialization": "Read-only verified global_step_1 actor/critic/model/optimizer/extra/data-loader plus10 saved online skills; no released r0 initialization",
+    "selection": "official data expansion and sampler; no historical/outcome subset or seed search"
+  },
+  "training": {
+    "global_steps": 301,
+    "paper_reported_steps": 300,
+    "algorithm": "original GAE/PPO over full generated response mask",
+    "actor_lr": 1e-06,
+    "critic_lr": 1e-05,
+    "minibatch": 32,
+    "optimizer": "original FP32 AdamW",
+    "self_distill": "original self, minscore .9, qualityratio1",
+    "reward": "released code skill_guided .8 action prefix, unchanged",
+    "retrieval_minscore": 0.8,
+    "online_library_maxsize": 10000,
+    "cold_start": false,
+    "train_temperature": 1.0,
+    "validation_temperature": 0.0,
+    "max_turns": 5,
+    "response_length_per_turn": 512,
+    "max_actions_per_turn": 5,
+    "max_prompt_length": 5000,
+    "max_response_length": 4000
+  },
+  "execution": {
+    "physical_gpus": [
+      3,
+      5
+    ],
+    "GPU_count": 2,
+    "official_script_GPU_count": 4,
+    "context_length": 9000,
+    "text_attention": "Triton",
+    "vision_attention": "SDPA",
+    "logging": "console and local structured files only, no external upload",
+    "seed": 42,
+    "core_patch": "previously verified FrozenLake close lifetime fix only",
+    "resume": "initial launch refuses existing dispatched output; any authorized recovery retains this same clock and budget"
+  },
+  "checkpoint": {
+    "native_save_frequency": 100,
+    "load_contents_actor": [
+      "model",
+      "optimizer",
+      "extra"
+    ],
+    "load_contents_critic": [
+      "model",
+      "optimizer",
+      "extra"
+    ],
+    "source": "official_frozenlake_correctness_v1/checkpoints/global_step_1",
+    "source_read_only": true,
+    "save_after_step2": false,
+    "reason": "Terminal correctness diagnostic retains existing verified full recovery reference and private effective-input banks; no performance model or post-step2 continuation claim."
+  },
+  "evaluation": {
+    "before_train": false,
+    "validation_passes": 0,
+    "primary": "One next original128 batch at global_step2 with actual retrieved-input coverage in native actor and critic updates; token/mask/MM alignment, finite metrics,4 optimizer steps per rank per role and nonzero local parameter samples.",
+    "limitations": "No accuracy gate, test-panel sampling,301-step stability or bitwise backend restart claim."
+  },
+  "cost_bounds": {
+    "maximum_train_episodes": 0,
+    "maximum_val_passes": 0,
+    "maximum_val_episodes": 0,
+    "maximum_rollout_dispatches": 0,
+    "maximum_post_episode_self_distill_dispatches": 0,
+    "maximum_total_agent_dispatches": 0
+  },
+  "stops": [
+    "Exactly next native global batch2 only; no extra validation or additional updates",
+    "Two-hour supplemental window includes preparation; original parent24h deadline remains binding",
+    "6GB incremental write stop; strict8GB incremental cap and parent150GB/global210GB limits",
+    "Input mismatch, no retrieved rows, nonfinite metrics or missing updates: retain evidence and close without resampling or tuning",
+    "CPU reconstruction must match every recorded prompt ID, sampling parameters, episode response IDs/masks, retrieval ID, initial state and actions; zero new generation requests or replay fallback allowed"
+  ],
+  "storage_write_stop_reason": "6GB new-write stop reserves2GB before supplemental strict8GB cap; original parent150GB additional/global210GB limits remain binding.",
+  "parent_experiment": "official_frozenlake_ppo_v1",
+  "scope": "Recover terminal actor/critic update check using all128 existing recorded trajectories; no new generation or seed selection",
+  "engineering_stop_after_batch": 2,
+  "stages": [
+    "train"
+  ],
+  "failed_parent_artifacts_retained": true,
+  "method_preparation_requested": false,
+  "parent_original_deadline_unix": 1792990927.566028,
+  "restart_disclosure": "Original supplemental attempt stopped before actor native call due audit serialization. Restore same fullstep1 once and use CPU reconstructed inputs from ALL128 existing recorded output sequences; same original clock/storage and no new LLM dispatch.",
+  "audit": {
+    "coverage": "At least one actually retrieved skill row reaches both native actor and critic update batches; all128 recorded token/mask prefixes match actual dispatched packets; processed grid/pixel shapes align",
+    "updates": "exactly4 original optimizer calls per role per rank, finite native losses/gradients and nonzero fixed local parameter-sample deltas in both roles",
+    "failure": "fail closed if no retrieved rows, mismatched inputs or numerical/update evidence; no resampling or hyperparameter tuning"
+  },
+  "maximum_correctness_stage_seconds_including_preparation": 7200,
+  "worker_entry": "run_retrieved_update_replay.py",
+  "substage_baseline_four_root_bytes": 153375105024,
+  "substage_strict_maximum_additional_bytes": 8000000000,
+  "maximum_private_bank_tensor_bytes_per_rank": 2500000000,
+  "diagnostic_end_state": "No second full model/optimizer snapshot. Existing verified step1 full checkpoint remains read-only and is the recovery reference. Effective actor input tensors and small before/after local parameter statistics are saved; post-step2 live state is terminal diagnostic state, not a resumable performance model.",
+  "cpu_check_completed_unix": 1792916874.6257632,
+  "replay_source": "retrieved_input_ppo_check_v1"
+}

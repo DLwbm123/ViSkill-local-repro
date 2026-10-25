@@ -329,12 +329,27 @@
     "private_model_or_optimizer_weights_exported": false
   },
   "retrieved_input_ppo_check_v1": {
-    "status": "FROZEN_CPU_READY_NO_GPU_AT_PREREGISTRATION",
-    "report": "reports/38_retrieved_input_ppo_correctness_protocol.md",
+    "status": "INCOMPLETE_ACTOR_AUDIT_SERIALIZATION_FAILURE",
+    "report": "reports/39_retrieved_input_audit_incident_and_replay_protocol.md",
     "protocol": "configs/reproduction/retrieved_input_ppo_check_v1.json",
     "execution_source_commit": "5cdeb6d49611445a646c4d2db2f2dbbb6d2dea5f",
     "scope": "next native global_step2 batch128, actual retrieved-input actor/critic PPO audit, no301 or validation",
     "reference_global_step": 1,
-    "new_step2_full_state_saved": false
+    "new_step2_full_state_saved": false,
+    "result": "docs/evidence/reproduction/retrieved_input_ppo_check_v1_result/result.json",
+    "actual_model_dispatches": 415,
+    "episodes": 128,
+    "retrieved_episodes": 51,
+    "actor_update_completed": false,
+    "critic_update_completed": true
+  },
+  "retrieved_input_ppo_replay_v1": {
+    "status": "FROZEN_CPU_READY_NO_RECOVERY_GPU_AT_PUBLICATION",
+    "report": "reports/39_retrieved_input_audit_incident_and_replay_protocol.md",
+    "protocol": "configs/reproduction/retrieved_input_ppo_replay_v1.json",
+    "execution_source_commit": "742d38fc6d727bfe8b93ba9cb9806951f62a0c94",
+    "new_model_generation_dispatches_allowed": 0,
+    "fixed_recorded_episodes": 128,
+    "new_full_step2_checkpoint": false
   }
 }
