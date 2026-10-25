@@ -14,7 +14,9 @@
     "configs/reproduction/observed_agent.yaml",
     "configs/reproduction/released_frozenlake_eval_v1.json",
     "tests/test_frozenlake_lifecycle.py",
-    "scripts/close_released_eval.py"
+    "scripts/close_released_eval.py",
+    "scripts/check_official_train_storage_cpu.py",
+    "configs/reproduction/official_train_checkpoint_cpu_v1.json"
   ],
   "not_included": [
     "directional contract",

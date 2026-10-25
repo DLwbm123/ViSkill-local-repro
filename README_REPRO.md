@@ -1,3 +1,5 @@
+Original full-training checkpoint storage requires a budget decision: about105.13GB tensor payload exceeds the current50GB per-experiment cap; no GPU training launched. The original algorithm/config remains intact. See [report34](reports/34_official_training_storage_feasibility.md) for the numeric check and specific resource proposal.
+
 Official released-model full256 verification completed:216/256(84.375%),284 rollout dispatches and1 post-episode distill,0 updates/admissions. Initialization failure and its costs retained. Full training reproduction remains pending. See [report33](reports/33_official_released_frozenlake_check.md).
 
 Official256 evaluation: first initialization failed before task dispatch because the observer inherited the synchronous worker; the released async worker is restored, original failure retained, and one repair is initializing under the same deadline. No performance result yet. See [report32](reports/32_paper_reproduction_reset.md).

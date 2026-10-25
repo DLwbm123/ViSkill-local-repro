@@ -1,0 +1,1 @@
+{"error": "Deprecated AutoModelForVision2Seq.from_config accepts only config, unlike current generic auto class", "stage": "meta actor constructor before any tensors/optimizer/model forward or GPU", "repair": "Set dtype and attention in config, preserving architecture; same CPU deadline", "GPU_calls": 0, "model_forward_backward": 0, "CPU_optimizer_fixture_steps": 0}

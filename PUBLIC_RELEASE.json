@@ -249,5 +249,21 @@
     "from_scratch_training_reproduced": false,
     "source_commit": "0a4928cc5bd096d92c441107e2f6ad5f593bfe33",
     "private_inputs_or_weights_exported": false
+  },
+  "official_train_checkpoint_cpu_v1": {
+    "status": "CPU_COMPLETE_OFFICIAL_FULL_TRAINING_STORAGE_BUDGET_BLOCKED",
+    "report": "reports/34_official_training_storage_feasibility.md",
+    "result": "docs/evidence/reproduction/official_train_checkpoint_cpu_v1/result.json",
+    "actual_GPU_calls": 0,
+    "real_actor_critic_optimizer_steps": 0,
+    "scalar_CPU_optimizer_fixture_steps": 1,
+    "standard_checkpoint_tensor_payload_bytes": 105129467916,
+    "existing_strict_new_storage_limit_bytes": 50000000000,
+    "proposed_exception_new_storage_limit_bytes": 150000000000,
+    "proposed_four_root_stop_bytes": 210000000000,
+    "budget_exception_authorized": false,
+    "full_training_started": false,
+    "source_commit": "a21d6bdc811dc61def12ef7ac4e15341e72bf9c0",
+    "private_model_weights_exported": false
   }
 }

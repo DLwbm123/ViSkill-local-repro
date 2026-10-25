@@ -1,0 +1,1 @@
+{"error": "Meta construction retained config BF16; production workers explicitly cast whole modules to FP32 before FSDP", "repair": "Apply the same module.to(dtype=float32) on meta parameters", "GPU_calls": 0, "model_forward_backward": 0, "CPU_optimizer_fixture_steps": 0}

@@ -1,0 +1,15 @@
+{
+  "name": "official_train_checkpoint_cpu_v1",
+  "purpose": "Before any official full-training launch, verify unmodified training configuration, meta-architecture parameter counts and raw recoverable-checkpoint storage under current budgets.",
+  "prepared_from_heartbeat_unix": 1792903705.955,
+  "deadline_unix": 1792904305.955,
+  "maximum_seconds_including_preparation": 600,
+  "maximum_additional_output_bytes": 2000000,
+  "allowed": ["Read pinned released code/config and existing base-model metadata", "Construct actor and original critic architecture only on meta device; no tensor weights loaded", "One scalar CPU AdamW fixture to inspect moment dtypes", "Write small numeric/config evidence"],
+  "forbidden": ["GPU inference or backward", "Native environment steps", "New training datasets/checkpoints", "Algorithm/hyperparameter/precision/optimizer changes", "Discard optimizer recovery requirements to fit budget", "Declare actual GPU memory or throughput from CPU analysis"],
+  "training_route": "CODE_AS_RELEASED non-cold-start; restore original batch128/mini32, GAE, actorlr1e-6,criticlr1e-5,fullgenerated loss,online skills,self-distill and original train/val.",
+  "single_experiment_storage_limit_bytes_strict": 50000000000,
+  "current_project_write_stop_bytes": 85000000000,
+  "last_closed_four_root_bytes": 44402753536,
+  "decision": "If standard complete checkpoint exceeds either limit, mark original full-training checkpoint plan unready, prepare specific budget/retention alternatives for human review; no automatic full-training dispatch. Any throughput canary needs its own fixed engineering protocol and cannot count as 300-step reproduction."
+}

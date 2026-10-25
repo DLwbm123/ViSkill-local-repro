@@ -1,0 +1,90 @@
+{
+  "status": "ORIGINAL_FULL_TRAINING_CHECKPOINT_STORAGE_BLOCKED",
+  "completed_unix": 1792903929.5307403,
+  "preparation_started_unix": 1792903705.955,
+  "deadline_unix": 1792904305.955,
+  "settings": {
+    "algorithm": "gae",
+    "train_batch": 128,
+    "minibatch": 32,
+    "actor_lr": 1e-06,
+    "critic_lr": 1e-05,
+    "actor_optimizer": "AdamW",
+    "critic_optimizer": "AdamW",
+    "actor_model_dtype_default": "fp32",
+    "critic_model_dtype": "fp32",
+    "actor_checkpoint_save_contents": [
+      "model",
+      "hf_model",
+      "optimizer",
+      "extra"
+    ],
+    "critic_checkpoint_save_contents": [
+      "model",
+      "optimizer",
+      "extra"
+    ],
+    "checkpoint_frequency": 100,
+    "max_actor_checkpoints": 1,
+    "max_critic_checkpoints": 1,
+    "total_training_steps": 301,
+    "validation_frequency": 20,
+    "val_before_train": true,
+    "agent_workers": 8,
+    "data_max_prompt": 5000,
+    "data_max_response": 4000,
+    "full_generated_loss_no_answer_mask": true,
+    "cold_start": false,
+    "online_initial_library": "new empty library, not released265 or old diagnostic library",
+    "proposed_execution_GPU_count": 2,
+    "official_script_GPU_count": 4
+  },
+  "actor_meta": {
+    "independent_parameters": 3754622976,
+    "trainable_parameters": 3754622976,
+    "decoder_layer_parameters": 2774771712,
+    "value_head_parameters": 0
+  },
+  "critic_meta": {
+    "independent_parameters": 3754625025,
+    "trainable_parameters": 3754625025,
+    "decoder_layer_parameters": 2774771712,
+    "value_head_parameters": 2049
+  },
+  "critic_meta_class": "AutoModelForCausalLMWithValueHead",
+  "critic_loader_attempt_classes": [
+    "AutoModelForTokenClassification",
+    "AutoModelForVision2Seq"
+  ],
+  "base_serialized_elements": 3754622976,
+  "base_serialized_dtype_elements": {
+    "BF16": 3754622976
+  },
+  "scalar_CPU_AdamW_moment_fixture": {
+    "exp_avg": {
+      "dtype": "torch.float32",
+      "bytes_per_element": 4
+    },
+    "exp_avg_sq": {
+      "dtype": "torch.float32",
+      "bytes_per_element": 4
+    }
+  },
+  "scalar_CPU_fixture_steps": 1,
+  "new_actual_model_forward_backward_calls": 0,
+  "new_GPU_calls": 0,
+  "new_native_env_steps": 0,
+  "new_real_actor_or_critic_optimizer_steps": 0,
+  "model_state_FP32_tensor_payload_bytes": 30036992004,
+  "full_dense_FP32_Adam_moment_payload_bytes": 60073984008,
+  "conservative_model_plus_only_decoder_moments_payload_bytes": 74433339396,
+  "standard_model_plus_dense_moments_payload_bytes": 90110976012,
+  "additional_actor_HF_export_tensor_payload_bytes": 15018491904,
+  "standard_with_actor_HF_export_tensor_payload_bytes": 105129467916,
+  "current_experiment_limit_bytes_strict": 50000000000,
+  "project_headroom_after_last_closure_bytes": 40597246464,
+  "full_training_GPU_memory_and_throughput": "UNMEASURED",
+  "full_checkpoint_serialization_tested": false,
+  "budget_interpretation": "Analytic uncompressed tensor payload from actual meta architectures and configured FP32 AdamW, excluding serialization overhead/RNG/dataloader/skill library/logs; not a measured file size. Decoder-only moment count deliberately excludes vision/embeddings/value head as a conservative dense-connected-backbone bound. FSDP sharding changes per-rank split, not per-server total. Compression has no assumed saving.",
+  "decision": "Do not launch official full training with this raw complete checkpoint under existing50GB and85GB limits; prepare reviewable budget/retention options without silent algorithm or recovery changes."
+}
