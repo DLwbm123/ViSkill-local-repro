@@ -1,0 +1,47 @@
+{
+  "experiment": "slake_balanced_final_v1",
+  "status": "FROZEN_CPU_READY",
+  "first_preparation_unix": 1792936730,
+  "cooperative_stop_unix": 1792943630,
+  "deadline_unix": 1792943930,
+  "four_root_baseline_bytes": 154663337984,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "dataset_revision": "a9083ce6c34ac3ffb17671a605962924d8a8f9e9",
+  "selection_seed": 20261027,
+  "engine_seeds": [
+    42,
+    43
+  ],
+  "conditions": [
+    "N",
+    "V",
+    "Blank",
+    "Text",
+    "Wrong",
+    "Swap"
+  ],
+  "source_candidate_cap_per_class_group": 8,
+  "source_policy": "Train-only explicit Yes/No presence questions with one named target. Reject side-specific, normality, count and comparative questions and contradictory same-image/target presence labels. Positive requires a target annotation and a different-entity decoy with IoU<=0.1. Negative requires explicit No, no target annotation and no contradictory presence Yes; absence of a box alone is never a negative label. Freeze up to eight candidates per class per target/modality/anatomical-location group. Generate one no-reference response for each fixed source, retain only responses agreeing with its train label, and keep equal positive/negative counts per group with at least two per class. No replenishment after seeing source outcomes. This is dataset consistency plus model corroboration, not independent clinical certification.",
+  "source_gate": "At least three matched target/modality/location groups, at least 12 admitted source images per class in aggregate, and at least 20 train leave-one-image-out calibration queries. Otherwise stop before opening test inputs.",
+  "retrieval": "Require the same named target and explicit presence intent. Positive and negative examples always share training modality and anatomical-location metadata. Choose the nearest admitted example within each class and score a pair by the smaller of the two CLIP image cosines. Pick the best matched group; abstain below max(0.85, train leave-one-image-out top-pair 10th percentile). Query labels, modality/location metadata and ROI never participate. Reuse train image features; only new test image features are encoded once, without fitting.",
+  "references": "Always one positive and one negative train example. Only balanced present/absent class captions are shown, never original source QA. Reference order is balanced and reversed for each query in the second repeat. The same captions appear in V, Blank, Text, Wrong and Swap, so copying a fixed caption cannot establish visual benefit.",
+  "card": "Each reference is 672x336 source context plus 15%-padded detail. Positive uses a train target ROI; its relative search window is transferred to the same-modality/location negative, whose explicit No label was checked. A negative search window is not a negative lesion annotation. Wrong uses the same two source full images but a different-entity source ROI and its transferred search window. Swap exchanges the two complete reference cards while keeping the class captions fixed. Blank replaces both cards with white. V/Blank/Wrong/Swap must have identical prompt IDs and grids.",
+  "prompt": "Original short-answer system message; only a neutral reference heading, balanced class captions, current image and current question. No hand-written procedure or warning paragraph.",
+  "confirmation_data": "Official English test images used once after source rules and source bank are frozen. Input preparation accesses only qid, question, image, language and task metadata; answer fields are first accessed by the separate closing evaluator after every scheduled response completes. Query ROI files are never opened. Require test image IDs disjoint from all previously observed 450 train and 96 validation images. Never tune or resample from confirmation outcomes.",
+  "panels": "Coverage: one uniformly selected parsed presence question per test image when available, otherwise one visual question with abstention. Mechanism: up to two supported presence questions per image selected using only inputs and frozen retrieval. Keep both panels and their union; do not call the conditional panel a full SLAKE benchmark.",
+  "preconfirmation_gate": "At least 48 mechanism questions from at least 32 new images, at least three named targets, and coverage retrieval fraction at least 0.30. Otherwise stop without confirmation generation and do not alter thresholds or refill data.",
+  "maximum_questions": 288,
+  "maximum_generation_calls": 4000,
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 64
+  },
+  "maximum_image_pixels": 401408,
+  "query_long_side": 512,
+  "primary_metric": "Unchanged normalized exact match, with paired image-cluster bootstrap after averaging two inference-engine repeats. Main scientific scope is binary presence under dataset gold, not clinical diagnosis or learned procedural skill.",
+  "final_gate": "On the mechanism panel: V-N >=0.05, V-Text>=0.03 and V-Blank>=0.03; all three paired image-cluster 95% lower bounds strictly positive and all three mean differences positive in each repeat. V-Wrong and V-Swap must be positive in aggregate and nonnegative in each repeat. At least 15 Yes and 15 No questions; no unexpected non-binary gold in the mechanism panel. False-positive and false-negative rates for V may each rise by at most 0.05 versus N. Coverage-panel V-N must be nonnegative. Report class, target, order, abstention, all harms and stable visual-only gain cases regardless of gate. Failure or insufficient support ends this static medical reference-card route for the current authorization; no further prompt/model/dataset search or training.",
+  "optimizer_steps": 0,
+  "public_boundary": "Publish source, frozen protocol, aggregate and complete numeric records, admission and stop decisions, failures and costs. Never publish raw medical images, cards, QA/gold strings, raw model responses, prompt IDs, features, private paths or run tokens."
+}

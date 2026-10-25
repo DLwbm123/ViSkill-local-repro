@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_GATE_PASS",
+  "groups": 6,
+  "bank_entries": 36,
+  "bank_images": 32,
+  "class_counts": {
+    "yes": 18,
+    "no": 18
+  },
+  "class_image_counts": {
+    "yes": 17,
+    "no": 15
+  },
+  "calibration_queries": 36,
+  "threshold": 0.8966493308544159,
+  "source_calls": 84,
+  "test_inputs_opened": false,
+  "test_answers_accessed": false,
+  "independent_clinical_verification": false
+}

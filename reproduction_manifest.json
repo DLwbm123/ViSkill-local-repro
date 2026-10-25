@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/ZJU-REAL/ViSkill",
   "repository_commit": "7acaff880871b8d898d91c515c151080eabcba20",
   "branch": "repro/local-no-api",
-  "stage": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
+  "stage": "COMPLETE_FEASIBILITY_STOP",
   "audit_date": "2026-10-24",
   "base_model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
   "released_checkpoint_id": "hongxingli/ViSkill-FrozenLake",
@@ -1566,7 +1566,7 @@
     "cuda-python": "12.9.10",
     "cachetools": "5.5.2"
   },
-  "next_step": "The requested regional-card round is complete. Additional research should use a separately frozen protocol addressing shared-context regression and positive-only exemplars; no further experiment or training launched.",
+  "next_step": "This bounded static reference configuration is closed after preregistered coverage stop. No accuracy result was measured; no automatic extra sampling, tuning or training.",
   "directional_variant_gate": {
     "original_E": "PARTIAL: original free-text strategy semantic failures preserved",
     "directional_variant_E": "SCOPED_COMPONENT_PASS",
@@ -2443,5 +2443,30 @@
     "test_used": false,
     "reliable_medical_visual_gain_established": false,
     "attribution": "Evidence prioritizes current adaptation and prompt/reference construction problems; dataset errors and clinical label correctness have not been independently ruled out."
+  },
+  "slake_balanced_final_v1": {
+    "status": "COMPLETE_FEASIBILITY_STOP",
+    "report": "reports/48_slake_balanced_final_feasibility_stop.md",
+    "protocol_report": "reports/47_slake_balanced_final_protocol.md",
+    "protocol": "configs/reproduction/slake_balanced_final_v1.json",
+    "result": "docs/evidence/medical/slake_balanced_final_v1_result/result.json",
+    "execution_source_commit": "494f8f24391f29f138d03801df5d8329895b3392",
+    "source_verification_calls": 84,
+    "balanced_source_entries": 36,
+    "source_groups": 6,
+    "positive_source_entries": 18,
+    "negative_source_entries": 18,
+    "source_gate_pass": true,
+    "coverage_gate_pass": false,
+    "coverage_retrieved": 20,
+    "coverage_questions": 96,
+    "mechanism_questions": 38,
+    "mechanism_images": 23,
+    "confirmation_generation_calls": 0,
+    "confirmation_effect_measured": false,
+    "test_input_fields_used_for_precheck": true,
+    "test_answer_fields_used": false,
+    "optimizer_steps": 0,
+    "completed_response_replays": 0
   }
 }

@@ -1,0 +1,16 @@
+{
+  "status": "CONFIRMATION_GATE_STOP",
+  "coverage_questions": 96,
+  "coverage_retrieved": 20,
+  "coverage_fraction": 0.20833333333333334,
+  "mechanism_questions": 38,
+  "mechanism_images": 23,
+  "mechanism_targets": 4,
+  "union_questions": 121,
+  "union_images": 96,
+  "source_calls": 84,
+  "confirmation_calls_planned": 0,
+  "test_answers_accessed": false,
+  "query_roi_opened": false,
+  "completed_unix": 1792937880.5872552
+}

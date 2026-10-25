@@ -1,0 +1,258 @@
+{
+  "11940": {
+    "source_pair_index": 17,
+    "score": 0.9505445957183838
+  },
+  "11949": {
+    "source_pair_index": 6,
+    "score": 0.9221006631851196
+  },
+  "11961": {
+    "source_pair_index": 17,
+    "score": 0.9397706389427185
+  },
+  "11971": null,
+  "11977": {
+    "source_pair_index": 0,
+    "score": 0.9387527704238892
+  },
+  "11978": {
+    "source_pair_index": 3,
+    "score": 0.9604130983352661
+  },
+  "11979": {
+    "source_pair_index": 5,
+    "score": 0.9220903515815735
+  },
+  "11985": null,
+  "11989": null,
+  "11997": null,
+  "12002": null,
+  "12013": null,
+  "12018": null,
+  "12028": null,
+  "12038": null,
+  "12041": null,
+  "12052": null,
+  "12060": {
+    "source_pair_index": 4,
+    "score": 0.9409948587417603
+  },
+  "12061": {
+    "source_pair_index": 18,
+    "score": 0.941550612449646
+  },
+  "12062": {
+    "source_pair_index": 5,
+    "score": 0.91121506690979
+  },
+  "12067": null,
+  "12078": {
+    "source_pair_index": 7,
+    "score": 0.9201028347015381
+  },
+  "12079": {
+    "source_pair_index": 1,
+    "score": 0.9228441715240479
+  },
+  "12080": {
+    "source_pair_index": 13,
+    "score": 0.9421444535255432
+  },
+  "12097": {
+    "source_pair_index": 14,
+    "score": 0.9487937688827515
+  },
+  "12099": {
+    "source_pair_index": 16,
+    "score": 0.9132623672485352
+  },
+  "12109": {
+    "source_pair_index": 7,
+    "score": 0.9476770162582397
+  },
+  "12110": {
+    "source_pair_index": 1,
+    "score": 0.9266568422317505
+  },
+  "12123": {
+    "source_pair_index": 9,
+    "score": 0.9077680706977844
+  },
+  "12124": {
+    "source_pair_index": 1,
+    "score": 0.9236045479774475
+  },
+  "12141": {
+    "source_pair_index": 9,
+    "score": 0.9201581478118896
+  },
+  "12142": {
+    "source_pair_index": 1,
+    "score": 0.9236218333244324
+  },
+  "12143": {
+    "source_pair_index": 14,
+    "score": 0.9600540399551392
+  },
+  "12158": {
+    "source_pair_index": 0,
+    "score": 0.9333705902099609
+  },
+  "12159": {
+    "source_pair_index": 11,
+    "score": 0.9518235921859741
+  },
+  "12160": {
+    "source_pair_index": 10,
+    "score": 0.9460059404373169
+  },
+  "12164": null,
+  "12174": {
+    "source_pair_index": 7,
+    "score": 0.9552710652351379
+  },
+  "12175": {
+    "source_pair_index": 1,
+    "score": 0.9166437387466431
+  },
+  "12178": {
+    "source_pair_index": 15,
+    "score": 0.9064870476722717
+  },
+  "12195": {
+    "source_pair_index": 1,
+    "score": 0.9127730131149292
+  },
+  "12196": {
+    "source_pair_index": 12,
+    "score": 0.9364975094795227
+  },
+  "12212": {
+    "source_pair_index": 2,
+    "score": 0.9195401668548584
+  },
+  "12213": {
+    "source_pair_index": 14,
+    "score": 0.9531712532043457
+  },
+  "12224": {
+    "source_pair_index": 8,
+    "score": 0.9049240350723267
+  },
+  "12226": {
+    "source_pair_index": 12,
+    "score": 0.9242318272590637
+  },
+  "12227": null,
+  "12238": {
+    "source_pair_index": 7,
+    "score": 0.9305180311203003
+  },
+  "12239": {
+    "source_pair_index": 1,
+    "score": 0.9246771335601807
+  },
+  "12240": {
+    "source_pair_index": 14,
+    "score": 0.9611954689025879
+  },
+  "12253": {
+    "source_pair_index": 1,
+    "score": 0.9236382246017456
+  },
+  "12254": {
+    "source_pair_index": 14,
+    "score": 0.9634445309638977
+  },
+  "12267": null,
+  "12286": null,
+  "12303": null,
+  "12317": null,
+  "12327": null,
+  "12342": null,
+  "12363": null,
+  "12380": null,
+  "12395": null,
+  "12405": null,
+  "12418": null,
+  "12431": null,
+  "12446": null,
+  "12465": null,
+  "12478": null,
+  "12500": null,
+  "12511": null,
+  "12523": null,
+  "12540": null,
+  "12556": null,
+  "12569": null,
+  "12582": null,
+  "12594": null,
+  "12606": null,
+  "12618": null,
+  "12628": null,
+  "12639": null,
+  "12646": null,
+  "12656": null,
+  "12665": null,
+  "12672": null,
+  "12680": null,
+  "12690": null,
+  "12701": null,
+  "12706": null,
+  "12717": null,
+  "12726": null,
+  "12731": null,
+  "12742": null,
+  "12754": null,
+  "12759": null,
+  "12765": null,
+  "12775": null,
+  "12784": {
+    "source_pair_index": 14,
+    "score": 0.9433984756469727
+  },
+  "12797": null,
+  "12808": null,
+  "12816": null,
+  "12825": null,
+  "12836": null,
+  "12850": null,
+  "12862": null,
+  "12872": null,
+  "12880": {
+    "source_pair_index": 16,
+    "score": 0.9058262705802917
+  },
+  "12881": null,
+  "12890": null,
+  "12902": null,
+  "12915": null,
+  "12923": null,
+  "12927": null,
+  "12933": null,
+  "12941": null,
+  "12949": null,
+  "12954": null,
+  "12967": {
+    "source_pair_index": 16,
+    "score": 0.9343221187591553
+  },
+  "12975": {
+    "source_pair_index": 9,
+    "score": 0.933959424495697
+  },
+  "12977": {
+    "source_pair_index": 16,
+    "score": 0.9370585680007935
+  },
+  "12986": {
+    "source_pair_index": 16,
+    "score": 0.9278914928436279
+  },
+  "12992": {
+    "source_pair_index": 6,
+    "score": 0.9062308073043823
+  },
+  "12993": null
+}

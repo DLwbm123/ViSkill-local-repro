@@ -1,0 +1,18 @@
+{
+  "analysis_type": "posthoc_input_only_feasibility_description",
+  "test_gold_used": false,
+  "pool_visual_questions": 713,
+  "parsed_presence_questions": 111,
+  "matched_pair_questions_before_similarity_threshold": 73,
+  "matched_pair_images_before_threshold": 26,
+  "matched_pair_questions_after_frozen_threshold": 53,
+  "matched_pair_images_after_threshold": 23,
+  "supported_question_targets_after_threshold": {
+    "heart": 8,
+    "liver": 17,
+    "kidney": 13,
+    "spleen": 15
+  },
+  "threshold_changed": false,
+  "additional_model_calls": 0
+}

@@ -1,0 +1,11 @@
+{
+  "new_images": 96,
+  "shape": [
+    96,
+    768
+  ],
+  "test_answers_accessed": false,
+  "query_roi_opened": false,
+  "optimizer_steps": 0,
+  "completed_unix": 1792937872.9853349
+}

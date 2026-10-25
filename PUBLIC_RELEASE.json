@@ -1,7 +1,7 @@
 {
   "source_upstream_url": "https://github.com/ZJU-REAL/ViSkill",
   "source_upstream_commit": "7acaff880871b8d898d91c515c151080eabcba20",
-  "local_source_commit": "a8d2fa37741cc9f87518cb234ae623182a3c23ec",
+  "local_source_commit": "1d463eb6012ee219fd09f41796c6d21dea4cb854",
   "scope": "Sanitized source snapshot with reports, synthetic FrozenLake examples, and selected small evidence. Not a checkpoint or full experiment archive.",
   "removed_paths": [
     "docs/evidence/hardware",
@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
+  "status": "COMPLETE_FEASIBILITY_STOP",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -131,12 +131,15 @@
       "cpu_recovery_without_new_model_forward": true
     }
   },
-  "latest_update_scope": "Consolidated medical transfer experiment report: both SLAKE rounds, paired controls, positive and negative cases, evidence-bounded dataset/method attribution, failure costs and untested next hypotheses. No new experiment or raw medical material.",
+  "latest_update_scope": "Final balanced-source feasibility stop: source/protocol, all 84 numeric returns, balanced admission and input-only test coverage checks, costs and warnings. No test QA outputs, gold, raw images, machine identifiers or tokens.",
   "latest_copied_files": [
-    "reports/46_slake_medical_transfer_experiment_summary.md",
-    "README.md",
-    "reproduction_manifest.json",
-    "PUBLIC_RELEASE.json"
+    "scripts/slake_balanced_probe.py",
+    "scripts/slake_balanced_supervisor.py",
+    "scripts/slake_balanced_close.py",
+    "configs/reproduction/slake_balanced_final_v1.json",
+    "reports/47_slake_balanced_final_protocol.md",
+    "reports/48_slake_balanced_final_feasibility_stop.md",
+    "docs/evidence/medical/slake_balanced_final_v1_result"
   ],
   "source_packaging_repair": {
     "files_restored": 65,
@@ -452,7 +455,7 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/46_slake_medical_transfer_experiment_summary.md",
+  "latest_report": "reports/48_slake_balanced_final_feasibility_stop.md",
   "slake_evidence_v2": {
     "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
     "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
@@ -498,5 +501,30 @@
     "test_used": false,
     "reliable_medical_visual_gain_established": false,
     "attribution": "Evidence prioritizes current adaptation and prompt/reference construction problems; dataset errors and clinical label correctness have not been independently ruled out."
+  },
+  "slake_balanced_final_v1": {
+    "status": "COMPLETE_FEASIBILITY_STOP",
+    "report": "reports/48_slake_balanced_final_feasibility_stop.md",
+    "protocol_report": "reports/47_slake_balanced_final_protocol.md",
+    "protocol": "configs/reproduction/slake_balanced_final_v1.json",
+    "result": "docs/evidence/medical/slake_balanced_final_v1_result/result.json",
+    "execution_source_commit": "494f8f24391f29f138d03801df5d8329895b3392",
+    "source_verification_calls": 84,
+    "balanced_source_entries": 36,
+    "source_groups": 6,
+    "positive_source_entries": 18,
+    "negative_source_entries": 18,
+    "source_gate_pass": true,
+    "coverage_gate_pass": false,
+    "coverage_retrieved": 20,
+    "coverage_questions": 96,
+    "mechanism_questions": 38,
+    "mechanism_images": 23,
+    "confirmation_generation_calls": 0,
+    "confirmation_effect_measured": false,
+    "test_input_fields_used_for_precheck": true,
+    "test_answer_fields_used": false,
+    "optimizer_steps": 0,
+    "completed_response_replays": 0
   }
 }

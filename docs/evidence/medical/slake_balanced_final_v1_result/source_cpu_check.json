@@ -1,0 +1,8 @@
+{
+  "status": "CPU_READY",
+  "source_only": true,
+  "gpu_initialized": false,
+  "test_answers_accessed": false,
+  "query_roi_opened": false,
+  "completed_unix": 1792937604.0179603
+}

@@ -1,0 +1,202 @@
+{
+  "status": "COMPLETE_FEASIBILITY_STOP",
+  "stop_stage": "CONFIRMATION_GATE_STOP",
+  "source": {
+    "status": "SOURCE_GATE_PASS",
+    "groups": 6,
+    "bank_entries": 36,
+    "bank_images": 32,
+    "class_counts": {
+      "yes": 18,
+      "no": 18
+    },
+    "class_image_counts": {
+      "yes": 17,
+      "no": 15
+    },
+    "calibration_queries": 36,
+    "threshold": 0.8966493308544159,
+    "source_calls": 84,
+    "test_inputs_opened": false,
+    "test_answers_accessed": false,
+    "independent_clinical_verification": false
+  },
+  "source_groups": [
+    {
+      "target": "heart",
+      "modality": "CT",
+      "anatomical_location": "Chest_lung",
+      "positive_entries": 2,
+      "negative_entries": 2
+    },
+    {
+      "target": "kidney",
+      "modality": "MRI",
+      "anatomical_location": "Abdomen",
+      "positive_entries": 6,
+      "negative_entries": 6
+    },
+    {
+      "target": "liver",
+      "modality": "CT",
+      "anatomical_location": "Abdomen",
+      "positive_entries": 2,
+      "negative_entries": 2
+    },
+    {
+      "target": "liver",
+      "modality": "MRI",
+      "anatomical_location": "Abdomen",
+      "positive_entries": 2,
+      "negative_entries": 2
+    },
+    {
+      "target": "spleen",
+      "modality": "CT",
+      "anatomical_location": "Abdomen",
+      "positive_entries": 3,
+      "negative_entries": 3
+    },
+    {
+      "target": "spleen",
+      "modality": "MRI",
+      "anatomical_location": "Abdomen",
+      "positive_entries": 3,
+      "negative_entries": 3
+    }
+  ],
+  "source_verification_by_class": {
+    "yes": {
+      "attempted": 44,
+      "model_agrees": 39,
+      "admitted": 18
+    },
+    "no": {
+      "attempted": 40,
+      "model_agrees": 22,
+      "admitted": 18
+    }
+  },
+  "confirmation_precheck": {
+    "status": "CONFIRMATION_GATE_STOP",
+    "coverage_questions": 96,
+    "coverage_retrieved": 20,
+    "coverage_fraction": 0.20833333333333334,
+    "mechanism_questions": 38,
+    "mechanism_images": 23,
+    "mechanism_targets": 4,
+    "union_questions": 121,
+    "union_images": 96,
+    "source_calls": 84,
+    "confirmation_calls_planned": 0,
+    "test_answers_accessed": false,
+    "query_roi_opened": false,
+    "completed_unix": 1792937880.5872552
+  },
+  "posthoc_input_feasibility": {
+    "analysis_type": "posthoc_input_only_feasibility_description",
+    "test_gold_used": false,
+    "pool_visual_questions": 713,
+    "parsed_presence_questions": 111,
+    "matched_pair_questions_before_similarity_threshold": 73,
+    "matched_pair_images_before_threshold": 26,
+    "matched_pair_questions_after_frozen_threshold": 53,
+    "matched_pair_images_after_threshold": 23,
+    "supported_question_targets_after_threshold": {
+      "heart": 8,
+      "liver": 17,
+      "kidney": 13,
+      "spleen": 15
+    },
+    "threshold_changed": false,
+    "additional_model_calls": 0
+  },
+  "completed_generation_calls": 84,
+  "confirmation_generation_calls": 0,
+  "request_errors": 0,
+  "output_token_ids": 588,
+  "source_call_replays": 0,
+  "optimizer_steps": 0,
+  "confirmation_effect_measured": false,
+  "confirmation_answer_fields_used": false,
+  "query_roi_opened": false,
+  "source_cards_rendered": 0,
+  "production_three_image_conditions_executed": false,
+  "route_decision": "End this final bounded static medical reference configuration; no rule lowering, candidate replenishment, extra confirmation, model search or training.",
+  "scientific_interpretation": "Balanced train sources were feasible, but the frozen configuration did not support enough questions/images/coverage for the planned confirmation. This is not a new accuracy result and does not establish zero or negative visual effect.",
+  "data_boundary": "Test input fields and frozen CLIP image features were used for feasibility. Test answer fields were not consulted or scored. Future rule changes using these input coverage observations must not describe this input distribution as wholly untouched.",
+  "cost": {
+    "supervisor_wall_seconds": 98.01679944992065,
+    "preparation_to_exit_seconds": 1161.9895377159119,
+    "new_CLIP_images": 96,
+    "stage_costs": [
+      {
+        "stage": "source",
+        "start_unix": 1792937794.5139477,
+        "end_unix": 1792937844.0270011,
+        "exit_code": 0
+      },
+      {
+        "stage": "freeze_sources",
+        "start_unix": 1792937847.0731285,
+        "end_unix": 1792937852.4760232,
+        "exit_code": 0
+      },
+      {
+        "stage": "features",
+        "start_unix": 1792937855.677946,
+        "end_unix": 1792937877.3405967,
+        "exit_code": 0
+      },
+      {
+        "stage": "freeze_confirmation",
+        "start_unix": 1792937880.4205632,
+        "end_unix": 1792937885.849595,
+        "exit_code": 0
+      }
+    ],
+    "peak_incremental_bytes_at_exit": 9203712
+  },
+  "shutdown_warnings": {
+    "source_exit_code": 0,
+    "source_async_generator_shutdown_warning": true,
+    "source_cutlass_atexit_warning": true,
+    "interpretation": "Shutdown warnings retained; all source requests returned and stage exit was zero. No restart was performed."
+  },
+  "exit": {
+    "exit_code": 0,
+    "reason": null,
+    "outcome": "CONFIRMATION_GATE_STOP",
+    "end_unix": 1792937891.9895377,
+    "peak_bytes": 154672541696,
+    "incremental_bytes": 9203712,
+    "argv_violations": [],
+    "stage_costs": [
+      {
+        "stage": "source",
+        "start_unix": 1792937794.5139477,
+        "end_unix": 1792937844.0270011,
+        "exit_code": 0
+      },
+      {
+        "stage": "freeze_sources",
+        "start_unix": 1792937847.0731285,
+        "end_unix": 1792937852.4760232,
+        "exit_code": 0
+      },
+      {
+        "stage": "features",
+        "start_unix": 1792937855.677946,
+        "end_unix": 1792937877.3405967,
+        "exit_code": 0
+      },
+      {
+        "stage": "freeze_confirmation",
+        "start_unix": 1792937880.4205632,
+        "end_unix": 1792937885.849595,
+        "exit_code": 0
+      }
+    ]
+  },
+  "completed_unix": 1792938089.7083492
+}

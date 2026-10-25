@@ -1,0 +1,32 @@
+{
+  "status": "CONFIRMATION_GATE_STOP",
+  "completed_unix": 1792937888.932019,
+  "optimizer_steps": 0,
+  "test_answers_accessed_by_executor": false,
+  "stage_costs": [
+    {
+      "stage": "source",
+      "start_unix": 1792937794.5139477,
+      "end_unix": 1792937844.0270011,
+      "exit_code": 0
+    },
+    {
+      "stage": "freeze_sources",
+      "start_unix": 1792937847.0731285,
+      "end_unix": 1792937852.4760232,
+      "exit_code": 0
+    },
+    {
+      "stage": "features",
+      "start_unix": 1792937855.677946,
+      "end_unix": 1792937877.3405967,
+      "exit_code": 0
+    },
+    {
+      "stage": "freeze_confirmation",
+      "start_unix": 1792937880.4205632,
+      "end_unix": 1792937885.849595,
+      "exit_code": 0
+    }
+  ]
+}

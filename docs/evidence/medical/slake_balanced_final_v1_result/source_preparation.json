@@ -1,0 +1,14 @@
+{
+  "candidate_count": 84,
+  "candidate_groups": 7,
+  "candidate_class_counts": {
+    "yes": 44,
+    "no": 40
+  },
+  "exclusions": {
+    "positive_without_decoy": 47,
+    "positive_without_target_box": 170
+  },
+  "test_inputs_opened": false,
+  "test_answers_accessed": false
+}

@@ -66,5 +66,16 @@
     "protocol": "configs/reproduction/slake_evidence_v2.json",
     "report": "reports/45_slake_region_evidence_result.md",
     "execution_source_commit": "8a0b3706765cf4f64f7af2242591829f8966b72b"
+  },
+  "medical_balanced_reference_final": {
+    "files": [
+      "scripts/slake_balanced_probe.py",
+      "scripts/slake_balanced_supervisor.py",
+      "scripts/slake_balanced_close.py"
+    ],
+    "protocol": "configs/reproduction/slake_balanced_final_v1.json",
+    "report": "reports/48_slake_balanced_final_feasibility_stop.md",
+    "description": "Final bounded source/coverage feasibility screen. Balanced sources passed; confirmation gate stopped before any test QA generation. Three-image paired-reference conditions were planned, not executed.",
+    "execution_source_commit": "494f8f24391f29f138d03801df5d8329895b3392"
   }
 }

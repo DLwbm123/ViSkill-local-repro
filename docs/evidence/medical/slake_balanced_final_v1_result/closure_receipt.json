@@ -1,0 +1,9 @@
+{
+  "status": "CLOSED_FEASIBILITY_STOP",
+  "observed_unix": 1792938230.475072,
+  "owned_non_zombie_processes": 0,
+  "four_root_bytes_after_primary_export": 154672697344,
+  "incremental_bytes_after_primary_export": 9359360,
+  "strict_limit_bytes": 4000000000,
+  "note": "Small closing metadata follows this usage measurement; not a byte-exact peak or GPU busy time."
+}
