@@ -1,0 +1,20 @@
+{
+  "status": "CPU_READY",
+  "validation_questions": 254,
+  "validation_images": 87,
+  "background_questions": 69,
+  "changed_background_questions": 21,
+  "admitted_questions": 272,
+  "admitted_images": 108,
+  "uncovered_questions_kept": 3,
+  "fixed_point_free_wrong_mapping": true,
+  "expert_generation_calls": 436,
+  "reader_logical_outcomes": 2584,
+  "reader_physical_upper_bound": 1904,
+  "total_generation_upper_bound": 2340,
+  "generation_cap": 2440,
+  "exact_equal_reader_inputs_deduplicated": true,
+  "parser_rejects_organ_names": true,
+  "reader_prompt_differs_from_historical": true,
+  "gpu_initialized": false
+}

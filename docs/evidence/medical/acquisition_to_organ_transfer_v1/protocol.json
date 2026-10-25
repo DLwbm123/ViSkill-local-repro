@@ -1,0 +1,42 @@
+{
+  "experiment": "acquisition_to_organ_transfer_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792965515,
+  "cooperative_stop_unix": 1792976015,
+  "deadline_unix": 1792976315,
+  "four_root_baseline_bytes": 157254041600,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 4000000000,
+  "selection_seed": 20261105,
+  "training_seeds": [
+    42,
+    43
+  ],
+  "arms": [
+    "F",
+    "T"
+  ],
+  "epochs": 4,
+  "rows_per_update": 8,
+  "learning_rate": 0.0001,
+  "formal_generation_calls": 3216,
+  "maximum_generation_calls": 3316,
+  "hypothesis": "Positive cross-capability transfer: initialization from the learned acquisition-property visual adapter I improves learning of author Organ visual questions versus fresh visual adapter initialization under identical training and common base-null teacher. Old A/B modules remain immutable; the transfer effect must exceed matched fresh learning, not merely base inference.",
+  "scientific_position": "After soft old KL and actual-update projection failed same-parameter retention, test reuse of the externally preserved positive acquisition module, not another retuning of closed shared-consolidation recipes. T is a new task-specific derivative and does not overwrite I. F is a necessary mainline transfer control, not a baseline-tuning campaign.",
+  "data": "Official English VQA Organ rows outside old138source-evaluation images and A/B contracts.868candidates95normalized training templates; fixed seed one row per rare-first train template then fill to100unique question IDs. Repeated train images allowed and reported. No correctness selection, label/schema changes or validation exclusions. All254Organ validation87images retained;3unseen normalized templates keep base fallback under C contract. No test annotation.",
+  "contracts": "Existing exact A task-target and B question-template contracts retain priority unchanged. C uses only normalized question templates of new100train, no answers/type metadata at inference; C only when notA/B. Old background69 includes C-eligible Organ cases, all such altered branches are evaluated and cannot be exempted. Unknown patient independence and same-template development scope disclosed.",
+  "training": "Visualqkv/projLoRA rank16alpha32dropout0, language/basefrozen. F from base freshvisualLoRA; T from immutable I_seed finaladapter. SameAdamWLR1e-4betas.9/.999eps1e-8wd0clip1 BF16SDPA, same roworder seed+1000epoch,4epochs52updates/arm,800full/fullsupervised views plus400baseblankKL forwards. Reset optimizer for each task. Only initialization differs; null teacher is COMMON BASE for both arms (T initialnullKL maynonzero). No oldKL/projection in C training.",
+  "teacher": "Base teacher-forced blank answer-position distributions for100new TRAIN rows,100forward0generation; identical cache for F/T. No validation teacher distribution or labels. Final adapter and last optimizer recovery saved, actualdelta from loaded initialization recorded.",
+  "evaluation": "Generate missing I42/I43 parent Organ N/B baselines1016, then F/T42/43 final N/B on all254newvalidation plus changed oldbackgroundC cases. Exact CPU plan tightens4000ceiling to formal+100 before GPU. Base and old A/B required branches reused read-only from completed ledgers, no response replay/extra bank calls. Greedy64sameHF336RGB input. Evaluate only final epoch; uncontracted3newval cases are retained in primary bank effect using base, rawC outcomes separately diagnostic.",
+  "investment_gate": {
+    "experience_reuse_primary": "On all254 retained questions policyT-policyF full-image mean>=.05,eachseed>0,image95lower>0;visualinteraction(TN-Tblank)-(FN-Fblank)mean/everyseed/95lower>0. MissingC contract cases use same base in both policies.",
+    "new_learning": "PolicyT versus pre-update I on254 (I applied only C cases, base otherwise) full-image mean>=.10,eachseed>0,95lower>0;policyT minus priorA/Bbank(base onthese254)mean>=.10,eachseed>0,95lower>0.",
+    "preservation": "Old A-source69/oldA-val39/oldB-val172 keep EXACT immutable branch by registry priority. Oldbackground69 Tbank minus priorA/Bbank mean/everyseed>=0,95lower>=-.05,zero newharms eachseed. No exempting newC cases.",
+    "controls_and_failure": "Report F/base/parentI/T raw and deployed, allgains/harms, parentI vsbase beforelearning, Fnewlearning descriptive. Do not replace failed T-reuse primary with F success. Failure closes this transfer-initialization recipe; no new epochs/seeds/LR/blanklambda/sample/template/contract search."
+  },
+  "statistics": "Paired training seeds average thenimageclusterbootstrap10000selectionseed20261105; all254kept, oldbackground69,full1053policies derived only from actual required branches. Report modality/content/task/coverage/initialization effect/cost; same development validation images previously observed, not blind or patient-level replication.",
+  "stops": "3houroriginalprepareclock includingteacher/beforebaseline/training/evaluation;3GBwriteprestopstrict4GB plus original12h1792983515/50GB. No deadline reset or oldasset deletion.",
+  "limits": "Acquisition-to-organ representation initialization transfer, not multi-step clinical workflow, visual cards, PPO, patient safety or fullViSkill. External immutable preservation is not a single adapter retaining A/B.",
+  "public_boundary": "source/config/reports/anonymousnumerics only;medicalQA/labels/images/outputs/templates/teachers/weights/recovery/privatepaths/tokens excluded."
+}

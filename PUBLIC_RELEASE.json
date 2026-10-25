@@ -573,7 +573,7 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/63_medical_update_projection_result.md",
+  "latest_report": "reports/65_medical_capability_transfer_result.md",
   "slake_evidence_v2": {
     "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
     "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
@@ -649,7 +649,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "acquisition_to_organ_transfer_v1",
+    "next_experiment": "dynamic_acquisition_tools_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   },
@@ -671,5 +671,15 @@
     "new_generations": 1396,
     "optimizer_steps": 104,
     "all_gates_pass": false
+  },
+  "acquisition_to_organ_transfer_v1": {
+    "status": "COMPLETE_CAPABILITY_TRANSFER_NOT_ESTABLISHED",
+    "report": "reports/65_medical_capability_transfer_result.md",
+    "result": "docs/evidence/medical/acquisition_to_organ_transfer_v1/result.json",
+    "execution_source_commit": "a24f00a",
+    "new_generations": 3216,
+    "optimizer_steps": 208,
+    "all_gates_pass": false,
+    "reuse_difference_subgate_pass": true
   }
 }

@@ -1,0 +1,35 @@
+{
+  "experiment": "dynamic_acquisition_tools_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792971389,
+  "cooperative_stop_unix": 1792976489,
+  "deadline_unix": 1792976789,
+  "four_root_baseline_bytes": 157632761856,
+  "write_stop_incremental_bytes": 1500000000,
+  "maximum_incremental_bytes": 2000000000,
+  "selection_seed": 20261106,
+  "expert_seeds": [
+    42,
+    43
+  ],
+  "maximum_generation_calls": 2440,
+  "hypothesis": "Current-case function reuse: immutable learned acquisition I modules provide categorical modality/plane predictions that help frozen base Organ answering, beyond generic added context, visually null expert input, or mismatched-case predictions. Two expert calls are fixed by the training-question scope; the operation selector is not learned.",
+  "protected_object": "All254original Organ validation answers, plus old-background69 including21Cactivatedcases; correct-to-wrong counts and original bank baseline retained. A/B protected branches remain immutable outside C.",
+  "data": "Exactly254Organ validation87images andoldbackground69 from closed acquisition_to_organ_transfer_v1 manifest. C train-template scope251val/21background from existing TRAIN registry,3uncoveredval and48uncoveredbackground direct historical immutablebranch, no newgoldselection/testdata/download. Allcasesremain logicalpanels.",
+  "operation": "For every C-admitted image, I42/I43 independently answer own canonical modality and plane tool queries on current RGB336, max8tokensgreedy. Same questions on one shared black336canvas per expert,2blankcalls each, not perimage duplicate. Strict fixedparser accepts only modality CT/MRI/X-Ray/T1/T2/Unknown and planeTransverse/Coronal/Sagittal/Unknown; arbitrary organ names/multi-label text rejected toUnknown. No anatomical answer or raw expert string enters reader.",
+  "conditions": "N unknown/unknown metadata;D current-image parsedI categories;B parsedcategoriesfromBLACKexpertinput;W categoriesfromanotherimage by pre-frozen fixed-point-free permutation, never selectedfor actual category difference or correctness. Reader always sees same CURRENT fullRGBimage andoriginal question under same wrapper. B does NOT black out reader image. NonC queries use originalbeforebankbranch identicallyinallconditions.",
+  "reader": "OneHFbase b0 loaded with visual I adapters for experts; reader uses Peft disable_adapter context and assertsallLoRAlayersdisabled. Nooptimizer/train/newweights. Fixedshortanswerpromptwithtoolcategoryfields,newwrappedreaderinputdiffersfrom historical. Greedy64. All A/B states/fileassetsread-only.",
+  "deduplication": "Logical8outcomes/query(4conditions×2expertseeds), deduplicate exactlyequal(imageidentity,questiontext,parsedcategorytuple) readerinputs. Nsharedbyseeds, categorycollisions shared, nonC useexistingverifiednumericoriginalbranch. Save resolvedlogicaltopphysicalplanBEFOREfirstreaderintent; never countlogicaloutcomesasnewgenerations. Oldoriginalbase/A/I correctness from already-validatedCclosure numeric ledgers with source request provenance, not regenerating or rescanningrawoldreplies.",
+  "feasibility_gate": "After all expert outputs but before any reader generation: EACHexpertseed needs>=20 PRIMARYvalidationimageswithDpairdifferentfromBpairandWpair, and>=3distinctfullyparsedcategorypairs onprimaryimages. If fail, stopthisrecipewith0reader/accuracyunmeasured, preserveallinvalid/unknown/collisioncounts; do not changeprompt/parser/permutation/threshold.",
+  "investment_gate": {
+    "efficacy_and_controls": "Onall254retainednewquestions,D-Nmean>=.10,D-originalbankmean>=.10,D-Bmean>=.05,D-Wmean>=.05;eachcomparison everyexpertseed>0 andimage95lower>0. N iswrappedunknowncontrol;originalbank base153/254 isalso required so recoveryfromwrapperdegradationcannotpass.",
+    "preservation": "Oldbackground69D-minus-originalA/Bbankmean/everyseed>=0,image95lower>=-.05,zero newly harmed eachseed. ProtectedoldA-source69/Aval39/Bval172 haveCfalse/immutablebranchbyregistry.",
+    "statistics": "Sameoriginalnormalizedexactmatch. AveragepairedFROZENexpertseeds42/43first thenimageclusterbootstrap10000selectionseed20261106. These aretwoexpertweightinstances withonebase reader, notnewindependentreadertrainingseeds/patients. Reportallgains/harms/collisions/parsefailures and N-originalprompt effect."
+  },
+  "budget": "90minutesoriginalpreparationclock includesCPU/expert/reader/retries,noreset. Strict2GBsubbudget1.5GBprestop plus original12hdeadline1792983515/50GBcumulative. CPUtightens2500ceiling to deterministic expertcalls+7*272readerupper+100 beforeanyGPU. Noactualrequestretries or learnedparameterupdates.",
+  "failure": "Stop/closefixedfunction-reuse recipeiffeasibilityorcombinedgatesfail. No prompt/parser/toolquestion/permutation/sample/seed/threshold search or reinterpretationofearlierclosedinitialization/K/Pgates.",
+  "limits": "Currentcasecategoricalmodeltoolpipeline underfixedTRAINscope; notlearnedactionchoice,multistepclinicaltrajectory,PPO,visualcards/fullViSkill,blindvalidationorclinicalsafety. Unknownpatientindependence/unverifiedauthorQA. Wrongcasecontrolcanpredictsamecategoriesandallcollisionsmustremain.",
+  "public_boundary": "Onlysource/config/report/anonymousnumericprovenance,indices,counts. No medicalQA/images/gold/rawexpertorreaderreplies/templates/weights/privatepaths/tokens.",
+  "formal_generation_upper_bound": 2340
+}

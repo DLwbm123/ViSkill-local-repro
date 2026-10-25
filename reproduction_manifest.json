@@ -2473,7 +2473,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "acquisition_to_organ_transfer_v1",
+    "next_experiment": "dynamic_acquisition_tools_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   },
@@ -2487,7 +2487,7 @@
     "parameter_consolidation_gate_pass": false,
     "external_module_bank_gate_pass": true
   },
-  "latest_report": "reports/63_medical_update_projection_result.md",
+  "latest_report": "reports/65_medical_capability_transfer_result.md",
   "old_loss_update_projection_v1": {
     "status": "COMPLETE_PROJECTION_NOT_ESTABLISHED",
     "report": "reports/63_medical_update_projection_result.md",
@@ -2496,5 +2496,15 @@
     "new_generations": 1396,
     "optimizer_steps": 104,
     "all_gates_pass": false
+  },
+  "acquisition_to_organ_transfer_v1": {
+    "status": "COMPLETE_CAPABILITY_TRANSFER_NOT_ESTABLISHED",
+    "report": "reports/65_medical_capability_transfer_result.md",
+    "result": "docs/evidence/medical/acquisition_to_organ_transfer_v1/result.json",
+    "execution_source_commit": "a24f00a",
+    "new_generations": 3216,
+    "optimizer_steps": 208,
+    "all_gates_pass": false,
+    "reuse_difference_subgate_pass": true
   }
 }
