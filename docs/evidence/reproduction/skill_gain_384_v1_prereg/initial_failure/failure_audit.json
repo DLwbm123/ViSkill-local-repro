@@ -1,0 +1,21 @@
+{
+  "status": "PRESAMPLING_RECORDER_DIRECTORY_FAILURE",
+  "recorded_unix": 1792920827.290889,
+  "actual_generation_dispatches": 0,
+  "reserved_counter_before_IO_error": 1,
+  "completed_episodes": 0,
+  "partial_environment_resets": 1,
+  "GPU_initialization_happened": true,
+  "original_end": {
+    "exit_code": 1,
+    "reason": "RuntimeError('worker failed; retain all records and no blind replay')",
+    "end_unix": 1792920748.3867755,
+    "peak_four_root_bytes": 154221944832,
+    "new_peak_bytes": 286720,
+    "argv_violations": [],
+    "deadline_unix": 1792934046.0
+  },
+  "live_owned_non_zombie": [],
+  "repair": "Create required recorder directories before engine initialization; move intent counter after successful input saving; CPU fixture will exercise actual Manager with stubbed model transport",
+  "clock_and_budget_reset": false
+}

@@ -79,5 +79,9 @@
   },
   "gate_boundary_fixtures_PASS": true,
   "runtime_temperature_final": 0.0,
-  "gate_fixture_checked_unix": 1792920456.18819
+  "gate_fixture_checked_unix": 1792920456.18819,
+  "real_recorder_IO_CPU_stub_PASS": true,
+  "scripted_recorder_fixture_calls": 3,
+  "recorder_actual_model_calls": 0,
+  "recorder_fixture_checked_unix": 1792920869.848034
 }

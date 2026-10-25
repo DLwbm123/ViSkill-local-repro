@@ -2323,10 +2323,10 @@
     ]
   },
   "skill_gain_384_v1": {
-    "status": "FROZEN_CPU_READY_NO_MODEL_CALLS_AT_PUBLICATION",
+    "status": "PRESAMPLING_FAILURE_REPAIRED_CPU_READY",
     "report": "reports/41_skill_gain_384_protocol_and_cleanup.md",
     "protocol": "configs/reproduction/skill_gain_384_v1.json",
-    "execution_source_commit": "eaf85eaae9e223cc27bc6679dea477530aa9717a",
+    "execution_source_commit": "2d5cff664d7fbb62e1da934e43fe323dc9b56bce",
     "episodes": 384,
     "unique_maps": 64,
     "conditions": [
@@ -2350,6 +2350,8 @@
       "eligible_required_for_benefit": true
     },
     "cleanup_allocated_bytes_removed": 1050189824,
-    "unique_O_weight_kept_by_user": true
+    "unique_O_weight_kept_by_user": true,
+    "initial_failure_actual_generation_dispatches": 0,
+    "initial_failure_GPU_initialization_happened": true
   }
 }

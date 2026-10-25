@@ -6,6 +6,9 @@ from vagen.agent_loop.gym_agent_loop_skill import GymAgentLoop
 from vagen.official_train_observer import plain,write
 ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME='skill_gain_384_v1';OUT=ROOT/'artifacts/reproduction'/NAME;P=json.loads((SRC/f'configs/reproduction/{NAME}.json').read_text())
 
+def prepare_output_folders():
+    for name in ['request_images','episodes','trajectory_images']:(OUT/name).mkdir(exist_ok=True)
+
 class GainLoop(GymAgentLoop):
     def _inject_skill(self,data,skill,**kwargs):
         if self.condition=='V':return super()._inject_skill(data,skill,**kwargs)
@@ -19,7 +22,7 @@ class GainLoop(GymAgentLoop):
 class Manager:
     def __init__(self,engine,processor,repeat):self.engine=engine;self.processor=processor;self.repeat=repeat
     async def generate(self,request_id,prompt_ids,sampling_params,image_data=None,**kwargs):
-        assert time.time()<P['deadline_unix'];counter=OUT/'dispatch_count.json';n=json.loads(counter.read_text())['count']+1 if counter.exists() else 1;assert n<=P['limits']['model_generation_dispatches'];write(counter,{'count':n})
+        assert time.time()<P['deadline_unix'];counter=OUT/'dispatch_count.json';n=json.loads(counter.read_text())['count']+1 if counter.exists() else 1;assert n<=P['limits']['model_generation_dispatches']
         images=image_data or [];paths=[]
         for i,img in enumerate(images):
             path=OUT/'request_images'/f'{n:05d}_{i}.png';img.save(path);paths.append(str(path.relative_to(OUT)))
@@ -29,6 +32,7 @@ class Manager:
             if self.condition=='Blank' and expected==2:assert all(v==(255,255) for v in images[0].getextrema())
         record={'event':'intent','number':n,'repeat':self.repeat,'condition':self.condition,'seed':self.item['seed'],'stratum':self.item['stratum'],'episode_id':self.episode_id,'turn':self.turn,'sampling':sampling_params.copy(),'prompt_ids':prompt_ids,'images':paths,'image_sizes':[list(x.size) for x in images],'first_request':first,'dispatched_unix':time.time()}
         if first:record['image_grid_thw']=self.processor.image_processor(images=images,return_tensors='pt')['image_grid_thw'].tolist()
+        write(counter,{'count':n})
         with (OUT/'requests.jsonl').open('a') as f:f.write(json.dumps(plain(record))+'\n')
         from types import SimpleNamespace
         from verl.workers.rollout.sglang_rollout.async_sglang_server import SGLangHttpServer

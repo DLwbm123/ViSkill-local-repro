@@ -40,3 +40,11 @@
 旧O唯一7.51GB推理权重按用户明确选择保留。b0、r0、最近step1完整model/optimizer恢复点、原始输入/结果/配置与历史唯一模型均保留，未哈希、未删除其他项目或共享运行环境。清理不计为新实验的科学正结果。
 
 [冻结协议](../configs/reproduction/skill_gain_384_v1.json) · [64图/384顺序](../docs/evidence/reproduction/skill_gain_384_v1_prereg/data_manifest.json) · [CPU检查](../docs/evidence/reproduction/skill_gain_384_v1_prereg/cpu_check.json) · [清理回执](../docs/evidence/reproduction/skill_gain_384_v1_prereg/cleanup.json)
+
+## 首次初始化失败与调用前修复
+
+首次supervisor在17:31:41启动并于17:32:28退出1。首个环境已reset，记录器预分配计数1后因未创建request_images目录报FileNotFoundError；还没有写请求intent、没有进入模型generate，实际业务模型请求0、完整episode0。GPU模型初始化与约47秒运行成本确实发生，保留原失败、原源码eaf85eaae9e223cc27bc6679dea477530aa9717a及原时间/预算。
+
+修复在引擎初始化前创建request_images/episodes/trajectory_images，计数记录移动到输入保存成功后；新增CPU检查实际Manager记录器与原native transport入口，stub返回3次，真实写入5张输入PNG与6条intent/result后检查通过，实际模型/GPU调用0。原三条件native循环fixture保持通过，未重选64地图或修改384顺序/门槛/T0参数。
+
+只做一次明确的生成前修复，修复执行源码 `2d5cff664d7fbb62e1da934e43fe323dc9b56bce`。原失败位于initial_failure证据子目录，运行令牌不公开；同一准备起点17:14:06/21:14:06硬截止和原baseline均不重置，不重复任何已完成的业务模型局次。

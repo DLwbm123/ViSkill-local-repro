@@ -4,7 +4,7 @@ from pathlib import Path
 from types import SimpleNamespace
 from omegaconf import OmegaConf
 from transformers import AutoProcessor
-from vagen.skill_gain_probe import ROOT,SRC,OUT,P,GainLoop,Manager
+from vagen.skill_gain_probe import ROOT,SRC,OUT,P,GainLoop,Manager,prepare_output_folders
 from vagen.official_train_observer import plain,write
 async def run_repeat(engine,repeat,processor):
     cfg=runpy.run_path(str(SRC/'scripts/official_train_config.py'))['config']();cfg.skill_system.distill.mode='disabled';cfg.skill_system.reward.mode='success';cfg.skill_system.cold_start.enable=False
@@ -33,6 +33,7 @@ async def run_repeat(engine,repeat,processor):
 def launch():
     import sglang
     assert P['status']=='FROZEN_CPU_READY' and not (OUT/'dispatch_count.json').exists()
+    prepare_output_folders()
     processor=AutoProcessor.from_pretrained(ROOT/'models/b0',local_files_only=True)
     for repeat,seed in enumerate(P['engine_seeds']):
         assert time.time()<P['cooperative_stop_unix'];free=int(subprocess.check_output(['nvidia-smi','-i','3','--query-gpu=memory.free','--format=csv,noheader,nounits'],text=True).strip());assert free>=60000
