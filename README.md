@@ -1,3 +1,5 @@
+Full training closed after its first native update at a new observer Tensor-JSON error, before any checkpoint. Original384 outcomes/1447 replies and costs retained. A fixed one-batch native save/reload correctness check is preregistered and CPU-ready, with no new performance claim. See [report36](reports/36_training_observer_incident_and_correctness_check.md).
+
 Official full-batch FrozenLake training task has started and is initializing base actor/critic; first-batch time and complete recovery-checkpoint size remain unmeasured. See [report35](reports/35_official_frozenlake_training_protocol.md).
 
 User authorized one official FrozenLake training exception:150GB additional/210GB four-root cap,24h unchanged. Original batch128/mini32 GAE/PPO from b0 and an empty online library is CPU-ready and preregistered; GPU training has not yet started. See [report35](reports/35_official_frozenlake_training_protocol.md).

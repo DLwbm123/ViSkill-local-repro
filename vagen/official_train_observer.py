@@ -2,14 +2,16 @@
 import os,json,time,math,uuid,fcntl,shutil,subprocess
 from pathlib import Path
 import numpy as np
+import torch
 from vagen.agent_loop.gym_agent_loop_skill import GymAgentLoop
 from vagen.ray_trainer_skill import RayPPOTrainerSkill
 from vagen.main_ppo_skill import TaskRunner
 from verl.workers.fsdp_workers import AsyncActorRolloutRefWorker,CriticWorker
 from verl.utils.tracking import Tracking as NativeTracking
-ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME='official_frozenlake_ppo_v1';OUT=ROOT/f'artifacts/reproduction/{NAME}';P=json.loads((SRC/f'configs/reproduction/{NAME}.json').read_text());ACTIVE=None
+ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME=os.environ.get('TASK_EXPERIMENT_NAME','official_frozenlake_ppo_v1');OUT=ROOT/f'artifacts/reproduction/{NAME}';P=json.loads((SRC/f'configs/reproduction/{NAME}.json').read_text());ACTIVE=None
 
 def plain(v):
+    if torch.is_tensor(v):return plain(v.detach().cpu().tolist())
     if isinstance(v,dict):return {str(k):plain(x) for k,x in v.items()}
     if isinstance(v,(list,tuple)):return [plain(x) for x in v]
     if isinstance(v,np.ndarray):return plain(v.tolist())
@@ -74,7 +76,7 @@ def loading(worker,method,args,kwargs,role):
         kw['output_loading_info']=True;model,info=original(*a,**kw)
         assert not any(info.get(k) for k in ['missing_keys','unexpected_keys','mismatched_keys','error_msgs']),info
         info.update(actual_embedding_parameter_tied=model.get_input_embeddings().weight is model.get_output_embeddings().weight,actual_first_parameter_dtype=str(next(model.parameters()).dtype),role=role);calls.append(True)
-        if worker.rank==0:write(OUT/f'{role}_actual_loading_info.json',info)
+        if worker.rank==0:write(OUT/f'{role}_{os.environ.get("TASK_RUN_STAGE","train")}_actual_loading_info.json',info)
         return model
     cls.from_pretrained=staticmethod(load)
     try:result=method(*args,**kwargs);assert len(calls)==1;return result
@@ -88,15 +90,30 @@ class RunCritic(CriticWorker):
 
 class RunTracking(NativeTracking):
     def log(self,data,step,*args,**kwargs):
-        write(OUT/'metrics'/f'step_{step:04d}.json',{'step':int(step),'recorded_unix':time.time(),'metrics':data})
+        reload=bool(ACTIVE.config.trainer.val_only);prefix='reload_step' if reload else 'step'
+        try:write(OUT/'metrics'/f'{prefix}_{step:04d}.json',{'step':int(step),'recorded_unix':time.time(),'metrics':data})
+        except BaseException as exc:
+            (OUT/'OBSERVATION_FAILURE.txt').write_text(repr(exc));ACTIVE._save_checkpoint();raise ControlledStop('observation failure after saving recoverable state') from exc
         result=super().log(data,step,*args,**kwargs)
-        if step==1:ACTIVE._save_checkpoint()
-        bad=[k for k,v in data.items() if any(word in k for word in ['grad_norm','pg_loss','vf_loss']) and isinstance(v,(float,np.floating)) and not math.isfinite(v)]
-        if bad:write(OUT/'STOP_REQUESTED.json',{'reason':'nonfinite training metrics','keys':bad,'at_step':int(step)})
-        if stop_requested() and step<301:raise ControlledStop('cooperative resource/finite stop after complete native batch')
+        if step==1 and not reload:ACTIVE._save_checkpoint()
+        def nonfinite(v):
+            if torch.is_tensor(v):return not bool(torch.isfinite(v).all().item())
+            if isinstance(v,(list,tuple)):return any(nonfinite(x) for x in v)
+            return isinstance(v,(float,np.floating)) and not math.isfinite(v)
+        bad=[k for k,v in data.items() if any(word in k for word in ['grad_norm','pg_loss','vf_loss']) and nonfinite(v)]
+        if bad:
+            write(OUT/'STOP_REQUESTED.json',{'reason':'nonfinite training metrics','keys':bad,'at_step':int(step)});raise ControlledStop('nonfinite training metrics')
+        if not reload and int(step)>=P.get('engineering_stop_after_batch',302):raise ControlledStop('planned correctness stop after global batch1')
+        if stop_requested() and step<301:raise ControlledStop('cooperative resource stop after complete native batch')
         return result
 
 class RunTrainer(RayPPOTrainerSkill):
+    def _load_checkpoint(self):
+        result=super()._load_checkpoint()
+        if self.config.trainer.val_only:
+            assert self.global_steps==1 and self.config.trainer.resume_mode=='resume_path'
+            write(OUT/'RELOAD_APPLIED.json',{'applied_unix':time.time(),'global_step':1,'native_actor_critic_model_optimizer_extra_and_dataloader_load_returned':True,'load_contents_actor':list(self.config.actor_rollout_ref.actor.checkpoint.load_contents),'load_contents_critic':list(self.config.critic.checkpoint.load_contents),'further_training_updates':0})
+        return result
     def _get_gen_batch(self,batch):
         if not getattr(self,'in_validation',False):
             assert len(batch)==128;write(OUT/'phase.json',{'mode':'train','step':int(self.global_steps),'started_unix':time.time()})
@@ -121,7 +138,11 @@ class RunTrainer(RayPPOTrainerSkill):
         write(OUT/'checkpoint_receipts'/f'step_{self.global_steps:04d}.json',{'step':int(self.global_steps),'completed_unix':time.time(),'native_save_returned':True,'save_elapsed_seconds':time.time()-saving_started,'allocated_checkpoint_bytes':usage(folder),'four_root_bytes_after_save':total_usage(),'files':paths,'full_restore_not_executed':True,'online_library_snapshot':source.exists(),'single_generation_native_rotation':True});self.last_saved_step=self.global_steps;return result
     def fit(self):
         global ACTIVE
-        ACTIVE=self;assert self.use_critic and not self.use_reference_policy and not self.config.trainer.val_only
+        ACTIVE=self;assert self.use_critic and not self.use_reference_policy
+        if self.config.trainer.val_only:
+            assert P.get('engineering_stop_after_batch')==1 and (OUT/'checkpoint_receipts/step_0001.json').exists()
+            super().fit();assert (OUT/'RELOAD_APPLIED.json').exists() and (OUT/'metrics/reload_step_0001.json').exists()
+            write(OUT/'WORKER_RELOAD_COMPLETED.json',{'status':'NATIVE_FULL_CHECKPOINT_RELOAD_AND_VALIDATION_COMPLETE','completed_unix':time.time(),'restored_global_step':1,'additional_training_updates':0});return
         write(OUT/'training_started.json',{'started_unix':time.time(),'steps_target':301,'initial_library_empty':not (OUT/'library/skill_index.json').exists()})
         try:
             super().fit();assert (OUT/'metrics/step_0301.json').exists() and (OUT/'validation_metrics/step_0301.json').exists() and self.last_saved_step==301

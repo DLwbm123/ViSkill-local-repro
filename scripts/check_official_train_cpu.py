@@ -10,7 +10,7 @@ from verl.single_controller.base.worker import Worker
 from verl.single_controller.ray.base import _determine_fsdp_megatron_base_class
 from vagen.gym_agent_dataset import AgenticDataset
 import vagen.official_train_observer as obs
-ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);OUT=ROOT/'artifacts/reproduction/official_frozenlake_ppo_v1';OUT.mkdir(parents=True,exist_ok=True)
+ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME=os.environ.get('TASK_EXPERIMENT_NAME','official_frozenlake_ppo_v1');OUT=ROOT/f'artifacts/reproduction/{NAME}';OUT.mkdir(parents=True,exist_ok=True)
 assert not (OUT/'dispatch_count.json').exists() and not (OUT/'cpu_check.json').exists()
 cfg=runpy.run_path(str(SRC/'scripts/official_train_config.py'))['config']();validate_config(cfg,use_reference_policy=False,use_critic=True)
 assert cfg.algorithm.adv_estimator=='gae' and not cfg.trainer.val_only and cfg.trainer.resume_mode=='disable'
@@ -43,6 +43,21 @@ try:
         proto=DataProto.from_dict(tensors={k:torch.zeros((128,2),dtype=torch.long) for k in ['input_ids','attention_mask','position_ids']},non_tensors={'seed':np.arange(1,129),'data_source':np.array(['frozenlake']*128,dtype=object)})
         trainer=object.__new__(obs.RunTrainer);trainer.global_steps=1;trainer.async_rollout_mode=True;generated=trainer._get_gen_batch(proto);assert len(generated)==128 and generated.non_tensor_batch['seed'].tolist()==list(range(1,129))
         assert json.loads((folder/'phase.json').read_text())['step']==1
+        # Regression for the actual post-update Tensor metric serialization failure.
+        (folder/'metrics').mkdir();original_tracking=obs.NativeTracking.log;original_active=obs.ACTIVE;original_stop=obs.stop_requested;original_plan=obs.P.get('engineering_stop_after_batch');saves=[]
+        obs.ACTIVE=types.SimpleNamespace(config=types.SimpleNamespace(trainer=types.SimpleNamespace(val_only=False)),_save_checkpoint=lambda:saves.append(1));obs.NativeTracking.log=lambda *a,**k:None;obs.stop_requested=lambda:False;obs.P['engineering_stop_after_batch']=302
+        try:
+            logger=object.__new__(obs.RunTracking);logger.logger={};logger.log({'actor/grad_norm':torch.tensor(1.25),'critic/vf_loss':torch.tensor(.5),'nested':[torch.tensor([1.,2.])]},step=1)
+            row=json.loads((folder/'metrics/step_0001.json').read_text());assert row['metrics']['actor/grad_norm']==1.25 and row['metrics']['nested']==[[1.,2.]] and saves==[1]
+            try:logger.log({'actor/grad_norm':torch.tensor(float('nan'))},step=2)
+            except obs.ControlledStop:pass
+            else:raise AssertionError('Tensor nonfinite metrics must trigger controlled stop')
+            assert (folder/'STOP_REQUESTED.json').exists()
+        finally:
+            obs.NativeTracking.log=original_tracking;obs.ACTIVE=original_active;obs.stop_requested=original_stop
+            if original_plan is None:obs.P.pop('engineering_stop_after_batch',None)
+            else:obs.P['engineering_stop_after_batch']=original_plan
+
 finally:obs.OUT=original_out
 # Exercise the exact installed-version HF export constructor on meta only.
 from transformers import AutoConfig,AutoModelForImageTextToText
@@ -51,5 +66,5 @@ hfcfg=AutoConfig.from_pretrained(ROOT/'models/b0',local_files_only=True)
 with init_empty_weights():dummy=AutoModelForImageTextToText.from_config(hfcfg,torch_dtype=torch.bfloat16)
 assert all(p.is_meta for p in dummy.parameters());del dummy
 assert not ray.is_initialized() and not torch.cuda.is_initialized()
-result={'status':'CPU_READY','completed_unix':time.time(),'official_train_seeds':10000,'official_val_seeds':256,'full_original_batch128_mini32_GAE_critic_lr_and_checkpoint_contents':True,'native_async_actor_RPC_methods_and_two_role_MRO':True,'recorder_exact_kwargs_and_return_identity':True,'cap_stops_before_mock_native_call':True,'actual_parent_get_gen_batch128':True,'installed_HF_checkpoint_export_constructor_meta_only':True,'new_actual_model_forward_backward_calls':0,'new_GPU_calls':0,'new_native_env_steps':0,'new_optimizer_steps':0,'prior_storage_cpu_scalar_fixture_steps_not_repeated':1,'scope':'CPU/meta and mocked recorder checks do not establish GPU/backward/serialization/throughput success.'}
+result={'status':'CPU_READY','completed_unix':time.time(),'official_train_seeds':10000,'official_val_seeds':256,'full_original_batch128_mini32_GAE_critic_lr_and_checkpoint_contents':True,'native_async_actor_RPC_methods_and_two_role_MRO':True,'recorder_exact_kwargs_and_return_identity':True,'cap_stops_before_mock_native_call':True,'actual_parent_get_gen_batch128':True,'installed_HF_checkpoint_export_constructor_meta_only':True,'actual_Tensor_metrics_logging_and_nonfinite_regression':True,'new_actual_model_forward_backward_calls':0,'new_GPU_calls':0,'new_native_env_steps':0,'new_optimizer_steps':0,'prior_storage_cpu_scalar_fixture_steps_not_repeated':1,'scope':'CPU/meta and mocked recorder checks do not establish GPU/backward/serialization/throughput success.'}
 (OUT/'cpu_check.json').write_text(json.dumps(result,indent=2));(OUT/'dataset_manifest.json').write_text(json.dumps({'train':train.items,'validation':val.items},default=lambda v:v.tolist() if hasattr(v,'tolist') else str(v)));print(json.dumps(result))

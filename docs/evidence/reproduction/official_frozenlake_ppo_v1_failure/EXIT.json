@@ -1,0 +1,9 @@
+{
+  "exit_code": 1,
+  "reason": "RuntimeError('worker exit1; retain dispatches and latest checkpoint, no blind replay')",
+  "end_unix": 1792906441.4902806,
+  "deadline_unix": 1792990927.566028,
+  "peak_four_root_bytes": 44427952128,
+  "new_peak_bytes_from_original_baseline": 25157632,
+  "command_line_violations": []
+}

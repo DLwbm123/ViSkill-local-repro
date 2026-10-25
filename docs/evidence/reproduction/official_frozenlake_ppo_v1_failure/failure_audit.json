@@ -1,0 +1,38 @@
+{
+  "status": "CLOSED_POST_UPDATE_OBSERVER_SERIALIZATION_FAILURE_NO_CHECKPOINT",
+  "audited_unix": 1792907598.6985734,
+  "exit": {
+    "exit_code": 1,
+    "reason": "RuntimeError('worker exit1; retain dispatches and latest checkpoint, no blind replay')",
+    "end_unix": 1792906441.4902806,
+    "deadline_unix": 1792990927.566028,
+    "peak_four_root_bytes": 44427952128,
+    "new_peak_bytes_from_original_baseline": 25157632,
+    "command_line_violations": []
+  },
+  "failure": {
+    "failed_unix": 1792906431.7383428,
+    "global_step": 1,
+    "error": "TypeError('Object of type Tensor is not JSON serializable')",
+    "last_saved_step": null
+  },
+  "dispatches": {
+    "all": 1447,
+    "rollout": 1405,
+    "distill": 42
+  },
+  "completed_initial_val_episodes": 256,
+  "initial_val_successes": 34,
+  "completed_training_collection_episodes": 128,
+  "training_collection_successes": 20,
+  "request_results": 1447,
+  "request_errors": 0,
+  "original_checkpoint_saved": false,
+  "first_step_numeric_update_metrics_retained": false,
+  "native_update_methods_returned_before_failure": true,
+  "actual_optimizer_call_count": "UNMEASURED",
+  "sampled_parameter_delta": "UNMEASURED",
+  "live_owned_non_zombie_residuals": [],
+  "library_entries": 12,
+  "scope": "Training collection outcomes precede failed logging and are not post-update policy evaluation. No seamless recovery from lost parameters; preserve all costs."
+}

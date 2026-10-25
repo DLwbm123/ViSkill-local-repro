@@ -23,7 +23,9 @@
     "scripts/official_train_supervisor.py",
     "vagen/official_train_observer.py",
     "configs/reproduction/official_frozenlake_ppo_v1.json",
-    "configs/reproduction/observed_train_agent.yaml"
+    "configs/reproduction/observed_train_agent.yaml",
+    "scripts/audit_official_actor_parameters.py",
+    "configs/reproduction/official_frozenlake_correctness_v1.json"
   ],
   "not_included": [
     "directional contract",
@@ -41,5 +43,6 @@
     "user_authorized_unix": 1792904527.566028,
     "applies_to": "official_frozenlake_ppo_v1 only;24h unchanged",
     "other_experiments_keep_prior_limits": true
-  }
+  },
+  "post_update_observer_incident": "Original attempt lost live first-batch weights because Tensor metrics were not JSON-serializable before first save. Retained as failure; Tensor/finite handling and save-on-observation-error tested before new bounded correctness attempt."
 }

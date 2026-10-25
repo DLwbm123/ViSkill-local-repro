@@ -2,7 +2,7 @@
 import os,runpy
 from pathlib import Path
 from omegaconf import OmegaConf
-ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME='official_frozenlake_ppo_v1';OUT=ROOT/f'artifacts/reproduction/{NAME}'
+ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME=os.environ.get('TASK_EXPERIMENT_NAME','official_frozenlake_ppo_v1');OUT=ROOT/f'artifacts/reproduction/{NAME}'
 def config():
     _,original=runpy.run_path(str(SRC/'scripts/release_eval_config.py'))['config']()
     def paths(value):

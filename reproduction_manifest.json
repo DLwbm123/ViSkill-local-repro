@@ -2217,7 +2217,7 @@
     "user_authorized_unix": 1792904527.566028
   },
   "official_frozenlake_ppo_v1": {
-    "status": "BACKGROUND_STARTED_NATIVE_MODELS_INITIALIZING",
+    "status": "CLOSED_POST_UPDATE_OBSERVER_FAILURE_NO_CHECKPOINT",
     "protocol": "configs/reproduction/official_frozenlake_ppo_v1.json",
     "report": "reports/35_official_frozenlake_training_protocol.md",
     "official_train_seeds": 10000,
@@ -2238,6 +2238,28 @@
     "supervisor_pid": 2873801,
     "supervisor_start_unix": 1792905967.047821,
     "supervisor_ctime": 1792905966.71,
-    "first_full_training_batch_completed": false
+    "first_full_training_batch_completed": false,
+    "full_training_completed": false,
+    "completed_training_collection_episodes": 128,
+    "native_update_methods_returned": true,
+    "numeric_first_update_metrics_retained": false,
+    "complete_checkpoint_saved": false,
+    "failure_report": "reports/36_training_observer_incident_and_correctness_check.md"
+  },
+  "official_frozenlake_correctness_v1": {
+    "status": "FROZEN_CPU_READY_NOT_YET_LAUNCHED",
+    "parent": "official_frozenlake_ppo_v1",
+    "report": "reports/36_training_observer_incident_and_correctness_check.md",
+    "protocol": "configs/reproduction/official_frozenlake_correctness_v1.json",
+    "clean_execution_source_commit": "e42708bfd48016ff617fc28ff172be8a909c87a1",
+    "training_batches_target": 1,
+    "native_training_batch_size": 128,
+    "stages": [
+      "train_and_save",
+      "fixed_actor_slice_CPU_audit",
+      "native_full_state_reload_and256_validation"
+    ],
+    "new_method_requested": false,
+    "same_parent_storage_and_clock": true
   }
 }

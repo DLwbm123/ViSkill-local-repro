@@ -2,7 +2,7 @@
 import os,json,time,subprocess,signal,uuid,getpass
 from pathlib import Path
 import psutil
-ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME='official_frozenlake_ppo_v1';P=json.loads((SRC/f'configs/reproduction/{NAME}.json').read_text());OUT=ROOT/f'artifacts/reproduction/{NAME}';STATE=ROOT/'state/reproduction'
+ROOT=Path(os.environ['TASK_ROOT']);SRC=Path(os.environ['PAPER_SOURCE']);NAME=os.environ.get('TASK_EXPERIMENT_NAME','official_frozenlake_ppo_v1');P=json.loads((SRC/f'configs/reproduction/{NAME}.json').read_text());OUT=ROOT/f'artifacts/reproduction/{NAME}';STATE=ROOT/'state/reproduction'
 assert P['status']=='FROZEN_CPU_READY' and json.loads((OUT/'cpu_check.json').read_text())['status']=='CPU_READY'
 assert P['storage_exception_directly_authorized_by_user'] and P['strict_maximum_additional_bytes']==150000000000 and P['four_root_stop_bytes']==210000000000
 receipt=STATE/f'{NAME}_receipt.json';assert not receipt.exists();started=time.time();deadline=P['deadline_unix'];assert started+600<P['cooperative_stop_unix']
@@ -20,8 +20,8 @@ def discover():
         try:
             if p.info['uids'].real==os.getuid() and p.info['create_time']>=started-1 and p.environ().get('TASK_RUN_TOKEN')==run_token:
                 known[p.pid]=p.info['create_time']
-                if p.pid not in audited:
-                    audited.add(p.pid)
+                if (p.pid,p.info['create_time']) not in audited:
+                    audited.add((p.pid,p.info['create_time']))
                     if any(word in ' '.join(p.cmdline()).lower() for word in blocked):violations.append(p.pid)
         except (psutil.NoSuchProcess,psutil.AccessDenied):pass
 
@@ -34,19 +34,31 @@ def cleanup():
                 if p.create_time()==created:p.send_signal(sig)
             except (psutil.NoSuchProcess,psutil.AccessDenied):pass
         time.sleep(delay)
+completed_phases=[]
 try:
-    with (OUT/'worker.log').open('w') as log:
-        child=subprocess.Popen(['/data/envs/z0/bin/python','-u','-c','import os,runpy;runpy.run_path(os.environ["ENTRY"],run_name="__main__")'],env=env,cwd=SRC,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
-        while child.poll() is None:
-            discover();peak=max(peak,usage());now=time.time()
-            status={'updated_unix':now,'status':'RUNNING','four_root_bytes':peak,'deadline_unix':deadline,'owned_processes_seen':len(known),'argv_violation_count':len(violations)};(STATE/f'{NAME}_status.json').write_text(json.dumps(status))
-            if now>=P['cooperative_stop_unix'] and not (OUT/'STOP_REQUESTED.json').exists():(OUT/'STOP_REQUESTED.json').write_text(json.dumps({'reason':'24h original clock cooperative prestop','requested_unix':now,'deadline_unix':deadline}))
-            if peak>=limit or peak>=hard:raise RuntimeError('storage write stop; preserve latest completed native checkpoint')
-            if now>=deadline-15:raise RuntimeError('original24h hard clock')
-            if violations:raise RuntimeError('non-neutral command line')
-            time.sleep(5)
-        exit_code=child.returncode
-        if exit_code:raise RuntimeError(f'worker exit{exit_code}; retain dispatches and latest checkpoint, no blind replay')
+    for stage in P.get('stages',['train']):
+        if stage=='reload':
+            assert json.loads((OUT/'ACTOR_PARAMETER_AUDIT.json').read_text())['fixed_sample_nonzero_delta']
+            reload_free={g:int(subprocess.check_output(['nvidia-smi','-i',str(g),'--query-gpu=memory.free','--format=csv,noheader,nounits'],text=True).strip()) for g in [3,5]};assert min(reload_free.values())>=60000
+            (OUT/'gpu_before_reload.json').write_text(json.dumps({'checked_unix':time.time(),'free_MiB':reload_free}))
+        stage_env=dict(env,TASK_RUN_STAGE=stage)
+        if stage=='audit':stage_env.update(ENTRY=str(SRC/'scripts/audit_official_actor_parameters.py'),CUDA_VISIBLE_DEVICES='')
+        with (OUT/('worker.log' if stage=='train' else f'worker_{stage}.log')).open('w') as log:
+            child=subprocess.Popen(['/data/envs/z0/bin/python','-u','-c','import os,runpy;runpy.run_path(os.environ["ENTRY"],run_name="__main__")'],env=stage_env,cwd=SRC,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+            while child.poll() is None:
+                discover();peak=max(peak,usage());now=time.time()
+                status={'updated_unix':now,'status':'RUNNING','stage':stage,'four_root_bytes':peak,'deadline_unix':deadline,'owned_processes_seen':len(known),'argv_violation_count':len(violations)};(STATE/f'{NAME}_status.json').write_text(json.dumps(status))
+                if now>=P['cooperative_stop_unix'] and not (OUT/'STOP_REQUESTED.json').exists():(OUT/'STOP_REQUESTED.json').write_text(json.dumps({'reason':'original clock cooperative prestop','requested_unix':now,'deadline_unix':deadline}))
+                if peak>=limit or peak>=hard:raise RuntimeError('storage write stop; preserve latest completed native checkpoint')
+                if now>=deadline-15:raise RuntimeError('original hard clock')
+                if violations:raise RuntimeError('non-neutral command line')
+                time.sleep(5)
+            exit_code=child.returncode
+            if exit_code:raise RuntimeError(f'{stage} exit{exit_code}; retain dispatches/checkpoint, no blind replay')
+        cleanup()
+        if stage=='train' and P.get('engineering_stop_after_batch')==1:assert json.loads((OUT/'WORKER_COMPLETED.json').read_text())['reason']=='planned correctness stop after global batch1'
+        completed_phases.append(stage)
+
 except BaseException as exc:reason=repr(exc)
 finally:
-    cleanup();end={'exit_code':exit_code,'reason':reason,'end_unix':time.time(),'deadline_unix':deadline,'peak_four_root_bytes':peak,'new_peak_bytes_from_original_baseline':peak-baseline,'command_line_violations':violations};(STATE/f'{NAME}_EXIT.json').write_text(json.dumps(end,indent=2))
+    cleanup();end={'exit_code':exit_code,'reason':reason,'end_unix':time.time(),'deadline_unix':deadline,'peak_four_root_bytes':peak,'new_peak_bytes_from_original_baseline':peak-baseline,'command_line_violations':violations,'completed_phases':completed_phases};(STATE/f'{NAME}_EXIT.json').write_text(json.dumps(end,indent=2))

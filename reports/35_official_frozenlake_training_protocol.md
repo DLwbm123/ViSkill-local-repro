@@ -43,3 +43,8 @@ CPU通过不证明完整batch显存、FSDP backward、实际保存峰值或301�
 ## 实际后台启动（尚无首批实测耗时）
 
 13:26:07在GPU3/5启动supervisor2873801，准备起点及明天13:02:07硬截止不变。新启动四根44,406,620,160 bytes，物理GPU剩余72830/66207MiB，主机MemAvailable约760GB；目标ext4挂载可用、约15.19TB剩余，小write/read探针通过。首次健康核验supervisor身份匹配、24个own进程完整argv违规0，原基础模型正在加载，无EXIT；该时刻GPU worker尚在CPU权重初始化。它只确认后台任务和日志已启动，不代表已完成首个batch、反传或105GB保存。见[实际启动回执](../docs/evidence/reproduction/official_frozenlake_ppo_v1/public_start.json)。
+
+
+## 实际中止记录
+
+本轮在首批更新后的新增记录器处因Tensor JSON序列化失败退出，未保存首个checkpoint，未完成301步。原协议和全部调用保留；用户随后明确要先核查实现正确性，限定后续一批保存/恢复工程检查见[报告36](36_training_observer_incident_and_correctness_check.md)。不把它合并成无缝训练或成功性能复现。
