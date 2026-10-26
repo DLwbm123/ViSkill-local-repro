@@ -429,3 +429,8 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## Frozen visual representation readout launched
 
 [Protocol73](73_medical_frozen_visual_readout_protocol.md),source7a7cb14:base/F versus immutableI/R language-only readout learning,4adapters208planned updates/1852actual planned generations, paired source85/validation254/background69. Production check passed before first generation; no outcome or complete training claim yet. Hard10:43:35, original10:58:35 unchanged.
+
+
+## Medical window summary updated at09:54:31
+
+[Summary72](72_medical_window_interim_summary.md) separates12completed experiments from the13th running readout experiment. Completed totals20544generations/1248LoRAupdates; active partial90generations/32updates, no final outcome. Current-window actual snapshot20634generations/1280updates. Original10:58:35 deadline unchanged.

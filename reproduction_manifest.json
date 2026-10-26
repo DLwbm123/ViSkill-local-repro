@@ -2540,10 +2540,16 @@
   },
   "medical_window_interim_summary": {
     "report": "reports/72_medical_window_interim_summary.md",
-    "as_of": "2026-10-26 09:35 Asia/Shanghai",
+    "as_of": "2026-10-26 09:54:31 Asia/Shanghai",
     "window_end": "2026-10-26 10:58:35 Asia/Shanghai",
+    "completed_generation_experiments": 12,
     "completed_new_generations": 20544,
-    "adapter_optimizer_steps": 1248,
+    "completed_adapter_optimizer_steps": 1248,
+    "running_experiment": "frozen_visual_readout_v1",
+    "running_completed_generations_at_snapshot": 90,
+    "running_optimizer_steps_at_snapshot": 32,
+    "total_actual_generations_at_snapshot": 20634,
+    "total_actual_optimizer_steps_at_snapshot": 1280,
     "window_complete": false
   },
   "frozen_visual_readout_v1": {
