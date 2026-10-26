@@ -1,0 +1,106 @@
+{
+  "status": "READY_FOUR_LOCAL_TOOLS_SEARCH_DEFERRED",
+  "completed_at_utc": "2026-10-26T08:08:17.417811+00:00",
+  "dataset": {
+    "repository": "IVUL-KAUST/MedCTA",
+    "revision": "0be777092121a18ba2a85a0c4145a9d4fe8ed7db",
+    "images": 107,
+    "all_images_decoded": true,
+    "parquet_bytes": 27817159,
+    "medical_gold_read": false
+  },
+  "source_commit": "eb7d1dc0adc6da4c31d9c5ebef3a8059a620022c",
+  "tools": {
+    "status": "LOCAL_TOOLS_FUNCTIONAL",
+    "local_tools_passed": 4,
+    "calculator": true,
+    "ocr": true,
+    "image_description": true,
+    "region_attribute_description": true,
+    "shared_visual_model": true,
+    "synthetic_generation_calls": 2,
+    "benchmark_scored": false,
+    "serper_called": false,
+    "medical_gold_read": false,
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "transformers": "4.40.1",
+      "mmengine": "0.10.4",
+      "mmcv-lite": "2.1.0",
+      "mmpretrain": "1.2.0",
+      "easyocr": "1.7.1"
+    },
+    "device": "NVIDIA RTX PRO 5000 72GB Blackwell",
+    "outputs": {
+      "ocr_characters": 29,
+      "description_characters": 253,
+      "region_characters": 255
+    }
+  },
+  "storage": {
+    "strict_incremental_limit_bytes": 50000000000,
+    "prestop_bytes": 45000000000,
+    "actual_incremental_bytes": 14690115584,
+    "observed_incremental_peak_bytes": 14693707776,
+    "data_code_weights_and_caches_bytes": 14400614400,
+    "new_environment_bytes": 289497088,
+    "temporary_directory_bytes": 4096,
+    "existing_torch_environment_reused_read_only": true,
+    "baseline_bytes": 0
+  },
+  "clock": {
+    "first_actual_start_unix": 1792994010.5757928,
+    "completed_unix": 1793002097.4178112,
+    "elapsed_seconds": 8086.84201836586,
+    "fixed_deadline_unix": 1793008410.5757928,
+    "clock_reset": false
+  },
+  "runtime": {
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "transformers": "4.40.1",
+      "mmengine": "0.10.4",
+      "mmcv-lite": "2.1.0",
+      "mmpretrain": "1.2.0",
+      "easyocr": "1.7.1"
+    },
+    "hf_asset_revisions": {
+      "liuhaotian/llava-v1.5-7b": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+      "huggyllama/llama-7b": "4782ad278652c7c71b72204d462d6d01eaaf7549"
+    },
+    "attention_implementation": "eager",
+    "architecture_or_weights_updated": false,
+    "training": false,
+    "agent_evaluation": false,
+    "serper_configured": false,
+    "controller_processes_absent": true,
+    "argv_violations": 0
+  },
+  "technical_attempts_recorded": 7,
+  "compatibility_fixes": [
+    "MMEngine Adafactor registration with Torch 2.8",
+    "skip two documentation-only logo symlinks while rejecting other links",
+    "add tifffile and pycocotools",
+    "explicit eager attention and forwarding through MMPretrain from_config adapter"
+  ],
+  "download_acceleration": {
+    "probe_single_proxy_MB_per_second": 1.9088,
+    "probe_single_direct_MB_per_second": 3.4126,
+    "probe_four_direct_MB_per_second": 8.8947,
+    "connections": 4,
+    "segment_bytes": 67108864,
+    "maximum_staging_bytes": 268435456,
+    "direct_host_only": "download.openmmlab.com",
+    "github_proxy_required": true
+  },
+  "scope": "Data and four local tools prepared; synthetic functional checks only; no medical benchmark score or learned-skill claim",
+  "public_exclusions": [
+    "medical images and QA data",
+    "model weights",
+    "full runtime logs",
+    "private paths and process identity records",
+    "credentials"
+  ]
+}

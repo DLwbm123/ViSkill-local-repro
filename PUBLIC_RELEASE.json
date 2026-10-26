@@ -29,7 +29,7 @@
     "server_storage": "/data/local"
   },
   "privacy": "Original local Git history is not included. Public author metadata uses GitHub noreply.",
-  "status": "ACTIVE_MEDICAL_WINDOW_SECOND_CAPABILITY",
+  "status": "MEDCTA_LOCAL_TOOLS_READY_SERPER_DEFERRED",
   "latest_results": {
     "capacity": {
       "episodes": 128,
@@ -247,6 +247,16 @@
         0,
         0
       ]
+    },
+    "medcta_preparation": {
+      "images": 107,
+      "local_tools_functional": 4,
+      "final_incremental_bytes": 14690115584,
+      "observed_peak_incremental_bytes": 14693707776,
+      "training": false,
+      "benchmark_scored": false,
+      "serper_deferred": true,
+      "report": "reports/83_medcta_local_preparation.md"
     }
   },
   "latest_update_scope": "Final balanced-source feasibility stop: source/protocol, all 84 numeric returns, balanced admission and input-only test coverage checks, costs and warnings. No test QA outputs, gold, raw images, machine identifiers or tokens.",

@@ -459,3 +459,8 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## Consolidated experiment report and consumer-specific exposure correction
 
 [Report79](79_medical_module_bank_experiment_report.md) consolidates14generation units/24010new generations/1456LoRAupdates and the locked A/B positive result. Exposure auditv2 adds the omitted A replay key:primary85global overlap32,actualI/C-parent overlap0; lockedtest96global overlap0. The original scores/gates/candidates are unchanged. All windows and monitors remain closed; this report adds no model call or test scoring.
+
+
+## MedCTA local preparation completed
+
+[Report83](83_medcta_local_preparation.md):107/107 images decode,4/4 local tools execute on synthetic inputs, final incremental14,690,115,584 bytes and observed peak14,693,707,776 bytes. Original four-hour clock retained; successful exit after8086.84seconds. No training or formal medical scoring. GoogleSearch/Serper deferred. Preparation controller and its sole monitor are being closed after publication.

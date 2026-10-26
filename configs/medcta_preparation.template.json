@@ -1,0 +1,67 @@
+{
+  "source_commit": "eb7d1dc0adc6da4c31d9c5ebef3a8059a620022c",
+  "dataset_revision": "0be777092121a18ba2a85a0c4145a9d4fe8ed7db",
+  "assets": [
+    {
+      "name": "source",
+      "url": "https://codeload.github.com/IVUL-KAUST/MedCTA/tar.gz/eb7d1dc0adc6da4c31d9c5ebef3a8059a620022c",
+      "destination": "assets/source.tar.gz",
+      "bytes": null
+    },
+    {
+      "name": "visual",
+      "url": "https://download.openmmlab.com/mmclassification/v1/llava/llava-7b-v1.5_liuhaotian_20231025-5828aa5a.pth",
+      "destination": "cache/torch/hub/checkpoints/llava-7b-v1.5_liuhaotian_20231025-5828aa5a.pth",
+      "bytes": 13518899358
+    },
+    {
+      "name": "vision",
+      "url": "https://download.openmmlab.com/mmclassification/v0/clip/vit-large-p14_clip-openai-pre_336px_20231025-fb1315ed.pth",
+      "destination": "cache/torch/hub/checkpoints/vit-large-p14_clip-openai-pre_336px_20231025-fb1315ed.pth",
+      "bytes": 608502127
+    },
+    {
+      "name": "ocr_detector",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/craft_mlt_25k.zip",
+      "destination": "assets/craft_mlt_25k.zip",
+      "bytes": 77251756,
+      "expanded_name": "craft_mlt_25k.pth"
+    },
+    {
+      "name": "ocr_recognizer",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/english_g2.zip",
+      "destination": "assets/english_g2.zip",
+      "bytes": 14040947,
+      "expanded_name": "english_g2.pth"
+    },
+    {
+      "name": "metadata_dataset.json",
+      "url": "https://huggingface.co/datasets/IVUL-KAUST/MedCTA/resolve/0be777092121a18ba2a85a0c4145a9d4fe8ed7db/raw/dataset.json",
+      "destination": "data/dataset.json",
+      "bytes": 622625
+    },
+    {
+      "name": "metadata_toolmeta.json",
+      "url": "https://huggingface.co/datasets/IVUL-KAUST/MedCTA/resolve/0be777092121a18ba2a85a0c4145a9d4fe8ed7db/raw/toolmeta.json",
+      "destination": "data/toolmeta.json",
+      "bytes": 4344
+    }
+  ],
+  "environment": "${TOOL_ENV}",
+  "budget_roots": [
+    "${TASK_ROOT}",
+    "${TOOL_ENV}",
+    "${TMPDIR}"
+  ],
+  "baseline_bytes": 0,
+  "first_actual_start_unix": "SET_ONCE_BEFORE_START",
+  "deadline_unix": "FIRST_ACTUAL_START_PLUS_14400_SECONDS",
+  "strict_limit_bytes": 50000000000,
+  "prestop_bytes": 45000000000,
+  "scope": "107 released images and four local tools; Serper deferred; no training or benchmark scoring",
+  "deployment_note": "Deployment template: replace environment placeholders and establish a fresh fixed clock before launching. Historical runs must retain their original clock.",
+  "hf_asset_revisions": {
+    "liuhaotian/llava-v1.5-7b": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+    "huggyllama/llama-7b": "4782ad278652c7c71b72204d462d6d01eaaf7549"
+  }
+}
