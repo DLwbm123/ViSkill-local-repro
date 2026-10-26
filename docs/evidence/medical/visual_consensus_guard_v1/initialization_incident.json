@@ -1,0 +1,9 @@
+{
+  "cause": "Layer census included delegating wrapper objects; use actual LoraLayer type",
+  "new_generations": 0,
+  "optimizer_steps": 0,
+  "original_clock_retained": true,
+  "scientific_protocol_changed": false,
+  "previous_generic_layer_census": 70,
+  "intended_actual_lora_layers": 64
+}

@@ -1,0 +1,16 @@
+{
+  "BASE": {
+    "all_lora_layers_disabled": true,
+    "layers": 64
+  },
+  "T_42": {
+    "layers": 64,
+    "correct_adapter_active": true,
+    "all_parameters_frozen": true
+  },
+  "T_43": {
+    "layers": 64,
+    "correct_adapter_active": true,
+    "all_parameters_frozen": true
+  }
+}

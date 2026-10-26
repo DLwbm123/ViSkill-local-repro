@@ -1,0 +1,267 @@
+{
+  "status": "COMPLETE_CONSENSUS_GUARD_NOT_ESTABLISHED",
+  "gates": {
+    "primary_gain_at_least_10pp": true,
+    "primary_positive_95_lower": true,
+    "primary_zero_new_harm": false,
+    "primary_coverage_at_least_10pct": true,
+    "sham_positive_mean": true,
+    "sham_positive_95_lower": false,
+    "background_nonnegative_mean": true,
+    "background_95_lower_at_least_minus_5pp": true,
+    "background_zero_new_harm": true
+  },
+  "all_gates_pass": false,
+  "summary": {
+    "primary": {
+      "questions": 85,
+      "correct": {
+        "O": 52,
+        "U42": 66,
+        "U43": 66,
+        "Q": 66,
+        "G": 62,
+        "S": 61
+      }
+    },
+    "background": {
+      "questions": 69,
+      "correct": {
+        "O": 45,
+        "U42": 46,
+        "U43": 46,
+        "Q": 46,
+        "G": 46,
+        "S": 45
+      }
+    }
+  },
+  "effects": {
+    "primary_G_minus_O": {
+      "mean": 0.11764705882352941,
+      "image_bootstrap_95": [
+        0.047058823529411764,
+        0.2
+      ],
+      "gains": [
+        40,
+        70,
+        73,
+        77,
+        78,
+        81,
+        84,
+        89,
+        90,
+        99,
+        100
+      ],
+      "harms": [
+        58
+      ]
+    },
+    "primary_G_minus_S": {
+      "mean": 0.011764705882352941,
+      "image_bootstrap_95": [
+        -0.058823529411764705,
+        0.08235294117647059
+      ],
+      "gains": [
+        40,
+        73,
+        77,
+        84,
+        90,
+        119
+      ],
+      "harms": [
+        56,
+        65,
+        76,
+        83,
+        94
+      ]
+    },
+    "primary_Q_minus_O": {
+      "mean": 0.16470588235294117,
+      "image_bootstrap_95": [
+        0.07058823529411765,
+        0.25882352941176473
+      ],
+      "gains": [
+        40,
+        56,
+        65,
+        70,
+        73,
+        76,
+        77,
+        78,
+        81,
+        83,
+        84,
+        89,
+        90,
+        94,
+        99,
+        100
+      ],
+      "harms": [
+        58,
+        119
+      ]
+    },
+    "primary_U42_minus_O": {
+      "mean": 0.16470588235294117,
+      "image_bootstrap_95": [
+        0.07058823529411765,
+        0.25882352941176473
+      ],
+      "gains": [
+        40,
+        56,
+        65,
+        70,
+        73,
+        76,
+        77,
+        78,
+        81,
+        83,
+        84,
+        89,
+        90,
+        94,
+        99,
+        100
+      ],
+      "harms": [
+        58,
+        119
+      ]
+    },
+    "primary_U43_minus_O": {
+      "mean": 0.16470588235294117,
+      "image_bootstrap_95": [
+        0.058823529411764705,
+        0.2708823529411722
+      ],
+      "gains": [
+        40,
+        53,
+        54,
+        55,
+        56,
+        57,
+        65,
+        70,
+        73,
+        76,
+        77,
+        78,
+        81,
+        83,
+        84,
+        89,
+        90,
+        94,
+        99,
+        100
+      ],
+      "harms": [
+        58,
+        119,
+        120,
+        134,
+        142,
+        152
+      ]
+    },
+    "background_G_minus_O": {
+      "mean": 0.014492753623188406,
+      "image_bootstrap_95": [
+        0.0,
+        0.043478260869565216
+      ],
+      "gains": [
+        68
+      ],
+      "harms": []
+    },
+    "background_G_minus_S": {
+      "mean": 0.014492753623188406,
+      "image_bootstrap_95": [
+        0.0,
+        0.043478260869565216
+      ],
+      "gains": [
+        68
+      ],
+      "harms": []
+    },
+    "background_Q_minus_O": {
+      "mean": 0.014492753623188406,
+      "image_bootstrap_95": [
+        0.0,
+        0.043478260869565216
+      ],
+      "gains": [
+        68
+      ],
+      "harms": []
+    },
+    "background_U42_minus_O": {
+      "mean": 0.014492753623188406,
+      "image_bootstrap_95": [
+        0.0,
+        0.043478260869565216
+      ],
+      "gains": [
+        68
+      ],
+      "harms": []
+    },
+    "background_U43_minus_O": {
+      "mean": 0.014492753623188406,
+      "image_bootstrap_95": [
+        0.0,
+        0.043478260869565216
+      ],
+      "gains": [
+        68
+      ],
+      "harms": []
+    }
+  },
+  "coverage": {
+    "primary": {
+      "consensus": 22,
+      "guard": 16,
+      "sham": 16
+    },
+    "background": {
+      "consensus": 2,
+      "guard": 1,
+      "sham": 1
+    }
+  },
+  "cost": {
+    "new_generations": 476,
+    "cached_physical_records": 193,
+    "logical_predictor_readouts": 848,
+    "new_optimizer_steps": 0,
+    "errors": 0,
+    "replays": 0,
+    "supervisor_seconds": 127.41483068466187,
+    "original_preparation_to_exit_seconds": 1951.6069416999817,
+    "incremental_bytes": 2478080
+  },
+  "test_annotation_opened": false,
+  "limitations": [
+    "One joint policy from two frozen readers, not two independent G seeds.",
+    "Update-image-isolated official train source, known templates, unknown pretraining/project exposure and patient independence.",
+    "Background previously observed; external unchanged branches are not shared-parameter retention.",
+    "Black fallback follows the rule by construction; wrong-image answers are not clinical negative labels.",
+    "No full ViSkill/PPO/clinical claim."
+  ]
+}

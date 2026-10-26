@@ -1,0 +1,36 @@
+{
+  "experiment": "visual_consensus_guard_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792976377,
+  "cooperative_stop_unix": 1792980577,
+  "deadline_unix": 1792980877,
+  "four_root_baseline_bytes": 157651644416,
+  "write_stop_incremental_bytes": 1500000000,
+  "maximum_incremental_bytes": 2000000000,
+  "selection_seed": 20261108,
+  "predictor_seeds": [
+    42,
+    43
+  ],
+  "formal_generation_calls": 476,
+  "maximum_generation_calls": 576,
+  "hypothesis": "Selective application of frozen T experience: require two parent predictions to agree on a different answer from base and to change under both black and fixed wrong-image probes. This may preserve base-correct cases while keeping useful visually specific corrections. Zero observed new harm, netgain and matched-proposal sham are falsifiable; no theoretical guarantee of clinical correctness.",
+  "protected_object": "Base Organ answer correctness on85additional current-update-image-isolated source cases andoldbackground69. OldA/Bbranches unchanged outsideC. One jointguard fromtwofrozenpredictors, nottwoindependentguardseeds.",
+  "data": "OfficialTRAINEnglishVQAOrgan, unchangedC95TRAINquestiontemplates/A-Bpriority. Excludeallimagesusedinregionreader,visualreader,acquisition andOrganadapterupdates incloldreplay;excludeoldsource138evalimages andallpreviousvalidationimages.425excludedglobalimages;238eligiblequestions85images, sample1question/image fixedseed20261108 beforepredictions, all85retained. SourcepoolCT40MRI40XR5. Historicalprojectinference/pretrainingexposureunknown; notblind,testorpatient-levelgeneralization.",
+  "guard": "ForCquerieslet a=normalize(T42_N). Consensusproposal E iff a nonempty==normalize(T43_N) and a!=normalize(base_N). G iff E and a differsfromeachT42_B,T43_B,T42_W,T43_W. GreturnsrawT42_N(agreednormalizedanswer),otherwiseoriginalbase. OutsideCoriginalbankseed42canonicalbranchretained;guardchangesonlybaseCbranches,sochangevectorisidenticalagainstexistingbank43outsidetheguard. No labels/logprobthresholds/confidencetraining inrule.",
+  "counterfactuals": "BLACK336andfixedpointfreewrong-imagecycle over106Cimages(85new+21oldbackground),sameCURRENTquestion; wrongimagemaycontainthesameorgan, neverassumedfalsemedicalnegative. W merelyaskswhetherproposedanswerchangeswhencasechanges. Batchdependentcontrolnotstandaloneclinicalcasepolicy.",
+  "controls": "U42/U43unconditionalTwithinC,elsebefore. Cconsensus-only Eproposal. Scoverage-and-actual-normalized-change-matched sham: pre-frozenquestionpriority perprimary85/backgroundC21,afterEknownfilterprioritytoE thenrotateGflagsbyone;no goldreshuffle. Susesagreedcandidateonshamflagelsebase,exactGactivationcountandproposalchangecount. IfE0/1orG=allE,controlcanbeidenticalanduniquenessgatecannotpassbyconstruction. Allcontrolsderivefromsamefrozenresponses,noextrafictionalqueries.",
+  "cache": "Logicalpredictorreads848=106*(baseN/B+T42N/B/W+T43N/B/W). Oldbase/TmatchingownqidN/Brecordsfirst;otherwiseidenticalmodel+exactquestion+imageidentity(BLACKcommon)historicalrecordsfirstbyfixedsource/requestorder;otherwisededuplicateidenticalnewinputs. No correctness-basedcachechoice or response replay. CPUrecordsactualphysicalnewcount/formal+100cap,<=722newupper;storeoldrawonlyprivate/model/sourceprovenance,nocorrectnessinworker cache.",
+  "prediction": "Onebase+frozenT42/T43adapters,disableallLoRAforbase,allparamsrequiresgradFalse/eval/0optimizers/newweights. SameHF336originalshortanswerpromptgreedy64. Freezeallrawreadoutsthenprivate_decisions before any new-source goldscoring. Baselinecanonicaloldbank42 outsideC chosenbyconventionnotperformance;primaryCbeforebaseindependentofbankseed.",
+  "investment_gate": {
+    "primary": "G-base_Nmean>=.10,image95lower>0,ZERO newly harmedPRIMARYcases;guardcoverage>=.10. G-Smean>0 andimage95lower>0. All85sourceimagesretained,onecase/image.",
+    "old_preservation": "Oldbackground69G-beforemean>=0,95lower>=-.05,zero newly harmed;oldA69/39/B172Cfalsebranchunchanged. PreviousToldbackgroundalreadyhadzero harm,thereforethissecondarypanelisnotanindependentsafetyreplication.",
+    "mechanism": "Report Econsensus-only/U42/U43/G/Sgains/harms/coverage,riskdecomposition delta=(guardedcorrections-guardedharms)/N;Gblackalwaysbeforeblackbecauseblankdifferenceconditionfails,soGblackfallbackisCONSTRUCTEDandnotindependentvisualvalidation.",
+    "statistics": "Singlejointguard,notduplicatedbyparentseed;imagebootstrap10000seed20261108 primary85uniqueimages/bg69. Fullcandidate238Qvsselected85Qdenominatorandconditionalsourcecompositionreported. No clinicalriskguaranteefromzeroobservedharm."
+  },
+  "failure": "Anygatefailclosesfixedconsensus+black+wrongguard. No threshold/condition/view/seed/shampermutation/sample/contracttuning;allpriorK/P/init/category/unit-sumgatesandnegativesunchanged.",
+  "budget": "75minoriginalprepareclockincludingCPUcacheloads/newresponses,cooperative5minprestop,strict2GB/1.5GBprestop plusoriginal12h1792983515/50GBcumulative. No newdata/download/testlabels.",
+  "limits": "Frozenresponseconditionalactivation,newmethodnotnewadaptertraining. Currentvisualadapterupdate-imageisolationdoesnotruleoutoldproject/LMpretrainingexposure,questiontemplatesareknown. Wrong-imagecasepoolmakesbatchdependence;unverifiedauthorlabels/unknownpatients. NotfullViSkill/PPO/cards/clinicalworkflow/safety.",
+  "public_boundary": "source/config/report/anonymousscores/coverage/cacheprovenance only;noQA/gold/images/rawresponses/questiontemplates/weights/recovery/privatepaths/tokens."
+}

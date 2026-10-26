@@ -1,0 +1,34 @@
+{
+  "SUM_42": {
+    "layers_checked": 64,
+    "constructed_rank": 32,
+    "actual_delta_is_exact_sum_within_fp32_tolerance": true,
+    "maximum_probe_relative_error": 1.7175544542169519e-07,
+    "parent_factors_unchanged": true,
+    "optimizer_steps": 0
+  },
+  "DOUBLE_42": {
+    "layers_checked": 64,
+    "constructed_rank": 32,
+    "actual_delta_is_exact_sum_within_fp32_tolerance": true,
+    "maximum_probe_relative_error": 0.0,
+    "parent_factors_unchanged": true,
+    "optimizer_steps": 0
+  },
+  "SUM_43": {
+    "layers_checked": 64,
+    "constructed_rank": 32,
+    "actual_delta_is_exact_sum_within_fp32_tolerance": true,
+    "maximum_probe_relative_error": 1.4477815568625374e-07,
+    "parent_factors_unchanged": true,
+    "optimizer_steps": 0
+  },
+  "DOUBLE_43": {
+    "layers_checked": 64,
+    "constructed_rank": 32,
+    "actual_delta_is_exact_sum_within_fp32_tolerance": true,
+    "maximum_probe_relative_error": 0.0,
+    "parent_factors_unchanged": true,
+    "optimizer_steps": 0
+  }
+}

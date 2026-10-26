@@ -573,7 +573,7 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/67_medical_dynamic_acquisition_result.md",
+  "latest_report": "reports/69_medical_residual_composition_result.md",
   "slake_evidence_v2": {
     "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
     "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
@@ -649,7 +649,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "unit_residual_composition_v1",
+    "next_experiment": "visual_consensus_guard_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   },
@@ -693,5 +693,32 @@
     "logical_outcomes": 2584,
     "optimizer_steps": 0,
     "all_gates_pass": false
+  },
+  "unit_residual_composition_v1": {
+    "status": "COMPLETE_UNIT_COMPOSITION_NOT_ESTABLISHED",
+    "report": "reports/69_medical_residual_composition_result.md",
+    "result": "docs/evidence/medical/unit_residual_composition_v1/result.json",
+    "execution_source_commit": "1738c83",
+    "new_generations": 2176,
+    "optimizer_steps": 0,
+    "constructed_adapters": 4,
+    "all_gates_pass": false
+  },
+  "visual_consensus_guard_v1": {
+    "status": "COMPLETE_CONSENSUS_GUARD_NOT_ESTABLISHED",
+    "report": "reports/71_medical_visual_consensus_result.md",
+    "result": "docs/evidence/medical/visual_consensus_guard_v1/result.json",
+    "execution_source_commit": "917aa54",
+    "new_generations": 476,
+    "optimizer_steps": 0,
+    "all_gates_pass": false
+  },
+  "medical_window_interim_summary": {
+    "report": "reports/72_medical_window_interim_summary.md",
+    "as_of": "2026-10-26 09:40 Asia/Shanghai",
+    "window_end": "2026-10-26 10:58:35 Asia/Shanghai",
+    "completed_new_generations": 20544,
+    "adapter_optimizer_steps": 1248,
+    "window_complete": false
   }
 }

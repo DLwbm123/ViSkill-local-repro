@@ -1,0 +1,23 @@
+{
+  "status": "CPU_READY",
+  "candidate_questions": 238,
+  "candidate_images": 85,
+  "primary_questions": 85,
+  "primary_images": 85,
+  "primary_image_modality": {
+    "CT": 40,
+    "MRI": 40,
+    "X-Ray": 5
+  },
+  "excluded_images": 425,
+  "background_questions": 69,
+  "changed_background_questions": 21,
+  "train_and_previous_panel_image_disjoint": true,
+  "logical_predictor_requests": 848,
+  "cached_physical_records_reused": 193,
+  "new_physical_generations": 476,
+  "generation_cap": 576,
+  "guard_positive_negative_and_agreement_fixtures": true,
+  "exact_input_cache_reuse_without_correctness_selection": true,
+  "new_optimizer_steps": 0
+}
