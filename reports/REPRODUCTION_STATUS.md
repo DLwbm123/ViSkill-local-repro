@@ -453,4 +453,4 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 
 ## New8hour budget window closed early after planned branch completion
 
-[Closeout78](78_medical_ab_window_closeout.md):locked A/B confirmationPASS; source-isolated target-training feasibilitySTOP(CT74/MRI45/Xray7images, minimum10permodality). No newtraining or secondtest. Actualguard24.13min,remaining_owned0,alloldmodels/data/recovery preserved.
+[Closeout78](78_medical_ab_window_closeout.md):locked A/B confirmationPASS; source-isolated target-training feasibilitySTOP(CT74/MRI45/Xray7images, minimum10permodality). No newtraining or secondtest. Actualguard24.12min,remaining_owned0,alloldmodels/data/recovery preserved.
