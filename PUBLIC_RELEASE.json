@@ -720,5 +720,17 @@
     "completed_new_generations": 20544,
     "adapter_optimizer_steps": 1248,
     "window_complete": false
+  },
+  "frozen_visual_readout_v1": {
+    "status": "RUNNING_FROZEN_VISUAL_READOUT",
+    "report": "reports/73_medical_frozen_visual_readout_protocol.md",
+    "execution_source_commit": "7a7cb14",
+    "planned_physical_generations": 1852,
+    "logical_readouts": 3196,
+    "cached_parent_physical_records": 46,
+    "planned_optimizer_steps": 208,
+    "hard_deadline": "2026-10-26 10:43:35 Asia/Shanghai",
+    "production_backward_check": "PASS language-readout-only gradients;64 visual I layers frozen",
+    "performance_result_available": false
   }
 }

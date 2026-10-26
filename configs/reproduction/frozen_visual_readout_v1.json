@@ -1,0 +1,37 @@
+{
+  "experiment": "frozen_visual_readout_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792979104,
+  "cooperative_stop_unix": 1792982315,
+  "deadline_unix": 1792982615,
+  "four_root_baseline_bytes": 157654302720,
+  "write_stop_incremental_bytes": 1500000000,
+  "maximum_incremental_bytes": 2000000000,
+  "selection_seed": 20261109,
+  "training_seeds": [
+    42,
+    43
+  ],
+  "arms": [
+    "F",
+    "R"
+  ],
+  "epochs": 4,
+  "rows_per_update": 8,
+  "learning_rate": 0.0001,
+  "maximum_generation_calls": 1952,
+  "hypothesis": "A new language readout can extract reusable Organ information from an immutable learned acquisition visual module I better than the same readout learned over the base visual representation. This tests a frozen representation interface, unlike overwriting visual I during C, categorical tool compression, or untrained unit addition. No unique acquisition-semantic attribution or equal lifetime training claim.",
+  "protected_object": "Old A/B ability remains in immutable original branches. Frozen I factors must remain exactly unchanged in RAM through language training. New readout may harm new cases and old C-background cases, all counted; external preservation is not shared-parameter nonforgetting.",
+  "data": "Exactly prior C100 Organ train rows, 95 known templates, no new sample search. Primary all85 previously fixed update-image-isolated source cases from G, already observed development outputs, not fresh blind validation. Secondary all254 Organ validation plus69oldbackground. Primary85 excludes prior window training images including Ctrain and Itrain. Same train image overlap with old I for22images remains; no claim of semantic transfer isolation. C251val+21background+85primary=357active; other3val/48background old branches unchanged.",
+  "training": "Frozen base and visual representations. F fresh language q/k/v/o LoRA r16a32dropout0 overbase; R identical language LoRA over frozen I_seed visual LoRA. Activate separate visual default and language readout adapters simultaneously; freeze ALL except language readout. Reset same seed immediately before readout initialization and assert paired factor equality. AdamW1e-4,betas.9/.999eps1e-8wd0clip1,4epochs52updates,100same rows/order,800full/full CE views +400blank KL views each. Common base-null teacher coefficient1 uses same exact100 C cached distributions;0newteacherforwards. No re-tuning ROI language or C visual initialization recipes.",
+  "evaluation": "Same HF336RGB original shortest-answer prompt/greedy64; full and black views. All357 active cases perhead ×4heads ×2views=2856logicalreadouts; I parents85×2×2=340logical. Exact same model+question+image identity dedup, old I cache exactownqid then firstinputmatch reused without correctness selection. CPU freezes allbindings/physical schedule beforefirstgeneration,actualcountcapformal+100. Offline gold scoring only after responsescomplete. No bestepochorvalidationtraining.",
+  "investment_gate": {
+    "primary": "All85 source cases: R-F mean>=.05,eachseed>0,image95lower>0; R-I_parent mean>=.10,eachseed>0,95lower>0; R-base mean>=.10,eachseed>0,95lower>0. Visual interaction (RN-RB)-(FN-FB)mean/eachseed/95lower>0.",
+    "secondary": "All254 validation retained with3fallback: R-F mean andeachseed>=0,image95lower>=-.05. Oldbackground69 R-beforemean/eachseed>=0,95lower>=-.05,zero newly harmed eachseed; oldA69/39/B172 registrybranchesunchanged.",
+    "statistics": "Pair42/43average thenimageclusterbootstrap10000seed20261109; source85uniqueimages. Report full/black/F/R/Iparent/base/gains/harms/cost. FailureclosesfrozenI+language-readoutwithcommon-null-anchor recipe; no LR/epochs/seeds/rank/KL/template/sample/contract search."
+  },
+  "budget": "Originalprepare09:45:04 tocoop10:38:35/hard10:43:35, includingCPU/fixture/training/evaluation;strict2GB/1.5GBprestop plus original10:58:35/50GB. Fournewreadoutadaptersandlastoptimizerrecoveries only; no base or parentcopies on disk, data/download/testaccess unchanged.",
+  "limits": "Observed development source known templates, no patient-level/clinical/fullViSkill/PPO claim. Extra historical I52updates and22training-imageoverlaps not controlled; tests utility of frozen learned representation, not specific acquisition semantics. Language LoRA has same capacity between F/R; R additionally includes fixed visual I factors.",
+  "formal_generation_calls": 1852
+}

@@ -424,3 +424,8 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## 2026-10-26 09:35 medical window interim update
 
 [Summary72](72_medical_window_interim_summary.md):20,544 actual new generations/1,248 LoRA updates. [Residual69](69_medical_residual_composition_result.md) and [consensus71](71_medical_visual_consensus_result.md) both failed their complete gates. Two bounded positive conclusions remain support admission and external module-bank preservation. Original12-hour window ends10:58:35; this is not final closure. Raw medical material and models stay private.
+
+
+## Frozen visual representation readout launched
+
+[Protocol73](73_medical_frozen_visual_readout_protocol.md),source7a7cb14:base/F versus immutableI/R language-only readout learning,4adapters208planned updates/1852actual planned generations, paired source85/validation254/background69. Production check passed before first generation; no outcome or complete training claim yet. Hard10:43:35, original10:58:35 unchanged.

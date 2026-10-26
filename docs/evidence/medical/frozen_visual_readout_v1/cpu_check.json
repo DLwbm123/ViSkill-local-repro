@@ -1,0 +1,18 @@
+{
+  "status": "CPU_READY",
+  "training_questions": 100,
+  "primary_questions": 85,
+  "secondary_validation_questions": 254,
+  "old_background_questions": 69,
+  "active_questions_per_readout": 357,
+  "logical_predictor_readouts": 3196,
+  "new_physical_generations": 1852,
+  "cached_parent_physical_records": 46,
+  "teacher_cache_records_reused": 100,
+  "new_teacher_forwards": 0,
+  "train_evaluation_image_disjoint": true,
+  "primary_parent_update_image_isolated": true,
+  "readout_adapters": 4,
+  "optimizer_steps_planned": 208,
+  "gpu_initialized": false
+}
