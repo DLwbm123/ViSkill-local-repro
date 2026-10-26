@@ -742,5 +742,19 @@
     "C_I_old_KL_overlap_images": 26,
     "C_I_union_overlap_images": 40,
     "primary85_training_image_id_intersection": 0
+  },
+  "ab_bank_independent_confirmation_v1": {
+    "status": "RUNNING_LOCKED_AB_CONFIRMATION",
+    "report": "reports/76_medical_ab_independent_confirmation_protocol.md",
+    "execution_source_commit": "bea4648",
+    "all_English_questions": 1061,
+    "images": 96,
+    "new_generations_planned": 1614,
+    "cached_physical_records": 274,
+    "logical_predictor_reads": 2942,
+    "optimizer_steps": 0,
+    "window_start": "2026-10-26 10:37:24 Asia/Shanghai",
+    "window_deadline": "2026-10-26 18:37:24 Asia/Shanghai",
+    "test_gold_scored": false
   }
 }

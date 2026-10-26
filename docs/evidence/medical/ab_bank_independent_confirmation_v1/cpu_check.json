@@ -1,0 +1,39 @@
+{
+  "status": "CPU_READY",
+  "all_English_questions": 1061,
+  "all_images": 96,
+  "independent_questions": 1061,
+  "independent_images": 96,
+  "image_ID_overlap_train_validation": 0,
+  "suspected_near_duplicate_pairs": 0,
+  "exact_pixel_duplicate_pairs": 0,
+  "quarantined_images": 0,
+  "history_train_validation_images_screened": 546,
+  "independent_by_scope": {
+    "Plane": {
+      "questions": 58,
+      "images": 58
+    },
+    "Modality": {
+      "questions": 108,
+      "images": 82
+    },
+    "lung_appearance": {
+      "questions": 19,
+      "images": 19
+    }
+  },
+  "branch_questions": {
+    "I": 166,
+    "base": 856,
+    "A": 39
+  },
+  "logical_predictor_reads": 2942,
+  "new_physical_generations": 1614,
+  "cached_physical_records": 274,
+  "optimizer_steps": 0,
+  "gold_excluded_at_decoder_boundary": true,
+  "candidate_and_routing_frozen_before_predictions": true,
+  "gold_scoring_after_all_predictions_only": true,
+  "pixel_screen_is_not_patient_or_exhaustive_near_duplicate_proof": true
+}

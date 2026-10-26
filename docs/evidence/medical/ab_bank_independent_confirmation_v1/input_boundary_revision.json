@@ -1,0 +1,14 @@
+{
+  "initial_DRAFT_prepare_status": "CPU_STOP_BEFORE_PREDICTIONS",
+  "new_generations": 0,
+  "gold_scored": false,
+  "all_bilingual_train_validation_images": 630,
+  "test_EN_images_in_all_bilingual_history": 84,
+  "English_train_validation_images": 546,
+  "test_EN_images_in_English_history": 0,
+  "actual_prior_manifest_images": 524,
+  "test_EN_images_in_actual_manifest_history": 0,
+  "corrected_before_any_prediction": true,
+  "sample_minima_or_pixel_thresholds_changed": false,
+  "note": "Unused Chinese annotation rows are not actual English model-training exposure; frozen confirmation must disclose dataset/pretraining overlap uncertainty."
+}

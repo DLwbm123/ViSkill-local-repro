@@ -439,3 +439,8 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## Readout complete and full historical exposure clarified
 
 [Result74](74_medical_frozen_visual_readout_result.md):1852newgenerations/208updates complete; R-Fprimary-1.176pp CI[-6.471,4.118], allgatesfalse. [Audit75](75_medical_history_exposure_audit.md):22supervised+26old-KL-8both=40Ctraining images overlap I history, while primary85window-training image-ID intersection is0. Window totals13complete/22396generations/1456LoRAupdates. Original10:58:35 deadline and private medical/model boundary unchanged.
+
+
+## New8hour A/B independent confirmation window
+
+[Protocol76](76_medical_ab_independent_confirmation_protocol.md), sourcebea4648. WholeEnglishofficialtest1061Q96images; independentactual-English-historyimageIDintersection0,fixedduplicateflags0. Plane58/Modality108/lungappearance19.1614plannedactualnewgenerations,274cachedphysicalrecords,0optimizerupdates. Candidates andanswer-freeinputs frozen, labels for offlineevaluationonlyafterPREDICTIONS_LOCKED. Deadline18:37:24, old13experiment windowclosedbyusertransitionwith0remainingowned. No current performance result.

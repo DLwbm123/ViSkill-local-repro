@@ -1,0 +1,33 @@
+{
+  "experiment": "ab_bank_independent_confirmation_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_ab_confirmation_8h_20261026",
+  "first_preparation_unix": 1792982244,
+  "cooperative_stop_unix": 1792988844,
+  "deadline_unix": 1792989444,
+  "four_root_baseline_bytes": 157930889216,
+  "write_stop_incremental_bytes": 3000000000,
+  "maximum_incremental_bytes": 3500000000,
+  "maximum_generation_calls": 1714,
+  "selection_seed": 20261110,
+  "parent_seeds": [
+    42,
+    43
+  ],
+  "hypothesis": "Immutable A/B experience banks confirm positive net utility over the frozen base on a single locked officialtest English panel, full natural denominator plus prespecified Plane/Modality/lung-appearance scopes. No new training or failed-readout followup.",
+  "candidates": "base; bank42 andbank43 usingoriginalA42/A43fromgrounded_reader_anchor_v1 andI42/I43fromcontinual_acquisition_bank_v1. OriginalA_pairs/A_lexicon andBnormalizedTRAINtemplates immutable; AthenBthenbasepriority, inferenceonlyquestion. No learned probability router, C/T/R/combinedmodules, newthresholds or label-basedscope.",
+  "data": "AllofficialtestEnglishquestions, includingknowledge/non-supportedcases. AlltestrowsreadwithanswerdiscardedatJSONdecodeboundary; selectors/predictorsonlyanswer-freeprojection. Allpredictionslockedbeforeseparateevaluatoropensgold. Testinputsprecheckedinolderprojectmustdisclose; label-lockconfirmationnotcompletelyuntouchedtest/pretraining/patientindependent.",
+  "isolation": "ScreenalltestimageIDsagainstallEnglishofficialtrain/validationimagesplusallactualexperimentmanifestexposures, plus64x64grayscale centeredcosine>=.9995 andMAE<=.02 andaspectratiowithin1%; exactRGBpixelscheckedforsame-shapeidenticalthumbcandidates. NoSHA/MD5integrityhash. Quarantineinput-onlyflagsbeforepredictions; ALLofficialteststillreported, independentcleanpanelprimary. Primary>=500EnglishQs/50uniqueimages/20Planeimages elseCPUstop, nofeasibilityrelax. Patient/othernear-duplicatesunknown.",
+  "decoder": "SameHF336RGBoriginalshortanswerprompt/BF16SDPA/greedy64. baseLoRA64disabled, correctfrozenA/I64active;allparametersfrozen. Exactmodel+question+imageidentitydedup, historicaloriginalpromptbase/A/Iexactinputresponsesfixedfirstsource/requestreusedwithoutcorrectnessselection. Privateparentfilesmtime/bytes/sourceexperimentidentityboundbeforecalls,nohash,newweightsordata.",
+  "investment_gate": {
+    "natural": "IndependentALLEnglishbank-baseNmean>0,eachseed>0,imagecluster95lower>0. FullALLofficialtestreportedregardlessquarantine; do not replacewholebybestsubgroup.",
+    "abilities": "IndependentPlaneandlung-appearanceeachmean>=.10,eachseed>0,95lower>0; reportModalityseparatelywithmean/everyseed>=-.02 and95lower>=-.05. Confirmwholebankrequiresallfrozengates; perabilityoutcomesremainseparate.",
+    "visual": "IndependentALLvisualinteraction(bankN-bankB)-(baseN-baseB)mean/everyseed/95lower>0; blackprioranchortrainingdisclosed,supportnotsemanticproof.",
+    "harm": "Newlyharmed/basecorrectrateperseed<=.05 andpairedmeanimage95upper<=.05; allgains/harms/offscope/branchconflictsretained. Offscopeexactfallbackstructuralnotindependentnonforgettingproof. No clinicalsafetyclaim.",
+    "statistics": "Averagepairedparentseedsfirst,imageclusterbootstrap10000seed20261110; ratiosharmbootstrapresampleimageswithbasecorrectdenominator. Reporteachseedandunadjusted95intervalsseparately, onlywholegateintersectiondefinesconfirmation. Forabilitysamples<10uniqueimagesmarkinsufficientandfailabilitygate,noexcludedcasesorretuning."
+  },
+  "failure": "Singlelockedevaluationonly. Anyfailedwhole/abilitygatepreserved, donotretunecandidates/router/template/samples/seed/promptoropenasecondlockbox. Failed13readoutblocksF52/F104/R52newtraining; no newtraininthecurrentbranch.",
+  "budget": "Wholewindow10:37:24to18:37:24 inclallpreparation/analysis/publish,4GBstrict3.5GBprestop,12000newgenerationsmaxincludingfailedattempts. Thisinferenceunitcoop12:27:24hard12:37:24;allretriesoriginalclock. No downloadedmodels/data,newcheckpointoroptimizer.",
+  "pre_GPU_boundary_correction": "InitialDRAFTCPUattemptscreenedalllanguagesandfailedIDindependencebecause84testENimagesalsooccurinunusedChineseTRAIN/VALannotations. Actualhistorymanifests524andEnglishtrain/val546havenoIDoverlapwith96testENimages. Correctexposureboundarybeforeanypredictionorlabelscoring;retainfailurecounts,thresholdsandsampleminimaunchanged. No claimofindependencefromunusedcorpusannotationsorpretraining.",
+  "formal_generation_calls": 1614
+}
