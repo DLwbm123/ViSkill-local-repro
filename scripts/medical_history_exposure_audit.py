@@ -20,11 +20,12 @@ def audit():
     full_history = set()
     for name in ['region_reader_learning_v1', 'grounded_reader_anchor_v1', 'continual_acquisition_bank_v1', 'acquisition_to_organ_transfer_v1']:
         manifest = read(BASE / name / 'private_manifest.json')
-        for kind in ['train', 'old_train_replay']: full_history.update(r['img_name'] for r in manifest.get(kind, []))
+        for kind in ['train', 'replay', 'old_train_replay']: full_history.update(r['img_name'] for r in manifest.get(kind, []))
     primary = {r['img_name'] for r in g['primary']}
-    assert len(primary) == 85 and not primary & full_history
+    actual_parents = supervised | old_kl | ct
+    assert len(primary) == 85 and not primary & actual_parents
     assert stats['C_intersection_I_supervised']['unique_images'] == 22 and stats['C_intersection_I_old_KL']['unique_images'] == 26 and stats['C_intersection_I_all_backward']['unique_images'] == 40
-    result = {'status': 'COMPLETE_ANONYMOUS_IMAGE_ID_EXPOSURE_AUDIT', 'counts': stats, 'both_I_seed_old_KL_coefficient': 1, 'frozen_readout_primary_images': 85, 'primary_intersection_all_window_training_images': 0, 'checks': {'C_I_union_overlap_equals_40_not_22': True, 'primary85_disjoint_from_supervised_and_old_KL': True}, 'limits': ['Image IDs only; pixel/near duplicates and patient identities not assessed.', 'The22count remains correct for acquisition-supervised images only; it is not the full history overlap.', 'This correction does not change frozen outcomes, scores, gates or original training.', 'No test annotations, model operations or training in this audit.']}
+    result = {'status': 'COMPLETE_ANONYMOUS_IMAGE_ID_EXPOSURE_AUDIT', 'counts': stats, 'both_I_seed_old_KL_coefficient': 1, 'frozen_readout_primary_images': 85, 'primary_intersection_all_window_training_images': len(primary & full_history), 'primary_intersection_I_C_parent_update_images': len(primary & actual_parents), 'checks': {'C_I_union_overlap_equals_40_not_22': True, 'primary85_disjoint_from_I_supervised_and_I_old_KL_and_C': True}, 'limits': ['Image IDs only; pixel/near duplicates and patient identities not assessed.', 'The22count remains correct for acquisition-supervised images only; it is not the full history overlap.', 'The global history includes the A replay key;85source images overlap unrelated A replay on32images but not their actual I/C parent updates. This does not change outcomes, scores or gates.', 'No test annotations, model operations or training in this audit.']}
     output = BASE / 'history_exposure_audit_v1'
     output.mkdir(exist_ok=False)
     (output / 'result.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')

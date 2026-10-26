@@ -438,7 +438,7 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 
 ## Readout complete and full historical exposure clarified
 
-[Result74](74_medical_frozen_visual_readout_result.md):1852newgenerations/208updates complete; R-Fprimary-1.176pp CI[-6.471,4.118], allgatesfalse. [Audit75](75_medical_history_exposure_audit.md):22supervised+26old-KL-8both=40Ctraining images overlap I history, while primary85window-training image-ID intersection is0. Window totals13complete/22396generations/1456LoRAupdates. Original10:58:35 deadline and private medical/model boundary unchanged.
+[Result74](74_medical_frozen_visual_readout_result.md):1852newgenerations/208updates complete; R-Fprimary-1.176pp CI[-6.471,4.118], allgatesfalse. [Audit75](75_medical_history_exposure_audit.md):22supervised+26old-KL-8both=40Ctraining images overlap I history, while primary85actualI/C-parent image-ID intersection is0; the global window-training intersection is32 after including A replay. Window totals13complete/22396generations/1456LoRAupdates. Original10:58:35 deadline and private medical/model boundary unchanged.
 
 
 ## New8hour A/B independent confirmation window
@@ -454,3 +454,8 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## New8hour budget window closed early after planned branch completion
 
 [Closeout78](78_medical_ab_window_closeout.md):locked A/B confirmationPASS; source-isolated target-training feasibilitySTOP(CT74/MRI45/Xray7images, minimum10permodality). No newtraining or secondtest. Actualguard24.12min,remaining_owned0,alloldmodels/data/recovery preserved.
+
+
+## Consolidated experiment report and consumer-specific exposure correction
+
+[Report79](79_medical_module_bank_experiment_report.md) consolidates14generation units/24010new generations/1456LoRAupdates and the locked A/B positive result. Exposure auditv2 adds the omitted A replay key:primary85global overlap32,actualI/C-parent overlap0; lockedtest96global overlap0. The original scores/gates/candidates are unchanged. All windows and monitors remain closed; this report adds no model call or test scoring.

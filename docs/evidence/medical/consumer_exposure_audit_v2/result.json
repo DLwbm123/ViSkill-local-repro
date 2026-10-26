@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_CONSUMER_AWARE_EXPOSURE_CORRECTION",
+  "previous_omitted_manifest_key": "grounded_reader_anchor_v1.replay",
+  "primary85_images": 85,
+  "A_parent_training_images": 165,
+  "A_KL_replay_images": 100,
+  "I_parent_training_images": 150,
+  "I_plus_C_training_images": 191,
+  "all_window_training_images_including_replay": 237,
+  "primary85_overlap_A_KL_replay": 32,
+  "primary85_overlap_all_window_training": 32,
+  "primary85_overlap_I_parent_training": 0,
+  "primary85_overlap_I_plus_C_training": 0,
+  "C_training_overlap_A_KL_replay": 23,
+  "C_training_overlap_I_parent_training": 40,
+  "locked_test_images": 96,
+  "locked_test_overlap_A_parent_training": 0,
+  "locked_test_overlap_I_parent_training": 0,
+  "locked_test_overlap_all_window_training": 0,
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "test_gold_read": false,
+  "score_or_gate_changes": false,
+  "limits": [
+    "The85panel is isolated from its actual I/C parent updates, not all unrelated model training in the window.",
+    "The locked96test images remain isolated by image ID from all these parent histories; original near-duplicate and patient limitations remain.",
+    "This audit supersedes the global0intersection field in history_exposure_audit_v1; source-specific C/I overlap40 is unchanged."
+  ]
+}

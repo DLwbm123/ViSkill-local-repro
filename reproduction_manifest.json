@@ -2566,7 +2566,9 @@
     "C_I_supervised_overlap_images": 22,
     "C_I_old_KL_overlap_images": 26,
     "C_I_union_overlap_images": 40,
-    "primary85_training_image_id_intersection": 0
+    "primary85_training_image_id_intersection": 32,
+    "primary85_I_C_parent_image_id_intersection": 0,
+    "global_scope_correction": "docs/evidence/medical/consumer_exposure_audit_v2/result.json"
   },
   "ab_bank_independent_confirmation_v1": {
     "status": "COMPLETE_AB_CONFIRMATION_GATE_PASS",
@@ -2602,5 +2604,20 @@
     "Xray_images": 7,
     "required_images_each_modality": 10,
     "model_calls": 0
+  },
+  "medical_experiment_total_report": {
+    "report": "reports/79_medical_module_bank_experiment_report.md",
+    "completed_generation_units": 14,
+    "actual_new_generations": 24010,
+    "LoRA_optimizer_steps": 1456,
+    "new_adapters": 28,
+    "main_conclusion": "Locked A/B external bank confirmation passed; transfer and shared-parameter retention remain unestablished."
+  },
+  "consumer_exposure_audit_v2": {
+    "result": "docs/evidence/medical/consumer_exposure_audit_v2/result.json",
+    "primary85_global_training_overlap": 32,
+    "primary85_actual_I_C_parent_overlap": 0,
+    "locked_test96_global_training_overlap": 0,
+    "score_or_gate_changes": false
   }
 }

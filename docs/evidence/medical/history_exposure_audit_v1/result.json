@@ -64,15 +64,19 @@
   },
   "both_I_seed_old_KL_coefficient": 1,
   "frozen_readout_primary_images": 85,
-  "primary_intersection_all_window_training_images": 0,
+  "primary_intersection_all_window_training_images": 32,
   "checks": {
     "C_I_union_overlap_equals_40_not_22": true,
-    "primary85_disjoint_from_supervised_and_old_KL": true
+    "primary85_disjoint_from_I_supervised_and_I_old_KL_and_C": true
   },
   "limits": [
     "Image IDs only; pixel/near duplicates and patient identities not assessed.",
     "The22count remains correct for acquisition-supervised images only; it is not the full history overlap.",
     "This correction does not change frozen outcomes, scores, gates or original training.",
-    "No test annotations, model operations or training in this audit."
-  ]
+    "No test annotations, model operations or training in this audit.",
+    "Global scope corrected to include grounded_reader_anchor_v1.replay.32of85images overlap unrelated A training, while the actual I/C parent intersection and locked96test intersection remain0."
+  ],
+  "previously_reported_primary_intersection_all_window_training_images": 0,
+  "primary_intersection_I_C_parent_update_images": 0,
+  "global_scope_correction_evidence": "../consumer_exposure_audit_v2/result.json"
 }
