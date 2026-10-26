@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_EARLY_CLOSE_WITHIN_8H_CAP",
+  "start_unix": 1792982244,
+  "scheduled_hard_deadline_unix": 1793011044,
+  "guardian_end_unix": 1792983691.3327258,
+  "actual_window_seconds": 1447.332725763321,
+  "remaining_owned": 0,
+  "reason": "Locked confirmation and data-feasibility branch complete; prior readout gate and isolatedXray7<10 prohibit followup training.",
+  "new_generations": 1614,
+  "optimizer_steps": 0,
+  "new_teacher_forwards": 0,
+  "guard_final_sample_incremental_bytes": 9232384,
+  "storage_hard_limit_bytes": 4000000000,
+  "model_and_data_preserved": true,
+  "observed_increment_at_closeout_bytes": 9248768
+}

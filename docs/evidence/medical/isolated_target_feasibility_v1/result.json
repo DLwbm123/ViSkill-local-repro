@@ -1,0 +1,50 @@
+{
+  "status": "CPU_DATA_FEASIBILITY_STOP",
+  "source_history_unique_images": 150,
+  "reserved_source_evaluation_images": 138,
+  "pools": {
+    "outside_reserved_source_evaluation": {
+      "questions": 868,
+      "unique_images": 269,
+      "questions_by_modality": {
+        "MRI": 185,
+        "CT": 649,
+        "X-Ray": 34
+      },
+      "unique_images_by_modality": {
+        "CT": 152,
+        "MRI": 100,
+        "X-Ray": 17
+      },
+      "question_templates": 95
+    },
+    "source_target_image_isolated": {
+      "questions": 414,
+      "unique_images": 126,
+      "questions_by_modality": {
+        "CT": 326,
+        "MRI": 74,
+        "X-Ray": 14
+      },
+      "unique_images_by_modality": {
+        "CT": 74,
+        "MRI": 45,
+        "X-Ray": 7
+      },
+      "question_templates": 70
+    }
+  },
+  "required_minimum_target_images_each_modality": 10,
+  "planned_target_questions": 100,
+  "image_or_question_correctness_used_for_selection": false,
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "test_gold_read": false,
+  "new_training_allowed_by_previous_readout_gate": false,
+  "limits": [
+    "Only training-side input/data feasibility; no new candidate or test evaluation.",
+    "The10image-per-modality requirement comes from the reviewed plan, not a clinical power calculation.",
+    "If the source-isolated X-ray pool is insufficient, repeated questions on the same image cannot fix it.",
+    "A data-feasibility pass would not override the previous readout-gate failure or authorize F52/F104/R52."
+  ]
+}

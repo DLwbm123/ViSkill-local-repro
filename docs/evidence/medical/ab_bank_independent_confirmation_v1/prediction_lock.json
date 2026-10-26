@@ -1,0 +1,7 @@
+{
+  "status": "ALL_PREDICTIONS_FROZEN_BEFORE_GOLD_SCORING",
+  "new_generations": 1614,
+  "locked_unix": 1792983298.6798956,
+  "new_optimizer_steps": 0,
+  "test_answer_used_by_predictor": false
+}

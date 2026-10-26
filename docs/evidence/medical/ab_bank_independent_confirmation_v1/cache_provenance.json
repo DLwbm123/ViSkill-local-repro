@@ -1,0 +1,1372 @@
+[
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 4
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 52
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 25
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 75
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 197
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 33
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 44
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 43
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 8
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 12
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 23
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 228
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 306
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 158
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 194
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 105
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 58
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 90
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 290
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 137
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 69
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 690
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 130
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 45
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 169
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 836
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 664
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 80
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 20
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 536
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 212
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 564
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 524
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 450
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 120
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 110
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 476
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 478
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 390
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 235
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 347
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 244
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 396
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 31
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 86
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 434
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1277
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 492
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 855
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 10
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 288
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 59
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 204
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 930
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 757
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 289
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1330
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 351
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 243
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 399
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1273
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 48
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 116
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 373
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 28
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 150
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 3
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 655
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 248
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 432
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 18
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 482
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 15
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 284
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 36
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1053
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 172
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 187
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 226
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 329
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 634
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1226
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 716
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 916
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 92
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 105
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 65
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1281
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 63
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 171
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 310
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 163
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 953
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 6
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 61
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 368
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 167
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 300
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1323
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 612
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 508
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 943
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 598
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 499
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 469
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 910
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 95
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1255
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 255
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 384
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 72
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 265
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 111
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 602
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 90
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1475
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 122
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 257
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1800
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1449
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 346
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1092
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 3
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 19
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 559
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 782
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 239
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 550
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 963
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 960
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 164
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 415
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1015
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 185
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 282
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1252
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1624
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 145
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 422
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 303
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 175
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 224
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 202
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 14
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 915
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 944
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1525
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1527
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 180
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 246
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1472
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 403
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 503
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1167
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1493
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 584
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 117
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 958
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 76
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 899
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1120
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 320
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 107
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 463
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1315
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 483
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 99
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 637
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 128
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1435
+  },
+  {
+    "model": "base",
+    "source_experiment": "task_supported_adapter_v1",
+    "source_request_number": 79
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 137
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 54
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 456
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 889
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1291
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 349
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1436
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 523
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1043
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1733
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1518
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1510
+  },
+  {
+    "model": "base",
+    "source_experiment": "region_reader_learning_v1",
+    "source_request_number": 43
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 652
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1358
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 681
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1529
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 378
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 364
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 769
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 331
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1124
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 639
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 379
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1184
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 458
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1812
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 131
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 522
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 1755
+  },
+  {
+    "model": "base",
+    "source_experiment": "natural_scope_validation_v1",
+    "source_request_number": 544
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 194
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 45
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 110
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 31
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 116
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 18
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 19
+  },
+  {
+    "model": "A_42",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 43
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 1148
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 999
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 1064
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 985
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 1070
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 972
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 973
+  },
+  {
+    "model": "A_43",
+    "source_experiment": "grounded_reader_anchor_v1",
+    "source_request_number": 997
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 670
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 678
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 682
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 793
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 801
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 672
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 822
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 767
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 728
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 683
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 710
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 714
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 679
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 838
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 692
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 680
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 732
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 736
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 782
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 684
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 675
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 837
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 738
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 746
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 726
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 899
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 666
+  },
+  {
+    "model": "I_42",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 725
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2427
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2493
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2440
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2488
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2435
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2546
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2512
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2569
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2451
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2429
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2433
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2669
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2438
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2533
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2497
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2445
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2523
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2492
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2491
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2434
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2557
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2504
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2591
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2553
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2436
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2664
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2544
+  },
+  {
+    "model": "I_43",
+    "source_experiment": "continual_acquisition_bank_v1",
+    "source_request_number": 2527
+  }
+]

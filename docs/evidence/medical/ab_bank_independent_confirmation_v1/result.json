@@ -1,0 +1,1142 @@
+{
+  "status": "COMPLETE_AB_CONFIRMATION_GATE_PASS",
+  "all_gates_pass": true,
+  "gates": {
+    "independent_all_mean": true,
+    "independent_all_each_seed_positive": true,
+    "independent_all_positive_95_lower": true,
+    "Plane_mean": true,
+    "Plane_each_seed_positive": true,
+    "Plane_positive_95_lower": true,
+    "Plane_at_least_10_images": true,
+    "lung_appearance_mean": true,
+    "lung_appearance_each_seed_positive": true,
+    "lung_appearance_positive_95_lower": true,
+    "lung_appearance_at_least_10_images": true,
+    "Modality_mean_at_least_minus_2pp": true,
+    "Modality_each_seed_at_least_minus_2pp": true,
+    "Modality_95_lower_at_least_minus_5pp": true,
+    "visual_mean_positive": true,
+    "visual_each_seed_positive": true,
+    "visual_positive_95_lower": true,
+    "harm_each_seed_at_most_5percent": true,
+    "harm_mean_95_upper_at_most_5percent": true
+  },
+  "summary": {
+    "all_official_English": {
+      "questions": 1061,
+      "images": 96,
+      "correct": {
+        "base": {
+          "N": [
+            559,
+            559
+          ],
+          "B": [
+            307,
+            307
+          ]
+        },
+        "bank": {
+          "N": [
+            614,
+            610
+          ],
+          "B": [
+            306,
+            308
+          ]
+        }
+      }
+    },
+    "independent_all": {
+      "questions": 1061,
+      "images": 96,
+      "correct": {
+        "base": {
+          "N": [
+            559,
+            559
+          ],
+          "B": [
+            307,
+            307
+          ]
+        },
+        "bank": {
+          "N": [
+            614,
+            610
+          ],
+          "B": [
+            306,
+            308
+          ]
+        }
+      }
+    },
+    "Plane": {
+      "questions": 58,
+      "images": 58,
+      "correct": {
+        "base": {
+          "N": [
+            24,
+            24
+          ],
+          "B": [
+            20,
+            20
+          ]
+        },
+        "bank": {
+          "N": [
+            55,
+            55
+          ],
+          "B": [
+            20,
+            20
+          ]
+        }
+      }
+    },
+    "Modality": {
+      "questions": 108,
+      "images": 82,
+      "correct": {
+        "base": {
+          "N": [
+            89,
+            89
+          ],
+          "B": [
+            48,
+            48
+          ]
+        },
+        "bank": {
+          "N": [
+            96,
+            93
+          ],
+          "B": [
+            46,
+            48
+          ]
+        }
+      }
+    },
+    "lung_appearance": {
+      "questions": 19,
+      "images": 19,
+      "correct": {
+        "base": {
+          "N": [
+            6,
+            6
+          ],
+          "B": [
+            0,
+            0
+          ]
+        },
+        "bank": {
+          "N": [
+            18,
+            17
+          ],
+          "B": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "A_all": {
+      "questions": 39,
+      "images": 34,
+      "correct": {
+        "base": {
+          "N": [
+            16,
+            16
+          ],
+          "B": [
+            8,
+            8
+          ]
+        },
+        "bank": {
+          "N": [
+            33,
+            32
+          ],
+          "B": [
+            9,
+            9
+          ]
+        }
+      }
+    },
+    "B_all": {
+      "questions": 166,
+      "images": 88,
+      "correct": {
+        "base": {
+          "N": [
+            113,
+            113
+          ],
+          "B": [
+            68,
+            68
+          ]
+        },
+        "bank": {
+          "N": [
+            151,
+            148
+          ],
+          "B": [
+            66,
+            68
+          ]
+        }
+      }
+    },
+    "offscope": {
+      "questions": 856,
+      "images": 96,
+      "correct": {
+        "base": {
+          "N": [
+            430,
+            430
+          ],
+          "B": [
+            231,
+            231
+          ]
+        },
+        "bank": {
+          "N": [
+            430,
+            430
+          ],
+          "B": [
+            231,
+            231
+          ]
+        }
+      }
+    }
+  },
+  "effects": {
+    "all_official_English": {
+      "mean": 0.04995287464655985,
+      "image_cluster_bootstrap_95": [
+        0.04007633587786259,
+        0.059792843691148775
+      ],
+      "questions": 1061,
+      "images": 96,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.051837888784165884,
+          "gains": [
+            42,
+            130,
+            131,
+            155,
+            171,
+            185,
+            203,
+            219,
+            222,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            340,
+            385,
+            391,
+            400,
+            415,
+            430,
+            445,
+            481,
+            490,
+            496,
+            505,
+            511,
+            520,
+            535,
+            550,
+            565,
+            600,
+            645,
+            655,
+            661,
+            667,
+            680,
+            681,
+            690,
+            698,
+            709,
+            717,
+            718,
+            727,
+            728,
+            744,
+            753,
+            770,
+            777,
+            788,
+            796,
+            805,
+            815,
+            859,
+            904,
+            924,
+            954,
+            1021
+          ],
+          "harms": [
+            123,
+            220,
+            227
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.04806786050895382,
+          "gains": [
+            40,
+            42,
+            130,
+            131,
+            155,
+            171,
+            185,
+            203,
+            219,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            340,
+            385,
+            400,
+            415,
+            430,
+            445,
+            481,
+            490,
+            496,
+            505,
+            511,
+            520,
+            535,
+            565,
+            586,
+            630,
+            645,
+            655,
+            661,
+            667,
+            681,
+            690,
+            709,
+            718,
+            728,
+            744,
+            753,
+            788,
+            796,
+            805,
+            815,
+            859,
+            904,
+            924,
+            954,
+            1021
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "independent_all": {
+      "mean": 0.04995287464655985,
+      "image_cluster_bootstrap_95": [
+        0.04007633587786259,
+        0.059792843691148775
+      ],
+      "questions": 1061,
+      "images": 96,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.051837888784165884,
+          "gains": [
+            42,
+            130,
+            131,
+            155,
+            171,
+            185,
+            203,
+            219,
+            222,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            340,
+            385,
+            391,
+            400,
+            415,
+            430,
+            445,
+            481,
+            490,
+            496,
+            505,
+            511,
+            520,
+            535,
+            550,
+            565,
+            600,
+            645,
+            655,
+            661,
+            667,
+            680,
+            681,
+            690,
+            698,
+            709,
+            717,
+            718,
+            727,
+            728,
+            744,
+            753,
+            770,
+            777,
+            788,
+            796,
+            805,
+            815,
+            859,
+            904,
+            924,
+            954,
+            1021
+          ],
+          "harms": [
+            123,
+            220,
+            227
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.04806786050895382,
+          "gains": [
+            40,
+            42,
+            130,
+            131,
+            155,
+            171,
+            185,
+            203,
+            219,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            340,
+            385,
+            400,
+            415,
+            430,
+            445,
+            481,
+            490,
+            496,
+            505,
+            511,
+            520,
+            535,
+            565,
+            586,
+            630,
+            645,
+            655,
+            661,
+            667,
+            681,
+            690,
+            709,
+            718,
+            728,
+            744,
+            753,
+            788,
+            796,
+            805,
+            815,
+            859,
+            904,
+            924,
+            954,
+            1021
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "Plane": {
+      "mean": 0.5344827586206896,
+      "image_cluster_bootstrap_95": [
+        0.41379310344827586,
+        0.6551724137931034
+      ],
+      "questions": 58,
+      "images": 58,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.5344827586206896,
+          "gains": [
+            155,
+            171,
+            185,
+            203,
+            219,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            391,
+            481,
+            496,
+            511,
+            645,
+            655,
+            681,
+            690,
+            709,
+            718,
+            728,
+            753,
+            770,
+            788,
+            796,
+            805,
+            815,
+            859,
+            924,
+            954
+          ],
+          "harms": []
+        },
+        {
+          "seed": 43,
+          "mean": 0.5344827586206896,
+          "gains": [
+            155,
+            171,
+            185,
+            203,
+            219,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            481,
+            496,
+            511,
+            586,
+            630,
+            645,
+            655,
+            681,
+            690,
+            709,
+            718,
+            728,
+            753,
+            788,
+            796,
+            805,
+            815,
+            859,
+            924,
+            954
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "Modality": {
+      "mean": 0.05092592592592592,
+      "image_cluster_bootstrap_95": [
+        0.014018691588785047,
+        0.09223810883576725
+      ],
+      "questions": 108,
+      "images": 82,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.06481481481481481,
+          "gains": [
+            222,
+            600,
+            667,
+            680,
+            698,
+            717,
+            727,
+            744,
+            777,
+            1021
+          ],
+          "harms": [
+            123,
+            220,
+            227
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.037037037037037035,
+          "gains": [
+            40,
+            667,
+            744,
+            1021
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "lung_appearance": {
+      "mean": 0.6052631578947368,
+      "image_cluster_bootstrap_95": [
+        0.39473684210526316,
+        0.8157894736842105
+      ],
+      "questions": 19,
+      "images": 19,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.631578947368421,
+          "gains": [
+            340,
+            385,
+            400,
+            415,
+            430,
+            445,
+            490,
+            505,
+            520,
+            535,
+            550,
+            565
+          ],
+          "harms": []
+        },
+        {
+          "seed": 43,
+          "mean": 0.5789473684210527,
+          "gains": [
+            340,
+            385,
+            400,
+            415,
+            430,
+            445,
+            490,
+            505,
+            520,
+            535,
+            565
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "A_all": {
+      "mean": 0.4230769230769231,
+      "image_cluster_bootstrap_95": [
+        0.2777777777777778,
+        0.5681818181818182
+      ],
+      "questions": 39,
+      "images": 34,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.4358974358974359,
+          "gains": [
+            42,
+            130,
+            131,
+            340,
+            385,
+            400,
+            415,
+            430,
+            445,
+            490,
+            505,
+            520,
+            535,
+            550,
+            565,
+            661,
+            904
+          ],
+          "harms": []
+        },
+        {
+          "seed": 43,
+          "mean": 0.41025641025641024,
+          "gains": [
+            42,
+            130,
+            131,
+            340,
+            385,
+            400,
+            415,
+            430,
+            445,
+            490,
+            505,
+            520,
+            535,
+            565,
+            661,
+            904
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "B_all": {
+      "mean": 0.21987951807228914,
+      "image_cluster_bootstrap_95": [
+        0.16883116883116883,
+        0.27019039794886607
+      ],
+      "questions": 166,
+      "images": 88,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.2289156626506024,
+          "gains": [
+            155,
+            171,
+            185,
+            203,
+            219,
+            222,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            391,
+            481,
+            496,
+            511,
+            600,
+            645,
+            655,
+            667,
+            680,
+            681,
+            690,
+            698,
+            709,
+            717,
+            718,
+            727,
+            728,
+            744,
+            753,
+            770,
+            777,
+            788,
+            796,
+            805,
+            815,
+            859,
+            924,
+            954,
+            1021
+          ],
+          "harms": [
+            123,
+            220,
+            227
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.21084337349397592,
+          "gains": [
+            40,
+            155,
+            171,
+            185,
+            203,
+            219,
+            253,
+            270,
+            285,
+            299,
+            313,
+            328,
+            481,
+            496,
+            511,
+            586,
+            630,
+            645,
+            655,
+            667,
+            681,
+            690,
+            709,
+            718,
+            728,
+            744,
+            753,
+            788,
+            796,
+            805,
+            815,
+            859,
+            924,
+            954,
+            1021
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "offscope": {
+      "mean": 0.0,
+      "image_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "questions": 856,
+      "images": 96,
+      "by_parent_seed": [
+        {
+          "seed": 42,
+          "mean": 0.0,
+          "gains": [],
+          "harms": []
+        },
+        {
+          "seed": 43,
+          "mean": 0.0,
+          "gains": [],
+          "harms": []
+        }
+      ]
+    }
+  },
+  "visual_interaction": {
+    "mean": 0.04995287464655985,
+    "image_cluster_bootstrap_95": [
+      0.03951081843838194,
+      0.06063435080372919
+    ],
+    "questions": 1061,
+    "images": 96,
+    "by_parent_seed": [
+      {
+        "seed": 42,
+        "mean": 0.0527803958529689,
+        "gains": [
+          42,
+          130,
+          131,
+          155,
+          171,
+          185,
+          203,
+          219,
+          222,
+          253,
+          270,
+          285,
+          299,
+          313,
+          328,
+          340,
+          385,
+          391,
+          400,
+          415,
+          430,
+          445,
+          481,
+          490,
+          496,
+          505,
+          511,
+          520,
+          535,
+          550,
+          565,
+          600,
+          645,
+          655,
+          661,
+          667,
+          680,
+          681,
+          690,
+          698,
+          709,
+          717,
+          718,
+          727,
+          728,
+          744,
+          753,
+          770,
+          777,
+          788,
+          796,
+          805,
+          815,
+          859,
+          904,
+          924,
+          954,
+          1021
+        ],
+        "harms": [
+          123,
+          220,
+          227,
+          650,
+          734
+        ]
+      },
+      {
+        "seed": 43,
+        "mean": 0.0471253534401508,
+        "gains": [
+          40,
+          42,
+          130,
+          131,
+          155,
+          171,
+          185,
+          203,
+          219,
+          253,
+          270,
+          285,
+          299,
+          313,
+          328,
+          340,
+          385,
+          400,
+          415,
+          430,
+          445,
+          481,
+          490,
+          496,
+          505,
+          511,
+          520,
+          535,
+          565,
+          586,
+          630,
+          645,
+          655,
+          661,
+          667,
+          681,
+          690,
+          709,
+          718,
+          728,
+          744,
+          753,
+          788,
+          796,
+          805,
+          815,
+          859,
+          904,
+          924,
+          954,
+          1021
+        ],
+        "harms": [
+          650
+        ]
+      }
+    ]
+  },
+  "new_harm_rate": {
+    "base_correct_denominator": 559,
+    "new_harms_by_seed": [
+      3,
+      0
+    ],
+    "rates_by_seed": [
+      0.005366726296958855,
+      0.0
+    ],
+    "paired_mean_rate": 0.0026833631484794273,
+    "image_cluster_bootstrap_95": [
+      0.0,
+      0.006097560975609756
+    ]
+  },
+  "modality_summary": {
+    "CT": {
+      "questions": 472,
+      "images": 40,
+      "correct": {
+        "base": {
+          "N": [
+            250,
+            250
+          ],
+          "B": [
+            147,
+            147
+          ]
+        },
+        "bank": {
+          "N": [
+            270,
+            270
+          ],
+          "B": [
+            148,
+            148
+          ]
+        }
+      }
+    },
+    "MRI": {
+      "questions": 228,
+      "images": 26,
+      "correct": {
+        "base": {
+          "N": [
+            114,
+            114
+          ],
+          "B": [
+            65,
+            65
+          ]
+        },
+        "bank": {
+          "N": [
+            133,
+            130
+          ],
+          "B": [
+            63,
+            65
+          ]
+        }
+      }
+    },
+    "X-Ray": {
+      "questions": 361,
+      "images": 30,
+      "correct": {
+        "base": {
+          "N": [
+            195,
+            195
+          ],
+          "B": [
+            95,
+            95
+          ]
+        },
+        "bank": {
+          "N": [
+            211,
+            210
+          ],
+          "B": [
+            95,
+            95
+          ]
+        }
+      }
+    }
+  },
+  "offscope_exact_fallback": true,
+  "cost": {
+    "new_physical_generations": 1614,
+    "historical_physical_records_reused": 274,
+    "logical_predictor_readouts": 2942,
+    "optimizer_steps": 0,
+    "new_teacher_forwards": 0,
+    "errors": 0,
+    "replays": 0,
+    "supervisor_seconds": 386.58881521224976,
+    "original_preparation_to_exit_seconds": 1062.5478184223175,
+    "incremental_bytes_at_exit": 8208384
+  },
+  "label_lock": {
+    "all_predictions_locked_before_gold_scoring": true,
+    "gold_scoring_authorized_for_this_single_confirmation": true,
+    "test_inputs_previously_prechecked": true
+  },
+  "limits": [
+    "Answer-lock confirmation on all English officialtest, not complete input or pretraining nonexposure.",
+    "English train/development image-ID isolation;84test images also occur in unused Chinese annotation rows.",
+    "Fixed pixel/near-duplicate screen has no flags but does not establish patient independence or exhaustive near-duplicate exclusion.",
+    "Two immutable parent-seed policies and image sampling intervals do not capture all training or route-selection uncertainty.",
+    "Black-image anchoring was used in training; a black comparison alone does not prove semantic causality.",
+    "Frozen external branches are structural preservation, not shared-parameter or clinical safety.",
+    "No full ViSkill, PPO or clinical skill claim."
+  ]
+}

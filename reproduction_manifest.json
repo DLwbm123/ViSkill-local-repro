@@ -2569,17 +2569,38 @@
     "primary85_training_image_id_intersection": 0
   },
   "ab_bank_independent_confirmation_v1": {
-    "status": "RUNNING_LOCKED_AB_CONFIRMATION",
-    "report": "reports/76_medical_ab_independent_confirmation_protocol.md",
+    "status": "COMPLETE_AB_CONFIRMATION_GATE_PASS",
+    "report": "reports/77_medical_ab_independent_confirmation_result.md",
+    "result": "docs/evidence/medical/ab_bank_independent_confirmation_v1/result.json",
     "execution_source_commit": "bea4648",
-    "all_English_questions": 1061,
+    "English_questions": 1061,
     "images": 96,
-    "new_generations_planned": 1614,
+    "new_generations": 1614,
     "cached_physical_records": 274,
-    "logical_predictor_reads": 2942,
+    "logical_readouts": 2942,
     "optimizer_steps": 0,
-    "window_start": "2026-10-26 10:37:24 Asia/Shanghai",
-    "window_deadline": "2026-10-26 18:37:24 Asia/Shanghai",
-    "test_gold_scored": false
+    "all_gates_pass": true,
+    "whole_net_gain": 0.04995287464655985,
+    "gold_scored_after_prediction_lock": true
+  },
+  "medical_ab_8h_window": {
+    "status": "COMPLETE_EARLY_CLOSE_WITHIN_8H_CAP",
+    "report": "reports/78_medical_ab_window_closeout.md",
+    "result": "docs/evidence/medical/ab_bank_independent_confirmation_v1/window_close_numeric.json",
+    "actual_window_minutes": 24.12221209605535,
+    "new_generations": 1614,
+    "new_optimizer_steps": 0,
+    "AB_confirmation_all_gates_pass": true,
+    "isolated_target_training_feasibility": "STOP_Xray7_less_than10",
+    "remaining_owned": 0
+  },
+  "isolated_target_feasibility_v1": {
+    "status": "CPU_DATA_FEASIBILITY_STOP",
+    "result": "docs/evidence/medical/isolated_target_feasibility_v1/result.json",
+    "CT_images": 74,
+    "MRI_images": 45,
+    "Xray_images": 7,
+    "required_images_each_modality": 10,
+    "model_calls": 0
   }
 }

@@ -444,3 +444,13 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## New8hour A/B independent confirmation window
 
 [Protocol76](76_medical_ab_independent_confirmation_protocol.md), sourcebea4648. WholeEnglishofficialtest1061Q96images; independentactual-English-historyimageIDintersection0,fixedduplicateflags0. Plane58/Modality108/lungappearance19.1614plannedactualnewgenerations,274cachedphysicalrecords,0optimizerupdates. Candidates andanswer-freeinputs frozen, labels for offlineevaluationonlyafterPREDICTIONS_LOCKED. Deadline18:37:24, old13experiment windowclosedbyusertransitionwith0remainingowned. No current performance result.
+
+
+## A/B locked confirmation completed
+
+[Result77](77_medical_ab_independent_confirmation_result.md):all19gatesPASS,1061Q/96images;base559,bank614/610;mean+4.995ppCI[4.008,5.979]. Plane+53.448pp/lungappearance+60.526pp;3/0newharms retained.1614newgens/274cache/2942logical/0updates. Predictions frozen before test gold scoring; previous input exposure and bilingual annotation overlap remain disclosed. Failed13thtransfer andsharedretention conclusions unchanged.
+
+
+## New8hour budget window closed early after planned branch completion
+
+[Closeout78](78_medical_ab_window_closeout.md):locked A/B confirmationPASS; source-isolated target-training feasibilitySTOP(CT74/MRI45/Xray7images, minimum10permodality). No newtraining or secondtest. Actualguard24.13min,remaining_owned0,alloldmodels/data/recovery preserved.
