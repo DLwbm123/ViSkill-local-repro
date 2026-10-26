@@ -1,0 +1,78 @@
+{
+  "status": "COMPLETE_ANONYMOUS_IMAGE_ID_EXPOSURE_AUDIT",
+  "counts": {
+    "C_target_train": {
+      "unique_images": 81,
+      "modality_unique_images": {
+        "CT": 67,
+        "MRI": 11,
+        "X-Ray": 3
+      }
+    },
+    "I_acquisition_supervised": {
+      "unique_images": 100,
+      "modality_unique_images": {
+        "CT": 42,
+        "MRI": 41,
+        "X-Ray": 17
+      }
+    },
+    "I_nonzero_old_KL": {
+      "unique_images": 75,
+      "modality_unique_images": {
+        "CT": 57,
+        "MRI": 18
+      }
+    },
+    "I_all_backward_images": {
+      "unique_images": 150,
+      "modality_unique_images": {
+        "CT": 78,
+        "MRI": 55,
+        "X-Ray": 17
+      }
+    },
+    "C_intersection_I_supervised": {
+      "unique_images": 22,
+      "modality_unique_images": {
+        "CT": 17,
+        "MRI": 4,
+        "X-Ray": 1
+      }
+    },
+    "C_intersection_I_old_KL": {
+      "unique_images": 26,
+      "modality_unique_images": {
+        "CT": 24,
+        "MRI": 2
+      }
+    },
+    "C_intersection_I_all_backward": {
+      "unique_images": 40,
+      "modality_unique_images": {
+        "CT": 33,
+        "MRI": 6,
+        "X-Ray": 1
+      }
+    },
+    "C_intersection_both_I_sources": {
+      "unique_images": 8,
+      "modality_unique_images": {
+        "CT": 8
+      }
+    }
+  },
+  "both_I_seed_old_KL_coefficient": 1,
+  "frozen_readout_primary_images": 85,
+  "primary_intersection_all_window_training_images": 0,
+  "checks": {
+    "C_I_union_overlap_equals_40_not_22": true,
+    "primary85_disjoint_from_supervised_and_old_KL": true
+  },
+  "limits": [
+    "Image IDs only; pixel/near duplicates and patient identities not assessed.",
+    "The22count remains correct for acquisition-supervised images only; it is not the full history overlap.",
+    "This correction does not change frozen outcomes, scores, gates or original training.",
+    "No test annotations, model operations or training in this audit."
+  ]
+}

@@ -715,28 +715,32 @@
   },
   "medical_window_interim_summary": {
     "report": "reports/72_medical_window_interim_summary.md",
-    "as_of": "2026-10-26 09:54:31 Asia/Shanghai",
+    "as_of": "2026-10-26 10:28 Asia/Shanghai",
     "window_end": "2026-10-26 10:58:35 Asia/Shanghai",
-    "completed_generation_experiments": 12,
-    "completed_new_generations": 20544,
-    "completed_adapter_optimizer_steps": 1248,
-    "running_experiment": "frozen_visual_readout_v1",
-    "running_completed_generations_at_snapshot": 90,
-    "running_optimizer_steps_at_snapshot": 32,
-    "total_actual_generations_at_snapshot": 20634,
-    "total_actual_optimizer_steps_at_snapshot": 1280,
+    "completed_generation_experiments": 13,
+    "completed_new_generations": 22396,
+    "completed_adapter_optimizer_steps": 1456,
+    "running_experiment": null,
     "window_complete": false
   },
   "frozen_visual_readout_v1": {
-    "status": "RUNNING_FROZEN_VISUAL_READOUT",
-    "report": "reports/73_medical_frozen_visual_readout_protocol.md",
+    "status": "COMPLETE_FROZEN_READOUT_NOT_ESTABLISHED",
+    "report": "reports/74_medical_frozen_visual_readout_result.md",
+    "result": "docs/evidence/medical/frozen_visual_readout_v1/result.json",
     "execution_source_commit": "7a7cb14",
-    "planned_physical_generations": 1852,
+    "new_generations": 1852,
     "logical_readouts": 3196,
     "cached_parent_physical_records": 46,
-    "planned_optimizer_steps": 208,
-    "hard_deadline": "2026-10-26 10:43:35 Asia/Shanghai",
-    "production_backward_check": "PASS language-readout-only gradients;64 visual I layers frozen",
-    "performance_result_available": false
+    "optimizer_steps": 208,
+    "all_gates_pass": false,
+    "primary_R_minus_F_mean": -0.011764705882352941
+  },
+  "history_exposure_audit_v1": {
+    "report": "reports/75_medical_history_exposure_audit.md",
+    "result": "docs/evidence/medical/history_exposure_audit_v1/result.json",
+    "C_I_supervised_overlap_images": 22,
+    "C_I_old_KL_overlap_images": 26,
+    "C_I_union_overlap_images": 40,
+    "primary85_training_image_id_intersection": 0
   }
 }

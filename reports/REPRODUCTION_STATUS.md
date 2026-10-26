@@ -434,3 +434,8 @@ A固定库受控PPO已完整结束：4批、704局/2573调用，有卡条件集1
 ## Medical window summary updated at09:54:31
 
 [Summary72](72_medical_window_interim_summary.md) separates12completed experiments from the13th running readout experiment. Completed totals20544generations/1248LoRAupdates; active partial90generations/32updates, no final outcome. Current-window actual snapshot20634generations/1280updates. Original10:58:35 deadline unchanged.
+
+
+## Readout complete and full historical exposure clarified
+
+[Result74](74_medical_frozen_visual_readout_result.md):1852newgenerations/208updates complete; R-Fprimary-1.176pp CI[-6.471,4.118], allgatesfalse. [Audit75](75_medical_history_exposure_audit.md):22supervised+26old-KL-8both=40Ctraining images overlap I history, while primary85window-training image-ID intersection is0. Window totals13complete/22396generations/1456LoRAupdates. Original10:58:35 deadline and private medical/model boundary unchanged.

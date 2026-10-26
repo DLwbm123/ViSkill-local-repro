@@ -1,0 +1,770 @@
+{
+  "status": "COMPLETE_FROZEN_READOUT_NOT_ESTABLISHED",
+  "all_gates_pass": false,
+  "gates": {
+    "primary_R_minus_F_mean": false,
+    "primary_R_minus_F_each_seed_positive": false,
+    "primary_R_minus_F_positive_95_lower": false,
+    "primary_R_minus_I_parent_mean": true,
+    "primary_R_minus_I_parent_each_seed_positive": true,
+    "primary_R_minus_I_parent_positive_95_lower": true,
+    "primary_R_minus_base_mean": true,
+    "primary_R_minus_base_each_seed_positive": true,
+    "primary_R_minus_base_positive_95_lower": true,
+    "primary_R_F_visual_interaction_mean": false,
+    "primary_R_F_visual_interaction_each_seed_positive": false,
+    "primary_R_F_visual_interaction_positive_95_lower": false,
+    "validation_R_F_mean_nonnegative": true,
+    "validation_R_F_each_seed_nonnegative": true,
+    "validation_R_F_lower_at_least_minus_5pp": true,
+    "background_mean_nonnegative": true,
+    "background_each_seed_nonnegative": true,
+    "background_lower_at_least_minus_5pp": true,
+    "background_zero_new_harm_each_seed": true,
+    "old_A_B_external_branches_unchanged": true
+  },
+  "summary": {
+    "primary": {
+      "base": {
+        "N": [
+          52,
+          52
+        ],
+        "B": [
+          13,
+          13
+        ]
+      },
+      "I_parent": {
+        "N": [
+          51,
+          53
+        ],
+        "B": [
+          13,
+          13
+        ]
+      },
+      "F": {
+        "N": [
+          73,
+          72
+        ],
+        "B": [
+          14,
+          13
+        ]
+      },
+      "R": {
+        "N": [
+          72,
+          71
+        ],
+        "B": [
+          14,
+          13
+        ]
+      }
+    },
+    "validation": {
+      "base": {
+        "N": [
+          153,
+          153
+        ],
+        "B": [
+          83,
+          83
+        ]
+      },
+      "before": {
+        "N": [
+          153,
+          153
+        ],
+        "B": [
+          83,
+          83
+        ]
+      },
+      "F": {
+        "N": [
+          200,
+          198
+        ],
+        "B": [
+          90,
+          83
+        ]
+      },
+      "R": {
+        "N": [
+          204,
+          204
+        ],
+        "B": [
+          85,
+          83
+        ]
+      }
+    },
+    "background": {
+      "base": {
+        "N": [
+          45,
+          45
+        ],
+        "B": [
+          19,
+          19
+        ]
+      },
+      "before": {
+        "N": [
+          45,
+          45
+        ],
+        "B": [
+          19,
+          19
+        ]
+      },
+      "F": {
+        "N": [
+          49,
+          48
+        ],
+        "B": [
+          19,
+          19
+        ]
+      },
+      "R": {
+        "N": [
+          49,
+          48
+        ],
+        "B": [
+          19,
+          19
+        ]
+      }
+    }
+  },
+  "effects": {
+    "primary_R_minus_F": {
+      "mean": -0.011764705882352941,
+      "image_cluster_bootstrap_95": [
+        -0.06470588235294118,
+        0.041176470588235294
+      ],
+      "questions": 85,
+      "images": 85,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": -0.011764705882352941,
+          "gains": [
+            33,
+            86
+          ],
+          "harms": [
+            115,
+            141,
+            145
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": -0.011764705882352941,
+          "gains": [
+            32,
+            33,
+            86
+          ],
+          "harms": [
+            5,
+            112,
+            115,
+            145
+          ]
+        }
+      ]
+    },
+    "primary_R_minus_I_parent": {
+      "mean": 0.22941176470588234,
+      "image_cluster_bootstrap_95": [
+        0.13529411764705881,
+        0.32941176470588235
+      ],
+      "questions": 85,
+      "images": 85,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": 0.24705882352941178,
+          "gains": [
+            5,
+            53,
+            54,
+            55,
+            57,
+            60,
+            65,
+            70,
+            73,
+            76,
+            77,
+            78,
+            81,
+            83,
+            84,
+            85,
+            89,
+            90,
+            94,
+            99,
+            100,
+            112,
+            152
+          ],
+          "harms": [
+            32,
+            134
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.21176470588235294,
+          "gains": [
+            53,
+            54,
+            55,
+            57,
+            65,
+            70,
+            73,
+            76,
+            77,
+            78,
+            81,
+            83,
+            84,
+            85,
+            89,
+            90,
+            94,
+            99,
+            100,
+            152
+          ],
+          "harms": [
+            109,
+            134
+          ]
+        }
+      ]
+    },
+    "primary_R_minus_base": {
+      "mean": 0.22941176470588234,
+      "image_cluster_bootstrap_95": [
+        0.13529411764705881,
+        0.32941176470588235
+      ],
+      "questions": 85,
+      "images": 85,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": 0.23529411764705882,
+          "gains": [
+            5,
+            53,
+            54,
+            55,
+            56,
+            57,
+            65,
+            70,
+            73,
+            76,
+            77,
+            78,
+            81,
+            83,
+            84,
+            85,
+            89,
+            90,
+            94,
+            99,
+            100,
+            112
+          ],
+          "harms": [
+            32,
+            134
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.2235294117647059,
+          "gains": [
+            53,
+            54,
+            55,
+            56,
+            57,
+            65,
+            70,
+            73,
+            76,
+            77,
+            78,
+            81,
+            83,
+            84,
+            85,
+            89,
+            90,
+            94,
+            99,
+            100
+          ],
+          "harms": [
+            134
+          ]
+        }
+      ]
+    },
+    "primary_R_F_visual_interaction": {
+      "mean": -0.011764705882352941,
+      "image_cluster_bootstrap_95": [
+        -0.06470588235294118,
+        0.041176470588235294
+      ],
+      "questions": 85,
+      "images": 85,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": -0.011764705882352941,
+          "gains": [
+            33,
+            86
+          ],
+          "harms": [
+            115,
+            141,
+            145
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": -0.011764705882352941,
+          "gains": [
+            32,
+            33,
+            86
+          ],
+          "harms": [
+            5,
+            112,
+            115,
+            145
+          ]
+        }
+      ]
+    },
+    "validation_R_minus_F": {
+      "mean": 0.01968503937007874,
+      "image_cluster_bootstrap_95": [
+        -0.01542020778917001,
+        0.05511811023622047
+      ],
+      "questions": 254,
+      "images": 87,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": 0.015748031496062992,
+          "gains": [
+            155,
+            158,
+            171,
+            179,
+            192,
+            213,
+            246,
+            247,
+            252,
+            253,
+            276,
+            304,
+            326,
+            353,
+            375,
+            385
+          ],
+          "harms": [
+            172,
+            173,
+            193,
+            194,
+            195,
+            229,
+            230,
+            236,
+            318,
+            360,
+            362,
+            391
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.023622047244094488,
+          "gains": [
+            155,
+            158,
+            179,
+            186,
+            199,
+            221,
+            252,
+            259,
+            276,
+            375,
+            385,
+            391,
+            399
+          ],
+          "harms": [
+            193,
+            194,
+            230,
+            265,
+            288,
+            360,
+            362
+          ]
+        }
+      ]
+    },
+    "validation_R_minus_before": {
+      "mean": 0.20078740157480315,
+      "image_cluster_bootstrap_95": [
+        0.1311787072243346,
+        0.2730927913334008
+      ],
+      "questions": 254,
+      "images": 87,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": 0.20078740157480315,
+          "gains": [
+            160,
+            175,
+            176,
+            185,
+            186,
+            189,
+            196,
+            197,
+            201,
+            207,
+            210,
+            220,
+            227,
+            243,
+            245,
+            247,
+            259,
+            260,
+            265,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            278,
+            279,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            297,
+            298,
+            301,
+            302,
+            304,
+            307,
+            309,
+            313,
+            314,
+            322,
+            324,
+            326,
+            330,
+            333,
+            334,
+            338,
+            340,
+            343,
+            348,
+            350,
+            376,
+            379,
+            385
+          ],
+          "harms": [
+            163,
+            173,
+            190,
+            194,
+            195,
+            199,
+            200,
+            229,
+            231,
+            236,
+            238,
+            318,
+            366,
+            392,
+            399
+          ]
+        },
+        {
+          "seed": 43,
+          "mean": 0.20078740157480315,
+          "gains": [
+            160,
+            172,
+            175,
+            176,
+            186,
+            189,
+            196,
+            197,
+            201,
+            207,
+            210,
+            220,
+            227,
+            243,
+            245,
+            259,
+            260,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            278,
+            279,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            297,
+            298,
+            301,
+            302,
+            307,
+            309,
+            313,
+            314,
+            322,
+            324,
+            326,
+            330,
+            333,
+            334,
+            338,
+            340,
+            343,
+            348,
+            350,
+            376,
+            379,
+            385,
+            391
+          ],
+          "harms": [
+            163,
+            187,
+            190,
+            194,
+            200,
+            213,
+            229,
+            231,
+            236,
+            238,
+            366,
+            392
+          ]
+        }
+      ]
+    },
+    "background_R_minus_before": {
+      "mean": 0.050724637681159424,
+      "image_cluster_bootstrap_95": [
+        0.007246376811594203,
+        0.10144927536231885
+      ],
+      "questions": 69,
+      "images": 69,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": 0.057971014492753624,
+          "gains": [
+            52,
+            61,
+            15,
+            68
+          ],
+          "harms": []
+        },
+        {
+          "seed": 43,
+          "mean": 0.043478260869565216,
+          "gains": [
+            52,
+            61,
+            68
+          ],
+          "harms": []
+        }
+      ]
+    },
+    "background_F_minus_before": {
+      "mean": 0.050724637681159424,
+      "image_cluster_bootstrap_95": [
+        0.007246376811594203,
+        0.10144927536231885
+      ],
+      "questions": 69,
+      "images": 69,
+      "paired_parent_seeds": [
+        {
+          "seed": 42,
+          "mean": 0.057971014492753624,
+          "gains": [
+            52,
+            61,
+            15,
+            68
+          ],
+          "harms": []
+        },
+        {
+          "seed": 43,
+          "mean": 0.043478260869565216,
+          "gains": [
+            52,
+            15,
+            68
+          ],
+          "harms": []
+        }
+      ]
+    }
+  },
+  "training": {
+    "F_42": {
+      "optimizer_steps": 52,
+      "supervised_views": 800,
+      "null_anchor_views": 400,
+      "language_readout_parameters": 7372800,
+      "parameter_delta_square_norm": 15.463488633278757,
+      "all_visual_parameters_frozen": true,
+      "visual_parent_factors_exactly_unchanged": true,
+      "paired_readout_initialization_equal": false,
+      "completed_unix": 1792979810.5778139
+    },
+    "R_42": {
+      "optimizer_steps": 52,
+      "supervised_views": 800,
+      "null_anchor_views": 400,
+      "language_readout_parameters": 7372800,
+      "parameter_delta_square_norm": 15.142592903692275,
+      "all_visual_parameters_frozen": true,
+      "visual_parent_factors_exactly_unchanged": true,
+      "paired_readout_initialization_equal": true,
+      "completed_unix": 1792980328.2731981
+    },
+    "F_43": {
+      "optimizer_steps": 52,
+      "supervised_views": 800,
+      "null_anchor_views": 400,
+      "language_readout_parameters": 7372800,
+      "parameter_delta_square_norm": 14.975040295394138,
+      "all_visual_parameters_frozen": true,
+      "visual_parent_factors_exactly_unchanged": true,
+      "paired_readout_initialization_equal": false,
+      "completed_unix": 1792980894.2687316
+    },
+    "R_43": {
+      "optimizer_steps": 52,
+      "supervised_views": 800,
+      "null_anchor_views": 400,
+      "language_readout_parameters": 7372800,
+      "parameter_delta_square_norm": 14.1569665200077,
+      "all_visual_parameters_frozen": true,
+      "visual_parent_factors_exactly_unchanged": true,
+      "paired_readout_initialization_equal": true,
+      "completed_unix": 1792981415.852011
+    }
+  },
+  "cost": {
+    "new_generations": 1852,
+    "logical_predictor_readouts": 3196,
+    "cached_parent_physical_records": 46,
+    "reused_teacher_records": 100,
+    "new_teacher_forwards": 0,
+    "new_optimizer_steps": 208,
+    "readout_adapters_trained": 4,
+    "supervisor_wall_seconds": 2207.776871919632,
+    "original_preparation_to_exit_seconds": 2469.6964938640594,
+    "incremental_bytes": 275714048,
+    "errors": 0,
+    "replays": 0
+  },
+  "limitations": [
+    "Observed source85 and validation254, known train templates, unknown patient independence and historical exposure.",
+    "I has extra historical52updates/fixed visual factors.22Ctraining images overlap acquisition supervision;40overlap acquisition supervision or nonzero old KL, per separate exposure audit. Not isolated acquisition semantics or equal lifetime cost.",
+    "External unchanged old branches are distinct from single-readout retention.",
+    "Frozen I and a finite language gradient are implementation evidence, not performance or clinical benefit.",
+    "No full ViSkill, PPO, visual-card or clinical workflow claim."
+  ],
+  "test_annotation_opened": false
+}

@@ -20,3 +20,5 @@ T对原库有27/44题改进，同时有12/18题由对变错；T对F有20/31题�
 封存此固定初始化迁移配方，不调样本、LR、epoch、seed、KL或契约。后继检验函数调用形式的经验复用：由已学I模块在当前病例上给出受限采集属性类别，检验它是否帮助基座器官问答，配对黑图专家与错配病例属性来源；它不改写本轮结论。
 
 [完整结果与受损索引](../docs/evidence/medical/acquisition_to_organ_transfer_v1/result.json) · [208更新](../docs/evidence/medical/acquisition_to_organ_transfer_v1/updates.json) · [物理分支数值](../docs/evidence/medical/acquisition_to_organ_transfer_v1/physical_branch_numeric.json)
+
+曝光口径补充（不追改原协议或分数）：原22图是与I采集监督的交集；计入I非零旧题KL后完整历史交集为40图。第13轮85图主面板仍与全部窗口训练图像ID隔离。见[审计75](75_medical_history_exposure_audit.md)。

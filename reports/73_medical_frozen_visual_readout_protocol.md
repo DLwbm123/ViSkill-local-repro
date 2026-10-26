@@ -17,3 +17,5 @@ F在原模型上新建语言q/k/v/o LoRA，R在冻结I42/I43视觉LoRA之上新�
 [冻结配置](../configs/reproduction/frozen_visual_readout_v1.json) · [工作进程](../scripts/medical_frozen_visual_readout.py)
 
 CPU已冻结3196个逻辑读出、1852次实际新生成、46个历史I物理记录缓存、100条教师分布复用。09:49:25实际启动；09:49:56生产检查通过，64个视觉I层冻结、288个语言读出梯度张量有限，未发生优化器更新的fixture检查后已进入父I读出。启动证明不构成性能结果。
+
+曝光口径补充（不追改原协议或分数）：原22图是与I采集监督的交集；计入I非零旧题KL后完整历史交集为40图。第13轮85图主面板仍与全部窗口训练图像ID隔离。见[审计75](75_medical_history_exposure_audit.md)。

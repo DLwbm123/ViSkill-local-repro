@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "language_readout_only_finite_gradients": true,
+  "frozen_visual_I_layers": 64,
+  "optimizer_steps": 0,
+  "new_generation_calls": 0,
+  "loss": 0.1350902020931244,
+  "gradient_tensors": 288
+}
