@@ -1,0 +1,35 @@
+{
+  "experiment": "unit_residual_composition_v1",
+  "status": "FROZEN_CPU_READY",
+  "window": "medical_window_12h_20261025",
+  "first_preparation_unix": 1792973001,
+  "cooperative_stop_unix": 1792978101,
+  "deadline_unix": 1792978401,
+  "four_root_baseline_bytes": 157640118272,
+  "write_stop_incremental_bytes": 1500000000,
+  "maximum_incremental_bytes": 2000000000,
+  "selection_seed": 20261107,
+  "training_seeds": [
+    42,
+    43
+  ],
+  "formal_generation_calls": 2176,
+  "maximum_generation_calls": 2276,
+  "hypothesis": "Retain complete learned visual residuals through fixed unit-weight composition: SUM deltaW=deltaI+deltaF may reuse acquisition experience for Organ answering without the information bottleneck of categorical text or overwriting I during C training. DOUBLE deltaW=2deltaF is a matched constructed-rank/amplitude control. Matrix identity is exact withinFP32 arithmetic; nonlinear model benefit is a falsifiable hypothesis, not a theorem.",
+  "protected_object": "All254original Organ validation answers and69oldbackground cases. SameC TRAIN-template activation251val+21background,3+48outsideCimmutableoriginalbranch;oldA69/39andB172keeppriorpriority. No newdata/test/goldselection, samples/templates neverretuned.",
+  "parents": "FrozenI42/I43 acquisition adapters fromcontinual_acquisition_bank_v1; frozenF42/F43 fresh-init Organ adapters fromacquisition_to_organ_transfer_v1. Matchsameparentseed. Bothrank16alpha32visualqkv/projwithsamebase/targets/modules_to_savenone. C initialization experiment whole gate remainsfailed; usingFascomponent doesnotpromote itsclosedexperiment orretrainit.",
+  "construction": "PEFTcat unitweights[1,1] createsrank32alpha32; explicitlyretainFP32factors. Forparentsp withoriginalscalingc_p, concatenateA=[c_I*A_I;c_F*A_F],B=[B_I B_F] torealize deltaI+deltaF. DOUBLEusesparentsF,F withsameconstructedrank32andweights1,1. NoSVD/truncation/averaging/coefficientgrid.",
+  "proof": "CPUtoyconcatandDOUBLEidentities; runtimeALL64visuallayers eachcomposition comparetwofixedrandomprobevectors tosumparentFP32linearcontributionsrtol2e-5atol2e-6beforeANYgeneration. Logmaxrelativeerror/rank/scalingchecks. AllparamsrequiresgradFalse,0optimizers,0teacherforwards,0newcheckpoints/fullbasecopies;newadaptersRAMonly. Parentfilesandfactorsnotmodified.",
+  "plan": "NewSUM/DOUBLEpaired42/43 N/Bonlyfor272admittedqueries=544each4models=2176formalcap2276. Oldbefore/F/I/T requiredcasecorrectnessfromalreadyverifiedCclosure numericledger withqid-groupbinding/source-requestprovenance; notregeneratedorrescannedraw. RawIcomparisononlyprimarywhereavailable; do notinventunobservedrawIbackground. Full254and69policyoutcomes retained usingoriginalfallbackoutsideC. SameHF336RGBoriginalunwrappedpromptgreedy64; finalfixedconstructions only, noselectionfromintermediateoutputs.",
+  "investment_gate": {
+    "new_composition": "All254 SUM_N-originalbefore_Nmean>=.10,SUM_N-policyI_Nmean>=.10,SUM_N-policyF_Nmean>=.05;eachcomparison everypairedparentseed>0 andimage95lower>0.",
+    "specificity": "SUM_N-DOUBLE_Nmean/everyseed/95lower>0;visualinteraction(SUM_N-SUM_B)-(F_N-F_B)mean/everyseed/95lower>0. ReportSUM-Tinit comparisonwithCIbutrank32vs16anddifferenttrainingpathsconfounduniqueattribution.",
+    "preservation": "Oldbackground69SUM-beforemean/everyseed>=0,95lower>=-.05,zero newharms eachseed; oldA69/39andB172 Cfalseimmutablebranch. Allnewprimaryharmspreserveddespitepositiveaverage.",
+    "statistics": "Pairparentseeds42/43averagebeforeimageclusterbootstrap10000selectionseed20261107. Existingdevelopmentvalidation/unknownpatientindependence, notindependentblind/testevidence. Noextraindependenttrainingseeds."
+  },
+  "cost_and_controls": "SUMandDOUBLEhave7,864,320RAMadapterparameters/rank32vsparent3,932,160/rank16. DOUBLErepeatsFfactorsandhaseffectiverank<=16,soitcontrolsamplitudewithsamefactorcompute,notallrepresentationaldiversity. SUMinheritsI+F52+52priorsteps, Tinitlikewise52+52historybutrank16; discloseinferencecapacity andhistoricaltrainingcost. Nooptimizingbaselines/controlcoefficients.",
+  "failure": "Anycombinedgatefailureclosesunitresidualadditionrecipe. No weightedcoefficient/rank/SVD/mergealgorithm/seed/sample/template search; allpreviousK/P/init/tooltextfailuresandpositiveexternalIbankretained.",
+  "budget": "90minoriginalprepareclock,1.5GBwriteprestopstrict2GB sharedoriginal12h1792983515/cumulative50GB, no deadline resets or parent cleanup.",
+  "limits": "ConditionalexternalbankkeepingA/B isnotsharedparameterforgettingproof. Exactmatrixcompositiondoesnotimplynonlinearlogitadditivityorclinicalbenefit. Currentcasecategoricaltoolnegative andinitpartialpositiveonlymotivatethishypothesis. No fullViSkill/PPO/cards/clinicaltrajectory/safetyclaim.",
+  "public_boundary": "source/config/report/anonymousnumericoperatorchecks only, noQA/gold/images/rawreplies/weights/templates/recovery/paths/tokens."
+}

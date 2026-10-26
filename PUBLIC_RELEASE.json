@@ -573,7 +573,7 @@
     "test_used": false,
     "source_scorer_failure_preserved": true
   },
-  "latest_report": "reports/65_medical_capability_transfer_result.md",
+  "latest_report": "reports/67_medical_dynamic_acquisition_result.md",
   "slake_evidence_v2": {
     "status": "COMPLETE_VISUAL_EVIDENCE_NOT_ESTABLISHED",
     "protocol_report": "reports/44_slake_visual_evidence_protocol.md",
@@ -649,7 +649,7 @@
     "hours": 12,
     "maximum_incremental_bytes": 50000000000,
     "monitor_interval_minutes": 30,
-    "next_experiment": "dynamic_acquisition_tools_v1",
+    "next_experiment": "unit_residual_composition_v1",
     "next_experiment_status": "LAUNCHED_NOT_RESULT",
     "raw_medical_material_excluded": true
   },
@@ -681,5 +681,17 @@
     "optimizer_steps": 208,
     "all_gates_pass": false,
     "reuse_difference_subgate_pass": true
+  },
+  "dynamic_acquisition_tools_v1": {
+    "status": "COMPLETE_DYNAMIC_TOOL_NOT_ESTABLISHED",
+    "report": "reports/67_medical_dynamic_acquisition_result.md",
+    "result": "docs/evidence/medical/dynamic_acquisition_tools_v1/result.json",
+    "execution_source_commit": "05551a4",
+    "new_generations": 1144,
+    "expert_generations": 436,
+    "reader_generations": 708,
+    "logical_outcomes": 2584,
+    "optimizer_steps": 0,
+    "all_gates_pass": false
   }
 }

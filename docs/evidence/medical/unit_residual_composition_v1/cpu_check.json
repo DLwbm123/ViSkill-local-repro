@@ -1,0 +1,20 @@
+{
+  "status": "CPU_READY",
+  "primary_questions": 254,
+  "background_questions": 69,
+  "admitted_questions": 272,
+  "uncovered_primary_kept": 3,
+  "unchanged_background_kept": 48,
+  "parent_ranks": [
+    16,
+    16
+  ],
+  "constructed_rank": 32,
+  "unit_weights_only_no_search": true,
+  "parent_configs_compatible": true,
+  "concatenation_and_amplitude_toy_fixtures_pass": true,
+  "formal_generation_calls": 2176,
+  "maximum_generation_calls": 2276,
+  "new_optimizer_steps": 0,
+  "full_model_weights_copied": false
+}
